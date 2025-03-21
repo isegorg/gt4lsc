@@ -34,9 +34,29 @@ TGtWithLscModel >> lscModel: aLscModel [
 	lscModel == aLscModel 
 		ifTrue: [ ^ self ].
 
-	lscModel ifNotNil: [ self unsubscribeFromWardleyMapModel ].
+	lscModel ifNotNil: [ self unsubscribeFromLscModel ].
 	lscModel := aLscModel.
 
-	self onWardleyMapModelChanged.
-	self subscribeToWardleyMapModel
+	self onLscModelChanged.
+	self subscribeToLscModel
+]
+
+{ #category : #'api - lsc model' }
+TGtWithLscModel >> onLscModelChanged [
+	"Is sent when a new lsc model is assigned to the view model"
+	
+	self explicitRequirement
+]
+
+{ #category : #'api - lsc model' }
+TGtWithLscModel >> subscribeToLscModel [
+	"Is sent after a new lsc model is assigned to the view model.
+	It is required to unsubscribe from the domain model by implementing
+	#unsubscribeFromLscModel if view model subscribes to them"
+]
+
+{ #category : #'api - lsc model' }
+TGtWithLscModel >> unsubscribeFromLscModel [
+	"Is sent before a new lsc model is assigned to the view model.
+	View models that subscribe to lsc model are required to implement this methods"
 ]
