@@ -49,6 +49,11 @@ GtLscViewModel >> title [
 	^ self lscModel title
 ]
 
+{ #category : #'api - lsc ' }
+GtLscViewModel >> title: aString [
+	self lscModel title: aString
+]
+
 { #category : #'api - lsc model' }
 GtLscViewModel >> unsubscribeFromWardleyMapModel [
 	"Is sent before a new lsc model is assigned to the view model.

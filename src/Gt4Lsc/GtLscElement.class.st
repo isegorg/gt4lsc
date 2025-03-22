@@ -17,7 +17,7 @@ GtLscElement >> createTitleElement [
 		aptitude: BrGlamorousRegularEditorAptitude new;
 		"visibility: BlVisibility visible;"
 		constraintsDo: [ :c | c linear horizontal alignCenter ];
-		"when: BrEditorAcceptWish do: [ :aWish | self onAcceptNewTitleWish: aWish ];"
+		when: BrEditorAcceptWish do: [ :aWish | self onAcceptNewTitleWish: aWish ];
 		text: 'Title'
 ]
 
@@ -28,6 +28,12 @@ GtLscElement >> initialize [
 	titleElement := self createTitleElement.
 	
 	self addChildren: {titleElement}
+]
+
+{ #category : #'event handling' }
+GtLscElement >> onAcceptNewTitleWish: aWish [ 
+	self hasLscViewModel ifFalse: [ ^ self ].
+	self lscViewModel title: aWish text asString
 ]
 
 { #category : #'api - lsc view model' }
@@ -52,6 +58,11 @@ GtLscElement >> subscribeToLscViewModel [
 		when: GtLscViewModelTitleChanged
 			send: #onTitleChanged
 			to: self
+]
+
+{ #category : #api }
+GtLscElement >> titleString [
+	^ titleElement text asString
 ]
 
 { #category : #'api - lsc view model' }

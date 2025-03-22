@@ -5,8 +5,39 @@ Class {
 }
 
 { #category : #'examples - ui' }
+GtLscElementScripterExamples >> pipelineLscChangeTitle [
+	"Check that ui title change update the model"
+	
+	<gtExample>
+	| uiElement titleElement lsc newTitle |
+	uiElement := self renderNewLsc.
+	lsc := uiElement lscViewModel lscModel.
+	titleElement := uiElement instVarNamed: #titleElement.
+	
+	newTitle := 'New Scenario Title'.
+	self assert: [ (uiElement titleString) ~= newTitle ].
+	
+	titleElement switchToEditor.
+	
+	self assert: titleElement isEditable.
+	self assert: titleElement viewModel model asString equals: titleElement text asString.
+	
+	titleElement text
+		deleteAll;
+		append: newTitle asRopedText.
+		
+	titleElement acceptEdition.
+	
+	"the original text is stored in order to be restored if edition cancelled"
+	self assert: titleElement text asString equals: newTitle.
+	self assert: lsc title equals: newTitle.
+	
+	^ uiElement
+]
+
+{ #category : #'examples - ui' }
 GtLscElementScripterExamples >> renderLscWithTitleChanged [
-	"Check that ui element shows the model title"
+	"Check that ui element shows the model title change"
 
 	<gtExample>
 	| lsc uiElement newTitle |
