@@ -1,0 +1,750 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-03-22T14:44:47.048162+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-03-22T14:44:47.048162+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "II6rT1DtDQCL8NsQBT0nBw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "La primera característica del *LSC* que mostraremos en la vista será su *Title*."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-03-22T14:44:47.061034+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-03-22T14:44:47.061034+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "ksCrT1DtDQCL8tdLBT0nBw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Partimos del ejemplo de un nuevo *LSC* {{gtMethod:GtLscModelExamples>>newLsc}}. "
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-03-22T14:44:47.061266+01:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-03-22T14:44:47.061266+01:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "F8GrT1DtDQCL9AQRBT0nBw=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Se comprobará que {{gtClass:GtLscElement|label=View}} muestra las características iniciales del {{gtClass:GtLscModel|label=Model}}."
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-03-22T14:44:47.061273+01:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-03-22T14:44:47.061273+01:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "HMGrT1DtDQCL9Q6DBT0nBw=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Creamos la *View* en el método {{gtMethod:GtLscModel>>asElement}}, haciendo uso de la estructura preparada para *MVVM*, igual que la utilizada en {{gtClass:GtWardleyMapElement}}"
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-03-22T14:44:47.061278+01:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-03-22T14:44:47.061278+01:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "IMGrT1DtDQCL9vv4BT0nBw=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Esta vista la utilizamos en el inspector personalizado {{gtMethod:GtLscModel>>gtLiveFor:}}"
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [
+															{
+																"__type" : "textSnippet",
+																"children" : {
+																	"__type" : "snippets",
+																	"items" : [ ]
+																},
+																"createEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"createTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-03-22T14:44:47.061294+01:00"
+																	}
+																},
+																"editEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"editTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-03-22T14:44:47.061294+01:00"
+																	}
+																},
+																"uid" : {
+																	"__type" : "uid",
+																	"uidString" : "MMGrT1DtDQCL+X1NBT0nBw=="
+																},
+																"paragraphStyle" : {
+																	"__type" : "textStyle"
+																},
+																"string" : "Establece el slot *lscModel* y llama al método que inicializa la *ViewModel* con los datos del *Model*"
+															}
+														]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-03-22T14:44:47.061287+01:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-03-22T14:44:47.061287+01:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "KcGrT1DtDQCL+CRpBT0nBw=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "{{gtMethod:TGtWithLscModel>>lscModel:}}"
+												},
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [
+															{
+																"__type" : "textSnippet",
+																"children" : {
+																	"__type" : "snippets",
+																	"items" : [ ]
+																},
+																"createEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"createTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-03-22T14:44:47.061311+01:00"
+																	}
+																},
+																"editEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"editTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-03-22T14:44:47.061311+01:00"
+																	}
+																},
+																"uid" : {
+																	"__type" : "uid",
+																	"uidString" : "QsGrT1DtDQCL+26OBT0nBw=="
+																},
+																"paragraphStyle" : {
+																	"__type" : "textStyle"
+																},
+																"string" : "En él se transformará la información de {{gtClass:GtLscModel|label=Model}} a mostrat en {{gtClass:GtLscElement|label=View}} en sus correspondientes *ViewModels*."
+															},
+															{
+																"__type" : "textSnippet",
+																"children" : {
+																	"__type" : "snippets",
+																	"items" : [ ]
+																},
+																"createEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"createTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-03-22T14:44:47.061316+01:00"
+																	}
+																},
+																"editEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"editTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-03-22T14:44:47.061316+01:00"
+																	}
+																},
+																"uid" : {
+																	"__type" : "uid",
+																	"uidString" : "R8GrT1DtDQCL/C0EBT0nBw=="
+																},
+																"paragraphStyle" : {
+																	"__type" : "textStyle"
+																},
+																"string" : "En el caso de *Title* no tiene mayor complejidad que su texto, por lo que no crearemos una clase para su *ViewModel* y únicamente crearemos sus *getter* para que se obtenga del slot *lscModel*. {{gtMethod:GtLscViewModel>>title}}"
+															}
+														]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-03-22T14:44:47.061302+01:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-03-22T14:44:47.061302+01:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "OcGrT1DtDQCL+neTBT0nBw=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "{{gtMethod:GtLscViewModel>>onLscModelChanged}} debe sobreescribir el del *Trait* {{gtMethod:TGtWithLscModel>>onLscModelChanged}}"
+												}
+											]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-03-22T14:44:47.061283+01:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-03-22T14:44:47.061283+01:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "JcGrT1DtDQCL918EBT0nBw=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Hacer que {{gtClass:GtLscViewModel|label=ViewModel}} obtenga las características que necesita de {{gtClass:GtLscModel|label=Model}} al crearse:"
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-03-22T14:44:47.061326+01:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-03-22T14:44:47.061326+01:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "UcGrT1DtDQCL/oVqBT0nBw=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "Similar a la creación de {{gtClass:GtLscViewModel|label=ViewModel}} desde {{gtClass:GtLscModel|label=Model}}"
+												},
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [
+															{
+																"__type" : "textSnippet",
+																"children" : {
+																	"__type" : "snippets",
+																	"items" : [ ]
+																},
+																"createEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"createTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-03-22T14:44:47.061347+01:00"
+																	}
+																},
+																"editEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"editTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-03-22T14:44:47.061347+01:00"
+																	}
+																},
+																"uid" : {
+																	"__type" : "uid",
+																	"uidString" : "ZsGrT1DtDQCMACuVBT0nBw=="
+																},
+																"paragraphStyle" : {
+																	"__type" : "textStyle"
+																},
+																"string" : "Establece el slot *lscViewModel* y llama al método que inicializa la *View* con los datos del *ViewModel*"
+															}
+														]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-03-22T14:44:47.06133+01:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-03-22T14:44:47.06133+01:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "VcGrT1DtDQCL/w2SBT0nBw=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "{{gtMethod:TGtWithLscViewModel>>lscViewModel:}}"
+												},
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [
+															{
+																"__type" : "textSnippet",
+																"children" : {
+																	"__type" : "snippets",
+																	"items" : [ ]
+																},
+																"createEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"createTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-03-22T14:44:47.061357+01:00"
+																	}
+																},
+																"editEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"editTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-03-22T14:44:47.061357+01:00"
+																	}
+																},
+																"uid" : {
+																	"__type" : "uid",
+																	"uidString" : "cMGrT1DtDQCMAhlZBT0nBw=="
+																},
+																"paragraphStyle" : {
+																	"__type" : "textStyle"
+																},
+																"string" : "Establecemos la información de texto de *titleElement* desde el texto de {{gtClass:GtLscViewModel|label=ViewModel}} "
+															}
+														]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-03-22T14:44:47.061352+01:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-03-22T14:44:47.061352+01:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "a8GrT1DtDQCMAW1tBT0nBw=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "{{gtMethod:GtLscElement>>onLscViewModelChanged}} debe sobreescribir el del *Trait* {{gtMethod:TGtWithLscViewModel>>onLscViewModelChanged}}"
+												}
+											]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-03-22T14:44:47.061321+01:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-03-22T14:44:47.061321+01:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "TMGrT1DtDQCL/Y+RBT0nBw=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Hacer que {{gtClass:GtLscElement|label=View}} obtenga sus características desde su {{gtClass:GtLscViewModel|label=ViewModel}}."
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-03-22T14:44:47.06123+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-03-22T14:44:47.06123+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "/MCrT1DtDQCL875ZBT0nBw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Para comprobar que el ciclo de render ({{gtClass:GtLscModel|label=Model}}  -  -  >  {{gtClass:GtLscViewModel|label=ViewModel}}  -  -  >  {{gtClass:GtLscElement|label=View}}) es correcto al crear la vista inicial, creamos el ejemplo {{gtMethod:GtLscElementScripterExamples>>renderNewLsc}}."
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-03-22T14:44:47.060817+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-03-22T14:44:47.060817+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "sL+rT1DtDQCL8TheBT0nBw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "**Title**"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-03-22T14:44:02.747982+01:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-03-22T14:44:02.747982+01:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Comprobación en la vista de características iniciales del modelo"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "6887b34c-50ed-0d00-8bd4-85ee053d2707"
+	}
+}
