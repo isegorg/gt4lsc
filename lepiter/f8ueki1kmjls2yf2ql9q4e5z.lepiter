@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-03-22T14:42:52.766004+01:00"
+						"dateAndTimeString" : "2025-03-22T18:44:26.81904+01:00"
 					}
 				},
 				"editEmail" : {
@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-03-22T14:42:52.766004+01:00"
+						"dateAndTimeString" : "2025-03-22T18:44:26.826155+01:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Para desarrollar el comportamiento del cíclo de MVVM vamos a realizar ejemplos con el cambio del título de un {{gtClass:GtLscModel}}"
+				"string" : "To develop the behavior of the MVVM cycle, we are going to perform examples with the change of the title of a {{gtClass:GtLscModel}}"
 			}
 		]
 	},
@@ -62,12 +62,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2025-03-22T14:42:17.378485+01:00"
+			"dateAndTimeString" : "2025-03-22T18:43:55.554551+01:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Ciclo completo MVVM - Desarrollo con ejemplos"
+		"title" : "Complete MVVM Cycle - Development with Examples"
 	},
 	"uid" : {
 		"__type" : "uuid",

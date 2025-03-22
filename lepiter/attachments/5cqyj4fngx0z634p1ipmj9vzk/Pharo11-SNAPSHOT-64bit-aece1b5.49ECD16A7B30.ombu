@@ -1,0 +1,53 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-22T22:35:57.247849+01:00' ],
+		#prior : OmReference [ 'Pharo11-SNAPSHOT-64bit-aece1b5.4979AD015C50', '4' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #TGtWithLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #'lscViewModel:',
+			#protocol : #'api - lsc view model',
+			#sourceCode : 'lscViewModel: aLscViewModel\r\t"Set a not-null Lsc view model assigned to the receiver element"\r\tself\r\t\tassert: [ aLscViewModel notNil ]\r\t\tdescription: [ \'Lsc view model must not be nil\' ].\r\r\tlscViewModel == aLscViewModel \r\t\tifTrue: [ ^ self ].\r\r\tlscViewModel := aLscViewModel',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #TGtWithLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #'lscViewModel:',
+			#protocol : #'api - lsc view model',
+			#sourceCode : 'lscViewModel: aLscViewModel\r\t"Set a not-null Lsc view model assigned to the receiver element"\r\tself\r\t\tassert: [ aLscViewModel notNil ]\r\t\tdescription: [ \'Lsc view model must not be nil\' ].\r\r\tlscViewModel == aLscViewModel \r\t\tifTrue: [ ^ self ].\r\r\tlscViewModel := aLscViewModel.\r\t\r\tself onLscViewModelChanged.',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-22T22:36:25.048036+01:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #TGtWithLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #onLscViewModelChanged,
+			#protocol : #'api - lsc view model',
+			#sourceCode : 'onLscViewModelChanged\r\t"Is sent when a new Lsc view model is assigned to the element"\r\t\r\tself explicitRequirement',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}

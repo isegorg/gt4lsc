@@ -1,0 +1,110 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-22T16:54:28.546724+01:00' ],
+		#prior : OmReference [ 'Pharo11-SNAPSHOT-64bit-aece1b5.34D4FF290730', '5' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpTraitAddition {
+		#trait : RGTraitDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Trait,
+				#definitionSource : 'Trait named: #TGtWithLscModel\r\tinstanceVariableNames: \'lscModel\'\r\tpackage: \'Gt4Lsc-! View models\'',
+				#traitCompositionSource : '{}'
+			},
+			#name : #TGtWithLscModel,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#metaClass : RGMetatraitDefinition {
+				#annotations : IdentityDictionary {
+					#definitionSource : 'TGtWithLscModel classTrait\r\tinstanceVariableNames: \'\'',
+					#traitCompositionSource : '{}'
+				},
+				#name : #'TGtWithLscModel classTrait',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#baseClass : @7
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#className : #TGtWithLscModel,
+					#isMetaSide : false
+				},
+				#parent : @7,
+				#content : ''
+			},
+			#category : #'Gt4Lsc-! View models',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-22T16:56:14.427389+01:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #TGtWithLscModel,
+				#isMetaSide : false
+			},
+			#name : #hasLscModel,
+			#protocol : #'api - lsc model',
+			#sourceCode : 'hasLscModel\r\t"Return a true if lsc model is assigned to the receiver, false otherwise"\r\t<return: #Boolean>\r\r\t^ lscModel notNil',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-22T16:56:50.222207+01:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #TGtWithLscModel,
+				#isMetaSide : false
+			},
+			#name : #lscModel,
+			#protocol : #'api - lsc model',
+			#sourceCode : 'lscModel\r\t"Return a not-null lsc model assigned to the receiver view model"\r\tself\r\t\tassert: [ self hasLscModel ]\r\t\tdescription: [ \'lsc model should be initialized\' ].\r\t\t\r\t^ lscModel',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-22T16:58:32.238653+01:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #TGtWithLscModel,
+				#isMetaSide : false
+			},
+			#name : #'lscModel:',
+			#protocol : #'api - lsc model',
+			#sourceCode : 'lscModel: aLscModel\r\t"Set a not-null lsc domain model assigned to the receiver view model"\r\tself\r\t\tassert: [ aLscModel notNil ]\r\t\tdescription: [ \'lsc model must not be nil\' ].\r\r\tlscModel == aLscModel \r\t\tifTrue: [ ^ self ].\r\r\tlscModel := aLscModel',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-22T16:58:57.851363+01:00' ],
+		#prior : OmReference [ '4' ],
+		#self : OmReference [ '5' ]
+	},
+	#content : EpSessionSnapshot {
+		#imageName : '/Users/fluque/work/osoco/BluePlaneLabs/advise-nuevo/GlamorousToolkit.image'
+	}
+}

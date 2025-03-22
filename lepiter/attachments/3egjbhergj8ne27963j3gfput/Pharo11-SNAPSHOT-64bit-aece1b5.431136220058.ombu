@@ -1,0 +1,41 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-22T20:36:39.659642+01:00' ],
+		#prior : OmReference [ 'Pharo11-SNAPSHOT-64bit-aece1b5.42D5DCA702C0', '3' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModel,
+				#isMetaSide : false
+			},
+			#name : #asElement,
+			#protocol : #converting,
+			#sourceCode : 'asElement\r\t^ GtLscElement new\r\t\tlscViewModel: (GtLscViewModel new lscModel: self);\r\t\tyourself',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-22T20:37:33.337723+01:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModel,
+				#isMetaSide : false
+			},
+			#name : #'gtLiveFor:',
+			#protocol : #'gt - extensions',
+			#sourceCode : 'gtLiveFor: aView\r\t<gtView>\r\t^ aView explicit\r\t\ttitle: \'Live\';\r\t\tpriority: 2;\r\t\tstencil: [ self asElement ]',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}

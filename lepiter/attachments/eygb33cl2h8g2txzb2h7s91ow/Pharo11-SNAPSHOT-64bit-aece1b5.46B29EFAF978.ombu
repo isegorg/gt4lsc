@@ -1,0 +1,53 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-22T21:47:10.386382+01:00' ],
+		#prior : OmReference [ 'Pharo11-SNAPSHOT-64bit-aece1b5.4393728CF570', '3' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #TGtWithLscModel,
+				#isMetaSide : false
+			},
+			#name : #'lscModel:',
+			#protocol : #'api - lsc model',
+			#sourceCode : 'lscModel: aLscModel\r\t"Set a not-null lsc domain model assigned to the receiver view model"\r\tself\r\t\tassert: [ aLscModel notNil ]\r\t\tdescription: [ \'lsc model must not be nil\' ].\r\r\tlscModel == aLscModel \r\t\tifTrue: [ ^ self ].\r\r\tlscModel := aLscModel',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #TGtWithLscModel,
+				#isMetaSide : false
+			},
+			#name : #'lscModel:',
+			#protocol : #'api - lsc model',
+			#sourceCode : 'lscModel: aLscModel\r\t"Set a not-null lsc domain model assigned to the receiver view model"\r\tself\r\t\tassert: [ aLscModel notNil ]\r\t\tdescription: [ \'lsc model must not be nil\' ].\r\r\tlscModel == aLscModel \r\t\tifTrue: [ ^ self ].\r\r\tlscModel := aLscModel.\r\t\r\tself onLscModelChanged.',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-22T21:47:43.955677+01:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #TGtWithLscModel,
+				#isMetaSide : false
+			},
+			#name : #onLscModelChanged,
+			#protocol : #'api - lsc model',
+			#sourceCode : 'onLscModelChanged\r\t"Is sent when a new lsc model is assigned to the view model"\r\t\r\tself explicitRequirement',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}

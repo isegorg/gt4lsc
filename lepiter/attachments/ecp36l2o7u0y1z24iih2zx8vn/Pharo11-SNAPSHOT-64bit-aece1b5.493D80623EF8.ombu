@@ -1,0 +1,41 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-22T22:23:44.877817+01:00' ],
+		#prior : OmReference [ 'Pharo11-SNAPSHOT-64bit-aece1b5.477F7FCB2370', '3' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #onLscModelChanged,
+			#protocol : #'api - lsc model',
+			#sourceCode : 'onLscModelChanged\r\t"Is sent when a new lsc model is assigned to the view model"',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-22T22:25:02.389346+01:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #title,
+			#protocol : #'api - lsc',
+			#sourceCode : 'title\r\t<return: #String>\r\t^ self lscModel title',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}

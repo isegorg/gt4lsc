@@ -1,0 +1,193 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-22T19:15:10.360877+01:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpClassModification {
+		#oldClass : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : 'Object',
+				#definitionSource : 'Object subclass: #GtLscModel\r\tuses: TGtAnnouncer\r\tinstanceVariableNames: \'announcer\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4Lsc-! Model\'',
+				#traitCompositionSource : 'TGtAnnouncer'
+			},
+			#name : #GtLscModel,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#className : #GtLscModel,
+						#isMetaSide : false
+					},
+					#name : #announcer,
+					#parent : @7
+				}
+			],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#definitionSource : 'GtLscModel class\r\tuses: TGtAnnouncer classTrait\r\tinstanceVariableNames: \'\'',
+					#traitCompositionSource : 'TGtAnnouncer classTrait'
+				},
+				#name : #'GtLscModel class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @7
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#className : #GtLscModel,
+					#isMetaSide : false
+				},
+				#parent : @7,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#category : #'Gt4Lsc-! Model',
+			#package : #Gt4Lsc,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#newClass : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : 'Object',
+				#definitionSource : 'Object subclass: #GtLscModel\r\tuses: TGtAnnouncer\r\tinstanceVariableNames: \'announcer title\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4Lsc-! Model\'',
+				#traitCompositionSource : 'TGtAnnouncer'
+			},
+			#name : #GtLscModel,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#className : #GtLscModel,
+						#isMetaSide : false
+					},
+					#name : #announcer,
+					#parent : @23
+				},
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#className : #GtLscModel,
+						#isMetaSide : false
+					},
+					#name : #title,
+					#parent : @23
+				}
+			],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#definitionSource : 'GtLscModel class\r\tuses: TGtAnnouncer classTrait\r\tinstanceVariableNames: \'\'',
+					#traitCompositionSource : 'TGtAnnouncer classTrait'
+				},
+				#name : #'GtLscModel class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @23
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#className : #GtLscModel,
+					#isMetaSide : false
+				},
+				#parent : @23,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#category : #'Gt4Lsc-! Model',
+			#package : #Gt4Lsc,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}
+
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-22T19:17:38.718989+01:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModel,
+				#isMetaSide : false
+			},
+			#name : #title,
+			#protocol : #accessing,
+			#sourceCode : 'title\r\t^ title',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}
+
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-22T19:18:09.140795+01:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModel,
+				#isMetaSide : false
+			},
+			#name : #'title:',
+			#protocol : #acccessing,
+			#sourceCode : 'title: aString\r\tself title = aString ifTrue: [ ^ self ].\r\r\ttitle := aString.',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}
+
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-22T19:18:48.614373+01:00' ],
+		#prior : OmReference [ '4' ],
+		#self : OmReference [ '5' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscModel class',
+				#isMetaSide : true
+			},
+			#name : #defaultTitle,
+			#protocol : #'default model values',
+			#sourceCode : 'defaultTitle\r\t^ \'Scenario\'',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}
+
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-22T19:31:41.765881+01:00' ],
+		#prior : OmReference [ '7' ],
+		#self : OmReference [ '8' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModel,
+				#isMetaSide : false
+			},
+			#name : #initialize,
+			#protocol : #initalization,
+			#sourceCode : 'initialize\r\ttitle := self class defaultTitle',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}
+

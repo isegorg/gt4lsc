@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-03-22T13:12:21.952992+01:00"
+						"dateAndTimeString" : "2025-03-22T15:54:37.764588+01:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[Repositorio del proyecto](https://github.com/isegorg/gt4lsc)"
+				"string" : "[Project Reposy](https://github.com/isegorg/gt4lsc)"
 			},
 			{
 				"__type" : "textSnippet",
@@ -82,6 +82,77 @@
 								"__type" : "textStyle"
 							},
 							"string" : "Renderer and editor for Live Sequence Charts in GToolkit."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-03-22T15:21:12.641319+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-03-22T15:21:13.414321+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "Rgrx0VDtDQCiMdpbD66mXg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Our class that will model them will be the following"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-03-22T15:21:18.603886+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-03-22T15:52:01.490411+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "DgZM0lDtDQCiO7a+D66mXg=="
+							},
+							"code" : "(Object subclass: #GtLscModel\r\tinstanceVariableNames: ''\r\tclassVariableNames: ''\r\tpackage: 'Gt4Lsc') tagWith: '! Model'."
 						}
 					]
 				},
@@ -141,7 +212,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-03-22T14:37:44.312777+01:00"
+						"dateAndTimeString" : "2025-03-22T15:55:02.461712+01:00"
 					}
 				},
 				"uid" : {
@@ -151,7 +222,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Desarrollo]]"
+				"string" : "[[Development]]"
 			},
 			{
 				"__type" : "textSnippet",
@@ -183,7 +254,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-03-22T14:45:29.200439+01:00"
+									"dateAndTimeString" : "2025-03-22T18:44:52.436504+01:00"
 								}
 							},
 							"uid" : {
@@ -193,7 +264,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Comprobación en la vista de características iniciales del modelo]]"
+							"string" : "[[Checking the initial features view of the model]]"
 						},
 						{
 							"__type" : "textSnippet",
@@ -327,7 +398,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-03-22T14:45:22.234848+01:00"
+						"dateAndTimeString" : "2025-03-22T18:43:55.571639+01:00"
 					}
 				},
 				"uid" : {
@@ -337,7 +408,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Ciclo completo MVVM - Desarrollo con ejemplos]]"
+				"string" : "[[Complete MVVM Cycle - Development with Examples]]"
 			}
 		]
 	},
