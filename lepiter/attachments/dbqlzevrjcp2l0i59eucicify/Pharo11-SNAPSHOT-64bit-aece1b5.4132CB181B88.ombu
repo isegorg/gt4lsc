@@ -1,0 +1,53 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-24T20:04:14.466056+01:00' ],
+		#prior : OmReference [ 'Pharo11-SNAPSHOT-64bit-aece1b5.4001B06B4CD8', '4' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #'onTitleChanged:',
+			#protocol : #'events handling',
+			#sourceCode : 'onTitleChanged: anAnnouncement',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #'onTitleChanged:',
+			#protocol : #'events handling',
+			#sourceCode : 'onTitleChanged: anAnnouncement\r\tself notifyLscViewModelTitleChanged',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-24T20:06:12.215689+01:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #notifyLscViewModelTitleChanged,
+			#protocol : #'events generation',
+			#sourceCode : 'notifyLscViewModelTitleChanged\r\tself announce: (GtLscViewModelTitleChanged new )',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}

@@ -821,7 +821,154 @@
 										"__type" : "textSnippet",
 										"children" : {
 											"__type" : "snippets",
-											"items" : [ ]
+											"items" : [
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-03-24T13:02:50.608145+01:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-03-24T13:03:31.996063+01:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "I8zIHnftDQCqa/ojB6FWng=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "We added the *Trait* {{gtClass:TGtAnnouncer}} to {{gtClass:GtLscModel|label=Model}} to be able to announce its changes."
+												},
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-03-24T13:04:11.195409+01:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-03-24T13:05:19.263293+01:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "LHyWI3ftDQCqgbEaB6FWng=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "We created *slot* *announcer* for it."
+												},
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-03-24T13:03:46.160487+01:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-03-24T13:35:32.505835+01:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "jHoYInftDQCqdm3fB6FWng=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "We overwrite {{gtMethod:TGtAnnouncer>>announcer}}."
+												},
+												{
+													"__type" : "changesSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-03-22T18:37:31.681553+01:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-03-22T18:37:31.681553+01:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "8O8GkFPtDQC4wxDNB1vRgg=="
+													},
+													"previewHeight" : 400,
+													"fileName" : "attachments/7qt64km1gdwfynysfjfhr4388/Pharo11-SNAPSHOT-64bit-aece1b5.3CA644115BD0.ombu"
+												}
+											]
 										},
 										"createEmail" : {
 											"__type" : "email",
@@ -855,10 +1002,46 @@
 										"string" : "Create an announcer for {{gtClass:GtLscModel|label=Model}}"
 									},
 									{
-										"__type" : "changesSnippet",
+										"__type" : "textSnippet",
 										"children" : {
 											"__type" : "snippets",
-											"items" : [ ]
+											"items" : [
+												{
+													"__type" : "changesSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-03-24T20:09:17.453121+01:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-03-24T20:09:17.453121+01:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "cBjhE33tDQCvXtj4AGtJ1A=="
+													},
+													"previewHeight" : 400,
+													"fileName" : "attachments/ev83nlf3bw0yzs8e7xazg8oox/Pharo11-SNAPSHOT-64bit-aece1b5.42DE78200FA0.ombu"
+												}
+											]
 										},
 										"createEmail" : {
 											"__type" : "email",
@@ -868,7 +1051,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-03-22T18:37:31.681553+01:00"
+												"dateAndTimeString" : "2025-03-24T20:09:06.932261+01:00"
 											}
 										},
 										"editEmail" : {
@@ -879,15 +1062,17 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-03-22T18:37:31.681553+01:00"
+												"dateAndTimeString" : "2025-03-24T20:09:08.538155+01:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
-											"uidString" : "8O8GkFPtDQC4wxDNB1vRgg=="
+											"uidString" : "z+fLEX3tDQCvGltmAGtJ1A=="
 										},
-										"previewHeight" : 400,
-										"fileName" : "attachments/7qt64km1gdwfynysfjfhr4388/Pharo11-SNAPSHOT-64bit-aece1b5.3CA644115BD0.ombu"
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Same for {{gtClass:GtLscViewModel|label=ViewModel}}"
 									}
 								]
 							},

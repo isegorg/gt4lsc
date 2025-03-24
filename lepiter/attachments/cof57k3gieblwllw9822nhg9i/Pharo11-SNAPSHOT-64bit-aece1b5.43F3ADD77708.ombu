@@ -1,0 +1,73 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-24T20:51:09.405288+01:00' ],
+		#prior : OmReference [ 'Pharo11-SNAPSHOT-64bit-aece1b5.432521AC9F20', '43' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #TGtWithLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #'lscViewModel:',
+			#protocol : #'api - lsc view model',
+			#sourceCode : 'lscViewModel: aLscViewModel\r\t"Set a not-null Lsc view model assigned to the receiver element"\r\tself\r\t\tassert: [ aLscViewModel notNil ]\r\t\tdescription: [ \'Lsc view model must not be nil\' ].\r\r\tlscViewModel == aLscViewModel \r\t\tifTrue: [ ^ self ].\r\r\tlscViewModel := aLscViewModel.\r\t\r\tself onLscViewModelChanged.',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #TGtWithLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #'lscViewModel:',
+			#protocol : #'api - lsc view model',
+			#sourceCode : 'lscViewModel: aLscViewModel\r\t"Set a not-null Lsc view model assigned to the receiver element"\r\tself\r\t\tassert: [ aLscViewModel notNil ]\r\t\tdescription: [ \'Lsc view model must not be nil\' ].\r\r\tlscViewModel == aLscViewModel \r\t\tifTrue: [ ^ self ].\r\r\tlscViewModel ifNotNil: [ self unsubscribeFromLscViewModel ].\r\tlscViewModel := aLscViewModel.\r\r\tself onLscViewModelChanged.\r\tself subscribeToLscViewModel',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-24T20:51:36.922261+01:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #TGtWithLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #unsubscribeFromLscViewModel,
+			#protocol : #'api - lsc view model',
+			#sourceCode : 'unsubscribeFromLscViewModel\r\t"Is sent before a new Lsc view model is assigned to the element.\r\tElements that subscribe to Lsc view model in domain model are required to implement this methods"',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-24T20:51:43.716896+01:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #TGtWithLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #subscribeToLscViewModel,
+			#protocol : #'api - lsc view model',
+			#sourceCode : 'subscribeToLscViewModel\r\t"Is sent after a new Lsc view model is assigned to the element.\r\tIt is required to unsubscribe from the view model or domain model by implementing\r\t#unsubscribeFromLscViewModel if elements subscribe to them"',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}

@@ -254,7 +254,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-03-22T18:44:52.436504+01:00"
+									"dateAndTimeString" : "2025-03-24T13:23:55.018394+01:00"
 								}
 							},
 							"uid" : {
@@ -264,7 +264,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Checking the initial features view of the model]]"
+							"string" : "[[Checking view features with the initial model]]"
 						},
 						{
 							"__type" : "textSnippet",
@@ -291,7 +291,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-03-22T14:47:10.111274+01:00"
+									"dateAndTimeString" : "2025-03-24T12:38:38.340161+01:00"
 								}
 							},
 							"uid" : {
@@ -301,7 +301,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Comprobación en la vista de características modificadas del modelo]]"
+							"string" : "[[Checking view features with the modified model]]"
 						},
 						{
 							"__type" : "textSnippet",
@@ -328,7 +328,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-03-22T14:48:10.294257+01:00"
+									"dateAndTimeString" : "2025-03-24T21:16:59.507948+01:00"
 								}
 							},
 							"uid" : {
@@ -338,7 +338,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Comprobación en el modelo de características modificadas en la vista]]"
+							"string" : "[[Checking the model for modified features in the view]]"
 						},
 						{
 							"__type" : "textSnippet",

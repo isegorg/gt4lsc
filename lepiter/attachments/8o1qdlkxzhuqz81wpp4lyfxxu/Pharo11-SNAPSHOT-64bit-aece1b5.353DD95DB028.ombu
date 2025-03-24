@@ -1,0 +1,78 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-24T16:21:55.654099+01:00' ],
+		#prior : OmReference [ 'Pharo11-SNAPSHOT-64bit-aece1b5.34A1754BA230', '5' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #subscribeToLscModel,
+			#protocol : #'api - lsc model',
+			#sourceCode : 'subscribeToLscModel\r\t"Is sent after a new lsc model is assigned to the view model.\r\tIt is required to unsubscribe from the domain model by implementing\r\t#unsubscribeFromLscModel if view model subscribes to them"',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #subscribeToLscModel,
+			#protocol : #'api - lsc model',
+			#sourceCode : 'subscribeToLscModel\r\t"Is sent after a new lsc model is assigned to the view model.\r\tIt is required to unsubscribe from the domain model by implementing\r\t#unsubscribeFromLscModel if view model subscribes to them"\r\t\r\tself lscModel weak\r\t\twhen: GtLscTitleChanged\r\t\t\tsend: #onTitleChanged:\r\t\t\tto: self',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}
+
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-24T16:29:19.591077+01:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #'onTitleChanged:',
+			#protocol : #'events handling',
+			#sourceCode : 'onTitleChanged: anAnnouncement',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}
+
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-24T16:32:28.85946+01:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #unsubscribeFromLscModel,
+			#protocol : #'api - lsc model',
+			#sourceCode : 'unsubscribeFromLscModel\r\t"Is sent before a new lsc model is assigned to the view model.\r\tView models that subscribe to lsc model are required to implement this methods\r\tself lscModel unsubscribe: self"',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}
+

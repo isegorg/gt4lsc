@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-03-22T14:47:46.367017+01:00"
+						"dateAndTimeString" : "2025-03-24T21:17:14.208421+01:00"
 					}
 				},
 				"editEmail" : {
@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-03-22T14:47:46.367017+01:00"
+						"dateAndTimeString" : "2025-03-24T21:17:14.227277+01:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Modificaremos el *Title* en {{gtClass:GtLscElement|label=View}} para comprobar que se modifica en su {{gtClass:GtLscModel|label=Model}}."
+				"string" : "We will modify the *Title* in {{gtClass:GtLscElement|label=View}} to check that it is modified in its {{gtClass:GtLscModel|label=Model}}."
 			},
 			{
 				"__type" : "textSnippet",
@@ -66,7 +66,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-03-22T14:47:46.370449+01:00"
+						"dateAndTimeString" : "2025-03-24T21:17:47.680405+01:00"
 					}
 				},
 				"uid" : {
@@ -76,7 +76,42 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Para comprobar que el ciclo de edición ({{gtClass:GtLscElement|label=View}}  -->  {{gtClass:GtLscViewModel|label=ViewModel}}  -->  {{gtClass:GtLscModel|label=Model}}) **modifica** el *LSC*, creamos el ejemplo {{gtMethod:GtLscElementScripterExamples>>pipelineLscChangeTitle}}."
+				"string" : "To check that the editing cycle ({{gtClass:GtLscElement|label=View}} --> {{gtClass:GtLscViewModel|label=ViewModel}} --> {{gtClass:GtLscModel|label=Model}}) **modifies** the *LSC*, we create the example {{gtMethod:GtLscElementScripterExamples>>pipelineLscChangeTitle}}."
+			},
+			{
+				"__type" : "changesSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-03-24T21:17:52.291164+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-03-24T21:17:52.291164+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "A4skCX7tDQC20d9mAOCtRg=="
+				},
+				"previewHeight" : 200,
+				"fileName" : ""
 			},
 			{
 				"__type" : "textSnippet",
@@ -397,12 +432,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2025-03-22T14:47:28.995708+01:00"
+			"dateAndTimeString" : "2025-03-24T21:16:59.475046+01:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Comprobación en el modelo de características modificadas en la vista"
+		"title" : "Checking the model for modified features in the view"
 	},
 	"uid" : {
 		"__type" : "uuid",

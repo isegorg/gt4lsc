@@ -1017,12 +1017,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2025-03-22T19:35:46.128968+01:00"
+			"dateAndTimeString" : "2025-03-24T12:49:37.095407+01:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Checking the initial features view of the model"
+		"title" : "Checking view features with the initial model"
 	},
 	"uid" : {
 		"__type" : "uuid",

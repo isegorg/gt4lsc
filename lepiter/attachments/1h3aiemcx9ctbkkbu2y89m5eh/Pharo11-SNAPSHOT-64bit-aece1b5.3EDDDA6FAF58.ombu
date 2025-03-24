@@ -139,7 +139,7 @@ OmEntry {
 				#isMetaSide : false
 			},
 			#name : #'title:',
-			#protocol : #acccessing,
+			#protocol : #accessing,
 			#sourceCode : 'title: aString\r\tself title = aString ifTrue: [ ^ self ].\r\r\ttitle := aString.',
 			#stamp : '',
 			#package : #Gt4Lsc

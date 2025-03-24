@@ -1,0 +1,21 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-24T12:45:52.825554+01:00' ],
+		#prior : OmReference [ 'Pharo11-SNAPSHOT-64bit-aece1b5.4AE9B1FEF700', '7' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscElementScripterExamples,
+				#isMetaSide : false
+			},
+			#name : #renderLscWithTitleChanged,
+			#protocol : #'examples - ui',
+			#sourceCode : 'renderLscWithTitleChanged\r\t"Check that ui element shows the model title change"\r\r\t<gtExample>\r\t| lsc uiElement newTitle |\r\tlsc := GtLscModelExamples new newLsc.\r\tuiElement := lsc asElement.\r\t\r\tnewTitle := \'Title to check\'.\r\tlsc title: newTitle.\r\tself assert: (uiElement instVarNamed: #titleElement) text asString equals: lsc title.\r\t^ uiElement',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}
