@@ -1,0 +1,53 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-25T10:06:37.169474+01:00' ],
+		#prior : OmReference [ 'Pharo11-SNAPSHOT-64bit-aece1b5.2080BB554B80', '6' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscElement,
+				#isMetaSide : false
+			},
+			#name : #createTitleElement,
+			#protocol : #initialization,
+			#sourceCode : 'createTitleElement\r\t^ BrEditableLabel new\r\t\thFitContentLimited;\r\t\tvFitContent;\r\t\taptitude: BrGlamorousRegularEditorAptitude new;\r\t\tconstraintsDo: [ :c | c linear horizontal alignCenter ];\r\t\ttext: \'Title\'',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscElement,
+				#isMetaSide : false
+			},
+			#name : #createTitleElement,
+			#protocol : #initialization,
+			#sourceCode : 'createTitleElement\r\t^ BrEditableLabel new\r\t\thFitContentLimited;\r\t\tvFitContent;\r\t\taptitude: BrGlamorousRegularEditorAptitude new;\r\t\tconstraintsDo: [ :c | c linear horizontal alignCenter ];\r\t\twhen: BrEditorAcceptWish do: [ :aWish | self onAcceptNewTitleWish: aWish ];\r\t\ttext: \'Title\'',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-25T11:31:02.995389+01:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscElement,
+				#isMetaSide : false
+			},
+			#name : #'onAcceptNewTitleWish:',
+			#protocol : #'events handling',
+			#sourceCode : 'onAcceptNewTitleWish: aWish \r\tself hasLscViewModel ifFalse: [ ^ self ].\r\tself lscViewModel title: aWish text asString',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}

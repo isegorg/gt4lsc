@@ -1,0 +1,43 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-25T09:52:40.218011+01:00' ],
+		#prior : OmReference [ 'Pharo11-SNAPSHOT-64bit-aece1b5.46B80BE0F150', '1' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscElementScripterExamples,
+				#isMetaSide : false
+			},
+			#name : #pipelineLscChangeTitle,
+			#protocol : #'examples - ui',
+			#sourceCode : 'pipelineLscChangeTitle\r\t"Check that ui title change update the model"\r\t\r\t<gtExample>\r\t| uiElement titleElement lsc newTitle |\r\tuiElement := self renderNewLsc.\r\tlsc := uiElement lscViewModel lscModel.\r\ttitleElement := uiElement instVarNamed: #titleElement.\r\t\r\tnewTitle := \'New Scenario Title\'.\r\tself assert: [ (uiElement titleString) ~= newTitle ].\r\t\r\ttitleElement switchToEditor.\r\t\r\tself assert: titleElement isEditable.\r\tself assert: titleElement viewModel model asString equals: titleElement text asString.\r\t\r\ttitleElement text\r\t\tdeleteAll;\r\t\tappend: newTitle asRopedText.\r\t\t\r\ttitleElement acceptEdition.\r\t\r\t"the original text is stored in order to be restored if edition cancelled"\r\tself assert: titleElement text asString equals: newTitle.\r\tself assert: lsc title equals: newTitle.\r\t\r\t^ uiElement',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}
+
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-25T11:48:14.469562+01:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscElement,
+				#isMetaSide : false
+			},
+			#name : #titleString,
+			#protocol : #api,
+			#sourceCode : 'titleString\r\t^ titleElement text asString',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}

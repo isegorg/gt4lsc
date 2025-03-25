@@ -117,7 +117,7 @@ OmEntry {
 				#isMetaSide : false
 			},
 			#name : #initialize,
-			#protocol : #initalization,
+			#protocol : #initialization,
 			#sourceCode : 'initialize\r\tsuper initialize.\r\t\r\ttitleElement := self createTitleElement.\r\t\r\tself addChildren: {titleElement}',
 			#stamp : '',
 			#package : #Gt4Lsc
@@ -139,7 +139,7 @@ OmEntry {
 				#isMetaSide : false
 			},
 			#name : #createTitleElement,
-			#protocol : #initalization,
+			#protocol : #initialization,
 			#sourceCode : 'createTitleElement\r\t^ BrEditableLabel new\r\t\thFitContentLimited;\r\t\tvFitContent;\r\t\taptitude: BrGlamorousRegularEditorAptitude new;\r\t\tconstraintsDo: [ :c | c linear horizontal alignCenter ];\r\t\ttext: \'Title\'',
 			#stamp : '',
 			#package : #Gt4Lsc
@@ -183,7 +183,7 @@ OmEntry {
 				#isMetaSide : false
 			},
 			#name : #onTitleChanged,
-			#protocol : #'event handling',
+			#protocol : #'events handling',
 			#sourceCode : 'onTitleChanged\r\ttitleElement text: self lscViewModel title',
 			#stamp : '',
 			#package : #Gt4Lsc
