@@ -1,0 +1,41 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-01T19:28:30.763958+02:00' ],
+		#prior : OmReference [ 'Pharo11-SNAPSHOT-64bit-aece1b5.3F35C23B3260', '5' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceModel,
+				#isMetaSide : false
+			},
+			#name : #asElement,
+			#protocol : #converting,
+			#sourceCode : 'asElement\r\t^ GtLscInstanceElement new\r\t\tlscInstanceViewModel: (GtLscInstanceViewModel new lscInstanceModel: self);\r\t\tyourself',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-01T19:29:23.010565+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceModel,
+				#isMetaSide : false
+			},
+			#name : #'gtLiveFor:',
+			#protocol : #'gt - extensions',
+			#sourceCode : 'gtLiveFor: aView\r\t<gtView>\r\t^ aView explicit\r\t\ttitle: \'Live\';\r\t\tpriority: 2;\r\t\tstencil: [ self asElement ]',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}

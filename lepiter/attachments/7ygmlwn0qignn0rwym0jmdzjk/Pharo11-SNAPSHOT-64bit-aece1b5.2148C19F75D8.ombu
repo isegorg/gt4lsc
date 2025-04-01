@@ -1,0 +1,115 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-01T10:11:59.766149+02:00' ],
+		#prior : OmReference [ 'Pharo11-SNAPSHOT-64bit-aece1b5.2E1AF7C1AB20', '13' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpCategoryAddition {
+		#classCategoryName : #Gt4Lsc-Helpers,
+		#affectedPackageName : #Gt4Lsc
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-01T10:11:59.78989+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpClassAddition {
+		#class : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : 'Object',
+				#definitionSource : 'Object subclass: #GtLscConstants\r\tinstanceVariableNames: \'\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4Lsc-Helpers\'',
+				#traitCompositionSource : '{}'
+			},
+			#name : #GtLscConstants,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#definitionSource : 'GtLscConstants class\r\tinstanceVariableNames: \'\'',
+					#traitCompositionSource : '{}'
+				},
+				#name : #'GtLscConstants class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @7
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#className : #GtLscConstants,
+					#isMetaSide : false
+				},
+				#parent : @7,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#category : #Gt4Lsc-Helpers,
+			#package : #Gt4Lsc,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-01T10:12:32.924159+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscConstants class',
+				#isMetaSide : true
+			},
+			#name : #locationLineId,
+			#protocol : #'api - constants',
+			#sourceCode : 'locationLineId\r\t^ #locationLine',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-01T10:13:14.601878+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscConstants class',
+				#isMetaSide : true
+			},
+			#name : #locationElementId,
+			#protocol : #'api - constants',
+			#sourceCode : 'locationElementId\r\t^ #locationElement',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-01T10:13:41.792493+02:00' ],
+		#prior : OmReference [ '4' ],
+		#self : OmReference [ '5' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscConstants class',
+				#isMetaSide : true
+			},
+			#name : #locationLineWidth,
+			#protocol : #'api - constants',
+			#sourceCode : 'locationLineWidth\r\t^ 5',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}

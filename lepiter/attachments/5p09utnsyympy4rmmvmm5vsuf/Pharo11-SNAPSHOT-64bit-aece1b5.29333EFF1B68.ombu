@@ -1,0 +1,160 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-31T12:38:51.956121+02:00' ],
+		#prior : OmReference [ 'Pharo11-SNAPSHOT-64bit-aece1b5.27CA734FF910', '44' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpTraitAddition {
+		#trait : RGTraitDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Trait,
+				#definitionSource : 'Trait named: #TGtWithLscInstanceViewModel\r\tinstanceVariableNames: \'lscInstanceViewModel\'\r\tpackage: \'Gt4Lsc-! Views\'',
+				#traitCompositionSource : '{}'
+			},
+			#name : #TGtWithLscInstanceViewModel,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#metaClass : RGMetatraitDefinition {
+				#annotations : IdentityDictionary {
+					#definitionSource : 'TGtWithLscInstanceViewModel classTrait\r\tinstanceVariableNames: \'\'',
+					#traitCompositionSource : '{}'
+				},
+				#name : #'TGtWithLscInstanceViewModel classTrait',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#baseClass : @7
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#className : #TGtWithLscInstanceViewModel,
+					#isMetaSide : false
+				},
+				#parent : @7,
+				#content : ''
+			},
+			#category : #'Gt4Lsc-! Views',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-31T12:40:43.213662+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #TGtWithLscInstanceViewModel,
+				#isMetaSide : false
+			},
+			#name : #hasLscInstanceViewModel,
+			#protocol : #'api - lsc instance view model',
+			#sourceCode : 'hasLscInstanceViewModel\r\t"Return a true if Lsc instance view model is assigned to the receiver element, false otherwise"\r\t<return: #Boolean>\r\r\t^ lscInstanceViewModel notNil',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-31T12:42:00.285205+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #TGtWithLscInstanceViewModel,
+				#isMetaSide : false
+			},
+			#name : #lscInstanceViewModel,
+			#protocol : #'api - lsc instance view model',
+			#sourceCode : 'lscInstanceViewModel\r\t"Return a not-null Lsc instance view model assigned to the receiver element"\r\tself\r\t\tassert: [ lscInstanceViewModel notNil ]\r\t\tdescription: [ \'Lsc instance view model should be initialized\' ].\r\r\t^ lscInstanceViewModel',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-31T12:44:11.535771+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #TGtWithLscInstanceViewModel,
+				#isMetaSide : false
+			},
+			#name : #'lscInstanceViewModel:',
+			#protocol : #'api - lsc instance view model',
+			#sourceCode : 'lscInstanceViewModel: aLscInstanceViewModel\r\t"Set a not-null Lsc instance view model assigned to the receiver element"\r\tself\r\t\tassert: [ lscInstanceViewModel notNil ]\r\t\tdescription: [ \'Lsc instance view model must not be nil\' ].\r\r\tlscInstanceViewModel == aLscInstanceViewModel \r\t\tifTrue: [ ^ self ].\r\r\tlscInstanceViewModel ifNotNil: [ self unsubscribeFromLscInstanceViewModel ].\r\tlscInstanceViewModel := aLscInstanceViewModel.\r\r\tself onLscInstanceViewModelChanged.\r\tself subscribeToLscInstanceViewModel',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-31T12:45:51.276441+02:00' ],
+		#prior : OmReference [ '4' ],
+		#self : OmReference [ '5' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #TGtWithLscInstanceViewModel,
+				#isMetaSide : false
+			},
+			#name : #subscribeToLscInstanceViewModel,
+			#protocol : #'api - lsc instance view model',
+			#sourceCode : 'subscribeToLscInstanceViewModel\r\t"Is sent after a new Lsc instance view model is assigned to the element.\r\tIt is required to unsubscribe from the view model or domain model by implementing\r\t#unsubscribeFromLscInstanceViewModel if elements subscribe to them"',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-31T12:46:37.704234+02:00' ],
+		#prior : OmReference [ '5' ],
+		#self : OmReference [ '6' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #TGtWithLscInstanceViewModel,
+				#isMetaSide : false
+			},
+			#name : #unsubscribeFromLscInstanceViewModel,
+			#protocol : #'api - lsc instance view model',
+			#sourceCode : 'unsubscribeFromLscInstanceViewModel\r\t"Is sent before a new Lsc instance view model is assigned to the element.\r\tElements that subscribe to Lsc instance view model in domain model are required to implement this methods"',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-03-31T12:47:22.540069+02:00' ],
+		#prior : OmReference [ '6' ],
+		#self : OmReference [ '7' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #TGtWithLscInstanceViewModel,
+				#isMetaSide : false
+			},
+			#name : #onLscInstanceViewModelChanged,
+			#protocol : #'api - lsc instance view model',
+			#sourceCode : 'onLscInstanceViewModelChanged\r\t"Is sent when a new Lsc instance view model is assigned to the element"\r\t\r\tself explicitRequirement',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}

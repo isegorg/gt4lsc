@@ -1,0 +1,130 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-01T15:41:50.120679+02:00' ],
+		#prior : OmReference [ 'Pharo11-SNAPSHOT-64bit-aece1b5.2B7591620480', '13' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpClassAddition {
+		#class : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : 'Object',
+				#definitionSource : 'Object subclass: #GtLscTemperature\r\tinstanceVariableNames: \'\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4Lsc-! Model\'',
+				#traitCompositionSource : '{}'
+			},
+			#name : #GtLscTemperature,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#definitionSource : 'GtLscTemperature class\r\tinstanceVariableNames: \'\'',
+					#traitCompositionSource : '{}'
+				},
+				#name : #'GtLscTemperature class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @7
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#className : #GtLscTemperature,
+					#isMetaSide : false
+				},
+				#parent : @7,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#category : #'Gt4Lsc-! Model',
+			#package : #Gt4Lsc,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-01T15:41:58.308754+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpClassAddition {
+		#class : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : 'GtLscTemperature',
+				#definitionSource : 'GtLscTemperature subclass: #GtLscColdTemperature\r\tinstanceVariableNames: \'\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4Lsc-! Model\'',
+				#traitCompositionSource : '{}'
+			},
+			#name : #GtLscColdTemperature,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#definitionSource : 'GtLscColdTemperature class\r\tinstanceVariableNames: \'\'',
+					#traitCompositionSource : '{}'
+				},
+				#name : #'GtLscColdTemperature class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @7
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#className : #GtLscColdTemperature,
+					#isMetaSide : false
+				},
+				#parent : @7,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#category : #'Gt4Lsc-! Model',
+			#package : #Gt4Lsc,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-01T15:42:03.131558+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpClassAddition {
+		#class : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : 'GtLscTemperature',
+				#definitionSource : 'GtLscTemperature subclass: #GtLscHotTemperature\r\tinstanceVariableNames: \'\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4Lsc-! Model\'',
+				#traitCompositionSource : '{}'
+			},
+			#name : #GtLscHotTemperature,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#definitionSource : 'GtLscHotTemperature class\r\tinstanceVariableNames: \'\'',
+					#traitCompositionSource : '{}'
+				},
+				#name : #'GtLscHotTemperature class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @7
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#className : #GtLscHotTemperature,
+					#isMetaSide : false
+				},
+				#parent : @7,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#category : #'Gt4Lsc-! Model',
+			#package : #Gt4Lsc,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}

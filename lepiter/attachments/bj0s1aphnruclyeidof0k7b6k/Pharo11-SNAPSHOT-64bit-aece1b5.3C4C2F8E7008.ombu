@@ -1,0 +1,21 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-01T18:39:17.011652+02:00' ],
+		#prior : OmReference [ 'Pharo11-SNAPSHOT-64bit-aece1b5.3C1BE7EC3300', '4' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscElementScripterExamples,
+				#isMetaSide : false
+			},
+			#name : #renderNewLscInstance,
+			#protocol : #'examples - ui',
+			#sourceCode : 'renderNewLscInstance\r\t"Check that the LscInstance UI element displays the model\'s characteristics"\r\r\t<gtExample>\r\t| lscInstance uiElement |\r\tlscInstance := GtLscInstanceModelExamples new newLscInstance.\r\tuiElement := lscInstance asElement.\r\t\r\t"Check title"\r\tself assert: (uiElement instVarNamed: #nameElement) text asString equals: lscInstance name.\r\t"Check locationLine border"\r\t^ uiElement',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}

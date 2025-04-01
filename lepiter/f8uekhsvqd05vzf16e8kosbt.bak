@@ -408,43 +408,6 @@
 					"__type" : "textStyle"
 				},
 				"string" : "Finally the example is successful {{gtExample:GtLscElementScripterExamples>>pipelineLscChangeTitle}}"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-03-22T14:47:46.383604+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-03-22T14:47:46.383604+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "/f5bWlDtDQCM18C4BT0nBw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "{{gtClass:GtLscModel|label=Model}}"
 			}
 		]
 	},
