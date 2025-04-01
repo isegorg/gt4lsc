@@ -4,8 +4,9 @@ Class {
 	#traits : 'TGtAnnouncer',
 	#classTraits : 'TGtAnnouncer classTrait',
 	#instVars : [
+		'announcer',
 		'title',
-		'announcer'
+		'instances'
 	],
 	#category : #'Gt4Lsc-! Model'
 }
@@ -38,9 +39,10 @@ GtLscModel >> gtLiveFor: aView [
 		stencil: [ self asElement ]
 ]
 
-{ #category : #'initialization ' }
+{ #category : #initialization }
 GtLscModel >> initialize [
-	title := self class defaultTitle
+	title := self class defaultTitle.
+	instances := OrderedCollection empty
 ]
 
 { #category : #'events generation' }

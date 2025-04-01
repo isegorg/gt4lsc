@@ -1,13 +1,19 @@
 Class {
 	#name : #GtLscElement,
 	#superclass : #BlElement,
-	#traits : 'TGtWithLscViewModel',
-	#classTraits : 'TGtWithLscViewModel classTrait',
+	#traits : 'TGtWithLscViewModel + TBrLayoutResizable',
+	#classTraits : 'TGtWithLscViewModel classTrait + TBrLayoutResizable classTrait',
 	#instVars : [
-		'titleElement'
+		'titleElement',
+		'canvasContainer'
 	],
 	#category : #'Gt4Lsc-! Views'
 }
+
+{ #category : #initialization }
+GtLscElement >> createCanvasContainer [
+	^ BrFrame new matchParent; id: #canvasContainer
+]
 
 { #category : #initialization }
 GtLscElement >> createTitleElement [
@@ -22,12 +28,20 @@ GtLscElement >> createTitleElement [
 ]
 
 { #category : #initialization }
+GtLscElement >> defaultLayout [
+	^ BlLinearLayout vertical
+]
+
+{ #category : #initialization }
 GtLscElement >> initialize [
 	super initialize.
 	
 	titleElement := self createTitleElement.
+	canvasContainer := self createCanvasContainer.
 	
-	self addChildren: {titleElement}
+	self addChildren: {titleElement. canvasContainer}.
+	
+	self matchParent
 ]
 
 { #category : #'event handling' }

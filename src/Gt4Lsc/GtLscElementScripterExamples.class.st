@@ -63,3 +63,18 @@ GtLscElementScripterExamples >> renderNewLsc [
 	self assert: (uiElement instVarNamed: #titleElement) text asString equals: lsc title.
 	^ uiElement
 ]
+
+{ #category : #'examples - ui' }
+GtLscElementScripterExamples >> renderNewLscInstance [
+	"Check that the LscInstance UI element displays the model's characteristics"
+
+	<gtExample>
+	| lscInstance uiElement |
+	lscInstance := GtLscInstanceModelExamples new newLscInstance.
+	uiElement := lscInstance asElement.
+	
+	"Check title"
+	self assert: (uiElement instVarNamed: #nameElement) text asString equals: lscInstance name.
+	"Check locationLine border"
+	^ uiElement
+]
