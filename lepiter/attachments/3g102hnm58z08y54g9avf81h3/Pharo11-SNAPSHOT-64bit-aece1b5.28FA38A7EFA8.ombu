@@ -13,7 +13,7 @@ OmEntry {
 			},
 			#name : #renderLscWithTitleChanged,
 			#protocol : #'examples - ui',
-			#sourceCode : 'renderLscWithTitleChanged\r\t"Check that ui element shows the model title change"\r\r\t<gtExample>\r\t| lsc uiElement newTitle |\r\tlsc := GtLscModelExamples new newLsc.\r\tuiElement := lsc asElement.\r\t\r\tnewTitle := \'Title to check\'.\r\tlsc title: newTitle.\r\tself assert: (uiElement instVarNamed: #titleElement) text asString equals: lsc title.\r\t^ uiElement',
+			#sourceCode : 'renderLscWithTitleChanged\r\t"Check that ui element shows the model title change"\r\r\t<gtExample>\r\t| lsc uiElement newTitle |\r\tlsc := GtLscModelExamples new newLsc.\r\tuiElement := lsc asElement.\r\t\r\tnewTitle := \'Title to check\'.\r\tlsc title: newTitle.\r\t\r\t"Check title"\r\tself assert: (uiElement instVarNamed: #titleElement) text asString equals: lsc title.\r\t^ uiElement',
 			#stamp : '',
 			#package : #Gt4Lsc
 		}

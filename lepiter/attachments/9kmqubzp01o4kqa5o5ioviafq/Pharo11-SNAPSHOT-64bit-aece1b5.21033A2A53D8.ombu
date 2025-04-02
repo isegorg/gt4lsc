@@ -24,7 +24,7 @@ OmEntry {
 			},
 			#name : #createTitleElement,
 			#protocol : #initialization,
-			#sourceCode : 'createTitleElement\r\t^ BrEditableLabel new\r\t\thFitContentLimited;\r\t\tvFitContent;\r\t\taptitude: BrGlamorousRegularEditorAptitude new;\r\t\tconstraintsDo: [ :c | c linear horizontal alignCenter ];\r\t\twhen: BrEditorAcceptWish do: [ :aWish | self onAcceptNewTitleWish: aWish ];\r\t\ttext: \'Title\'',
+			#sourceCode : 'createTitleElement\r\t^ BrEditableLabel new\r\t\thFitContentLimited;\r\t\tvFitContent;\r\t\taptitude: BrGlamorousRegularEditorAptitude + BrGlamorousEditorSpacingAptitude;\r\t\tconstraintsDo: [ :c | c linear horizontal alignCenter ];\r\t\twhen: BrEditorAcceptWish do: [ :aWish | self onAcceptNewTitleWish: aWish ];\r\t\ttext: \'Title\'',
 			#stamp : '',
 			#package : #Gt4Lsc
 		},

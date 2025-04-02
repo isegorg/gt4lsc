@@ -656,7 +656,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-04-01T21:11:51.184027+02:00"
+						"dateAndTimeString" : "2025-04-02T10:38:01.975936+02:00"
 					}
 				},
 				"uid" : {
@@ -666,7 +666,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "We are going to create a generic lsc instances view, composed by a rectangle for the name and a vertical line for location."
+				"string" : "We are going to create a generic lsc instances view, composed by a {{gtClass:BrEditableLabel}} for the name and a vertical line for location."
 			},
 			{
 				"__type" : "textSnippet",

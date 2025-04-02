@@ -391,7 +391,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-04-01T21:15:59.631034+02:00"
+									"dateAndTimeString" : "2025-04-01T21:25:06.423214+02:00"
 								}
 							},
 							"uid" : {
@@ -401,7 +401,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "And we use them in {{gtClass:GtLscInstanceViewModel}} and {{gtClass:GtLscInstanceElement}} repectively"
+							"string" : "And we use them in {{gtClass:GtLscInstanceViewModel}} and {{gtClass:GtLscInstanceElement}} repectively."
 						}
 					]
 				},

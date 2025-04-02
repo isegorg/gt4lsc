@@ -69,7 +69,7 @@ OmEntry {
 			},
 			#name : #unsubscribeFromLscModel,
 			#protocol : #'api - lsc model',
-			#sourceCode : 'unsubscribeFromLscModel\r\t"Is sent before a new lsc model is assigned to the view model.\r\tView models that subscribe to lsc model are required to implement this methods\r\tself lscModel unsubscribe: self"',
+			#sourceCode : 'unsubscribeFromLscModel\r\t"Is sent before a new lsc model is assigned to the view model.\r\tView models that subscribe to lsc model are required to implement this methods"\r\t\r\tself lscModel unsubscribe: self',
 			#stamp : '',
 			#package : #Gt4Lsc
 		}
