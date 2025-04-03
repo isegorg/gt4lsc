@@ -1,0 +1,61 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-03T15:50:17.30009+02:00' ],
+		#prior : OmReference [ 'Pharo11-SNAPSHOT-64bit-aece1b5.33808E1F5EB8', '4' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceElement,
+				#isMetaSide : false
+			},
+			#name : #onLscInstanceViewModelChanged,
+			#protocol : #'api - lsc instance view model',
+			#sourceCode : 'onLscInstanceViewModelChanged\r\t"Is sent when a new Lsc instance view model is assigned to the element"\r\t\r\tself onNameChanged.\r\tself onTemperatureStateChanged.',
+			#stamp : 'GlamorousAuthor 4/3/2025 15:50',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-03T15:50:36.794292+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceElement,
+				#isMetaSide : false
+			},
+			#name : #onNameChanged,
+			#protocol : #'events handling',
+			#sourceCode : 'onNameChanged\r\tnameElement text: self lscInstanceViewModel name',
+			#stamp : 'GlamorousAuthor 4/3/2025 15:50',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-03T15:52:04.39119+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceElement,
+				#isMetaSide : false
+			},
+			#name : #onTemperatureStateChanged,
+			#protocol : #'events handling',
+			#sourceCode : 'onTemperatureStateChanged\r\tself locationLineElement states addState: self lscInstanceViewModel temperatureState',
+			#stamp : 'GlamorousAuthor 4/3/2025 15:52',
+			#package : #Gt4Lsc
+		}
+	}
+}

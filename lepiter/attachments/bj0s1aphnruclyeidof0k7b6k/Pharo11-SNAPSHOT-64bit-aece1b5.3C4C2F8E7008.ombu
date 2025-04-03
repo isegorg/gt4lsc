@@ -13,9 +13,29 @@ OmEntry {
 			},
 			#name : #renderNewLscInstance,
 			#protocol : #'examples - ui',
-			#sourceCode : 'renderNewLscInstance\r\t"Check that the LscInstance UI element displays the model\'s characteristics"\r\r\t<gtExample>\r\t| lscInstance uiElement |\r\tlscInstance := GtLscInstanceModelExamples new newLscInstance.\r\tuiElement := lscInstance asElement.\r\t\r\t"Check title"\r\tself assert: (uiElement instVarNamed: #nameElement) text asString equals: lscInstance name.\r\t"Check locationLine border"\r\t^ uiElement',
+			#sourceCode : 'renderNewLscInstance\r\t"Check that the LscInstance UI element displays the model\'s characteristics"\r\r\t<gtExample>\r\t| lscInstance uiElement locationLine|\r\tlscInstance := GtLscInstanceModelExamples new newLscInstance.\r\tuiElement := lscInstance asElement.\r\t\r\t"Check title"\r\tself assert: (uiElement instVarNamed: #nameElement) text asString equals: lscInstance name.\r\t"Check locationLine border"\r\tlocationLine := uiElement childNamed: GtLscConstants locationLineId.\r\tself assert: locationLine border paint equals: GtLscConstants hotColor asBlPaint.\r\t\r\t^ uiElement',
 			#stamp : '',
 			#package : #Gt4Lsc
 		}
 	}
-}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-03T15:17:08.581922+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceElement,
+				#isMetaSide : false
+			},
+			#name : #locationLineElement,
+			#protocol : #'private - accessing',
+			#sourceCode : 'locationLineElement\r\t^ self childNamed: GtLscConstants locationLineId',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}

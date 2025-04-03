@@ -92,7 +92,7 @@ OmEntry {
 			},
 			#name : #'lscInstanceViewModel:',
 			#protocol : #'api - lsc instance view model',
-			#sourceCode : 'lscInstanceViewModel: aLscInstanceViewModel\r\t"Set a not-null Lsc instance view model assigned to the receiver element"\r\tself\r\t\tassert: [ lscInstanceViewModel notNil ]\r\t\tdescription: [ \'Lsc instance view model must not be nil\' ].\r\r\tlscInstanceViewModel == aLscInstanceViewModel \r\t\tifTrue: [ ^ self ].\r\r\tlscInstanceViewModel ifNotNil: [ self unsubscribeFromLscInstanceViewModel ].\r\tlscInstanceViewModel := aLscInstanceViewModel.\r\r\tself onLscInstanceViewModelChanged.\r\tself subscribeToLscInstanceViewModel',
+			#sourceCode : 'lscInstanceViewModel: aLscInstanceViewModel\r\t"Set a not-null Lsc instance view model assigned to the receiver element"\r\tself\r\t\tassert: [ aLscInstanceViewModel notNil ]\r\t\tdescription: [ \'Lsc instance view model must not be nil\' ].\r\r\tlscInstanceViewModel == aLscInstanceViewModel \r\t\tifTrue: [ ^ self ].\r\r\tlscInstanceViewModel ifNotNil: [ self unsubscribeFromLscInstanceViewModel ].\r\tlscInstanceViewModel := aLscInstanceViewModel.\r\r\tself onLscInstanceViewModelChanged.\r\tself subscribeToLscInstanceViewModel',
 			#stamp : '',
 			#package : #Gt4Lsc
 		}
