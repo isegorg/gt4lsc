@@ -83,3 +83,27 @@ GtLscInstanceElement >> onNameChanged [
 GtLscInstanceElement >> onTemperatureStateChanged [
 	self locationLineElement states addState: self lscInstanceViewModel temperatureState
 ]
+
+{ #category : #'api - lsc instance view model' }
+GtLscInstanceElement >> subscribeToLscInstanceViewModel [
+	"Is sent after a new Lsc instance view model is assigned to the element.
+	It is required to unsubscribe from the view model or domain model by implementing
+	#unsubscribeFromLscInstanceViewModel if elements subscribe to them"
+	
+	self lscInstanceViewModel weak
+		when: GtLscInstanceViewModelNameChanged
+			send: #onNameChanged
+			to: self.
+	self lscInstanceViewModel weak
+		when: GtLscInstanceViewModelTemperatureStateChanged
+			send: #onTemperatureStateChanged
+			to: self.
+]
+
+{ #category : #'api - lsc instance view model' }
+GtLscInstanceElement >> unsubscribeFromLscInstanceViewModel [
+	"Is sent before a new Lsc instance view model is assigned to the element.
+	Elements that subscribe to Lsc instance view model in domain model are required to implement this methods"
+	
+	self lscInstanceViewModel unsubscribe: self
+]

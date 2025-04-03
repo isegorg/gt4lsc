@@ -36,6 +36,27 @@ GtLscElementScripterExamples >> pipelineLscChangeTitle [
 ]
 
 { #category : #'examples - ui' }
+GtLscElementScripterExamples >> renderLscInstanceWithChanges [
+	"Check that ui element shows the model changes"
+
+	<gtExample>
+	| lscInstance uiElement newName newTemperature |
+	lscInstance := GtLscInstanceModelExamples new newLscInstance.
+	uiElement := lscInstance asElement.
+	
+	newName := 'Name to check'.
+	lscInstance name: newName.
+	newTemperature := GtLscColdTemperature.
+	lscInstance temperature: newTemperature.
+	
+	"Check name"
+	self assert: (uiElement instVarNamed: #nameElement) text asString equals: lscInstance name.
+	"Check locationLine border"
+		self assert: uiElement locationLineElement border paint equals: GtLscConstants coldColor asBlPaint.
+	^ uiElement
+]
+
+{ #category : #'examples - ui' }
 GtLscElementScripterExamples >> renderLscWithTitleChanged [
 	"Check that ui element shows the model title change"
 
@@ -71,15 +92,14 @@ GtLscElementScripterExamples >> renderNewLscInstance [
 	"Check that the LscInstance UI element displays the model's characteristics"
 
 	<gtExample>
-	| lscInstance uiElement locationLine|
+	| lscInstance uiElement |
 	lscInstance := GtLscInstanceModelExamples new newLscInstance.
 	uiElement := lscInstance asElement.
 	
-	"Check title"
+	"Check name"
 	self assert: (uiElement instVarNamed: #nameElement) text asString equals: lscInstance name.
 	"Check locationLine border"
-	locationLine := uiElement childNamed: GtLscConstants locationLineId.
-	self assert: locationLine border paint equals: GtLscConstants hotColor asBlPaint.
+	self assert: uiElement locationLineElement border paint equals: GtLscConstants hotColor asBlPaint.
 	
 	^ uiElement
 ]

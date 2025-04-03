@@ -56,6 +56,28 @@ GtLscInstanceModel >> name [
 ]
 
 { #category : #accessing }
+GtLscInstanceModel >> name: aString [
+	name := aString.
+	self notifyNameChanged.
+]
+
+{ #category : #'events generation' }
+GtLscInstanceModel >> notifyNameChanged [
+	self announce: GtLscInstanceModelNameChanged new
+]
+
+{ #category : #'events generation' }
+GtLscInstanceModel >> notifyTemperatureChanged [
+	self announce: GtLscInstanceModelTemperatureChanged new
+]
+
+{ #category : #accessing }
 GtLscInstanceModel >> temperature [
 	^ temperature
+]
+
+{ #category : #accessing }
+GtLscInstanceModel >> temperature: aGtLscTemperatureClass [
+	temperature := aGtLscTemperatureClass.
+	self notifyTemperatureChanged.
 ]

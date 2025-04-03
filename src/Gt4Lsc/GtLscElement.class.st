@@ -1,10 +1,11 @@
 Class {
 	#name : #GtLscElement,
 	#superclass : #BlElement,
-	#traits : 'TGtWithLscViewModel',
-	#classTraits : 'TGtWithLscViewModel classTrait',
+	#traits : 'TGtWithLscViewModel + TBrLayoutResizable',
+	#classTraits : 'TGtWithLscViewModel classTrait + TBrLayoutResizable classTrait',
 	#instVars : [
-		'titleElement'
+		'titleElement',
+		'canvasContainer'
 	],
 	#category : #'Gt4Lsc-! Views'
 }
