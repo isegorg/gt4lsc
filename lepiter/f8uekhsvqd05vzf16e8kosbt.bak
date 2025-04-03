@@ -148,7 +148,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-04-02T15:22:13.866791+02:00"
+												"dateAndTimeString" : "2025-04-02T15:22:16.492611+02:00"
 											}
 										},
 										"uid" : {
@@ -158,7 +158,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "When creating the *titleElement* {{gtMethod:GtLscElement>>createTitleElement}} we subscribe to the {{gtClass:BrEditorAcceptWish}} an, which is the one announced when editing the text content."
+										"string" : "When creating the *titleElement* {{gtMethod:GtLscElement>>createTitleElement}} we subscribe to the {{gtClass:BrEditorAcceptWish}} announcement, which is the one announced when editing the text content."
 									},
 									{
 										"__type" : "textSnippet",

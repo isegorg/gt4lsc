@@ -112,4 +112,108 @@ OmEntry {
 			#package : #Gt4Lsc
 		}
 	}
-}
+}
+
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-01T10:13:41.792493+02:00' ],
+		#prior : OmReference [ '5' ],
+		#self : OmReference [ '6' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscConstants class',
+				#isMetaSide : true
+			},
+			#name : #defaultTemperatureState,
+			#protocol : #'api - constants',
+			#sourceCode : 'defaultTemperatureState\r\t^ BlElementHotState uniqueInstance',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-02T18:54:56.509867+02:00' ],
+		#prior : OmReference [ '6' ],
+		#self : OmReference [ '7' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscConstants class',
+				#isMetaSide : true
+			},
+			#name : #hotBorder,
+			#protocol : #'api - constants',
+			#sourceCode : 'hotBorder\r\t^ BlBorder paint: self hotColor',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}
+
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-02T19:12:56.808101+02:00' ],
+		#prior : OmReference [ '7' ],
+		#self : OmReference [ '8' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscConstants class',
+				#isMetaSide : true
+			},
+			#name : #hotColor,
+			#protocol : #'api - constants',
+			#sourceCode : 'hotColor\r\t^ Color red',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-02T19:13:15.557885+02:00' ],
+		#prior : OmReference [ '8' ],
+		#self : OmReference [ '9' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscConstants class',
+				#isMetaSide : true
+			},
+			#name : #coldBorder,
+			#protocol : #'api - constants',
+			#sourceCode : 'coldBorder\r\t^ BlBorder builder\r\t\tdashed;\r\t\tpaint: self coldColor;\r\t\tbuild',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-02T19:13:33.706096+02:00' ],
+		#prior : OmReference [ '9' ],
+		#self : OmReference [ '10' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscConstants class',
+				#isMetaSide : true
+			},
+			#name : #coldColor,
+			#protocol : #'api - constants',
+			#sourceCode : 'coldColor\r\t^ Color blue',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}

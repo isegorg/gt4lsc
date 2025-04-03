@@ -599,43 +599,7 @@
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [
-						{
-							"__type" : "changesSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-03-31T18:19:02.748155+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-03-31T18:19:02.748155+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "lbHsgwfuDQCsaL7qA842ug=="
-							},
-							"previewHeight" : 1050,
-							"fileName" : "attachments/b0vivfxgo2inhyclhl56p0ghx/Pharo11-SNAPSHOT-64bit-aece1b5.3A6FA8535758.ombu"
-						}
-					]
+					"items" : [ ]
 				},
 				"createEmail" : {
 					"__type" : "email",

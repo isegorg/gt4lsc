@@ -9,17 +9,26 @@ OmEntry {
 		#oldClass : RGClassDefinition {
 			#annotations : IdentityDictionary {
 				#superclassName : 'BrVerticalPane',
-				#definitionSource : 'BrVerticalPane subclass: #GtLscInstanceElement\r\tinstanceVariableNames: \'\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4Lsc-! Views\'',
-				#traitCompositionSource : '{}'
+				#definitionSource : 'BrVerticalPane subclass: #GtLscInstanceElement\r\tuses: TGtWithLscInstanceViewModel\r\tinstanceVariableNames: \'\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4Lsc-! Views\'',
+				#traitCompositionSource : 'TGtWithLscInstanceViewModel'
 			},
 			#name : #GtLscInstanceElement,
 			#methods : IdentityDictionary { },
 			#protocols : Set [ ],
-			#instanceVariables : OrderedCollection [ ],
+			#instanceVariables : OrderedCollection [
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#className : #GtLscInstanceElement,
+						#isMetaSide : false
+					},
+					#name : #lscInstanceViewModel,
+					#parent : @7
+				}
+			],
 			#metaClass : RGMetaclassDefinition {
 				#annotations : IdentityDictionary {
-					#definitionSource : 'GtLscInstanceElement class\r\tinstanceVariableNames: \'\'',
-					#traitCompositionSource : '{}'
+					#definitionSource : 'GtLscInstanceElement class\r\tuses: TGtWithLscInstanceViewModel classTrait\r\tinstanceVariableNames: \'\'',
+					#traitCompositionSource : 'TGtWithLscInstanceViewModel classTrait'
 				},
 				#name : #'GtLscInstanceElement class',
 				#methods : IdentityDictionary { },
@@ -43,8 +52,8 @@ OmEntry {
 		#newClass : RGClassDefinition {
 			#annotations : IdentityDictionary {
 				#superclassName : 'BrVerticalPane',
-				#definitionSource : 'BrVerticalPane subclass: #GtLscInstanceElement\r\tinstanceVariableNames: \'locationElement nameElement\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4Lsc-! Views\'',
-				#traitCompositionSource : '{}'
+				#definitionSource : 'BrVerticalPane subclass: #GtLscInstanceElement\r\tuses: TGtWithLscInstanceViewModel\r\tinstanceVariableNames: \'nameElement locationElement\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4Lsc-! Views\'',
+				#traitCompositionSource : 'TGtWithLscInstanceViewModel'
 			},
 			#name : #GtLscInstanceElement,
 			#methods : IdentityDictionary { },
@@ -55,35 +64,43 @@ OmEntry {
 						#className : #GtLscInstanceElement,
 						#isMetaSide : false
 					},
-					#name : #locationElement,
-					#parent : @21
+					#name : #nameElement,
+					#parent : @23
 				},
 				RGInstanceVariableDefinition {
 					#annotations : IdentityDictionary {
 						#className : #GtLscInstanceElement,
 						#isMetaSide : false
 					},
-					#name : #nameElement,
-					#parent : @21
+					#name : #locationElement,
+					#parent : @23
+				},
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#className : #GtLscInstanceElement,
+						#isMetaSide : false
+					},
+					#name : #lscInstanceViewModel,
+					#parent : @23
 				}
 			],
 			#metaClass : RGMetaclassDefinition {
 				#annotations : IdentityDictionary {
-					#definitionSource : 'GtLscInstanceElement class\r\tinstanceVariableNames: \'\'',
-					#traitCompositionSource : '{}'
+					#definitionSource : 'GtLscInstanceElement class\r\tuses: TGtWithLscInstanceViewModel classTrait\r\tinstanceVariableNames: \'\'',
+					#traitCompositionSource : 'TGtWithLscInstanceViewModel classTrait'
 				},
 				#name : #'GtLscInstanceElement class',
 				#methods : IdentityDictionary { },
 				#protocols : Set [ ],
 				#instanceVariables : OrderedCollection [ ],
-				#baseClass : @21
+				#baseClass : @23
 			},
 			#comment : RGCommentDefinition {
 				#annotations : IdentityDictionary {
 					#className : #GtLscInstanceElement,
 					#isMetaSide : false
 				},
-				#parent : @21,
+				#parent : @23,
 				#content : ''
 			},
 			#classVariables : OrderedCollection [ ],

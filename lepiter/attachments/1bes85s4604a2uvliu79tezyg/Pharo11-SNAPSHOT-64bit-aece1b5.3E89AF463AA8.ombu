@@ -97,30 +97,13 @@ OmEntry {
 		#oldClass : RGClassDefinition {
 			#annotations : IdentityDictionary {
 				#superclassName : 'BrVerticalPane',
-				#definitionSource : 'BrVerticalPane subclass: #GtLscInstanceElement\r\tinstanceVariableNames: \'locationElement nameElement\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4Lsc-! Views\'',
+				#definitionSource : 'BrVerticalPane subclass: #GtLscInstanceElement\r\tinstanceVariableNames: \'\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4Lsc-! Views\'',
 				#traitCompositionSource : '{}'
 			},
 			#name : #GtLscInstanceElement,
 			#methods : IdentityDictionary { },
 			#protocols : Set [ ],
-			#instanceVariables : OrderedCollection [
-				RGInstanceVariableDefinition {
-					#annotations : IdentityDictionary {
-						#className : #GtLscInstanceElement,
-						#isMetaSide : false
-					},
-					#name : #locationElement,
-					#parent : @7
-				},
-				RGInstanceVariableDefinition {
-					#annotations : IdentityDictionary {
-						#className : #GtLscInstanceElement,
-						#isMetaSide : false
-					},
-					#name : #nameElement,
-					#parent : @7
-				}
-			],
+			#instanceVariables : OrderedCollection [],
 			#metaClass : RGMetaclassDefinition {
 				#annotations : IdentityDictionary {
 					#definitionSource : 'GtLscInstanceElement class\r\tinstanceVariableNames: \'\'',
@@ -148,29 +131,13 @@ OmEntry {
 		#newClass : RGClassDefinition {
 			#annotations : IdentityDictionary {
 				#superclassName : 'BrVerticalPane',
-				#definitionSource : 'BrVerticalPane subclass: #GtLscInstanceElement\r\tuses: TGtWithLscInstanceViewModel\r\tinstanceVariableNames: \'locationElement nameElement\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4Lsc-! Views\'',
+				#definitionSource : 'BrVerticalPane subclass: #GtLscInstanceElement\r\tuses: TGtWithLscInstanceViewModel\r\tinstanceVariableNames: \'\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4Lsc-! Views\'',
 				#traitCompositionSource : 'TGtWithLscInstanceViewModel'
 			},
 			#name : #GtLscInstanceElement,
 			#methods : IdentityDictionary { },
 			#protocols : Set [ ],
 			#instanceVariables : OrderedCollection [
-				RGInstanceVariableDefinition {
-					#annotations : IdentityDictionary {
-						#className : #GtLscInstanceElement,
-						#isMetaSide : false
-					},
-					#name : #locationElement,
-					#parent : @25
-				},
-				RGInstanceVariableDefinition {
-					#annotations : IdentityDictionary {
-						#className : #GtLscInstanceElement,
-						#isMetaSide : false
-					},
-					#name : #nameElement,
-					#parent : @25
-				},
 				RGInstanceVariableDefinition {
 					#annotations : IdentityDictionary {
 						#className : #GtLscInstanceElement,
