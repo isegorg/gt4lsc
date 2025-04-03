@@ -46,6 +46,8 @@ GtLscElementScripterExamples >> renderLscWithTitleChanged [
 	
 	newTitle := 'Title to check'.
 	lsc title: newTitle.
+	
+	"Check title"
 	self assert: (uiElement instVarNamed: #titleElement) text asString equals: lsc title.
 	^ uiElement
 ]

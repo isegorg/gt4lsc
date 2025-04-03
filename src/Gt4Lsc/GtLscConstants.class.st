@@ -4,14 +4,32 @@ Class {
 	#category : #'Gt4Lsc-Helpers'
 }
 
-{ #category : #accessing }
-GtLscConstants class >> blElementHotStatePriority [
-	^ "UserPriority + 5" 55
+{ #category : #'api - constants' }
+GtLscConstants class >> coldBorder [
+	^ BlBorder builder
+		dashed;
+		paint: self coldColor;
+		build
+]
+
+{ #category : #'api - constants' }
+GtLscConstants class >> coldColor [
+	^ Color blue
 ]
 
 { #category : #'api - constants' }
 GtLscConstants class >> defaultTemperatureState [
 	^ BlElementHotState uniqueInstance
+]
+
+{ #category : #'api - constants' }
+GtLscConstants class >> hotBorder [
+	^ BlBorder paint: self hotColor
+]
+
+{ #category : #'api - constants' }
+GtLscConstants class >> hotColor [
+	^ Color red
 ]
 
 { #category : #'api - constants' }

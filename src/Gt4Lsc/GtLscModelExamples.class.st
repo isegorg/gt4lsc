@@ -17,7 +17,7 @@ GtLscModelExamples >> lscChangeTitle [
 	^ aLsc
 ]
 
-{ #category : #'examples  - model' }
+{ #category : #'examples - model' }
 GtLscModelExamples >> newLsc [
 	<gtExample>
 	| lsc |

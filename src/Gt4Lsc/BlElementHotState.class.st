@@ -6,5 +6,5 @@ Class {
 
 { #category : #accessing }
 BlElementHotState >> priority [
-	^ GtLscConstants blElementHotStatePriority
+	^ UserPriority + 5
 ]

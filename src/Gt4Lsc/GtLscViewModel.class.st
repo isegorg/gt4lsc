@@ -26,7 +26,7 @@ GtLscViewModel >> onLscModelChanged [
 	"Is sent when a new lsc model is assigned to the view model"
 ]
 
-{ #category : #'event - handling' }
+{ #category : #'events handling' }
 GtLscViewModel >> onTitleChanged: anAnnouncement [
 	self notifyLscViewModelTitleChanged
 ]
@@ -43,19 +43,19 @@ GtLscViewModel >> subscribeToLscModel [
 			to: self
 ]
 
-{ #category : #'api - lsc ' }
+{ #category : #'api - lsc' }
 GtLscViewModel >> title [
 	<return: #String>
 	^ self lscModel title
 ]
 
-{ #category : #'api - lsc ' }
+{ #category : #'api - lsc' }
 GtLscViewModel >> title: aString [
 	self lscModel title: aString
 ]
 
 { #category : #'api - lsc model' }
-GtLscViewModel >> unsubscribeFromWardleyMapModel [
+GtLscViewModel >> unsubscribeFromLscModel [
 	"Is sent before a new lsc model is assigned to the view model.
 	View models that subscribe to lsc model are required to implement this methods"
 	

@@ -1,11 +1,10 @@
 Class {
 	#name : #GtLscElement,
 	#superclass : #BlElement,
-	#traits : 'TGtWithLscViewModel + TBrLayoutResizable',
-	#classTraits : 'TGtWithLscViewModel classTrait + TBrLayoutResizable classTrait',
+	#traits : 'TGtWithLscViewModel',
+	#classTraits : 'TGtWithLscViewModel classTrait',
 	#instVars : [
-		'titleElement',
-		'canvasContainer'
+		'titleElement'
 	],
 	#category : #'Gt4Lsc-! Views'
 }
@@ -20,8 +19,7 @@ GtLscElement >> createTitleElement [
 	^ BrEditableLabel new
 		hFitContentLimited;
 		vFitContent;
-		aptitude: BrGlamorousRegularEditorAptitude new;
-		"visibility: BlVisibility visible;"
+		aptitude: BrGlamorousRegularEditorAptitude + BrGlamorousEditorSpacingAptitude;
 		constraintsDo: [ :c | c linear horizontal alignCenter ];
 		when: BrEditorAcceptWish do: [ :aWish | self onAcceptNewTitleWish: aWish ];
 		text: 'Title'
@@ -44,7 +42,7 @@ GtLscElement >> initialize [
 	self matchParent
 ]
 
-{ #category : #'event handling' }
+{ #category : #'events handling' }
 GtLscElement >> onAcceptNewTitleWish: aWish [ 
 	self hasLscViewModel ifFalse: [ ^ self ].
 	self lscViewModel title: aWish text asString
@@ -57,7 +55,7 @@ GtLscElement >> onLscViewModelChanged [
 	self onTitleChanged
 ]
 
-{ #category : #'event handling' }
+{ #category : #'events handling' }
 GtLscElement >> onTitleChanged [
 	titleElement text: self lscViewModel title
 ]
