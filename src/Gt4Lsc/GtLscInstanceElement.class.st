@@ -4,8 +4,8 @@ Class {
 	#traits : 'TGtWithLscInstanceViewModel',
 	#classTraits : 'TGtWithLscInstanceViewModel classTrait',
 	#instVars : [
-		'locationElement',
-		'nameElement'
+		'nameElement',
+		'locationElement'
 	],
 	#category : #'Gt4Lsc-! Views'
 }
@@ -28,14 +28,10 @@ GtLscInstanceElement >> createLocationElement [
 		theStyles
 			addStyle: (BlElementStyle new
 				state: BlElementHotState uniqueInstance;
-				border: (BlBorder paint: (Color blue) width: GtLscConstants locationLineWidth));
+				border: (GtLscConstants hotBorder copyWithWidth: GtLscConstants locationLineWidth));
 			addStyle: (BlElementStyle new
 				state: BlElementHotState uniqueInstance not;
-				border: (BlBorder builder
-					dashed;
-					paint: Color red;
-					width: GtLscConstants locationLineWidth;
-					build)) ].
+				border: (GtLscConstants coldBorder copyWithWidth: GtLscConstants locationLineWidth)) ].
 	element addChild: locationLine.
 	^ element
 ]
@@ -61,6 +57,29 @@ GtLscInstanceElement >> initialize [
 	self matchParent
 ]
 
+{ #category : #'private - accessing' }
+GtLscInstanceElement >> locationLineElement [
+	^ self childNamed: GtLscConstants locationLineId
+]
+
 { #category : #initialization }
 GtLscInstanceElement >> onAcceptNewTitleWish: aWish [ 
+]
+
+{ #category : #'api - lsc instance view model' }
+GtLscInstanceElement >> onLscInstanceViewModelChanged [
+	"Is sent when a new Lsc instance view model is assigned to the element"
+	
+	self onNameChanged.
+	self onTemperatureStateChanged.
+]
+
+{ #category : #'events handling' }
+GtLscInstanceElement >> onNameChanged [
+	nameElement text: self lscInstanceViewModel name
+]
+
+{ #category : #'events handling' }
+GtLscInstanceElement >> onTemperatureStateChanged [
+	self locationLineElement states addState: self lscInstanceViewModel temperatureState
 ]

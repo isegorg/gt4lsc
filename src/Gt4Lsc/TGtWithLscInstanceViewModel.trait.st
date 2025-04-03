@@ -28,7 +28,7 @@ TGtWithLscInstanceViewModel >> lscInstanceViewModel [
 TGtWithLscInstanceViewModel >> lscInstanceViewModel: aLscInstanceViewModel [
 	"Set a not-null Lsc instance view model assigned to the receiver element"
 	self
-		assert: [ lscInstanceViewModel notNil ]
+		assert: [ aLscInstanceViewModel notNil ]
 		description: [ 'Lsc instance view model must not be nil' ].
 
 	lscInstanceViewModel == aLscInstanceViewModel 

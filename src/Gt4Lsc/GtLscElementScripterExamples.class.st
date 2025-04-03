@@ -71,12 +71,15 @@ GtLscElementScripterExamples >> renderNewLscInstance [
 	"Check that the LscInstance UI element displays the model's characteristics"
 
 	<gtExample>
-	| lscInstance uiElement |
+	| lscInstance uiElement locationLine|
 	lscInstance := GtLscInstanceModelExamples new newLscInstance.
 	uiElement := lscInstance asElement.
 	
 	"Check title"
 	self assert: (uiElement instVarNamed: #nameElement) text asString equals: lscInstance name.
 	"Check locationLine border"
+	locationLine := uiElement childNamed: GtLscConstants locationLineId.
+	self assert: locationLine border paint equals: GtLscConstants hotColor asBlPaint.
+	
 	^ uiElement
 ]
