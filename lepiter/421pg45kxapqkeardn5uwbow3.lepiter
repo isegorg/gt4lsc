@@ -851,6 +851,43 @@
 					"__type" : "textStyle"
 				},
 				"string" : "To check that the render cycle ({{gtClass:GtLscInstanceModel|label=InstanceModel}} - - > {{gtClass:GtLscInstanceViewModel|label=InstanceViewModel}} - - > {{gtClass:GtLscInstanceElement|label=InstanceView}}) is correct when creating the initial view, we create an example that will check that {{gtClass:GtLscInstanceElement|label=InstanceView}} displays the initial characteristics of the {{gtClass:GtLscInstanceModel|label=InstanceModel}}."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-03T16:31:00.818448+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-03T16:31:31.804573+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "UWQYW0LuDQC2kmcuAji8eA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Finally the example is successful {{gtExample:GtLscElementScripterExamples>>renderNewLscInstance}}"
 			}
 		]
 	},

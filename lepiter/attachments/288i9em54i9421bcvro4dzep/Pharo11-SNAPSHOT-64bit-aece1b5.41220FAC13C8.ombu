@@ -1,0 +1,105 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-03T20:05:44.877938+02:00' ],
+		#prior : OmReference [ 'Pharo11-SNAPSHOT-64bit-aece1b5.40DB34A038B8', '6' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceViewModel,
+				#isMetaSide : false
+			},
+			#name : #'onNameChanged:',
+			#protocol : #'events handling',
+			#sourceCode : 'onNameChanged: anAnnouncement',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceViewModel,
+				#isMetaSide : false
+			},
+			#name : #'onNameChanged:',
+			#protocol : #'events handling',
+			#sourceCode : 'onNameChanged: anAnnouncement\r\tself notifyLscInstanceViewModelNameChanged',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-03T20:20:46.917218+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceViewModel,
+				#isMetaSide : false
+			},
+			#name : #notifyLscInstanceViewModelNameChanged,
+			#protocol : #'events generation',
+			#sourceCode : 'notifyLscInstanceViewModelNameChanged\r\tself announce: GtLscInstanceViewModelNameChanged new',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-03T20:21:31.959437+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceViewModel,
+				#isMetaSide : false
+			},
+			#name : #onTemperatureChanged,
+			#protocol : #'events generation',
+			#sourceCode : 'onTemperatureChanged\r\r\ttemperatureState := lscInstanceModel temperature asViewState',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceViewModel,
+				#isMetaSide : false
+			},
+			#name : #onTemperatureChanged,
+			#protocol : #'events generation',
+			#sourceCode : 'onTemperatureChanged\r\r\ttemperatureState := lscInstanceModel temperature asViewState.\r\tself notifyLscInstanceViewModelTemperatureStateChanged',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-03T20:22:21.251406+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceViewModel,
+				#isMetaSide : false
+			},
+			#name : #notifyLscInstanceViewModelTemperatureStateChanged,
+			#protocol : #'events generation',
+			#sourceCode : 'notifyLscInstanceViewModelTemperatureStateChanged\r\tself announce: GtLscInstanceViewModelTemperatureStateChanged new',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}

@@ -1,0 +1,41 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-03T20:53:14.919314+02:00' ],
+		#prior : OmReference [ 'Pharo11-SNAPSHOT-64bit-aece1b5.44351E5BA918', '8' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceElement,
+				#isMetaSide : false
+			},
+			#name : #subscribeToLscInstanceViewModel,
+			#protocol : #'api - lsc instance view model',
+			#sourceCode : 'subscribeToLscInstanceViewModel\r\t"Is sent after a new Lsc instance view model is assigned to the element.\r\tIt is required to unsubscribe from the view model or domain model by implementing\r\t#unsubscribeFromLscInstanceViewModel if elements subscribe to them"\r\t\r\tself lscInstanceViewModel weak\r\t\twhen: GtLscInstanceViewModelNameChanged\r\t\t\tsend: #onNameChanged\r\t\t\tto: self.\r\tself lscInstanceViewModel weak\r\t\twhen: GtLscInstanceViewModelTemperatureStateChanged\r\t\t\tsend: #onTemperatureStateChanged\r\t\t\tto: self.',
+			#stamp : 'GlamorousAuthor 4/3/2025 20:53',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-03T20:53:18.568318+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceElement,
+				#isMetaSide : false
+			},
+			#name : #unsubscribeFromLscInstanceViewModel,
+			#protocol : #'api - lsc instance view model',
+			#sourceCode : 'unsubscribeFromLscInstanceViewModel\r\t"Is sent before a new Lsc instance view model is assigned to the element.\r\tElements that subscribe to Lsc instance view model in domain model are required to implement this methods"\r\t\r\tself lscInstanceViewModel unsubscribe: self',
+			#stamp : 'GlamorousAuthor 4/3/2025 20:53',
+			#package : #Gt4Lsc
+		}
+	}
+}

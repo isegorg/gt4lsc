@@ -778,7 +778,7 @@
 														"__type" : "time",
 														"time" : {
 															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2025-03-24T20:07:45.463999+01:00"
+															"dateAndTimeString" : "2025-04-03T19:16:31.82622+02:00"
 														}
 													},
 													"uid" : {
@@ -788,51 +788,13 @@
 													"paragraphStyle" : {
 														"__type" : "textStyle"
 													},
-													"string" : "We override {{gtMethod:GtLscViewModel>>subscribeToLscModel}} to subscribe to the {{gtClass:GtLscTitleChanged}} announcement and perform the corresponding action."
+													"string" : "We have overriden {{gtMethod:GtLscViewModel>>subscribeToLscModel}} to subscribe to the {{gtClass:GtLscTitleChanged}} announcement and perform the corresponding action."
 												},
 												{
 													"__type" : "textSnippet",
 													"children" : {
 														"__type" : "snippets",
-														"items" : [
-															{
-																"__type" : "textSnippet",
-																"children" : {
-																	"__type" : "snippets",
-																	"items" : [ ]
-																},
-																"createEmail" : {
-																	"__type" : "email",
-																	"emailString" : "<unknown>"
-																},
-																"createTime" : {
-																	"__type" : "time",
-																	"time" : {
-																		"__type" : "dateAndTime",
-																		"dateAndTimeString" : "2025-03-22T14:46:22.36688+01:00"
-																	}
-																},
-																"editEmail" : {
-																	"__type" : "email",
-																	"emailString" : "<unknown>"
-																},
-																"editTime" : {
-																	"__type" : "time",
-																	"time" : {
-																		"__type" : "dateAndTime",
-																		"dateAndTimeString" : "2025-03-22T14:46:22.36688+01:00"
-																	}
-																},
-																"uid" : {
-																	"__type" : "uid",
-																	"uidString" : "owBaVVDtDQCMb20xBT0nBw=="
-																},
-																"paragraphStyle" : {
-																	"__type" : "textStyle"
-																},
-																"string" : "{{gtMethod:GtLscViewModel>>unsubscribeFromLscModel}}"
-															}
-														]
+														"items" : [ ]
 													},
 													"createEmail" : {
 														"__type" : "email",
@@ -853,7 +815,7 @@
 														"__type" : "time",
 														"time" : {
 															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2025-03-24T20:36:45.182273+01:00"
+															"dateAndTimeString" : "2025-04-03T19:19:33.169506+02:00"
 														}
 													},
 													"uid" : {
@@ -863,7 +825,7 @@
 													"paragraphStyle" : {
 														"__type" : "textStyle"
 													},
-													"string" : "Override the unsubscribe method for {{gtClass:GtLscModel|label=Model}}"
+													"string" : "Override the unsubscribe method {{gtMethod:GtLscViewModel>>unsubscribeFromLscModel}} for {{gtClass:GtLscModel|label=Model}}"
 												}
 											]
 										},
@@ -1223,6 +1185,43 @@
 																				"__type" : "time",
 																				"time" : {
 																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-04-02T14:12:39.114067+02:00"
+																				}
+																			},
+																			"editEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"editTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-04-02T14:12:39.114067+02:00"
+																				}
+																			},
+																			"uid" : {
+																				"__type" : "uid",
+																				"uidString" : "xBVvTizuDQC1zK7jBpoQ6Q=="
+																			},
+																			"paragraphStyle" : {
+																				"__type" : "textStyle"
+																			},
+																			"string" : "Sent before assigning a new {{gtClass:GtLscViewModel|label=ViewModel}}."
+																		},
+																		{
+																			"__type" : "textSnippet",
+																			"children" : {
+																				"__type" : "snippets",
+																				"items" : [ ]
+																			},
+																			"createEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"createTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
 																					"dateAndTimeString" : "2025-03-24T20:54:09.684093+01:00"
 																				}
 																			},
@@ -1234,7 +1233,7 @@
 																				"__type" : "time",
 																				"time" : {
 																					"__type" : "dateAndTime",
-																					"dateAndTimeString" : "2025-03-24T20:56:06.019198+01:00"
+																					"dateAndTimeString" : "2025-04-02T14:12:55.712121+02:00"
 																				}
 																			},
 																			"uid" : {
@@ -1244,7 +1243,7 @@
 																			"paragraphStyle" : {
 																				"__type" : "textStyle"
 																			},
-																			"string" : "Sent before assigning a new {{gtClass:GtLscViewModel|label=ViewModel}} to destroy subscriptions to the old one."
+																			"string" : "Should be implemented to destroy subscriptions to the old view model if necessary."
 																		}
 																	]
 																},

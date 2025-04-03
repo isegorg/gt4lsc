@@ -1,0 +1,61 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-03T18:29:04.899651+02:00' ],
+		#prior : OmReference [ 'Pharo11-SNAPSHOT-64bit-aece1b5.343396642D20', '69' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscElementScripterExamples,
+				#isMetaSide : false
+			},
+			#name : #renderLscInstanceWithChanges,
+			#protocol : #'examples - ui',
+			#sourceCode : 'renderLscInstanceWithChanges\r\t"Check that ui element shows the model changes"\r\r\t<gtExample>\r\t| lscInstance uiElement newName newTemperature |\r\tlscInstance := GtLscInstanceModelExamples new newLscInstance.\r\tuiElement := lscInstance asElement.\r\t\r\tnewName := \'Name to check\'.\r\tlscInstance name: newName.\r\tnewTemperature := GtLscColdTemperature.\r\tlscInstance temperature: newTemperature.\r\t\r\t"Check name"\r\tself assert: (uiElement instVarNamed: #nameElement) text asString equals: lscInstance name.\r\t"Check locationLine border"\r\t\tself assert: uiElement locationLineElement border paint equals: GtLscConstants coldColor asBlPaint.\r\t^ uiElement',
+			#stamp : 'GlamorousAuthor 4/3/2025 18:29',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-03T18:29:08.204674+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceModel,
+				#isMetaSide : false
+			},
+			#name : #'name:',
+			#protocol : #accessing,
+			#sourceCode : 'name: aString\r\tname := aString',
+			#stamp : 'GlamorousAuthor 4/3/2025 18:29',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-03T18:29:11.103963+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceModel,
+				#isMetaSide : false
+			},
+			#name : #'temperature:',
+			#protocol : #accessing,
+			#sourceCode : 'temperature: aGtLscTemperatureClass\r\ttemperature := aGtLscTemperatureClass',
+			#stamp : 'GlamorousAuthor 4/3/2025 18:29',
+			#package : #Gt4Lsc
+		}
+	}
+}

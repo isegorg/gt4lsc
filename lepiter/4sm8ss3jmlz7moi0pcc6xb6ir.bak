@@ -510,7 +510,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-03-28T12:37:35.149671+01:00"
+						"dateAndTimeString" : "2025-03-28T12:37:38.091198+01:00"
 					}
 				},
 				"uid" : {
@@ -520,7 +520,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Add Ins]]"
+				"string" : "[[Add Instances to LSC]]"
 			}
 		]
 	},
