@@ -22,6 +22,11 @@ GtLscInstanceViewModel >> name [
 	^ lscInstanceModel name
 ]
 
+{ #category : #'api - lsc instance model' }
+GtLscInstanceViewModel >> name: aString [
+	self lscInstanceModel name: aString
+]
+
 { #category : #'events generation' }
 GtLscInstanceViewModel >> notifyLscInstanceViewModelNameChanged [
 	self announce: GtLscInstanceViewModelNameChanged new

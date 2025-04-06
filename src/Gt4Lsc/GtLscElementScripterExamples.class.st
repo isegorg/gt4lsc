@@ -36,6 +36,37 @@ GtLscElementScripterExamples >> pipelineLscChangeTitle [
 ]
 
 { #category : #'examples - ui' }
+GtLscElementScripterExamples >> pipelineLscInstanceChangeName [
+	"Check that ui name change update the model"
+	
+	<gtExample>
+	| uiElement nameElement lscInstance newName |
+	uiElement := self renderNewLscInstance.
+	lscInstance := uiElement lscInstanceViewModel lscInstanceModel.
+	nameElement := uiElement instVarNamed: #nameElement.
+	
+	newName := 'New Lsc Instance Name'.
+	self assert: [ nameElement text asString ~= newName ].
+	
+	nameElement switchToEditor.
+	
+	self assert: nameElement isEditable.
+	self assert: nameElement viewModel model asString equals: nameElement text asString.
+	
+	nameElement text
+		deleteAll;
+		append: newName asRopedText.
+		
+	nameElement acceptEdition.
+	
+	"the original text is stored in order to be restored if edition cancelled"
+	self assert: nameElement text asString equals: newName.
+	self assert: lscInstance name equals: newName.
+	
+	^ uiElement
+]
+
+{ #category : #'examples - ui' }
 GtLscElementScripterExamples >> renderLscInstanceWithChanges [
 	"Check that ui element shows the model changes"
 

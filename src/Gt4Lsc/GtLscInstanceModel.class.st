@@ -57,6 +57,8 @@ GtLscInstanceModel >> name [
 
 { #category : #accessing }
 GtLscInstanceModel >> name: aString [
+	self name = aString ifTrue: [ ^ self ].
+	
 	name := aString.
 	self notifyNameChanged.
 ]

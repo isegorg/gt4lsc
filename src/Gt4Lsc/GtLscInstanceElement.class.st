@@ -62,8 +62,10 @@ GtLscInstanceElement >> locationLineElement [
 	^ self childNamed: GtLscConstants locationLineId
 ]
 
-{ #category : #initialization }
-GtLscInstanceElement >> onAcceptNewTitleWish: aWish [ 
+{ #category : #'events handling' }
+GtLscInstanceElement >> onAcceptNewTitleWish: aWish [
+	self hasLscInstanceViewModel ifFalse: [ ^ self ].
+	self lscInstanceViewModel name: aWish text asString
 ]
 
 { #category : #'api - lsc instance view model' }
