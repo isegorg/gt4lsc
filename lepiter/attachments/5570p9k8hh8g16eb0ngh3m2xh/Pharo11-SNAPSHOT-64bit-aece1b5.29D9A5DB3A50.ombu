@@ -1,0 +1,21 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-04T13:40:16.486115+02:00' ],
+		#prior : OmReference [ 'Pharo11-SNAPSHOT-64bit-aece1b5.44765F191CD8', '4' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscElementScripterExamples,
+				#isMetaSide : false
+			},
+			#name : #pipelineLscInstanceChangeName,
+			#protocol : #'examples - ui',
+			#sourceCode : 'pipelineLscInstanceChangeName\r\t"Check that ui name change update the model"\r\t\r\t<gtExample>\r\t| uiElement nameElement lscInstance newName |\r\tuiElement := self renderNewLscInstance.\r\tlscInstance := uiElement lscInstanceViewModel lscInstanceModel.\r\tnameElement := uiElement instVarNamed: #nameElement.\r\t\r\tnewName := \'New Lsc Instance Name\'.\r\tself assert: [ nameElement text asString ~= newName ].\r\t\r\tnameElement switchToEditor.\r\t\r\tself assert: nameElement isEditable.\r\tself assert: nameElement viewModel model asString equals: nameElement text asString.\r\t\r\tnameElement text\r\t\tdeleteAll;\r\t\tappend: newName asRopedText.\r\t\t\r\tnameElement acceptEdition.\r\t\r\t"the original text is stored in order to be restored if edition cancelled"\r\tself assert: nameElement text asString equals: newName.\r\tself assert: lscInstance name equals: newName.\r\t\r\t^ uiElement',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}
