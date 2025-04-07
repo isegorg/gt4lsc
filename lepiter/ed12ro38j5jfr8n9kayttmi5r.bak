@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-04-07T13:11:19.556923+02:00"
+						"dateAndTimeString" : "2025-04-07T13:11:41.815179+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,225 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "**Modificar el ejemplo {{gtMethod:GtLscElementScripterExamples>>renderNewLsc}} para mostrar las condiciones iniciales sin"
+				"string" : "**¿Modificar el ejemplo {{gtMethod:GtLscElementScripterExamples>>renderNewLsc}} para mostrar las condiciones iniciales sin {{gtClass:GtLscInstanceModel}}?**"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "changesSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-07T16:57:51.799725+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-07T16:57:51.799725+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "Mot7MpPuDQCgsneeBJ94tg=="
+							},
+							"previewHeight" : 572.0592346191406,
+							"fileName" : "attachments/aswceztq5bf0pxktx10x05bvu/Pharo11-SNAPSHOT-64bit-aece1b5.370D2E3DF190.ombu"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "changesSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-07T17:14:13.106782+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-07T17:14:13.106782+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "xRr5bJPuDQCvL34kCA/2aw=="
+										},
+										"previewHeight" : 582.1790771484375,
+										"fileName" : "attachments/6e3gqf5zh7h6rqynrj0i68vbn/Pharo11-SNAPSHOT-64bit-aece1b5.37E19CD56CD0.ombu"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-07T17:06:18.89009+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-07T17:14:05.310612+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "+h61UJPuDQCu0zSyCA/2aw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "We make {{gtClass:GtLscElement}} contain an element with id *#instancesCanvas*, where the instances will be added."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-07T17:19:57.391642+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-07T17:20:26.315474+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "qWJ+gZPuDQCZH33PBvTkOQ=="
+										},
+										"code" : "BrHorizontalGrid subclass: #GtLscInstancesCanvasElement\r\tinstanceVariableNames: ''\r\tclassVariableNames: ''\r\tpackage: 'Gt4Lsc-! Views'."
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-07T17:17:55.415325+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-07T17:20:36.695641+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "WEA5epPuDQCXi/YSBvTkOQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "We create the element class responsible for containing the instance views. We inherit from {{gtClass:BrHorizontalGrid}} to hold the instance views in a row."
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-07T16:54:35.176246+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-07T16:57:47.887738+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "d0zDJpPuDQCfXyc2BJ94tg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "We start modifying {{gtMethod:GtLscElementScripterExamples>>renderNewLsc}},  without Instances, to check that there are no lsc instance elements."
 			},
 			{
 				"__type" : "textSnippet",
@@ -140,7 +358,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-04-07T13:07:21.83491+02:00"
+						"dateAndTimeString" : "2025-04-07T17:31:30.298475+02:00"
 					}
 				},
 				"uid" : {
@@ -150,7 +368,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "We start from an example of a new *LSC with Instance* in which the initial features are checked."
+				"string" : "We now createstart from an example of a new *LSC with Instance* in which the initial features are checked."
 			}
 		]
 	},

@@ -1,0 +1,73 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-07T17:09:57.06797+02:00' ],
+		#prior : OmReference [ 'Pharo11-SNAPSHOT-64bit-aece1b5.37C44662FC90', '2' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscElement,
+				#isMetaSide : false
+			},
+			#name : #initialize,
+			#protocol : #initialization,
+			#sourceCode : 'initialize\r\tsuper initialize.\r\t\r\ttitleElement := self createTitleElement.\r\tcanvasContainer := self createCanvasContainer.\r\t\r\tself addChildren: {titleElement. canvasContainer}.\r\t\r\tself matchParent',
+			#stamp : 'GlamorousAuthor 4/3/2025 17:09',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscElement,
+				#isMetaSide : false
+			},
+			#name : #initialize,
+			#protocol : #initialization,
+			#sourceCode : 'initialize\r\t| instancesCanvas |\r\tsuper initialize.\r\t\r\ttitleElement := self createTitleElement.\r\tcanvasContainer := self createCanvasContainer.\r\tinstancesCanvas := self createInstancesCanvas.\r\tcanvasContainer addChild: instancesCanvas.\r\t\r\tself addChildren: {titleElement. canvasContainer}.\r\t\r\tself matchParent',
+			#stamp : 'GlamorousAuthor 4/7/2025 17:09',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-07T17:10:20.063376+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscElement,
+				#isMetaSide : false
+			},
+			#name : #createInstancesCanvas,
+			#protocol : #initialization,
+			#sourceCode : 'createInstancesCanvas\r\t^ GtLscInstancesCanvasElement new id: GtLscConstants instancesCanvasId',
+			#stamp : 'GlamorousAuthor 4/7/2025 17:10',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-07T17:10:28.464308+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscConstants class',
+				#isMetaSide : true
+			},
+			#name : #instancesCanvasId,
+			#protocol : #'api - constants',
+			#sourceCode : 'instancesCanvasId\r\t^ #instancesCanvas',
+			#stamp : 'GlamorousAuthor 4/7/2025 17:10',
+			#package : #Gt4Lsc
+		}
+	}
+}
