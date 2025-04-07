@@ -84,6 +84,6 @@ GtLscModelExamples >> newLsc [
 	| lsc |
 	lsc := GtLscModel new.
 	self assert: lsc title equals: GtLscModel defaultTitle.
-	
+	self assert: lsc instancesSize equals: 0.
 	^ lsc
 ]
