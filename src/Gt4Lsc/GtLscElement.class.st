@@ -16,6 +16,11 @@ GtLscElement >> createCanvasContainer [
 ]
 
 { #category : #initialization }
+GtLscElement >> createInstancesCanvas [
+	^ GtLscInstancesCanvasElement new id: GtLscConstants instancesCanvasId
+]
+
+{ #category : #initialization }
 GtLscElement >> createTitleElement [
 	^ BrEditableLabel new
 		hFitContentLimited;
@@ -33,10 +38,13 @@ GtLscElement >> defaultLayout [
 
 { #category : #initialization }
 GtLscElement >> initialize [
+	| instancesCanvas |
 	super initialize.
 	
 	titleElement := self createTitleElement.
 	canvasContainer := self createCanvasContainer.
+	instancesCanvas := self createInstancesCanvas.
+	canvasContainer addChild: instancesCanvas.
 	
 	self addChildren: {titleElement. canvasContainer}.
 	

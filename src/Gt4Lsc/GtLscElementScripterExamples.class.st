@@ -109,12 +109,16 @@ GtLscElementScripterExamples >> renderNewLsc [
 	"Check that the UI element displays the model's characteristics"
 
 	<gtExample>
-	| lsc uiElement |
+	| lsc uiElement instancesCanvasElement |
 	lsc := GtLscModelExamples new newLsc.
 	uiElement := lsc asElement.
 	
 	"Check title"
 	self assert: (uiElement instVarNamed: #titleElement) text asString equals: lsc title.
+	"Check the instance in the view"
+	instancesCanvasElement := (uiElement childNamed: GtLscConstants instancesCanvasId).
+	self assert: instancesCanvasElement isNotNil.
+	self assert: instancesCanvasElement childrenCount equals: 0.
 	^ uiElement
 ]
 
