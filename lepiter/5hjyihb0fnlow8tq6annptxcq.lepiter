@@ -50,7 +50,81 @@
 							"__type" : "changesSnippet",
 							"children" : {
 								"__type" : "snippets",
-								"items" : [ ]
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [
+												{
+													"__type" : "changesSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-03-28T12:38:04.934977+01:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-03-28T12:38:04.934977+01:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "eMCYPcftDQC+h7MZBkqxXA=="
+													},
+													"previewHeight" : 200,
+													"fileName" : "attachments/dlg8rx61nx2k6febuasb1l55j/Pharo11-SNAPSHOT-64bit-aece1b5.29738AB94700.ombu"
+												}
+											]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-07T09:16:37.045465+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-07T09:18:16.037695+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "1EzwwIzuDQCxEIETBS9rcQ=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "We store the {{gtClass:GtLscInstanceModel}} on {{gtClass:GtLscModel}} as an {{gtClass:OrderedCollection}} to know their positions."
+									}
+								]
 							},
 							"createEmail" : {
 								"__type" : "email",
@@ -60,7 +134,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-03-28T12:38:04.934977+01:00"
+									"dateAndTimeString" : "2025-04-07T16:20:37.705343+02:00"
 								}
 							},
 							"editEmail" : {
@@ -71,15 +145,52 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-03-28T12:38:04.934977+01:00"
+									"dateAndTimeString" : "2025-04-07T16:20:37.705343+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "eMCYPcftDQC+h7MZBkqxXA=="
+								"uidString" : "/vdRrZLuDQCB19E/DcYyaA=="
 							},
-							"previewHeight" : 200,
-							"fileName" : "attachments/dlg8rx61nx2k6febuasb1l55j/Pharo11-SNAPSHOT-64bit-aece1b5.29738AB94700.ombu"
+							"previewHeight" : 360.6922912597656,
+							"fileName" : "attachments/e0onsnysupxcazwws3oj5zs1k/Pharo11-SNAPSHOT-64bit-aece1b5.2F2613A07EA0.ombu"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-07T16:34:59.662089+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-07T16:35:37.452581+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "bmCy4JLuDQCDml3EDcYyaA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Finally the example is successful {{gtExample:GtLscModelExamples>>newLsc}}"
 						}
 					]
 				},
@@ -91,7 +202,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-04-07T09:16:37.045465+02:00"
+						"dateAndTimeString" : "2025-04-07T16:20:12.949539+02:00"
 					}
 				},
 				"editEmail" : {
@@ -102,17 +213,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-04-07T09:18:16.037695+02:00"
+						"dateAndTimeString" : "2025-04-07T16:20:13.980252+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "1EzwwIzuDQCxEIETBS9rcQ=="
+					"uidString" : "xzfYq5LuDQCBzrydDcYyaA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "We store the {{gtClass:GtLscInstanceModel}} on {{gtClass:GtLscModel}} as an {{gtClass:OrderedCollection}} to know their positions."
+				"string" : "Initially, an LSC has no instances. We modified the test to check this."
 			},
 			{
 				"__type" : "textSnippet",
@@ -191,7 +302,7 @@
 											"__type" : "uid",
 											"uidString" : "HkR+6IzuDQC4mtCRBS9rcQ=="
 										},
-										"previewHeight" : 653.0300903320314,
+										"previewHeight" : 421.7009277343751,
 										"fileName" : "attachments/6pq77l59kscdrldrq8vq3u5pb/Pharo11-SNAPSHOT-64bit-aece1b5.1E07C1402D88.ombu"
 									}
 								]

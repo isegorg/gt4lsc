@@ -18,7 +18,9 @@ OmEntry {
 			#package : #Gt4Lsc
 		}
 	}
-}OmEntry {
+}
+
+OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-07T09:15:50.87894+02:00' ],
@@ -38,24 +40,5 @@ OmEntry {
 			#package : #Gt4Lsc
 		}
 	}
-}OmEntry {
-	#tags : {
-		#author : 'GlamorousAuthor',
-		#time : DateAndTime [ '2025-04-07T09:16:06.449476+02:00' ],
-		#prior : OmReference [ '2' ],
-		#self : OmReference [ '3' ]
-	},
-	#content : EpMethodAddition {
-		#method : RGMethodDefinition {
-			#annotations : IdentityDictionary {
-				#className : #GtLscModel,
-				#isMetaSide : false
-			},
-			#name : #instancesSize,
-			#protocol : #'api - instances',
-			#sourceCode : 'instancesSize\r\t^ instances size',
-			#stamp : 'GlamorousAuthor 4/7/2025 09:16',
-			#package : #Gt4Lsc
-		}
-	}
-}
+}
+
