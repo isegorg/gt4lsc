@@ -1,0 +1,21 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-07T10:55:43.417983+02:00' ],
+		#prior : OmReference [ 'Pharo11-SNAPSHOT-64bit-aece1b5.1FE55C665088', '6' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModelExamples,
+				#isMetaSide : false
+			},
+			#name : #lscAddInstanceAtPosition,
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'lscAddInstanceAtPosition\r\t<gtExample>\r\t| aLsc existingInstance newInstance |\r\taLsc := self lscWithInstance.\r\texistingInstance := aLsc instanceAt: 1.\r\tnewInstance := GtLscInstanceModel new name: \'Instance to add\'.\r\taLsc addInstance: newInstance atPosition: 1.\r\r\tself assert: (aLsc instanceAt: 1) equals: newInstance.\r\tself assert: (aLsc instanceAt: 2) equals: existingInstance.\r\tself assert: aLsc instancesSize equals: 2.\r\r\t^ aLsc',
+			#stamp : 'GlamorousAuthor 4/7/2025 10:55',
+			#package : #Gt4Lsc
+		}
+	}
+}

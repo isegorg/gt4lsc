@@ -316,14 +316,82 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-03-28T10:15:28.908403+01:00"
+						"dateAndTimeString" : "2025-04-06T12:51:24.148836+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "0+88TLftDQCvmVJlDPTB0w=="
 				},
-				"code" : "instancesContainer := BrHorizontalGrid new.\rinstancesContainer matchParent.\r\rinstances1 := GtLscInstanceElement new.\rinstances2 := GtLscInstanceElement new.\rinstances3 := GtLscInstanceElement new.\r\rinstancesContainer addChildren: {instances1. instances2. instances3}"
+				"code" : "instances1 := GtLscInstanceElement new.\rinstances2 := GtLscInstanceElement new.\rinstances3 := GtLscInstanceElement new."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-06T12:51:08.256561+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-06T12:51:15.419287+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "UgFIonvuDQCbyj1mA5ocoQ=="
+				},
+				"code" : "instancesContainer := BrHorizontalGrid new.\rinstancesContainer matchParent.\rinstancesContainer addChildren: {instances1. instances2. instances3}"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-06T12:34:39.875252+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-06T12:52:15.024945+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "34ReZ3vuDQCY7hCRA5ocoQ=="
+				},
+				"code" : "\"instances1 addEventHandler: (BlDragHandler new)\""
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -988,7 +1056,7 @@
 														"__type" : "time",
 														"time" : {
 															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2025-04-02T12:53:14.20716+02:00"
+															"dateAndTimeString" : "2025-04-02T12:53:24.111115+02:00"
 														}
 													},
 													"uid" : {
@@ -998,7 +1066,7 @@
 													"paragraphStyle" : {
 														"__type" : "textStyle"
 													},
-													"string" : "Existen métodos para realizar una copia cambiando alguno de sus atributos. {{gtMethod:BlBorder>>cop}}"
+													"string" : "Existen métodos para realizar una copia cambiando alguno de sus atributos. e.g. {{gtMethod:BlBorder>>copyWithWidth:}}"
 												},
 												{
 													"__type" : "pharoSnippet",
@@ -1390,6 +1458,285 @@
 					"__type" : "textStyle"
 				},
 				"string" : "**Para ver cómo dibujar los eventos con anchors**"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-06T12:48:07.560328+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-06T12:48:43.307677+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "xdGCl3vuDQCbMwKsA5ocoQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "{{gtMethod:BlDragAndDropExamples>>tagsSlidingOrderer}}"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-06T12:51:37.864218+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-06T12:51:38.728628+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "9scLpHvuDQCb9/tgA5ocoQ=="
+							},
+							"code" : "instances1 := GtLscInstanceElement new.\rinstances2 := GtLscInstanceElement new.\rinstances3 := GtLscInstanceElement new."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-06T12:51:58.147499+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-06T12:53:32.707667+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "vUZBpXvuDQCcADKxA5ocoQ=="
+							},
+							"code" : "\taContainer := BlElement new.\r\taContainer layout: (BlLinearLayout horizontal cellSpacing: 5).\r\taContainer constraintsDo: [ :c |\r\t\tc horizontal matchParent.\r\t\tc vertical fitContent ]."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-06T12:48:53.076982+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-06T12:53:39.152032+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "KlQ5mnvuDQCbirceA5ocoQ=="
+							},
+							"code" : "aContainer addEventHandler: (BlDropHandler new\r\t\tacceptOnlyFromThisElement;\r\t\twhenHorizontalSlideOverDo: [];\r\t\twhenDroppedDo: [ :anItemsDroppedEvent |\r\t\t\t| container position childBefore |\r\r\t\t\tcontainer := anItemsDroppedEvent currentTarget.\r\t\t\tposition := anItemsDroppedEvent position x.\r\t\t\tchildBefore := container children accountedByLayout\r\t\t\t\tdetect: [ :eachChild | position < (eachChild bounds inParent center x - 5) ]\r\t\t\t\tifFound: [ :eachChild | eachChild ]\r\t\t\t\tifNone: [ nil ].\r\r\t\t\t(anItemsDroppedEvent items collect: [ :eachDragItem | eachDragItem sourceElement ])\r\t\t\t\tdo: [ :each |\r\t\t\t\t\tchildBefore\r\t\t\t\t\t\tifNil: [ container addChild: each ]\r\t\t\t\t\t\tifNotNil: [ container addChild: each before: childBefore ] ] ])."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-06T12:52:04.601476+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-06T12:53:41.902907+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "e8ajpXvuDQCcCg1SA5ocoQ=="
+							},
+							"code" : "aContainer addChildren: {instances1. instances2. instances3}"
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-06T12:47:43.095689+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-06T12:48:06.740462+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "3oINlnvuDQCaZNqGA5ocoQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "**Para arrastrar LSC Instances**"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-03T12:52:16.961387+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-03T16:08:56.708316+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "AjraTD/uDQCeo7GTDEjISQ=="
+				},
+				"code" : "BrFrame new matchParent"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-03T16:09:06.635445+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-03T16:09:22.572704+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "5JLDDELuDQC0czVfAji8eA=="
+				},
+				"code" : "GtLscElement new"
 			}
 		]
 	},

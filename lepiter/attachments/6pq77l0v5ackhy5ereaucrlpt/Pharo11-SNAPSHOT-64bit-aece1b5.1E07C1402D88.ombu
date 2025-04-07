@@ -1,0 +1,21 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-07T09:15:04.460283+02:00' ],
+		#prior : OmReference [ 'Pharo11-SNAPSHOT-64bit-aece1b5.26A9D9728EA0', '8' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModelExamples,
+				#isMetaSide : false
+			},
+			#name : #lscWithInstance,
+			#protocol : #'examples - model',
+			#sourceCode : 'lscWithInstance\r\t<gtExample>\r\t| aLsc anInstance |\r\taLsc := self newLsc.\r\tanInstance := GtLscInstanceModel new.\r\taLsc addInstance: anInstance.\r\t[ aLsc addInstance: anInstance ] on: Exception do: [ :e | e description = \'Can not add an instance already added\' ].\r\r\tself assert: (aLsc hasInstance: anInstance).\r\tself assert: aLsc instancesSize equals: 1.\r\r\t^ aLsc',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}

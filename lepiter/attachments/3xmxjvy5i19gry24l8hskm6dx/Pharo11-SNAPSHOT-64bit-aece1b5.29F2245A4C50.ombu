@@ -1,0 +1,21 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-07T12:51:53.63192+02:00' ],
+		#prior : OmReference [ 'Pharo11-SNAPSHOT-64bit-aece1b5.23F4C1281570', '3' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModel,
+				#isMetaSide : false
+			},
+			#name : #'moveInstanceFromPosition:to:',
+			#protocol : #'api - instances',
+			#sourceCode : 'moveInstanceFromPosition: sourcePositionInteger to: targetPosition\r\t| instanceToMove|\r\tself assert: (sourcePositionInteger between: 1 and: instances size) description: \'Non-existent source position\'.\r\tself assert: (targetPosition between: 1 and: instances size) description: \'Non-existent source position\'.\r\tinstanceToMove := self instanceAt: sourcePositionInteger.\r\tself removeInstance: instanceToMove.\r\tself addInstance: instanceToMove atPosition: targetPosition',
+			#stamp : 'GlamorousAuthor 4/7/2025 12:51',
+			#package : #Gt4Lsc
+		}
+	}
+}

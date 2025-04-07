@@ -584,7 +584,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-03-28T12:37:38.091198+01:00"
+						"dateAndTimeString" : "2025-04-07T09:47:59.495519+02:00"
 					}
 				},
 				"uid" : {
@@ -594,7 +594,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Add Instances to LSC]]"
+				"string" : "[[LSC with Instances]]"
 			},
 			{
 				"__type" : "textSnippet",
