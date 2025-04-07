@@ -1,0 +1,109 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-07T18:48:14.570633+02:00' ],
+		#prior : OmReference [ 'Pharo11-SNAPSHOT-64bit-aece1b5.3CD4EE40B398', '5' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpClassModification {
+		#oldClass : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : 'BrHorizontalGrid',
+				#definitionSource : 'BrHorizontalGrid subclass: #GtLscInstancesCanvasElement\r\tinstanceVariableNames: \'\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4Lsc-! Views\'',
+				#traitCompositionSource : '{}'
+			},
+			#name : #GtLscInstancesCanvasElement,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#definitionSource : 'GtLscInstancesCanvasElement class\r\tinstanceVariableNames: \'\'',
+					#traitCompositionSource : '{}'
+				},
+				#name : #'GtLscInstancesCanvasElement class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @7
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#className : #GtLscInstancesCanvasElement,
+					#isMetaSide : false
+				},
+				#parent : @7,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#category : #'Gt4Lsc-! Views',
+			#package : #Gt4Lsc,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#newClass : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : 'BrHorizontalGrid',
+				#definitionSource : 'BrHorizontalGrid subclass: #GtLscInstancesCanvasElement\r\tuses: TGtWithLscViewModel\r\tinstanceVariableNames: \'\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4Lsc-! Views\'',
+				#traitCompositionSource : 'TGtWithLscViewModel'
+			},
+			#name : #GtLscInstancesCanvasElement,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#className : #GtLscInstancesCanvasElement,
+						#isMetaSide : false
+					},
+					#name : #lscViewModel,
+					#parent : @21
+				}
+			],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#definitionSource : 'GtLscInstancesCanvasElement class\r\tuses: TGtWithLscViewModel classTrait\r\tinstanceVariableNames: \'\'',
+					#traitCompositionSource : 'TGtWithLscViewModel classTrait'
+				},
+				#name : #'GtLscInstancesCanvasElement class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @21
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#className : #GtLscInstancesCanvasElement,
+					#isMetaSide : false
+				},
+				#parent : @21,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#category : #'Gt4Lsc-! Views',
+			#package : #Gt4Lsc,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}
+
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-07T20:38:17.670583+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstancesCanvasElement,
+				#isMetaSide : false
+			},
+			#name : #initialize,
+			#protocol : #initialization,
+			#sourceCode : 'initialize\r\tsuper initialize.\r\t\r\tself matchParent',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}

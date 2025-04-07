@@ -1,0 +1,81 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-07T20:53:17.416431+02:00' ],
+		#prior : OmReference [ 'Pharo11-SNAPSHOT-64bit-aece1b5.402EF30089A0', '7' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstancesCanvasElement,
+				#isMetaSide : false
+			},
+			#name : #onLscViewModelChanged,
+			#protocol : #'api - lsc view model',
+			#sourceCode : 'onLscViewModelChanged\r\t"Is sent when a new Lsc view model is assigned to the element"\r\r\tself removeChildren.\r\tself lscViewModel instanceViewModels doWithIndex: [ :eachLscInstanceViewModel : index |\r\t\t| lscInstanceElement lscInstanceElementId |\r\t\tlscInstanceElement := self createLscInstanceViewFor: eachLscInstanceViewModel.\r\t\tlscInstanceElementId := (GtLscConstants instanceElementIdTemplate format: index asString).\r\t\tself addChild: lscInstanceElement as: lscInstanceElementId ].',
+			#stamp : 'GlamorousAuthor 4/7/2025 20:53',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-07T20:55:13.62354+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #instanceViewModels,
+			#protocol : #accessing,
+			#sourceCode : 'instanceViewModels\r\t^ instanceViewModels',
+			#stamp : 'GlamorousAuthor 4/7/2025 20:55',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-07T20:57:38.087618+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstancesCanvasElement,
+				#isMetaSide : false
+			},
+			#name : #'createLscInstanceViewFor:',
+			#protocol : #initialization,
+			#sourceCode : 'createLscInstanceViewFor: aLscInstanceViewModel \r\t^ GtLscInstanceElement new\r\t\tlscInstanceViewModel: aLscInstanceViewModel',
+			#stamp : 'GlamorousAuthor 4/7/2025 20:57',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-07T20:58:25.087867+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscConstants class',
+				#isMetaSide : true
+			},
+			#name : #instanceElementIdTemplate,
+			#protocol : #'api - constants',
+			#sourceCode : 'instanceElementIdTemplate\r\t^ #\'instance-{1}\'',
+			#stamp : 'GlamorousAuthor 4/7/2025 20:58',
+			#package : #Gt4Lsc
+		}
+	}
+}

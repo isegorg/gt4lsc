@@ -1,0 +1,53 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-07T21:30:16.192367+02:00' ],
+		#prior : OmReference [ 'Pharo11-SNAPSHOT-64bit-aece1b5.43F013E761D8', '2' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceElement,
+				#isMetaSide : false
+			},
+			#name : #createNameElement,
+			#protocol : #initialization,
+			#sourceCode : 'createNameElement\r\t^ BrEditableLabel new\r\t\thFitContentLimited;\r\t\tvFitContent;\r\t\taptitude: BrGlamorousRegularEditorAptitude + BrGlamorousEditorSpacingAptitude;\r\t\tconstraintsDo: [ :c | c linear horizontal alignCenter ];\r\t\twhen: BrEditorAcceptWish do: [ :aWish | self onAcceptNewTitleWish: aWish ];\r\t\ttext: \'Name\'',
+			#stamp : 'GlamorousAuthor 4/2/2025 18:41',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceElement,
+				#isMetaSide : false
+			},
+			#name : #createNameElement,
+			#protocol : #initialization,
+			#sourceCode : 'createNameElement\r\t^ BrEditableLabel new\r\t\thFitContentLimited;\r\t\tvFitContent;\r\t\taptitude: BrGlamorousRegularEditorAptitude + BrGlamorousEditorSpacingAptitude;\r\t\tconstraintsDo: [ :c | c linear horizontal alignCenter ];\r\t\twhen: BrEditorAcceptWish do: [ :aWish | self onAcceptNewTitleWish: aWish ];\r\t\ttext: \'Name\';\r\t\tid: GtLscConstants instanceNameElementId',
+			#stamp : 'GlamorousAuthor 4/7/2025 21:30',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-07T21:30:37.073913+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscConstants class',
+				#isMetaSide : true
+			},
+			#name : #instanceNameElementId,
+			#protocol : #'api - constants',
+			#sourceCode : 'instanceNameElementId\r\t^ #nameElement',
+			#stamp : 'GlamorousAuthor 4/7/2025 21:30',
+			#package : #Gt4Lsc
+		}
+	}
+}
