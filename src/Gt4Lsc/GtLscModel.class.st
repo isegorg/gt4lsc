@@ -76,6 +76,11 @@ GtLscModel >> instanceAt: anInteger [
 ]
 
 { #category : #'api - instances' }
+GtLscModel >> instances [
+	^ instances
+]
+
+{ #category : #'api - instances' }
 GtLscModel >> instancesSize [
 	^ instances size
 ]

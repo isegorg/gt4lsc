@@ -5,7 +5,8 @@ Class {
 	#classTraits : 'TGtWithLscViewModel classTrait + TBrLayoutResizable classTrait',
 	#instVars : [
 		'titleElement',
-		'canvasContainer'
+		'canvasContainer',
+		'instancesCanvas'
 	],
 	#category : #'Gt4Lsc-! Views'
 }
@@ -38,7 +39,6 @@ GtLscElement >> defaultLayout [
 
 { #category : #initialization }
 GtLscElement >> initialize [
-	| instancesCanvas |
 	super initialize.
 	
 	titleElement := self createTitleElement.
@@ -61,7 +61,8 @@ GtLscElement >> onAcceptNewTitleWish: aWish [
 GtLscElement >> onLscViewModelChanged [
 	"Is sent when a new Lsc view model is assigned to the element"
 
-	self onTitleChanged
+	self onTitleChanged.
+	instancesCanvas lscViewModel: self lscViewModel
 ]
 
 { #category : #'events handling' }

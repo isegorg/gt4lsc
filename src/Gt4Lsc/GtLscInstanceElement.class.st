@@ -44,7 +44,8 @@ GtLscInstanceElement >> createNameElement [
 		aptitude: BrGlamorousRegularEditorAptitude + BrGlamorousEditorSpacingAptitude;
 		constraintsDo: [ :c | c linear horizontal alignCenter ];
 		when: BrEditorAcceptWish do: [ :aWish | self onAcceptNewTitleWish: aWish ];
-		text: 'Name'
+		text: 'Name';
+		id: GtLscConstants instanceNameElementId
 ]
 
 { #category : #initialization }

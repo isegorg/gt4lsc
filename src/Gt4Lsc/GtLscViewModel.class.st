@@ -4,7 +4,8 @@ Class {
 	#traits : 'TGtWithLscModel + TGtAnnouncer',
 	#classTraits : 'TGtWithLscModel classTrait + TGtAnnouncer classTrait',
 	#instVars : [
-		'announcer'
+		'announcer',
+		'instanceViewModels'
 	],
 	#category : #'Gt4Lsc-! View models'
 }
@@ -16,6 +17,23 @@ GtLscViewModel >> announcer [
 	^ announcer ifNil: [ announcer := Announcer new ]
 ]
 
+{ #category : #initialization }
+GtLscViewModel >> createLscInstanceViewModelFor: eachLscInstanceModel [ 
+	^ GtLscInstanceViewModel new lscInstanceModel: eachLscInstanceModel
+]
+
+{ #category : #initialization }
+GtLscViewModel >> initialize [
+	super initialize.
+	
+	instanceViewModels := OrderedCollection empty.
+]
+
+{ #category : #accessing }
+GtLscViewModel >> instanceViewModels [
+	^ instanceViewModels
+]
+
 { #category : #'events generation' }
 GtLscViewModel >> notifyLscViewModelTitleChanged [
 	self announce: (GtLscViewModelTitleChanged new )
@@ -24,6 +42,10 @@ GtLscViewModel >> notifyLscViewModelTitleChanged [
 { #category : #'api - lsc model' }
 GtLscViewModel >> onLscModelChanged [
 	"Is sent when a new lsc model is assigned to the view model"
+	
+	instanceViewModels := self lscModel instances
+			collect: [ :eachLscInstanceModel | self createLscInstanceViewModelFor: eachLscInstanceModel ]
+			as: OrderedCollection.
 ]
 
 { #category : #'events handling' }

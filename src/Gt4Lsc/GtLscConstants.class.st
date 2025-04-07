@@ -33,6 +33,16 @@ GtLscConstants class >> hotColor [
 ]
 
 { #category : #'api - constants' }
+GtLscConstants class >> instanceElementIdTemplate [
+	^ #'instance-{1}'
+]
+
+{ #category : #'api - constants' }
+GtLscConstants class >> instanceNameElementId [
+	^ #nameElement
+]
+
+{ #category : #'api - constants' }
 GtLscConstants class >> instancesCanvasId [
 	^ #instancesCanvas
 ]

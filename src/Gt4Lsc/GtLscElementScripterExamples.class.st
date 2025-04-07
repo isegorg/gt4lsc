@@ -88,6 +88,35 @@ GtLscElementScripterExamples >> renderLscInstanceWithChanges [
 ]
 
 { #category : #'examples - ui' }
+GtLscElementScripterExamples >> renderLscWithInstances [
+	"Check that the UI element displays the model's characteristics"
+
+	<gtExample>
+	| lsc uiElement instancesCanvasElement firstLscInstance secondLscInstance fistInstanceElement secondInstanceElement |
+	lsc := GtLscModelExamples new lscAddInstanceAtPosition.
+	firstLscInstance := lsc instanceAt: 1.
+	secondLscInstance := lsc instanceAt: 2.
+	uiElement := lsc asElement.
+	
+	"Check the instance in the view"
+	instancesCanvasElement := (uiElement childNamed: GtLscConstants instancesCanvasId).
+	self assert: instancesCanvasElement isNotNil.
+	self assert: instancesCanvasElement childrenCount equals: 2.
+	
+	fistInstanceElement := (instancesCanvasElement childAt: 1).
+	self assert: fistInstanceElement id equals: #'instance-1' asBlocElementId.
+	self assert: (fistInstanceElement childNamed: #nameElement) text asString equals: firstLscInstance name.
+	self assert: fistInstanceElement border paint equals: GtLscConstants hotColor asBlPaint.
+	
+	secondInstanceElement := (instancesCanvasElement childAt: 2).
+	self assert: secondInstanceElement id equals: #'instance-2' asBlocElementId.
+	self assert: (secondInstanceElement childNamed: #nameElement) text asString equals: secondLscInstance name.
+	self assert: secondInstanceElement border paint equals: GtLscConstants hotColor asBlPaint.
+	
+	^ uiElement
+]
+
+{ #category : #'examples - ui' }
 GtLscElementScripterExamples >> renderLscWithTitleChanged [
 	"Check that ui element shows the model title change"
 
