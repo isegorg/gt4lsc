@@ -1,0 +1,165 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-08T13:11:11.375999+02:00' ],
+		#prior : OmReference [ 'Pharo11-SNAPSHOT-64bit-aece1b5.29EE80BE56E8', '8' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #'onInstanceAdded:',
+			#protocol : #'events handling',
+			#sourceCode : 'onInstanceAdded: aLscInstanceModelAddedAnnouncement\r\tinstanceViewModels add: (self createLscInstanceViewModelFor: aLscInstanceModelAddedAnnouncement lscInstanceModel).',
+			#stamp : 'GlamorousAuthor 4/8/2025 13:07',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #'onInstanceAdded:',
+			#protocol : #'events handling',
+			#sourceCode : 'onInstanceAdded: aLscInstanceModelAddedAnnouncement\r\t| instanceViewModel |\r\tinstanceViewModel := self createLscInstanceViewModelFor: aLscInstanceModelAddedAnnouncement lscInstanceModel.\r\tinstanceViewModels add: instanceViewModel.\r\tself notifyLscInstanceViewModelAdded: instanceViewModel',
+			#stamp : 'GlamorousAuthor 4/8/2025 13:11',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-08T13:11:44.67129+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #'notifyLscInstanceViewModelAdded:',
+			#protocol : #'events generation',
+			#sourceCode : 'notifyLscInstanceViewModelAdded: aGtLscInstanceViewModel\r\tself announce: (GtLscInstanceViewModelAdded lscInstanceViewModel: aGtLscInstanceViewModel )',
+			#stamp : 'GlamorousAuthor 4/8/2025 13:11',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-08T13:12:36.456954+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpClassAddition {
+		#class : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : 'GtLscInstanceViewModelAnnouncement',
+				#definitionSource : 'GtLscInstanceViewModelAnnouncement subclass: #GtLscInstanceViewModelAdded\r\tinstanceVariableNames: \'lscInstanceViewModel\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4Lsc-Events\'',
+				#traitCompositionSource : '{}'
+			},
+			#name : #GtLscInstanceViewModelAdded,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#className : #GtLscInstanceViewModelAdded,
+						#isMetaSide : false
+					},
+					#name : #lscInstanceViewModel,
+					#parent : @7
+				}
+			],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#definitionSource : 'GtLscInstanceViewModelAdded class\r\tinstanceVariableNames: \'\'',
+					#traitCompositionSource : '{}'
+				},
+				#name : #'GtLscInstanceViewModelAdded class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @7
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#className : #GtLscInstanceViewModelAdded,
+					#isMetaSide : false
+				},
+				#parent : @7,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#category : #Gt4Lsc-Events,
+			#package : #Gt4Lsc,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-08T13:12:58.747647+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscInstanceViewModelAdded class',
+				#isMetaSide : true
+			},
+			#name : #'lscInstanceViewModel:',
+			#protocol : #'instance creation',
+			#sourceCode : 'lscInstanceViewModel: aGtLscInstanceViewModel\r\t^ self new lscInstanceViewModel: aGtLscInstanceViewModel',
+			#stamp : 'GlamorousAuthor 4/8/2025 13:12',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-08T13:13:29.621447+02:00' ],
+		#prior : OmReference [ '4' ],
+		#self : OmReference [ '5' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceViewModelAdded,
+				#isMetaSide : false
+			},
+			#name : #'lscInstanceViewModel:',
+			#protocol : #accessing,
+			#sourceCode : 'lscInstanceViewModel: aGtLscInstanceViewModel\r\tlscInstanceViewModel := aGtLscInstanceViewModel',
+			#stamp : 'GlamorousAuthor 4/8/2025 13:13',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-08T13:13:44.265608+02:00' ],
+		#prior : OmReference [ '5' ],
+		#self : OmReference [ '6' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceViewModelAdded,
+				#isMetaSide : false
+			},
+			#name : #lscInstanceViewModel,
+			#protocol : #accessing,
+			#sourceCode : 'lscInstanceViewModel\r\t^ lscInstanceViewModel',
+			#stamp : 'GlamorousAuthor 4/8/2025 13:13',
+			#package : #Gt4Lsc
+		}
+	}
+}

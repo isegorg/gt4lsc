@@ -568,7 +568,82 @@
 							"__type" : "textSnippet",
 							"children" : {
 								"__type" : "snippets",
-								"items" : [ ]
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-07T17:00:22.051135+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-07T17:00:32.691923+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "aTBwO5PuDQCgxeYuBJ94tg=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "[[Checking view features with the initial model - LSC with Instances]]"
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-08T09:49:36.442806+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-08T09:49:45.120422+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "hODCVKHuDQCPqSvwDxfr3Q=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "[[Checking view features with the modified model - LSC "
+									}
+								]
 							},
 							"createEmail" : {
 								"__type" : "email",
@@ -578,7 +653,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-04-07T17:00:56.266346+02:00"
+									"dateAndTimeString" : "2025-04-07T17:01:01.02144+02:00"
 								}
 							},
 							"editEmail" : {
@@ -589,7 +664,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-04-07T17:00:57.347337+02:00"
+									"dateAndTimeString" : "2025-04-07T17:01:01.068117+02:00"
 								}
 							},
 							"uid" : {
@@ -599,44 +674,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "["
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-04-07T17:00:22.051135+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-04-07T17:00:32.691923+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "aTBwO5PuDQCgxeYuBJ94tg=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "[[Checking view features with the initial model - LSC with Instances]]"
+							"string" : "[[LSC with Instances - View]]"
 						}
 					]
 				},

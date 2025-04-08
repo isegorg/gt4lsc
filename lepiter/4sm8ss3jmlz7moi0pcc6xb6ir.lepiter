@@ -605,6 +605,43 @@
 											"__type" : "textStyle"
 										},
 										"string" : "[[Checking view features with the initial model - LSC with Instances]]"
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-08T09:49:36.442806+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-08T09:49:50.719617+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "hODCVKHuDQCPqSvwDxfr3Q=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "[[Checking view features with the modified model - LSC with Instances]]"
 									}
 								]
 							},

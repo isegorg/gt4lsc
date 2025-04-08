@@ -1,0 +1,21 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-08T10:13:36.548158+02:00' ],
+		#prior : OmReference [ 'Pharo11-SNAPSHOT-64bit-aece1b5.468FAD7A0A20', '15' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscElementScripterExamples,
+				#isMetaSide : false
+			},
+			#name : #renderLscAddingInstance,
+			#protocol : #'examples - ui',
+			#sourceCode : 'renderLscAddingInstance\r\t"Check that the UI element displays the model\'s characteristics"\r\r\t<gtExample>\r\t| lsc uiElement instancesCanvasElement firstLscInstance secondLscInstance initialInstancesSize instanceAdded instanceAddedPostion instanceAdddElement |\r\tlsc := GtLscModelExamples new lscAddInstanceAtPosition.\r\tfirstLscInstance := lsc instanceAt: 1.\r\tsecondLscInstance := lsc instanceAt: 2.\r\tinitialInstancesSize := lsc instancesSize.\r\tuiElement := lsc asElement.\r\t\r\t"Add an instance to the model"\r\tinstanceAdded := GtLscInstanceModel new\r\t\tname: \'Instance added\';\r\t\ttemperature: GtLscColdTemperature;\r\t\tyourself.\r\tlsc addInstance: instanceAdded.\r\tinstanceAddedPostion := initialInstancesSize + 1.\r\t\r\t"Check the instance in the view"\r\tinstancesCanvasElement := (uiElement childNamed: GtLscConstants instancesCanvasId).\r\tself assert: instancesCanvasElement isNotNil.\r\tself assert: instancesCanvasElement childrenCount equals: instanceAddedPostion.\r\t\r\tinstanceAdddElement := (instancesCanvasElement childAt: instanceAddedPostion).\r\tself assert: instanceAdddElement id equals: (GtLscConstants instanceElementIdTemplate format: instanceAddedPostion asString) asBlocElementId.\r\tself assert: (instanceAdddElement childNamed: #nameElement) text asString equals: instanceAdded name.\r\tself assert: instanceAdddElement border paint equals: GtLscConstants coldColor asBlPaint.\r\r\t^ uiElement',
+			#stamp : 'GlamorousAuthor 4/8/2025 10:13',
+			#package : #Gt4Lsc
+		}
+	}
+}

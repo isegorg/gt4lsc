@@ -1,0 +1,53 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-08T13:01:42.440368+02:00' ],
+		#prior : OmReference [ 'Pharo11-SNAPSHOT-64bit-aece1b5.29EE80BE56E8', '8' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #subscribeToLscModel,
+			#protocol : #'api - lsc model',
+			#sourceCode : 'subscribeToLscModel\r\t"Is sent after a new lsc model is assigned to the view model.\r\tIt is required to unsubscribe from the domain model by implementing\r\t#unsubscribeFromLscModel if view model subscribes to them"\r\t\r\tself lscModel weak\r\t\twhen: GtLscTitleChanged\r\t\t\tsend: #onTitleChanged:\r\t\t\tto: self',
+			#stamp : 'GlamorousAuthor 4/2/2025 14:06',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #subscribeToLscModel,
+			#protocol : #'api - lsc model',
+			#sourceCode : 'subscribeToLscModel\r\t"Is sent after a new lsc model is assigned to the view model.\r\tIt is required to unsubscribe from the domain model by implementing\r\t#unsubscribeFromLscModel if view model subscribes to them"\r\t\r\tself lscModel weak\r\t\twhen: GtLscTitleChanged\r\t\t\tsend: #onTitleChanged:\r\t\t\tto: self.\r\tself lscModel weak\r\t\twhen: GtLscInstanceModelAdded\r\t\t\tsend: #onInstanceAdded:\r\t\t\tto: self.',
+			#stamp : 'GlamorousAuthor 4/8/2025 13:01',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-08T13:03:47.932746+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #'onInstanceAdded:',
+			#protocol : #'events handling',
+			#sourceCode : 'onInstanceAdded: aLscInstanceModelAddedAnnouncement\r\tinstanceViewModels add: (self createLscInstanceViewModelFor: aLscInstanceModelAddedAnnouncement lscInstanceModel).',
+			#stamp : 'GlamorousAuthor 4/8/2025 13:03',
+			#package : #Gt4Lsc
+		}
+	}
+}

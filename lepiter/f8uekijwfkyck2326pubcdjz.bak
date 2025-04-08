@@ -943,7 +943,43 @@
 													"__type" : "textSnippet",
 													"children" : {
 														"__type" : "snippets",
-														"items" : [ ]
+														"items" : [
+															{
+																"__type" : "changesSnippet",
+																"children" : {
+																	"__type" : "snippets",
+																	"items" : [ ]
+																},
+																"createEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"createTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-03-24T20:02:50.981633+01:00"
+																	}
+																},
+																"editEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"editTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-03-24T20:02:50.981633+01:00"
+																	}
+																},
+																"uid" : {
+																	"__type" : "uid",
+																	"uidString" : "qQLY/HztDQC5kkPeBPkX4Q=="
+																},
+																"previewHeight" : 300,
+																"fileName" : "attachments/dbqlzevrjcp2l0i59eucicify/Pharo11-SNAPSHOT-64bit-aece1b5.4132CB181B88.ombu"
+															}
+														]
 													},
 													"createEmail" : {
 														"__type" : "email",
@@ -975,41 +1011,6 @@
 														"__type" : "textStyle"
 													},
 													"string" : "We announce that the *Title* of {{gtClass:GtLscViewModel|label=ViewModel}} has been changed since {{gtMethod:GtLscViewModel>>onTitleChanged:}}"
-												},
-												{
-													"__type" : "changesSnippet",
-													"children" : {
-														"__type" : "snippets",
-														"items" : [ ]
-													},
-													"createEmail" : {
-														"__type" : "email",
-														"emailString" : "<unknown>"
-													},
-													"createTime" : {
-														"__type" : "time",
-														"time" : {
-															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2025-03-24T20:02:50.981633+01:00"
-														}
-													},
-													"editEmail" : {
-														"__type" : "email",
-														"emailString" : "<unknown>"
-													},
-													"editTime" : {
-														"__type" : "time",
-														"time" : {
-															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2025-03-24T20:02:50.981633+01:00"
-														}
-													},
-													"uid" : {
-														"__type" : "uid",
-														"uidString" : "qQLY/HztDQC5kkPeBPkX4Q=="
-													},
-													"previewHeight" : 300,
-													"fileName" : "attachments/dbqlzevrjcp2l0i59eucicify/Pharo11-SNAPSHOT-64bit-aece1b5.4132CB181B88.ombu"
 												}
 											]
 										},
