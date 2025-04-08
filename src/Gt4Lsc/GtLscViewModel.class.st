@@ -35,8 +35,21 @@ GtLscViewModel >> instanceViewModels [
 ]
 
 { #category : #'events generation' }
+GtLscViewModel >> notifyLscInstanceViewModelAdded: aGtLscInstanceViewModel [
+	self announce: (GtLscInstanceViewModelAdded lscInstanceViewModel: aGtLscInstanceViewModel )
+]
+
+{ #category : #'events generation' }
 GtLscViewModel >> notifyLscViewModelTitleChanged [
 	self announce: (GtLscViewModelTitleChanged new )
+]
+
+{ #category : #'events handling' }
+GtLscViewModel >> onInstanceAdded: aLscInstanceModelAddedAnnouncement [
+	| instanceViewModel |
+	instanceViewModel := self createLscInstanceViewModelFor: aLscInstanceModelAddedAnnouncement lscInstanceModel.
+	instanceViewModels add: instanceViewModel.
+	self notifyLscInstanceViewModelAdded: instanceViewModel
 ]
 
 { #category : #'api - lsc model' }
@@ -62,7 +75,11 @@ GtLscViewModel >> subscribeToLscModel [
 	self lscModel weak
 		when: GtLscTitleChanged
 			send: #onTitleChanged:
-			to: self
+			to: self.
+	self lscModel weak
+		when: GtLscInstanceModelAdded
+			send: #onInstanceAdded:
+			to: self.
 ]
 
 { #category : #'api - lsc' }

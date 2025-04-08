@@ -20,6 +20,7 @@ GtLscModel class >> defaultTitle [
 GtLscModel >> addInstance: aGtLscInstanceModel [
 	self assert: (self hasInstance: aGtLscInstanceModel) not description: 'Can not add an instance already added'.
 	instances add: aGtLscInstanceModel.
+	self notifyInstanceAdded: aGtLscInstanceModel.
 ]
 
 { #category : #'api - instances' }
@@ -93,6 +94,11 @@ GtLscModel >> moveInstanceFromPosition: sourcePositionInteger to: targetPosition
 	instanceToMove := self instanceAt: sourcePositionInteger.
 	self removeInstance: instanceToMove.
 	self addInstance: instanceToMove atPosition: targetPosition
+]
+
+{ #category : #'events generation' }
+GtLscModel >> notifyInstanceAdded: aGtLscInstanceModel [
+	self announce: (GtLscInstanceModelAdded lscInstanceModel: aGtLscInstanceModel)
 ]
 
 { #category : #'events generation' }

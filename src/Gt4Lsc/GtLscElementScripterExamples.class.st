@@ -67,6 +67,39 @@ GtLscElementScripterExamples >> pipelineLscInstanceChangeName [
 ]
 
 { #category : #'examples - ui' }
+GtLscElementScripterExamples >> renderLscAddingInstance [
+	"Check that the UI element displays the model's characteristics"
+
+	<gtExample>
+	| lsc uiElement instancesCanvasElement firstLscInstance secondLscInstance initialInstancesSize instanceAdded instanceAddedPostion instanceAdddElement |
+	lsc := GtLscModelExamples new lscAddInstanceAtPosition.
+	firstLscInstance := lsc instanceAt: 1.
+	secondLscInstance := lsc instanceAt: 2.
+	initialInstancesSize := lsc instancesSize.
+	uiElement := lsc asElement.
+	
+	"Add an instance to the model"
+	instanceAdded := GtLscInstanceModel new
+		name: 'Instance added';
+		temperature: GtLscColdTemperature;
+		yourself.
+	lsc addInstance: instanceAdded.
+	instanceAddedPostion := initialInstancesSize + 1.
+	
+	"Check the instance in the view"
+	instancesCanvasElement := (uiElement childNamed: GtLscConstants instancesCanvasId).
+	self assert: instancesCanvasElement isNotNil.
+	self assert: instancesCanvasElement childrenCount equals: instanceAddedPostion.
+	
+	instanceAdddElement := (instancesCanvasElement childAt: instanceAddedPostion).
+	self assert: instanceAdddElement id equals: (GtLscConstants instanceElementIdTemplate format: instanceAddedPostion asString) asBlocElementId.
+	self assert: (instanceAdddElement childNamed: #nameElement) text asString equals: instanceAdded name.
+	self assert: instanceAdddElement border paint equals: GtLscConstants coldColor asBlPaint.
+
+	^ uiElement
+]
+
+{ #category : #'examples - ui' }
 GtLscElementScripterExamples >> renderLscInstanceWithChanges [
 	"Check that ui element shows the model changes"
 
