@@ -116,7 +116,7 @@ GtLscElementScripterExamples >> renderLscInstanceWithChanges [
 	"Check name"
 	self assert: (uiElement instVarNamed: #nameElement) text asString equals: lscInstance name.
 	"Check locationLine border"
-		self assert: uiElement locationLineElement border paint equals: GtLscConstants coldColor asBlPaint.
+	self assert: uiElement locationLineElement border paint equals: GtLscConstants coldColor asBlPaint.
 	^ uiElement
 ]
 

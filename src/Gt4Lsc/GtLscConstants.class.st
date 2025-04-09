@@ -5,6 +5,11 @@ Class {
 }
 
 { #category : #'api - constants' }
+GtLscConstants class >> canvasesContainerElementId [
+	^ #canvasesContainer
+]
+
+{ #category : #'api - constants' }
 GtLscConstants class >> coldBorder [
 	^ BlBorder builder
 		dashed;

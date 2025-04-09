@@ -12,8 +12,8 @@ Class {
 }
 
 { #category : #initialization }
-GtLscElement >> createCanvasContainer [
-	^ BrFrame new matchParent; id: #canvasContainer
+GtLscElement >> createCanvasesContainer [
+	^ BrFrame new matchParent; id: GtLscConstants canvasesContainerElementId
 ]
 
 { #category : #initialization }
@@ -42,7 +42,7 @@ GtLscElement >> initialize [
 	super initialize.
 	
 	titleElement := self createTitleElement.
-	canvasContainer := self createCanvasContainer.
+	canvasContainer := self createCanvasesContainer.
 	instancesCanvas := self createInstancesCanvas.
 	canvasContainer addChild: instancesCanvas.
 	
