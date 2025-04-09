@@ -9,19 +9,19 @@ OmEntry {
 		#class : RGClassDefinition {
 			#annotations : IdentityDictionary {
 				#superclassName : 'BlElementUniqueState',
-				#definitionSource : 'BlElementUniqueState subclass: #BlElementHotState\r\tinstanceVariableNames: \'\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4Lsc-Helpers\'',
+				#definitionSource : 'BlElementUniqueState subclass: #GtLscHotElementState\r\tinstanceVariableNames: \'\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4Lsc-Helpers\'',
 				#traitCompositionSource : '{}'
 			},
-			#name : #BlElementHotState,
+			#name : #GtLscHotElementState,
 			#methods : IdentityDictionary { },
 			#protocols : Set [ ],
 			#instanceVariables : OrderedCollection [ ],
 			#metaClass : RGMetaclassDefinition {
 				#annotations : IdentityDictionary {
-					#definitionSource : 'BlElementHotState class\r\tinstanceVariableNames: \'\'',
+					#definitionSource : 'GtLscHotElementState class\r\tinstanceVariableNames: \'\'',
 					#traitCompositionSource : '{}'
 				},
-				#name : #'BlElementHotState class',
+				#name : #'GtLscHotElementState class',
 				#methods : IdentityDictionary { },
 				#protocols : Set [ ],
 				#instanceVariables : OrderedCollection [ ],
@@ -29,7 +29,7 @@ OmEntry {
 			},
 			#comment : RGCommentDefinition {
 				#annotations : IdentityDictionary {
-					#className : #BlElementHotState,
+					#className : #GtLscHotElementState,
 					#isMetaSide : false
 				},
 				#parent : @7,
@@ -41,7 +41,9 @@ OmEntry {
 			#sharedPools : OrderedCollection [ ]
 		}
 	}
-}OmEntry {
+}
+
+OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-03T10:33:46.45375+02:00' ],
@@ -51,7 +53,7 @@ OmEntry {
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
 			#annotations : IdentityDictionary {
-				#className : #BlElementHotState,
+				#className : #GtLscHotElementState,
 				#isMetaSide : false
 			},
 			#name : #priority,
@@ -61,4 +63,5 @@ OmEntry {
 			#package : #Gt4Lsc
 		}
 	}
-}
+}
+

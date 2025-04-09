@@ -1,63 +1,9 @@
 OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
-		#time : DateAndTime [ '2025-04-01T10:11:59.766149+02:00' ],
+		#time : DateAndTime [ '2025-04-01T10:12:32.924159+02:00' ],
 		#prior : OmReference [ 'Pharo11-SNAPSHOT-64bit-aece1b5.2E1AF7C1AB20', '13' ],
 		#self : OmReference [ '1' ]
-	},
-	#content : EpCategoryAddition {
-		#classCategoryName : #Gt4Lsc-Helpers,
-		#affectedPackageName : #Gt4Lsc
-	}
-}OmEntry {
-	#tags : {
-		#author : 'GlamorousAuthor',
-		#time : DateAndTime [ '2025-04-01T10:11:59.78989+02:00' ],
-		#prior : OmReference [ '1' ],
-		#self : OmReference [ '2' ]
-	},
-	#content : EpClassAddition {
-		#class : RGClassDefinition {
-			#annotations : IdentityDictionary {
-				#superclassName : 'Object',
-				#definitionSource : 'Object subclass: #GtLscConstants\r\tinstanceVariableNames: \'\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4Lsc-Helpers\'',
-				#traitCompositionSource : '{}'
-			},
-			#name : #GtLscConstants,
-			#methods : IdentityDictionary { },
-			#protocols : Set [ ],
-			#instanceVariables : OrderedCollection [ ],
-			#metaClass : RGMetaclassDefinition {
-				#annotations : IdentityDictionary {
-					#definitionSource : 'GtLscConstants class\r\tinstanceVariableNames: \'\'',
-					#traitCompositionSource : '{}'
-				},
-				#name : #'GtLscConstants class',
-				#methods : IdentityDictionary { },
-				#protocols : Set [ ],
-				#instanceVariables : OrderedCollection [ ],
-				#baseClass : @7
-			},
-			#comment : RGCommentDefinition {
-				#annotations : IdentityDictionary {
-					#className : #GtLscConstants,
-					#isMetaSide : false
-				},
-				#parent : @7,
-				#content : ''
-			},
-			#classVariables : OrderedCollection [ ],
-			#category : #Gt4Lsc-Helpers,
-			#package : #Gt4Lsc,
-			#sharedPools : OrderedCollection [ ]
-		}
-	}
-}OmEntry {
-	#tags : {
-		#author : 'GlamorousAuthor',
-		#time : DateAndTime [ '2025-04-01T10:12:32.924159+02:00' ],
-		#prior : OmReference [ '2' ],
-		#self : OmReference [ '3' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
@@ -72,12 +18,14 @@ OmEntry {
 			#package : #Gt4Lsc
 		}
 	}
-}OmEntry {
+}
+
+OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-01T10:13:14.601878+02:00' ],
-		#prior : OmReference [ '3' ],
-		#self : OmReference [ '4' ]
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
@@ -92,12 +40,14 @@ OmEntry {
 			#package : #Gt4Lsc
 		}
 	}
-}OmEntry {
+}
+
+OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-01T10:13:41.792493+02:00' ],
-		#prior : OmReference [ '4' ],
-		#self : OmReference [ '5' ]
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
@@ -118,8 +68,8 @@ OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-01T10:13:41.792493+02:00' ],
-		#prior : OmReference [ '5' ],
-		#self : OmReference [ '6' ]
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
@@ -129,17 +79,19 @@ OmEntry {
 			},
 			#name : #defaultTemperatureState,
 			#protocol : #'api - constants',
-			#sourceCode : 'defaultTemperatureState\r\t^ BlElementHotState uniqueInstance',
+			#sourceCode : 'defaultTemperatureState\r\t^ GtLscHotElementState uniqueInstance',
 			#stamp : '',
 			#package : #Gt4Lsc
 		}
 	}
-}OmEntry {
+}
+
+OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-02T18:54:56.509867+02:00' ],
-		#prior : OmReference [ '6' ],
-		#self : OmReference [ '7' ]
+		#prior : OmReference [ '4' ],
+		#self : OmReference [ '5' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
@@ -160,8 +112,8 @@ OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-02T19:12:56.808101+02:00' ],
-		#prior : OmReference [ '7' ],
-		#self : OmReference [ '8' ]
+		#prior : OmReference [ '5' ],
+		#self : OmReference [ '6' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
@@ -176,12 +128,14 @@ OmEntry {
 			#package : #Gt4Lsc
 		}
 	}
-}OmEntry {
+}
+
+OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-02T19:13:15.557885+02:00' ],
-		#prior : OmReference [ '8' ],
-		#self : OmReference [ '9' ]
+		#prior : OmReference [ '6' ],
+		#self : OmReference [ '7' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
@@ -196,12 +150,14 @@ OmEntry {
 			#package : #Gt4Lsc
 		}
 	}
-}OmEntry {
+}
+
+OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-02T19:13:33.706096+02:00' ],
-		#prior : OmReference [ '9' ],
-		#self : OmReference [ '10' ]
+		#prior : OmReference [ '7' ],
+		#self : OmReference [ '8' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
@@ -213,6 +169,28 @@ OmEntry {
 			#protocol : #'api - constants',
 			#sourceCode : 'coldColor\r\t^ Color blue',
 			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}
+
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-07T21:30:37.073913+02:00' ],
+		#prior : OmReference [ '8' ],
+		#self : OmReference [ '9' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscConstants class',
+				#isMetaSide : true
+			},
+			#name : #instanceNameElementId,
+			#protocol : #'api - constants',
+			#sourceCode : 'instanceNameElementId\r\t^ #nameElement',
+			#stamp : 'GlamorousAuthor 4/7/2025 21:30',
 			#package : #Gt4Lsc
 		}
 	}

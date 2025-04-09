@@ -148,7 +148,7 @@ OmEntry {
 			},
 			#name : #createLocationElement,
 			#protocol : #initialization,
-			#sourceCode : 'createLocationElement\r\t| element locationLine |\r\telement := BlElement new\r\t\tconstraintsDo: [ :c |\r\t\t\tc horizontal exact: GtLscConstants locationLineWidth.\r\t\t\tc vertical matchParent.\r\t\t\tc linear horizontal alignCenter ];\r\t\tid: GtLscConstants locationElementId.\r\tlocationLine := BlLineElement new\r\t\tfromAnchor: (BlElementTopCenterAnchor element: element);\r\t\ttoAnchor: (BlElementBottomCenterAnchor element: element);\r\t\tid: GtLscConstants locationLineId.\r\tlocationLine states addState: GtLscConstants defaultTemperatureState.\r\tlocationLine withStylesDo: [ :theStyles |\r\t\ttheStyles\r\t\t\taddStyle: (BlElementStyle new\r\t\t\t\tstate: BlElementHotState uniqueInstance;\r\t\t\t\tborder: (GtLscConstants hotBorder copyWithWidth: GtLscConstants locationLineWidth));\r\t\t\taddStyle: (BlElementStyle new\r\t\t\t\tstate: BlElementHotState uniqueInstance not;\r\t\t\t\tborder: (GtLscConstants coldBorder copyWithWidth: GtLscConstants locationLineWidth)) ].\r\telement addChild: locationLine.\r\t^ element',
+			#sourceCode : 'createLocationElement\r\t| element locationLine |\r\telement := BlElement new\r\t\tconstraintsDo: [ :c |\r\t\t\tc horizontal exact: GtLscConstants locationLineWidth.\r\t\t\tc vertical matchParent.\r\t\t\tc linear horizontal alignCenter ];\r\t\tid: GtLscConstants locationElementId.\r\tlocationLine := BlLineElement new\r\t\tfromAnchor: (BlElementTopCenterAnchor element: element);\r\t\ttoAnchor: (BlElementBottomCenterAnchor element: element);\r\t\tid: GtLscConstants locationLineId.\r\tlocationLine states addState: GtLscConstants defaultTemperatureState.\r\tlocationLine withStylesDo: [ :theStyles |\r\t\ttheStyles\r\t\t\taddStyle: (BlElementStyle new\r\t\t\t\tstate: GtLscHotElementState uniqueInstance;\r\t\t\t\tborder: (GtLscConstants hotBorder copyWithWidth: GtLscConstants locationLineWidth));\r\t\t\taddStyle: (BlElementStyle new\r\t\t\t\tstate: GtLscHotElementState uniqueInstance not;\r\t\t\t\tborder: (GtLscConstants coldBorder copyWithWidth: GtLscConstants locationLineWidth)) ].\r\telement addChild: locationLine.\r\t^ element',
 			#stamp : 'GlamorousAuthor 3/31/2025 18:17',
 			#package : #Gt4Lsc
 		}
@@ -170,7 +170,7 @@ OmEntry {
 			},
 			#name : #createNameElement,
 			#protocol : #initialization,
-			#sourceCode : 'createNameElement\r\t^ BrEditableLabel new\r\t\thFitContentLimited;\r\t\tvFitContent;\r\t\taptitude: BrGlamorousRegularEditorAptitude + BrGlamorousEditorSpacingAptitude;\r\t\tconstraintsDo: [ :c | c linear horizontal alignCenter ];\r\t\twhen: BrEditorAcceptWish do: [ :aWish | self onAcceptNewTitleWish: aWish ];\r\t\ttext: \'Name\'',
+			#sourceCode : 'createNameElement\r\t^ BrEditableLabel new\r\t\thFitContentLimited;\r\t\tvFitContent;\r\t\taptitude: BrGlamorousRegularEditorAptitude + BrGlamorousEditorSpacingAptitude;\r\t\tconstraintsDo: [ :c | c linear horizontal alignCenter ];\r\t\twhen: BrEditorAcceptWish do: [ :aWish | self onAcceptNewTitleWish: aWish ];\r\t\tid: GtLscConstants instanceNameElementId;\r\t\ttext: \'Name\'',
 			#stamp : 'GlamorousAuthor 3/31/2025 18:18',
 			#package : #Gt4Lsc
 		}

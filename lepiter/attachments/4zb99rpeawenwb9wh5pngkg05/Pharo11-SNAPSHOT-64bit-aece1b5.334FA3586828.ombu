@@ -18,7 +18,9 @@ OmEntry {
 			#package : #Gt4Lsc
 		}
 	}
-}OmEntry {
+}
+
+OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-03T15:41:16.471244+02:00' ],
@@ -33,12 +35,14 @@ OmEntry {
 			},
 			#name : #asViewState,
 			#protocol : #converting,
-			#sourceCode : 'asViewState\r\t^ BlElementHotState uniqueInstance',
+			#sourceCode : 'asViewState\r\t^ GtLscHotElementState uniqueInstance',
 			#stamp : 'GlamorousAuthor 4/3/2025 15:41',
 			#package : #Gt4Lsc
 		}
 	}
-}OmEntry {
+}
+
+OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-03T15:41:36.169949+02:00' ],
@@ -53,9 +57,10 @@ OmEntry {
 			},
 			#name : #asViewState,
 			#protocol : #converting,
-			#sourceCode : 'asViewState\r\t^ BlElementHotState uniqueInstance not',
+			#sourceCode : 'asViewState\r\t^ GtLscHotElementState uniqueInstance not',
 			#stamp : 'GlamorousAuthor 4/3/2025 15:41',
 			#package : #Gt4Lsc
 		}
 	}
-}
+}
+

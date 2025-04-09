@@ -13,12 +13,14 @@ OmEntry {
 			},
 			#name : #renderLscInstanceWithChanges,
 			#protocol : #'examples - ui',
-			#sourceCode : 'renderLscInstanceWithChanges\r\t"Check that ui element shows the model changes"\r\r\t<gtExample>\r\t| lscInstance uiElement newName newTemperature |\r\tlscInstance := GtLscInstanceModelExamples new newLscInstance.\r\tuiElement := lscInstance asElement.\r\t\r\tnewName := \'Name to check\'.\r\tlscInstance name: newName.\r\tnewTemperature := GtLscColdTemperature.\r\tlscInstance temperature: newTemperature.\r\t\r\t"Check name"\r\tself assert: (uiElement instVarNamed: #nameElement) text asString equals: lscInstance name.\r\t"Check locationLine border"\r\t\tself assert: uiElement locationLineElement border paint equals: GtLscConstants coldColor asBlPaint.\r\t^ uiElement',
+			#sourceCode : 'renderLscInstanceWithChanges\r\t"Check that ui element shows the model changes"\r\r\t<gtExample>\r\t| lscInstance uiElement newName newTemperature |\r\tlscInstance := self renderNewLscInstance.\r\tuiElement := lscInstance asElement.\r\t\r\tnewName := \'Name to check\'.\r\tlscInstance name: newName.\r\tnewTemperature := GtLscColdTemperature.\r\tlscInstance temperature: newTemperature.\r\t\r\t"Check name"\r\tself assert: (uiElement childNamed: GtLscConstants instanceNameElementId) text asString equals: lscInstance name.\r\t"Check locationLine border"\r\tself assert: uiElement locationLineElement border paint equals: GtLscConstants coldColor asBlPaint.\r\t^ lscInstance',
 			#stamp : 'GlamorousAuthor 4/3/2025 18:29',
 			#package : #Gt4Lsc
 		}
 	}
-}OmEntry {
+}
+
+OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-03T18:29:08.204674+02:00' ],
@@ -38,7 +40,9 @@ OmEntry {
 			#package : #Gt4Lsc
 		}
 	}
-}OmEntry {
+}
+
+OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-03T18:29:11.103963+02:00' ],
@@ -58,4 +62,5 @@ OmEntry {
 			#package : #Gt4Lsc
 		}
 	}
-}
+}
+

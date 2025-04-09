@@ -30,24 +30,5 @@ OmEntry {
 		},
 		#classPackageName : #Gt4Lsc
 	}
-}OmEntry {
-	#tags : {
-		#author : 'GlamorousAuthor',
-		#time : DateAndTime [ '2025-04-07T21:30:37.073913+02:00' ],
-		#prior : OmReference [ '1' ],
-		#self : OmReference [ '2' ]
-	},
-	#content : EpMethodAddition {
-		#method : RGMethodDefinition {
-			#annotations : IdentityDictionary {
-				#className : #'GtLscConstants class',
-				#isMetaSide : true
-			},
-			#name : #instanceNameElementId,
-			#protocol : #'api - constants',
-			#sourceCode : 'instanceNameElementId\r\t^ #nameElement',
-			#stamp : 'GlamorousAuthor 4/7/2025 21:30',
-			#package : #Gt4Lsc
-		}
-	}
-}
+}
+

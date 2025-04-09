@@ -478,7 +478,7 @@
 											"__type" : "uid",
 											"uidString" : "GjBgkB3uDQCoH6XWCtLy6g=="
 										},
-										"previewHeight" : 850,
+										"previewHeight" : 918.0,
 										"fileName" : "attachments/dwqqlsi7p5r3kf3nve9r1wi61/Pharo11-SNAPSHOT-64bit-aece1b5.4302649BD5D0.ombu"
 									}
 								]
@@ -584,7 +584,7 @@
 								"__type" : "uid",
 								"uidString" : "vNwLWC7uDQCOdZ1HBpoQ6Q=="
 							},
-							"previewHeight" : 1050,
+							"previewHeight" : 1442.8011474609375,
 							"fileName" : "attachments/b0vivfxgo2inhyclhl56p0ghx/Pharo11-SNAPSHOT-64bit-aece1b5.3A6FA8535758.ombu"
 						},
 						{
@@ -624,7 +624,7 @@
 											"__type" : "uid",
 											"uidString" : "rgOV6i/uDQCqI5d7AGTlkg=="
 										},
-										"previewHeight" : 1350,
+										"previewHeight" : 1198.2274780273438,
 										"fileName" : "attachments/7ygmlwn0qignn0rwym0jmdzjk/Pharo11-SNAPSHOT-64bit-aece1b5.2148C19F75D8.ombu"
 									}
 								]
@@ -648,7 +648,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-04-02T18:30:53.42276+02:00"
+									"dateAndTimeString" : "2025-04-09T18:25:27.201516+02:00"
 								}
 							},
 							"uid" : {
@@ -658,7 +658,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "We create a helper class for constants."
+							"string" : "We create more constants."
 						},
 						{
 							"__type" : "textSnippet",
