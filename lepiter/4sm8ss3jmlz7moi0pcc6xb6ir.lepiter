@@ -212,7 +212,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-03-22T15:55:02.461712+01:00"
+						"dateAndTimeString" : "2025-04-09T10:01:41.354683+02:00"
 					}
 				},
 				"uid" : {
@@ -222,7 +222,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Development]]"
+				"string" : "[[MVVM Infrastructure]]"
 			},
 			{
 				"__type" : "textSnippet",

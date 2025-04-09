@@ -631,7 +631,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-04-08T09:49:45.120422+02:00"
+												"dateAndTimeString" : "2025-04-08T09:49:50.719617+02:00"
 											}
 										},
 										"uid" : {
@@ -641,7 +641,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "[[Checking view features with the modified model - LSC "
+										"string" : "[[Checking view features with the modified model - LSC with Instances]]"
 									}
 								]
 							},
