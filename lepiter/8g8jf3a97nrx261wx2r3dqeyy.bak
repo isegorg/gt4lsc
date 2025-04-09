@@ -103,81 +103,6 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-04-09T12:43:41.199555+02:00"
-											}
-										},
-										"editEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"editTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-04-09T12:44:03.101351+02:00"
-											}
-										},
-										"uid" : {
-											"__type" : "uid",
-											"uidString" : "T5go4bfuDQClTyCKCYS/jg=="
-										},
-										"paragraphStyle" : {
-											"__type" : "textStyle"
-										},
-										"string" : "Para que pase los assert del example del modelo."
-									}
-								]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-04-09T12:41:44.007398+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-04-09T12:43:31.582419+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "P2Es2rfuDQCJ9yqHCYS/jg=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "- () Ejemplo `GtLscElementScripterExamples>>renderLscWithTitleChanged` que utilice el ejemplo `renderNewLsc`"
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [
-									{
-										"__type" : "textSnippet",
-										"children" : {
-											"__type" : "snippets",
-											"items" : [ ]
-										},
-										"createEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"createTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
 												"dateAndTimeString" : "2025-04-09T12:44:13.877458+02:00"
 											}
 										},
@@ -233,43 +158,6 @@
 								"__type" : "textStyle"
 							},
 							"string" : "- () ¿No podemos tener Traits que implementen el MVVM genéricos?"
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-04-09T12:41:46.905172+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-04-09T12:46:01.24811+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "lJpY2rfuDQCK5XgnCYS/jg=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "- () Clase `BlElementHotState` debería tener nuestro prefijo `GtLsc`"
 						}
 					]
 				},
@@ -426,6 +314,81 @@
 							"__type" : "textSnippet",
 							"children" : {
 								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-09T12:43:41.199555+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-09T12:44:03.101351+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "T5go4bfuDQClTyCKCYS/jg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Para que pase los assert del example del modelo."
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-09T12:41:44.007398+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-09T12:43:31.582419+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "P2Es2rfuDQCJ9yqHCYS/jg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "- () Ejemplo `GtLscElementScripterExamples>>renderLscWithTitleChanged` que utilice el ejemplo `renderNewLsc`"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
 								"items" : [
 									{
 										"__type" : "textSnippet",
@@ -457,14 +420,14 @@
 														"__type" : "time",
 														"time" : {
 															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2025-04-09T13:54:02.339594+02:00"
+															"dateAndTimeString" : "2025-04-09T14:18:18.147291+02:00"
 														}
 													},
 													"uid" : {
 														"__type" : "uid",
 														"uidString" : "t6h/J7juDQCxOD9TCYS/jg=="
 													},
-													"code" : "subString := 'BlElement subclass: #GtLscElement'.\rfilter := GtLscLeSearchSubstringSnippetFilter substring: subString.\rsnippets := thisSnippet database leSnippetsInDB contents.\rsnippets select: [ :snippet | filter matches: snippet ]"
+													"code" : "subString := 'createCanvases'.\rfilter := GtLscLeSearchSubstringSnippetFilter substring: subString.\rsnippets := thisSnippet database leSnippetsInDB contents.\rsnippets select: [ :snippet | filter matches: snippet ]"
 												}
 											]
 										},
@@ -531,6 +494,43 @@
 								"__type" : "textStyle"
 							},
 							"string" : "- () Falta `GtLscElement>>createCanvasContainer` y `defaultLayout`"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-09T12:41:46.905172+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-09T12:46:01.24811+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "lJpY2rfuDQCK5XgnCYS/jg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "- () Clase `BlElementHotState` debería tener nuestro prefijo `GtLsc`"
 						}
 					]
 				},

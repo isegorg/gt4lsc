@@ -90,7 +90,43 @@
 										"__type" : "textSnippet",
 										"children" : {
 											"__type" : "snippets",
-											"items" : [ ]
+											"items" : [
+												{
+													"__type" : "changesSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-03-22T19:11:41.570668+01:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-03-22T19:11:41.570668+01:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "D8Q1ClTtDQCqtzwNDUvHCg=="
+													},
+													"previewHeight" : 750,
+													"fileName" : "attachments/1h3aiemcx9ctbkkbu2y89m5eh/Pharo11-SNAPSHOT-64bit-aece1b5.3EDDDA6FAF58.ombu"
+												}
+											]
 										},
 										"createEmail" : {
 											"__type" : "email",
@@ -122,41 +158,6 @@
 											"__type" : "textStyle"
 										},
 										"string" : "The necessary slot, accessors and default values methods are implemented for the verification to be successful."
-									},
-									{
-										"__type" : "changesSnippet",
-										"children" : {
-											"__type" : "snippets",
-											"items" : [ ]
-										},
-										"createEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"createTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-03-22T19:11:41.570668+01:00"
-											}
-										},
-										"editEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"editTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-03-22T19:11:41.570668+01:00"
-											}
-										},
-										"uid" : {
-											"__type" : "uid",
-											"uidString" : "D8Q1ClTtDQCqtzwNDUvHCg=="
-										},
-										"previewHeight" : 750,
-										"fileName" : "attachments/1h3aiemcx9ctbkkbu2y89m5eh/Pharo11-SNAPSHOT-64bit-aece1b5.3EDDDA6FAF58.ombu"
 									}
 								]
 							},
@@ -235,7 +236,43 @@
 										"__type" : "textSnippet",
 										"children" : {
 											"__type" : "snippets",
-											"items" : [ ]
+											"items" : [
+												{
+													"__type" : "changesSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-03-22T20:40:41.924765+01:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-03-22T20:40:41.924765+01:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "DBqFSFXtDQCOLDPPCTt1OQ=="
+													},
+													"previewHeight" : 400,
+													"fileName" : "attachments/3egjbhergj8ne27963j3gfput/Pharo11-SNAPSHOT-64bit-aece1b5.431136220058.ombu"
+												}
+											]
 										},
 										"createEmail" : {
 											"__type" : "email",
@@ -269,10 +306,46 @@
 										"string" : "We create a custom inspector method, using the structure prepared for *MVVM*, as the one used in {{gtMethod:GtWardleyMapModel>>gtLiveFor:}}"
 									},
 									{
-										"__type" : "changesSnippet",
+										"__type" : "textSnippet",
 										"children" : {
 											"__type" : "snippets",
-											"items" : [ ]
+											"items" : [
+												{
+													"__type" : "changesSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-09T16:17:42.319912+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-09T16:17:42.319912+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "64yM3rruDQCvWvWbDqlL0g=="
+													},
+													"previewHeight" : 447.69927978515625,
+													"fileName" : "attachments/cg77gb6uauyn4ywsm848ul2zh/Pharo11-SNAPSHOT-64bit-aece1b5.33E0B24BC910.ombu"
+												}
+											]
 										},
 										"createEmail" : {
 											"__type" : "email",
@@ -282,7 +355,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-03-22T20:40:41.924765+01:00"
+												"dateAndTimeString" : "2025-04-09T16:12:49.164627+02:00"
 											}
 										},
 										"editEmail" : {
@@ -293,15 +366,17 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-03-22T20:40:41.924765+01:00"
+												"dateAndTimeString" : "2025-04-09T16:17:50.642796+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
-											"uidString" : "DBqFSFXtDQCOLDPPCTt1OQ=="
+											"uidString" : "YlgTzbruDQCl5ztqDqlL0g=="
 										},
-										"previewHeight" : 400,
-										"fileName" : "attachments/3egjbhergj8ne27963j3gfput/Pharo11-SNAPSHOT-64bit-aece1b5.431136220058.ombu"
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "We create a helper class to store the constants too."
 									},
 									{
 										"__type" : "textSnippet",
