@@ -13,7 +13,7 @@ OmEntry {
 			},
 			#name : #initialize,
 			#protocol : #initialization,
-			#sourceCode : 'initialize\r\tsuper initialize.\r\t\r\ttitleElement := self createTitleElement.\r\tcanvasContainer := self createCanvasContainer.\r\t\r\tself addChildren: {titleElement. canvasContainer}.\r\t\r\tself matchParent',
+			#sourceCode : 'initialize\r\tsuper initialize.\r\t\r\ttitleElement := self createTitleElement.\r\t\r\tself addChildren: {titleElement}.\r\t\r\tself matchParent',
 			#stamp : 'GlamorousAuthor 4/3/2025 17:09',
 			#package : #Gt4Lsc
 		},
@@ -24,13 +24,35 @@ OmEntry {
 			},
 			#name : #initialize,
 			#protocol : #initialization,
-			#sourceCode : 'initialize\r\t| instancesCanvas |\r\tsuper initialize.\r\t\r\ttitleElement := self createTitleElement.\r\tcanvasContainer := self createCanvasContainer.\r\tinstancesCanvas := self createInstancesCanvas.\r\tcanvasContainer addChild: instancesCanvas.\r\t\r\tself addChildren: {titleElement. canvasContainer}.\r\t\r\tself matchParent',
+			#sourceCode : 'initialize\r\t| instancesCanvas |\r\tsuper initialize.\r\t\r\ttitleElement := self createTitleElement.\r\tcanvasesContainer := self createCanvasesContainer.\r\tinstancesCanvas := self createInstancesCanvas.\r\tcanvasesContainer addChild: instancesCanvas.\r\t\r\tself addChildren: {titleElement. canvasesContainer}.\r\t\r\tself matchParent',
 			#stamp : 'GlamorousAuthor 4/7/2025 17:09',
 			#package : #Gt4Lsc
 		},
 		#classPackageName : #Gt4Lsc
 	}
-}OmEntry {
+}
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-09T13:47:40.745515+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscElement,
+				#isMetaSide : false
+			},
+			#name : #createCanvasesContainer,
+			#protocol : #initialization,
+			#sourceCode : 'createCanvasesContainer\r\t^ BrFrame new matchParent; id: GtLscConstants canvasesContainerElementId',
+			#stamp : 'GlamorousAuthor 4/9/2025 13:47',
+			#package : #Gt4Lsc
+		}
+	}
+}
+OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-07T17:10:20.063376+02:00' ],
@@ -50,12 +72,56 @@ OmEntry {
 			#package : #Gt4Lsc
 		}
 	}
-}OmEntry {
+}
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-09T13:47:51.42049+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscElement,
+				#isMetaSide : false
+			},
+			#name : #defaultLayout,
+			#protocol : #initialization,
+			#sourceCode : 'defaultLayout\r\t^ BlLinearLayout vertical',
+			#stamp : 'GlamorousAuthor 4/9/2025 13:47',
+			#package : #Gt4Lsc
+		}
+	}
+}
+
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-09T13:36:56.851195+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscConstants class',
+				#isMetaSide : true
+			},
+			#name : #canvasesContainerElementId,
+			#protocol : #'api - constants',
+			#sourceCode : 'canvasesContainerElementId\r\t^ #canvasesContainer',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}
+OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-07T17:10:28.464308+02:00' ],
-		#prior : OmReference [ '2' ],
-		#self : OmReference [ '3' ]
+		#prior : OmReference [ '4' ],
+		#self : OmReference [ '5' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {

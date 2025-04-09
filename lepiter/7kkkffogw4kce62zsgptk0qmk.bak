@@ -623,7 +623,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-04-09T09:58:40.732003+02:00"
+												"dateAndTimeString" : "2025-04-09T09:59:05.744097+02:00"
 											}
 										},
 										"uid" : {
@@ -633,7 +633,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "It's useful to set the fileName of a LeChangesSnippet to an new imported file from a ombu session and change it manually "
+										"string" : "It's useful to set the fileName of a LeChangesSnippet to an new imported file from a ombu session and then manually change it."
 									},
 									{
 										"__type" : "pharoSnippet",

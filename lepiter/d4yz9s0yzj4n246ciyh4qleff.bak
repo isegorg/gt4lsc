@@ -657,7 +657,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-04-08T13:49:51.878812+02:00"
+						"dateAndTimeString" : "2025-04-08T13:50:06.937712+02:00"
 					}
 				},
 				"uid" : {
@@ -667,7 +667,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Finally the example is successful {{gtExample:GtLscElementScripterExamples>>rend}}"
+				"string" : "Finally the example is successful {{gtExample:GtLscElementScripterExamples>>renderLscAddingInstance}}"
 			}
 		]
 	},
