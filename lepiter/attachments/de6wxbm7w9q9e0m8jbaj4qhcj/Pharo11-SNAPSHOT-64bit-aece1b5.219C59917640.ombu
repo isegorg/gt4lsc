@@ -1,0 +1,307 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-10T10:52:44.220143+02:00' ],
+		#prior : OmReference [ 'Pharo11-SNAPSHOT-64bit-aece1b5.33E0B24BC910', '661' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscElementScripterExamples,
+				#isMetaSide : false
+			},
+			#name : #pipelineLscInstanceChangeName,
+			#protocol : #'examples - ui',
+			#sourceCode : 'pipelineLscInstanceChangeName\r\t"Check that ui name change update the model"\r\t\r\t<gtExample>\r\t| lscInstance uiElement nameElement newName |\r\tlscInstance := self renderNewLscInstance.\r\tuiElement := lscInstance asElement.\r\tnameElement := uiElement childNamed: GtLscConstants instanceNameElementId.\r\t\r\tnewName := \'New Lsc Instance Name\'.\r\tself assert: [ nameElement text asString ~= newName ].\r\t\r\tnameElement switchToEditor.\r\t\r\tself assert: nameElement isEditable.\r\tself assert: nameElement viewModel model asString equals: nameElement text asString.\r\t\r\tnameElement text\r\t\tdeleteAll;\r\t\tappend: newName asRopedText.\r\t\t\r\tnameElement acceptEdition.\r\t\r\t"the original text is stored in order to be restored if edition cancelled"\r\tself assert: nameElement text asString equals: newName.\r\tself assert: lscInstance name equals: newName.\r\t\r\t^ lscInstance',
+			#stamp : 'GlamorousAuthor 4/10/2025 10:52',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-10T10:55:47.865085+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscElementScripterExamples,
+				#isMetaSide : false
+			},
+			#name : #renderNewLscInstance,
+			#protocol : #'examples - ui',
+			#sourceCode : 'renderNewLscInstance\r\t"Check that the LscInstance UI element displays the model\'s characteristics"\r\r\t<gtExample>\r\t| lscInstance uiElement locationLine|\r\tlscInstance := GtLscInstanceModelExamples new newLscInstance.\r\tuiElement := lscInstance asElement.\r\t\r\t"Check title"\r\tself assert: (uiElement instVarNamed: #nameElement) text asString equals: lscInstance name.\r\t"Check locationLine border"\r\tlocationLine := uiElement childNamed: GtLscConstants locationLineId.\r\tself assert: locationLine border paint equals: GtLscConstants hotColor asBlPaint.\r\t\r\t^ lscInstance',
+			#stamp : 'GlamorousAuthor 4/9/2025 20:41',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscElementScripterExamples,
+				#isMetaSide : false
+			},
+			#name : #renderNewLscInstance,
+			#protocol : #'examples - ui',
+			#sourceCode : 'renderNewLscInstance\r\t"Check that the LscInstance UI element displays the model\'s characteristics"\r\r\t<gtExample>\r\t| lscInstance uiElement locationLine|\r\tlscInstance := GtLscInstanceModelExamples new newLscInstance.\r\tuiElement := lscInstance asElement.\r\t\r\t"Check title"\r\tself assert: (uiElement childNamed: GtLscConstants instanceNameElementId) text asString equals: lscInstance name.\r\t"Check locationLine border"\r\tlocationLine := uiElement childNamed: GtLscConstants locationLineId.\r\tself assert: locationLine border paint equals: GtLscConstants hotColor asBlPaint.\r\t\r\t^ lscInstance',
+			#stamp : 'GlamorousAuthor 4/10/2025 10:55',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-10T11:08:19.713266+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceElement,
+				#isMetaSide : false
+			},
+			#name : #'onAcceptNewTitleWish:',
+			#protocol : #initialization,
+			#sourceCode : 'onAcceptNewTitleWish: aWish ',
+			#stamp : 'GlamorousAuthor 4/10/2025 11:08',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceElement,
+				#isMetaSide : false
+			},
+			#name : #'onAcceptNewTitleWish:',
+			#protocol : #'events handling',
+			#sourceCode : 'onAcceptNewTitleWish: aWish ',
+			#stamp : 'GlamorousAuthor 4/10/2025 11:08',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-10T11:08:19.760491+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceElement,
+				#isMetaSide : false
+			},
+			#name : #'onAcceptNewTitleWish:',
+			#protocol : #'events handling',
+			#sourceCode : 'onAcceptNewTitleWish: aWish ',
+			#stamp : 'GlamorousAuthor 4/9/2025 18:24',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceElement,
+				#isMetaSide : false
+			},
+			#name : #'onAcceptNewTitleWish:',
+			#protocol : #'events handling',
+			#sourceCode : 'onAcceptNewTitleWish: aWish ',
+			#stamp : 'GlamorousAuthor 4/10/2025 11:08',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-10T11:08:50.912992+02:00' ],
+		#prior : OmReference [ '4' ],
+		#self : OmReference [ '5' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceElement,
+				#isMetaSide : false
+			},
+			#name : #'onAcceptNewTitleWish:',
+			#protocol : #'events handling',
+			#sourceCode : 'onAcceptNewTitleWish: aWish ',
+			#stamp : 'GlamorousAuthor 4/10/2025 11:08',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceElement,
+				#isMetaSide : false
+			},
+			#name : #'onAcceptNewTitleWish:',
+			#protocol : #'events handling',
+			#sourceCode : 'onAcceptNewTitleWish: aWish\r\tself hasLscInstanceViewModel ifFalse: [ ^ self ].\r\tself lscInstanceViewModel name: aWish text asString',
+			#stamp : 'GlamorousAuthor 4/10/2025 11:08',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-10T11:08:50.978302+02:00' ],
+		#prior : OmReference [ '5' ],
+		#self : OmReference [ '6' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceViewModel,
+				#isMetaSide : false
+			},
+			#name : #'name:',
+			#protocol : #'api - lsc instance model',
+			#sourceCode : 'name: aString\r\tself lscInstanceModel name: aString',
+			#stamp : 'GlamorousAuthor 4/10/2025 11:08',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-10T11:08:51.046666+02:00' ],
+		#prior : OmReference [ '6' ],
+		#self : OmReference [ '7' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceModel,
+				#isMetaSide : false
+			},
+			#name : #'name:',
+			#protocol : #accessing,
+			#sourceCode : 'name: aString\r\tname := aString.\r\tself notifyNameChanged.',
+			#stamp : 'GlamorousAuthor 4/9/2025 20:32',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceModel,
+				#isMetaSide : false
+			},
+			#name : #'name:',
+			#protocol : #accessing,
+			#sourceCode : 'name: aString\r\tself name = aString ifTrue: [ ^ self ].\r\t\r\tname := aString.\r\tself notifyNameChanged.',
+			#stamp : 'GlamorousAuthor 4/10/2025 11:08',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-10T11:09:32.664176+02:00' ],
+		#prior : OmReference [ '7' ],
+		#self : OmReference [ '8' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscElementScripterExamples,
+				#isMetaSide : false
+			},
+			#name : #renderNewLscInstance,
+			#protocol : #'examples - ui',
+			#sourceCode : 'renderNewLscInstance\r\t"Check that the LscInstance UI element displays the model\'s characteristics"\r\r\t<gtExample>\r\t| lscInstance uiElement locationLine|\r\tlscInstance := GtLscInstanceModelExamples new newLscInstance.\r\tuiElement := lscInstance asElement.\r\t\r\t"Check title"\r\tself assert: (uiElement childNamed: GtLscConstants instanceNameElementId) text asString equals: lscInstance name.\r\t"Check locationLine border"\r\tlocationLine := uiElement childNamed: GtLscConstants locationLineId.\r\tself assert: locationLine border paint equals: GtLscConstants hotColor asBlPaint.\r\t\r\t^ lscInstance',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscElementScripterExamples,
+				#isMetaSide : false
+			},
+			#name : #renderNewLscInstance,
+			#protocol : #'examples - ui',
+			#sourceCode : 'renderNewLscInstance\r\t"Check that the LscInstance UI element displays the model\'s characteristics"\r\r\t<gtExample>\r\t| lscInstance uiElement locationLine|\r\tlscInstance := GtLscInstanceModelExamples new newLscInstance.\r\tuiElement := lscInstance asElement.\r\t\r\t"Check title"\r\tself assert: (uiElement childNamed: GtLscConstants instanceNameElementId) text asString equals: lscInstance name.\r\t"Check locationLine border"\r\tlocationLine := uiElement childNamed: GtLscConstants locationLineId.\r\t"self assert: locationLine border paint equals: GtLscConstants hotColor asBlPaint."\r\t\r\t^ lscInstance',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-10T11:09:54.445449+02:00' ],
+		#prior : OmReference [ '8' ],
+		#self : OmReference [ '9' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscElementScripterExamples,
+				#isMetaSide : false
+			},
+			#name : #renderNewLscInstance,
+			#protocol : #'examples - ui',
+			#sourceCode : 'renderNewLscInstance\r\t"Check that the LscInstance UI element displays the model\'s characteristics"\r\r\t<gtExample>\r\t| lscInstance uiElement locationLine|\r\tlscInstance := GtLscInstanceModelExamples new newLscInstance.\r\tuiElement := lscInstance asElement.\r\t\r\t"Check title"\r\tself assert: (uiElement childNamed: GtLscConstants instanceNameElementId) text asString equals: lscInstance name.\r\t"Check locationLine border"\r\tlocationLine := uiElement childNamed: GtLscConstants locationLineId.\r\t"self assert: locationLine border paint equals: GtLscConstants hotColor asBlPaint."\r\t\r\t^ lscInstance',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscElementScripterExamples,
+				#isMetaSide : false
+			},
+			#name : #renderNewLscInstance,
+			#protocol : #'examples - ui',
+			#sourceCode : 'renderNewLscInstance\r\t"Check that the LscInstance UI element displays the model\'s characteristics"\r\r\t<gtExample>\r\t| lscInstance uiElement locationLine|\r\tlscInstance := GtLscInstanceModelExamples new newLscInstance.\r\tuiElement := lscInstance asElement.\r\t\r\t"Check title"\r\tself assert: (uiElement childNamed: GtLscConstants instanceNameElementId) text asString equals: lscInstance name.\r\t"Check locationLine border"\r\tlocationLine := uiElement childNamed: GtLscConstants locationLineId.\r\tself assert: locationLine border paint equals: GtLscConstants hotColor asBlPaint.\r\t\r\t^ lscInstance',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-10T11:12:21.541836+02:00' ],
+		#prior : OmReference [ '9' ],
+		#self : OmReference [ '10' ]
+	},
+	#content : EpSessionSnapshot {
+		#imageName : '/Users/fluque/work/osoco/BluePlaneLabs/advise-nuevo/GlamorousToolkit.image'
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-10T11:26:49.508228+02:00' ],
+		#prior : OmReference [ '10' ],
+		#self : OmReference [ '11' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModelExamples,
+				#isMetaSide : false
+			},
+			#name : #newLsc,
+			#protocol : #'examples - model',
+			#sourceCode : 'newLsc\r\t<gtExample>\r\t| lsc |\r\tlsc := GtLscModel new.\r\tself assert: lsc title equals: GtLscModel defaultTitle.\r\t\r\t^ lsc',
+			#stamp : 'GlamorousAuthor 4/9/2025 16:03',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModelExamples,
+				#isMetaSide : false
+			},
+			#name : #newLsc,
+			#protocol : #'examples - model',
+			#sourceCode : 'newLsc\r\t<gtExample>\r\t| lsc |\r\tlsc := GtLscModel new.\r\tself assert: lsc title equals: GtLscModel defaultTitle.\r\tself assert: lsc instancesSize equals: 0.\r\t^ lsc',
+			#stamp : 'GlamorousAuthor 4/10/2025 11:26',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}

@@ -158,6 +158,43 @@
 								"__type" : "textStyle"
 							},
 							"string" : "- () ¿No podemos tener Traits que implementen el MVVM genéricos?"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-10T17:31:34.197146+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-10T17:32:07.191956+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "1PmMBNDuDQCGZ3AmDEDdrw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "- () Usar scripter en los tests de views."
 						}
 					]
 				},
@@ -271,6 +308,156 @@
 								"__type" : "textStyle"
 							},
 							"string" : "- (?) Enlazar unos capítulos con los siguientes para no necesitar usar el ToC."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-10T17:29:54.253415+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-10T17:30:14.268139+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "9vmX/s/uDQCDn/6vDEDdrw=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "¿Qué definimos como igualdad?"
+												}
+											]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-10T17:29:22.607923+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-10T17:29:52.643297+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "ihq1/M/uDQCCcR1WDEDdrw=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Para no dejar añadir 2 instancias iguales debemos definir ="
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-10T17:30:17.715591+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-10T17:30:53.204652+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "x/r9/8/uDQCEhxyrDEDdrw=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Id se creará uno único al añadir a {{gtClass:GtLscModel}}, por lo que no nos valdrá para la igualdad."
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-10T17:28:43.273779+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-10T17:29:20.377806+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "Aepc+s/uDQCBbDnpDEDdrw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "- (?) Id e = para los {{gtClass:GtLscInstanceModel}}"
 						}
 					]
 				},
@@ -345,14 +532,14 @@
 														"__type" : "time",
 														"time" : {
 															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2025-04-09T14:18:18.147291+02:00"
+															"dateAndTimeString" : "2025-04-10T12:48:02.23772+02:00"
 														}
 													},
 													"uid" : {
 														"__type" : "uid",
 														"uidString" : "t6h/J7juDQCxOD9TCYS/jg=="
 													},
-													"code" : "subString := 'createCanvases'.\rfilter := GtLscLeSearchSubstringSnippetFilter substring: subString.\rsnippets := thisSnippet database leSnippetsInDB contents.\rsnippets select: [ :snippet | filter matches: snippet ]"
+													"code" : "subString := 'advise-nuevo/pharo-local/iceberg/isegorg/gt4lsc/lepiter/attachments/1h3aiemcx9ctbkkbu2y89m5eh/Pharo11-SNAPSHOT-64bit-aece1b5.3EDDDA6FAF58.ombu'.\rfilter := GtLscLeSearchSubstringSnippetFilter substring: subString.\rsnippets := thisSnippet database leSnippetsInDB contents.\rsnippets select: [ :snippet | filter matches: snippet ]"
 												}
 											]
 										},

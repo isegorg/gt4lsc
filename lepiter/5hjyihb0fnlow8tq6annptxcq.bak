@@ -88,7 +88,7 @@
 														"__type" : "uid",
 														"uidString" : "eMCYPcftDQC+h7MZBkqxXA=="
 													},
-													"previewHeight" : 200,
+													"previewHeight" : 620.9248046875,
 													"fileName" : "attachments/dlg8rx61nx2k6febuasb1l55j/Pharo11-SNAPSHOT-64bit-aece1b5.29738AB94700.ombu"
 												}
 											]
@@ -213,7 +213,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-04-07T16:20:13.980252+02:00"
+						"dateAndTimeString" : "2025-04-10T12:48:02.686301+02:00"
 					}
 				},
 				"uid" : {
@@ -223,7 +223,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Initially, an LSC has no instances. We modified the test to check this."
+				"string" : "Initially, an LSC has no instances. We modified {{gtMethod:GtLscModelExamples>>newLsc}} to check this."
 			},
 			{
 				"__type" : "textSnippet",
@@ -363,7 +363,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-04-07T09:32:38.800441+02:00"
+									"dateAndTimeString" : "2025-04-10T17:33:44.674817+02:00"
 								}
 							},
 							"uid" : {

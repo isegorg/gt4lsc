@@ -12,7 +12,7 @@ OmEntry {
 				#isMetaSide : false
 			},
 			#name : #lscMoveInstanceToPosition,
-			#protocol : #'as yet unclassified',
+			#protocol : #'examples - model',
 			#sourceCode : 'lscMoveInstanceToPosition\r\t<gtExample>\r\t| aLsc firstInstance secondInstance |\r\taLsc := self lscAddInstanceAtPosition.\r\tfirstInstance := aLsc instanceAt: 1.\r\tsecondInstance := aLsc instanceAt: 2.\r\taLsc moveInstanceFromPosition: 1 to: 2.\r\r\tself assert: (aLsc instanceAt: 1) equals: secondInstance.\r\tself assert: (aLsc instanceAt: 2) equals: firstInstance.\r\tself assert: aLsc instancesSize equals: 2.\r\r\t^ aLsc',
 			#stamp : 'GlamorousAuthor 4/7/2025 12:51',
 			#package : #Gt4Lsc
