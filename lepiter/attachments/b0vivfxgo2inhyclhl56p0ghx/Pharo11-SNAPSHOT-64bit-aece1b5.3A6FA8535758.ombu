@@ -191,7 +191,7 @@ OmEntry {
 				#isMetaSide : false
 			},
 			#name : #'onAcceptNewTitleWish:',
-			#protocol : #initialization,
+			#protocol : #'events handling',
 			#sourceCode : 'onAcceptNewTitleWish: aWish ',
 			#stamp : 'GlamorousAuthor 3/31/2025 18:18',
 			#package : #Gt4Lsc

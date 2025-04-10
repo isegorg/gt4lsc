@@ -1,41 +1,9 @@
 OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
-		#time : DateAndTime [ '2025-04-06T11:38:39.052303+02:00' ],
+		#time : DateAndTime [ '2025-04-06T11:38:39.099086+02:00' ],
 		#prior : OmReference [ 'Pharo11-SNAPSHOT-64bit-aece1b5.2D02C5DA2380', '4' ],
 		#self : OmReference [ '1' ]
-	},
-	#content : EpMethodModification {
-		#oldMethod : RGMethodDefinition {
-			#annotations : IdentityDictionary {
-				#className : #GtLscInstanceElement,
-				#isMetaSide : false
-			},
-			#name : #'onAcceptNewTitleWish:',
-			#protocol : #initialization,
-			#sourceCode : 'onAcceptNewTitleWish: aWish\r\tself hasLscInstanceViewModel ifFalse: [ ^ self ].\r\tself lscInstanceViewModel name: aWish text asString',
-			#stamp : 'GlamorousAuthor 4/6/2025 11:38',
-			#package : #Gt4Lsc
-		},
-		#newMethod : RGMethodDefinition {
-			#annotations : IdentityDictionary {
-				#className : #GtLscInstanceElement,
-				#isMetaSide : false
-			},
-			#name : #'onAcceptNewTitleWish:',
-			#protocol : #'events handling',
-			#sourceCode : 'onAcceptNewTitleWish: aWish\r\tself hasLscInstanceViewModel ifFalse: [ ^ self ].\r\tself lscInstanceViewModel name: aWish text asString',
-			#stamp : 'GlamorousAuthor 4/6/2025 11:38',
-			#package : #Gt4Lsc
-		},
-		#classPackageName : #Gt4Lsc
-	}
-}OmEntry {
-	#tags : {
-		#author : 'GlamorousAuthor',
-		#time : DateAndTime [ '2025-04-06T11:38:39.099086+02:00' ],
-		#prior : OmReference [ '1' ],
-		#self : OmReference [ '2' ]
 	},
 	#content : EpMethodModification {
 		#oldMethod : RGMethodDefinition {
@@ -62,12 +30,14 @@ OmEntry {
 		},
 		#classPackageName : #Gt4Lsc
 	}
-}OmEntry {
+}
+
+OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-06T11:39:11.092289+02:00' ],
-		#prior : OmReference [ '2' ],
-		#self : OmReference [ '3' ]
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
@@ -82,12 +52,14 @@ OmEntry {
 			#package : #Gt4Lsc
 		}
 	}
-}OmEntry {
+}
+
+OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-06T11:39:17.416882+02:00' ],
-		#prior : OmReference [ '3' ],
-		#self : OmReference [ '4' ]
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
 	},
 	#content : EpMethodModification {
 		#oldMethod : RGMethodDefinition {
@@ -114,4 +86,5 @@ OmEntry {
 		},
 		#classPackageName : #Gt4Lsc
 	}
-}
+}
+
