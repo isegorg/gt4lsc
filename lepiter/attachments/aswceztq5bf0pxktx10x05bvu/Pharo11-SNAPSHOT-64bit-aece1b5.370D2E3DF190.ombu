@@ -13,7 +13,7 @@ OmEntry {
 			},
 			#name : #renderNewLsc,
 			#protocol : #'examples - ui',
-			#sourceCode : 'renderNewLsc\r\t"Check that the UI element displays the model\'s characteristics"\r\r\t<gtExample>\r\t| lsc uiElement |\r\tlsc := GtLscModelExamples new newLsc.\r\tuiElement := lsc asElement.\r\t\r\t"Check title"\r\tself assert: (uiElement instVarNamed: #titleElement) text asString equals: lsc title.\r\t^ uiElement',
+			#sourceCode : 'renderNewLsc\r\t"Check that the UI element displays the model\'s characteristics"\r\r\t<gtExample>\r\t| lsc uiElement |\r\tlsc := GtLscModelExamples new newLsc.\r\tuiElement := lsc asElement.\r\t\r\t"Check title"\r\tself assert: (uiElement childNamed: GtLscConstants titleElementId) text asString equals: lsc title.\r\t^ lsc',
 			#stamp : 'GlamorousAuthor 4/2/2025 13:27',
 			#package : #Gt4Lsc
 		},
@@ -24,10 +24,11 @@ OmEntry {
 			},
 			#name : #renderNewLsc,
 			#protocol : #'examples - ui',
-			#sourceCode : 'renderNewLsc\r\t"Check that the UI element displays the model\'s characteristics"\r\r\t<gtExample>\r\t| lsc uiElement instancesCanvasElement |\r\tlsc := GtLscModelExamples new newLsc.\r\tuiElement := lsc asElement.\r\t\r\t"Check title"\r\tself assert: (uiElement instVarNamed: #titleElement) text asString equals: lsc title.\r\t"Check the instance in the view"\r\tinstancesCanvasElement := (uiElement childNamed: GtLscConstants instancesCanvasId).\r\tself assert: instancesCanvasElement isNotNil.\r\tself assert: instancesCanvasElement childrenCount equals: 0.\r\t^ uiElement',
+			#sourceCode : 'renderNewLsc\r\t"Check that the UI element displays the model\'s characteristics"\r\r\t<gtExample>\r\t| lsc uiElement instancesCanvasElement |\r\tlsc := GtLscModelExamples new newLsc.\r\tuiElement := lsc asElement.\r\t\r\t"Check title"\r\tself assert: (uiElement childNamed: GtLscConstants titleElementId) text asString equals: lsc title.\r\t"Check the instance in the view"\r\tinstancesCanvasElement := (uiElement childNamed: GtLscConstants instancesCanvasId).\r\tself assert: instancesCanvasElement isNotNil.\r\tself assert: instancesCanvasElement childrenCount equals: 0.\r\t^ lsc',
 			#stamp : 'GlamorousAuthor 4/7/2025 16:50',
 			#package : #Gt4Lsc
 		},
 		#classPackageName : #Gt4Lsc
 	}
-}
+}
+

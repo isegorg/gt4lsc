@@ -1,0 +1,60 @@
+OmEntry {
+	#tags : {
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpClassAddition {
+		#class : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : 'LeSearchSubstringSnippetFilter',
+				#definitionSource : 'LeSearchSubstringSnippetFilter subclass: #GtLscLeSearchSubstringSnippetFilter\r\tinstanceVariableNames: \'\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4Lsc-Helpers\'',
+				#traitCompositionSource : '{}'
+			},
+			#name : #GtLscLeSearchSubstringSnippetFilter,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#definitionSource : 'GtLscLeSearchSubstringSnippetFilter class\r\tinstanceVariableNames: \'\'',
+					#traitCompositionSource : '{}'
+				},
+				#name : #'GtLscLeSearchSubstringSnippetFilter class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#className : #GtLscLeSearchSubstringSnippetFilter,
+					#isMetaSide : false
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#category : #Gt4Lsc-Helpers,
+			#package : #Gt4Lsc,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscLeSearchSubstringSnippetFilter,
+				#isMetaSide : false
+			},
+			#name : #'matches:',
+			#protocol : #accessing,
+			#sourceCode : 'matches: anObject\r\t^ (anObject isKindOf: LeChangesSnippet)\r\t\tand: [ (anObject contentAsString includesSubstring: substring caseSensitive: false) or: [ anObject hasFileName and: [ (anObject database resolveDbFile: anObject fileName) asFileReference contents includesSubstring: substring caseSensitive: false ] ] ]',
+			#stamp : 'GlamorousAuthor 4/11/2025 10:36',
+			#package : #Gt4Lsc
+		}
+	}
+}

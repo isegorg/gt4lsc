@@ -1002,10 +1002,156 @@
 								"__type" : "snippets",
 								"items" : [
 									{
-										"__type" : "changesSnippet",
+										"__type" : "textSnippet",
 										"children" : {
 											"__type" : "snippets",
-											"items" : [ ]
+											"items" : [
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [
+															{
+																"__type" : "changesSnippet",
+																"children" : {
+																	"__type" : "snippets",
+																	"items" : [ ]
+																},
+																"createEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"createTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-04-10T11:33:18.155512+02:00"
+																	}
+																},
+																"editEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"editTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-04-10T11:33:18.155512+02:00"
+																	}
+																},
+																"uid" : {
+																	"__type" : "uid",
+																	"uidString" : "qHBJA8vuDQCu51nND5o+4g=="
+																},
+																"previewHeight" : 200,
+																"fileName" : "attachments/63qwja75933m11mquuhkth4x9/changes-snippets-288871064098533728539128405402402626151.ombu"
+															}
+														]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-11T10:41:00.509043+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-11T10:41:57.579146+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "+x4cZt7uDQCy8g0aCP8aZw=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "Create a filter class for search by substring in the changes file content"
+												},
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [
+															{
+																"__type" : "pharoSnippet",
+																"children" : {
+																	"__type" : "snippets",
+																	"items" : [ ]
+																},
+																"createEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"createTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-04-11T10:42:31.582079+02:00"
+																	}
+																},
+																"editEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"editTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-04-11T10:51:03.783751+02:00"
+																	}
+																},
+																"uid" : {
+																	"__type" : "uid",
+																	"uidString" : "v8mJa97uDQC048tOCP8aZw=="
+																},
+																"code" : "subString := 'GtLscLeSearchSubstringSnippetFilter >> matches: anObject'.\rfilter := GtLscLeSearchSubstringSnippetFilter substring: subString.\rdataBase := thisSnippet database.\rsnippets := dataBase leSnippetsInDB contents.\rsnippets select: [ :snippet | filter matches: snippet ]"
+															}
+														]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-11T10:42:07.699423+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-11T10:42:26.196006+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "Pl0dat7uDQC0p22/CP8aZw=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "How to use"
+												}
+											]
 										},
 										"createEmail" : {
 											"__type" : "email",
@@ -1015,7 +1161,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-04-10T11:33:18.155512+02:00"
+												"dateAndTimeString" : "2025-04-11T10:40:49.012568+02:00"
 											}
 										},
 										"editEmail" : {
@@ -1026,15 +1172,17 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-04-10T11:33:18.155512+02:00"
+												"dateAndTimeString" : "2025-04-11T10:40:57.333747+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
-											"uidString" : "qHBJA8vuDQCu51nND5o+4g=="
+											"uidString" : "b69sZd7uDQCyy9zgCP8aZw=="
 										},
-										"previewHeight" : 200,
-										"fileName" : "attachments/de6wxbm7w9q9e0m8jbaj4qhcj/Pharo11-SNAPSHOT-64bit-aece1b5.219C59917640.ombu"
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "**WIP**"
 									}
 								]
 							},
