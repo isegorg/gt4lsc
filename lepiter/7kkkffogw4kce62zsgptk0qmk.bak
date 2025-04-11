@@ -1036,14 +1036,14 @@
 																	"__type" : "time",
 																	"time" : {
 																		"__type" : "dateAndTime",
-																		"dateAndTimeString" : "2025-04-11T11:01:30.131626+02:00"
+																		"dateAndTimeString" : "2025-04-11T11:02:01.789862+02:00"
 																	}
 																},
 																"uid" : {
 																	"__type" : "uid",
 																	"uidString" : "Qxjdrt7uDQC+eUppCP8aZw=="
 																},
-																"code" : "LeSearchSubstringSnippetFilter substring: '_'"
+																"code" : "LeSearchSubstringSnippetFilter substring: 'changes-snippets-288871064098533728539128405402402626151.ombu'"
 															}
 														]
 													},
@@ -1219,14 +1219,14 @@
 																	"__type" : "time",
 																	"time" : {
 																		"__type" : "dateAndTime",
-																		"dateAndTimeString" : "2025-04-11T10:54:58.895577+02:00"
+																		"dateAndTimeString" : "2025-04-11T12:48:55.24388+02:00"
 																	}
 																},
 																"uid" : {
 																	"__type" : "uid",
 																	"uidString" : "v8mJa97uDQC048tOCP8aZw=="
 																},
-																"code" : "subString := 'GtLscLeSearchSubstringSnippetFilter'.\rfilter := GtLscLeSearchSubstringSnippetFilter substring: subString.\rdataBase := thisSnippet database.\rsnippets := dataBase leSnippetsInDB contents.\rsnippets select: [ :snippet | filter matches: snippet ]"
+																"code" : "subString := ''.\rfilter := GtLscLeSearchSubstringSnippetFilter substring: subString.\rdataBase := thisSnippet database.\rsnippets := dataBase leSnippetsInDB contents.\rsnippets select: [ :snippet | filter matches: snippet ]"
 															}
 														]
 													},

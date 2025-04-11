@@ -697,7 +697,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-04-07T10:55:07.664848+02:00"
+												"dateAndTimeString" : "2025-04-11T15:38:30.864925+02:00"
 											}
 										},
 										"uid" : {
@@ -707,7 +707,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "And we create the necessary code for the example to be successful:"
+										"string" : "And we create the necessary code for the example to be successful and we make {{gtMethod:GtLscModel>>addInstance:}} use it too :"
 									},
 									{
 										"__type" : "textSnippet",
@@ -745,6 +745,43 @@
 											"__type" : "textStyle"
 										},
 										"string" : "Finally the example is successful {{gtExample:GtLscModelExamples>>lscAddInstanceAtPosition}}"
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-11T15:39:03.23989+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-11T15:39:28.660645+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "WOoAkOLuDQCI/n13AabTCA=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "And yet successful {{gtExample:GtLscModelExamples>>lscAddInstanceAtPosition}}"
 									}
 								]
 							},

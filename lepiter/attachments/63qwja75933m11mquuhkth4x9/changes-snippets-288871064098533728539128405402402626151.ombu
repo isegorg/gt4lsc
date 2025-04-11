@@ -1,5 +1,6 @@
 OmEntry {
 	#tags : {
+		#time : DateAndTime [ '2025-04-07T18:35:16.069654+02:00' ],
 		#prior : OmReference [ '0' ],
 		#self : OmReference [ '1' ]
 	},
@@ -41,6 +42,7 @@ OmEntry {
 	}
 }OmEntry {
 	#tags : {
+		#time : DateAndTime [ '2025-04-07T18:35:16.069654+02:00' ],
 		#prior : OmReference [ '1' ],
 		#self : OmReference [ '2' ]
 	},

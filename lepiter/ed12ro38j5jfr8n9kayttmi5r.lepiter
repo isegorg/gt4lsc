@@ -380,7 +380,82 @@
 							"__type" : "changesSnippet",
 							"children" : {
 								"__type" : "snippets",
-								"items" : [ ]
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-11T13:31:19.309537+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-11T13:31:19.371298+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "oVPEuuDuDQCTfayJBq+zfw=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "We check that the number of instances is the same as the one shown in the view."
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-11T13:31:29.525164+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-11T13:34:25.851205+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "oYTOx+DuDQCTzRJRBq+zfw=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "We check that each instance view has the id, name, and temperature of its model."
+									}
+								]
 							},
 							"createEmail" : {
 								"__type" : "email",
@@ -503,6 +578,79 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-11T13:39:36.447355+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-11T13:39:36.447355+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "7F7U5ODuDQCWeBQxBq+zfw=="
+										},
+										"previewHeight" : 1436.9222106933594,
+										"fileName" : "attachments/it8sndng5xgm6m45lbn5t4g8/changes-snippets-269291505035207952746254403150079775496.ombu"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-11T13:37:05.870036+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-11T13:39:28.141712+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "srba2+DuDQCUWpjwBq+zfw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "An instance id will be set when it is added to the LSC and will be removed when it is removed from the LSC."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "changesSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
 												"dateAndTimeString" : "2025-04-07T18:46:10.51659+02:00"
 											}
 										},
@@ -521,7 +669,7 @@
 											"__type" : "uid",
 											"uidString" : "1hfWtZTuDQCrvi30D3P00g=="
 										},
-										"previewHeight" : 200,
+										"previewHeight" : 522.7222290039063,
 										"fileName" : "attachments/eoryp46wfvm100b13oua1lhsj/Pharo11-SNAPSHOT-64bit-aece1b5.3D8C54C90928.ombu"
 									}
 								]
@@ -566,7 +714,43 @@
 										"__type" : "textSnippet",
 										"children" : {
 											"__type" : "snippets",
-											"items" : [ ]
+											"items" : [
+												{
+													"__type" : "changesSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-07T19:12:52.876022+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-07T19:12:52.876022+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "xChYFZXuDQC9zx9vBLdAeQ=="
+													},
+													"previewHeight" : 1004.1792602539063,
+													"fileName" : "attachments/c1tcuighypu9tger5jfzln4ml/Pharo11-SNAPSHOT-64bit-aece1b5.3F0430B54870.ombu"
+												}
+											]
 										},
 										"createEmail" : {
 											"__type" : "email",
@@ -600,7 +784,7 @@
 										"string" : "We create a {{gtClass:GtLscInstanceViewModel}} collection from the initial lsc instances in {{gtMethod:GtLscViewModel>>onLscModelChanged}}"
 									},
 									{
-										"__type" : "changesSnippet",
+										"__type" : "textSnippet",
 										"children" : {
 											"__type" : "snippets",
 											"items" : [ ]
@@ -613,7 +797,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-04-07T19:12:52.876022+02:00"
+												"dateAndTimeString" : "2025-04-11T16:34:20.305707+02:00"
 											}
 										},
 										"editEmail" : {
@@ -624,15 +808,54 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-04-07T19:12:52.876022+02:00"
+												"dateAndTimeString" : "2025-04-11T16:34:27.216712+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
-											"uidString" : "xChYFZXuDQC9zx9vBLdAeQ=="
+											"uidString" : "fVi3VePuDQC0IAMlALm7OA=="
 										},
-										"previewHeight" : 1004.1792602539063,
-										"fileName" : "attachments/c1tcuighypu9tger5jfzln4ml/Pharo11-SNAPSHOT-64bit-aece1b5.3F0430B54870.ombu"
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "**A completar**"
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-11T16:29:19.041176+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-11T16:34:16.746345+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "M2TCQ+PuDQCx7VPjALm7OA=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "{{gtClass:GtLscInstanceViewModel}} and {{gtClass:GtLscInstanceElement}} must know th info of {{gtMethod:GtLscInstanceModel>>id}}"
 									}
 								]
 							},

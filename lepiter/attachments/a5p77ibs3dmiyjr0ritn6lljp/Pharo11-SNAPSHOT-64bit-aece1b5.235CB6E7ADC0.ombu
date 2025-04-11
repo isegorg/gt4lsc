@@ -18,4 +18,36 @@ OmEntry {
 			#package : #Gt4Lsc
 		}
 	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-07T10:56:09.661155+02:00' ],	
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModel,
+				#isMetaSide : false
+			},
+			#name : #'addInstance:',
+			#protocol : #'api - instances',
+			#sourceCode : 'addInstance: aGtLscInstanceModel\r\tself assert: (self hasInstance: aGtLscInstanceModel) not description: \'Can not add an instance already added\'.\r\tinstances add: aGtLscInstanceModel.',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModel,
+				#isMetaSide : false
+			},
+			#name : #'addInstance:',
+			#protocol : #'api - instances',
+			#sourceCode : 'addInstance: aGtLscInstanceModel\r\tself addInstance: aGtLscInstanceModel atPosition: self instancesSize + 1.',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
 }
