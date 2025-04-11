@@ -53,7 +53,119 @@
 										"__type" : "changesSnippet",
 										"children" : {
 											"__type" : "snippets",
-											"items" : [ ]
+											"items" : [
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-11T11:47:07.833217+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-11T11:47:23.543247+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "1ZHASd/uDQCONxpjBq+zfw=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "We make {{gtClass:GtLscElement}} have a vertical layout so that the container is placed under the title."
+												},
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-11T11:58:38.552889+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-11T11:59:49.66556+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "sDrAe9/uDQCPHgbfBq+zfw=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "We make {{gtClass:GtLscElement}} resizable using the trait {{gtClass:TBrLayoutResizable}}."
+												},
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-10T18:13:31.455718+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-11T11:44:36.183417+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "R1CXmtDuDQCyv8e2AdttrA=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "We add a canvas container of the {{gtClass:BrFrame}} type, in which we will add the canvas for instances and in the future more canvases for events and other elements."
+												}
+											]
 										},
 										"createEmail" : {
 											"__type" : "email",
@@ -105,7 +217,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-04-07T17:14:05.310612+02:00"
+									"dateAndTimeString" : "2025-04-11T11:37:35.691512+02:00"
 								}
 							},
 							"uid" : {
@@ -115,7 +227,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "We make {{gtClass:GtLscElement}} contain an element with id *#instancesCanvas*, where the instances will be added."
+							"string" : "We make {{gtClass:GtLscElement}} contain an element, with a specific *id* to be able to make queries in the view , where the instances will be added."
 						},
 						{
 							"__type" : "textSnippet",

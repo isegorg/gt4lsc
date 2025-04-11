@@ -24,7 +24,7 @@ OmEntry {
 			},
 			#name : #initialize,
 			#protocol : #initialization,
-			#sourceCode : 'initialize\r\t| instancesCanvas |\r\tsuper initialize.\r\t\r\ttitleElement := self createTitleElement.\r\tcanvasesContainer := self createCanvasesContainer.\r\tinstancesCanvas := self createInstancesCanvas.\r\tcanvasesContainer addChild: instancesCanvas.\r\t\r\tself addChildren: {titleElement. canvasesContainer}.\r\t\r\tself matchParent',
+			#sourceCode : 'initialize\r\t| canvasesContainer instancesCanvas |\r\tsuper initialize.\r\t\r\ttitleElement := self createTitleElement.\r\tcanvasesContainer := self createCanvasesContainer.\r\tinstancesCanvas := self createInstancesCanvas.\r\tcanvasesContainer addChild: instancesCanvas.\r\t\r\tself addChildren: {titleElement. canvasesContainer}.\r\t\r\tself matchParent',
 			#stamp : 'GlamorousAuthor 4/7/2025 17:09',
 			#package : #Gt4Lsc
 		},
@@ -134,6 +134,116 @@ OmEntry {
 			#sourceCode : 'instancesCanvasId\r\t^ #instancesCanvas',
 			#stamp : 'GlamorousAuthor 4/7/2025 17:10',
 			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#time : DateAndTime [ '2025-04-07T17:11:57.06797+02:00' ],	
+		#prior : OmReference [ '6' ],
+		#self : OmReference [ '7' ]
+	},
+	#content : EpClassModification {
+		#oldClass : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : 'BlElement',
+				#definitionSource : 'BlElement subclass: #GtLscElement\r\tuses: TGtWithLscViewModel\r\tinstanceVariableNames: \'titleElement\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4Lsc-! Views\'',
+				#traitCompositionSource : 'TGtWithLscViewModel'
+			},
+			#name : #GtLscElement,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#className : #GtLscElement,
+						#isMetaSide : false
+					},
+					#name : #titleElement,
+					#parent : @6
+				},
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#className : #GtLscElement,
+						#isMetaSide : false
+					},
+					#name : #lscViewModel,
+					#parent : @6
+				}
+			],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#definitionSource : 'GtLscElement class\r\tuses: TGtWithLscViewModel classTrait\r\tinstanceVariableNames: \'\'',
+					#traitCompositionSource : 'TGtWithLscViewModel classTrait'
+				},
+				#name : #'GtLscElement class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#className : #GtLscElement,
+					#isMetaSide : false
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#category : #'Gt4Lsc-! Views',
+			#package : #Gt4Lsc,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#newClass : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : 'BlElement',
+				#definitionSource : 'BlElement subclass: #GtLscElement\r\tuses: TGtWithLscViewModel + TBrLayoutResizable\r\tinstanceVariableNames: \'titleElement\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4Lsc-! Views\'',
+				#traitCompositionSource : 'TGtWithLscViewModel + TBrLayoutResizable'
+			},
+			#name : #GtLscElement,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#className : #GtLscElement,
+						#isMetaSide : false
+					},
+					#name : #titleElement,
+					#parent : @24
+				},
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#className : #GtLscElement,
+						#isMetaSide : false
+					},
+					#name : #lscViewModel,
+					#parent : @24
+				}
+			],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#definitionSource : 'GtLscElement class\r\tuses: TGtWithLscViewModel classTrait + TBrLayoutResizable classTrait\r\tinstanceVariableNames: \'\'',
+					#traitCompositionSource : 'TGtWithLscViewModel classTrait + TBrLayoutResizable classTrait'
+				},
+				#name : #'GtLscElement class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @24
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#className : #GtLscElement,
+					#isMetaSide : false
+				},
+				#parent : @24,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#category : #'Gt4Lsc-! Views',
+			#package : #Gt4Lsc,
+			#sharedPools : OrderedCollection [ ]
 		}
 	}
 }
