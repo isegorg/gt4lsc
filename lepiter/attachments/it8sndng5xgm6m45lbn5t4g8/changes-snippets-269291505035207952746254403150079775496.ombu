@@ -5,38 +5,6 @@ OmEntry {
 		#prior : OmReference [ '0' ],
 		#self : OmReference [ '1' ]
 	},
-	#content : EpMethodModification {
-		#oldMethod : RGMethodDefinition {
-			#annotations : IdentityDictionary {
-				#className : #GtLscModel,
-				#isMetaSide : false
-			},
-			#name : #'addInstance:atPosition:',
-			#protocol : #'api - instances',
-			#sourceCode : 'addInstance: aGtLscInstanceModel atPosition: anInteger\r\t| previousIndex|\r\tself assert: (self hasInstance: aGtLscInstanceModel) not description: \'Can not add an instance already added\'.\r\tself assert: (anInteger between: 1 and: self instancesSize + 1) description: \'Invalid position\'.\r\tpreviousIndex := anInteger - 1.\r\tinstances add: aGtLscInstanceModel afterIndex: previousIndex.',
-			#stamp : '',
-			#package : #Gt4Lsc
-		},
-		#newMethod : RGMethodDefinition {
-			#annotations : IdentityDictionary {
-				#className : #GtLscModel,
-				#isMetaSide : false
-			},
-			#name : #'addInstance:atPosition:',
-			#protocol : #'api - instances',
-			#sourceCode : 'addInstance: aGtLscInstanceModel atPosition: anInteger\r\t| previousIndex|\r\tself assert: (self hasInstance: aGtLscInstanceModel) not description: \'Can not add an instance already added\'.\r\tself assert: (anInteger between: 1 and: self instancesSize + 1) description: \'Invalid position\'.\r\tpreviousIndex := anInteger - 1.\r\tself addIdTo: aGtLscInstanceModel.\r\tinstances add: aGtLscInstanceModel afterIndex: previousIndex.',
-			#stamp : '',
-			#package : #Gt4Lsc
-		},
-		#classPackageName : #Gt4Lsc
-	}
-}OmEntry {
-	#tags : {
-		#author : 'GlamorousAuthor',
-		#time : DateAndTime [ '2025-04-07T21:30:16.192367+02:00' ],
-		#prior : OmReference [ '1' ],
-		#self : OmReference [ '2' ]
-	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
 			#annotations : IdentityDictionary {
@@ -54,8 +22,8 @@ OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-07T21:30:16.192367+02:00' ],
-		#prior : OmReference [ '2' ],
-		#self : OmReference [ '3' ]
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
@@ -74,8 +42,8 @@ OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-07T21:30:16.192367+02:00' ],
-		#prior : OmReference [ '3' ],
-		#self : OmReference [ '4' ]
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
@@ -94,8 +62,8 @@ OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-07T21:30:16.192367+02:00' ],
-		#prior : OmReference [ '4' ],
-		#self : OmReference [ '5' ]
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
 	},
 	#content : EpClassModification {
 		#oldClass : RGClassDefinition {
@@ -229,8 +197,8 @@ OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-07T21:30:16.192367+02:00' ],
-		#prior : OmReference [ '5' ],
-		#self : OmReference [ '6' ]
+		#prior : OmReference [ '4' ],
+		#self : OmReference [ '5' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
@@ -249,8 +217,8 @@ OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-07T21:30:16.192367+02:00' ],
-		#prior : OmReference [ '6' ],
-		#self : OmReference [ '7' ]
+		#prior : OmReference [ '5' ],
+		#self : OmReference [ '6' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
@@ -269,8 +237,8 @@ OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-07T21:30:16.192367+02:00' ],
-		#prior : OmReference [ '7' ],
-		#self : OmReference [ '8' ]
+		#prior : OmReference [ '6' ],
+		#self : OmReference [ '7' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
@@ -281,7 +249,7 @@ OmEntry {
 			#name : #hasId,
 			#protocol : #testing,
 			#sourceCode : 'hasId\r\t^ id isNotNil',
-			#stamp : '',
+			#stamp : 'GlamorousAuthor 4/11/2025 16:10',
 			#package : #Gt4Lsc
 		}
 	}
