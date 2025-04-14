@@ -578,79 +578,6 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-04-11T13:39:36.447355+02:00"
-											}
-										},
-										"editEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"editTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-04-11T13:39:36.447355+02:00"
-											}
-										},
-										"uid" : {
-											"__type" : "uid",
-											"uidString" : "7F7U5ODuDQCWeBQxBq+zfw=="
-										},
-										"previewHeight" : 1436.9222106933594,
-										"fileName" : "attachments/it8sndng5xgm6m45lbn5t4g8/changes-snippets-269291505035207952746254403150079775496.ombu"
-									}
-								]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-04-11T13:37:05.870036+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-04-11T13:39:28.141712+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "srba2+DuDQCUWpjwBq+zfw=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "An instance id will be set when it is added to the LSC and will be removed when it is removed from the LSC."
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [
-									{
-										"__type" : "changesSnippet",
-										"children" : {
-											"__type" : "snippets",
-											"items" : [ ]
-										},
-										"createEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"createTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
 												"dateAndTimeString" : "2025-04-07T18:46:10.51659+02:00"
 											}
 										},
@@ -845,7 +772,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-04-11T16:34:16.746345+02:00"
+												"dateAndTimeString" : "2025-04-12T12:18:56.73756+02:00"
 											}
 										},
 										"uid" : {
@@ -855,7 +782,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "{{gtClass:GtLscInstanceViewModel}} and {{gtClass:GtLscInstanceElement}} must know th info of {{gtMethod:GtLscInstanceModel>>id}}"
+										"string" : "{{gtClass:GtLscInstanceViewModel}} and {{gtClass:GtLscInstanceElement}} must know the info of {{gtMethod:GtLscInstanceModel>>id}}"
 									}
 								]
 							},

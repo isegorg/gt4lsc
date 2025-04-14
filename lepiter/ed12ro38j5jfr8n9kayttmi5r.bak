@@ -845,7 +845,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-04-11T16:34:16.746345+02:00"
+												"dateAndTimeString" : "2025-04-12T12:18:56.73756+02:00"
 											}
 										},
 										"uid" : {
@@ -855,7 +855,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "{{gtClass:GtLscInstanceViewModel}} and {{gtClass:GtLscInstanceElement}} must know th info of {{gtMethod:GtLscInstanceModel>>id}}"
+										"string" : "{{gtClass:GtLscInstanceViewModel}} and {{gtClass:GtLscInstanceElement}} must know the info of {{gtMethod:GtLscInstanceModel>>id}}"
 									}
 								]
 							},

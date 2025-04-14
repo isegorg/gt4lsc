@@ -13,7 +13,7 @@ OmEntry {
 			},
 			#name : #'addInstance:',
 			#protocol : #'api - instances',
-			#sourceCode : 'addInstance: aGtLscInstanceModel\r\tself assert: (self hasInstance: aGtLscInstanceModel) not description: \'Can not add an instance already added\'.\r\tinstances add: aGtLscInstanceModel.',
+			#sourceCode : 'addInstance: aGtLscInstanceModel\r\tself assert: (self hasInstance: aGtLscInstanceModel) not description: \'Can not add an instance already added\'.\r\tself addIdTo: aGtLscInstanceModel.\r\tinstances add: aGtLscInstanceModel.',
 			#stamp : 'GlamorousAuthor 4/7/2025 09:15',
 			#package : #Gt4Lsc
 		}

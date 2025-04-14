@@ -262,7 +262,7 @@
 								"__type" : "uid",
 								"uidString" : "AKi/yYzuDQCy+OKbBS9rcQ=="
 							},
-							"previewHeight" : 414.77325439453125,
+							"previewHeight" : 562.98583984375,
 							"fileName" : "attachments/6pq77l0v5ackhy5ereaucrlpt/Pharo11-SNAPSHOT-64bit-aece1b5.1E07C1402D88.ombu"
 						},
 						{
@@ -337,6 +337,79 @@
 								"__type" : "textStyle"
 							},
 							"string" : "And we create the necessary code for the example to be successful:"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "changesSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-12T20:28:15.361512+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-12T20:28:15.361512+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "96gcuPruDQCUayACCJ/0ag=="
+										},
+										"previewHeight" : 1176.0709228515625,
+										"fileName" : "attachments/it8sndng5xgm6m45lbn5t4g8/changes-snippets-269291505035207952746254403150079775496.ombu"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-12T20:28:01.991392+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-12T20:53:57.860189+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "x6pQt/ruDQCUX7t+CJ/0ag=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "An instance id will be set when it is added to the LSC."
 						},
 						{
 							"__type" : "textSnippet",
@@ -520,6 +593,79 @@
 								"__type" : "textStyle"
 							},
 							"string" : "And we create the necessary code for the example to be successful:"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "changesSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-12T20:56:02.09346+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-12T20:56:02.09346+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "H/90G/vuDQCWLZWcCJ/0ag=="
+										},
+										"previewHeight" : 448.32330322265625,
+										"fileName" : "attachments/bi8e6glkqsczosnqerg7gh8fq/changes-snippets-50529429038453911607300143074849872834.ombu"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-12T20:54:06.682293+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-12T20:55:26.498447+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "j/WTFPvuDQCV4B5VCJ/0ag=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "An instance id will be removed when it is removed from the LSC."
 						},
 						{
 							"__type" : "textSnippet",
@@ -853,7 +999,7 @@
 											"__type" : "uid",
 											"uidString" : "DvIsu4/uDQCLDzNbCsJ0Qg=="
 										},
-										"previewHeight" : 462.8514404296875,
+										"previewHeight" : 720.2949829101563,
 										"fileName" : "attachments/3xmxjw0h6783zwxxm2o9fvb2k/Pharo11-SNAPSHOT-64bit-aece1b5.29F2245A4C50.ombu"
 									},
 									{

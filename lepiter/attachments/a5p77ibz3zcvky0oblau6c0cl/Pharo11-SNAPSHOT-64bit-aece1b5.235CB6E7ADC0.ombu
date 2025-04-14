@@ -13,7 +13,7 @@ OmEntry {
 			},
 			#name : #lscAddInstanceAtPosition,
 			#protocol : #'examples - model',
-			#sourceCode : 'lscAddInstanceAtPosition\r\t<gtExample>\r\t| aLsc existingInstance newInstance |\r\taLsc := self lscWithInstance.\r\texistingInstance := aLsc instanceAt: 1.\r\tnewInstance := GtLscInstanceModel new name: \'Instance to add\'.\r\taLsc addInstance: newInstance atPosition: 1.\r\r\tself assert: (aLsc instanceAt: 1) equals: newInstance.\r\tself assert: (aLsc instanceAt: 2) equals: existingInstance.\r\tself assert: aLsc instancesSize equals: 2.\r\r\t^ aLsc',
+			#sourceCode : 'lscAddInstanceAtPosition\r\t<gtExample>\r\t| aLsc existingInstance newInstance |\r\taLsc := self lscWithInstance.\r\texistingInstance := aLsc instanceAt: 1.\r\tnewInstance := GtLscInstanceModel new name: \'Instance to add\'.\r\taLsc addInstance: newInstance atPosition: 1.\r\r\tself assert: newInstance hasId.\r\tself assert: (aLsc instanceAt: 1) equals: newInstance.\r\tself assert: (aLsc instanceAt: 2) equals: existingInstance.\r\tself assert: aLsc instancesSize equals: 2.\r\r\t^ aLsc',
 			#stamp : 'GlamorousAuthor 4/7/2025 10:55',
 			#package : #Gt4Lsc
 		}

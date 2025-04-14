@@ -1,0 +1,41 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-14T10:15:04.460283+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModel,
+				#isMetaSide : false
+			},
+			#name : #'removeIdFrom:',
+			#protocol : #'api - id operations',
+			#sourceCode : 'removeIdFrom: aObjectWithId\r\taObjectWithId removeId',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-14T10:15:05.460283+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceModel,
+				#isMetaSide : false
+			},
+			#name : #removeId,
+			#protocol : #accessing,
+			#sourceCode : 'removeId\r\tid := nil',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}

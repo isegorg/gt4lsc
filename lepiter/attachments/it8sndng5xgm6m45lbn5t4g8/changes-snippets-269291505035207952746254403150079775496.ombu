@@ -84,7 +84,7 @@ OmEntry {
 				#isMetaSide : false
 			},
 			#name : #'instanceWithId:ifFound:ifNone:',
-			#protocol : #'api - instances\t',
+			#protocol : #'api - instances',
 			#sourceCode : 'instanceWithId: anId ifFound: aFoundBlock ifNone: aNoneBlock\r\t^ instances\r\t\tdetect: [ :eachInstance | eachInstance id = anId ]\r\t\tifFound: aFoundBlock\r\t\tifNone: aNoneBlock',
 			#stamp : 'GlamorousAuthor 4/11/2025 16:08',
 			#package : #Gt4Lsc
@@ -262,6 +262,26 @@ OmEntry {
 			#protocol : #accessing,
 			#sourceCode : 'id: anObject\r\tid := anObject',
 			#stamp : 'GlamorousAuthor 4/11/2025 16:10',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-07T21:30:16.192367+02:00' ],
+		#prior : OmReference [ '7' ],
+		#self : OmReference [ '8' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceModel,
+				#isMetaSide : false
+			},
+			#name : #hasId,
+			#protocol : #testing,
+			#sourceCode : 'hasId\r\t^ id isNotNil',
+			#stamp : '',
 			#package : #Gt4Lsc
 		}
 	}

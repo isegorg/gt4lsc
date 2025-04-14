@@ -13,7 +13,7 @@ OmEntry {
 			},
 			#name : #'addInstance:atPosition:',
 			#protocol : #'api - instances',
-			#sourceCode : 'addInstance: aGtLscInstanceModel atPosition: anInteger\r\t| previousIndex|\r\tself assert: (self hasInstance: aGtLscInstanceModel) not description: \'Can not add an instance already added\'.\r\tself assert: (anInteger between: 1 and: self instancesSize + 1) description: \'Invalid position\'.\r\tpreviousIndex := anInteger - 1.\r\tinstances add: aGtLscInstanceModel afterIndex: previousIndex.',
+			#sourceCode : 'addInstance: aGtLscInstanceModel atPosition: anInteger\r\t| previousIndex|\r\tself assert: (self hasInstance: aGtLscInstanceModel) not description: \'Can not add an instance already added\'.\r\tself assert: (anInteger between: 1 and: self instancesSize + 1) description: \'Invalid position\'.\r\tpreviousIndex := anInteger - 1.\r\tself addIdTo: aGtLscInstanceModel.\r\tinstances add: aGtLscInstanceModel afterIndex: previousIndex.',
 			#stamp : 'GlamorousAuthor 4/7/2025 10:56',
 			#package : #Gt4Lsc
 		}
@@ -33,7 +33,7 @@ OmEntry {
 			},
 			#name : #'addInstance:',
 			#protocol : #'api - instances',
-			#sourceCode : 'addInstance: aGtLscInstanceModel\r\tself assert: (self hasInstance: aGtLscInstanceModel) not description: \'Can not add an instance already added\'.\r\tinstances add: aGtLscInstanceModel.',
+			#sourceCode : 'addInstance: aGtLscInstanceModel\r\tself assert: (self hasInstance: aGtLscInstanceModel) not description: \'Can not add an instance already added\'.\r\tself addIdTo: aGtLscInstanceModel.\r\tinstances add: aGtLscInstanceModel.',
 			#stamp : '',
 			#package : #Gt4Lsc
 		},

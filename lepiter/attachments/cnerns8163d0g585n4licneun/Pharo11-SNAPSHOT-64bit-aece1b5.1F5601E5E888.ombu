@@ -13,7 +13,7 @@ OmEntry {
 			},
 			#name : #lscRemoveInstance,
 			#protocol : #'examples - model',
-			#sourceCode : 'lscRemoveInstance\r\t<gtExample>\r\t| aLsc anInstance |\r\taLsc := self lscWithInstance.\r\tanInstance := aLsc instanceAt: 1.\r\taLsc removeInstance: anInstance.\r\r\tself assert: (aLsc hasInstance: anInstance) not.\r\tself assert: aLsc instancesSize equals: 0.\r\r\t^ aLsc',
+			#sourceCode : 'lscRemoveInstance\r\t<gtExample>\r\t| aLsc anInstance |\r\taLsc := self lscWithInstance.\r\tanInstance := aLsc instanceAt: 1.\r\taLsc removeInstance: anInstance.\r\r\tself assert: anInstance hasId not.\r\tself assert: (aLsc hasInstance: anInstance) not.\r\tself assert: aLsc instancesSize equals: 0.\r\r\t^ aLsc',
 			#stamp : 'GlamorousAuthor 4/7/2025 09:36',
 			#package : #Gt4Lsc
 		}

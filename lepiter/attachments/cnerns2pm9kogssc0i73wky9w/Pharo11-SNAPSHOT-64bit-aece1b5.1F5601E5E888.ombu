@@ -13,7 +13,7 @@ OmEntry {
 			},
 			#name : #'removeInstance:',
 			#protocol : #'api - instances',
-			#sourceCode : 'removeInstance: aGtLscInstanceModel\r\tself assert: (self hasInstance: aGtLscInstanceModel) description: \'Instance is not added\'.\r\tinstances remove: aGtLscInstanceModel.',
+			#sourceCode : 'removeInstance: aGtLscInstanceModel\r\tself assert: (self hasInstance: aGtLscInstanceModel) description: \'Instance is not added\'.\r\tinstances remove: aGtLscInstanceModel.\r\tself removeIdFrom: aGtLscInstanceModel',
 			#stamp : 'GlamorousAuthor 4/7/2025 09:40',
 			#package : #Gt4Lsc
 		}

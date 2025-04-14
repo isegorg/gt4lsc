@@ -13,7 +13,7 @@ OmEntry {
 			},
 			#name : #lscWithInstance,
 			#protocol : #'examples - model',
-			#sourceCode : 'lscWithInstance\r\t<gtExample>\r\t| aLsc anInstance |\r\taLsc := self newLsc.\r\tanInstance := GtLscInstanceModel new.\r\taLsc addInstance: anInstance.\r\t[ aLsc addInstance: anInstance ] on: Exception do: [ :e | e description = \'Can not add an instance already added\' ].\r\r\tself assert: (aLsc hasInstance: anInstance).\r\tself assert: aLsc instancesSize equals: 1.\r\r\t^ aLsc',
+			#sourceCode : 'lscWithInstance\r\t<gtExample>\r\t| aLsc anInstance |\r\taLsc := self newLsc.\r\tanInstance := GtLscInstanceModel new.\r\t\r\t"Check that Lsc instance has not id if it is not added to a Lsc"\r\tself assert: anInstance hasId not.\r\t\r\taLsc addInstance: anInstance.\r\t[ aLsc addInstance: anInstance ] on: Exception do: [ :e | e description = \'Can not add an instance already added\' ].\r\r\tself assert: anInstance hasId.\r\tself assert: (aLsc hasInstance: anInstance).\r\tself assert: aLsc instancesSize equals: 1.\r\r\t^ aLsc',
 			#stamp : '',
 			#package : #Gt4Lsc
 		}
