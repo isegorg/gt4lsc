@@ -1,0 +1,85 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-15T17:48:52.042632+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #onLscModelChanged,
+			#protocol : #'api - lsc model',
+			#sourceCode : 'onLscModelChanged\r\t"Is sent when a new lsc model is assigned to the view model"\r\t\r\tinstanceViewModels := self lscModel instances\r\t\t\tcollect: [ :eachLscInstanceModel | self createLscInstanceViewModelFor: eachLscInstanceModel ]\r\t\t\tas: OrderedCollection.',
+			#stamp : 'GlamorousAuthor 4/11/2025 16:54',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #onLscModelChanged,
+			#protocol : #'api - lsc model',
+			#sourceCode : 'onLscModelChanged\r\t"Is sent when a new lsc model is assigned to the view model"\r\r\tself initializeInstanceViewModels.\r\tself lscModel instances\r\t\tdo: [ :eachLscInstanceModel |\r\t\t\tself addInstanceViewModelFor: eachLscInstanceModel ]',
+			#stamp : 'GlamorousAuthor 4/15/2025 17:45',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-15T17:48:52.042632+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #initializeInstanceViewModels,
+			#protocol : #initialization,
+			#sourceCode : 'initializeInstanceViewModels\r\tinstanceViewModels := OrderedCollection empty',
+			#stamp : 'GlamorousAuthor 4/15/2025 17:45',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-15T17:48:52.042632+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #initialize,
+			#protocol : #initialization,
+			#sourceCode : 'initialize\r\tsuper initialize.\r\t\r\tinstanceViewModels := OrderedCollection empty.',
+			#stamp : 'GlamorousAuthor 4/11/2025 16:54',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #initialize,
+			#protocol : #initialization,
+			#sourceCode : 'initialize\r\tsuper initialize.\r\tself initializeInstanceViewModels',
+			#stamp : 'GlamorousAuthor 4/15/2025 17:45',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}

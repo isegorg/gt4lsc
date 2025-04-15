@@ -1,8 +1,8 @@
 OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
-		#time : DateAndTime [ '2025-04-08T13:01:42.440368+02:00' ],
-		#prior : OmReference [ 'Pharo11-SNAPSHOT-64bit-aece1b5.29EE80BE56E8', '8' ],
+		#time : DateAndTime [ '2025-04-15T17:26:42.440368+02:00' ],
+		#prior : OmReference [ '0' ],
 		#self : OmReference [ '1' ]
 	},
 	#content : EpMethodModification {
@@ -33,7 +33,7 @@ OmEntry {
 }OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
-		#time : DateAndTime [ '2025-04-08T13:03:47.932746+02:00' ],
+		#time : DateAndTime [ '2025-04-15T17:26:42.440368+02:00' ],
 		#prior : OmReference [ '1' ],
 		#self : OmReference [ '2' ]
 	},
@@ -45,8 +45,28 @@ OmEntry {
 			},
 			#name : #'onInstanceAdded:',
 			#protocol : #'events handling',
-			#sourceCode : 'onInstanceAdded: aLscInstanceModelAddedAnnouncement\r\tinstanceViewModels add: (self createLscInstanceViewModelFor: aLscInstanceModelAddedAnnouncement lscInstanceModel).',
+			#sourceCode : 'onInstanceAdded: aLscInstanceModelAddedAnnouncement\r\tself addInstanceViewModelFor: aLscInstanceModelAddedAnnouncement lscInstanceModel',
 			#stamp : 'GlamorousAuthor 4/8/2025 13:03',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-15T17:26:42.440368+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #'addInstanceViewModelFor:',
+			#protocol : #'api - lsc model',
+			#sourceCode : 'addInstanceViewModelFor: aLscInstanceModel\r\tinstanceViewModels add: (self createLscInstanceViewModelFor: aLscInstanceModel)',
+			#stamp : 'GlamorousAuthor 4/15/2025 17:24',
 			#package : #Gt4Lsc
 		}
 	}

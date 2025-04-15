@@ -1,0 +1,33 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-15T19:29:52.042632+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstancesCanvasElement,
+				#isMetaSide : false
+			},
+			#name : #onLscViewModelChanged,
+			#protocol : #'api - lsc view model',
+			#sourceCode : 'onLscViewModelChanged\r\t"Is sent when a new Lsc view model is assigned to the element"\r\r\tself removeChildren.\r\tself lscViewModel instanceViewModels\r\t\tdo: [ :eachLscInstanceViewModel |\r\t\t\tself addChild: (self createLscInstanceViewFor: eachLscInstanceViewModel) ]',
+			#stamp : 'GlamorousAuthor 4/14/2025 19:26',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstancesCanvasElement,
+				#isMetaSide : false
+			},
+			#name : #onLscViewModelChanged,
+			#protocol : #'api - lsc view model',
+			#sourceCode : 'onLscViewModelChanged\r\t"Is sent when a new Lsc view model is assigned to the element"\r\r\tself removeChildren.\r\tself lscViewModel instanceViewModels\r\t\tdo: [ :eachLscInstanceViewModel | self addInstanceElementFor: eachLscInstanceViewModel ]',
+			#stamp : 'GlamorousAuthor 4/15/2025 19:27',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}

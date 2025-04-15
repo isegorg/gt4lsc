@@ -55,8 +55,28 @@ OmEntry {
 			},
 			#name : #'onInstanceAdded:',
 			#protocol : #'events handling',
-			#sourceCode : 'onInstanceAdded: aGtLscInstanceViewModelAdded\r\t"Is sent when a new Lsc instance view model is added to the lsc view model"\r\t"Add a new lsc instance element"\r\t| lscInstanceElement position lscInstanceElementId |\r\tlscInstanceElement := self createLscInstanceViewFor: aGtLscInstanceViewModelAdded lscInstanceViewModel.\r\tposition := self childrenCount + 1.\r\tlscInstanceElementId := (GtLscConstants instanceElementIdTemplate format: position asString).\r\tself addChild: lscInstanceElement as: lscInstanceElementId .',
+			#sourceCode : 'onInstanceAdded: aGtLscInstanceViewModelAdded\r\t"Is sent when a new Lsc instance view model is added to the lsc view model"\r\t"Add a new lsc instance element"\r\tself addInstanceElementFor: aGtLscInstanceViewModelAdded lscInstanceViewModel',
 			#stamp : 'GlamorousAuthor 4/8/2025 13:40',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-08T13:41:54.943156+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstancesCanvasElement,
+				#isMetaSide : false
+			},
+			#name : #'addInstanceElementFor:',
+			#protocol : #'api - lsc view model',
+			#sourceCode : 'addInstanceElementFor: aLscInstanceViewModel\r\t^ self addChild: (self createLscInstanceViewFor: aLscInstanceViewModel)',
+			#stamp : 'GlamorousAuthor 4/15/2025 19:17',
 			#package : #Gt4Lsc
 		}
 	}

@@ -238,8 +238,81 @@
 																	"__type" : "uid",
 																	"uidString" : "YHCkCKLuDQC+nEe9Az+M7g=="
 																},
-																"previewHeight" : 592.7543334960938,
+																"previewHeight" : 799.4845581054688,
 																"fileName" : "attachments/beu408ed634ttw9xrgk2zcmuv/Pharo11-SNAPSHOT-64bit-aece1b5.2A47A2063380.ombu"
+															},
+															{
+																"__type" : "textSnippet",
+																"children" : {
+																	"__type" : "snippets",
+																	"items" : [
+																		{
+																			"__type" : "changesSnippet",
+																			"children" : {
+																				"__type" : "snippets",
+																				"items" : [ ]
+																			},
+																			"createEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"createTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-04-15T17:41:04.039379+02:00"
+																				}
+																			},
+																			"editEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"editTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-04-15T17:41:04.039379+02:00"
+																				}
+																			},
+																			"uid" : {
+																				"__type" : "uid",
+																				"uidString" : "gvu4uzTvDQCfOv9UBw4k0g=="
+																			},
+																			"previewHeight" : 692.7870483398438,
+																			"fileName" : "attachments/cfvc4fmjkvvvzuavym46o2iyr/changes-snippets-284976652284397443523814124209694450898.ombu"
+																		}
+																	]
+																},
+																"createEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"createTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-04-15T17:35:21.466168+02:00"
+																	}
+																},
+																"editEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"editTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-04-15T17:54:36.496065+02:00"
+																	}
+																},
+																"uid" : {
+																	"__type" : "uid",
+																	"uidString" : "RbhNpzTvDQCfKZ8JBw4k0g=="
+																},
+																"paragraphStyle" : {
+																	"__type" : "textStyle"
+																},
+																"string" : "We change the code to use the new message {{gtMethod:GtLscViewModel>>addInstanceViewModelFor:}} to add  the {{gtClass:GtLscInstanceViewModel}} when setting a new {{gtClass:GtLscModel}}:"
 															}
 														]
 													},
@@ -424,7 +497,7 @@
 																	"__type" : "uid",
 																	"uidString" : "u/BPTaLuDQCa1sqGAz+M7g=="
 																},
-																"previewHeight" : 1032.9971313476563,
+																"previewHeight" : 1239.5349731445313,
 																"fileName" : "attachments/e1b5qeknofkmjmtfinprl2rs1/Pharo11-SNAPSHOT-64bit-aece1b5.2A47A2063380.ombu"
 															}
 														]
@@ -448,7 +521,7 @@
 														"__type" : "time",
 														"time" : {
 															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2025-04-08T12:40:20.19673+02:00"
+															"dateAndTimeString" : "2025-04-15T19:12:21.143451+02:00"
 														}
 													},
 													"uid" : {
@@ -458,7 +531,7 @@
 													"paragraphStyle" : {
 														"__type" : "textStyle"
 													},
-													"string" : "We need to do is announce that an {{gtClass:GtLscInstanceViewModel}} has been added to {{gtClass:GtLscViewModel}} ."
+													"string" : "We need to announce that an {{gtClass:GtLscInstanceViewModel}} has been added to {{gtClass:GtLscViewModel}} ."
 												},
 												{
 													"__type" : "textSnippet",
@@ -497,8 +570,81 @@
 																	"__type" : "uid",
 																	"uidString" : "JXi6vqPuDQCrlXJ3Az+M7g=="
 																},
-																"previewHeight" : 846.5403442382814,
+																"previewHeight" : 844.4448852539064,
 																"fileName" : "attachments/ekyb0bbz5eph84xulxbf7nmkv/Pharo11-SNAPSHOT-64bit-aece1b5.2C99422A9B78.ombu"
+															},
+															{
+																"__type" : "textSnippet",
+																"children" : {
+																	"__type" : "snippets",
+																	"items" : [
+																		{
+																			"__type" : "changesSnippet",
+																			"children" : {
+																				"__type" : "snippets",
+																				"items" : [ ]
+																			},
+																			"createEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"createTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-04-15T19:23:56.876644+02:00"
+																				}
+																			},
+																			"editEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"editTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-04-15T19:23:56.876644+02:00"
+																				}
+																			},
+																			"uid" : {
+																				"__type" : "uid",
+																				"uidString" : "+ACnKzbvDQC+6izmCe/h3w=="
+																			},
+																			"previewHeight" : 390.777587890625,
+																			"fileName" : "attachments/d95orvjc1244b8mhjjhhzosxq/changes-snippets-32080021453619262437827733460494574047.ombu"
+																		}
+																	]
+																},
+																"createEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"createTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-04-15T19:21:45.503398+02:00"
+																	}
+																},
+																"editEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"editTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-04-15T19:23:44.546085+02:00"
+																	}
+																},
+																"uid" : {
+																	"__type" : "uid",
+																	"uidString" : "NWLSIzbvDQC9/SsjCe/h3w=="
+																},
+																"paragraphStyle" : {
+																	"__type" : "textStyle"
+																},
+																"string" : "We change the code to use the new message {{gtMethod:GtLscInstancesCanvasElement>>addInstanceElementFor:}} to add  the {{gtClass:GtLscInstanceElement}} when setting a new {{gtClass:GtLscViewModel}}:"
 															}
 														]
 													},
