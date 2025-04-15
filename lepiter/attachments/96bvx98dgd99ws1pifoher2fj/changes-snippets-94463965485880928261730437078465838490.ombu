@@ -1,0 +1,128 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-15T10:18:25.362606+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceModel,
+				#isMetaSide : false
+			},
+			#name : #'id:',
+			#protocol : #accessing,
+			#sourceCode : 'id: anObject\r\tid := anObject',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceModel,
+				#isMetaSide : false
+			},
+			#name : #'id:',
+			#protocol : #accessing,
+			#sourceCode : 'id: anObject\r\tid := anObject.\r\tself notifyIdChanged',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-15T10:18:25.362606+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceModel,
+				#isMetaSide : false
+			},
+			#name : #notifyIdChanged,
+			#protocol : #'events generation',
+			#sourceCode : 'notifyIdChanged\r\tself announce: GtLscInstanceModelIdChanged new',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-15T10:18:25.362606+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpClassAddition {
+		#class : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : 'GtLscInstanceModelAnnouncement',
+				#definitionSource : 'GtLscInstanceModelAnnouncement subclass: #GtLscInstanceModelIdChanged\r\tinstanceVariableNames: \'\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4Lsc-Events\'',
+				#traitCompositionSource : '{}'
+			},
+			#name : #GtLscInstanceModelIdChanged,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#definitionSource : 'GtLscInstanceModelIdChanged class\r\tinstanceVariableNames: \'\'',
+					#traitCompositionSource : '{}'
+				},
+				#name : #'GtLscInstanceModelIdChanged class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#className : #GtLscInstanceModelIdChanged,
+					#isMetaSide : false
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#category : #Gt4Lsc-Events,
+			#package : #Gt4Lsc,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-15T10:18:25.362606+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceViewModel,
+				#isMetaSide : false
+			},
+			#name : #subscribeToLscInstanceModel,
+			#protocol : #'api - lsc instance model',
+			#sourceCode : 'subscribeToLscInstanceModel\r\t"Is sent after a new lsc instance model is assigned to the view model.\r\tIt is required to unsubscribe from the domain model by implementing\r\t#unsubscribeFromLscInstanceModel if view model subscribes to them"\r\t\r\tself lscInstanceModel weak\r\t\twhen: GtLscInstanceModelNameChanged\r\t\t\tsend: #onNameChanged:\r\t\t\tto: self.\r\t\t\t\r\t\tself lscInstanceModel weak\r\t\twhen: GtLscInstanceModelTemperatureChanged\r\t\t\tsend: #onTemperatureChanged\r\t\t\tto: self.',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceViewModel,
+				#isMetaSide : false
+			},
+			#name : #subscribeToLscInstanceModel,
+			#protocol : #'api - lsc instance model',
+			#sourceCode : 'subscribeToLscInstanceModel\r\t"Is sent after a new lsc instance model is assigned to the view model.\r\tIt is required to unsubscribe from the domain model by implementing\r\t#unsubscribeFromLscInstanceModel if view model subscribes to them"\r\t\r\tself lscInstanceModel weak\r\t\twhen: GtLscInstanceModelNameChanged\r\t\t\tsend: #onNameChanged:\r\t\t\tto: self.\r\t\t\t\r\t\tself lscInstanceModel weak\r\t\twhen: GtLscInstanceModelTemperatureChanged\r\t\t\tsend: #onTemperatureChanged\r\t\t\tto: self.\r\t\t\t\r\t\tself lscInstanceModel weak\r\t\twhen: GtLscInstanceModelIdChanged\r\t\t\tsend: #onIdChanged\r\t\t\tto: self.',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}

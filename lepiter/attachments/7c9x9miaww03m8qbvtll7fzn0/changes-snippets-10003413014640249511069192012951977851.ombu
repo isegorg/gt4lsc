@@ -1,0 +1,33 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-14T19:49:25.362606+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscElementScripterExamples,
+				#isMetaSide : false
+			},
+			#name : #renderNewLscInstance,
+			#protocol : #'examples - ui',
+			#sourceCode : 'renderNewLscInstance\r\t"Check that the LscInstance UI element displays the model\'s characteristics"\r\r\t<gtExample>\r\t| lscInstance uiElement locationLine|\r\tlscInstance := GtLscInstanceModelExamples new newLscInstance.\r\tuiElement := lscInstance asElement.\r\t\r\t"Check title"\r\tself assert: (uiElement childNamed: GtLscConstants instanceNameElementId) text asString equals: lscInstance name.\r\t"Check locationLine border"\r\tlocationLine := uiElement childNamed: GtLscConstants locationLineId.\r\tself assert: locationLine border paint equals: GtLscConstants hotColor asBlPaint.\r\t\r\t^ lscInstance',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscElementScripterExamples,
+				#isMetaSide : false
+			},
+			#name : #renderNewLscInstance,
+			#protocol : #'examples - ui',
+			#sourceCode : 'renderNewLscInstance\r\t"Check that the LscInstance UI element displays the model\'s characteristics"\r\r\t<gtExample>\r\t| lscInstance uiElement locationLine|\r\tlscInstance := GtLscInstanceModelExamples new newLscInstance id: \'Initial ID\'.\r\tuiElement := lscInstance asElement.\r\t\r\t"Check title"\r\tself assert: (uiElement childNamed: GtLscConstants instanceNameElementId) text asString equals: lscInstance name.\r\t"Check locationLine border"\r\tlocationLine := uiElement childNamed: GtLscConstants locationLineId.\r\tself assert: locationLine border paint equals: GtLscConstants hotColor asBlPaint.\r\t"Check element id"\r\tself assert: uiElement id equals: (GtLscConstants instanceElementIdTemplate format: {lscInstance id asString}) asBlocElementId.\r\t\r\t^ lscInstance',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}

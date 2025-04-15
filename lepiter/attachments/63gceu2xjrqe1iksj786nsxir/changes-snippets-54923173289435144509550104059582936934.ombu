@@ -1,0 +1,73 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-15T09:10:25.362606+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceElement,
+				#isMetaSide : false
+			},
+			#name : #onLscInstanceViewModelChanged,
+			#protocol : #'api - lsc instance view model',
+			#sourceCode : 'onLscInstanceViewModelChanged\r\t"Is sent when a new Lsc instance view model is assigned to the element"\r\t\r\tself onNameChanged.\r\tself onTemperatureStateChanged.',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceElement,
+				#isMetaSide : false
+			},
+			#name : #onLscInstanceViewModelChanged,
+			#protocol : #'api - lsc instance view model',
+			#sourceCode : 'onLscInstanceViewModelChanged\r\t"Is sent when a new Lsc instance view model is assigned to the element"\r\t\r\tself onNameChanged.\r\tself onTemperatureStateChanged.\r\tself onElementIdChanged',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-15T09:10:25.362606+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceElement,
+				#isMetaSide : false
+			},
+			#name : #onElementIdChanged,
+			#protocol : #'events handling',
+			#sourceCode : 'onElementIdChanged\r\tself id: self lscInstanceViewModel elementId',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-15T09:10:25.362606+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceViewModel,
+				#isMetaSide : false
+			},
+			#name : #elementId,
+			#protocol : #accessing,
+			#sourceCode : 'elementId\r\t^ elementId',
+			#stamp : 'GlamorousAuthor 4/14/2025 20:00',
+			#package : #Gt4Lsc
+		}
+	}
+}

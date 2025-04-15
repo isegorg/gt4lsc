@@ -1,0 +1,208 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-14T20:17:25.362606+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceViewModel,
+				#isMetaSide : false
+			},
+			#name : #onLscInstanceModelChanged,
+			#protocol : #'api - lsc instance model',
+			#sourceCode : 'onLscInstanceModelChanged\r\t"Is sent when a new lsc instance model is assigned to the view model"\r\t\r\tself onTemperatureChanged',
+			#stamp : 'GlamorousAuthor 4/9/2025 20:35',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceViewModel,
+				#isMetaSide : false
+			},
+			#name : #onLscInstanceModelChanged,
+			#protocol : #'api - lsc instance model',
+			#sourceCode : 'onLscInstanceModelChanged\r\t"Is sent when a new lsc instance model is assigned to the view model"\r\t\r\tself onTemperatureChanged.\r\tself onIdChanged.',
+			#stamp : 'GlamorousAuthor 4/14/2025 20:12',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-14T20:17:25.362606+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceViewModel,
+				#isMetaSide : false
+			},
+			#name : #onIdChanged,
+			#protocol : #'events handling',
+			#sourceCode : 'onIdChanged\r\telementId := self class createElementIdFromId: lscInstanceModel id',
+			#stamp : 'GlamorousAuthor 4/14/2025 20:13',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-14T20:17:25.362606+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpClassModification {
+		#oldClass : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : 'Object',
+				#definitionSource : 'Object subclass: #GtLscInstanceViewModel\r\tuses: TGtWithLscInstanceModel + TGtAnnouncer\r\tinstanceVariableNames: \'announcer temperatureState\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4Lsc-! View models\'',
+				#traitCompositionSource : 'TGtWithLscInstanceModel + TGtAnnouncer'
+			},
+			#name : #GtLscInstanceViewModel,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#className : #GtLscInstanceViewModel,
+						#isMetaSide : false
+					},
+					#name : #announcer,
+					#parent : @6
+				},
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#className : #GtLscInstanceViewModel,
+						#isMetaSide : false
+					},
+					#name : #temperatureState,
+					#parent : @6
+				},
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#className : #GtLscInstanceViewModel,
+						#isMetaSide : false
+					},
+					#name : #lscInstanceModel,
+					#parent : @6
+				}
+			],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#definitionSource : 'GtLscInstanceViewModel class\r\tuses: TGtWithLscInstanceModel classTrait + TGtAnnouncer classTrait\r\tinstanceVariableNames: \'\'',
+					#traitCompositionSource : 'TGtWithLscInstanceModel classTrait + TGtAnnouncer classTrait'
+				},
+				#name : #'GtLscInstanceViewModel class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#className : #GtLscInstanceViewModel,
+					#isMetaSide : false
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#category : #'Gt4Lsc-! View models',
+			#package : #Gt4Lsc,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#newClass : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : 'Object',
+				#definitionSource : 'Object subclass: #GtLscInstanceViewModel\r\tuses: TGtWithLscInstanceModel + TGtAnnouncer\r\tinstanceVariableNames: \'announcer temperatureState elementId\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4Lsc-! View models\'',
+				#traitCompositionSource : 'TGtWithLscInstanceModel + TGtAnnouncer'
+			},
+			#name : #GtLscInstanceViewModel,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#className : #GtLscInstanceViewModel,
+						#isMetaSide : false
+					},
+					#name : #announcer,
+					#parent : @26
+				},
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#className : #GtLscInstanceViewModel,
+						#isMetaSide : false
+					},
+					#name : #temperatureState,
+					#parent : @26
+				},
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#className : #GtLscInstanceViewModel,
+						#isMetaSide : false
+					},
+					#name : #elementId,
+					#parent : @26
+				},
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#className : #GtLscInstanceViewModel,
+						#isMetaSide : false
+					},
+					#name : #lscInstanceModel,
+					#parent : @26
+				}
+			],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#definitionSource : 'GtLscInstanceViewModel class\r\tuses: TGtWithLscInstanceModel classTrait + TGtAnnouncer classTrait\r\tinstanceVariableNames: \'\'',
+					#traitCompositionSource : 'TGtWithLscInstanceModel classTrait + TGtAnnouncer classTrait'
+				},
+				#name : #'GtLscInstanceViewModel class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @26
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#className : #GtLscInstanceViewModel,
+					#isMetaSide : false
+				},
+				#parent : @26,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#category : #'Gt4Lsc-! View models',
+			#package : #Gt4Lsc,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-14T20:17:25.362606+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscInstanceViewModel class',
+				#isMetaSide : true
+			},
+			#name : #'createElementIdFromId:',
+			#protocol : #'api - id operations',
+			#sourceCode : 'createElementIdFromId: anId\r\t^ GtLscConstants instanceElementIdTemplate format: {anId asString}',
+			#stamp : 'GlamorousAuthor 4/14/2025 20:13',
+			#package : #Gt4Lsc
+		}
+	}
+}

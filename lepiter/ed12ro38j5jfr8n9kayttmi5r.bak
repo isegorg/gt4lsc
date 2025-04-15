@@ -454,6 +454,79 @@
 											"__type" : "textStyle"
 										},
 										"string" : "We check that each instance view has the id, name, and temperature of its model."
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [
+												{
+													"__type" : "changesSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-07T21:28:37.578054+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-07T21:28:37.578054+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "QHPO+pbuDQCds0vrBjD+fg=="
+													},
+													"previewHeight" : 284.0250549316406,
+													"fileName" : "attachments/7inp97gczx7879j5gcsato5uv/Pharo11-SNAPSHOT-64bit-aece1b5.46113D9252E0.ombu"
+												}
+											]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-07T21:27:13.43953+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-14T19:24:56.528427+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "P5fK9ZbuDQCb70C0BjD+fg=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "And we need some aditional code to generate the id of {{gtClass:GtLscInstanceElement}} based on {{gtClass:GtLscInstanceModel}}."
 									}
 								]
 							},
@@ -495,153 +568,45 @@
 										"__type" : "changesSnippet",
 										"children" : {
 											"__type" : "snippets",
-											"items" : [ ]
-										},
-										"createEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"createTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-04-07T21:28:37.578054+02:00"
-											}
-										},
-										"editEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"editTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-04-07T21:28:37.578054+02:00"
-											}
-										},
-										"uid" : {
-											"__type" : "uid",
-											"uidString" : "QHPO+pbuDQCds0vrBjD+fg=="
-										},
-										"previewHeight" : 606.3106994628906,
-										"fileName" : "attachments/7inp97gczx7879j5gcsato5uv/Pharo11-SNAPSHOT-64bit-aece1b5.46113D9252E0.ombu"
-									}
-								]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-04-07T21:27:13.43953+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-04-07T21:28:32.109475+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "P5fK9ZbuDQCb70C0BjD+fg=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "And we need some aditional changes to obtain the name element of {{gtClass:GtLscInstanceElement}}."
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [
-									{
-										"__type" : "changesSnippet",
-										"children" : {
-											"__type" : "snippets",
-											"items" : [ ]
-										},
-										"createEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"createTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-04-11T13:39:36.447355+02:00"
-											}
-										},
-										"editEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"editTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-04-11T13:39:36.447355+02:00"
-											}
-										},
-										"uid" : {
-											"__type" : "uid",
-											"uidString" : "7F7U5ODuDQCWeBQxBq+zfw=="
-										},
-										"previewHeight" : 1436.9222106933594,
-										"fileName" : "attachments/it8sndng5xgm6m45lbn5t4g8/changes-snippets-269291505035207952746254403150079775496.ombu"
-									}
-								]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-04-11T13:37:05.870036+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-04-11T13:39:28.141712+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "srba2+DuDQCUWpjwBq+zfw=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "An instance id will be set when it is added to the LSC and will be removed when it is removed from the LSC."
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [
-									{
-										"__type" : "changesSnippet",
-										"children" : {
-											"__type" : "snippets",
-											"items" : [ ]
+											"items" : [
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-14T17:41:39.250565+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-14T17:42:01.207777+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "R9v6nyDvDQCm5VzIDCceyA=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "We initialize {{gtClass:GtLscInstanceElement}} to match parent."
+												}
+											]
 										},
 										"createEmail" : {
 											"__type" : "email",
@@ -693,7 +658,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-04-07T20:49:47.271573+02:00"
+									"dateAndTimeString" : "2025-04-14T19:24:56.674252+02:00"
 								}
 							},
 							"uid" : {
@@ -703,7 +668,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "We need the *MVVM* cycle between {{gtClass:GtLscInstancesCanvasElement}} and {{gtClass:GtLscModel}}, so we use {{gtClass:TGtWithLscViewModel}} on it. We initialize it to match parent."
+							"string" : "We need the *MVVM* cycle between {{gtClass:GtLscInstancesCanvasElement}} and {{gtClass:GtLscModel}}, so we use {{gtClass:TGtWithLscViewModel}} on it."
 						},
 						{
 							"__type" : "textSnippet",
@@ -782,80 +747,6 @@
 											"__type" : "textStyle"
 										},
 										"string" : "We create a {{gtClass:GtLscInstanceViewModel}} collection from the initial lsc instances in {{gtMethod:GtLscViewModel>>onLscModelChanged}}"
-									},
-									{
-										"__type" : "textSnippet",
-										"children" : {
-											"__type" : "snippets",
-											"items" : [ ]
-										},
-										"createEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"createTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-04-11T16:34:20.305707+02:00"
-											}
-										},
-										"editEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"editTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-04-11T16:34:27.216712+02:00"
-											}
-										},
-										"uid" : {
-											"__type" : "uid",
-											"uidString" : "fVi3VePuDQC0IAMlALm7OA=="
-										},
-										"paragraphStyle" : {
-											"__type" : "textStyle"
-										},
-										"string" : "**A completar**"
-									},
-									{
-										"__type" : "textSnippet",
-										"children" : {
-											"__type" : "snippets",
-											"items" : [ ]
-										},
-										"createEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"createTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-04-11T16:29:19.041176+02:00"
-											}
-										},
-										"editEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"editTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-04-12T12:18:56.73756+02:00"
-											}
-										},
-										"uid" : {
-											"__type" : "uid",
-											"uidString" : "M2TCQ+PuDQCx7VPjALm7OA=="
-										},
-										"paragraphStyle" : {
-											"__type" : "textStyle"
-										},
-										"string" : "{{gtClass:GtLscInstanceViewModel}} and {{gtClass:GtLscInstanceElement}} must know the info of {{gtMethod:GtLscInstanceModel>>id}}"
 									}
 								]
 							},
@@ -932,7 +823,7 @@
 														"__type" : "uid",
 														"uidString" : "RQJNg5XuDQCc7Tu5BJjojA=="
 													},
-													"previewHeight" : 856.3821411132814,
+													"previewHeight" : 687.7855224609376,
 													"fileName" : "attachments/fyqs4lugret6rfepbrz3hvwa/Pharo11-SNAPSHOT-64bit-aece1b5.43F013E761D8.ombu"
 												}
 											]
@@ -1005,7 +896,7 @@
 														"__type" : "uid",
 														"uidString" : "wfe+yZbuDQCf6ApeBjD+fg=="
 													},
-													"previewHeight" : 957.9212036132813,
+													"previewHeight" : 853.400634765625,
 													"fileName" : "attachments/7inp97h8d6ld37uqstomdewge/Pharo11-SNAPSHOT-64bit-aece1b5.45393BAD2F50.ombu"
 												}
 											]
@@ -1029,7 +920,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-04-07T21:14:47.921573+02:00"
+												"dateAndTimeString" : "2025-04-14T19:24:57.092266+02:00"
 											}
 										},
 										"uid" : {
@@ -1039,7 +930,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "And we need to send the message {{gtMethod:GtLscInstancesCanvasElement>>lscViewModel:}} when the *ViewModel* changes in {{gtClass:GtLscElement}}"
+										"string" : "And we need to set the  *ViewModel* sending the message {{gtMethod:GtLscInstancesCanvasElement>>lscViewModel:}} when the *ViewModel* changes in {{gtClass:GtLscElement}}"
 									}
 								]
 							},
@@ -1073,6 +964,633 @@
 								"__type" : "textStyle"
 							},
 							"string" : "Make {{gtClass:GtLscInstancesCanvasElement}} get its properties from its {{gtClass:GtLscViewModel|label=ViewModel}}."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [
+															{
+																"__type" : "changesSnippet",
+																"children" : {
+																	"__type" : "snippets",
+																	"items" : [ ]
+																},
+																"createEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"createTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-04-14T18:01:16.90888+02:00"
+																	}
+																},
+																"editEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"editTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-04-14T18:01:16.90888+02:00"
+																	}
+																},
+																"uid" : {
+																	"__type" : "uid",
+																	"uidString" : "s4Ys5iDvDQCnzhCtDCceyA=="
+																},
+																"previewHeight" : 652.0906982421875,
+																"fileName" : "attachments/7c9x9miaww03m8qbvtll7fzn0/changes-snippets-10003413014640249511069192012951977851.ombu"
+															},
+															{
+																"__type" : "textSnippet",
+																"children" : {
+																	"__type" : "snippets",
+																	"items" : [
+																		{
+																			"__type" : "textSnippet",
+																			"children" : {
+																				"__type" : "snippets",
+																				"items" : [
+																					{
+																						"__type" : "changesSnippet",
+																						"children" : {
+																							"__type" : "snippets",
+																							"items" : [ ]
+																						},
+																						"createEmail" : {
+																							"__type" : "email",
+																							"emailString" : "<unknown>"
+																						},
+																						"createTime" : {
+																							"__type" : "time",
+																							"time" : {
+																								"__type" : "dateAndTime",
+																								"dateAndTimeString" : "2025-04-14T20:11:02.847398+02:00"
+																							}
+																						},
+																						"editEmail" : {
+																							"__type" : "email",
+																							"emailString" : "<unknown>"
+																						},
+																						"editTime" : {
+																							"__type" : "time",
+																							"time" : {
+																								"__type" : "dateAndTime",
+																								"dateAndTimeString" : "2025-04-14T20:11:02.847398+02:00"
+																							}
+																						},
+																						"uid" : {
+																							"__type" : "uid",
+																							"uidString" : "/4RAtiLvDQCjlO1vBnj9dA=="
+																						},
+																						"previewHeight" : 849.446838378906,
+																						"fileName" : "attachments/6xc80pf7geyyqa24tlnz9a131/changes-snippets-201766261190793872834581713352228666740.ombu"
+																					}
+																				]
+																			},
+																			"createEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"createTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-04-14T20:21:41.802906+02:00"
+																				}
+																			},
+																			"editEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"editTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-04-14T20:24:38.307969+02:00"
+																				}
+																			},
+																			"uid" : {
+																				"__type" : "uid",
+																				"uidString" : "BDVW3CLvDQCJUJ1GDKB5dw=="
+																			},
+																			"paragraphStyle" : {
+																				"__type" : "textStyle"
+																			},
+																			"string" : "Make {{gtClass:GtLscInstanceViewModel}}  get the id features it needs from {{gtClass:GtLscInstanceModel}} when it is created:"
+																		},
+																		{
+																			"__type" : "textSnippet",
+																			"children" : {
+																				"__type" : "snippets",
+																				"items" : [
+																					{
+																						"__type" : "changesSnippet",
+																						"children" : {
+																							"__type" : "snippets",
+																							"items" : [ ]
+																						},
+																						"createEmail" : {
+																							"__type" : "email",
+																							"emailString" : "<unknown>"
+																						},
+																						"createTime" : {
+																							"__type" : "time",
+																							"time" : {
+																								"__type" : "dateAndTime",
+																								"dateAndTimeString" : "2025-04-14T20:24:54.395977+02:00"
+																							}
+																						},
+																						"editEmail" : {
+																							"__type" : "email",
+																							"emailString" : "<unknown>"
+																						},
+																						"editTime" : {
+																							"__type" : "time",
+																							"time" : {
+																								"__type" : "dateAndTime",
+																								"dateAndTimeString" : "2025-04-14T20:24:54.395977+02:00"
+																							}
+																						},
+																						"uid" : {
+																							"__type" : "uid",
+																							"uidString" : "vvHQ5yLvDQCKri1rDKB5dw=="
+																						},
+																						"previewHeight" : 640.33740234375,
+																						"fileName" : "attachments/63gceu2xjrqe1iksj786nsxir/changes-snippets-54923173289435144509550104059582936934.ombu"
+																					}
+																				]
+																			},
+																			"createEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"createTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-04-14T20:23:18.027239+02:00"
+																				}
+																			},
+																			"editEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"editTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-04-14T20:24:49.721005+02:00"
+																				}
+																			},
+																			"uid" : {
+																				"__type" : "uid",
+																				"uidString" : "H3cS4iLvDQCKER7kDKB5dw=="
+																			},
+																			"paragraphStyle" : {
+																				"__type" : "textStyle"
+																			},
+																			"string" : "Make {{gtClass:GtLscInstanceElement}} get the id features it needs from {{gtClass:GtLscInstanceViewModel}} when it is created:"
+																		},
+																		{
+																			"__type" : "textSnippet",
+																			"children" : {
+																				"__type" : "snippets",
+																				"items" : [ ]
+																			},
+																			"createEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"createTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-04-15T09:13:02.690599+02:00"
+																				}
+																			},
+																			"editEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"editTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-04-15T09:13:30.694181+02:00"
+																				}
+																			},
+																			"uid" : {
+																				"__type" : "uid",
+																				"uidString" : "QIHkoi3vDQCXeIjvBa79mg=="
+																			},
+																			"paragraphStyle" : {
+																				"__type" : "textStyle"
+																			},
+																			"string" : "Finally the example is successful {{gtExample:GtLscElementScripterExamples>>renderNewLscInstance}}"
+																		}
+																	]
+																},
+																"createEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"createTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-04-14T20:10:56.766522+02:00"
+																	}
+																},
+																"editEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"editTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-04-14T20:21:41.168045+02:00"
+																	}
+																},
+																"uid" : {
+																	"__type" : "uid",
+																	"uidString" : "nuiFsSLvDQCjFUOVBnj9dA=="
+																},
+																"paragraphStyle" : {
+																	"__type" : "textStyle"
+																},
+																"string" : "We make the necessary changes to make the element display the ID information corresponding to its model, following the MVVM mechanics:"
+															}
+														]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-14T20:08:55.300153+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-15T09:16:21.546282+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "Y0ymriLvDQChxE/FBnj9dA=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "We change {{gtMethod:GtLscElementScripterExamples>>renderNewLscInstance}} to check the element id corresponding to the initial one of the model:"
+												},
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [
+															{
+																"__type" : "changesSnippet",
+																"children" : {
+																	"__type" : "snippets",
+																	"items" : [ ]
+																},
+																"createEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"createTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-04-15T09:19:01.133591+02:00"
+																	}
+																},
+																"editEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"editTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-04-15T09:19:01.133591+02:00"
+																	}
+																},
+																"uid" : {
+																	"__type" : "uid",
+																	"uidString" : "z+pBuC3vDQCZnTCSBa79mg=="
+																},
+																"previewHeight" : 685.4678955078125,
+																"fileName" : "attachments/96bvx98smc1x3dq9v6vf10soy/changes-snippets-78675524307198472530822947371777719706.ombu"
+															},
+															{
+																"__type" : "textSnippet",
+																"children" : {
+																	"__type" : "snippets",
+																	"items" : [
+																		{
+																			"__type" : "textSnippet",
+																			"children" : {
+																				"__type" : "snippets",
+																				"items" : [
+																					{
+																						"__type" : "changesSnippet",
+																						"children" : {
+																							"__type" : "snippets",
+																							"items" : [ ]
+																						},
+																						"createEmail" : {
+																							"__type" : "email",
+																							"emailString" : "<unknown>"
+																						},
+																						"createTime" : {
+																							"__type" : "time",
+																							"time" : {
+																								"__type" : "dateAndTime",
+																								"dateAndTimeString" : "2025-04-15T09:44:35.152948+02:00"
+																							}
+																						},
+																						"editEmail" : {
+																							"__type" : "email",
+																							"emailString" : "<unknown>"
+																						},
+																						"editTime" : {
+																							"__type" : "time",
+																							"time" : {
+																								"__type" : "dateAndTime",
+																								"dateAndTimeString" : "2025-04-15T09:44:35.152948+02:00"
+																							}
+																						},
+																						"uid" : {
+																							"__type" : "uid",
+																							"uidString" : "MDKxEy7vDQCabV4TBa79mg=="
+																						},
+																						"previewHeight" : 1051.4068298339844,
+																						"fileName" : "attachments/96bvx98dgd99ws1pifoher2fj/changes-snippets-94463965485880928261730437078465838490.ombu"
+																					}
+																				]
+																			},
+																			"createEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"createTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-04-15T09:43:28.466567+02:00"
+																				}
+																			},
+																			"editEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"editTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-04-15T09:44:28.864187+02:00"
+																				}
+																			},
+																			"uid" : {
+																				"__type" : "uid",
+																				"uidString" : "HqK3Dy7vDQCaDDvzBa79mg=="
+																			},
+																			"paragraphStyle" : {
+																				"__type" : "textStyle"
+																			},
+																			"string" : "Make {{gtClass:GtLscInstanceViewModel|label=InstanceViewModel}} update its *elementId* when its {{gtClass:GtLscInstanceModel|label=InstanceModel}} *id* changes:"
+																		},
+																		{
+																			"__type" : "textSnippet",
+																			"children" : {
+																				"__type" : "snippets",
+																				"items" : [
+																					{
+																						"__type" : "changesSnippet",
+																						"children" : {
+																							"__type" : "snippets",
+																							"items" : [ ]
+																						},
+																						"createEmail" : {
+																							"__type" : "email",
+																							"emailString" : "<unknown>"
+																						},
+																						"createTime" : {
+																							"__type" : "time",
+																							"time" : {
+																								"__type" : "dateAndTime",
+																								"dateAndTimeString" : "2025-04-15T10:06:30.399921+02:00"
+																							}
+																						},
+																						"editEmail" : {
+																							"__type" : "email",
+																							"emailString" : "<unknown>"
+																						},
+																						"editTime" : {
+																							"__type" : "time",
+																							"time" : {
+																								"__type" : "dateAndTime",
+																								"dateAndTimeString" : "2025-04-15T10:06:30.399921+02:00"
+																							}
+																						},
+																						"uid" : {
+																							"__type" : "uid",
+																							"uidString" : "UEUWYi7vDQCsw3+5BOkcgw=="
+																						},
+																						"previewHeight" : 1048.0899658203125,
+																						"fileName" : "attachments/7rftc1ceti2jynssbmszutao4/changes-snippets-339761339879515487225643656194936085635.ombu"
+																					}
+																				]
+																			},
+																			"createEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"createTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-04-15T10:05:29.535245+02:00"
+																				}
+																			},
+																			"editEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"editTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-04-15T10:06:25.568568+02:00"
+																				}
+																			},
+																			"uid" : {
+																				"__type" : "uid",
+																				"uidString" : "Xpk/Xi7vDQCsHPcUBOkcgw=="
+																			},
+																			"paragraphStyle" : {
+																				"__type" : "textStyle"
+																			},
+																			"string" : "Make {{gtClass:GtLscInstanceElement|label=InstanceView}} update its *id* when its {{gtClass:GtLscInstanceViewModel|label=InstanceViewModel}} *elementId* changes:"
+																		}
+																	]
+																},
+																"createEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"createTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-04-15T09:41:05.521899+02:00"
+																	}
+																},
+																"editEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"editTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-04-15T09:42:36.771412+02:00"
+																	}
+																},
+																"uid" : {
+																	"__type" : "uid",
+																	"uidString" : "ynIyBy7vDQCZ0oavBa79mg=="
+																},
+																"paragraphStyle" : {
+																	"__type" : "textStyle"
+																},
+																"string" : "We make the necessary changes to make the element display the ID information corresponding to its model changes, following the MVVM mechanics:"
+															}
+														]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-15T09:17:26.402046+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-15T09:18:35.616602+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "WWacsi3vDQCYlyOjBa79mg=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "We change {{gtMethod:GtLscElementScripterExamples>>renderLscInstanceWithChanges}} to check the element id is updated when the mode id changesl:"
+												}
+											]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-14T18:00:43.062027+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-14T20:18:34.379136+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "yhAo5CDvDQCnp/EbDCceyA=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "We make that {{gtClass:GtLscInstanceElement}} show the id corresponding to the initial one of the model and that is updated when it changes."
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-14T18:00:30.534402+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-14T18:00:42.239257+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "gOZo4yDvDQCnVY7/DCceyA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "**A completar**"
 						},
 						{
 							"__type" : "textSnippet",

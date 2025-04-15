@@ -2,7 +2,7 @@ OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-07T20:53:17.416431+02:00' ],
-		#prior : OmReference [ 'Pharo11-SNAPSHOT-64bit-aece1b5.402EF30089A0', '7' ],
+		#prior : OmReference [ '0' ],
 		#self : OmReference [ '1' ]
 	},
 	#content : EpMethodAddition {
@@ -13,7 +13,7 @@ OmEntry {
 			},
 			#name : #onLscViewModelChanged,
 			#protocol : #'api - lsc view model',
-			#sourceCode : 'onLscViewModelChanged\r\t"Is sent when a new Lsc view model is assigned to the element"\r\r\tself removeChildren.\r\tself lscViewModel instanceViewModels doWithIndex: [ :eachLscInstanceViewModel : index |\r\t\t| lscInstanceElement lscInstanceElementId |\r\t\tlscInstanceElement := self createLscInstanceViewFor: eachLscInstanceViewModel.\r\t\tlscInstanceElementId := (GtLscConstants instanceElementIdTemplate format: index asString).\r\t\tself addChild: lscInstanceElement as: lscInstanceElementId ].',
+			#sourceCode : 'onLscViewModelChanged\r\t"Is sent when a new Lsc view model is assigned to the element"\r\r\tself removeChildren.\r\tself lscViewModel instanceViewModels\r\t\tdo: [ :eachLscInstanceViewModel |\r\t\t\tself addChild: (self createLscInstanceViewFor: eachLscInstanceViewModel) ]',
 			#stamp : 'GlamorousAuthor 4/7/2025 20:53',
 			#package : #Gt4Lsc
 		}
@@ -55,26 +55,6 @@ OmEntry {
 			#protocol : #initialization,
 			#sourceCode : 'createLscInstanceViewFor: aLscInstanceViewModel \r\t^ GtLscInstanceElement new\r\t\tlscInstanceViewModel: aLscInstanceViewModel',
 			#stamp : 'GlamorousAuthor 4/7/2025 20:57',
-			#package : #Gt4Lsc
-		}
-	}
-}OmEntry {
-	#tags : {
-		#author : 'GlamorousAuthor',
-		#time : DateAndTime [ '2025-04-07T20:58:25.087867+02:00' ],
-		#prior : OmReference [ '3' ],
-		#self : OmReference [ '4' ]
-	},
-	#content : EpMethodAddition {
-		#method : RGMethodDefinition {
-			#annotations : IdentityDictionary {
-				#className : #'GtLscConstants class',
-				#isMetaSide : true
-			},
-			#name : #instanceElementIdTemplate,
-			#protocol : #'api - constants',
-			#sourceCode : 'instanceElementIdTemplate\r\t^ #\'instance-{1}\'',
-			#stamp : 'GlamorousAuthor 4/7/2025 20:58',
 			#package : #Gt4Lsc
 		}
 	}

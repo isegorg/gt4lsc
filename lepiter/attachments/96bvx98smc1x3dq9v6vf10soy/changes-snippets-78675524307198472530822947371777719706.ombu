@@ -1,0 +1,33 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-15T09:10:25.362606+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscElementScripterExamples,
+				#isMetaSide : false
+			},
+			#name : #renderLscInstanceWithChanges,
+			#protocol : #'examples - ui',
+			#sourceCode : 'renderLscInstanceWithChanges\r\t"Check that ui element shows the model changes"\r\r\t<gtExample>\r\t| lscInstance uiElement newName newTemperature |\r\tlscInstance := self renderNewLscInstance.\r\tuiElement := lscInstance asElement.\r\t\r\tnewName := \'Name to check\'.\r\tlscInstance name: newName.\r\tnewTemperature := GtLscColdTemperature.\r\tlscInstance temperature: newTemperature.\r\t\r\t"Check name"\r\tself assert: (uiElement childNamed: GtLscConstants instanceNameElementId) text asString equals: lscInstance name.\r\t"Check locationLine border"\r\tself assert: uiElement locationLineElement border paint equals: GtLscConstants coldColor asBlPaint.\r\t^ lscInstance',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscElementScripterExamples,
+				#isMetaSide : false
+			},
+			#name : #renderLscInstanceWithChanges,
+			#protocol : #'examples - ui',
+			#sourceCode : 'renderLscInstanceWithChanges\r\t"Check that ui element shows the model changes"\r\r\t<gtExample>\r\t| lscInstance uiElement newName newTemperature newId |\r\tlscInstance := self renderNewLscInstance.\r\tuiElement := lscInstance asElement.\r\t\r\tnewName := \'Name to check\'.\r\tlscInstance name: newName.\r\tnewTemperature := GtLscColdTemperature.\r\tlscInstance temperature: newTemperature.\r\tnewId := \'New Id\'.\r\tlscInstance id: newId.\r\t\r\t"Check name"\r\tself assert: (uiElement childNamed: GtLscConstants instanceNameElementId) text asString equals: lscInstance name.\r\t"Check locationLine border"\r\tself assert: uiElement locationLineElement border paint equals: GtLscConstants coldColor asBlPaint.\r\t"Check element id"\r\tself assert: uiElement id equals: (GtLscConstants instanceElementIdTemplate format: {lscInstance id asString}) asBlocElementId.\r\t^ lscInstance',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}
