@@ -1,0 +1,113 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-16T17:01:52.042632+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #subscribeToLscModel,
+			#protocol : #'api - lsc model',
+			#sourceCode : 'subscribeToLscModel\r\t"Is sent after a new lsc model is assigned to the view model.\r\tIt is required to unsubscribe from the domain model by implementing\r\t#unsubscribeFromLscModel if view model subscribes to them"\r\t\r\tself lscModel weak\r\t\twhen: GtLscTitleChanged\r\t\t\tsend: #onTitleChanged:\r\t\t\tto: self.\r\tself lscModel weak\r\t\twhen: GtLscInstanceModelAdded\r\t\t\tsend: #onInstanceAdded:\r\t\t\tto: self.',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #subscribeToLscModel,
+			#protocol : #'api - lsc model',
+			#sourceCode : 'subscribeToLscModel\r\t"Is sent after a new lsc model is assigned to the view model.\r\tIt is required to unsubscribe from the domain model by implementing\r\t#unsubscribeFromLscModel if view model subscribes to them"\r\t\r\tself lscModel weak\r\t\twhen: GtLscTitleChanged\r\t\t\tsend: #onTitleChanged:\r\t\t\tto: self.\r\tself lscModel weak\r\t\twhen: GtLscInstanceModelAdded\r\t\t\tsend: #onInstanceAdded:\r\t\t\tto: self.\r\tself lscModel weak\r\t\twhen: GtLscInstanceModelRemoved\r\t\t\tsend: #onInstanceRemoved:\r\t\t\tto: self.',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-16T17:01:52.042632+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #'onInstanceRemoved:',
+			#protocol : #'events handling',
+			#sourceCode : 'onInstanceRemoved: aLscInstanceModelRemovedAnnouncement\r\tself removeInstanceViewModelFor: aLscInstanceModelRemovedAnnouncement lscInstanceModel.',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-16T17:01:52.042632+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #'removeInstanceViewModelFor:',
+			#protocol : #'api - lsc model',
+			#sourceCode : 'removeInstanceViewModelFor: aLscInstanceModel\r\tself\r\t\tinstanceViewModelFor: aLscInstanceModel\r\t\tifFound: [ :aLscInstanceViewModel | instanceViewModels remove: aLscInstanceViewModel ]\r\t\tifNone: [  ]',
+			#stamp : 'GlamorousAuthor 4/17/2025 09:58',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-16T17:01:52.042632+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #'instanceViewModelFor:ifFound:ifNone:',
+			#protocol : #'api - lsc model',
+			#sourceCode : 'instanceViewModelFor: aLscInstanceModel ifFound: aFoundBlock ifNone: aNoneBlock\r\tinstanceViewModels\r\t\tdetect: [ :eachInstanceViewModel | eachInstanceViewModel isForModel: aLscInstanceModel ]\r\t\tifFound: aFoundBlock\r\t\tifNone: aNoneBlock',
+			#stamp : 'GlamorousAuthor 4/17/2025 09:58',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-16T17:01:52.042632+02:00' ],
+		#prior : OmReference [ '4' ],
+		#self : OmReference [ '5' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceViewModel,
+				#isMetaSide : false
+			},
+			#name : #'isForModel:',
+			#protocol : #'api - lsc instance model',
+			#sourceCode : 'isForModel: aLscInstanceModel\r\t^ aLscInstanceModel id = self lscInstanceModel id\r\t\tand: [ aLscInstanceModel name = self lscInstanceModel name ]',
+			#stamp : 'GlamorousAuthor 4/17/2025 09:59',
+			#package : #Gt4Lsc
+		}
+	}
+}

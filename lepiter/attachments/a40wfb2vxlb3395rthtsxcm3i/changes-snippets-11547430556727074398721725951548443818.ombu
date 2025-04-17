@@ -1,0 +1,73 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-17T13:34:52.042632+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstancesCanvasElement,
+				#isMetaSide : false
+			},
+			#name : #subscribeToLscViewModel,
+			#protocol : #'api - lsc view model',
+			#sourceCode : 'subscribeToLscViewModel\r\t"Is sent after a new Lsc view model is assigned to the element.\r\tIt is required to unsubscribe from the view model or domain model by implementing\r\t#unsubscribeFromLscViewModel if elements subscribe to them"\r\t\r\tself lscViewModel weak\r\t\twhen: GtLscInstanceViewModelAdded\r\t\t\tsend: #onInstanceAdded:\r\t\t\tto: self',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstancesCanvasElement,
+				#isMetaSide : false
+			},
+			#name : #subscribeToLscViewModel,
+			#protocol : #'api - lsc view model',
+			#sourceCode : 'subscribeToLscViewModel\r\t"Is sent after a new Lsc view model is assigned to the element.\r\tIt is required to unsubscribe from the view model or domain model by implementing\r\t#unsubscribeFromLscViewModel if elements subscribe to them"\r\t\r\tself lscViewModel weak\r\t\twhen: GtLscInstanceViewModelAdded\r\t\t\tsend: #onInstanceAdded:\r\t\t\tto: self.\r\tself lscViewModel weak\r\t\twhen: GtLscInstanceViewModelRemoved\r\t\t\tsend: #onInstanceRemoved:\r\t\t\tto: self',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-17T13:34:52.042632+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstancesCanvasElement,
+				#isMetaSide : false
+			},
+			#name : #'onInstanceRemoved:',
+			#protocol : #'events handling',
+			#sourceCode : 'onInstanceRemoved: aGtLscInstanceViewModelRemoved\r\t"Is sent when a new Lsc instance view model is removed from the lsc view model"\r\t"Remove the lsc instance element"\r\tself removeInstanceElementFor: aGtLscInstanceViewModelRemoved lscInstanceViewModel',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-17T13:34:52.042632+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstancesCanvasElement,
+				#isMetaSide : false
+			},
+			#name : #'removeInstanceElementFor:',
+			#protocol : #'api - lsc view model',
+			#sourceCode : 'removeInstanceElementFor: aLscInstanceViewModel\r\tself removeChildNamed: aLscInstanceViewModel elementId',
+			#stamp : 'GlamorousAuthor 4/17/2025 13:34',
+			#package : #Gt4Lsc
+		}
+	}
+}

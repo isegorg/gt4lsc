@@ -1,0 +1,21 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-17T13:54:52.042632+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscElementScripterExamples,
+				#isMetaSide : false
+			},
+			#name : #renderLscRemovingInstance,
+			#protocol : #'examples - ui',
+			#sourceCode : 'renderLscRemovingInstance\r\t"Check that the UI element displays the model\'s characteristics"\r\r\t<gtExample>\r\t| lsc uiElement instanceToRemove instanceToRemoveElementId instancesCanvasElement initialInstancesSize |\r\tlsc := self renderLscAddingInstance.\r\tinitialInstancesSize := lsc instancesSize.\r\tuiElement := lsc asElement.\r\t\r\tinstancesCanvasElement := (uiElement childNamed: GtLscConstants instancesCanvasId).\r\t\r\t"Removing an instance to the model"\r\tinstanceToRemove := lsc instanceAt: initialInstancesSize.\r\tinstanceToRemoveElementId := (GtLscConstants instanceElementIdTemplate format: {instanceToRemove id asString}).\r\tself assert: (instancesCanvasElement childNamed: instanceToRemoveElementId ifFound: [ :instanceElement | true ] ifNone: false).\r\tlsc removeInstance: instanceToRemove.\r\t\r\t"Check the instance in the view"\r\tself assert: (instancesCanvasElement childNamed: instanceToRemoveElementId ifFound: [ :instanceElement | false ] ifNone: true).\r\tself assert: instancesCanvasElement childrenCount equals: initialInstancesSize - 1.\r\t\r\t^ lsc',
+			#stamp : 'GlamorousAuthor 4/17/2025 13:51',
+			#package : #Gt4Lsc
+		}
+	}
+}

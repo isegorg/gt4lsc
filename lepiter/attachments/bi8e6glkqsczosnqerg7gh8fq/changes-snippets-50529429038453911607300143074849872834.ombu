@@ -33,7 +33,7 @@ OmEntry {
 			},
 			#name : #removeId,
 			#protocol : #accessing,
-			#sourceCode : 'removeId\r\tid := nil',
+			#sourceCode : 'removeId\r\tself id: nil',
 			#stamp : '',
 			#package : #Gt4Lsc
 		}

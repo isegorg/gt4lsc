@@ -1219,14 +1219,14 @@
 																	"__type" : "time",
 																	"time" : {
 																		"__type" : "dateAndTime",
-																		"dateAndTimeString" : "2025-04-14T16:15:28.512099+02:00"
+																		"dateAndTimeString" : "2025-04-16T16:09:53.558068+02:00"
 																	}
 																},
 																"uid" : {
 																	"__type" : "uid",
 																	"uidString" : "v8mJa97uDQC048tOCP8aZw=="
 																},
-																"code" : "subString := 'createNameElement'.\rfilter := GtLscLeSearchSubstringSnippetFilter substring: subString.\rdataBase := thisSnippet database.\rsnippets := dataBase leSnippetsInDB contents.\rsnippets select: [ :snippet | filter matches: snippet ]"
+																"code" : "subString := 'removeId'.\rfilter := GtLscLeSearchSubstringSnippetFilter substring: subString.\rdataBase := thisSnippet database.\rsnippets := dataBase leSnippetsInDB contents.\rsnippets select: [ :snippet | filter matches: snippet ]"
 															}
 														]
 													},
@@ -1326,6 +1326,78 @@
 								"__type" : "textStyle"
 							},
 							"string" : "**Search ChangesSnippet by subString in the file of changes**"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-17T10:34:45.807937+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-17T10:55:33.328922+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "LePSAlfvDQC5xsdfAL6rNA=="
+										},
+										"code" : "fileName := 'attachments/2h5tta0ik8hudmoj0al8rgrxz/changes-snippets-333491673122146298824692587470274155817.ombu'.\rfilter := LeSearchSubstringSnippetFilter substring: fileName.\rsnippetByFileName := (filter select: [ :result | result isKindOf: LeChangesSnippet]) result toArray wait first."
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-17T10:34:20.265326+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-17T10:34:41.543967+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "9CJNAVfvDQC5jVRPAL6rNA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "**Search ChangesSnippet by fileName**"
 						},
 						{
 							"__type" : "textSnippet",
