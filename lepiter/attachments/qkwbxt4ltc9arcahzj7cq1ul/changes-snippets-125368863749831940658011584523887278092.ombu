@@ -1,0 +1,53 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-19T14:29:52.042632+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstancesCanvasElement,
+				#isMetaSide : false
+			},
+			#name : #'onInstanceAdded:',
+			#protocol : #'events handling',
+			#sourceCode : 'onInstanceAdded: aGtLscInstanceViewModelAdded\r\t"Is sent when a new Lsc instance view model is added to the lsc view model"\r\t"Add a new lsc instance element"\r\tself addInstanceElementFor: aGtLscInstanceViewModelAdded lscInstanceViewModel',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstancesCanvasElement,
+				#isMetaSide : false
+			},
+			#name : #'onInstanceAdded:',
+			#protocol : #'events handling',
+			#sourceCode : 'onInstanceAdded: aGtLscInstanceViewModelAdded\r\t"Is sent when a new Lsc instance view model is added to the lsc view model"\r\r\t"Add a new lsc instance element at a position"\r\r\tself\r\t\taddInstanceElementFor: aGtLscInstanceViewModelAdded lscInstanceViewModel\r\t\tatPosition: aGtLscInstanceViewModelAdded position',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-19T14:29:52.042632+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstancesCanvasElement,
+				#isMetaSide : false
+			},
+			#name : #'addInstanceElementFor:atPosition:',
+			#protocol : #'api - lsc view model',
+			#sourceCode : 'addInstanceElementFor: aLscInstanceViewModel atPosition: anInteger\r\t^ self\r\t\taddChild: (self createLscInstanceViewFor: aLscInstanceViewModel)\r\t\tat: anInteger',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}

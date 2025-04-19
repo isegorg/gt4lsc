@@ -1,0 +1,21 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-17T18:04:52.042632+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscElementScripterExamples,
+				#isMetaSide : false
+			},
+			#name : #renderLscAddingInstanceAtPosition,
+			#protocol : #'examples - ui',
+			#sourceCode : 'renderLscAddingInstanceAtPosition\r\t"Check that the UI element displays the model\'s characteristics"\r\r\t<gtExample>\r\t| lsc initialInstancesSize uiElement positionWhereToAdd initialPriorInstanceElement initialLaterInstanceElement instanceAdded instancesCanvasElement instanceAddedElement finalPriorInstanceElement finalLaterInstanceElement |\r\tlsc := self renderLscWithInstances.\r\tinitialInstancesSize := lsc instancesSize.\r\tuiElement := lsc asElement.\r\t\r\tpositionWhereToAdd := initialInstancesSize.\r\tinstancesCanvasElement := (uiElement childNamed: GtLscConstants instancesCanvasId).\r\tinitialPriorInstanceElement := (instancesCanvasElement childAt: positionWhereToAdd - 1).\r\tinitialLaterInstanceElement := (instancesCanvasElement childAt: positionWhereToAdd).\r\t"Add an instance to the model at position"\r\tinstanceAdded := GtLscInstanceModelExamples new newLscInstance\r\t\tname: \'Instance added at position\';\r\t\ttemperature: GtLscColdTemperature;\r\t\tyourself.\r\tlsc addInstance: instanceAdded atPosition: positionWhereToAdd.\r\t\r\t"Check the instance in the view"\r\tself assert: instancesCanvasElement isNotNil.\r\tself assert: instancesCanvasElement childrenCount equals: initialInstancesSize + 1.\r\t\r\tinstanceAddedElement := (instancesCanvasElement childAt: positionWhereToAdd).\r\t"Check element id"\r\tself assert: instanceAddedElement id equals: (GtLscConstants instanceElementIdTemplate format: {instanceAdded id asString}) asBlocElementId.\r\t"Check name"\r\tself assert: (instanceAddedElement childNamed: #nameElement) text asString equals: instanceAdded name.\r\t"Check locationLine border"\r\tself assert: instanceAddedElement border paint equals: GtLscConstants coldColor asBlPaint.\r\t\r\t"Check the prior instance in the view"\r\tfinalPriorInstanceElement := (instancesCanvasElement childAt: positionWhereToAdd - 1).\r\t"Check element id"\r\tself assert: initialPriorInstanceElement id equals: finalPriorInstanceElement id.\r\t"Check name"\r\tself assert: (initialPriorInstanceElement childNamed: #nameElement) text equals: (finalPriorInstanceElement childNamed: #nameElement) text.\r\t"Check locationLine border"\r\tself assert: initialPriorInstanceElement border paint equals: finalPriorInstanceElement border paint.\r\t\r\t"Check the later instance in the view"\r\tfinalLaterInstanceElement := (instancesCanvasElement childAt: positionWhereToAdd + 1).\r\t"Check element id"\r\tself assert: initialLaterInstanceElement id equals: finalLaterInstanceElement id.\r\t"Check name"\r\tself assert: (initialLaterInstanceElement childNamed: #nameElement) text equals: (finalLaterInstanceElement childNamed: #nameElement) text.\r\t"Check locationLine border"\r\tself assert: initialLaterInstanceElement border paint equals: finalLaterInstanceElement border paint.\r\r\t^ lsc',
+			#stamp : 'GlamorousAuthor 4/17/2025 18:00',
+			#package : #Gt4Lsc
+		}
+	}
+}

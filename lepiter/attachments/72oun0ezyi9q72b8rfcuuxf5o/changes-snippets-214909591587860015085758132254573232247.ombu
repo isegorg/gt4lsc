@@ -1,0 +1,157 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-19T09:44:52.042632+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModel,
+				#isMetaSide : false
+			},
+			#name : #'addInstance:',
+			#protocol : #'api - instances',
+			#sourceCode : 'addInstance: aGtLscInstanceModel\r\tself addInstance: aGtLscInstanceModel atPosition: self instancesSize + 1.\r\tself notifyInstanceAdded: aGtLscInstanceModel.',
+			#stamp : 'GlamorousAuthor 4/15/2025 14:37',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModel,
+				#isMetaSide : false
+			},
+			#name : #'addInstance:',
+			#protocol : #'api - instances',
+			#sourceCode : 'addInstance: aGtLscInstanceModel\r\tself addInstance: aGtLscInstanceModel atPosition: self instancesSize + 1.',
+			#stamp : 'GlamorousAuthor 4/19/2025 09:44',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-19T09:44:52.042632+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #'onInstanceAdded:',
+			#protocol : #'events handling',
+			#sourceCode : 'onInstanceAdded: aLscInstanceModelAddedAnnouncement\r\t| instanceViewModelAdded|\r\tinstanceViewModelAdded := self addInstanceViewModelFor: aLscInstanceModelAddedAnnouncement lscInstanceModel.\r\tself notifyLscInstanceViewModelAdded: instanceViewModelAdded',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #'onInstanceAdded:',
+			#protocol : #'events handling',
+			#sourceCode : 'onInstanceAdded: aLscInstanceModelAddedAnnouncement\r\tself\r\t\taddInstanceViewModelFor: aLscInstanceModelAddedAnnouncement lscInstanceModel\r\t\tatPosition: aLscInstanceModelAddedAnnouncement position',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-19T09:44:52.042632+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #'addInstanceViewModelFor:atPosition:',
+			#protocol : #'api - lsc model',
+			#sourceCode : 'addInstanceViewModelFor: aLscInstanceModel atPosition: anInteger\r\t| instanceViewModelAdded previousIndex|\r\tinstanceViewModelAdded := self createLscInstanceViewModelFor: aLscInstanceModel.\r\tpreviousIndex := anInteger - 1.\r\tinstanceViewModels add: instanceViewModelAdded afterIndex: previousIndex.\r\tself notifyLscInstanceViewModelAdded: instanceViewModelAdded',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-19T09:44:52.042632+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #'addInstanceViewModelFor:',
+			#protocol : #'api - lsc model',
+			#sourceCode : 'addInstanceViewModelFor: aLscInstanceModel\r\t| instanceViewModelAdded|\r\tinstanceViewModelAdded := self createLscInstanceViewModelFor: aLscInstanceModel.\r\tinstanceViewModels add: instanceViewModelAdded.\r\t^ instanceViewModelAdded',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #'addInstanceViewModelFor:',
+			#protocol : #'api - lsc model',
+			#sourceCode : 'addInstanceViewModelFor: aLscInstanceModel\r\t"Adds the instance view model corresponding to the instance model in the final position"\r\r\tself\r\t\taddInstanceViewModelFor: aLscInstanceModel\r\t\tatPosition: self instanceViewModelsSize + 1',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-19T09:44:52.042632+02:00' ],
+		#prior : OmReference [ '4' ],
+		#self : OmReference [ '5' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #instanceViewModelsSize,
+			#protocol : #accessing,
+			#sourceCode : 'instanceViewModelsSize\r\t^ instanceViewModels size',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-19T09:44:52.042632+02:00' ],
+		#prior : OmReference [ '5' ],
+		#self : OmReference [ '6' ]
+	},
+	#content : EpMethodRemoval {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModel,
+				#isMetaSide : false
+			},
+			#name : #'notifyInstanceAdded:',
+			#protocol : #'events generation',
+			#sourceCode : 'notifyInstanceAdded: aGtLscInstanceModel\r\tself announce: (GtLscInstanceModelAdded lscInstanceModel: aGtLscInstanceModel)',
+			#stamp : 'GlamorousAuthor 4/15/2025 14:37',
+			#package : #Gt4Lsc
+		}
+	}
+}

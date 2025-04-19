@@ -1,0 +1,293 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-17T19:33:52.042632+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpClassModification {
+		#oldClass : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : 'GtLscModelAnnouncement',
+				#definitionSource : 'GtLscModelAnnouncement subclass: #GtLscInstanceModelAdded\r\tinstanceVariableNames: \'lscInstanceModel\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4Lsc-Events\'',
+				#traitCompositionSource : '{}'
+			},
+			#name : #GtLscInstanceModelAdded,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#className : #GtLscInstanceModelAdded,
+						#isMetaSide : false
+					},
+					#name : #lscInstanceModel,
+					#parent : @6
+				}
+			],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#definitionSource : 'GtLscInstanceModelAdded class\r\tinstanceVariableNames: \'\'',
+					#traitCompositionSource : '{}'
+				},
+				#name : #'GtLscInstanceModelAdded class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#className : #GtLscInstanceModelAdded,
+					#isMetaSide : false
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#category : #Gt4Lsc-Events,
+			#package : #Gt4Lsc,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#newClass : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : 'GtLscModelAnnouncement',
+				#definitionSource : 'GtLscModelAnnouncement subclass: #GtLscInstanceModelAdded\r\tinstanceVariableNames: \'\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4Lsc-Events\'',
+				#traitCompositionSource : '{}'
+			},
+			#name : #GtLscInstanceModelAdded,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#definitionSource : 'GtLscInstanceModelAdded class\r\tinstanceVariableNames: \'\'',
+					#traitCompositionSource : '{}'
+				},
+				#name : #'GtLscInstanceModelAdded class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @22
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#className : #GtLscInstanceModelAdded,
+					#isMetaSide : false
+				},
+				#parent : @22,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#category : #Gt4Lsc-Events,
+			#package : #Gt4Lsc,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-17T19:33:52.042632+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpClassModification {
+		#oldClass : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : 'GtLscAnnouncement',
+				#definitionSource : 'GtLscAnnouncement subclass: #GtLscModelAnnouncement\r\tinstanceVariableNames: \'\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4Lsc-Events\'',
+				#traitCompositionSource : '{}'
+			},
+			#name : #GtLscModelAnnouncement,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#definitionSource : 'GtLscModelAnnouncement class\r\tinstanceVariableNames: \'\'',
+					#traitCompositionSource : '{}'
+				},
+				#name : #'GtLscModelAnnouncement class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#className : #GtLscModelAnnouncement,
+					#isMetaSide : false
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#category : #Gt4Lsc-Events,
+			#package : #Gt4Lsc,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#newClass : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : 'GtLscAnnouncement',
+				#definitionSource : 'GtLscAnnouncement subclass: #GtLscModelAnnouncement\r\tinstanceVariableNames: \'lscInstanceModel\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4Lsc-Events\'',
+				#traitCompositionSource : '{}'
+			},
+			#name : #GtLscModelAnnouncement,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#className : #GtLscModelAnnouncement,
+						#isMetaSide : false
+					},
+					#name : #lscInstanceModel,
+					#parent : @20
+				}
+			],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#definitionSource : 'GtLscModelAnnouncement class\r\tinstanceVariableNames: \'\'',
+					#traitCompositionSource : '{}'
+				},
+				#name : #'GtLscModelAnnouncement class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @20
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#className : #GtLscModelAnnouncement,
+					#isMetaSide : false
+				},
+				#parent : @20,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#category : #Gt4Lsc-Events,
+			#package : #Gt4Lsc,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-17T19:33:52.042632+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodRemoval {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscInstanceModelAdded class',
+				#isMetaSide : true
+			},
+			#name : #'lscInstanceModel:',
+			#protocol : #'instance creation',
+			#sourceCode : 'lscInstanceModel: aGtLscInstanceModel\r\t^ self new lscInstanceModel: aGtLscInstanceModel',
+			#stamp : 'GlamorousAuthor 4/15/2025 14:37',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-17T19:33:52.042632+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscModelAnnouncement class',
+				#isMetaSide : true
+			},
+			#name : #'lscInstanceModel:',
+			#protocol : #'instance creation',
+			#sourceCode : 'lscInstanceModel: aGtLscInstanceModel\r\t^ self new lscInstanceModel: aGtLscInstanceModel',
+			#stamp : 'GlamorousAuthor 4/17/2025 19:29',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-17T19:33:52.042632+02:00' ],
+		#prior : OmReference [ '4' ],
+		#self : OmReference [ '5' ]
+	},
+	#content : EpMethodRemoval {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceModelAdded,
+				#isMetaSide : false
+			},
+			#name : #'lscInstanceModel:',
+			#protocol : #accessing,
+			#sourceCode : 'lscInstanceModel: aGtLscInstanceModel\r\tlscInstanceModel := aGtLscInstanceModel',
+			#stamp : 'GlamorousAuthor 4/15/2025 14:37',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-17T19:33:52.042632+02:00' ],
+		#prior : OmReference [ '5' ],
+		#self : OmReference [ '6' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModelAnnouncement,
+				#isMetaSide : false
+			},
+			#name : #'lscInstanceModel:',
+			#protocol : #accessing,
+			#sourceCode : 'lscInstanceModel: aGtLscInstanceModel\r\tlscInstanceModel := aGtLscInstanceModel',
+			#stamp : 'GlamorousAuthor 4/17/2025 19:29',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-17T19:33:52.042632+02:00' ],
+		#prior : OmReference [ '6' ],
+		#self : OmReference [ '7' ]
+	},
+	#content : EpMethodRemoval {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceModelAdded,
+				#isMetaSide : false
+			},
+			#name : #lscInstanceModel,
+			#protocol : #accessing,
+			#sourceCode : 'lscInstanceModel\r\t^ lscInstanceModel',
+			#stamp : 'GlamorousAuthor 4/15/2025 14:37',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-17T19:33:52.042632+02:00' ],
+		#prior : OmReference [ '7' ],
+		#self : OmReference [ '8' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModelAnnouncement,
+				#isMetaSide : false
+			},
+			#name : #lscInstanceModel,
+			#protocol : #accessing,
+			#sourceCode : 'lscInstanceModel\r\t^ lscInstanceModel',
+			#stamp : 'GlamorousAuthor 4/17/2025 19:30',
+			#package : #Gt4Lsc
+		}
+	}
+}

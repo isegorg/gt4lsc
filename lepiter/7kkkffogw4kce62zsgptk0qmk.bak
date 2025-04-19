@@ -1219,14 +1219,14 @@
 																	"__type" : "time",
 																	"time" : {
 																		"__type" : "dateAndTime",
-																		"dateAndTimeString" : "2025-04-16T16:09:53.558068+02:00"
+																		"dateAndTimeString" : "2025-04-19T09:46:43.555157+02:00"
 																	}
 																},
 																"uid" : {
 																	"__type" : "uid",
 																	"uidString" : "v8mJa97uDQC048tOCP8aZw=="
 																},
-																"code" : "subString := 'removeId'.\rfilter := GtLscLeSearchSubstringSnippetFilter substring: subString.\rdataBase := thisSnippet database.\rsnippets := dataBase leSnippetsInDB contents.\rsnippets select: [ :snippet | filter matches: snippet ]"
+																"code" : "subString := '#name : #''addInstance:''.\rfilter := GtLscLeSearchSubstringSnippetFilter substring: subString.\rdataBase := thisSnippet database.\rsnippets := dataBase leSnippetsInDB contents.\rsnippets select: [ :snippet | filter matches: snippet ]"
 															}
 														]
 													},
