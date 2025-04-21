@@ -1,0 +1,19 @@
+OmEntry {
+	#tags : {
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscElementScripterExamples,
+				#isMetaSide : false
+			},
+			#name : #renderLscMovingInstanceToPosition,
+			#protocol : #'examples - ui',
+			#sourceCode : 'renderLscMovingInstanceToPosition\r\t"Check that the UI element displays the model\'s characteristics"\r\r\t<gtExample>\r\t| lsc initialInstancesSize uiElement instancesCanvasElement initialFirstInstance initialFirstInstanceElement initialSecondInstance initialSecondInstanceElement initialThirdInstance initialThirdInstanceElement finalFirstInstanceElement finalSecondInstanceElement finalThirdInstanceElement|\r\tlsc := self renderLscAddingInstanceAtPosition.\r\tinitialInstancesSize := lsc instancesSize.\r\tuiElement := lsc asElement.\r\tinstancesCanvasElement := (uiElement childNamed: GtLscConstants instancesCanvasId).\r\tinitialFirstInstance := lsc instanceAt: 1.\r\tinitialFirstInstanceElement := (instancesCanvasElement childAt: 1).\r\tinitialSecondInstance := lsc instanceAt: 2.\r\tinitialSecondInstanceElement := (instancesCanvasElement childAt: 2).\r\tinitialThirdInstance := lsc instanceAt: 3.\r\tinitialThirdInstanceElement := (instancesCanvasElement childAt: 3).\r\t\r\t"Move an instance to position"\r\tlsc moveInstanceFromPosition: 2 to: 1.\r\t\r\tfinalFirstInstanceElement := (instancesCanvasElement childAt: 1).\r\tfinalSecondInstanceElement := (instancesCanvasElement childAt: 2).\r\tfinalThirdInstanceElement := (instancesCanvasElement childAt: 3).\r\t\r\t"Check that the first final instance element is the second initial instance element"\r\t"Check element id"\r\tself assert: finalFirstInstanceElement id equals: initialSecondInstanceElement id.\r\t"Check name"\r\tself assert: (finalFirstInstanceElement childNamed: #nameElement) text equals: (initialSecondInstanceElement childNamed: #nameElement) text.\r\t"Check locationLine border"\r\tself assert: finalFirstInstanceElement border paint equals: initialSecondInstanceElement border paint.\r\t\r\t"Check that the second final instance element is the first initial instance element"\r\t"Check element id"\r\tself assert: finalSecondInstanceElement id equals: initialFirstInstanceElement id.\r\t"Check name"\r\tself assert: (finalSecondInstanceElement childNamed: #nameElement) text equals: (initialFirstInstanceElement childNamed: #nameElement) text.\r\t"Check locationLine border"\r\tself assert: finalSecondInstanceElement border paint equals: initialFirstInstanceElement border paint.\r\r\t"Check that the third final instance element remains the same in the view"\r\t"Check element id"\r\tself assert: finalThirdInstanceElement id equals: initialThirdInstanceElement id.\r\t"Check name"\r\tself assert: (finalThirdInstanceElement childNamed: #nameElement) text equals: (initialThirdInstanceElement childNamed: #nameElement) text.\r\t"Check locationLine border"\r\tself assert: finalThirdInstanceElement border paint equals: initialThirdInstanceElement border paint.\r\t\r\t^ lsc',
+			#stamp : 'GlamorousAuthor 4/19/2025 15:52',
+			#package : #Gt4Lsc
+		}
+	}
+}

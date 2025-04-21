@@ -1,0 +1,53 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-21T09:18:00.000000+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModel,
+				#isMetaSide : false
+			},
+			#name : #'moveInstanceFromPosition:to:',
+			#protocol : #'api - instances',
+			#sourceCode : 'moveInstanceFromPosition: sourcePositionInteger to: targetPosition\r\t| instanceToMove previousIndex |\r\tself\r\t\tassert: (sourcePositionInteger between: 1 and: self instancesSize)\r\t\tdescription: \'Non-existent source position\'.\r\tself\r\t\tassert: (targetPosition between: 1 and: self instancesSize)\r\t\tdescription: \'Non-existent source position\'.\r\tsourcePositionInteger = targetPosition ifTrue: [ ^ self ].\r\tinstanceToMove := self instanceAt: sourcePositionInteger.\r\tinstances remove: instanceToMove.\r\tpreviousIndex := targetPosition - 1.\r\tinstances add: instanceToMove afterIndex: previousIndex',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModel,
+				#isMetaSide : false
+			},
+			#name : #'moveInstanceFromPosition:to:',
+			#protocol : #'api - instances',
+			#sourceCode : 'moveInstanceFromPosition: sourcePositionInteger to: targetPosition\r\t| instanceToMove previousIndex |\r\tself\r\t\tassert: (sourcePositionInteger between: 1 and: self instancesSize)\r\t\tdescription: \'Non-existent source position\'.\r\tself\r\t\tassert: (targetPosition between: 1 and: self instancesSize)\r\t\tdescription: \'Non-existent source position\'.\r\tsourcePositionInteger = targetPosition ifTrue: [ ^ self ].\r\tinstanceToMove := self instanceAt: sourcePositionInteger.\r\tinstances remove: instanceToMove.\r\tpreviousIndex := targetPosition - 1.\r\tinstances add: instanceToMove afterIndex: previousIndex.\r\tself notifyInstanceMoved: instanceToMove atPosition: targetPosition.',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-21T09:18:00.000000+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModel,
+				#isMetaSide : false
+			},
+			#name : #'notifyInstanceMoved:atPosition:',
+			#protocol : #'events generation',
+			#sourceCode : 'notifyInstanceMoved: aGtLscInstanceModel atPosition: anInteger\r\tself announce: (GtLscInstanceModelMoved lscInstanceModel: aGtLscInstanceModel atPosition: anInteger)',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}

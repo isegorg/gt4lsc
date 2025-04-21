@@ -1,0 +1,53 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-21T10:30:00.000000+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #'moveInstanceViewModelFor:toPosition:',
+			#protocol : #'api - lsc model',
+			#sourceCode : 'moveInstanceViewModelFor: aLscInstanceModel toPosition: anInteger\r\tself\r\t\tinstanceViewModelFor: aLscInstanceModel\r\t\tifFound: [ :aLscInstanceViewModel | \r\t\t\t| previousIndex |\r\t\t\tinstanceViewModels remove: aLscInstanceViewModel.\r\t\t\tpreviousIndex := anInteger - 1.\r\t\t\tinstanceViewModels add: aLscInstanceViewModel afterIndex: previousIndex ]\r\t\tifNone: [  ]',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #'moveInstanceViewModelFor:toPosition:',
+			#protocol : #'api - lsc model',
+			#sourceCode : 'moveInstanceViewModelFor: aLscInstanceModel toPosition: anInteger\r\tself\r\t\tinstanceViewModelFor: aLscInstanceModel\r\t\tifFound: [ :aLscInstanceViewModel | \r\t\t\t| previousIndex |\r\t\t\tinstanceViewModels remove: aLscInstanceViewModel.\r\t\t\tpreviousIndex := anInteger - 1.\r\t\t\tinstanceViewModels add: aLscInstanceViewModel afterIndex: previousIndex.\r\t\t\tself notifyLscInstanceViewModelMoved: aLscInstanceViewModel toPosition: anInteger ]\r\t\tifNone: [  ]',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-21T10:30:00.000000+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #'notifyLscInstanceViewModelMoved:toPosition:',
+			#protocol : #'events generation',
+			#sourceCode : 'notifyLscInstanceViewModelMoved: aGtLscInstanceViewModel toPosition: anInteger\r\tself\r\t\tannounce: (GtLscInstanceViewModelMoved\r\t\t\t\tlscInstanceViewModel: aGtLscInstanceViewModel\r\t\t\t\tatPosition: anInteger)',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}

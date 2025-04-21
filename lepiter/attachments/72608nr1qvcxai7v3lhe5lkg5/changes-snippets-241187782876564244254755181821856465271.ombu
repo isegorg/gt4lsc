@@ -1,0 +1,73 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-21T10:18:00.000000+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #subscribeToLscModel,
+			#protocol : #'api - lsc model',
+			#sourceCode : 'subscribeToLscModel\r\t"Is sent after a new lsc model is assigned to the view model.\r\tIt is required to unsubscribe from the domain model by implementing\r\t#unsubscribeFromLscModel if view model subscribes to them"\r\t\r\tself lscModel weak\r\t\twhen: GtLscTitleChanged\r\t\t\tsend: #onTitleChanged:\r\t\t\tto: self.\r\tself lscModel weak\r\t\twhen: GtLscInstanceModelAdded\r\t\t\tsend: #onInstanceAdded:\r\t\t\tto: self.\r\tself lscModel weak\r\t\twhen: GtLscInstanceModelRemoved\r\t\t\tsend: #onInstanceRemoved:\r\t\t\tto: self.',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #subscribeToLscModel,
+			#protocol : #'api - lsc model',
+			#sourceCode : 'subscribeToLscModel\r\t"Is sent after a new lsc model is assigned to the view model.\r\tIt is required to unsubscribe from the domain model by implementing\r\t#unsubscribeFromLscModel if view model subscribes to them"\r\t\r\tself lscModel weak\r\t\twhen: GtLscTitleChanged\r\t\t\tsend: #onTitleChanged:\r\t\t\tto: self.\r\tself lscModel weak\r\t\twhen: GtLscInstanceModelAdded\r\t\t\tsend: #onInstanceAdded:\r\t\t\tto: self.\r\tself lscModel weak\r\t\twhen: GtLscInstanceModelRemoved\r\t\t\tsend: #onInstanceRemoved:\r\t\t\tto: self.\r\tself lscModel weak\r\t\twhen: GtLscInstanceModelMoved\r\t\t\tsend: #onInstanceMoved:\r\t\t\tto: self.',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-21T10:18:00.000000+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #'onInstanceMoved:',
+			#protocol : #'events handling',
+			#sourceCode : 'onInstanceMoved: aLscInstanceModelMovedAnnouncement\r\tself\r\t\tmoveInstanceViewModelFor: aLscInstanceModelMovedAnnouncement lscInstanceModel\r\t\ttoPosition: aLscInstanceModelMovedAnnouncement position',
+			#stamp : 'GlamorousAuthor 4/21/2025 10:12',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-21T10:18:00.000000+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #'moveInstanceViewModelFor:toPosition:',
+			#protocol : #'api - lsc model',
+			#sourceCode : 'moveInstanceViewModelFor: aLscInstanceModel toPosition: anInteger\r\tself\r\t\tinstanceViewModelFor: aLscInstanceModel\r\t\tifFound: [ :aLscInstanceViewModel | \r\t\t\t| previousIndex |\r\t\t\tinstanceViewModels remove: aLscInstanceViewModel.\r\t\t\tpreviousIndex := anInteger - 1.\r\t\t\tinstanceViewModels add: aLscInstanceViewModel afterIndex: previousIndex ]\r\t\tifNone: [  ]',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}
