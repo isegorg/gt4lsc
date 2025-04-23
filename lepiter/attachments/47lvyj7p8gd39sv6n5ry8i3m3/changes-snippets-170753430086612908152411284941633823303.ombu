@@ -1,0 +1,21 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-23T20:08:39.002849+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscTemperaturePickerMenuItem,
+				#isMetaSide : false
+			},
+			#name : #addSelectableMenuItems,
+			#protocol : #initialization,
+			#sourceCode : 'addSelectableMenuItems\r\t"Add the GtLscSelectableMenuItems to selectableItems"\r\r\tGtLscTemperature\r\t\tallSubclassesDo: [ :temperatureClass |\r\t\t\tselectableItems add: (GtLscTemperatureMenuItem temperature: temperatureClass) ]',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}

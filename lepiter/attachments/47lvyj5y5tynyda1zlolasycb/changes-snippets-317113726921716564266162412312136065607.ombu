@@ -1,0 +1,53 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-23T19:11:54.716763+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpClassAddition {
+		#class : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : 'GtLscPickerMenuItem',
+				#definitionSource : 'GtLscPickerMenuItem subclass: #GtLscTemperaturePickerMenuItem\r\tuses: TGtWithLscInstanceModel\r\tinstanceVariableNames: \'\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4LscContextMenu-! Items\'',
+				#traitCompositionSource : 'TGtWithLscInstanceModel'
+			},
+			#name : #GtLscTemperaturePickerMenuItem,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#className : #GtLscTemperaturePickerMenuItem,
+						#isMetaSide : false
+					},
+					#name : #lscInstanceModel,
+					#parent : @6
+				}
+			],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#definitionSource : 'GtLscTemperaturePickerMenuItem class\r\tuses: TGtWithLscInstanceModel classTrait\r\tinstanceVariableNames: \'\'',
+					#traitCompositionSource : 'TGtWithLscInstanceModel classTrait'
+				},
+				#name : #'GtLscTemperaturePickerMenuItem class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#className : #GtLscTemperaturePickerMenuItem,
+					#isMetaSide : false
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#category : #'Gt4LscContextMenu-! Items',
+			#package : #Gt4LscContextMenu,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}

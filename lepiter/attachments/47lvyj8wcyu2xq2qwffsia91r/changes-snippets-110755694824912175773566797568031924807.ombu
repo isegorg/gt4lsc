@@ -1,0 +1,63 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-23T20:55:37.231176+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscTemperature class',
+				#isMetaSide : true
+			},
+			#name : #color,
+			#protocol : #'*Gt4LscContextMenu',
+			#sourceCode : 'color\r\tself subclassResponsibility',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}
+
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-23T20:55:37.231176+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscColdTemperature class',
+				#isMetaSide : true
+			},
+			#name : #color,
+			#protocol : #'*Gt4LscContextMenu',
+			#sourceCode : 'color\r\t^ GtLscConstants coldColor',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-23T20:55:37.231176+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscHotTemperature class',
+				#isMetaSide : true
+			},
+			#name : #color,
+			#protocol : #'*Gt4LscContextMenu',
+			#sourceCode : 'color\r\t^ GtLscConstants hotColor',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}

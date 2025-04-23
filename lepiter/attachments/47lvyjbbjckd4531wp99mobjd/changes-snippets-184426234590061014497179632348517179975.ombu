@@ -1,7 +1,7 @@
 OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
-		#time : DateAndTime [ '2025-04-23T13:44:00.000000+02:00' ],
+		#time : DateAndTime [ '2025-04-23T20:14:37.118209+02:00' ],
 		#prior : OmReference [ '0' ],
 		#self : OmReference [ '1' ]
 	},
@@ -9,28 +9,28 @@ OmEntry {
 		#class : RGClassDefinition {
 			#annotations : IdentityDictionary {
 				#superclassName : 'GtLscMenuItem',
-				#definitionSource : 'GtLscMenuItem subclass: #GtLscPickerMenuItem\r\tinstanceVariableNames: \'selectableItems\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4LscContextMenu-! Items\'',
+				#definitionSource : 'GtLscMenuItem subclass: #GtLscSelectableMenuItem\r\tinstanceVariableNames: \'selected\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4LscContextMenu-! Items\'',
 				#traitCompositionSource : '{}'
 			},
-			#name : #GtLscPickerMenuItem,
+			#name : #GtLscSelectableMenuItem,
 			#methods : IdentityDictionary { },
 			#protocols : Set [ ],
 			#instanceVariables : OrderedCollection [
 				RGInstanceVariableDefinition {
 					#annotations : IdentityDictionary {
-						#className : #GtLscPickerMenuItem,
+						#className : #GtLscSelectableMenuItem,
 						#isMetaSide : false
 					},
-					#name : #selectableItems,
+					#name : #selected,
 					#parent : @6
 				}
 			],
 			#metaClass : RGMetaclassDefinition {
 				#annotations : IdentityDictionary {
-					#definitionSource : 'GtLscPickerMenuItem class\r\tinstanceVariableNames: \'\'',
+					#definitionSource : 'GtLscSelectableMenuItem class\r\tinstanceVariableNames: \'\'',
 					#traitCompositionSource : '{}'
 				},
-				#name : #'GtLscPickerMenuItem class',
+				#name : #'GtLscSelectableMenuItem class',
 				#methods : IdentityDictionary { },
 				#protocols : Set [ ],
 				#instanceVariables : OrderedCollection [ ],
@@ -38,7 +38,7 @@ OmEntry {
 			},
 			#comment : RGCommentDefinition {
 				#annotations : IdentityDictionary {
-					#className : #GtLscPickerMenuItem,
+					#className : #GtLscSelectableMenuItem,
 					#isMetaSide : false
 				},
 				#parent : @6,
@@ -50,44 +50,23 @@ OmEntry {
 			#sharedPools : OrderedCollection [ ]
 		}
 	}
-}
-OmEntry {
+}OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
-		#time : DateAndTime [ '2025-04-23T13:44:00.000000+02:00' ],
+		#time : DateAndTime [ '2025-04-23T20:14:37.118209+02:00' ],
 		#prior : OmReference [ '1' ],
 		#self : OmReference [ '2' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
 			#annotations : IdentityDictionary {
-				#className : #GtLscPickerMenuItem,
+				#className : #GtLscSelectableMenuItem,
 				#isMetaSide : false
 			},
 			#name : #initialize,
 			#protocol : #initialization,
-			#sourceCode : 'initialize\r\tsuper initialize.\r\tselectableItems := OrderedCollection empty.\r\tself addSelectableMenuItems',
-			#stamp : 'GlamorousAuthor 4/23/2025 19:52',
-			#package : #Gt4LscContextMenu
-		}
-	}
-}OmEntry {
-	#tags : {
-		#author : 'GlamorousAuthor',
-		#time : DateAndTime [ '2025-04-23T13:44:00.000000+02:00' ],
-		#prior : OmReference [ '2' ],
-		#self : OmReference [ '3' ]
-	},
-	#content : EpMethodAddition {
-		#method : RGMethodDefinition {
-			#annotations : IdentityDictionary {
-				#className : #GtLscPickerMenuItem,
-				#isMetaSide : false
-			},
-			#name : #addSelectableMenuItems,
-			#protocol : #initialization,
-			#sourceCode : 'addSelectableMenuItems\r\t"Add the GtLscSelectableMenuItems to selectableItems"\r\tself explicitRequirement',
-			#stamp : 'GlamorousAuthor 4/23/2025 19:54',
+			#sourceCode : 'initialize\r\tselected := false',
+			#stamp : '',
 			#package : #Gt4LscContextMenu
 		}
 	}
