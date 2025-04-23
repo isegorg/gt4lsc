@@ -1,0 +1,21 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-22T12:37:00.000000+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscElementScripterExamples,
+				#isMetaSide : false
+			},
+			#name : #renderNewLscInstanceEditor,
+			#protocol : #'examples - ui',
+			#sourceCode : 'renderNewLscInstanceEditor\r\t"Check that the LscInstanceEditor displays the model\'s characteristics"\r\r\t<gtExample>\r\t| lscInstance editor |\r\tlscInstance := self renderNewLscInstance.\r\teditor := GtLscInstanceEditorElement new lscInstanceViewModel: (GtLscInstanceViewModel new lscInstanceModel: lscInstance).\r\t\r\t"Check temperature actions"\r\t"Check temperature label item"\r\t"self assert: (editor childNamed: GtLscConstants lscContextMenuItemIdFor)".\r\t"Check temperature picker"\r\t\r\t^ lscInstance',
+			#stamp : 'GlamorousAuthor 4/22/2025 12:35',
+			#package : #Gt4Lsc
+		}
+	}
+}

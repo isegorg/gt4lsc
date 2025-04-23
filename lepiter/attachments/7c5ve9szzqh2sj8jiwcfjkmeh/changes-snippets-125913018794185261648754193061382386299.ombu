@@ -1,0 +1,41 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-22T18:23:00.000000+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscInstanceEditorElement class',
+				#isMetaSide : true
+			},
+			#name : #new,
+			#protocol : #'instance creation',
+			#sourceCode : 'new\r\r\tself error: \'Editors are created with forModel:\'',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-22T18:23:00.000000+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscInstanceEditorElement class',
+				#isMetaSide : true
+			},
+			#name : #'forModel:',
+			#protocol : #'instance creation',
+			#sourceCode : 'forModel: aLscInstanceModel\r\t^ self basicNew initialize\r\t\tlscInstanceViewModel: (GtLscInstanceEditorViewModel new lscInstanceModel: aLscInstanceModel)',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}

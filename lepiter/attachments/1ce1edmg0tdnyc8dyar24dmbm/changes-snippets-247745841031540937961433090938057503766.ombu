@@ -1,0 +1,41 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-22T11:06:00.000000+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceEditorElement,
+				#isMetaSide : false
+			},
+			#name : #initialize,
+			#protocol : #initialization,
+			#sourceCode : 'initialize\r\tsuper initialize.\r\r\tself\r\t\thFitContent;\r\t\tvFitContentLimited;\r\t\tpadding: (BlInsets all: 3).\r\r\tcontainer := self createPropertiesEditorContainer.\r\t\r\tself\r\t\taddChild:\r\t\t\t(BrScrollPane new\r\t\t\t\taptitude: BrScrollPaneAptitude + BrGlamorousWithVerticalScrollbarAptitude;\r\t\t\t\tvFitContentLimited;\r\t\t\t\thFitContent;\r\t\t\t\tcontent: container)',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-22T11:06:00.000000+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceEditorElement,
+				#isMetaSide : false
+			},
+			#name : #createPropertiesEditorContainer,
+			#protocol : #initialization,
+			#sourceCode : 'createPropertiesEditorContainer\r\t^ BrVerticalPane new\r\t\thFitContent;\r\t\tvFitContentLimited;\r\t\tyourself',
+			#stamp : 'GlamorousAuthor 4/22/2025 11:07',
+			#package : #Gt4Lsc
+		}
+	}
+}

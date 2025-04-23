@@ -1,0 +1,21 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-22T12:46:00.000000+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceEditorElement,
+				#isMetaSide : false
+			},
+			#name : #onLscInstanceViewModelChanged,
+			#protocol : #'api - lsc instance view model',
+			#sourceCode : 'onLscInstanceViewModelChanged\r\t"Is sent when a new Lsc instance view model is assigned to the element"\r\t\r\tself updateElement.',
+			#stamp : 'GlamorousAuthor 4/22/2025 12:45',
+			#package : #Gt4Lsc
+		}
+	}
+}
