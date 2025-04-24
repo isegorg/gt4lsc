@@ -385,7 +385,45 @@
 										"__type" : "pharoSnippet",
 										"children" : {
 											"__type" : "snippets",
-											"items" : [ ]
+											"items" : [
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-23T18:47:38.957863+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-23T18:49:46.492435+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "/ZeRmNbvDQCI5fdoBm0iRw=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "As in previous view models, we use the trait for its model and another for the announcer through which its changes will be communicated in the future to its corresponding view"
+												}
+											]
 										},
 										"createEmail" : {
 											"__type" : "email",

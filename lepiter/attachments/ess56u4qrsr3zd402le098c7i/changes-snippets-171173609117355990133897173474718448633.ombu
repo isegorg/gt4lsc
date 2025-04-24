@@ -172,7 +172,7 @@ OmEntry {
 			},
 			#name : #addTemperatureMenuItems,
 			#protocol : #initialization,
-			#sourceCode : 'addTemperatureMenuItems\r\tcontextMenuItems add: self menuItemTemperatureLabel.\r\tcontextMenuItems add: self menuItemLscInstanceTemperaturePicker.',
+			#sourceCode : 'addTemperatureMenuItems\r\tcontextMenuItems add: self menuItemTemperatureLabel.\r\tcontextMenuItems add: self menuItemTemperaturePicker.',
 			#stamp : 'GlamorousAuthor 4/23/2025 13:11',
 			#package : #Gt4LscContextMenu
 		}

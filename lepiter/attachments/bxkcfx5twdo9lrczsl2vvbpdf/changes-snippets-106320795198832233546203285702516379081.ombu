@@ -1,0 +1,41 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-24T16:42:38.985545+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscTemperatureMenuItem,
+				#isMetaSide : false
+			},
+			#name : #onLscInstanceModelChanged,
+			#protocol : #'api - lsc instance model',
+			#sourceCode : 'onLscInstanceModelChanged\r\t"Is sent when a new lsc instance model is assigned to the view model"\r\t\r\tself onTemperatureChanged',
+			#stamp : 'GlamorousAuthor 4/24/2025 16:41',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-24T16:42:38.985545+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscTemperatureMenuItem,
+				#isMetaSide : false
+			},
+			#name : #onTemperatureChanged,
+			#protocol : #'events handling',
+			#sourceCode : 'onTemperatureChanged\r\t| newTemperature |\r\tnewTemperature := lscInstanceModel temperature.\r\tselected := newTemperature color = color',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}

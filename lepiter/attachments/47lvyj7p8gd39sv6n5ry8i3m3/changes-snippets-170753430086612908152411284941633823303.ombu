@@ -13,7 +13,7 @@ OmEntry {
 			},
 			#name : #addSelectableMenuItems,
 			#protocol : #initialization,
-			#sourceCode : 'addSelectableMenuItems\r\t"Add the GtLscSelectableMenuItems to selectableItems"\r\r\tGtLscTemperature\r\t\tallSubclassesDo: [ :temperatureClass |\r\t\t\tselectableItems add: (GtLscTemperatureMenuItem temperature: temperatureClass) ]',
+			#sourceCode : 'addSelectableMenuItems\r\t"Add the GtLscTemperatureMenuItem to selectableItems"\r\r\tGtLscTemperature\r\t\tallSubclassesDo: [ :temperatureClass |\r\t\t\tselectableItems add: (GtLscTemperatureMenuItem temperature: temperatureClass) ]',
 			#stamp : '',
 			#package : #Gt4LscContextMenu
 		}
