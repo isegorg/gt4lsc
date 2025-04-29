@@ -9,10 +9,10 @@ GtLscElementScripterExamples >> pipelineLscChangeTitle [
 	"Check that ui title change update the model"
 	
 	<gtExample>
-	| uiElement titleElement lsc newTitle |
-	uiElement := self renderNewLsc.
-	lsc := uiElement lscViewModel lscModel.
-	titleElement := uiElement instVarNamed: #titleElement.
+	| lsc uiElement titleElement newTitle |
+	lsc := self renderNewLsc.
+	uiElement := lsc asElement.
+	titleElement := uiElement childNamed: GtLscConstants titleElementId.
 	
 	newTitle := 'New Scenario Title'.
 	self assert: [ (uiElement titleString) ~= newTitle ].
@@ -40,10 +40,10 @@ GtLscElementScripterExamples >> pipelineLscInstanceChangeName [
 	"Check that ui name change update the model"
 	
 	<gtExample>
-	| uiElement nameElement lscInstance newName |
-	uiElement := self renderNewLscInstance.
-	lscInstance := uiElement lscInstanceViewModel lscInstanceModel.
-	nameElement := uiElement instVarNamed: #nameElement.
+	| lscInstance uiElement nameElement newName |
+	lscInstance := self renderNewLscInstance.
+	uiElement := lscInstance asElement.
+	nameElement := uiElement childNamed: GtLscConstants instanceNameElementId.
 	
 	newName := 'New Lsc Instance Name'.
 	self assert: [ nameElement text asString ~= newName ].
@@ -63,7 +63,7 @@ GtLscElementScripterExamples >> pipelineLscInstanceChangeName [
 	self assert: nameElement text asString equals: newName.
 	self assert: lscInstance name equals: newName.
 	
-	^ uiElement
+	^ lscInstance
 ]
 
 { #category : #'examples - ui' }
@@ -71,32 +71,88 @@ GtLscElementScripterExamples >> renderLscAddingInstance [
 	"Check that the UI element displays the model's characteristics"
 
 	<gtExample>
-	| lsc uiElement instancesCanvasElement firstLscInstance secondLscInstance initialInstancesSize instanceAdded instanceAddedPostion instanceAdddElement |
-	lsc := GtLscModelExamples new lscAddInstanceAtPosition.
-	firstLscInstance := lsc instanceAt: 1.
-	secondLscInstance := lsc instanceAt: 2.
+	| lsc uiElement instancesCanvasElement initialInstancesSize instanceAdded instanceAddedPosition instanceAddedElement |
+	lsc := self renderNewLsc.
 	initialInstancesSize := lsc instancesSize.
 	uiElement := lsc asElement.
 	
 	"Add an instance to the model"
-	instanceAdded := GtLscInstanceModel new
+	instanceAdded := GtLscInstanceModelExamples new newLscInstance
 		name: 'Instance added';
 		temperature: GtLscColdTemperature;
 		yourself.
 	lsc addInstance: instanceAdded.
-	instanceAddedPostion := initialInstancesSize + 1.
+	
+	instanceAddedPosition := initialInstancesSize + 1.
 	
 	"Check the instance in the view"
 	instancesCanvasElement := (uiElement childNamed: GtLscConstants instancesCanvasId).
 	self assert: instancesCanvasElement isNotNil.
-	self assert: instancesCanvasElement childrenCount equals: instanceAddedPostion.
+	self assert: instancesCanvasElement childrenCount equals: instanceAddedPosition.
 	
-	instanceAdddElement := (instancesCanvasElement childAt: instanceAddedPostion).
-	self assert: instanceAdddElement id equals: (GtLscConstants instanceElementIdTemplate format: instanceAddedPostion asString) asBlocElementId.
-	self assert: (instanceAdddElement childNamed: #nameElement) text asString equals: instanceAdded name.
-	self assert: instanceAdddElement border paint equals: GtLscConstants coldColor asBlPaint.
+	instanceAddedElement := (instancesCanvasElement childAt: instanceAddedPosition).
+	"Check element id"
+	self assert: instanceAddedElement id equals: (GtLscConstants instanceElementIdTemplate format: {instanceAdded id asString}) asBlocElementId.
+	"Check name"
+	self assert: (instanceAddedElement childNamed: #nameElement) text asString equals: instanceAdded name.
+	"Check locationLine border"
+	self assert: instanceAddedElement border paint equals: GtLscConstants coldColor asBlPaint.
 
-	^ uiElement
+	^ lsc
+]
+
+{ #category : #'examples - ui' }
+GtLscElementScripterExamples >> renderLscAddingInstanceAtPosition [
+	"Check that the UI element displays the model's characteristics"
+
+	<gtExample>
+	| lsc initialInstancesSize uiElement positionWhereToAdd initialPriorInstanceElement initialLaterInstanceElement instanceAdded instancesCanvasElement instanceAddedElement finalPriorInstanceElement finalLaterInstanceElement |
+	lsc := self renderLscWithInstances.
+	initialInstancesSize := lsc instancesSize.
+	uiElement := lsc asElement.
+	
+	positionWhereToAdd := initialInstancesSize.
+	instancesCanvasElement := (uiElement childNamed: GtLscConstants instancesCanvasId).
+	initialPriorInstanceElement := (instancesCanvasElement childAt: positionWhereToAdd - 1).
+	initialLaterInstanceElement := (instancesCanvasElement childAt: positionWhereToAdd).
+	"Add an instance to the model at position"
+	instanceAdded := GtLscInstanceModelExamples new newLscInstance
+		name: 'Instance added at position';
+		temperature: GtLscColdTemperature;
+		yourself.
+	lsc addInstance: instanceAdded atPosition: positionWhereToAdd.
+	
+	"Check the instance in the view"
+	self assert: instancesCanvasElement isNotNil.
+	self assert: instancesCanvasElement childrenCount equals: initialInstancesSize + 1.
+	
+	instanceAddedElement := (instancesCanvasElement childAt: positionWhereToAdd).
+	"Check element id"
+	self assert: instanceAddedElement id equals: (GtLscConstants instanceElementIdTemplate format: {instanceAdded id asString}) asBlocElementId.
+	"Check name"
+	self assert: (instanceAddedElement childNamed: #nameElement) text asString equals: instanceAdded name.
+	"Check locationLine border"
+	"self assert: instanceAddedElement border paint equals: GtLscConstants coldColor asBlPaint."
+	
+	"Check the prior instance in the view"
+	finalPriorInstanceElement := (instancesCanvasElement childAt: positionWhereToAdd - 1).
+	"Check element id"
+	self assert: initialPriorInstanceElement id equals: finalPriorInstanceElement id.
+	"Check name"
+	self assert: (initialPriorInstanceElement childNamed: #nameElement) text equals: (finalPriorInstanceElement childNamed: #nameElement) text.
+	"Check locationLine border"
+	self assert: initialPriorInstanceElement border paint equals: finalPriorInstanceElement border paint.
+	
+	"Check the later instance in the view"
+	finalLaterInstanceElement := (instancesCanvasElement childAt: positionWhereToAdd + 1).
+	"Check element id"
+	self assert: initialLaterInstanceElement id equals: finalLaterInstanceElement id.
+	"Check name"
+	self assert: (initialLaterInstanceElement childNamed: #nameElement) text equals: (finalLaterInstanceElement childNamed: #nameElement) text.
+	"Check locationLine border"
+	self assert: initialLaterInstanceElement border paint equals: finalLaterInstanceElement border paint.
+
+	^ lsc
 ]
 
 { #category : #'examples - ui' }
@@ -104,20 +160,100 @@ GtLscElementScripterExamples >> renderLscInstanceWithChanges [
 	"Check that ui element shows the model changes"
 
 	<gtExample>
-	| lscInstance uiElement newName newTemperature |
-	lscInstance := GtLscInstanceModelExamples new newLscInstance.
+	| lscInstance uiElement newName newTemperature newId |
+	lscInstance := self renderNewLscInstance.
 	uiElement := lscInstance asElement.
 	
 	newName := 'Name to check'.
 	lscInstance name: newName.
 	newTemperature := GtLscColdTemperature.
 	lscInstance temperature: newTemperature.
+	newId := 'New Id'.
+	lscInstance id: newId.
 	
 	"Check name"
-	self assert: (uiElement instVarNamed: #nameElement) text asString equals: lscInstance name.
+	self assert: (uiElement childNamed: GtLscConstants instanceNameElementId) text asString equals: lscInstance name.
 	"Check locationLine border"
 	self assert: uiElement locationLineElement border paint equals: GtLscConstants coldColor asBlPaint.
-	^ uiElement
+	"Check element id"
+	self assert: uiElement id equals: (GtLscConstants instanceElementIdTemplate format: {lscInstance id asString}) asBlocElementId.
+	^ lscInstance
+]
+
+{ #category : #'examples - ui' }
+GtLscElementScripterExamples >> renderLscMovingInstanceToPosition [
+	"Check that the UI element displays the model's characteristics"
+
+	<gtExample>
+	| lsc initialInstancesSize uiElement instancesCanvasElement initialFirstInstance initialFirstInstanceElement initialSecondInstance initialSecondInstanceElement initialThirdInstance initialThirdInstanceElement finalFirstInstanceElement finalSecondInstanceElement finalThirdInstanceElement|
+	lsc := self renderLscAddingInstanceAtPosition.
+	initialInstancesSize := lsc instancesSize.
+	uiElement := lsc asElement.
+	instancesCanvasElement := (uiElement childNamed: GtLscConstants instancesCanvasId).
+	initialFirstInstance := lsc instanceAt: 1.
+	initialFirstInstanceElement := (instancesCanvasElement childAt: 1).
+	initialSecondInstance := lsc instanceAt: 2.
+	initialSecondInstanceElement := (instancesCanvasElement childAt: 2).
+	initialThirdInstance := lsc instanceAt: 3.
+	initialThirdInstanceElement := (instancesCanvasElement childAt: 3).
+	
+	"Move an instance to position"
+	lsc moveInstanceFromPosition: 2 to: 1.
+	
+	finalFirstInstanceElement := (instancesCanvasElement childAt: 1).
+	finalSecondInstanceElement := (instancesCanvasElement childAt: 2).
+	finalThirdInstanceElement := (instancesCanvasElement childAt: 3).
+	
+	"Check that the first final instance element is the second initial instance element"
+	"Check element id"
+	self assert: finalFirstInstanceElement id equals: initialSecondInstanceElement id.
+	"Check name"
+	self assert: (finalFirstInstanceElement childNamed: #nameElement) text equals: (initialSecondInstanceElement childNamed: #nameElement) text.
+	"Check locationLine border"
+	self assert: finalFirstInstanceElement border paint equals: initialSecondInstanceElement border paint.
+	
+	"Check that the second final instance element is the first initial instance element"
+	"Check element id"
+	self assert: finalSecondInstanceElement id equals: initialFirstInstanceElement id.
+	"Check name"
+	self assert: (finalSecondInstanceElement childNamed: #nameElement) text equals: (initialFirstInstanceElement childNamed: #nameElement) text.
+	"Check locationLine border"
+	self assert: finalSecondInstanceElement border paint equals: initialFirstInstanceElement border paint.
+
+	"Check that the third final instance element remains the same in the view"
+	"Check element id"
+	self assert: finalThirdInstanceElement id equals: initialThirdInstanceElement id.
+	"Check name"
+	self assert: (finalThirdInstanceElement childNamed: #nameElement) text equals: (initialThirdInstanceElement childNamed: #nameElement) text.
+	"Check locationLine border"
+	self assert: finalThirdInstanceElement border paint equals: initialThirdInstanceElement border paint.
+	
+	^ lsc
+]
+
+{ #category : #'examples - ui' }
+GtLscElementScripterExamples >> renderLscRemovingInstance [
+	"Check that the UI element displays the model's characteristics"
+
+	<gtExample>
+	| lsc uiElement instanceToRemove instanceToRemoveElementId instancesCanvasElement initialInstancesSize |
+	lsc := self renderLscAddingInstance.
+	initialInstancesSize := lsc instancesSize.
+	uiElement := lsc asElement.
+	
+	instancesCanvasElement := (uiElement childNamed: GtLscConstants instancesCanvasId).
+	
+	"Removing an instance to the model"
+	instanceToRemove := lsc instanceAt: initialInstancesSize.
+	instanceToRemoveElementId := (GtLscConstants instanceElementIdTemplate format: {instanceToRemove id asString}).
+	self assert: (instancesCanvasElement childNamed: instanceToRemoveElementId ifFound: [ :instanceElement | true ] ifNone: false).
+	lsc removeInstance: instanceToRemove.
+	
+	"Check the instance in the view"
+	self assert: (instancesCanvasElement childNamed: instanceToRemoveElementId ifFound: [ :instanceElement | false ] ifNone: true).
+	self assert: instancesCanvasElement childrenCount equals: initialInstancesSize - 1.
+	
+	^ lsc
 ]
 
 { #category : #'examples - ui' }
@@ -125,7 +261,7 @@ GtLscElementScripterExamples >> renderLscWithInstances [
 	"Check that the UI element displays the model's characteristics"
 
 	<gtExample>
-	| lsc uiElement instancesCanvasElement firstLscInstance secondLscInstance fistInstanceElement secondInstanceElement |
+	| lsc uiElement instancesCanvasElement firstLscInstance secondLscInstance fistLscInstanceElement secondLscInstanceElement |
 	lsc := GtLscModelExamples new lscAddInstanceAtPosition.
 	firstLscInstance := lsc instanceAt: 1.
 	secondLscInstance := lsc instanceAt: 2.
@@ -134,19 +270,19 @@ GtLscElementScripterExamples >> renderLscWithInstances [
 	"Check the instance in the view"
 	instancesCanvasElement := (uiElement childNamed: GtLscConstants instancesCanvasId).
 	self assert: instancesCanvasElement isNotNil.
-	self assert: instancesCanvasElement childrenCount equals: 2.
+	self assert: instancesCanvasElement childrenCount equals: lsc instancesSize.
 	
-	fistInstanceElement := (instancesCanvasElement childAt: 1).
-	self assert: fistInstanceElement id equals: #'instance-1' asBlocElementId.
-	self assert: (fistInstanceElement childNamed: #nameElement) text asString equals: firstLscInstance name.
-	self assert: fistInstanceElement border paint equals: GtLscConstants hotColor asBlPaint.
+	fistLscInstanceElement := (instancesCanvasElement childAt: 1).
+	self assert: fistLscInstanceElement id equals: (GtLscConstants instanceElementIdTemplate format: {firstLscInstance id asString}) asBlocElementId.
+	self assert: (fistLscInstanceElement childNamed: GtLscConstants instanceNameElementId) text asString equals: firstLscInstance name.
+	self assert: (fistLscInstanceElement childNamed: GtLscConstants locationLineId) border paint equals: GtLscConstants hotColor asBlPaint.
 	
-	secondInstanceElement := (instancesCanvasElement childAt: 2).
-	self assert: secondInstanceElement id equals: #'instance-2' asBlocElementId.
-	self assert: (secondInstanceElement childNamed: #nameElement) text asString equals: secondLscInstance name.
-	self assert: secondInstanceElement border paint equals: GtLscConstants hotColor asBlPaint.
+	secondLscInstanceElement := (instancesCanvasElement childAt: 2).
+	self assert: secondLscInstanceElement id equals: (GtLscConstants instanceElementIdTemplate format: {secondLscInstance id asString}) asBlocElementId.
+	self assert: (secondLscInstanceElement childNamed: GtLscConstants instanceNameElementId) text asString equals: secondLscInstance name.
+	self assert: (secondLscInstanceElement childNamed: GtLscConstants locationLineId) border paint equals: GtLscConstants hotColor asBlPaint.
 	
-	^ uiElement
+	^ lsc
 ]
 
 { #category : #'examples - ui' }
@@ -155,15 +291,15 @@ GtLscElementScripterExamples >> renderLscWithTitleChanged [
 
 	<gtExample>
 	| lsc uiElement newTitle |
-	lsc := GtLscModelExamples new newLsc.
+	lsc := self renderNewLsc.
 	uiElement := lsc asElement.
 	
 	newTitle := 'Title to check'.
 	lsc title: newTitle.
 	
 	"Check title"
-	self assert: (uiElement instVarNamed: #titleElement) text asString equals: lsc title.
-	^ uiElement
+	self assert: (uiElement childNamed: GtLscConstants titleElementId) text asString equals: lsc title.
+	^ lsc
 ]
 
 { #category : #'examples - ui' }
@@ -176,12 +312,12 @@ GtLscElementScripterExamples >> renderNewLsc [
 	uiElement := lsc asElement.
 	
 	"Check title"
-	self assert: (uiElement instVarNamed: #titleElement) text asString equals: lsc title.
+	self assert: (uiElement childNamed: GtLscConstants titleElementId) text asString equals: lsc title.
 	"Check the instance in the view"
 	instancesCanvasElement := (uiElement childNamed: GtLscConstants instancesCanvasId).
 	self assert: instancesCanvasElement isNotNil.
 	self assert: instancesCanvasElement childrenCount equals: 0.
-	^ uiElement
+	^ lsc
 ]
 
 { #category : #'examples - ui' }
@@ -189,14 +325,17 @@ GtLscElementScripterExamples >> renderNewLscInstance [
 	"Check that the LscInstance UI element displays the model's characteristics"
 
 	<gtExample>
-	| lscInstance uiElement |
-	lscInstance := GtLscInstanceModelExamples new newLscInstance.
+	| lscInstance uiElement locationLine|
+	lscInstance := GtLscInstanceModelExamples new newLscInstance id: 'Initial ID'.
 	uiElement := lscInstance asElement.
 	
-	"Check name"
-	self assert: (uiElement instVarNamed: #nameElement) text asString equals: lscInstance name.
+	"Check title"
+	self assert: (uiElement childNamed: GtLscConstants instanceNameElementId) text asString equals: lscInstance name.
 	"Check locationLine border"
-	self assert: uiElement locationLineElement border paint equals: GtLscConstants hotColor asBlPaint.
+	locationLine := uiElement childNamed: GtLscConstants locationLineId.
+	self assert: locationLine border paint equals: GtLscConstants hotColor asBlPaint.
+	"Check element id"
+	self assert: uiElement id equals: (GtLscConstants instanceElementIdTemplate format: {lscInstance id asString}) asBlocElementId.
 	
-	^ uiElement
+	^ lscInstance
 ]

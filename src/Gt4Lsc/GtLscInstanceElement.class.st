@@ -27,10 +27,10 @@ GtLscInstanceElement >> createLocationElement [
 	locationLine withStylesDo: [ :theStyles |
 		theStyles
 			addStyle: (BlElementStyle new
-				state: BlElementHotState uniqueInstance;
+				state: GtLscHotElementState uniqueInstance;
 				border: (GtLscConstants hotBorder copyWithWidth: GtLscConstants locationLineWidth));
 			addStyle: (BlElementStyle new
-				state: BlElementHotState uniqueInstance not;
+				state: GtLscHotElementState uniqueInstance not;
 				border: (GtLscConstants coldBorder copyWithWidth: GtLscConstants locationLineWidth)) ].
 	element addChild: locationLine.
 	^ element
@@ -44,8 +44,8 @@ GtLscInstanceElement >> createNameElement [
 		aptitude: BrGlamorousRegularEditorAptitude + BrGlamorousEditorSpacingAptitude;
 		constraintsDo: [ :c | c linear horizontal alignCenter ];
 		when: BrEditorAcceptWish do: [ :aWish | self onAcceptNewTitleWish: aWish ];
-		text: 'Name';
-		id: GtLscConstants instanceNameElementId
+		id: GtLscConstants instanceNameElementId;
+		text: 'Name'
 ]
 
 { #category : #initialization }
@@ -69,12 +69,18 @@ GtLscInstanceElement >> onAcceptNewTitleWish: aWish [
 	self lscInstanceViewModel name: aWish text asString
 ]
 
+{ #category : #'events handling' }
+GtLscInstanceElement >> onElementIdChanged [
+	self id: self lscInstanceViewModel elementId
+]
+
 { #category : #'api - lsc instance view model' }
 GtLscInstanceElement >> onLscInstanceViewModelChanged [
 	"Is sent when a new Lsc instance view model is assigned to the element"
 	
 	self onNameChanged.
 	self onTemperatureStateChanged.
+	self onElementIdChanged
 ]
 
 { #category : #'events handling' }
@@ -100,6 +106,10 @@ GtLscInstanceElement >> subscribeToLscInstanceViewModel [
 	self lscInstanceViewModel weak
 		when: GtLscInstanceViewModelTemperatureStateChanged
 			send: #onTemperatureStateChanged
+			to: self.
+	self lscInstanceViewModel weak
+		when: GtLscInstanceViewModelElementIdChanged
+			send: #onElementIdChanged
 			to: self.
 ]
 

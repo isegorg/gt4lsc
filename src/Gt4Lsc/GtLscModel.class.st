@@ -16,20 +16,25 @@ GtLscModel class >> defaultTitle [
 	^ 'Scenario'
 ]
 
+{ #category : #'api - id operations' }
+GtLscModel >> addIdTo: aObjectWithId [
+	aObjectWithId id: self nextUniqueId
+]
+
 { #category : #'api - instances' }
 GtLscModel >> addInstance: aGtLscInstanceModel [
-	self assert: (self hasInstance: aGtLscInstanceModel) not description: 'Can not add an instance already added'.
-	instances add: aGtLscInstanceModel.
-	self notifyInstanceAdded: aGtLscInstanceModel.
+	self addInstance: aGtLscInstanceModel atPosition: self instancesSize + 1.
 ]
 
 { #category : #'api - instances' }
 GtLscModel >> addInstance: aGtLscInstanceModel atPosition: anInteger [
 	| previousIndex|
 	self assert: (self hasInstance: aGtLscInstanceModel) not description: 'Can not add an instance already added'.
-	self assert: (anInteger between: 1 and: instances size + 1) description: 'Invalid position'.
+	self assert: (anInteger between: 1 and: self instancesSize + 1) description: 'Invalid position'.
 	previousIndex := anInteger - 1.
+	self addIdTo: aGtLscInstanceModel.
 	instances add: aGtLscInstanceModel afterIndex: previousIndex.
+	self notifyInstanceAdded: aGtLscInstanceModel atPosition: anInteger.
 ]
 
 { #category : #announcer }
@@ -77,6 +82,14 @@ GtLscModel >> instanceAt: anInteger [
 ]
 
 { #category : #'api - instances' }
+GtLscModel >> instanceWithId: anId ifFound: aFoundBlock ifNone: aNoneBlock [
+	^ instances
+		detect: [ :eachInstance | eachInstance id = anId ]
+		ifFound: aFoundBlock
+		ifNone: aNoneBlock
+]
+
+{ #category : #'api - instances' }
 GtLscModel >> instances [
 	^ instances
 ]
@@ -88,17 +101,48 @@ GtLscModel >> instancesSize [
 
 { #category : #'api - instances' }
 GtLscModel >> moveInstanceFromPosition: sourcePositionInteger to: targetPosition [
-	| instanceToMove|
-	self assert: (sourcePositionInteger between: 1 and: instances size) description: 'Non-existent source position'.
-	self assert: (targetPosition between: 1 and: instances size) description: 'Non-existent source position'.
+	| instanceToMove previousIndex |
+	self
+		assert: (sourcePositionInteger between: 1 and: self instancesSize)
+		description: 'Non-existent source position'.
+	self
+		assert: (targetPosition between: 1 and: self instancesSize)
+		description: 'Non-existent source position'.
+	sourcePositionInteger = targetPosition ifTrue: [ ^ self ].
 	instanceToMove := self instanceAt: sourcePositionInteger.
-	self removeInstance: instanceToMove.
-	self addInstance: instanceToMove atPosition: targetPosition
+	instances remove: instanceToMove.
+	previousIndex := targetPosition - 1.
+	instances add: instanceToMove afterIndex: previousIndex.
+	self notifyInstanceMoved: instanceToMove atPosition: targetPosition.
+]
+
+{ #category : #'api - id operations' }
+GtLscModel >> nextUniqueId [
+	| aNextId |
+	
+	aNextId := UUIDGenerator next.
+	[
+	self
+		instanceWithId: aNextId
+		ifFound: [ false ]
+		ifNone: [ true ] ] whileFalse: [ aNextId := UUIDGenerator next ].
+
+	^ aNextId
 ]
 
 { #category : #'events generation' }
-GtLscModel >> notifyInstanceAdded: aGtLscInstanceModel [
-	self announce: (GtLscInstanceModelAdded lscInstanceModel: aGtLscInstanceModel)
+GtLscModel >> notifyInstanceAdded: aGtLscInstanceModel atPosition: anInteger [
+	self announce: (GtLscInstanceModelAdded lscInstanceModel: aGtLscInstanceModel atPosition: anInteger)
+]
+
+{ #category : #'events generation' }
+GtLscModel >> notifyInstanceMoved: aGtLscInstanceModel atPosition: anInteger [
+	self announce: (GtLscInstanceModelMoved lscInstanceModel: aGtLscInstanceModel atPosition: anInteger)
+]
+
+{ #category : #'events generation' }
+GtLscModel >> notifyInstanceRemoved: aGtLscInstanceModel [
+	self announce: (GtLscInstanceModelRemoved lscInstanceModel: aGtLscInstanceModel)
 ]
 
 { #category : #'events generation' }
@@ -106,10 +150,17 @@ GtLscModel >> notifyTitleChanged [
 	self announce: GtLscTitleChanged new
 ]
 
+{ #category : #'api - id operations' }
+GtLscModel >> removeIdFrom: aObjectWithId [
+	aObjectWithId removeId
+]
+
 { #category : #'api - instances' }
 GtLscModel >> removeInstance: aGtLscInstanceModel [
 	self assert: (self hasInstance: aGtLscInstanceModel) description: 'Instance is not added'.
 	instances remove: aGtLscInstanceModel.
+	self notifyInstanceRemoved: aGtLscInstanceModel.
+	self removeIdFrom: aGtLscInstanceModel
 ]
 
 { #category : #accessing }

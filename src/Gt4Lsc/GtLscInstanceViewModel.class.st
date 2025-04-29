@@ -5,16 +5,33 @@ Class {
 	#classTraits : 'TGtWithLscInstanceModel classTrait + TGtAnnouncer classTrait',
 	#instVars : [
 		'announcer',
-		'temperatureState'
+		'temperatureState',
+		'elementId'
 	],
 	#category : #'Gt4Lsc-! View models'
 }
+
+{ #category : #'api - id operations' }
+GtLscInstanceViewModel class >> createElementIdFromId: anId [
+	^ GtLscConstants instanceElementIdTemplate format: {anId asString}
+]
 
 { #category : #announcer }
 GtLscInstanceViewModel >> announcer [
 	<return: #Announcer>
 
 	^ announcer ifNil: [ announcer := Announcer new ]
+]
+
+{ #category : #accessing }
+GtLscInstanceViewModel >> elementId [
+	^ elementId
+]
+
+{ #category : #'api - lsc instance model' }
+GtLscInstanceViewModel >> isForModel: aLscInstanceModel [
+	^ aLscInstanceModel id = self lscInstanceModel id
+		and: [ aLscInstanceModel name = self lscInstanceModel name ]
 ]
 
 { #category : #accessing }
@@ -28,6 +45,11 @@ GtLscInstanceViewModel >> name: aString [
 ]
 
 { #category : #'events generation' }
+GtLscInstanceViewModel >> notifyLscInstanceViewModelElementIdChanged [
+	self announce: GtLscInstanceViewModelElementIdChanged new
+]
+
+{ #category : #'events generation' }
 GtLscInstanceViewModel >> notifyLscInstanceViewModelNameChanged [
 	self announce: GtLscInstanceViewModelNameChanged new
 ]
@@ -37,11 +59,18 @@ GtLscInstanceViewModel >> notifyLscInstanceViewModelTemperatureStateChanged [
 	self announce: GtLscInstanceViewModelTemperatureStateChanged new
 ]
 
+{ #category : #'events handling' }
+GtLscInstanceViewModel >> onIdChanged [
+	elementId := self class createElementIdFromId: lscInstanceModel id.
+	self notifyLscInstanceViewModelElementIdChanged
+]
+
 { #category : #'api - lsc instance model' }
 GtLscInstanceViewModel >> onLscInstanceModelChanged [
 	"Is sent when a new lsc instance model is assigned to the view model"
 	
-	self onTemperatureChanged
+	self onTemperatureChanged.
+	self onIdChanged.
 ]
 
 { #category : #'events handling' }
@@ -70,6 +99,11 @@ GtLscInstanceViewModel >> subscribeToLscInstanceModel [
 		self lscInstanceModel weak
 		when: GtLscInstanceModelTemperatureChanged
 			send: #onTemperatureChanged
+			to: self.
+			
+		self lscInstanceModel weak
+		when: GtLscInstanceModelIdChanged
+			send: #onIdChanged
 			to: self.
 ]
 

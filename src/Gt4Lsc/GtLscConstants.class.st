@@ -24,7 +24,7 @@ GtLscConstants class >> coldColor [
 
 { #category : #'api - constants' }
 GtLscConstants class >> defaultTemperatureState [
-	^ BlElementHotState uniqueInstance
+	^ GtLscHotElementState uniqueInstance
 ]
 
 { #category : #'api - constants' }
@@ -65,4 +65,9 @@ GtLscConstants class >> locationLineId [
 { #category : #'api - constants' }
 GtLscConstants class >> locationLineWidth [
 	^ 5
+]
+
+{ #category : #'api - constants' }
+GtLscConstants class >> titleElementId [
+	^ #title
 ]

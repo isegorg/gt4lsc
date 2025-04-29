@@ -4,7 +4,7 @@ Class {
 	#category : #'Gt4Lsc-Examples'
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : #'examples - model' }
 GtLscModelExamples >> lscAddInstanceAtPosition [
 	<gtExample>
 	| aLsc existingInstance newInstance |
@@ -13,6 +13,7 @@ GtLscModelExamples >> lscAddInstanceAtPosition [
 	newInstance := GtLscInstanceModel new name: 'Instance to add'.
 	aLsc addInstance: newInstance atPosition: 1.
 
+	self assert: newInstance hasId.
 	self assert: (aLsc instanceAt: 1) equals: newInstance.
 	self assert: (aLsc instanceAt: 2) equals: existingInstance.
 	self assert: aLsc instancesSize equals: 2.
@@ -21,29 +22,26 @@ GtLscModelExamples >> lscAddInstanceAtPosition [
 ]
 
 { #category : #'examples - model' }
-GtLscModelExamples >> lscChangeTitle [
-	<gtExample>
-	| aLsc title |
-	aLsc := self newLsc.
-	title := 'Empty LSC'.
-	aLsc title: title.
-	
-	self assert: aLsc title equals: title.
-
-	^ aLsc
-]
-
-{ #category : #'as yet unclassified' }
 GtLscModelExamples >> lscMoveInstanceToPosition [
 	<gtExample>
-	| aLsc firstInstance secondInstance |
+	| aLsc initialFirstInstance initialFirstInstanceId initialSecondInstance initialSecondInstanceId finalFirstInstance finalFirstInstanceId finalSecondInstance finalSecondInstanceId |
 	aLsc := self lscAddInstanceAtPosition.
-	firstInstance := aLsc instanceAt: 1.
-	secondInstance := aLsc instanceAt: 2.
+	initialFirstInstance := aLsc instanceAt: 1.
+	initialFirstInstanceId := initialFirstInstance id.
+	initialSecondInstance := aLsc instanceAt: 2.
+	initialSecondInstanceId := initialSecondInstance id.
 	aLsc moveInstanceFromPosition: 1 to: 2.
 
-	self assert: (aLsc instanceAt: 1) equals: secondInstance.
-	self assert: (aLsc instanceAt: 2) equals: firstInstance.
+	finalFirstInstance := aLsc instanceAt: 1.
+	finalFirstInstanceId := finalFirstInstance id.
+	finalSecondInstance := aLsc instanceAt: 2.
+	finalSecondInstanceId := finalSecondInstance id.
+	
+	"Check instance positions and instance ids do not change"
+	self assert: finalFirstInstance equals: initialSecondInstance.
+	self assert: finalFirstInstanceId equals: initialSecondInstanceId.
+	self assert: finalSecondInstance equals: initialFirstInstance.
+	self assert: finalSecondInstanceId equals: initialFirstInstanceId.
 	self assert: aLsc instancesSize equals: 2.
 
 	^ aLsc
@@ -57,6 +55,7 @@ GtLscModelExamples >> lscRemoveInstance [
 	anInstance := aLsc instanceAt: 1.
 	aLsc removeInstance: anInstance.
 
+	self assert: anInstance hasId not.
 	self assert: (aLsc hasInstance: anInstance) not.
 	self assert: aLsc instancesSize equals: 0.
 
@@ -69,9 +68,14 @@ GtLscModelExamples >> lscWithInstance [
 	| aLsc anInstance |
 	aLsc := self newLsc.
 	anInstance := GtLscInstanceModel new.
+	
+	"Check that Lsc instance has not id if it is not added to a Lsc"
+	self assert: anInstance hasId not.
+	
 	aLsc addInstance: anInstance.
 	[ aLsc addInstance: anInstance ] on: Exception do: [ :e | e description = 'Can not add an instance already added' ].
 
+	self assert: anInstance hasId.
 	self assert: (aLsc hasInstance: anInstance).
 	self assert: aLsc instancesSize equals: 1.
 

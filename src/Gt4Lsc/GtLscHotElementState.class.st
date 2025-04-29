@@ -1,10 +1,10 @@
 Class {
-	#name : #BlElementHotState,
+	#name : #GtLscHotElementState,
 	#superclass : #BlElementUniqueState,
 	#category : #'Gt4Lsc-Helpers'
 }
 
 { #category : #accessing }
-BlElementHotState >> priority [
+GtLscHotElementState >> priority [
 	^ UserPriority + 5
 ]

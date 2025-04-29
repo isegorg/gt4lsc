@@ -6,5 +6,5 @@ Class {
 
 { #category : #converting }
 GtLscColdTemperature class >> asViewState [
-	^ BlElementHotState uniqueInstance not
+	^ GtLscHotElementState uniqueInstance not
 ]

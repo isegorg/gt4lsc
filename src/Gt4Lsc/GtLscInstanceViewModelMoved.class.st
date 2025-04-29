@@ -1,5 +1,5 @@
 Class {
-	#name : #GtLscInstanceViewModelAdded,
+	#name : #GtLscInstanceViewModelMoved,
 	#superclass : #GtLscInstanceViewModelWithPositionAnnouncement,
 	#category : #'Gt4Lsc-Events'
 }

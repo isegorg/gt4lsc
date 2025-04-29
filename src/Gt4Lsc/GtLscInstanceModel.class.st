@@ -6,7 +6,8 @@ Class {
 	#instVars : [
 		'name',
 		'temperature',
-		'announcer'
+		'announcer',
+		'id'
 	],
 	#category : #'Gt4Lsc-! Model'
 }
@@ -44,6 +45,22 @@ GtLscInstanceModel >> gtLiveFor: aView [
 		stencil: [ self asElement ]
 ]
 
+{ #category : #testing }
+GtLscInstanceModel >> hasId [
+	^ id isNotNil
+]
+
+{ #category : #accessing }
+GtLscInstanceModel >> id [
+	^ id
+]
+
+{ #category : #accessing }
+GtLscInstanceModel >> id: anObject [
+	id := anObject.
+	self notifyIdChanged
+]
+
 { #category : #initialization }
 GtLscInstanceModel >> initialize [
 	name := self class defaultName.
@@ -64,6 +81,11 @@ GtLscInstanceModel >> name: aString [
 ]
 
 { #category : #'events generation' }
+GtLscInstanceModel >> notifyIdChanged [
+	self announce: GtLscInstanceModelIdChanged new
+]
+
+{ #category : #'events generation' }
 GtLscInstanceModel >> notifyNameChanged [
 	self announce: GtLscInstanceModelNameChanged new
 ]
@@ -71,6 +93,11 @@ GtLscInstanceModel >> notifyNameChanged [
 { #category : #'events generation' }
 GtLscInstanceModel >> notifyTemperatureChanged [
 	self announce: GtLscInstanceModelTemperatureChanged new
+]
+
+{ #category : #accessing }
+GtLscInstanceModel >> removeId [
+	self id: nil
 ]
 
 { #category : #accessing }

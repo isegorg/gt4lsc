@@ -5,7 +5,6 @@ Class {
 	#classTraits : 'TGtWithLscViewModel classTrait + TBrLayoutResizable classTrait',
 	#instVars : [
 		'titleElement',
-		'canvasContainer',
 		'instancesCanvas'
 	],
 	#category : #'Gt4Lsc-! Views'
@@ -29,6 +28,7 @@ GtLscElement >> createTitleElement [
 		aptitude: BrGlamorousRegularEditorAptitude + BrGlamorousEditorSpacingAptitude;
 		constraintsDo: [ :c | c linear horizontal alignCenter ];
 		when: BrEditorAcceptWish do: [ :aWish | self onAcceptNewTitleWish: aWish ];
+		id: GtLscConstants titleElementId;
 		text: 'Title'
 ]
 
@@ -39,14 +39,15 @@ GtLscElement >> defaultLayout [
 
 { #category : #initialization }
 GtLscElement >> initialize [
+	| canvasesContainer |
 	super initialize.
 	
 	titleElement := self createTitleElement.
-	canvasContainer := self createCanvasesContainer.
+	canvasesContainer := self createCanvasesContainer.
 	instancesCanvas := self createInstancesCanvas.
-	canvasContainer addChild: instancesCanvas.
+	canvasesContainer addChild: instancesCanvas.
 	
-	self addChildren: {titleElement. canvasContainer}.
+	self addChildren: {titleElement. canvasesContainer}.
 	
 	self matchParent
 ]
