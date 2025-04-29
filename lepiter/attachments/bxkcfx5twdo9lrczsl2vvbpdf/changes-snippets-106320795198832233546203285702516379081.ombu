@@ -18,7 +18,7 @@ OmEntry {
 			#package : #Gt4LscContextMenu
 		}
 	}
-}OmEntry {
+}OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-24T16:42:38.985545+02:00' ],
@@ -33,8 +33,8 @@ OmEntry {
 			},
 			#name : #onTemperatureChanged,
 			#protocol : #'events handling',
-			#sourceCode : 'onTemperatureChanged\r\t| newTemperature |\r\tnewTemperature := lscInstanceModel temperature.\r\tselected := newTemperature color = color',
-			#stamp : '',
+			#sourceCode : 'onTemperatureChanged\r\t| newTemperature |\r\tnewTemperature := lscInstanceModel temperature.\r\tselectionState := newTemperature color = color\r\t\t\tifTrue: BlElementState selected\r\t\t\tifFalse: BlElementState deselected',
+			#stamp : 'GlamorousAuthor 4/28/2025 09:49',
 			#package : #Gt4LscContextMenu
 		}
 	}

@@ -1,0 +1,21 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-24T17:27:03.912428+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceEditorViewModel,
+				#isMetaSide : false
+			},
+			#name : #elementList,
+			#protocol : #converting,
+			#sourceCode : 'elementList\r\t<return: #Collection of: #BlElement>\r\t^ contextMenuItems collect: [ :item | item createElement ]',
+			#stamp : 'GlamorousAuthor 4/27/2025 17:31',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}

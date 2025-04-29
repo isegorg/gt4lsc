@@ -1,0 +1,41 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-24T18:42:46.665174+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscLabelMenuItem class',
+				#isMetaSide : true
+			},
+			#name : #elementClass,
+			#protocol : #converting,
+			#sourceCode : 'elementClass\r\t<return: #\'BlElement class\' with: #TGtLscMenuItemElement>\r\t^ GtLscLabelElement',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-24T18:42:46.665174+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscLabelMenuItem,
+				#isMetaSide : false
+			},
+			#name : #elementId,
+			#protocol : #converting,
+			#sourceCode : 'elementId\r\t<return: #BlElementId>\r\t^ (\'{1} - {2}\'\r\t\tformat: {super elementId asSymbol.\r\t\t\t\tself text}) asBlocElementId',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}

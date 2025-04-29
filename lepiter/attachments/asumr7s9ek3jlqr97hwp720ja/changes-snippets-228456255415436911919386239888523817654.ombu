@@ -1,0 +1,120 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-28T10:34:49.2129+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpTraitAddition {
+		#trait : RGTraitDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Trait,
+				#definitionSource : 'Trait named: #TGtLscMenuItemElement\r\tinstanceVariableNames: \'\'\r\tpackage: \'Gt4LscContextMenu-! Views\'',
+				#traitCompositionSource : '{}'
+			},
+			#name : #TGtLscMenuItemElement,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#metaClass : RGMetatraitDefinition {
+				#annotations : IdentityDictionary {
+					#definitionSource : 'TGtLscMenuItemElement classTrait\r\tinstanceVariableNames: \'\'',
+					#traitCompositionSource : '{}'
+				},
+				#name : #'TGtLscMenuItemElement classTrait',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#className : #TGtLscMenuItemElement,
+					#isMetaSide : false
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#category : #'Gt4LscContextMenu-! Views',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-28T10:34:49.2129+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'TGtLscMenuItemElement classTrait',
+				#isMetaSide : true
+			},
+			#name : #new,
+			#protocol : #'instance creation',
+			#sourceCode : 'new\r\tself error: \'Menu Item Elements are created with forMenuItem:\'',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-28T10:34:49.2129+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'TGtLscMenuItemElement classTrait',
+				#isMetaSide : true
+			},
+			#name : #'forMenuItem:',
+			#protocol : #'instance creation',
+			#sourceCode : 'forMenuItem: aGtLscMenuItem\r\t<return: #BlElement>\r\t| element |\r\tself assert: (aGtLscMenuItem isKindOf: self menuItemClass) description: \'Can not create element for this type of GtLscMenuItem\'.\r\t\r\telement := self createInstanceForMenuItem: aGtLscMenuItem.\r\telement id: aGtLscMenuItem elementId.\r\t^ element',
+			#stamp : 'GlamorousAuthor 4/28/2025 10:46',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-28T10:34:49.2129+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'TGtLscMenuItemElement classTrait',
+				#isMetaSide : true
+			},
+			#name : #'createInstanceForMenuItem:',
+			#protocol : #'instance creation',
+			#sourceCode : 'createInstanceForMenuItem: aGtLscMenuItem\r\t<return: #BlElement>\r\t\r\tself explicitRequirement',
+			#stamp : 'GlamorousAuthor 4/28/2025 10:47',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-28T10:34:49.2129+02:00' ],
+		#prior : OmReference [ '4' ],
+		#self : OmReference [ '5' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'TGtLscMenuItemElement classTrait',
+				#isMetaSide : true
+			},
+			#name : #menuItemClass,
+			#protocol : #'instance creation',
+			#sourceCode : 'menuItemClass\r\t<return: #\'GtLscMenuItem class\'>\r\tself explicitRequirement',
+			#stamp : 'GlamorousAuthor 4/28/2025 10:33',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}

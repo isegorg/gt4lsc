@@ -9,7 +9,7 @@ OmEntry {
 		#class : RGClassDefinition {
 			#annotations : IdentityDictionary {
 				#superclassName : 'GtLscMenuItem',
-				#definitionSource : 'GtLscMenuItem subclass: #GtLscSelectableMenuItem\r\tinstanceVariableNames: \'selected\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4LscContextMenu-! Items\'',
+				#definitionSource : 'GtLscMenuItem subclass: #GtLscSelectableMenuItem\r\tinstanceVariableNames: \'selectionState\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4LscContextMenu-! Items\'',
 				#traitCompositionSource : '{}'
 			},
 			#name : #GtLscSelectableMenuItem,
@@ -21,7 +21,7 @@ OmEntry {
 						#className : #GtLscSelectableMenuItem,
 						#isMetaSide : false
 					},
-					#name : #selected,
+					#name : #selectionState,
 					#parent : @6
 				}
 			],
@@ -50,7 +50,9 @@ OmEntry {
 			#sharedPools : OrderedCollection [ ]
 		}
 	}
-}OmEntry {
+}
+
+OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-23T20:14:37.118209+02:00' ],
@@ -65,9 +67,10 @@ OmEntry {
 			},
 			#name : #initialize,
 			#protocol : #initialization,
-			#sourceCode : 'initialize\r\tselected := false',
+			#sourceCode : 'initialize\r\tsuper initialize.\r\tselectionState := BlElementState deselected',
 			#stamp : '',
 			#package : #Gt4LscContextMenu
 		}
 	}
-}
+}
+

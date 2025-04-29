@@ -1,0 +1,41 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-28T10:34:49.2129+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscTemperatureMenuItem,
+				#isMetaSide : false
+			},
+			#name : #color,
+			#protocol : #accessing,
+			#sourceCode : 'color\r\t^ color',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-28T10:34:49.2129+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscSelectableMenuItem,
+				#isMetaSide : false
+			},
+			#name : #selectionState,
+			#protocol : #accessing,
+			#sourceCode : 'selectionState\r\t^ selectionState',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}

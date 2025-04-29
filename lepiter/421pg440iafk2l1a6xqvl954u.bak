@@ -1560,14 +1560,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-04-06T12:53:32.707667+02:00"
+									"dateAndTimeString" : "2025-04-06T12:54:29.851658+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "vUZBpXvuDQCcADKxA5ocoQ=="
 							},
-							"code" : "\taContainer := BlElement new.\r\taContainer layout: (BlLinearLayout horizontal cellSpacing: 5).\r\taContainer constraintsDo: [ :c |\r\t\tc horizontal matchParent.\r\t\tc vertical fitContent ]."
+							"code" : "\taContainer := BlElement new.\r\taContainer layout: (BlLinearLayout horizontal cellSpacing: 5).\r\taContainer constraintsDo: [ :c |\r\t\tc horizontal matchParent.\r\t\tc vertical matchParent ]."
 						},
 						{
 							"__type" : "pharoSnippet",

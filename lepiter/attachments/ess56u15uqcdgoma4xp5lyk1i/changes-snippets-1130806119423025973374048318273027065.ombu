@@ -41,8 +41,12 @@ OmEntry {
 			#sharedPools : OrderedCollection [ ]
 		}
 	}
-}OmEntry {
+}
+
+OmEntry {
 	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-23T13:26:00.000000+02:00' ],
 		#prior : OmReference [ '1' ],
 		#self : OmReference [ '2' ]
 	},
@@ -54,13 +58,17 @@ OmEntry {
 			},
 			#name : #createElement,
 			#protocol : #converting,
-			#sourceCode : 'createElement\r\t<return: #BlElement or: nil>\r\tself explicitRequirement',
+			#sourceCode : 'createElement\r\t<return: #BlElement with: #TGtLscMenuItemElement>\r\t^ self class elementClass forMenuItem: self',
 			#stamp : 'GlamorousAuthor 4/23/2025 13:01',
 			#package : #Gt4LscContextMenu
 		}
 	}
-}OmEntry {
+}
+
+OmEntry {
 	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-23T13:26:00.000000+02:00' ],
 		#prior : OmReference [ '2' ],
 		#self : OmReference [ '3' ]
 	},
@@ -72,9 +80,32 @@ OmEntry {
 			},
 			#name : #elementId,
 			#protocol : #converting,
-			#sourceCode : 'elementId\r\t<return: #BlElementId>\r\r\tself explicitRequirement',
+			#sourceCode : 'elementId\r\t<return: #BlElementId>\r\r\t^ self className asBlocElementId',
 			#stamp : 'GlamorousAuthor 4/23/2025 13:01',
 			#package : #Gt4LscContextMenu
 		}
 	}
-}
+}
+
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-23T13:26:00.000000+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscMenuItem class',
+				#isMetaSide : true
+			},
+			#name : #elementClass,
+			#protocol : #converting,
+			#sourceCode : 'elementClass\r\t<return: #\'BlElement class\' with: #TGtLscMenuItemElement>\r\t^ self explicitRequirement',
+			#stamp : 'GlamorousAuthor 4/29/2025 09:49',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}
+

@@ -1,0 +1,41 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-25T16:27:52.696823+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscConstants class',
+				#isMetaSide : true
+			},
+			#name : #pickerColumnCount,
+			#protocol : #'*Gt4LscContextMenu',
+			#sourceCode : 'pickerColumnCount\r\t^ 8',
+			#stamp : 'GlamorousAuthor 4/25/2025 16:08',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-25T16:27:52.696823+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscConstants class',
+				#isMetaSide : true
+			},
+			#name : #pickerCellSpacing,
+			#protocol : #'*Gt4LscContextMenu',
+			#sourceCode : 'pickerCellSpacing\r\t^ 3',
+			#stamp : 'GlamorousAuthor 4/25/2025 16:08',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}

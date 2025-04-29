@@ -1,0 +1,84 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-28T10:34:49.2129+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpClassAddition {
+		#class : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : 'BrLabel',
+				#definitionSource : 'BrLabel subclass: #GtLscLabelElement\r\tuses: TGtLscMenuItemElement\r\tinstanceVariableNames: \'\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4LscContextMenu-! Views\'',
+				#traitCompositionSource : 'TGtLscMenuItemElement'
+			},
+			#name : #GtLscLabelElement,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#definitionSource : 'GtLscLabelElement class\r\tuses: TGtLscMenuItemElement classTrait\r\tinstanceVariableNames: \'\'',
+					#traitCompositionSource : 'TGtLscMenuItemElement classTrait'
+				},
+				#name : #'GtLscLabelElement class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#className : #GtLscLabelElement,
+					#isMetaSide : false
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#category : #'Gt4LscContextMenu-! Views',
+			#package : #Gt4LscContextMenu,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-28T10:34:49.2129+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscLabelElement class',
+				#isMetaSide : true
+			},
+			#name : #'createInstanceForMenuItem:',
+			#protocol : #'instance creation',
+			#sourceCode : 'createInstanceForMenuItem: aGtLscMenuItem\r\t<return: #BlElement>\r\r\t^ (self basicNew initialize\r\t\taptitude: (BrGlamorousLabelAptitude new foreground: Color darkGray);\r\t\tmargin: (BlInsets\r\t\t\t\ttop: 0\r\t\t\t\tleft: 3\r\t\t\t\tbottom: 3\r\t\t\t\tright: 3)\r\t\t\t\t+ (BlInsets\r\t\t\t\t\t\ttop: 5\r\t\t\t\t\t\tleft: 0\r\t\t\t\t\t\tbottom: 0\r\t\t\t\t\t\tright: 0))\r\t\ttext: (aGtLscMenuItem text ifNil: [ \'\' ])',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-28T10:34:49.2129+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscLabelElement class',
+				#isMetaSide : true
+			},
+			#name : #menuItemClass,
+			#protocol : #'instance creation',
+			#sourceCode : 'menuItemClass\r\t<return: #\'GtLscMenuItem class\'>\r\t^ GtLscLabelMenuItem',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}

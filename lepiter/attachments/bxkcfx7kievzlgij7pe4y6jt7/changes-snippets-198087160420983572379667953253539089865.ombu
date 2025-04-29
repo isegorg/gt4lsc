@@ -1,0 +1,117 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-24T18:03:23.745656+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceElement,
+				#isMetaSide : false
+			},
+			#name : #initialize,
+			#protocol : #initialization,
+			#sourceCode : 'initialize\r\tsuper initialize.\r\tnameElement := self createNameElement.\r\tlocationElement := self createLocationElement.\r\t\r\tself addChildren: {nameElement . locationElement}.\r\tself matchParent',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceElement,
+				#isMetaSide : false
+			},
+			#name : #initialize,
+			#protocol : #initialization,
+			#sourceCode : 'initialize\r\tsuper initialize.\r\tnameElement := self createNameElement.\r\tlocationElement := self createLocationElement.\r\t\r\tself addChildren: {nameElement . locationElement}.\r\tself matchParent.\r\tself installContextMenu',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-24T18:03:23.745656+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceElement,
+				#isMetaSide : false
+			},
+			#name : #installContextMenu,
+			#protocol : #initialization,
+			#sourceCode : 'installContextMenu\r\tself\r\t\taddAptitude: ((BrGlamorousWithContextMenuAptitude\r\t\t\t\thandle: [ BlElement new\r\t\t\t\t\t\tsize: 5 @ 5;\r\t\t\t\t\t\tgeometry: BlEllipseGeometry new ]\r\t\t\t\tcontent: [ BlElement new background: Color green"GtLscEditorElement new\r\t\t\t\t\t\tcanvas: self;\r\t\t\t\t\t\tlscViewModel: self lscViewModel;\r\t\t\t\t\t\trequestFocus" ]) preferredExtent: 120 @ 100.0)',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-24T18:03:23.745656+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscElement,
+				#isMetaSide : false
+			},
+			#name : #initialize,
+			#protocol : #initialization,
+			#sourceCode : 'initialize\r\t| canvasesContainer |\r\tsuper initialize.\r\t\r\ttitleElement := self createTitleElement.\r\tcanvasesContainer := self createCanvasesContainer.\r\tinstancesCanvas := self createInstancesCanvas.\r\tcanvasesContainer addChild: instancesCanvas.\r\t\r\tself addChildren: {titleElement. canvasesContainer}.\r\t\r\tself matchParent',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscElement,
+				#isMetaSide : false
+			},
+			#name : #initialize,
+			#protocol : #initialization,
+			#sourceCode : 'initialize\r\t| canvasesContainer |\r\tsuper initialize.\r\t\r\ttitleElement := self createTitleElement.\r\tcanvasesContainer := self createCanvasesContainer.\r\tinstancesCanvas := self createInstancesCanvas.\r\tcanvasesContainer addChild: instancesCanvas.\r\t\r\tself addChildren: {titleElement. canvasesContainer}.\r\t\r\tself matchParent.\r\tself installContextMenu',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-24T18:03:23.745656+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscElement,
+				#isMetaSide : false
+			},
+			#name : #installContextMenu,
+			#protocol : #accessing,
+			#sourceCode : 'installContextMenu\r\tself\r\t\taddAptitude: ((BrGlamorousWithContextMenuAptitude\r\t\t\t\thandle: [ BlElement new\r\t\t\t\t\t\tsize: 5 @ 5;\r\t\t\t\t\t\tgeometry: BlEllipseGeometry new ]\r\t\t\t\tcontent: [ BlElement"GtLscEditorElement new\r\t\t\t\t\t\tcanvas: self;\r\t\t\t\t\t\tlscViewModel: self lscViewModel;\r\t\t\t\t\t\trequestFocus" ]) preferredExtent: 120 @ 100.0)',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscElement,
+				#isMetaSide : false
+			},
+			#name : #installContextMenu,
+			#protocol : #accessing,
+			#sourceCode : 'installContextMenu\r\tself\r\t\taddAptitude: ((BrGlamorousWithContextMenuAptitude\r\t\t\t\thandle: [ BlElement new\r\t\t\t\t\t\tsize: 5 @ 5;\r\t\t\t\t\t\tgeometry: BlEllipseGeometry new ]\r\t\t\t\tcontent: [ BlElement new background: Color red"GtLscEditorElement new\r\t\t\t\t\t\tcanvas: self;\r\t\t\t\t\t\tlscViewModel: self lscViewModel;\r\t\t\t\t\t\trequestFocus" ]) preferredExtent: 120 @ 100.0)',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}
