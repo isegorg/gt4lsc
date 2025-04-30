@@ -843,14 +843,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-04-23T10:37:02.556481+02:00"
+												"dateAndTimeString" : "2025-04-23T10:37:27.390953+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "k1WIts/vDQCZOJAUBzL7+Q=="
 										},
-										"code" : "\"Create a temporal file\"\routputFile := FileReference newTempFilePrefix: 'changes-snippets-' suffix: OmFileStore defaultFileSuffix.\routputFile ensureCreateFile.\r\"Import to Change Snippet LeDataBase\"\rtargetDB := self page database.\rattachedFile := targetDB addAttachmentByCopy: outputFile.\r\"\"\rchangesSnippet := self snippetViewModel snippetModel.\rchangesSnippet fileName: attachedFile"
+										"code" : "\"Create a temporal file\"\routputFile := FileReference newTempFilePrefix: 'changes-snippets-' suffix: OmFileStore defaultFileSuffix.\routputFile ensureCreateFile.\r\"Import to Change Snippet LeDataBase\"\rtargetDB := self page database.\rattachedFile := targetDB addAttachmentByCopy: outputFile.\r\"Associate the imported file with the Change Snippet\"\rchangesSnippet := self snippetViewModel snippetModel.\rchangesSnippet fileName: attachedFile"
 									}
 								]
 							},

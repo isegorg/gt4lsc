@@ -120,6 +120,414 @@
 								"__type" : "textStyle"
 							},
 							"string" : "- () Usar scripter en los tests de views."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-30T10:20:18.764642+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-30T10:20:49.70818+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "F7wUU1zwDQCsikltAm+EgQ=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "Ver cómo se hizo en {{gtClass:GtLscElement}}"
+												},
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-30T10:35:38.403162+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-30T10:36:15.966886+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "2EzliVzwDQC/9VUIAm+EgQ=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "No haría falta {{gtMethod:GtLscInstanceEditorViewModel>>}}"
+												},
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-30T10:23:27.189018+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-30T10:23:27.607109+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "edtPXlzwDQCXYPtKAm+EgQ=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "Si se quita un Instance del Lsc debería darse cuenta y quitar el item de *Remove* que hace la acción de quitar del Lsc y ya no tendría que verse en el editor"
+												}
+											]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-30T10:19:34.450192+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-30T10:20:18.020054+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "a41wUFzwDQCQN23HAm+EgQ=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Quizá para ver qué items se añaden/quitan."
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-30T10:19:33.447797+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-30T10:19:33.945972+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "5T9hUFzwDQCQLjBeAm+EgQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "- () Ver si se utilizan el announcer de {{gtClass:GtLscInstanceEditorViewModel}}"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-30T10:23:52.064948+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-30T10:23:56.704122+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "hW7LX1zwDQCZaEY6Am+EgQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "- () Hacer que {{gtClass:GtLscSelectableMenuItem}} tenga modelo y announcer para comunicar ya con su *GtLscSelectableElement* y no esté en su subclase {{gtClass:GtLscTemperatureMenuItem}}"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-30T10:24:08.002122+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-30T10:24:19.50443+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "oJ6+YFzwDQChfWgQAm+EgQ=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "setLscInstanceModelToItems"
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-30T10:24:20.043753+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-30T10:24:27.241617+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "vFx2YVzwDQCli8Z6Am+EgQ=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "elementList"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-30T10:23:58.720226+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-30T10:24:07.401753+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "EvwwYFzwDQCfc2xjAm+EgQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "- () Ver si se pueden sacar a traits cosas que se utilizan varias veces"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-30T10:25:07.265379+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-30T10:25:11.622494+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "3ehGZFzwDQCzxaSgAm+EgQ=="
+										},
+										"code" : "self class elementClass forItem: self"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-30T10:24:42.893098+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-30T10:24:46.607991+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "9fzSYlzwDQCpmTgYAm+EgQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "- () Hacer {{gtMethod:GtLscMenuItem>>createElement}} como:"
 						}
 					]
 				},
@@ -644,7 +1052,7 @@
 														"__type" : "time",
 														"time" : {
 															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2025-04-22T19:20:30.586048+02:00"
+															"dateAndTimeString" : "2025-04-22T19:20:36.778646+02:00"
 														}
 													},
 													"uid" : {
@@ -654,7 +1062,7 @@
 													"paragraphStyle" : {
 														"__type" : "textStyle"
 													},
-													"string" : "Para que se usen los editores, habría que cambiar los métodos de creación de las vistas para que se añada el aptitud al cargar el pa"
+													"string" : "Para que se usen los editores, habría que cambiar los métodos de creación de las vistas para que se añada el aptitud al cargar el paquete de ContextMenu"
 												}
 											]
 										},
