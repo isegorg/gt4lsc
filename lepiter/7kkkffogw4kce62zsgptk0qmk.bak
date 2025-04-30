@@ -843,14 +843,82 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-04-23T10:37:27.390953+02:00"
+												"dateAndTimeString" : "2025-04-30T12:52:15.225155+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "k1WIts/vDQCZOJAUBzL7+Q=="
 										},
-										"code" : "\"Create a temporal file\"\routputFile := FileReference newTempFilePrefix: 'changes-snippets-' suffix: OmFileStore defaultFileSuffix.\routputFile ensureCreateFile.\r\"Import to Change Snippet LeDataBase\"\rtargetDB := self page database.\rattachedFile := targetDB addAttachmentByCopy: outputFile.\r\"Associate the imported file with the Change Snippet\"\rchangesSnippet := self snippetViewModel snippetModel.\rchangesSnippet fileName: attachedFile"
+										"code" : "\"Create a temporal file\"\routputFile := FileReference newTempFilePrefix: 'changes-snippets-' suffix: OmFileStore defaultFileSuffix.\routputFile ensureCreateFile."
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-30T12:49:58.721652+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-30T12:51:43.50857+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "RQBUal7wDQCoZ3+TCorZwQ=="
+										},
+										"code" : "\"Import to Change Snippet LeDataBase\"\rtargetDB := self page database.\rattachedFile := targetDB addAttachmentByCopy: outputFile."
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-30T12:51:03.284845+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-30T12:52:12.14599+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "8igtbl7wDQCplj6eCorZwQ=="
+										},
+										"code" : "\"Associate the imported file with the Change Snippet\"\rchangesSnippet := self snippetViewModel snippetModel.\rchangesSnippet fileName: attachedFile"
 									}
 								]
 							},
@@ -873,7 +941,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-04-23T10:31:08.373755+02:00"
+									"dateAndTimeString" : "2025-04-30T13:00:48.173688+02:00"
 								}
 							},
 							"uid" : {
@@ -883,7 +951,367 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "**Create a file, import it into the DDBB and associate it with a new Changes Snippet**"
+							"string" : "**Create a file, import it into the DDBB and associate it to a empty Changes Snippet**"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-30T13:03:08.67755+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-30T13:03:23.312033+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "pytFmV7wDQC2ueKmCorZwQ=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "Set a variable with the change snippet filename"
+												},
+												{
+													"__type" : "pharoSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-30T13:02:25.651092+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-30T13:02:52.213655+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "6T3Zll7wDQC2kC0tCorZwQ=="
+													},
+													"code" : "fileName := 'attachments/bkfuqpqfg3rox8i005p5m3e6b/changes-snippets-131616287880513815923870466033669334211.ombu'."
+												},
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-30T13:04:16.791484+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-30T13:04:16.896297+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "EAfGml7wDQC35JtHCorZwQ=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "Get the change snippet via its filename"
+												},
+												{
+													"__type" : "pharoSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-30T13:02:43.952052+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-30T13:03:02.401567+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "xH3wl17wDQC2nBseCorZwQ=="
+													},
+													"code" : "filter := LeSearchSubstringSnippetFilter substring: fileName.\rsnippetByFileName := (filter select: [ :result | result isKindOf: LeChangesSnippet]) result toArray wait first."
+												},
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-30T13:04:20.314476+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-30T13:04:40.602514+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "q9yunV7wDQC4dI49CorZwQ=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "Get the file"
+												},
+												{
+													"__type" : "pharoSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-30T13:04:33.963957+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-30T13:04:34.840191+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "9SN/nl7wDQC4eEc0CorZwQ=="
+													},
+													"code" : "changeFile := (snippetByFileName database resolveDbFile: snippetByFileName fileName) asFileReference."
+												},
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-30T13:04:46.480093+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-30T13:06:00.373789+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "AB4+n17wDQC4vc3JCorZwQ=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "Add the OmEntry info via {{gtClass:EpOmbuExporter}} and {{gtClass:EpLog}}"
+												},
+												{
+													"__type" : "pharoSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-30T13:04:50.078217+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-30T13:05:06.943105+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "FAZ1n17wDQC4wdaYCorZwQ=="
+													},
+													"code" : "log := EpLog fromFile: changeFile.\rexporter := EpOmbuExporter new\r\toutputLog: log; fileOut: {self}."
+												}
+											]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-30T13:01:38.504945+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-30T13:02:22.039163+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "0dcJlF7wDQC2hIXsCorZwQ=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "In the playground of an OmEntry (e.g. Code Change) run:"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-30T13:01:04.205456+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-30T13:01:36.928667+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "zXn+kV7wDQC1rth/CorZwQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "**Add OmEntry to a Change Snippet File**"
 						},
 						{
 							"__type" : "textSnippet",
@@ -1080,7 +1508,7 @@
 											"__type" : "snippets",
 											"items" : [
 												{
-													"__type" : "pharoSnippet",
+													"__type" : "textSnippet",
 													"children" : {
 														"__type" : "snippets",
 														"items" : [ ]
@@ -1093,7 +1521,7 @@
 														"__type" : "time",
 														"time" : {
 															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2025-04-09T09:34:05.535718+02:00"
+															"dateAndTimeString" : "2025-04-30T12:54:25.849675+02:00"
 														}
 													},
 													"editEmail" : {
@@ -1104,14 +1532,89 @@
 														"__type" : "time",
 														"time" : {
 															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2025-04-09T09:34:05.535718+02:00"
+															"dateAndTimeString" : "2025-04-30T12:54:27.184504+02:00"
 														}
 													},
 													"uid" : {
 														"__type" : "uid",
-														"uidString" : "6cEdO7XuDQCExoRqDxpU4g=="
+														"uidString" : "Og9Ael7wDQCxGl3GCorZwQ=="
 													},
-													"code" : "(snippet database resolveDbFile: fileName) asFileReference"
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "Click the *Inspect Snippet Element* button."
+												},
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [
+															{
+																"__type" : "pharoSnippet",
+																"children" : {
+																	"__type" : "snippets",
+																	"items" : [ ]
+																},
+																"createEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"createTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-04-09T09:34:05.535718+02:00"
+																	}
+																},
+																"editEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"editTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-04-30T12:54:14.465244+02:00"
+																	}
+																},
+																"uid" : {
+																	"__type" : "uid",
+																	"uidString" : "6cEdO7XuDQCExoRqDxpU4g=="
+																},
+																"code" : "changesSnippet := self snippetViewModel snippetModel.\r(changesSnippet database resolveDbFile: changesSnippet fileName) asFileReference."
+															}
+														]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-30T12:54:28.51379+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-30T12:54:34.958585+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "AKpoel7wDQCx4KygCorZwQ=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "In the *Playground* of the inspected, execute:"
 												}
 											]
 										},
@@ -1134,7 +1637,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-04-09T09:47:52.62226+02:00"
+												"dateAndTimeString" : "2025-04-30T12:54:24.999238+02:00"
 											}
 										},
 										"uid" : {
@@ -1144,7 +1647,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "It can be modified in the *Content* view to add info manually. (e.g. add from any ombu session)"
+										"string" : "It can be modified in the *Content* view to add info manually. (e.g. add from any ombu session)."
 									}
 								]
 							},
@@ -1402,7 +1905,7 @@
 																	"__type" : "time",
 																	"time" : {
 																		"__type" : "dateAndTime",
-																		"dateAndTimeString" : "2025-04-19T09:46:54.944101+02:00"
+																		"dateAndTimeString" : "2025-04-29T19:00:09.466746+02:00"
 																	}
 																},
 																"uid" : {
