@@ -18,4 +18,24 @@ OmEntry {
 			#package : #Gt4LscContextMenu
 		}
 	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-28T10:34:49.2129+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscTemperatureMenuItem,
+				#isMetaSide : false
+			},
+			#name : #elementId,
+			#protocol : #converting,
+			#sourceCode : 'elementId\r\t<return: #BlElementId>\r\r\t^ \'{1} - {2}\' format: {super elementId asSymbol . color}',
+			#stamp : 'GlamorousAuthor 4/30/2025 21:01',
+			#package : #Gt4LscContextMenu
+		}
+	}
 }

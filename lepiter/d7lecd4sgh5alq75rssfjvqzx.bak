@@ -116,7 +116,7 @@
 								"__type" : "uid",
 								"uidString" : "q8beh7zvDQCdJTw3AR8m3w=="
 							},
-							"previewHeight" : 516.6333618164063,
+							"previewHeight" : 1210.0096435546875,
 							"fileName" : "attachments/d7lecd7x4uyc6gfzi82alclqr/changes-snippets-256611576523002146091180399541274748639.ombu"
 						},
 						{
@@ -2321,7 +2321,7 @@
 														"__type" : "time",
 														"time" : {
 															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2025-04-29T10:33:10.323846+02:00"
+															"dateAndTimeString" : "2025-04-30T10:38:18.794067+02:00"
 														}
 													},
 													"editEmail" : {
@@ -2332,7 +2332,7 @@
 														"__type" : "time",
 														"time" : {
 															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2025-04-29T10:33:19.387093+02:00"
+															"dateAndTimeString" : "2025-04-30T10:38:18.892018+02:00"
 														}
 													},
 													"uid" : {
@@ -2342,7 +2342,7 @@
 													"paragraphStyle" : {
 														"__type" : "textStyle"
 													},
-													"string" : "We'll do this by coding {{gtMethod:GtLscMenuItem class>>elementClass}} to return the associated element class."
+													"string" : "We'll do this by overriding {{gtMethod:GtLscMenuItem class>>elementClass}} to return the associated element class."
 												},
 												{
 													"__type" : "textSnippet",

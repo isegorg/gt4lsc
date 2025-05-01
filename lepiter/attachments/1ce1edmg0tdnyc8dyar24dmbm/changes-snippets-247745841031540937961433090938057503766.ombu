@@ -33,7 +33,7 @@ OmEntry {
 			},
 			#name : #createPropertiesEditorContainer,
 			#protocol : #initialization,
-			#sourceCode : 'createPropertiesEditorContainer\r\t^ BrVerticalPane new\r\t\thFitContent;\r\t\tvFitContentLimited;\r\t\tyourself',
+			#sourceCode : 'createPropertiesEditorContainer\r\t^ BrVerticalPane new\r\t\thFitContent;\r\t\tvFitContentLimited;\r\t\tid: #container;\r\t\tyourself',
 			#stamp : 'GlamorousAuthor 4/22/2025 11:07',
 			#package : #Gt4Lsc
 		}

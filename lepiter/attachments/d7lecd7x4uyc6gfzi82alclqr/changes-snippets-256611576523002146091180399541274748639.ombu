@@ -1,21 +1,64 @@
 OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
-		#time : DateAndTime [ '2025-04-22T12:37:00.000000+02:00' ],
+		#time : DateAndTime [ '2025-04-30T20:44:15.469075+02:00' ],
 		#prior : OmReference [ '0' ],
 		#self : OmReference [ '1' ]
+	},
+	#content : EpClassAddition {
+		#class : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : 'Object',
+				#definitionSource : 'Object subclass: #GtLscContextMenuElementScripterExamples\r\tinstanceVariableNames: \'\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4LscContextMenu-Examples\'',
+				#traitCompositionSource : '{}'
+			},
+			#name : #GtLscContextMenuElementScripterExamples,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#definitionSource : 'GtLscContextMenuElementScripterExamples class\r\tinstanceVariableNames: \'\'',
+					#traitCompositionSource : '{}'
+				},
+				#name : #'GtLscContextMenuElementScripterExamples class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#className : #GtLscContextMenuElementScripterExamples,
+					#isMetaSide : false
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#category : #Gt4LscContextMenu-Examples,
+			#package : #Gt4LscContextMenu,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-04-30T20:44:15.469075+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
 			#annotations : IdentityDictionary {
-				#className : #GtLscElementScripterExamples,
+				#className : #GtLscContextMenuElementScripterExamples,
 				#isMetaSide : false
 			},
 			#name : #renderNewLscInstanceEditor,
 			#protocol : #'examples - ui',
-			#sourceCode : 'renderNewLscInstanceEditor\r\t"Check that the LscInstanceEditor displays the model\'s characteristics"\r\r\t<gtExample>\r\t| lscInstance editor |\r\tlscInstance := self renderNewLscInstance.\r\teditor := GtLscInstanceEditorElement new lscInstanceViewModel: (GtLscInstanceViewModel new lscInstanceModel: lscInstance).\r\t\r\t"Check temperature actions"\r\t"Check temperature label item"\r\t"self assert: (editor childNamed: GtLscConstants lscContextMenuItemIdFor)".\r\t"Check temperature picker"\r\t\r\t^ lscInstance',
-			#stamp : 'GlamorousAuthor 4/22/2025 12:35',
-			#package : #Gt4Lsc
+			#sourceCode : 'renderNewLscInstanceEditor\r\t"Check that the LscInstanceEditor displays the model\'s characteristics"\r\r\t<gtExample>\r\t| lscInstance editor container temperatureContainer temperaturePicker coldTemperature hotTemperature |\r\tlscInstance := GtLscElementScripterExamples new renderNewLscInstance.\r\teditor := GtLscInstanceEditorElement forModel: lscInstance.\r\tcontainer := editor childNamed: #container.\r\t\r\t"Check temperature actions"\r\t"Check temperature label element"\r\ttemperatureContainer := container childAt: 1.\r\tself assert: temperatureContainer id equals: #\'GtLscLabelMenuItem - Temperature:\' asBlocElementId.\r\tself assert: temperatureContainer text asString equals: \'Temperature:\'.\r\t"Check temperature picker element"\r\ttemperaturePicker := container childAt: 2.\r\tself assert: temperaturePicker id equals: #GtLscTemperaturePickerMenuItem asBlocElementId.\r\tself assert: temperaturePicker childrenCount equals: GtLscTemperature allSubclasses size.\r\t"Check temperature elements"\r\t"Check cold temperature element"\r\tcoldTemperature := temperaturePicker childAt: 1.\r\tself assert: coldTemperature id equals: #\'GtLscTemperatureMenuItem - Color blue\' asBlocElementId.\r\tself assert: (coldTemperature states hasState: BlElementState deselected).\r\t"Check hot temperature element"\r\thotTemperature := temperaturePicker childAt: 2.\r\tself assert: hotTemperature id equals: #\'GtLscTemperatureMenuItem - Color red\' asBlocElementId.\r\tself assert: (hotTemperature states hasState: BlElementState selected).\r\t\r\t^ editor',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
 		}
 	}
 }
