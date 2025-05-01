@@ -26,6 +26,7 @@ GtLscInstanceEditorElement >> createPropertiesEditorContainer [
 	^ BrVerticalPane new
 		hFitContent;
 		vFitContentLimited;
+		id: #container;
 		yourself
 ]
 

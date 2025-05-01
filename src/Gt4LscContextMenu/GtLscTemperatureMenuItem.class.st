@@ -30,6 +30,13 @@ GtLscTemperatureMenuItem >> createElement [
 	^ GtLscTemperatureElement forMenuItem: self
 ]
 
+{ #category : #converting }
+GtLscTemperatureMenuItem >> elementId [
+	<return: #BlElementId>
+
+	^ '{1} - {2}' format: {super elementId asSymbol . color}
+]
+
 { #category : #'api - lsc instance model' }
 GtLscTemperatureMenuItem >> onLscInstanceModelChanged [
 	"Is sent when a new lsc instance model is assigned to the view model"
