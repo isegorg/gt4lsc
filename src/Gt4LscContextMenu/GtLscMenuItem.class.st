@@ -1,6 +1,11 @@
 Class {
 	#name : #GtLscMenuItem,
 	#superclass : #Object,
+	#traits : 'TGtAnnouncer',
+	#classTraits : 'TGtAnnouncer classTrait',
+	#instVars : [
+		'announcer'
+	],
 	#category : #'Gt4LscContextMenu-! Items'
 }
 
@@ -8,6 +13,13 @@ Class {
 GtLscMenuItem class >> elementClass [
 	<return: #'BlElement class' with: #TGtLscMenuItemElement>
 	^ self explicitRequirement
+]
+
+{ #category : #announcer }
+GtLscMenuItem >> announcer [
+	<return: #Announcer>
+
+	^ announcer ifNil: [ announcer := Announcer new ]
 ]
 
 { #category : #converting }

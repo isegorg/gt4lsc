@@ -13,6 +13,11 @@ GtLscSelectableMenuItem >> initialize [
 	selectionState := BlElementState deselected
 ]
 
+{ #category : #'events generation' }
+GtLscSelectableMenuItem >> notifySelectionStateChanged [
+	self announce: GtLscSelectionStateChanged new
+]
+
 { #category : #accessing }
 GtLscSelectableMenuItem >> selectionState [
 	^ selectionState

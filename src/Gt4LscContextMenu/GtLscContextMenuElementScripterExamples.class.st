@@ -5,6 +5,33 @@ Class {
 }
 
 { #category : #'examples - ui' }
+GtLscContextMenuElementScripterExamples >> renderLscInstanceEditorWithChanges [
+	"Check that the LscInstanceEditor displays the model's changes"
+
+	<gtExample>
+	| editor lscInstance container  newTemperature temperaturePicker coldTemperature hotTemperature |
+	editor := self renderNewLscInstanceEditor.
+	lscInstance := editor lscInstanceViewModel lscInstanceModel.
+	container := editor childNamed: #container.
+	
+	"Model changes"
+	newTemperature := GtLscColdTemperature.
+	lscInstance temperature: newTemperature.
+	
+	"Check temperature actions"
+	"Check temperature elements"
+	"Check cold temperature element"
+	temperaturePicker := container childAt: 2.
+	coldTemperature := temperaturePicker childAt: 1.
+	self assert: (coldTemperature states hasState: BlElementState selected).
+	"Check hot temperature element"
+	hotTemperature := temperaturePicker childAt: 2.
+	self assert: (hotTemperature states hasState: BlElementState deselected).
+	
+	^ editor
+]
+
+{ #category : #'examples - ui' }
 GtLscContextMenuElementScripterExamples >> renderNewLscInstanceEditor [
 	"Check that the LscInstanceEditor displays the model's characteristics"
 

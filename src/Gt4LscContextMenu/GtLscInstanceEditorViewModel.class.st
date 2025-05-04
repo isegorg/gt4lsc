@@ -1,10 +1,9 @@
 Class {
 	#name : #GtLscInstanceEditorViewModel,
 	#superclass : #Object,
-	#traits : 'TGtWithLscInstanceModel + TGtAnnouncer',
-	#classTraits : 'TGtWithLscInstanceModel classTrait + TGtAnnouncer classTrait',
+	#traits : 'TGtWithLscInstanceModel',
+	#classTraits : 'TGtWithLscInstanceModel classTrait',
 	#instVars : [
-		'announcer',
 		'contextMenuItems'
 	],
 	#category : #'Gt4LscContextMenu-! View models'

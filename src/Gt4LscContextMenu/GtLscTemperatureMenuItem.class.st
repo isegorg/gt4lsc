@@ -9,6 +9,12 @@ Class {
 	#category : #'Gt4LscContextMenu-! Items'
 }
 
+{ #category : #converting }
+GtLscTemperatureMenuItem class >> elementClass [
+	<return: #'BlElement class' with: #TGtLscMenuItemElement>
+	^ GtLscTemperatureElement
+]
+
 { #category : #'instance creation' }
 GtLscTemperatureMenuItem class >> temperature: aGtLscTemperature [
 	^ self new color: aGtLscTemperature color
@@ -22,12 +28,6 @@ GtLscTemperatureMenuItem >> color [
 { #category : #accessing }
 GtLscTemperatureMenuItem >> color: aColor [
 	color := aColor
-]
-
-{ #category : #converting }
-GtLscTemperatureMenuItem >> createElement [
-	<return: #BlElement or: nil>
-	^ GtLscTemperatureElement forMenuItem: self
 ]
 
 { #category : #converting }
@@ -50,5 +50,26 @@ GtLscTemperatureMenuItem >> onTemperatureChanged [
 	newTemperature := lscInstanceModel temperature.
 	selectionState := newTemperature color = color
 			ifTrue: BlElementState selected
-			ifFalse: BlElementState deselected
+			ifFalse: BlElementState deselected.
+	self notifySelectionStateChanged
+]
+
+{ #category : #'api - lsc instance model' }
+GtLscTemperatureMenuItem >> subscribeToLscInstanceModel [
+	"Is sent after a new lsc instance model is assigned to the view model.
+	It is required to unsubscribe from the domain model by implementing
+	#unsubscribeFromLscInstanceModel if view model subscribes to them"
+
+	self lscInstanceModel weak
+		when: GtLscInstanceModelTemperatureChanged
+		send: #onTemperatureChanged
+		to: self
+]
+
+{ #category : #'api - lsc instance model' }
+GtLscTemperatureMenuItem >> unsubscribeFromLscInstanceModel [
+	"Is sent before a new lsc instance model is assigned to the view model.
+	View models that subscribe to lsc instance model are required to implement this methods"
+	
+	self lscInstanceModel unsubscribe: self
 ]
