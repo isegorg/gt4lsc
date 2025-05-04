@@ -1,0 +1,21 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-01T12:55:39.883065+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscContextMenuElementScripterExamples,
+				#isMetaSide : false
+			},
+			#name : #renderLscInstanceEditorWithChanges,
+			#protocol : #'examples - ui',
+			#sourceCode : 'renderLscInstanceEditorWithChanges\r\t"Check that the LscInstanceEditor displays the model\'s changes"\r\r\t<gtExample>\r\t| editor lscInstance container  newTemperature temperaturePicker coldTemperature hotTemperature |\r\teditor := self renderNewLscInstanceEditor.\r\tlscInstance := editor lscInstanceViewModel lscInstanceModel.\r\tcontainer := editor childNamed: #container.\r\t\r\t"Model changes"\r\tnewTemperature := GtLscColdTemperature.\r\tlscInstance temperature: newTemperature.\r\t\r\t"Check temperature actions"\r\t"Check temperature elements"\r\t"Check cold temperature element"\r\ttemperaturePicker := container childAt: 2.\r\tcoldTemperature := temperaturePicker childAt: 1.\r\tself assert: (coldTemperature states hasState: BlElementState selected).\r\t"Check hot temperature element"\r\thotTemperature := temperaturePicker childAt: 2.\r\tself assert: (hotTemperature states hasState: BlElementState deselected).\r\t\r\t^ editor',
+			#stamp : 'GlamorousAuthor 5/1/2025 12:54',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}

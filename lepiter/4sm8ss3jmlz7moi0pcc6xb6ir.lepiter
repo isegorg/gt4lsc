@@ -793,6 +793,43 @@
 											"__type" : "textStyle"
 										},
 										"string" : "[[Checking view features with the initial model - Instance Editor]]"
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-01T12:30:00.139416+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-01T12:30:40.436304+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "mna6QHLwDQCGZ5ypAD/zYQ=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "[[Checking view features with the modified model - Instance Editor]]"
 									}
 								]
 							},

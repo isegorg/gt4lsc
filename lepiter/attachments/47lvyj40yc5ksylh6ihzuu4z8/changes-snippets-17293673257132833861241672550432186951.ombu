@@ -5,66 +5,6 @@ OmEntry {
 		#prior : OmReference [ '0' ],
 		#self : OmReference [ '1' ]
 	},
-	#content : EpClassAddition {
-		#class : RGClassDefinition {
-			#annotations : IdentityDictionary {
-				#superclassName : 'GtLscSelectableMenuItem',
-				#definitionSource : 'GtLscSelectableMenuItem subclass: #GtLscTemperatureMenuItem\r\tuses: TGtWithLscInstanceModel\r\tinstanceVariableNames: \'color\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4LscContextMenu-! Items\'',
-				#traitCompositionSource : 'TGtWithLscInstanceModel'
-			},
-			#name : #GtLscTemperatureMenuItem,
-			#methods : IdentityDictionary { },
-			#protocols : Set [ ],
-			#instanceVariables : OrderedCollection [
-				RGInstanceVariableDefinition {
-					#annotations : IdentityDictionary {
-						#className : #GtLscTemperatureMenuItem,
-						#isMetaSide : false
-					},
-					#name : #color,
-					#parent : @6
-				},
-				RGInstanceVariableDefinition {
-					#annotations : IdentityDictionary {
-						#className : #GtLscTemperatureMenuItem,
-						#isMetaSide : false
-					},
-					#name : #lscInstanceModel,
-					#parent : @6
-				}
-			],
-			#metaClass : RGMetaclassDefinition {
-				#annotations : IdentityDictionary {
-					#definitionSource : 'GtLscTemperatureMenuItem class\r\tuses: TGtWithLscInstanceModel classTrait\r\tinstanceVariableNames: \'\'',
-					#traitCompositionSource : 'TGtWithLscInstanceModel classTrait'
-				},
-				#name : #'GtLscTemperatureMenuItem class',
-				#methods : IdentityDictionary { },
-				#protocols : Set [ ],
-				#instanceVariables : OrderedCollection [ ],
-				#baseClass : @6
-			},
-			#comment : RGCommentDefinition {
-				#annotations : IdentityDictionary {
-					#className : #GtLscTemperatureMenuItem,
-					#isMetaSide : false
-				},
-				#parent : @6,
-				#content : ''
-			},
-			#classVariables : OrderedCollection [ ],
-			#category : #'Gt4LscContextMenu-! Items',
-			#package : #Gt4LscContextMenu,
-			#sharedPools : OrderedCollection [ ]
-		}
-	}
-}OmEntry {
-	#tags : {
-		#author : 'GlamorousAuthor',
-		#time : DateAndTime [ '2025-04-23T20:29:19.797219+02:00' ],
-		#prior : OmReference [ '1' ],
-		#self : OmReference [ '2' ]
-	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
 			#annotations : IdentityDictionary {
@@ -82,8 +22,8 @@ OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-23T20:29:19.797219+02:00' ],
-		#prior : OmReference [ '2' ],
-		#self : OmReference [ '3' ]
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {

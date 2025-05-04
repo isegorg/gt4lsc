@@ -1,0 +1,93 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-04T19:34:07.755569+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscTemperatureElement,
+				#isMetaSide : false
+			},
+			#name : #subscribeToLscInstanceViewModel,
+			#protocol : #'api - lsc instance view model',
+			#sourceCode : 'subscribeToLscInstanceViewModel\r\t"Is sent after a new Lsc instance view model is assigned to the element.\r\tIt is required to unsubscribe from the view model or domain model by implementing\r\t#unsubscribeFromLscInstanceViewModel if elements subscribe to them"\r\t\r\tself lscInstanceViewModel weak\r\t\twhen: GtLscSelectionStateChanged\r\t\t\tsend: #onSelectionStateChanged\r\t\t\tto: self.',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-04T19:34:07.755569+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscTemperatureElement,
+				#isMetaSide : false
+			},
+			#name : #unsubscribeFromLscInstanceViewModel,
+			#protocol : #'api - lsc instance view model',
+			#sourceCode : 'unsubscribeFromLscInstanceViewModel\r\t"Is sent before a new Lsc instance view model is assigned to the element.\r\tElements that subscribe to Lsc instance view model in domain model are required to implement this methods"\r\t\r\tself lscInstanceViewModel unsubscribe: self',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-04T19:34:07.755569+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscTemperatureElement,
+				#isMetaSide : false
+			},
+			#name : #onSelectionStateChanged,
+			#protocol : #'events handling',
+			#sourceCode : 'onSelectionStateChanged\r\tself states addState: self lscInstanceViewModel selectionState',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-04T19:34:07.755569+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscTemperatureElement,
+				#isMetaSide : false
+			},
+			#name : #onLscInstanceViewModelChanged,
+			#protocol : #'api - lsc instance view model',
+			#sourceCode : 'onLscInstanceViewModelChanged\r\t"Is sent when a new Lsc instance view model is assigned to the element"\r\t\r\tself background: (lscInstanceViewModel color).\r\tself states addState: lscInstanceViewModel selectionState',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscTemperatureElement,
+				#isMetaSide : false
+			},
+			#name : #onLscInstanceViewModelChanged,
+			#protocol : #'api - lsc instance view model',
+			#sourceCode : 'onLscInstanceViewModelChanged\r\t"Is sent when a new Lsc instance view model is assigned to the element"\r\t\r\tself background: (lscInstanceViewModel color).\r\tself onSelectionStateChanged',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		},
+		#classPackageName : #Gt4LscContextMenu
+	}
+}

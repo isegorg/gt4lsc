@@ -5,58 +5,6 @@ OmEntry {
 		#prior : OmReference [ '0' ],
 		#self : OmReference [ '1' ]
 	},
-	#content : EpClassAddition {
-		#class : RGClassDefinition {
-			#annotations : IdentityDictionary {
-				#superclassName : 'BlElement',
-				#definitionSource : 'BlElement subclass: #GtLscTemperatureElement\r\tuses: TGtWithLscInstanceViewModel + TGtLscMenuItemElement\r\tinstanceVariableNames: \'\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4LscContextMenu-! Views\'',
-				#traitCompositionSource : 'TGtWithLscInstanceViewModel + TGtLscMenuItemElement'
-			},
-			#name : #GtLscTemperatureElement,
-			#methods : IdentityDictionary { },
-			#protocols : Set [ ],
-			#instanceVariables : OrderedCollection [
-				RGInstanceVariableDefinition {
-					#annotations : IdentityDictionary {
-						#className : #GtLscTemperatureElement,
-						#isMetaSide : false
-					},
-					#name : #lscInstanceViewModel,
-					#parent : @6
-				}
-			],
-			#metaClass : RGMetaclassDefinition {
-				#annotations : IdentityDictionary {
-					#definitionSource : 'GtLscTemperatureElement class\r\tuses: TGtWithLscInstanceViewModel classTrait + TGtLscMenuItemElement classTrait\r\tinstanceVariableNames: \'\'',
-					#traitCompositionSource : 'TGtWithLscInstanceViewModel classTrait + TGtLscMenuItemElement classTrait'
-				},
-				#name : #'GtLscTemperatureElement class',
-				#methods : IdentityDictionary { },
-				#protocols : Set [ ],
-				#instanceVariables : OrderedCollection [ ],
-				#baseClass : @6
-			},
-			#comment : RGCommentDefinition {
-				#annotations : IdentityDictionary {
-					#className : #GtLscTemperatureElement,
-					#isMetaSide : false
-				},
-				#parent : @6,
-				#content : ''
-			},
-			#classVariables : OrderedCollection [ ],
-			#category : #'Gt4LscContextMenu-! Views',
-			#package : #Gt4LscContextMenu,
-			#sharedPools : OrderedCollection [ ]
-		}
-	}
-}OmEntry {
-	#tags : {
-		#author : 'GlamorousAuthor',
-		#time : DateAndTime [ '2025-04-28T10:34:49.2129+02:00' ],
-		#prior : OmReference [ '1' ],
-		#self : OmReference [ '2' ]
-	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
 			#annotations : IdentityDictionary {
@@ -74,8 +22,8 @@ OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-28T10:34:49.2129+02:00' ],
-		#prior : OmReference [ '2' ],
-		#self : OmReference [ '3' ]
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
@@ -94,8 +42,8 @@ OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-28T10:34:49.2129+02:00' ],
-		#prior : OmReference [ '3' ],
-		#self : OmReference [ '4' ]
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
@@ -114,8 +62,8 @@ OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-28T10:34:49.2129+02:00' ],
-		#prior : OmReference [ '4' ],
-		#self : OmReference [ '5' ]
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
@@ -134,8 +82,8 @@ OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-28T10:34:49.2129+02:00' ],
-		#prior : OmReference [ '5' ],
-		#self : OmReference [ '6' ]
+		#prior : OmReference [ '4' ],
+		#self : OmReference [ '5' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
@@ -154,8 +102,8 @@ OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-28T10:34:49.2129+02:00' ],
-		#prior : OmReference [ '6' ],
-		#self : OmReference [ '7' ]
+		#prior : OmReference [ '5' ],
+		#self : OmReference [ '6' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {

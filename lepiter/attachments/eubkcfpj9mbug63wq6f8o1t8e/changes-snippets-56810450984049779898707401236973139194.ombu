@@ -1,0 +1,53 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-03T19:34:10.695658+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscTemperatureMenuItem,
+				#isMetaSide : false
+			},
+			#name : #onTemperatureChanged,
+			#protocol : #'events handling',
+			#sourceCode : 'onTemperatureChanged\r\t| newTemperature |\r\tnewTemperature := lscInstanceModel temperature.\r\tselectionState := newTemperature color = color\r\t\t\tifTrue: BlElementState selected\r\t\t\tifFalse: BlElementState deselected',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscTemperatureMenuItem,
+				#isMetaSide : false
+			},
+			#name : #onTemperatureChanged,
+			#protocol : #'events handling',
+			#sourceCode : 'onTemperatureChanged\r\t| newTemperature |\r\tnewTemperature := lscInstanceModel temperature.\r\tselectionState := newTemperature color = color\r\t\t\tifTrue: BlElementState selected\r\t\t\tifFalse: BlElementState deselected.\r\tself notifySelectionStateChanged',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		},
+		#classPackageName : #Gt4LscContextMenu
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-03T19:34:10.695658+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscSelectableMenuItem,
+				#isMetaSide : false
+			},
+			#name : #notifySelectionStateChanged,
+			#protocol : #'events generation',
+			#sourceCode : 'notifySelectionStateChanged\r\tself announce: GtLscSelectionStateChanged new',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}

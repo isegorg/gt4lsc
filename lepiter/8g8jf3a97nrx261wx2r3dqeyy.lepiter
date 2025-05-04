@@ -866,6 +866,418 @@
 								"__type" : "textStyle"
 							},
 							"string" : "- (?) según están los onModelChanged (también en los WardleyMap), no se actualizarían las vistas si a un element se le cambia su modelo"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [
+															{
+																"__type" : "textSnippet",
+																"children" : {
+																	"__type" : "snippets",
+																	"items" : [ ]
+																},
+																"createEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"createTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-04-22T13:42:48.666427+02:00"
+																	}
+																},
+																"editEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"editTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-04-22T13:44:59.515035+02:00"
+																	}
+																},
+																"uid" : {
+																	"__type" : "uid",
+																	"uidString" : "kISKOL7vDQCfuDLwAR8m3w=="
+																},
+																"paragraphStyle" : {
+																	"__type" : "textStyle"
+																},
+																"string" : "¿Cómo se añadiría este trait desde otro paquete?"
+															},
+															{
+																"__type" : "textSnippet",
+																"children" : {
+																	"__type" : "snippets",
+																	"items" : [ ]
+																},
+																"createEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"createTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-04-22T13:45:13.196624+02:00"
+																	}
+																},
+																"editEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"editTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-04-22T13:45:30.499101+02:00"
+																	}
+																},
+																"uid" : {
+																	"__type" : "uid",
+																	"uidString" : "ftGpQL7vDQCiF0NyAR8m3w=="
+																},
+																"paragraphStyle" : {
+																	"__type" : "textStyle"
+																},
+																"string" : "En lugar de hacer que se use el trait, hacer que se añadan sus métodos como de extensión"
+															}
+														]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-22T13:44:59.43987+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-22T13:44:59.43987+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "YvdVQL7vDQCiDj+9AR8m3w=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "(?) En el caso de Context Menu, se utilizan en los modelos el {{gtClass:TGtWithWardleyContextMenuItems}}. "
+												},
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [
+															{
+																"__type" : "textSnippet",
+																"children" : {
+																	"__type" : "snippets",
+																	"items" : [ ]
+																},
+																"createEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"createTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-04-22T19:19:50.50511+02:00"
+																	}
+																},
+																"editEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"editTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-04-22T19:20:36.778646+02:00"
+																	}
+																},
+																"uid" : {
+																	"__type" : "uid",
+																	"uidString" : "lEnb7cLvDQC1h2WtAwLyew=="
+																},
+																"paragraphStyle" : {
+																	"__type" : "textStyle"
+																},
+																"string" : "Para que se usen los editores, habría que cambiar los métodos de creación de las vistas para que se añada el aptitud al cargar el paquete de ContextMenu"
+															}
+														]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-22T19:19:11.967762+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-04-22T19:19:44.294534+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "4zuP68LvDQCz5n6pAwLyew=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "(?) ¿Cómo se haría para que se pueda usar la vista de Lsc con o sin editor?"
+												}
+											]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-09T12:42:16.260686+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-04-09T12:42:45.581552+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "QoIY3LfuDQCOKlPwCYS/jg=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Separar en paquetes Model y View para poder hacer este método como extensión."
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-09T12:41:39.815321+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-04-22T13:42:41.820886+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "W2rs2bfuDQCJCdSXCYS/jg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "- (?) El modelo depende la vista (!?): `GtLscModel>>asElement`, `GtLscInstanceModel>>asElement`"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-01T12:27:25.914013+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-01T12:28:41.453101+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "6ieJN3LwDQCBMU2lAD/zYQ=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Los elementos contenedores sólo tendrían la responsabilidad de añadir los elementos de los items con el evento de menuItemAdded."
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-01T12:28:42.121999+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-01T12:29:21.454069+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "sgQUPHLwDQCEMKbQAD/zYQ=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Cada elemento de item estaría conectado con su item como ViewModel y se comunicaría con sus eventos propios."
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-01T12:16:00.210779+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-01T12:22:46.277122+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "YSuqDnLwDQC3kmpTAD/zYQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "- (?) Como {{gtClass:GtLscInstanceEditorElement}} en relación con {{gtClass:GtLscInstanceEditorViewModel}} tiene el mismo comportamiento que {{gtClass:GtLscPickerElement}} en relación con {{gtClass:GtLscPickerMenuItem}} sería buena idea hacer una clase GtItemsContainerElement relacionado con GtItemsList como su ViewModel y que se vayan añadiendo los elementos de cada item mediante los eventos al igual que en {{gtClass:GtLscInstancesCanvasElement}} con {{gtClass:GtLscViewModel}}"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-04T19:03:09.967634+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-04T19:05:59.710537+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "pcZQGLTwDQCDw5zBA4U+Zg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "- (?) Hacer que los estilos utilizados en {{gtClass:GtLscTemperatureElement}} estén de forma genérica ya en Trait que se usarán todos los elementos visuales utilizados para sus subclases?"
 						}
 					]
 				},
@@ -899,269 +1311,6 @@
 					"__type" : "textStyle"
 				},
 				"string" : "**Doubts**"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [
-									{
-										"__type" : "textSnippet",
-										"children" : {
-											"__type" : "snippets",
-											"items" : [
-												{
-													"__type" : "textSnippet",
-													"children" : {
-														"__type" : "snippets",
-														"items" : [ ]
-													},
-													"createEmail" : {
-														"__type" : "email",
-														"emailString" : "<unknown>"
-													},
-													"createTime" : {
-														"__type" : "time",
-														"time" : {
-															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2025-04-22T13:42:48.666427+02:00"
-														}
-													},
-													"editEmail" : {
-														"__type" : "email",
-														"emailString" : "<unknown>"
-													},
-													"editTime" : {
-														"__type" : "time",
-														"time" : {
-															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2025-04-22T13:44:59.515035+02:00"
-														}
-													},
-													"uid" : {
-														"__type" : "uid",
-														"uidString" : "kISKOL7vDQCfuDLwAR8m3w=="
-													},
-													"paragraphStyle" : {
-														"__type" : "textStyle"
-													},
-													"string" : "¿Cómo se añadiría este trait desde otro paquete?"
-												},
-												{
-													"__type" : "textSnippet",
-													"children" : {
-														"__type" : "snippets",
-														"items" : [ ]
-													},
-													"createEmail" : {
-														"__type" : "email",
-														"emailString" : "<unknown>"
-													},
-													"createTime" : {
-														"__type" : "time",
-														"time" : {
-															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2025-04-22T13:45:13.196624+02:00"
-														}
-													},
-													"editEmail" : {
-														"__type" : "email",
-														"emailString" : "<unknown>"
-													},
-													"editTime" : {
-														"__type" : "time",
-														"time" : {
-															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2025-04-22T13:45:30.499101+02:00"
-														}
-													},
-													"uid" : {
-														"__type" : "uid",
-														"uidString" : "ftGpQL7vDQCiF0NyAR8m3w=="
-													},
-													"paragraphStyle" : {
-														"__type" : "textStyle"
-													},
-													"string" : "En lugar de hacer que se use el trait, hacer que se añadan sus métodos como de extensión"
-												}
-											]
-										},
-										"createEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"createTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-04-22T13:44:59.43987+02:00"
-											}
-										},
-										"editEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"editTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-04-22T13:44:59.43987+02:00"
-											}
-										},
-										"uid" : {
-											"__type" : "uid",
-											"uidString" : "YvdVQL7vDQCiDj+9AR8m3w=="
-										},
-										"paragraphStyle" : {
-											"__type" : "textStyle"
-										},
-										"string" : "(?) En el caso de Context Menu, se utilizan en los modelos el {{gtClass:TGtWithWardleyContextMenuItems}}. "
-									},
-									{
-										"__type" : "textSnippet",
-										"children" : {
-											"__type" : "snippets",
-											"items" : [
-												{
-													"__type" : "textSnippet",
-													"children" : {
-														"__type" : "snippets",
-														"items" : [ ]
-													},
-													"createEmail" : {
-														"__type" : "email",
-														"emailString" : "<unknown>"
-													},
-													"createTime" : {
-														"__type" : "time",
-														"time" : {
-															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2025-04-22T19:19:50.50511+02:00"
-														}
-													},
-													"editEmail" : {
-														"__type" : "email",
-														"emailString" : "<unknown>"
-													},
-													"editTime" : {
-														"__type" : "time",
-														"time" : {
-															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2025-04-22T19:20:36.778646+02:00"
-														}
-													},
-													"uid" : {
-														"__type" : "uid",
-														"uidString" : "lEnb7cLvDQC1h2WtAwLyew=="
-													},
-													"paragraphStyle" : {
-														"__type" : "textStyle"
-													},
-													"string" : "Para que se usen los editores, habría que cambiar los métodos de creación de las vistas para que se añada el aptitud al cargar el paquete de ContextMenu"
-												}
-											]
-										},
-										"createEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"createTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-04-22T19:19:11.967762+02:00"
-											}
-										},
-										"editEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"editTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-04-22T19:19:44.294534+02:00"
-											}
-										},
-										"uid" : {
-											"__type" : "uid",
-											"uidString" : "4zuP68LvDQCz5n6pAwLyew=="
-										},
-										"paragraphStyle" : {
-											"__type" : "textStyle"
-										},
-										"string" : "(?) ¿Cómo se haría para que se pueda usar la vista de Lsc con o sin editor?"
-									}
-								]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-04-09T12:42:16.260686+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-04-09T12:42:45.581552+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "QoIY3LfuDQCOKlPwCYS/jg=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "Separar en paquetes Model y View para poder hacer este método como extensión."
-						}
-					]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-04-09T12:41:39.815321+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-04-22T13:42:41.820886+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "W2rs2bfuDQCJCdSXCYS/jg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "- (?) El modelo depende la vista (!?): `GtLscModel>>asElement`, `GtLscInstanceModel>>asElement`"
 			},
 			{
 				"__type" : "textSnippet",

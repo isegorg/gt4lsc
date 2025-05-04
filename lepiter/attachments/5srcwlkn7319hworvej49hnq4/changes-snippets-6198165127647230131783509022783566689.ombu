@@ -1,0 +1,41 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-01T13:36:57.745696+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscTemperatureMenuItem,
+				#isMetaSide : false
+			},
+			#name : #subscribeToLscInstanceModel,
+			#protocol : #'api - lsc instance model',
+			#sourceCode : 'subscribeToLscInstanceModel\r\t"Is sent after a new lsc instance model is assigned to the view model.\r\tIt is required to unsubscribe from the domain model by implementing\r\t#unsubscribeFromLscInstanceModel if view model subscribes to them"\r\r\tself lscInstanceModel weak\r\t\twhen: GtLscInstanceModelTemperatureChanged\r\t\tsend: #onTemperatureChanged\r\t\tto: self',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-01T13:36:57.745696+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscTemperatureMenuItem,
+				#isMetaSide : false
+			},
+			#name : #unsubscribeFromLscInstanceModel,
+			#protocol : #'api - lsc instance model',
+			#sourceCode : 'unsubscribeFromLscInstanceModel\r\t"Is sent before a new lsc instance model is assigned to the view model.\r\tView models that subscribe to lsc instance model are required to implement this methods"\r\t\r\tself lscInstanceModel unsubscribe: self',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}

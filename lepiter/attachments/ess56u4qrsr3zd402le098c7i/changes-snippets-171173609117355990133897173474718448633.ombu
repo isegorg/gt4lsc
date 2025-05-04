@@ -9,21 +9,13 @@ OmEntry {
 		#oldClass : RGClassDefinition {
 			#annotations : IdentityDictionary {
 				#superclassName : 'Object',
-				#definitionSource : 'Object subclass: #GtLscInstanceEditorViewModel\r\tuses: TGtWithLscInstanceModel + TGtAnnouncer\r\tinstanceVariableNames: \'announcer\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4LscContextMenu-! View models\'',
-				#traitCompositionSource : 'TGtWithLscInstanceModel + TGtAnnouncer'
+				#definitionSource : 'Object subclass: #GtLscInstanceEditorViewModel\r\tuses: TGtWithLscInstanceModel\r\tinstanceVariableNames: \'\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4LscContextMenu-! View models\'',
+				#traitCompositionSource : 'TGtWithLscInstanceModel'
 			},
 			#name : #GtLscInstanceEditorViewModel,
 			#methods : IdentityDictionary { },
 			#protocols : Set [ ],
 			#instanceVariables : OrderedCollection [
-				RGInstanceVariableDefinition {
-					#annotations : IdentityDictionary {
-						#className : #GtLscInstanceEditorViewModel,
-						#isMetaSide : false
-					},
-					#name : #announcer,
-					#parent : @6
-				},
 				RGInstanceVariableDefinition {
 					#annotations : IdentityDictionary {
 						#className : #GtLscInstanceEditorViewModel,
@@ -35,8 +27,8 @@ OmEntry {
 			],
 			#metaClass : RGMetaclassDefinition {
 				#annotations : IdentityDictionary {
-					#definitionSource : 'GtLscInstanceEditorViewModel class\r\tuses: TGtWithLscInstanceModel classTrait + TGtAnnouncer classTrait\r\tinstanceVariableNames: \'\'',
-					#traitCompositionSource : 'TGtWithLscInstanceModel classTrait + TGtAnnouncer classTrait'
+					#definitionSource : 'GtLscInstanceEditorViewModel class\r\tuses: TGtWithLscInstanceModel classTrait\r\tinstanceVariableNames: \'\'',
+					#traitCompositionSource : 'TGtWithLscInstanceModel classTrait'
 				},
 				#name : #'GtLscInstanceEditorViewModel class',
 				#methods : IdentityDictionary { },
@@ -60,8 +52,8 @@ OmEntry {
 		#newClass : RGClassDefinition {
 			#annotations : IdentityDictionary {
 				#superclassName : 'Object',
-				#definitionSource : 'Object subclass: #GtLscInstanceEditorViewModel\r\tuses: TGtWithLscInstanceModel + TGtAnnouncer\r\tinstanceVariableNames: \'announcer contextMenuItems\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4LscContextMenu-! View models\'',
-				#traitCompositionSource : 'TGtWithLscInstanceModel + TGtAnnouncer'
+				#definitionSource : 'Object subclass: #GtLscInstanceEditorViewModel\r\tuses: TGtWithLscInstanceModel\r\tinstanceVariableNames: \'contextMenuItems\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4LscContextMenu-! View models\'',
+				#traitCompositionSource : 'TGtWithLscInstanceModel'
 			},
 			#name : #GtLscInstanceEditorViewModel,
 			#methods : IdentityDictionary { },
@@ -72,16 +64,8 @@ OmEntry {
 						#className : #GtLscInstanceEditorViewModel,
 						#isMetaSide : false
 					},
-					#name : #announcer,
-					#parent : @24
-				},
-				RGInstanceVariableDefinition {
-					#annotations : IdentityDictionary {
-						#className : #GtLscInstanceEditorViewModel,
-						#isMetaSide : false
-					},
 					#name : #contextMenuItems,
-					#parent : @24
+					#parent : @22
 				},
 				RGInstanceVariableDefinition {
 					#annotations : IdentityDictionary {
@@ -89,26 +73,26 @@ OmEntry {
 						#isMetaSide : false
 					},
 					#name : #lscInstanceModel,
-					#parent : @24
+					#parent : @22
 				}
 			],
 			#metaClass : RGMetaclassDefinition {
 				#annotations : IdentityDictionary {
-					#definitionSource : 'GtLscInstanceEditorViewModel class\r\tuses: TGtWithLscInstanceModel classTrait + TGtAnnouncer classTrait\r\tinstanceVariableNames: \'\'',
-					#traitCompositionSource : 'TGtWithLscInstanceModel classTrait + TGtAnnouncer classTrait'
+					#definitionSource : 'GtLscInstanceEditorViewModel class\r\tuses: TGtWithLscInstanceModel classTrait\r\tinstanceVariableNames: \'\'',
+					#traitCompositionSource : 'TGtWithLscInstanceModel classTrait'
 				},
 				#name : #'GtLscInstanceEditorViewModel class',
 				#methods : IdentityDictionary { },
 				#protocols : Set [ ],
 				#instanceVariables : OrderedCollection [ ],
-				#baseClass : @24
+				#baseClass : @22
 			},
 			#comment : RGCommentDefinition {
 				#annotations : IdentityDictionary {
 					#className : #GtLscInstanceEditorViewModel,
 					#isMetaSide : false
 				},
-				#parent : @24,
+				#parent : @22,
 				#content : ''
 			},
 			#classVariables : OrderedCollection [ ],
@@ -217,4 +201,4 @@ OmEntry {
 			#package : #Gt4LscContextMenu
 		}
 	}
-}
+}

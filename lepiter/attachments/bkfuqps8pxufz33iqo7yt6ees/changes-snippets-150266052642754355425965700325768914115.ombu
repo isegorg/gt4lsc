@@ -5,49 +5,6 @@ OmEntry {
 		#prior : OmReference [ '0' ],
 		#self : OmReference [ '1' ]
 	},
-	#content : EpClassAddition {
-		#class : RGClassDefinition {
-			#annotations : IdentityDictionary {
-				#superclassName : 'BrHorizontalGrid',
-				#definitionSource : 'BrHorizontalGrid subclass: #GtLscPickerElement\r\tuses: TGtLscMenuItemElement\r\tinstanceVariableNames: \'\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4LscContextMenu-! Views\'',
-				#traitCompositionSource : 'TGtLscMenuItemElement'
-			},
-			#name : #GtLscPickerElement,
-			#methods : IdentityDictionary { },
-			#protocols : Set [ ],
-			#instanceVariables : OrderedCollection [ ],
-			#metaClass : RGMetaclassDefinition {
-				#annotations : IdentityDictionary {
-					#definitionSource : 'GtLscPickerElement class\r\tuses: TGtLscMenuItemElement classTrait\r\tinstanceVariableNames: \'\'',
-					#traitCompositionSource : 'TGtLscMenuItemElement classTrait'
-				},
-				#name : #'GtLscPickerElement class',
-				#methods : IdentityDictionary { },
-				#protocols : Set [ ],
-				#instanceVariables : OrderedCollection [ ],
-				#baseClass : @6
-			},
-			#comment : RGCommentDefinition {
-				#annotations : IdentityDictionary {
-					#className : #GtLscPickerElement,
-					#isMetaSide : false
-				},
-				#parent : @6,
-				#content : ''
-			},
-			#classVariables : OrderedCollection [ ],
-			#category : #'Gt4LscContextMenu-! Views',
-			#package : #Gt4LscContextMenu,
-			#sharedPools : OrderedCollection [ ]
-		}
-	}
-}OmEntry {
-	#tags : {
-		#author : 'GlamorousAuthor',
-		#time : DateAndTime [ '2025-04-25T16:17:35.181369+02:00' ],
-		#prior : OmReference [ '1' ],
-		#self : OmReference [ '2' ]
-	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
 			#annotations : IdentityDictionary {
@@ -65,8 +22,8 @@ OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-25T16:17:35.181369+02:00' ],
-		#prior : OmReference [ '2' ],
-		#self : OmReference [ '3' ]
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
@@ -85,8 +42,8 @@ OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-25T16:17:35.181369+02:00' ],
-		#prior : OmReference [ '3' ],
-		#self : OmReference [ '4' ]
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
@@ -106,8 +63,8 @@ OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-25T16:17:35.181369+02:00' ],
-		#prior : OmReference [ '4' ],
-		#self : OmReference [ '5' ]
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {

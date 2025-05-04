@@ -5,58 +5,6 @@ OmEntry {
 		#prior : OmReference [ '0' ],
 		#self : OmReference [ '1' ]
 	},
-	#content : EpClassAddition {
-		#class : RGClassDefinition {
-			#annotations : IdentityDictionary {
-				#superclassName : 'GtLscMenuItem',
-				#definitionSource : 'GtLscMenuItem subclass: #GtLscLabelMenuItem\r\tinstanceVariableNames: \'text\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4LscContextMenu-! Items\'',
-				#traitCompositionSource : '{}'
-			},
-			#name : #GtLscLabelMenuItem,
-			#methods : IdentityDictionary { },
-			#protocols : Set [ ],
-			#instanceVariables : OrderedCollection [
-				RGInstanceVariableDefinition {
-					#annotations : IdentityDictionary {
-						#className : #GtLscLabelMenuItem,
-						#isMetaSide : false
-					},
-					#name : #text,
-					#parent : @6
-				}
-			],
-			#metaClass : RGMetaclassDefinition {
-				#annotations : IdentityDictionary {
-					#definitionSource : 'GtLscLabelMenuItem class\r\tinstanceVariableNames: \'\'',
-					#traitCompositionSource : '{}'
-				},
-				#name : #'GtLscLabelMenuItem class',
-				#methods : IdentityDictionary { },
-				#protocols : Set [ ],
-				#instanceVariables : OrderedCollection [ ],
-				#baseClass : @6
-			},
-			#comment : RGCommentDefinition {
-				#annotations : IdentityDictionary {
-					#className : #GtLscLabelMenuItem,
-					#isMetaSide : false
-				},
-				#parent : @6,
-				#content : ''
-			},
-			#classVariables : OrderedCollection [ ],
-			#category : #'Gt4LscContextMenu-! Items',
-			#package : #Gt4LscContextMenu,
-			#sharedPools : OrderedCollection [ ]
-		}
-	}
-}OmEntry {
-	#tags : {
-		#author : 'GlamorousAuthor',
-		#time : DateAndTime [ '2025-04-23T13:32:00.000000+02:00' ],
-		#prior : OmReference [ '1' ],
-		#self : OmReference [ '2' ]
-	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
 			#annotations : IdentityDictionary {
@@ -76,8 +24,8 @@ OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-23T13:32:00.000000+02:00' ],
-		#prior : OmReference [ '2' ],
-		#self : OmReference [ '3' ]
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
@@ -96,8 +44,8 @@ OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-23T13:32:00.000000+02:00' ],
-		#prior : OmReference [ '3' ],
-		#self : OmReference [ '4' ]
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {

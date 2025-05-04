@@ -164,7 +164,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-04-30T17:59:41.945257+02:00"
+						"dateAndTimeString" : "2025-03-22T13:12:21.955959+01:00"
 					}
 				},
 				"editEmail" : {
@@ -175,7 +175,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-04-30T17:59:41.95252+02:00"
+						"dateAndTimeString" : "2025-04-30T18:00:23.950894+02:00"
 					}
 				},
 				"uid" : {
@@ -185,7 +185,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "T"
+				"string" : "#General goal"
 			},
 			{
 				"__type" : "textSnippet",
@@ -793,6 +793,43 @@
 											"__type" : "textStyle"
 										},
 										"string" : "[[Checking view features with the initial model - Instance Editor]]"
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-01T12:30:00.139416+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-01T12:30:22.806725+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "mna6QHLwDQCGZ5ypAD/zYQ=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "[[Checking view features with the modi model - Instance Editor"
 									}
 								]
 							},

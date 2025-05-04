@@ -1,22 +1,21 @@
 OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
-		#time : DateAndTime [ '2025-04-23T20:14:37.118209+02:00' ],
+		#time : DateAndTime [ '2025-05-04T11:43:18.229064+02:00' ],
 		#prior : OmReference [ '0' ],
 		#self : OmReference [ '1' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
 			#annotations : IdentityDictionary {
-				#className : #GtLscSelectableMenuItem,
+				#className : #GtLscMenuItem,
 				#isMetaSide : false
 			},
-			#name : #initialize,
-			#protocol : #initialization,
-			#sourceCode : 'initialize\r\tsuper initialize.\r\tselectionState := BlElementState deselected',
+			#name : #announcer,
+			#protocol : #announcer,
+			#sourceCode : 'announcer\r\t<return: #Announcer>\r\r\t^ announcer ifNil: [ announcer := Announcer new ]',
 			#stamp : '',
 			#package : #Gt4LscContextMenu
 		}
 	}
-}
-
+}

@@ -8,12 +8,12 @@ OmEntry {
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
 			#annotations : IdentityDictionary {
-				#className : #GtLscTemperatureMenuItem,
-				#isMetaSide : false
+				#className : #'GtLscTemperatureMenuItem class',
+				#isMetaSide : true
 			},
-			#name : #createElement,
+			#name : #elementClass,
 			#protocol : #converting,
-			#sourceCode : 'createElement\r\t<return: #BlElement or: nil>\r\t^ GtLscTemperatureElement forMenuItem: self',
+			#sourceCode : 'elementClass\r\t<return: #\'BlElement class\' with: #TGtLscMenuItemElement>\r\t^ GtLscTemperatureElement',
 			#stamp : '',
 			#package : #Gt4LscContextMenu
 		}
@@ -38,4 +38,4 @@ OmEntry {
 			#package : #Gt4LscContextMenu
 		}
 	}
-}
+}
