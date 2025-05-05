@@ -1,0 +1,192 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-05T17:06:03.544835+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscTemperatureMenuItem,
+				#isMetaSide : false
+			},
+			#name : #doSelectionAction,
+			#protocol : #api,
+			#sourceCode : 'doSelectionAction\r\t"The action to be executed when its view is clicked (BlClickEvent)"\r\tlscInstanceModel temperature: temperature',
+			#stamp : 'GlamorousAuthor 5/5/2025 10:11',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-05T17:06:03.544835+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpClassModification {
+		#oldClass : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : 'GtLscSelectableMenuItem',
+				#definitionSource : 'GtLscSelectableMenuItem subclass: #GtLscTemperatureMenuItem\r\tuses: TGtWithLscInstanceModel\r\tinstanceVariableNames: \'color\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4LscContextMenu-! Items\'',
+				#traitCompositionSource : 'TGtWithLscInstanceModel'
+			},
+			#name : #GtLscTemperatureMenuItem,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#className : #GtLscTemperatureMenuItem,
+						#isMetaSide : false
+					},
+					#name : #color,
+					#parent : @6
+				},
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#className : #GtLscTemperatureMenuItem,
+						#isMetaSide : false
+					},
+					#name : #lscInstanceModel,
+					#parent : @6
+				}
+			],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#definitionSource : 'GtLscTemperatureMenuItem class\r\tuses: TGtWithLscInstanceModel classTrait\r\tinstanceVariableNames: \'\'',
+					#traitCompositionSource : 'TGtWithLscInstanceModel classTrait'
+				},
+				#name : #'GtLscTemperatureMenuItem class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#className : #GtLscTemperatureMenuItem,
+					#isMetaSide : false
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#category : #'Gt4LscContextMenu-! Items',
+			#package : #Gt4LscContextMenu,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#newClass : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : 'GtLscSelectableMenuItem',
+				#definitionSource : 'GtLscSelectableMenuItem subclass: #GtLscTemperatureMenuItem\r\tuses: TGtWithLscInstanceModel\r\tinstanceVariableNames: \'color temperature\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4LscContextMenu-! Items\'',
+				#traitCompositionSource : 'TGtWithLscInstanceModel'
+			},
+			#name : #GtLscTemperatureMenuItem,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#className : #GtLscTemperatureMenuItem,
+						#isMetaSide : false
+					},
+					#name : #color,
+					#parent : @24
+				},
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#className : #GtLscTemperatureMenuItem,
+						#isMetaSide : false
+					},
+					#name : #temperature,
+					#parent : @24
+				},
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#className : #GtLscTemperatureMenuItem,
+						#isMetaSide : false
+					},
+					#name : #lscInstanceModel,
+					#parent : @24
+				}
+			],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#definitionSource : 'GtLscTemperatureMenuItem class\r\tuses: TGtWithLscInstanceModel classTrait\r\tinstanceVariableNames: \'\'',
+					#traitCompositionSource : 'TGtWithLscInstanceModel classTrait'
+				},
+				#name : #'GtLscTemperatureMenuItem class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @24
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#className : #GtLscTemperatureMenuItem,
+					#isMetaSide : false
+				},
+				#parent : @24,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#category : #'Gt4LscContextMenu-! Items',
+			#package : #Gt4LscContextMenu,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-05T17:06:03.544835+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscTemperatureMenuItem class',
+				#isMetaSide : true
+			},
+			#name : #'temperature:',
+			#protocol : #'instance creation',
+			#sourceCode : 'temperature: aGtLscTemperature\r\t^ self new color: aGtLscTemperature color',
+			#stamp : 'GlamorousAuthor 5/4/2025 13:05',
+			#package : #Gt4LscContextMenu
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscTemperatureMenuItem class',
+				#isMetaSide : true
+			},
+			#name : #'temperature:',
+			#protocol : #'instance creation',
+			#sourceCode : 'temperature: aGtLscTemperature\r\t^ self new\r\t\ttemperature: aGtLscTemperature;\r\t\tcolor: aGtLscTemperature color;\r\t\tyourself',
+			#stamp : 'GlamorousAuthor 5/5/2025 10:12',
+			#package : #Gt4LscContextMenu
+		},
+		#classPackageName : #Gt4LscContextMenu
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-05T17:06:03.544835+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscTemperatureMenuItem,
+				#isMetaSide : false
+			},
+			#name : #'temperature:',
+			#protocol : #acccessing,
+			#sourceCode : 'temperature: aGtLscTemperature\r\ttemperature := aGtLscTemperature',
+			#stamp : 'GlamorousAuthor 5/5/2025 10:12',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}

@@ -1,0 +1,82 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-05T12:20:18.194324+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscSelectableElement class',
+				#isMetaSide : true
+			},
+			#name : #'createInstanceForMenuItem:',
+			#protocol : #'instance creation',
+			#sourceCode : 'createInstanceForMenuItem: aGtLscSelectableMenuItem\r\t<return: #BlElement>\r\t\r\t^ self basicNew initialize item: aGtLscSelectableMenuItem',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-05T12:20:18.194324+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscSelectableElement class',
+				#isMetaSide : true
+			},
+			#name : #menuItemClass,
+			#protocol : #'instance creation',
+			#sourceCode : 'menuItemClass\r\t<return: #\'GtLscMenuItem class\'>\r\t^ GtLscSelectableElement',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-05T12:20:18.194324+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscSelectableElement,
+				#isMetaSide : false
+			},
+			#name : #'item:',
+			#protocol : #accessing,
+			#sourceCode : 'item: aGtLscSelectableMenuItem\r\titem := aGtLscSelectableMenuItem.\r\tself onSelectionStateChanged',
+			#stamp : 'GlamorousAuthor 5/5/2025 13:35',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-05T12:20:18.194324+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscSelectableElement,
+				#isMetaSide : false
+			},
+			#name : #onSelectionStateChanged,
+			#protocol : #'events handling',
+			#sourceCode : 'onSelectionStateChanged\r\tself states addState: item selectionState',
+			#stamp : 'GlamorousAuthor 5/5/2025 13:37',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}

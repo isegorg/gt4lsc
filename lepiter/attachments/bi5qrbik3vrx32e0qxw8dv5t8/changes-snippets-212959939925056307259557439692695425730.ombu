@@ -1,0 +1,101 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-05T12:20:18.194324+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscSelectableElement,
+				#isMetaSide : false
+			},
+			#name : #initialize,
+			#protocol : #initialization,
+			#sourceCode : 'initialize\r\tsuper initialize.\r\t\r\tself\r\t\twithStylesDo: [ :theStyles | \r\t\t\ttheStyles\r\t\t\t\taddStyle: self class selectedStyle;\r\t\t\t\taddStyle: self class deselectedStyle ]',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-05T12:20:18.194324+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscSelectableElement class',
+				#isMetaSide : true
+			},
+			#name : #selectedStyle,
+			#protocol : #initialization,
+			#sourceCode : 'selectedStyle\r\t^ BlElementStyle new\r\t\tstate: BlElementState selected;\r\t\tborder: self selectedBorder',
+			#stamp : 'GlamorousAuthor 5/5/2025 12:31',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-05T12:20:18.194324+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscSelectableElement class',
+				#isMetaSide : true
+			},
+			#name : #selectedBorder,
+			#protocol : #initialization,
+			#sourceCode : 'selectedBorder\r\t^ BlBorder paint: Color black width: 3',
+			#stamp : 'GlamorousAuthor 5/5/2025 12:32',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-05T12:20:18.194324+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscSelectableElement class',
+				#isMetaSide : true
+			},
+			#name : #deselectedStyle,
+			#protocol : #initialization,
+			#sourceCode : 'deselectedStyle\r\t^ BlElementStyle new\r\t\tstate: BlElementState selected not;\r\t\tborder: self deselectedBorder',
+			#stamp : 'GlamorousAuthor 5/5/2025 12:32',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-05T12:20:18.194324+02:00' ],
+		#prior : OmReference [ '4' ],
+		#self : OmReference [ '5' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscSelectableElement class',
+				#isMetaSide : true
+			},
+			#name : #deselectedBorder,
+			#protocol : #initialization,
+			#sourceCode : 'deselectedBorder\r\t^ BlBorder empty',
+			#stamp : 'GlamorousAuthor 5/5/2025 12:32',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}

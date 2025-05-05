@@ -8,12 +8,12 @@ OmEntry {
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
 			#annotations : IdentityDictionary {
-				#className : #'GtLscTemperatureElement class',
-				#isMetaSide : true
+				#className : #GtLscTemperatureElement,
+				#isMetaSide : false
 			},
-			#name : #'createInstanceForMenuItem:',
-			#protocol : #'instance creation',
-			#sourceCode : 'createInstanceForMenuItem: aGtLscTemperatureMenuItem\r\t<return: #BlElement>\r\t^ self basicNew initialize lscInstanceViewModel: aGtLscTemperatureMenuItem',
+			#name : #initialize,
+			#protocol : #initialization,
+			#sourceCode : 'initialize\r\tsuper initialize.\r\r\tself\r\t\tsize: 16 @ 16;\r\t\tgeometry: (BlRoundedRectangleGeometry cornerRadius: 3)',
 			#stamp : '',
 			#package : #Gt4LscContextMenu
 		}
@@ -31,14 +31,15 @@ OmEntry {
 				#className : #GtLscTemperatureElement,
 				#isMetaSide : false
 			},
-			#name : #initialize,
-			#protocol : #initialization,
-			#sourceCode : 'initialize\r\tsuper initialize.\r\r\tself\r\t\tsize: 16 @ 16;\r\t\tgeometry: (BlRoundedRectangleGeometry cornerRadius: 3);\r\t\twithStylesDo: [ :theStyles |\r\t\ttheStyles\r\t\t\taddStyle: (BlElementStyle new\r\t\t\t\tstate: BlElementState selected;\r\t\t\t\tborder: self class selectedBorder );\r\t\t\taddStyle: (BlElementStyle new\r\t\t\t\tstate: BlElementState selected not;\r\t\t\t\tborder: self class deselectedBorder) ].',
+			#name : #'item:',
+			#protocol : #'accessing',
+			#sourceCode : 'item: aGtLscTemperatureMenuItem\r\r\tsuper item: aGtLscTemperatureMenuItem.\r\tself lscInstanceViewModel: aGtLscTemperatureMenuItem',
 			#stamp : '',
 			#package : #Gt4LscContextMenu
 		}
 	}
-}OmEntry {
+}
+OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-04-28T10:34:49.2129+02:00' ],
@@ -48,13 +49,13 @@ OmEntry {
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
 			#annotations : IdentityDictionary {
-				#className : #'GtLscTemperatureElement class',
-				#isMetaSide : true
+				#className : #GtLscTemperatureElement,
+				#isMetaSide : false
 			},
-			#name : #selectedBorder,
-			#protocol : #api,
-			#sourceCode : 'selectedBorder\r\t^ BlBorder paint: Color black width: 3',
-			#stamp : '',
+			#name : #onLscInstanceViewModelChanged,
+			#protocol : #'api - lsc instance view model',
+			#sourceCode : 'onLscInstanceViewModelChanged\r\t"Is sent when a new Lsc instance view model is assigned to the element"\r\t\r\tself background: (lscInstanceViewModel color).\r\tself onSelectionStateChanged',
+			#stamp : 'GlamorousAuthor 4/28/2025 13:39',
 			#package : #Gt4LscContextMenu
 		}
 	}
@@ -71,46 +72,6 @@ OmEntry {
 				#className : #'GtLscTemperatureElement class',
 				#isMetaSide : true
 			},
-			#name : #deselectedBorder,
-			#protocol : #api,
-			#sourceCode : 'deselectedBorder\r\t^ BlBorder empty',
-			#stamp : '',
-			#package : #Gt4LscContextMenu
-		}
-	}
-}OmEntry {
-	#tags : {
-		#author : 'GlamorousAuthor',
-		#time : DateAndTime [ '2025-04-28T10:34:49.2129+02:00' ],
-		#prior : OmReference [ '4' ],
-		#self : OmReference [ '5' ]
-	},
-	#content : EpMethodAddition {
-		#method : RGMethodDefinition {
-			#annotations : IdentityDictionary {
-				#className : #GtLscTemperatureElement,
-				#isMetaSide : false
-			},
-			#name : #onLscInstanceViewModelChanged,
-			#protocol : #'api - lsc instance view model',
-			#sourceCode : 'onLscInstanceViewModelChanged\r\t"Is sent when a new Lsc instance view model is assigned to the element"\r\t\r\tself background: (lscInstanceViewModel color).\r\tself states addState: lscInstanceViewModel selectionState',
-			#stamp : 'GlamorousAuthor 4/28/2025 13:39',
-			#package : #Gt4LscContextMenu
-		}
-	}
-}OmEntry {
-	#tags : {
-		#author : 'GlamorousAuthor',
-		#time : DateAndTime [ '2025-04-28T10:34:49.2129+02:00' ],
-		#prior : OmReference [ '5' ],
-		#self : OmReference [ '6' ]
-	},
-	#content : EpMethodAddition {
-		#method : RGMethodDefinition {
-			#annotations : IdentityDictionary {
-				#className : #'GtLscTemperatureElement class',
-				#isMetaSide : true
-			},
 			#name : #menuItemClass,
 			#protocol : #'instance creation',
 			#sourceCode : 'menuItemClass\r\t<return: #\'GtLscMenuItem class\'>\r\t^ GtLscTemperatureMenuItem',
@@ -118,4 +79,4 @@ OmEntry {
 			#package : #Gt4LscContextMenu
 		}
 	}
-}
+}

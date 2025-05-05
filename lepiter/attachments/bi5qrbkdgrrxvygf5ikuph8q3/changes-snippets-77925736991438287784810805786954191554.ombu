@@ -1,0 +1,51 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-05T14:28:20.529273+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscSelectableElement,
+				#isMetaSide : false
+			},
+			#name : #initialize,
+			#protocol : #initialization,
+			#sourceCode : 'initialize\r\tsuper initialize.\r\t\r\tself\r\t\twithStylesDo: [ :theStyles | \r\t\t\ttheStyles\r\t\t\t\taddStyle: self class selectedStyle;\r\t\t\t\taddStyle: self class deselectedStyle ]',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscSelectableElement,
+				#isMetaSide : false
+			},
+			#name : #initialize,
+			#protocol : #initialization,
+			#sourceCode : 'initialize\r\tsuper initialize.\r\t\r\tself\r\t\twithStylesDo: [ :theStyles | \r\t\t\ttheStyles\r\t\t\t\taddStyle: self class selectedStyle;\r\t\t\t\taddStyle: self class deselectedStyle ];\r\t\twhen: BlClickEvent\r\t\t\tdo: [ :anEvent | \r\t\t\t\tanEvent consumed: true.\r\t\t\t\t(self states hasState: BlElementState selected not)\r\t\t\t\t\tifTrue: [ item doSelectionAction ] ]',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		},
+		#classPackageName : #Gt4LscContextMenu
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscSelectableMenuItem,
+				#isMetaSide : false
+			},
+			#name : #doSelectionAction,
+			#protocol : #api,
+			#sourceCode : 'doSelectionAction\r\t"The action to be executed when its view is clicked (BlClickEvent)"\r\tself explicitRequirement',
+			#stamp : 'GlamorousAuthor 5/5/2025 10:11',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}

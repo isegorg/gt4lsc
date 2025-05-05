@@ -24,7 +24,7 @@ OmEntry {
 			},
 			#name : #onTemperatureChanged,
 			#protocol : #'events handling',
-			#sourceCode : 'onTemperatureChanged\r\t| newTemperature |\r\tnewTemperature := lscInstanceModel temperature.\r\tselectionState := newTemperature color = color\r\t\t\tifTrue: BlElementState selected\r\t\t\tifFalse: BlElementState deselected.\r\tself notifySelectionStateChanged',
+			#sourceCode : 'onTemperatureChanged\r\t| newTemperature newSelectionState |\r\tnewTemperature := lscInstanceModel temperature.\r\tnewSelectionState := newTemperature color = color\r\t\t\tifTrue: BlElementState selected\r\t\t\tifFalse: BlElementState deselected.\r\tself selectionState: newSelectionState',
 			#stamp : '',
 			#package : #Gt4LscContextMenu
 		},
@@ -46,6 +46,26 @@ OmEntry {
 			#name : #notifySelectionStateChanged,
 			#protocol : #'events generation',
 			#sourceCode : 'notifySelectionStateChanged\r\tself announce: GtLscSelectionStateChanged new',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-03T19:34:10.695658+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscSelectableMenuItem,
+				#isMetaSide : false
+			},
+			#name : #'selectionState:',
+			#protocol : #accessing,
+			#sourceCode : 'selectionState: aSelectionState\r\tselectionState = aSelectionState ifTrue: [ ^ self ].\r\tselectionState := aSelectionState.\r\tself notifySelectionStateChanged',
 			#stamp : '',
 			#package : #Gt4LscContextMenu
 		}

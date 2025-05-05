@@ -38,56 +38,4 @@ OmEntry {
 			#package : #Gt4LscContextMenu
 		}
 	}
-}OmEntry {
-	#tags : {
-		#author : 'GlamorousAuthor',
-		#time : DateAndTime [ '2025-05-04T19:34:07.755569+02:00' ],
-		#prior : OmReference [ '2' ],
-		#self : OmReference [ '3' ]
-	},
-	#content : EpMethodAddition {
-		#method : RGMethodDefinition {
-			#annotations : IdentityDictionary {
-				#className : #GtLscTemperatureElement,
-				#isMetaSide : false
-			},
-			#name : #onSelectionStateChanged,
-			#protocol : #'events handling',
-			#sourceCode : 'onSelectionStateChanged\r\tself states addState: self lscInstanceViewModel selectionState',
-			#stamp : '',
-			#package : #Gt4LscContextMenu
-		}
-	}
-}OmEntry {
-	#tags : {
-		#author : 'GlamorousAuthor',
-		#time : DateAndTime [ '2025-05-04T19:34:07.755569+02:00' ],
-		#prior : OmReference [ '3' ],
-		#self : OmReference [ '4' ]
-	},
-	#content : EpMethodModification {
-		#oldMethod : RGMethodDefinition {
-			#annotations : IdentityDictionary {
-				#className : #GtLscTemperatureElement,
-				#isMetaSide : false
-			},
-			#name : #onLscInstanceViewModelChanged,
-			#protocol : #'api - lsc instance view model',
-			#sourceCode : 'onLscInstanceViewModelChanged\r\t"Is sent when a new Lsc instance view model is assigned to the element"\r\t\r\tself background: (lscInstanceViewModel color).\r\tself states addState: lscInstanceViewModel selectionState',
-			#stamp : '',
-			#package : #Gt4LscContextMenu
-		},
-		#newMethod : RGMethodDefinition {
-			#annotations : IdentityDictionary {
-				#className : #GtLscTemperatureElement,
-				#isMetaSide : false
-			},
-			#name : #onLscInstanceViewModelChanged,
-			#protocol : #'api - lsc instance view model',
-			#sourceCode : 'onLscInstanceViewModelChanged\r\t"Is sent when a new Lsc instance view model is assigned to the element"\r\t\r\tself background: (lscInstanceViewModel color).\r\tself onSelectionStateChanged',
-			#stamp : '',
-			#package : #Gt4LscContextMenu
-		},
-		#classPackageName : #Gt4LscContextMenu
-	}
-}
+}

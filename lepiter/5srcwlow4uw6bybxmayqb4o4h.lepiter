@@ -790,7 +790,7 @@
 																				"__type" : "time",
 																				"time" : {
 																					"__type" : "dateAndTime",
-																					"dateAndTimeString" : "2025-05-04T19:40:47.367831+02:00"
+																					"dateAndTimeString" : "2025-05-05T16:43:51.004816+02:00"
 																				}
 																			},
 																			"uid" : {
@@ -800,7 +800,7 @@
 																			"paragraphStyle" : {
 																				"__type" : "textStyle"
 																			},
-																			"string" : "We have overriden {{gtMethod:GtLscTemperatureElement>>subscribeToLscInstanceViewModel}} to subscribe to the announcements and perform the corresponding action {{gtMethod:GtLscTemperatureElement>>onSelectionStateChanged}}."
+																			"string" : "We have overriden {{gtMethod:GtLscTemperatureElement>>subscribeToLscInstanceViewModel}} to subscribe to the announcements and perform the corresponding action {{gtMethod:GtLscSelectableElement>>onSelectionStateChanged}}."
 																		},
 																		{
 																			"__type" : "textSnippet",
@@ -838,81 +838,6 @@
 																				"__type" : "textStyle"
 																			},
 																			"string" : "We have overriden {{gtMethod:GtLscTemperatureElement>>unsubscribeFromLscInstanceViewModel}} to remove the subscriptions if the *ViewModel* is changed."
-																		},
-																		{
-																			"__type" : "textSnippet",
-																			"children" : {
-																				"__type" : "snippets",
-																				"items" : [
-																					{
-																						"__type" : "textSnippet",
-																						"children" : {
-																							"__type" : "snippets",
-																							"items" : [ ]
-																						},
-																						"createEmail" : {
-																							"__type" : "email",
-																							"emailString" : "<unknown>"
-																						},
-																						"createTime" : {
-																							"__type" : "time",
-																							"time" : {
-																								"__type" : "dateAndTime",
-																								"dateAndTimeString" : "2025-05-04T19:41:21.345476+02:00"
-																							}
-																						},
-																						"editEmail" : {
-																							"__type" : "email",
-																							"emailString" : "<unknown>"
-																						},
-																						"editTime" : {
-																							"__type" : "time",
-																							"time" : {
-																								"__type" : "dateAndTime",
-																								"dateAndTimeString" : "2025-05-04T19:43:08.215453+02:00"
-																							}
-																						},
-																						"uid" : {
-																							"__type" : "uid",
-																							"uidString" : "4XTkoLTwDQCMymxeA4U+Zg=="
-																						},
-																						"paragraphStyle" : {
-																							"__type" : "textStyle"
-																						},
-																						"string" : "This is the same thing that is done when setting your *ViewModel*, so we refactor {{gtMethod:GtLscTemperatureElement>>onLscInstanceViewModelChanged}} to use that message."
-																					}
-																				]
-																			},
-																			"createEmail" : {
-																				"__type" : "email",
-																				"emailString" : "<unknown>"
-																			},
-																			"createTime" : {
-																				"__type" : "time",
-																				"time" : {
-																					"__type" : "dateAndTime",
-																					"dateAndTimeString" : "2025-05-04T19:41:05.53225+02:00"
-																				}
-																			},
-																			"editEmail" : {
-																				"__type" : "email",
-																				"emailString" : "<unknown>"
-																			},
-																			"editTime" : {
-																				"__type" : "time",
-																				"time" : {
-																					"__type" : "dateAndTime",
-																					"dateAndTimeString" : "2025-05-04T19:41:20.616003+02:00"
-																				}
-																			},
-																			"uid" : {
-																				"__type" : "uid",
-																				"uidString" : "kp+6mrTwDQCKPi3vA4U+Zg=="
-																			},
-																			"paragraphStyle" : {
-																				"__type" : "textStyle"
-																			},
-																			"string" : "The action add the new selection state to the element."
 																		}
 																	]
 																},
@@ -942,7 +867,7 @@
 																	"__type" : "uid",
 																	"uidString" : "ZwKpw6DwDQCsXAZQAhy0+g=="
 																},
-																"previewHeight" : 1014.4669189453125,
+																"previewHeight" : 656.3233642578125,
 																"fileName" : "attachments/eubkcfnl2v53oiro4xt5zwwtl/changes-snippets-195143974394525620683859874788667077882.ombu"
 															}
 														]

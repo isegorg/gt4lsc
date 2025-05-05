@@ -1,0 +1,21 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-05T14:28:20.529273+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscContextMenuElementScripterExamples,
+				#isMetaSide : false
+			},
+			#name : #pipelineLscInstanceChangeTemperature,
+			#protocol : #'examples - ui',
+			#sourceCode : 'pipelineLscInstanceChangeTemperature\r\t"Check that ui temperature change update the model"\r\t\r\t<gtExample>\r\t| editor lscInstance oldLscInstanceTemperature container temperaturePicker coldTemperature hotTemperature |\r\teditor := self renderLscInstanceEditorWithChanges.\r\tlscInstance := editor lscInstanceViewModel lscInstanceModel.\r\toldLscInstanceTemperature := lscInstance temperature.\r\tcontainer := editor childNamed: #container.\r\ttemperaturePicker := container childAt: 2.\r\tcoldTemperature := temperaturePicker childAt: 1.\r\thotTemperature := temperaturePicker childAt: 2.\r\t\r\t"Click on hot temperature element"\r\thotTemperature eventDispatcher dispatchEvent: BlClickEvent new.\r\t\r\t"Check new temperature"\r\tself assert: (coldTemperature states hasState: BlElementState deselected).\r\tself assert: (hotTemperature states hasState: BlElementState selected).\r\tself assert: lscInstance temperature equals: GtLscHotTemperature.\r\tself assert: (lscInstance temperature = oldLscInstanceTemperature) not.\r\r\t^ editor',
+			#stamp : 'GlamorousAuthor 5/5/2025 14:27',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}
