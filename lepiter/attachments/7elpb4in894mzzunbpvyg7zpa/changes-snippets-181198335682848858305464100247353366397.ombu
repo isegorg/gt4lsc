@@ -1,0 +1,81 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-05T18:24:10.578789+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceElement,
+				#isMetaSide : false
+			},
+			#name : #addContextMenu,
+			#protocol : #'*Gt4LscContextMenu',
+			#sourceCode : 'addContextMenu\r\t| instanceModel |\r\tinstanceModel := self lscInstanceViewModel lscInstanceModel.\r\tself childWithEditor\r\t\tdo: [ :childElement | \r\t\t\tchildElement\r\t\t\t\taddAptitude: ((BrGlamorousWithContextMenuAptitude\r\t\t\t\t\t\thandle: [ GtLscConstants contextMenuHandler ]\r\t\t\t\t\t\tcontent: [ GtLscInstanceEditorElement forModel: instanceModel ])\r\t\t\t\t\t\tpreferredExtent: GtLscConstants contextMenuPreferredExtent) ]',
+			#stamp : 'GlamorousAuthor 5/5/2025 18:25',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-05T18:24:10.578789+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceElement,
+				#isMetaSide : false
+			},
+			#name : #childWithEditor,
+			#protocol : #'*Gt4LscContextMenu',
+			#sourceCode : 'childWithEditor\r\t"Child elements collection to which the aptitude will be added to display the context menu by right-clicking on them."\r\t^ {nameElement . locationElement}',
+			#stamp : 'GlamorousAuthor 5/5/2025 18:27',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-05T18:24:10.578789+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscConstants class',
+				#isMetaSide : true
+			},
+			#name : #contextMenuHandler,
+			#protocol : #'*Gt4LscContextMenu',
+			#sourceCode : 'contextMenuHandler\r\t^ BlElement new\r\t\tsize: 5 @ 5;\r\t\tgeometry: BlEllipseGeometry new',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-05T18:24:10.578789+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscConstants class',
+				#isMetaSide : true
+			},
+			#name : #contextMenuPreferredExtent,
+			#protocol : #'*Gt4LscContextMenu',
+			#sourceCode : 'contextMenuPreferredExtent\r\t^ 120 @ 100.0',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}
