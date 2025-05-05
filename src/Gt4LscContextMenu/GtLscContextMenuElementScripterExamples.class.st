@@ -5,6 +5,32 @@ Class {
 }
 
 { #category : #'examples - ui' }
+GtLscContextMenuElementScripterExamples >> pipelineLscInstanceChangeTemperature [
+	"Check that ui temperature change update the model"
+	
+	<gtExample>
+	| editor lscInstance oldLscInstanceTemperature container temperaturePicker coldTemperature hotTemperature |
+	editor := self renderLscInstanceEditorWithChanges.
+	lscInstance := editor lscInstanceViewModel lscInstanceModel.
+	oldLscInstanceTemperature := lscInstance temperature.
+	container := editor childNamed: #container.
+	temperaturePicker := container childAt: 2.
+	coldTemperature := temperaturePicker childAt: 1.
+	hotTemperature := temperaturePicker childAt: 2.
+	
+	"Click on hot temperature element"
+	hotTemperature eventDispatcher dispatchEvent: BlClickEvent new.
+	
+	"Check new temperature"
+	self assert: (coldTemperature states hasState: BlElementState deselected).
+	self assert: (hotTemperature states hasState: BlElementState selected).
+	self assert: lscInstance temperature equals: GtLscHotTemperature.
+	self assert: (lscInstance temperature = oldLscInstanceTemperature) not.
+
+	^ editor
+]
+
+{ #category : #'examples - ui' }
 GtLscContextMenuElementScripterExamples >> renderLscInstanceEditorWithChanges [
 	"Check that the LscInstanceEditor displays the model's changes"
 

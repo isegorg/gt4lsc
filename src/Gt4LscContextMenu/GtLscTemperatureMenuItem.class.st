@@ -4,7 +4,8 @@ Class {
 	#traits : 'TGtWithLscInstanceModel',
 	#classTraits : 'TGtWithLscInstanceModel classTrait',
 	#instVars : [
-		'color'
+		'color',
+		'temperature'
 	],
 	#category : #'Gt4LscContextMenu-! Items'
 }
@@ -17,7 +18,10 @@ GtLscTemperatureMenuItem class >> elementClass [
 
 { #category : #'instance creation' }
 GtLscTemperatureMenuItem class >> temperature: aGtLscTemperature [
-	^ self new color: aGtLscTemperature color
+	^ self new
+		temperature: aGtLscTemperature;
+		color: aGtLscTemperature color;
+		yourself
 ]
 
 { #category : #accessing }
@@ -28,6 +32,12 @@ GtLscTemperatureMenuItem >> color [
 { #category : #accessing }
 GtLscTemperatureMenuItem >> color: aColor [
 	color := aColor
+]
+
+{ #category : #api }
+GtLscTemperatureMenuItem >> doSelectionAction [
+	"The action to be executed when its view is clicked (BlClickEvent)"
+	lscInstanceModel temperature: temperature
 ]
 
 { #category : #converting }
@@ -46,12 +56,12 @@ GtLscTemperatureMenuItem >> onLscInstanceModelChanged [
 
 { #category : #'events handling' }
 GtLscTemperatureMenuItem >> onTemperatureChanged [
-	| newTemperature |
+	| newTemperature newSelectionState |
 	newTemperature := lscInstanceModel temperature.
-	selectionState := newTemperature color = color
+	newSelectionState := newTemperature color = color
 			ifTrue: BlElementState selected
 			ifFalse: BlElementState deselected.
-	self notifySelectionStateChanged
+	self selectionState: newSelectionState
 ]
 
 { #category : #'api - lsc instance model' }
@@ -64,6 +74,11 @@ GtLscTemperatureMenuItem >> subscribeToLscInstanceModel [
 		when: GtLscInstanceModelTemperatureChanged
 		send: #onTemperatureChanged
 		to: self
+]
+
+{ #category : #acccessing }
+GtLscTemperatureMenuItem >> temperature: aGtLscTemperature [
+	temperature := aGtLscTemperature
 ]
 
 { #category : #'api - lsc instance model' }

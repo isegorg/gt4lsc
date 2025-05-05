@@ -1,31 +1,15 @@
 Class {
 	#name : #GtLscTemperatureElement,
-	#superclass : #BlElement,
-	#traits : 'TGtWithLscInstanceViewModel + TGtLscMenuItemElement',
-	#classTraits : 'TGtWithLscInstanceViewModel classTrait + TGtLscMenuItemElement classTrait',
+	#superclass : #GtLscSelectableElement,
+	#traits : 'TGtWithLscInstanceViewModel',
+	#classTraits : 'TGtWithLscInstanceViewModel classTrait',
 	#category : #'Gt4LscContextMenu-! Views'
 }
-
-{ #category : #'instance creation' }
-GtLscTemperatureElement class >> createInstanceForMenuItem: aGtLscTemperatureMenuItem [
-	<return: #BlElement>
-	^ self basicNew initialize lscInstanceViewModel: aGtLscTemperatureMenuItem
-]
-
-{ #category : #api }
-GtLscTemperatureElement class >> deselectedBorder [
-	^ BlBorder empty
-]
 
 { #category : #'instance creation' }
 GtLscTemperatureElement class >> menuItemClass [
 	<return: #'GtLscMenuItem class'>
 	^ GtLscTemperatureMenuItem
-]
-
-{ #category : #api }
-GtLscTemperatureElement class >> selectedBorder [
-	^ BlBorder paint: Color black width: 3
 ]
 
 { #category : #initialization }
@@ -34,15 +18,14 @@ GtLscTemperatureElement >> initialize [
 
 	self
 		size: 16 @ 16;
-		geometry: (BlRoundedRectangleGeometry cornerRadius: 3);
-		withStylesDo: [ :theStyles |
-		theStyles
-			addStyle: (BlElementStyle new
-				state: BlElementState selected;
-				border: self class selectedBorder );
-			addStyle: (BlElementStyle new
-				state: BlElementState selected not;
-				border: self class deselectedBorder) ].
+		geometry: (BlRoundedRectangleGeometry cornerRadius: 3)
+]
+
+{ #category : #accessing }
+GtLscTemperatureElement >> item: aGtLscTemperatureMenuItem [
+
+	super item: aGtLscTemperatureMenuItem.
+	self lscInstanceViewModel: aGtLscTemperatureMenuItem
 ]
 
 { #category : #'api - lsc instance view model' }
@@ -51,11 +34,6 @@ GtLscTemperatureElement >> onLscInstanceViewModelChanged [
 	
 	self background: (lscInstanceViewModel color).
 	self onSelectionStateChanged
-]
-
-{ #category : #'events handling' }
-GtLscTemperatureElement >> onSelectionStateChanged [
-	self states addState: self lscInstanceViewModel selectionState
 ]
 
 { #category : #'api - lsc instance view model' }
