@@ -995,6 +995,40 @@
 																				"__type" : "time",
 																				"time" : {
 																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-05-09T18:48:49.881327+02:00"
+																				}
+																			},
+																			"editEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"editTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-05-09T18:49:02.843569+02:00"
+																				}
+																			},
+																			"uid" : {
+																				"__type" : "uid",
+																				"uidString" : "581BehjxDQC2M0eZAbNVbA=="
+																			},
+																			"code" : "GtLscMenuItemAnnouncement subclass: #GtLscAptitudesChanged\r\tinstanceVariableNames: ''\r\tclassVariableNames: ''\r\tpackage: 'Gt4LscContextMenu-Events'."
+																		},
+																		{
+																			"__type" : "pharoSnippet",
+																			"children" : {
+																				"__type" : "snippets",
+																				"items" : [ ]
+																			},
+																			"createEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"createTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
 																					"dateAndTimeString" : "2025-05-08T21:20:38.41794+02:00"
 																				}
 																			},
@@ -1520,6 +1554,189 @@
 																	"__type" : "textStyle"
 																},
 																"string" : "It will need to know the {{gtClass:GtLscInstanceModel}} and the {{gtClass:GtLscModel}} it belongs to, since the action it will perform will be to delete this Instance from its Lsc."
+															},
+															{
+																"__type" : "textSnippet",
+																"children" : {
+																	"__type" : "snippets",
+																	"items" : [
+																		{
+																			"__type" : "pharoSnippet",
+																			"children" : {
+																				"__type" : "snippets",
+																				"items" : [
+																					{
+																						"__type" : "changesSnippet",
+																						"children" : {
+																							"__type" : "snippets",
+																							"items" : [
+																								{
+																									"__type" : "textSnippet",
+																									"children" : {
+																										"__type" : "snippets",
+																										"items" : [ ]
+																									},
+																									"createEmail" : {
+																										"__type" : "email",
+																										"emailString" : "<unknown>"
+																									},
+																									"createTime" : {
+																										"__type" : "time",
+																										"time" : {
+																											"__type" : "dateAndTime",
+																											"dateAndTimeString" : "2025-05-09T18:46:16.735385+02:00"
+																										}
+																									},
+																									"editEmail" : {
+																										"__type" : "email",
+																										"emailString" : "<unknown>"
+																									},
+																									"editTime" : {
+																										"__type" : "time",
+																										"time" : {
+																											"__type" : "dateAndTime",
+																											"dateAndTimeString" : "2025-05-09T18:46:38.096617+02:00"
+																										}
+																									},
+																									"uid" : {
+																										"__type" : "uid",
+																										"uidString" : "z/ogcRjxDQC1uvcAAbNVbA=="
+																									},
+																									"paragraphStyle" : {
+																										"__type" : "textStyle"
+																									},
+																									"string" : "It has a slot for the aptitudes, its getter and a setter that notifies its change if a different aptitudes is set than the one it has."
+																								},
+																								{
+																									"__type" : "textSnippet",
+																									"children" : {
+																										"__type" : "snippets",
+																										"items" : [ ]
+																									},
+																									"createEmail" : {
+																										"__type" : "email",
+																										"emailString" : "<unknown>"
+																									},
+																									"createTime" : {
+																										"__type" : "time",
+																										"time" : {
+																											"__type" : "dateAndTime",
+																											"dateAndTimeString" : "2025-05-09T18:46:41.150437+02:00"
+																										}
+																									},
+																									"editEmail" : {
+																										"__type" : "email",
+																										"emailString" : "<unknown>"
+																									},
+																									"editTime" : {
+																										"__type" : "time",
+																										"time" : {
+																											"__type" : "dateAndTime",
+																											"dateAndTimeString" : "2025-05-09T18:47:30.954156+02:00"
+																										}
+																									},
+																									"uid" : {
+																										"__type" : "uid",
+																										"uidString" : "ZYeVchjxDQC2KuP7AbNVbA=="
+																									},
+																									"paragraphStyle" : {
+																										"__type" : "textStyle"
+																									},
+																									"string" : "Elements that want to know about this change must subscribe to this announcement."
+																								}
+																							]
+																						},
+																						"createEmail" : {
+																							"__type" : "email",
+																							"emailString" : "<unknown>"
+																						},
+																						"createTime" : {
+																							"__type" : "time",
+																							"time" : {
+																								"__type" : "dateAndTime",
+																								"dateAndTimeString" : "2025-05-09T18:35:45.990259+02:00"
+																							}
+																						},
+																						"editEmail" : {
+																							"__type" : "email",
+																							"emailString" : "<unknown>"
+																						},
+																						"editTime" : {
+																							"__type" : "time",
+																							"time" : {
+																								"__type" : "dateAndTime",
+																								"dateAndTimeString" : "2025-05-09T18:35:45.990259+02:00"
+																							}
+																						},
+																						"uid" : {
+																							"__type" : "uid",
+																							"uidString" : "LZSISxjxDQC0DotcAbNVbA=="
+																						},
+																						"previewHeight" : 536.466552734375,
+																						"fileName" : "attachments/6ew4nsecqrcwu9m8y7ehyvbcw/changes-snippets-createMenuItemWithAptitudesTrait.ombu"
+																					}
+																				]
+																			},
+																			"createEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"createTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-05-09T18:35:04.992328+02:00"
+																				}
+																			},
+																			"editEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"editTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-05-09T18:35:37.249379+02:00"
+																				}
+																			},
+																			"uid" : {
+																				"__type" : "uid",
+																				"uidString" : "yf4WSRjxDQCzmRLkAbNVbA=="
+																			},
+																			"code" : "Trait named: #TGtLscMenuItemWithAptitude\r\tinstanceVariableNames: 'aptitudes'\r\tpackage: 'Gt4LscContextMenu-! Items'."
+																		}
+																	]
+																},
+																"createEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"createTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-05-09T18:34:46.298161+02:00"
+																	}
+																},
+																"editEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"editTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-05-09T19:33:10.398931+02:00"
+																	}
+																},
+																"uid" : {
+																	"__type" : "uid",
+																	"uidString" : "Sr35RxjxDQCzikZ1AbNVbA=="
+																},
+																"paragraphStyle" : {
+																	"__type" : "textStyle"
+																},
+																"string" : "We create a trait with the common behavior for menu items that have aptitudes that should be used on its element."
 															},
 															{
 																"__type" : "textSnippet",
@@ -2097,14 +2314,14 @@
 																				"__type" : "time",
 																				"time" : {
 																					"__type" : "dateAndTime",
-																					"dateAndTimeString" : "2025-05-09T09:02:10.24622+02:00"
+																					"dateAndTimeString" : "2025-05-09T19:36:27.727502+02:00"
 																				}
 																			},
 																			"uid" : {
 																				"__type" : "uid",
 																				"uidString" : "GTKIUtzwDQChSrvJCIfjug=="
 																			},
-																			"code" : "GtLscButtonMenuItem subclass: #GtLscRemoveInstanceButtonMenuItem\r\tuses: TGtLscWithInstanceInLsc + TGtLscMenuItemWithLabel + TGtLscMenuItemWithVisibility\r\tinstanceVariableNames: ''\r\tclassVariableNames: ''\r\tpackage: 'Gt4LscContextMenu-! Items'."
+																			"code" : "GtLscButtonMenuItem subclass: #GtLscRemoveInstanceButtonMenuItem\r\tuses: TGtLscWithInstanceInLsc + TGtLscMenuItemWithAptitude + TGtLscMenuItemWithLabel + TGtLscMenuItemWithIcon + TGtLscMenuItemWithVisibility\r\tinstanceVariableNames: ''\r\tclassVariableNames: ''\r\tpackage: 'Gt4LscContextMenu-! Items'."
 																		},
 																		{
 																			"__type" : "textSnippet",

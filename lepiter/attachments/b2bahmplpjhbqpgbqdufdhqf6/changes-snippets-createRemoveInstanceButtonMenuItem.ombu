@@ -13,7 +13,7 @@ OmEntry {
 			},
 			#name : #initialize,
 			#protocol : #initialization,
-			#sourceCode : 'initialize\r\tself label: GtLscConstants removeInstanceButtonLabel.\r\tself visibility: BlVisibility visible',
+			#sourceCode : 'initialize\r\tself aptitudes: BrGlamorousButtonWithIconAptitude.\r\tself label: GtLscConstants removeInstanceButtonLabel.\r\tself icon: BrGlamorousIcons trash.\r\tself visibility: BlVisibility visible',
 			#stamp : '',
 			#package : #Gt4LscContextMenu
 		}

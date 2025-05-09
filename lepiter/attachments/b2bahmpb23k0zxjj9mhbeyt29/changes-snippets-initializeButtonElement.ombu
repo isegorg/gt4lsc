@@ -13,7 +13,7 @@ OmEntry {
 			},
 			#name : #initialize,
 			#protocol : #initialization,
-			#sourceCode : 'initialize\r\tsuper initialize.\r\r\tself\r\t\tfitContent;\r\t\tbeSmallSize;\r\t\taptitude: BrGlamorousButtonWithLabelAptitude new;\r\t\tmargin: (BlInsets\r\t\t\t\ttop: 0\r\t\t\t\tleft: 3\r\t\t\t\tbottom: 3\r\t\t\t\tright: 3)',
+			#sourceCode : 'initialize\r\tsuper initialize.\r\r\tself\r\t\tfitContent;\r\t\tbeSmallSize;\r\t\tmargin: (BlInsets\r\t\t\t\ttop: 0\r\t\t\t\tleft: 3\r\t\t\t\tbottom: 3\r\t\t\t\tright: 3)',
 			#stamp : '',
 			#package : #Gt4LscContextMenu
 		}

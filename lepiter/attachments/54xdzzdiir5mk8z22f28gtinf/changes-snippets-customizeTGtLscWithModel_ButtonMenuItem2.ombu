@@ -13,7 +13,7 @@ OmEntry {
 			},
 			#name : #subscribeToModel,
 			#protocol : #'api - model',
-			#sourceCode : 'subscribeToModel\r\t"Is sent after a new model is assigned to the receiver.\r\tIt is required to unsubscribe from the model by implementing\r\t#unsubscribeFromModel if receiver subscribes to them"\r\r\tself model weak\r\t\twhen: GtLscLabelChanged\r\t\tsend: #onLabelChanged\r\t\tto: self.\r\tself model weak\r\t\twhen: GtLscIconChanged\r\t\tsend: #onIconChanged\r\t\tto: self.\r\tself model weak\r\t\twhen: GtLscVisibilityChanged\r\t\tsend: #onVisibilityChanged\r\t\tto: self',
+			#sourceCode : 'subscribeToModel\r\t"Is sent after a new model is assigned to the receiver.\r\tIt is required to unsubscribe from the model by implementing\r\t#unsubscribeFromModel if receiver subscribes to them"\r\r\tself model weak\r\t\twhen: GtLscAptitudesChanged\r\t\tsend: #onAptitudesChanged\r\t\tto: self.\r\tself model weak\r\t\twhen: GtLscLabelChanged\r\t\tsend: #onLabelChanged\r\t\tto: self.\r\tself model weak\r\t\twhen: GtLscIconChanged\r\t\tsend: #onIconChanged\r\t\tto: self.\r\tself model weak\r\t\twhen: GtLscVisibilityChanged\r\t\tsend: #onVisibilityChanged\r\t\tto: self',
 			#stamp : '',
 			#package : #Gt4LscContextMenu
 		}

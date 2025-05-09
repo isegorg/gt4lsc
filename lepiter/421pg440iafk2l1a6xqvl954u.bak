@@ -1870,14 +1870,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-05-08T21:49:28.065919+02:00"
+						"dateAndTimeString" : "2025-05-09T16:25:06.39158+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "9BKUVvzvDQC1BetYC9Nkww=="
 				},
-				"code" : "GtLscRemoveInstanceButtonMenuItem new"
+				"code" : "(GtLscButtonElement forMenuItem: (GtLscButtonMenuItem new))  aptitude: BrGlamorousButtonWithIconAptitude"
 			}
 		]
 	},

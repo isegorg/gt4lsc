@@ -13,7 +13,7 @@ OmEntry {
 			},
 			#name : #onModelChanged,
 			#protocol : #'api - model',
-			#sourceCode : 'onModelChanged\r\t"Is sent when a new model is assigned to the receiver"\r\t\r\tself onActionChanged.\r\t\r\t"For label, icon and visibility to be updated, the item must use TGtLscMenuItemWithLabel, TGtLscMenuItemWithIcon and TGtLscMenuItemWithVisibility respectively."\r\tself onLabelChanged.\r\tself onIconChanged.\r\tself onVisibilityChanged',
+			#sourceCode : 'onModelChanged\r\t"Is sent when a new model is assigned to the receiver"\r\t\r\tself onActionChanged.\r\t\r\t"For aptitudes, label, icon and visibility to be updated, the item must use TGtLscMenuItemWithAptitude, TGtLscMenuItemWithLabel, TGtLscMenuItemWithIcon and TGtLscMenuItemWithVisibility respectively."\r\tself onAptitudesChanged.\r\tself onLabelChanged.\r\tself onIconChanged.\r\tself onVisibilityChanged',
 			#stamp : '',
 			#package : #Gt4LscContextMenu
 		}

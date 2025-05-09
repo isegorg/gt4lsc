@@ -1,0 +1,61 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-09T18:45:19.110493+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #TGtLscMenuItemWithAptitude,
+				#isMetaSide : false
+			},
+			#name : #aptitudes,
+			#protocol : #accessing,
+			#sourceCode : 'aptitudes\r\t^ aptitudes',
+			#stamp : 'GlamorousAuthor 5/9/2025 18:44',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-09T18:45:19.110493+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #TGtLscMenuItemWithAptitude,
+				#isMetaSide : false
+			},
+			#name : #'aptitudes:',
+			#protocol : #accessing,
+			#sourceCode : 'aptitudes: anAptitude\r\tanAptitude = aptitudes ifTrue: [ ^ self ].\r\taptitudes := anAptitude.\r\tself notifyAptitudesChanged',
+			#stamp : 'GlamorousAuthor 5/9/2025 18:44',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-09T18:45:19.110493+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #TGtLscMenuItemWithAptitude,
+				#isMetaSide : false
+			},
+			#name : #notifyAptitudesChanged,
+			#protocol : #'events generation',
+			#sourceCode : 'notifyAptitudesChanged\r\tself announce: GtLscAptitudesChanged new',
+			#stamp : 'GlamorousAuthor 5/9/2025 18:44',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}
