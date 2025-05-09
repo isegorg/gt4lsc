@@ -1,0 +1,21 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-06T15:26:49.6777+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscContextMenuElementScripterExamples,
+				#isMetaSide : false
+			},
+			#name : #addInstanceEditor,
+			#protocol : #'examples - ui',
+			#sourceCode : 'addInstanceEditor\r\t"Check that LscInstanceEditorElement is added and shown in LscInstanceElement"\r\t\r\t<gtExample>\r\t| lscInstance lscInstanceElement nameElement localPosition |\r\tlscInstance := GtLscElementScripterExamples new renderNewLscInstance.\r\tlscInstanceElement := lscInstance asElement.\r\tlscInstanceElement inspect.\r\t\r\t1 second wait.\r\t"Check that it is displayed when you right-click on nameElement"\r\tnameElement := lscInstanceElement childNamed: GtLscConstants instanceNameElementId.\r\tlocalPosition := 2@2.\r\tnameElement fireEvent: (BlMouseUpEvent new button: BlMouseButton secondary; position: (nameElement localPointToGlobal: localPosition) ).\r\t\r\tself assert: (lscInstanceElement allParentsDetect: [ :aParent | aParent childNamed: #GtLscInstanceEditorElement ifFound: [ :element | true ] ifNone: [ false ]  ] ifFound: [ :detectedParent | true ] ifNone: [ false ]). \r\t\r\t^ lscInstance',
+			#stamp : 'GlamorousAuthor 5/6/2025 15:18',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}

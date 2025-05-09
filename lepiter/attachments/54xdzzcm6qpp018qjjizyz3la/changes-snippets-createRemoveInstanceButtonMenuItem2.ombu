@@ -1,0 +1,21 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-08T21:07:05.13306+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscRemoveInstanceButtonMenuItem,
+				#isMetaSide : false
+			},
+			#name : #doClickAction,
+			#protocol : #api,
+			#sourceCode : 'doClickAction\r\t"The action to be executed when its view is clicked (BlClickEvent)"\r\tmodel removeInstance: lscInstanceModel',
+			#stamp : 'GlamorousAuthor 5/8/2025 21:47',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}

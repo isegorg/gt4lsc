@@ -1,0 +1,61 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-08T21:07:05.13306+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #TGtLscMenuItemWithIcon,
+				#isMetaSide : false
+			},
+			#name : #icon,
+			#protocol : #accessing,
+			#sourceCode : 'icon\r\t^ icon',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-08T21:07:05.13306+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #TGtLscMenuItemWithIcon,
+				#isMetaSide : false
+			},
+			#name : #'icon:',
+			#protocol : #accessing,
+			#sourceCode : 'icon: anElement\r\ticon = anElement ifTrue: [ ^ self ].\r\ticon := anElement.\r\tself notifyIconChanged',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-08T21:07:05.13306+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #TGtLscMenuItemWithIcon,
+				#isMetaSide : false
+			},
+			#name : #notifyIconChanged,
+			#protocol : #'events generation',
+			#sourceCode : 'notifyIconChanged\r\tself announce: GtLscIconChanged new',
+			#stamp : 'GlamorousAuthor 5/8/2025 21:27',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}

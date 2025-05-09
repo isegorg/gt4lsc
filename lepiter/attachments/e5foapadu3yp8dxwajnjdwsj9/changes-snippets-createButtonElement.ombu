@@ -1,0 +1,41 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-06T15:26:49.6777+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscButtonElement class',
+				#isMetaSide : true
+			},
+			#name : #menuItemClass,
+			#protocol : #'instance creation',
+			#sourceCode : 'menuItemClass\r\t<return: #\'GtLscButtonMenuItem class\'>\r\t^ GtLscButtonMenuItem',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-06T15:26:49.6777+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscButtonElement class',
+				#isMetaSide : true
+			},
+			#name : #'createInstanceForMenuItem:',
+			#protocol : #'instance creation',
+			#sourceCode : 'createInstanceForMenuItem: aGtLscMenuItem\r\t<return: #BlElement>\r\t\r\t^ self basicNew initialize model: aGtLscMenuItem',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}

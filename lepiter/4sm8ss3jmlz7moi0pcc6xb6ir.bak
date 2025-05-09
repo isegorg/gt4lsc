@@ -893,7 +893,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-05-05T17:36:43.735025+02:00"
+												"dateAndTimeString" : "2025-05-05T17:37:02.353178+02:00"
 											}
 										},
 										"uid" : {
@@ -903,7 +903,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "[[Add Instance"
+										"string" : "[[Add Instance Context Menu to Instances Elements]]"
 									}
 								]
 							},

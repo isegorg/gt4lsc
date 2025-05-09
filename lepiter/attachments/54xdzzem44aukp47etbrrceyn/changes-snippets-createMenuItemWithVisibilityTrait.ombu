@@ -1,0 +1,61 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-08T21:07:05.13306+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #TGtLscMenuItemWithVisibility,
+				#isMetaSide : false
+			},
+			#name : #visibility,
+			#protocol : #accessing,
+			#sourceCode : 'visibility\r\t^ visibility',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-08T21:07:05.13306+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #TGtLscMenuItemWithVisibility,
+				#isMetaSide : false
+			},
+			#name : #'visibility:',
+			#protocol : #accessing,
+			#sourceCode : 'visibility: aBlVisibility\r\tvisibility = aBlVisibility ifTrue: [ ^ self ].\r\tvisibility := aBlVisibility.\r\tself notifyVisibilityChanged',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-08T21:07:05.13306+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #TGtLscMenuItemWithVisibility,
+				#isMetaSide : false
+			},
+			#name : #notifyVisibilityChanged,
+			#protocol : #'events generation',
+			#sourceCode : 'notifyVisibilityChanged\r\tself announce: GtLscVisibilityChanged new',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}

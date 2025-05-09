@@ -1,0 +1,41 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-08T21:07:05.13306+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscRemoveInstanceButtonMenuItem,
+				#isMetaSide : false
+			},
+			#name : #initialize,
+			#protocol : #initialization,
+			#sourceCode : 'initialize\r\tself label: GtLscConstants removeInstanceButtonLabel.\r\tself visibility: BlVisibility visible',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-08T21:07:05.13306+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscConstants class',
+				#isMetaSide : true
+			},
+			#name : #removeInstanceButtonLabel,
+			#protocol : #'*Gt4LscContextMenu',
+			#sourceCode : 'removeInstanceButtonLabel\r\t^ \'Remove\'',
+			#stamp : 'GlamorousAuthor 5/8/2025 22:59',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}

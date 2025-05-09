@@ -1,0 +1,61 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-08T21:07:05.13306+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #TGtLscMenuItemWithLabel,
+				#isMetaSide : false
+			},
+			#name : #label,
+			#protocol : #accessing,
+			#sourceCode : 'label\r\t^ label',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-08T21:07:05.13306+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #TGtLscMenuItemWithLabel,
+				#isMetaSide : false
+			},
+			#name : #'label:',
+			#protocol : #accessing,
+			#sourceCode : 'label: aString\r\t(aString = label) ifTrue: [ ^ self ].\r\tlabel := aString.\r\tself notifyLabelChanged',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-08T21:07:05.13306+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #TGtLscMenuItemWithLabel,
+				#isMetaSide : false
+			},
+			#name : #notifyLabelChanged,
+			#protocol : #accessing,
+			#sourceCode : 'notifyLabelChanged\r\tself announce: GtLscLabelChanged new',
+			#stamp : 'GlamorousAuthor 5/8/2025 20:53',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}

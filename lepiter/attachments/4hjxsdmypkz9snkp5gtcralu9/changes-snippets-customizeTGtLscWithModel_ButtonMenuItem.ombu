@@ -1,0 +1,101 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-08T12:52:49.624104+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscButtonElement,
+				#isMetaSide : false
+			},
+			#name : #onModelChanged,
+			#protocol : #'api - model',
+			#sourceCode : 'onModelChanged\r\t"Is sent when a new model is assigned to the receiver"\r\t\r\tself onActionChanged.\r\t\r\t"For label, icon and visibility to be updated, the item must use TGtLscMenuItemWithLabel, TGtLscMenuItemWithIcon and TGtLscMenuItemWithVisibility respectively."\r\tself onLabelChanged.\r\tself onIconChanged.\r\tself onVisibilityChanged',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-08T12:52:49.624104+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscButtonElement,
+				#isMetaSide : false
+			},
+			#name : #onActionChanged,
+			#protocol : #'events handling',
+			#sourceCode : 'onActionChanged\r\tself action: [ self model doClickAction ]',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-08T12:52:49.624104+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscButtonElement,
+				#isMetaSide : false
+			},
+			#name : #onLabelChanged,
+			#protocol : #'events handling',
+			#sourceCode : 'onLabelChanged\r\t"Update label if model has #label message. Use TGtLscMenuItemWithLabel in item"\r\t\r\t(self model respondsTo: #label) ifFalse: [ ^ self ].\r\tself label: self model label',
+			#stamp : 'GlamorousAuthor 5/8/2025 20:12',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-08T12:52:49.624104+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscButtonElement,
+				#isMetaSide : false
+			},
+			#name : #onIconChanged,
+			#protocol : #'events handling',
+			#sourceCode : 'onIconChanged\r\t"Update icon if model has #icon message. Use TGtLscMenuItemWithIcon in item"\r\t\r\t(self model respondsTo: #icon) ifFalse: [ ^ self ].\r\tself icon: self model icon',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-08T12:52:49.624104+02:00' ],
+		#prior : OmReference [ '4' ],
+		#self : OmReference [ '5' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscButtonElement,
+				#isMetaSide : false
+			},
+			#name : #onVisibilityChanged,
+			#protocol : #'events handling',
+			#sourceCode : 'onVisibilityChanged\r\t"Update visibility if model has #visibility message. Use TGtLscMenuItemWithVisibility in item"\r\t\r\t(self model respondsTo: #visibility) ifFalse: [ ^ self ].\r\tself visibility: self model visibility',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}

@@ -1,0 +1,81 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-08T18:05:09.174215+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'TGtLscWithInstanceInLsc classTrait',
+				#isMetaSide : true
+			},
+			#name : #new,
+			#protocol : #'instance creation',
+			#sourceCode : 'new\r\tself error: \'Use #forInstance:inLsc:\'',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-08T18:05:09.174215+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'TGtLscWithInstanceInLsc classTrait',
+				#isMetaSide : true
+			},
+			#name : #'forInstance:inLsc:',
+			#protocol : #'instance creation',
+			#sourceCode : 'forInstance: aGtLscInstanceModel inLsc: aGtLscModel\r\t^ self basicNew initialize\r\t\tlscInstance: aGtLscInstanceModel inLsc: aGtLscModel;\r\t\tyourself',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-08T18:05:09.174215+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #TGtLscWithInstanceInLsc,
+				#isMetaSide : false
+			},
+			#name : #'lscInstance:inLsc:',
+			#protocol : #'instance creation',
+			#sourceCode : 'lscInstance: aGtLscInstanceModel inLsc: aGtLscModel\r\tself checkInstance: aGtLscInstanceModel isInLsc: aGtLscModel.\r\tlscInstanceModel := aGtLscInstanceModel.\r\tself model: aGtLscModel',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-08T18:05:09.174215+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #TGtLscWithInstanceInLsc,
+				#isMetaSide : false
+			},
+			#name : #'checkInstance:isInLsc:',
+			#protocol : #checking,
+			#sourceCode : 'checkInstance: aGtLscInstanceModel isInLsc: aGtLscModel\r\tself\r\t\tassert: (aGtLscModel hasInstance: aGtLscInstanceModel)\r\t\tdescription: \'Lsc Instance must be in the Lsc\'',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}

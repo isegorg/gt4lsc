@@ -1,0 +1,21 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-08T10:16:34.09779+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscButtonMenuItem,
+				#isMetaSide : false
+			},
+			#name : #doClickAction,
+			#protocol : #api,
+			#sourceCode : 'doClickAction\r\t"The action to be executed when its view is clicked (BlClickEvent)"\r\tself explicitRequirement',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}
