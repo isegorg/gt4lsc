@@ -5,6 +5,27 @@ Class {
 }
 
 { #category : #'examples - ui' }
+GtLscContextMenuElementScripterExamples >> addInstanceEditor [
+	"Check that LscInstanceEditorElement is added and shown in LscInstanceElement"
+	
+	<gtExample>
+	| lscInstance lscInstanceElement nameElement localPosition |
+	lscInstance := GtLscElementScripterExamples new renderNewLscInstance.
+	lscInstanceElement := lscInstance asElement.
+	lscInstanceElement inspect.
+	
+	1 second wait.
+	"Check that it is displayed when you right-click on nameElement"
+	nameElement := lscInstanceElement childNamed: GtLscConstants instanceNameElementId.
+	localPosition := 2@2.
+	nameElement fireEvent: (BlMouseUpEvent new button: BlMouseButton secondary; position: (nameElement localPointToGlobal: localPosition) ).
+	
+	self assert: (lscInstanceElement allParentsDetect: [ :aParent | aParent childNamed: #GtLscInstanceEditorElement ifFound: [ :element | true ] ifNone: [ false ]  ] ifFound: [ :detectedParent | true ] ifNone: [ false ]). 
+	
+	^ lscInstance
+]
+
+{ #category : #'examples - ui' }
 GtLscContextMenuElementScripterExamples >> pipelineLscInstanceChangeTemperature [
 	"Check that ui temperature change update the model"
 	

@@ -38,6 +38,7 @@ GtLscInstanceEditorElement >> initialize [
 		hFitContent;
 		vFitContentLimited;
 		padding: (BlInsets all: 3).
+	self id: self className.
 
 	container := self createPropertiesEditorContainer.
 	
