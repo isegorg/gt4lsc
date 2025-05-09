@@ -1,8 +1,8 @@
 Class {
 	#name : #GtLscRemoveInstanceButtonMenuItem,
 	#superclass : #GtLscButtonMenuItem,
-	#traits : 'TGtLscWithInstanceInLsc + TGtLscMenuItemWithLabel + TGtLscMenuItemWithVisibility',
-	#classTraits : 'TGtLscWithInstanceInLsc classTrait + TGtLscMenuItemWithLabel classTrait + TGtLscMenuItemWithVisibility classTrait',
+	#traits : 'TGtLscWithInstanceInLsc + TGtLscMenuItemWithLabel + TGtLscMenuItemWithVisibility + TGtLscMenuItemWithIcon + TGtLscMenuItemWithAptitude',
+	#classTraits : 'TGtLscWithInstanceInLsc classTrait + TGtLscMenuItemWithLabel classTrait + TGtLscMenuItemWithVisibility classTrait + TGtLscMenuItemWithIcon classTrait + TGtLscMenuItemWithAptitude classTrait',
 	#category : #'Gt4LscContextMenu-! Items'
 }
 
@@ -14,7 +14,9 @@ GtLscRemoveInstanceButtonMenuItem >> doClickAction [
 
 { #category : #initialization }
 GtLscRemoveInstanceButtonMenuItem >> initialize [
+	self aptitudes: BrGlamorousButtonWithIconAptitude.
 	self label: GtLscConstants removeInstanceButtonLabel.
+	self icon: BrGlamorousIcons trash.
 	self visibility: BlVisibility visible
 ]
 

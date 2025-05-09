@@ -26,7 +26,6 @@ GtLscButtonElement >> initialize [
 	self
 		fitContent;
 		beSmallSize;
-		aptitude: BrGlamorousButtonWithLabelAptitude new;
 		margin: (BlInsets
 				top: 0
 				left: 3
@@ -37,6 +36,14 @@ GtLscButtonElement >> initialize [
 { #category : #'events handling' }
 GtLscButtonElement >> onActionChanged [
 	self action: [ self model doClickAction ]
+]
+
+{ #category : #'events handling' }
+GtLscButtonElement >> onAptitudesChanged [
+	"Update aptitudes if model has #aptitudes message. Use TGtLscMenuItemWithAptitudes in item"
+	
+	(self model respondsTo: #aptitudes) ifFalse: [ ^ self ].
+	self aptitude: self model aptitudes
 ]
 
 { #category : #'events handling' }
@@ -61,7 +68,8 @@ GtLscButtonElement >> onModelChanged [
 	
 	self onActionChanged.
 	
-	"For label, icon and visibility to be updated, the item must use TGtLscMenuItemWithLabel, TGtLscMenuItemWithIcon and TGtLscMenuItemWithVisibility respectively."
+	"For aptitudes, label, icon and visibility to be updated, the item must use TGtLscMenuItemWithAptitude, TGtLscMenuItemWithLabel, TGtLscMenuItemWithIcon and TGtLscMenuItemWithVisibility respectively."
+	self onAptitudesChanged.
 	self onLabelChanged.
 	self onIconChanged.
 	self onVisibilityChanged
@@ -81,6 +89,10 @@ GtLscButtonElement >> subscribeToModel [
 	It is required to unsubscribe from the model by implementing
 	#unsubscribeFromModel if receiver subscribes to them"
 
+	self model weak
+		when: GtLscAptitudesChanged
+		send: #onAptitudesChanged
+		to: self.
 	self model weak
 		when: GtLscLabelChanged
 		send: #onLabelChanged
