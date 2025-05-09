@@ -21,3 +21,8 @@ GtLscConstants class >> pickerCellSpacing [
 GtLscConstants class >> pickerColumnCount [
 	^ 8
 ]
+
+{ #category : #'*Gt4LscContextMenu' }
+GtLscConstants class >> removeInstanceButtonLabel [
+	^ 'Remove'
+]
