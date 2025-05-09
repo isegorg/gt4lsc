@@ -13,6 +13,11 @@ GtLscConstants class >> contextMenuPreferredExtent [
 ]
 
 { #category : #'*Gt4LscContextMenu' }
+GtLscConstants class >> moveInstanceRightButtonLabel [
+	^ 'Move Right'
+]
+
+{ #category : #'*Gt4LscContextMenu' }
 GtLscConstants class >> pickerCellSpacing [
 	^ 3
 ]
