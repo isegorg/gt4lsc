@@ -1,0 +1,161 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-09T18:45:19.110493+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMoveInstanceRightButtonMenuItem,
+				#isMetaSide : false
+			},
+			#name : #initialize,
+			#protocol : #initialization,
+			#sourceCode : 'initialize\r\tself aptitudes: BrGlamorousButtonWithIconAptitude.\r\tself label: GtLscConstants moveInstanceRightButtonLabel.\r\tself icon: BrGlamorousIcons right.\r\tself visibility: BlVisibility visible',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-09T18:45:19.110493+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMoveInstanceRightButtonMenuItem,
+				#isMetaSide : false
+			},
+			#name : #onModelChanged,
+			#protocol : #'api - model',
+			#sourceCode : 'onModelChanged\r\t"Is sent when a new model is assigned to the receiver"\r\t\r\t"The model (lsc) can not be changed to another if lsc instance is not in it"\r\tself checkInstance: lscInstanceModel isInLsc: model.\r\tself onVisibilityChanged',
+			#stamp : 'GlamorousAuthor 5/9/2025 20:09',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-09T18:45:19.110493+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMoveInstanceRightButtonMenuItem,
+				#isMetaSide : false
+			},
+			#name : #onVisibilityChanged,
+			#protocol : #'events handling',
+			#sourceCode : 'onVisibilityChanged\r\tself checkInstanceInRightLimit ifFalse: [ ^ self ].\r\tself visibility: BlVisibility gone',
+			#stamp : 'GlamorousAuthor 5/9/2025 20:09',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-09T18:45:19.110493+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMoveInstanceRightButtonMenuItem,
+				#isMetaSide : false
+			},
+			#name : #checkInstanceInRightLimit,
+			#protocol : #checking,
+			#sourceCode : 'checkInstanceInRightLimit\r\t^ (model instances indexOf: lscInstanceModel) = model instancesSize',
+			#stamp : 'GlamorousAuthor 5/9/2025 20:11',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-09T18:45:19.110493+02:00' ],
+		#prior : OmReference [ '4' ],
+		#self : OmReference [ '5' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMoveInstanceRightButtonMenuItem,
+				#isMetaSide : false
+			},
+			#name : #subscribeToModel,
+			#protocol : #'api - model',
+			#sourceCode : 'subscribeToModel\r\t"Is sent after a new model is assigned to the receiver.\r\tIt is required to unsubscribe from the model by implementing\r\t#unsubscribeFromModel if receiver subscribes to them"\r\t\r\tself model weak\r\t\twhen: (GtLscInstanceModelRemoved\r\t\t\t\twhere: [ :ann | ann lscInstanceModel id = lscInstanceModel id ])\r\t\tsend: #onLscInstanceRemoved\r\t\tto: self.\r\tself model weak\r\t\twhen: (GtLscInstanceModelRemoved\r\t\t\t\twhere: [ :ann | (ann lscInstanceModel id = lscInstanceModel id) not ])\r\t\tsend: #onVisibilityChanged\r\t\tto: self.\r\tself model weak\r\t\twhen: GtLscInstanceModelWithPositionAnnouncement\r\t\tsend: #onVisibilityChanged\r\t\tto: self.\r\t\t',
+			#stamp : 'GlamorousAuthor 5/9/2025 20:13',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-09T18:45:19.110493+02:00' ],
+		#prior : OmReference [ '5' ],
+		#self : OmReference [ '6' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMoveInstanceRightButtonMenuItem,
+				#isMetaSide : false
+			},
+			#name : #onLscInstanceRemoved,
+			#protocol : #'events handling',
+			#sourceCode : 'onLscInstanceRemoved\r\tself visibility: BlVisibility gone',
+			#stamp : 'GlamorousAuthor 5/9/2025 20:13',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-09T18:45:19.110493+02:00' ],
+		#prior : OmReference [ '6' ],
+		#self : OmReference [ '7' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMoveInstanceRightButtonMenuItem,
+				#isMetaSide : false
+			},
+			#name : #unsubscribeFromModel,
+			#protocol : #'api - model',
+			#sourceCode : 'unsubscribeFromModel\r\t"Is sent before a new model is assigned to the receiver.\r\tReceivers that subscribe to model are required to implement this methods"\r\t\r\tself model unsubscribe: self',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-09T18:45:19.110493+02:00' ],
+		#prior : OmReference [ '7' ],
+		#self : OmReference [ '8' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMoveInstanceRightButtonMenuItem,
+				#isMetaSide : false
+			},
+			#name : #doClickAction,
+			#protocol : #api,
+			#sourceCode : 'doClickAction\r\t"The action to be executed when its view is clicked (BlClickEvent)"\r\t| instancePosition |\r\tinstancePosition := model instances indexOf: lscInstanceModel.\r\tmodel moveInstanceFromPosition: instancePosition to: instancePosition + 1',
+			#stamp : 'GlamorousAuthor 5/9/2025 20:24',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}

@@ -967,7 +967,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-05-09T16:13:12.434396+02:00"
+												"dateAndTimeString" : "2025-05-09T16:13:13.478928+02:00"
 											}
 										},
 										"uid" : {
@@ -977,7 +977,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "[[Move Instance"
+										"string" : "[[Move Instance]]"
 									}
 								]
 							},
