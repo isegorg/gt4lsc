@@ -13,7 +13,7 @@ OmEntry {
 			},
 			#name : #visibility,
 			#protocol : #accessing,
-			#sourceCode : 'visibility\r\t^ visibility',
+			#sourceCode : 'visibility\r\t^ visibility ifNil: [ visibility := self class defaultVisibility ]',
 			#stamp : '',
 			#package : #Gt4LscContextMenu
 		}
@@ -54,6 +54,26 @@ OmEntry {
 			#name : #notifyVisibilityChanged,
 			#protocol : #'events generation',
 			#sourceCode : 'notifyVisibilityChanged\r\tself announce: GtLscVisibilityChanged new',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-08T21:07:05.13306+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'TGtLscMenuItemWithVisibility classTrait',
+				#isMetaSide : true
+			},
+			#name : #defaultVisibility,
+			#protocol : #'default values',
+			#sourceCode : 'defaultVisibility\r\t"Overwrite with the visibility initialization value"\r\tself explicitRequirement',
 			#stamp : '',
 			#package : #Gt4LscContextMenu
 		}

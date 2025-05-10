@@ -1621,6 +1621,43 @@
 																										"__type" : "time",
 																										"time" : {
 																											"__type" : "dateAndTime",
+																											"dateAndTimeString" : "2025-05-10T08:59:01.429569+02:00"
+																										}
+																									},
+																									"editEmail" : {
+																										"__type" : "email",
+																										"emailString" : "<unknown>"
+																									},
+																									"editTime" : {
+																										"__type" : "time",
+																										"time" : {
+																											"__type" : "dateAndTime",
+																											"dateAndTimeString" : "2025-05-10T08:59:12.291228+02:00"
+																										}
+																									},
+																									"uid" : {
+																										"__type" : "uid",
+																										"uidString" : "oSIZVyTxDQCYnuTWCS3JBg=="
+																									},
+																									"paragraphStyle" : {
+																										"__type" : "textStyle"
+																									},
+																									"string" : "Users must implement {{gtMethod:TGtLscMenuItemWithAptitude class>>defaultAptitudes}} to initialize its value."
+																								},
+																								{
+																									"__type" : "textSnippet",
+																									"children" : {
+																										"__type" : "snippets",
+																										"items" : [ ]
+																									},
+																									"createEmail" : {
+																										"__type" : "email",
+																										"emailString" : "<unknown>"
+																									},
+																									"createTime" : {
+																										"__type" : "time",
+																										"time" : {
+																											"__type" : "dateAndTime",
 																											"dateAndTimeString" : "2025-05-09T18:46:41.150437+02:00"
 																										}
 																									},
@@ -1818,6 +1855,43 @@
 																							"__type" : "textStyle"
 																						},
 																						"string" : "It has a slot for the label, its getter and a setter that notifies its change if a different label is set than the one it has."
+																					},
+																					{
+																						"__type" : "textSnippet",
+																						"children" : {
+																							"__type" : "snippets",
+																							"items" : [ ]
+																						},
+																						"createEmail" : {
+																							"__type" : "email",
+																							"emailString" : "<unknown>"
+																						},
+																						"createTime" : {
+																							"__type" : "time",
+																							"time" : {
+																								"__type" : "dateAndTime",
+																								"dateAndTimeString" : "2025-05-10T09:02:19.521133+02:00"
+																							}
+																						},
+																						"editEmail" : {
+																							"__type" : "email",
+																							"emailString" : "<unknown>"
+																						},
+																						"editTime" : {
+																							"__type" : "time",
+																							"time" : {
+																								"__type" : "dateAndTime",
+																								"dateAndTimeString" : "2025-05-10T09:02:36.019552+02:00"
+																							}
+																						},
+																						"uid" : {
+																							"__type" : "uid",
+																							"uidString" : "0N6WZiTxDQCZUQBxCS3JBg=="
+																						},
+																						"paragraphStyle" : {
+																							"__type" : "textStyle"
+																						},
+																						"string" : "Users must implement {{gtMethod:TGtLscMenuItemWithLabel class>>defaultLabel}} to initialize its value."
 																					},
 																					{
 																						"__type" : "textSnippet",
@@ -2360,7 +2434,7 @@
 																							"__type" : "uid",
 																							"uidString" : "9hphU9zwDQChV8twCIfjug=="
 																						},
-																						"previewHeight" : 367.1549072265625,
+																						"previewHeight" : 739.4985961914064,
 																						"fileName" : "attachments/b2bahmplpjhbqpgbqdufdhqf6/changes-snippets-createRemoveInstanceButtonMenuItem.ombu"
 																					}
 																				]
@@ -2384,7 +2458,7 @@
 																				"__type" : "time",
 																				"time" : {
 																					"__type" : "dateAndTime",
-																					"dateAndTimeString" : "2025-05-08T22:08:56.761096+02:00"
+																					"dateAndTimeString" : "2025-05-10T09:15:23.115488+02:00"
 																				}
 																			},
 																			"uid" : {
@@ -2394,7 +2468,7 @@
 																			"paragraphStyle" : {
 																				"__type" : "textStyle"
 																			},
-																			"string" : "We initialize setting the label and as visible."
+																			"string" : "We initialize the default values for aptitudes, label, icon and visibility."
 																		},
 																		{
 																			"__type" : "textSnippet",

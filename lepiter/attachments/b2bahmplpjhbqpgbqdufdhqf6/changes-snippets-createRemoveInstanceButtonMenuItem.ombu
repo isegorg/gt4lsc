@@ -8,22 +8,83 @@ OmEntry {
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
 			#annotations : IdentityDictionary {
-				#className : #GtLscRemoveInstanceButtonMenuItem,
-				#isMetaSide : false
+				#className : #'GtLscRemoveInstanceButtonMenuItem class',
+				#isMetaSide : true
 			},
-			#name : #initialize,
-			#protocol : #initialization,
-			#sourceCode : 'initialize\r\tself aptitudes: BrGlamorousButtonWithIconAptitude.\r\tself label: GtLscConstants removeInstanceButtonLabel.\r\tself icon: BrGlamorousIcons trash.\r\tself visibility: BlVisibility visible',
+			#name : #defaultAptitudes,
+			#protocol : #'default values',
+			#sourceCode : 'defaultAptitudes\r\t"overwrite with the aptitudes initialization value"\r\t^ BrGlamorousButtonWithIconAptitude',
 			#stamp : '',
 			#package : #Gt4LscContextMenu
 		}
 	}
-}OmEntry {
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-08T21:07:05.13306+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscRemoveInstanceButtonMenuItem class',
+				#isMetaSide : true
+			},
+			#name : #defaultLabel,
+			#protocol : #'default values',
+			#sourceCode : 'defaultLabel\r\t"Overwrite with the label initialization value"\r\t^ GtLscConstants removeInstanceButtonLabel',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-05-08T21:07:05.13306+02:00' ],
 		#prior : OmReference [ '2' ],
 		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscRemoveInstanceButtonMenuItem class',
+				#isMetaSide : true
+			},
+			#name : #defaultIcon,
+			#protocol : #'default values',
+			#sourceCode : 'defaultIcon\r\t"Overwrite with the icon initialization value"\r\t^ BrGlamorousIcons trash',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-08T21:07:05.13306+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscRemoveInstanceButtonMenuItem class',
+				#isMetaSide : true
+			},
+			#name : #defaultVisibility,
+			#protocol : #'default values',
+			#sourceCode : 'defaultVisibility\r\t"Overwrite with the visibility initialization value"\r\t^ BlVisibility visible',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-08T21:07:05.13306+02:00' ],
+		#prior : OmReference [ '4' ],
+		#self : OmReference [ '5' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {

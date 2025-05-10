@@ -13,7 +13,7 @@ OmEntry {
 			},
 			#name : #label,
 			#protocol : #accessing,
-			#sourceCode : 'label\r\t^ label',
+			#sourceCode : 'label\r\t^ label ifNil: [ label := self class defaultLabel]',
 			#stamp : '',
 			#package : #Gt4LscContextMenu
 		}
@@ -55,6 +55,26 @@ OmEntry {
 			#protocol : #accessing,
 			#sourceCode : 'notifyLabelChanged\r\tself announce: GtLscLabelChanged new',
 			#stamp : 'GlamorousAuthor 5/8/2025 20:53',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-08T21:07:05.13306+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'TGtLscMenuItemWithLabel classTrait',
+				#isMetaSide : true
+			},
+			#name : #defaultLabel,
+			#protocol : #'default values',
+			#sourceCode : 'defaultLabel\r\t"Overwrite with the label initialization value"\r\tself explicitRequirement',
+			#stamp : '',
 			#package : #Gt4LscContextMenu
 		}
 	}

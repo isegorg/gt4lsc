@@ -13,7 +13,7 @@ OmEntry {
 			},
 			#name : #icon,
 			#protocol : #accessing,
-			#sourceCode : 'icon\r\t^ icon',
+			#sourceCode : 'icon\r\t^ icon ifNil: [ icon := self class defaultIcon ]',
 			#stamp : '',
 			#package : #Gt4LscContextMenu
 		}
@@ -55,6 +55,26 @@ OmEntry {
 			#protocol : #'events generation',
 			#sourceCode : 'notifyIconChanged\r\tself announce: GtLscIconChanged new',
 			#stamp : 'GlamorousAuthor 5/8/2025 21:27',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-08T21:07:05.13306+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'TGtLscMenuItemWithIcon classTrait',
+				#isMetaSide : true
+			},
+			#name : #defaultIcon,
+			#protocol : #'default values',
+			#sourceCode : 'defaultIcon\r\t"Overwrite with the icon initialization value"\r\tself explicitRequirement',
+			#stamp : '',
 			#package : #Gt4LscContextMenu
 		}
 	}
