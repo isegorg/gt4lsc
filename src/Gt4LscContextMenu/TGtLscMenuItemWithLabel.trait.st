@@ -6,9 +6,15 @@ Trait {
 	#category : #'Gt4LscContextMenu-! Items'
 }
 
+{ #category : #'default values' }
+TGtLscMenuItemWithLabel classSide >> defaultLabel [
+	"Overwrite with the label initialization value"
+	self explicitRequirement
+]
+
 { #category : #accessing }
 TGtLscMenuItemWithLabel >> label [
-	^ label
+	^ label ifNil: [ label := self class defaultLabel]
 ]
 
 { #category : #accessing }

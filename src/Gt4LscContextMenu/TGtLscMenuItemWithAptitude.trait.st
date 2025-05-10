@@ -6,9 +6,15 @@ Trait {
 	#category : #'Gt4LscContextMenu-! Items'
 }
 
+{ #category : #'default values' }
+TGtLscMenuItemWithAptitude classSide >> defaultAptitudes [
+	"overwrite with the aptitudes initialization value"
+	self explicitRequirement
+]
+
 { #category : #accessing }
 TGtLscMenuItemWithAptitude >> aptitudes [
-	^ aptitudes
+	^ aptitudes ifNil: [ aptitudes := self class defaultAptitudes ]
 ]
 
 { #category : #accessing }

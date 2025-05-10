@@ -6,9 +6,15 @@ Trait {
 	#category : #'Gt4LscContextMenu-! Items'
 }
 
+{ #category : #'default values' }
+TGtLscMenuItemWithIcon classSide >> defaultIcon [
+	"Overwrite with the icon initialization value"
+	self explicitRequirement
+]
+
 { #category : #accessing }
 TGtLscMenuItemWithIcon >> icon [
-	^ icon
+	^ icon ifNil: [ icon := self class defaultIcon ]
 ]
 
 { #category : #accessing }

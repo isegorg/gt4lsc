@@ -6,18 +6,34 @@ Class {
 	#category : #'Gt4LscContextMenu-! Items'
 }
 
+{ #category : #'default values' }
+GtLscRemoveInstanceButtonMenuItem class >> defaultAptitudes [
+	"overwrite with the aptitudes initialization value"
+	^ BrGlamorousButtonWithIconAptitude
+]
+
+{ #category : #'default values' }
+GtLscRemoveInstanceButtonMenuItem class >> defaultIcon [
+	"Overwrite with the icon initialization value"
+	^ BrGlamorousIcons trash
+]
+
+{ #category : #'default values' }
+GtLscRemoveInstanceButtonMenuItem class >> defaultLabel [
+	"Overwrite with the label initialization value"
+	^ GtLscConstants removeInstanceButtonLabel
+]
+
+{ #category : #'default values' }
+GtLscRemoveInstanceButtonMenuItem class >> defaultVisibility [
+	"Overwrite with the visibility initialization value"
+	^ BlVisibility visible
+]
+
 { #category : #api }
 GtLscRemoveInstanceButtonMenuItem >> doClickAction [
 	"The action to be executed when its view is clicked (BlClickEvent)"
 	model removeInstance: lscInstanceModel
-]
-
-{ #category : #initialization }
-GtLscRemoveInstanceButtonMenuItem >> initialize [
-	self aptitudes: BrGlamorousButtonWithIconAptitude.
-	self label: GtLscConstants removeInstanceButtonLabel.
-	self icon: BrGlamorousIcons trash.
-	self visibility: BlVisibility visible
 ]
 
 { #category : #'events handling' }

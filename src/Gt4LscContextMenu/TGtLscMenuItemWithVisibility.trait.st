@@ -6,6 +6,12 @@ Trait {
 	#category : #'Gt4LscContextMenu-! Items'
 }
 
+{ #category : #'default values' }
+TGtLscMenuItemWithVisibility classSide >> defaultVisibility [
+	"Overwrite with the visibility initialization value"
+	self explicitRequirement
+]
+
 { #category : #'events generation' }
 TGtLscMenuItemWithVisibility >> notifyVisibilityChanged [
 	self announce: GtLscVisibilityChanged new
@@ -13,7 +19,7 @@ TGtLscMenuItemWithVisibility >> notifyVisibilityChanged [
 
 { #category : #accessing }
 TGtLscMenuItemWithVisibility >> visibility [
-	^ visibility
+	^ visibility ifNil: [ visibility := self class defaultVisibility ]
 ]
 
 { #category : #accessing }
