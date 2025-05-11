@@ -1,0 +1,19 @@
+OmEntry {
+	#tags : {
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscMoveInstanceButtonMenuItem class',
+				#isMetaSide : true
+			},
+			#name : #defaultAptitudes,
+			#protocol : #'default values',
+			#sourceCode : 'defaultAptitudes\r\t"overwrite with the aptitudes initialization value"\r\t^ BrGlamorousButtonWithIconAptitude',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}

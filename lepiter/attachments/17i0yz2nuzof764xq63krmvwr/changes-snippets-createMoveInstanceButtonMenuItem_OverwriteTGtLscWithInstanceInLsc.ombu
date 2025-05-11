@@ -1,0 +1,121 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-10T11:23:40.397944+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMoveInstanceButtonMenuItem,
+				#isMetaSide : false
+			},
+			#name : #onModelChanged,
+			#protocol : #'api - model',
+			#sourceCode : 'onModelChanged\r\t"Is sent when a new model is assigned to the receiver"\r\t\r\t"The model (lsc) can not be changed to another if lsc instance is not in it"\r\tself checkInstance: lscInstanceModel isInLsc: model.\r\tself onInstancePositionsChanged',
+			#stamp : 'GlamorousAuthor 5/10/2025 11:20',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-10T11:23:40.397944+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMoveInstanceButtonMenuItem,
+				#isMetaSide : false
+			},
+			#name : #onInstancePositionsChanged,
+			#protocol : #'events handling',
+			#sourceCode : 'onInstancePositionsChanged\r\t"If not visible, dont participate on layout"\r\tself\r\t\tvisibility: (self checkVisibilityCondition\r\t\t\t\tifTrue: [ BlVisibility visible ]\r\t\t\t\tifFalse: [ BlVisibility gone ])',
+			#stamp : 'GlamorousAuthor 5/10/2025 11:21',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-10T11:23:40.397944+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMoveInstanceButtonMenuItem,
+				#isMetaSide : false
+			},
+			#name : #subscribeToModel,
+			#protocol : #'api - model',
+			#sourceCode : 'subscribeToModel\r\t"Is sent after a new model is assigned to the receiver.\r\tIt is required to unsubscribe from the model by implementing\r\t#unsubscribeFromModel if receiver subscribes to them"\r\r\tself model weak\r\t\twhen: (GtLscInstanceModelRemoved\r\t\t\t\twhere: [ :ann | ann lscInstanceModel id = lscInstanceModel id ])\r\t\tsend: #onLscInstanceRemoved\r\t\tto: self.\r\tself model weak\r\t\twhen: (GtLscInstanceModelRemoved\r\t\t\t\twhere: [ :ann | (ann lscInstanceModel id = lscInstanceModel id) not ])\r\t\tsend: #onInstancePositionsChanged\r\t\tto: self.\r\tself model weak\r\t\twhen: GtLscInstanceModelWithPositionAnnouncement\r\t\tsend: #onInstancePositionsChanged\r\t\tto: self.',
+			#stamp : 'GlamorousAuthor 5/10/2025 11:21',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-10T11:23:40.397944+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMoveInstanceButtonMenuItem,
+				#isMetaSide : false
+			},
+			#name : #onLscInstanceRemoved,
+			#protocol : #'events handling',
+			#sourceCode : 'onLscInstanceRemoved\r\tself visibility: BlVisibility gone.\r\tself unsubscribeFromModel',
+			#stamp : 'GlamorousAuthor 5/10/2025 11:22',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-10T11:23:40.397944+02:00' ],
+		#prior : OmReference [ '4' ],
+		#self : OmReference [ '5' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMoveInstanceButtonMenuItem,
+				#isMetaSide : false
+			},
+			#name : #unsubscribeFromModel,
+			#protocol : #'api - model',
+			#sourceCode : 'unsubscribeFromModel\r\t"Is sent before a new model is assigned to the receiver.\r\tReceivers that subscribe to model are required to implement this methods"\r\t\r\tself model unsubscribe: self',
+			#stamp : 'GlamorousAuthor 5/10/2025 11:23',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-10T11:23:40.397944+02:00' ],
+		#prior : OmReference [ '5' ],
+		#self : OmReference [ '6' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMoveInstanceButtonMenuItem,
+				#isMetaSide : false
+			},
+			#name : #checkVisibilityCondition,
+			#protocol : #checking,
+			#sourceCode : 'checkVisibilityCondition\r\t<return: #Bollean>\r\t"Return true it must be visible or false in other case"',
+			#stamp : 'GlamorousAuthor 5/10/2025 11:29',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}

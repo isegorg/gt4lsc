@@ -2458,7 +2458,7 @@
 																				"__type" : "time",
 																				"time" : {
 																					"__type" : "dateAndTime",
-																					"dateAndTimeString" : "2025-05-10T09:15:07.685747+02:00"
+																					"dateAndTimeString" : "2025-05-10T09:15:23.115488+02:00"
 																				}
 																			},
 																			"uid" : {
@@ -2468,7 +2468,7 @@
 																			"paragraphStyle" : {
 																				"__type" : "textStyle"
 																			},
-																			"string" : "We initialize the default values for aptitudes, label, icon and as visible."
+																			"string" : "We initialize the default values for aptitudes, label, icon and visibility."
 																		},
 																		{
 																			"__type" : "textSnippet",

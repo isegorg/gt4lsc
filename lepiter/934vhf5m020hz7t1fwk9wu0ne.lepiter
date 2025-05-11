@@ -310,6 +310,152 @@
 											"__type" : "textStyle"
 										},
 										"string" : "It will inherit from {{gtClass:GtLscButtonMenuItem}} and use the {{gtClass:TGtLscWithInstanceInLsc}}, {{gtClass:TGtLscMenuItemWithAptitude}}, {{gtClass:TGtLscMenuItemWithLabel}}, {{gtClass:TGtLscMenuItemWithIcon}} and {{gtClass:TGtLscMenuItemWithVisibility}} traits."
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [
+												{
+													"__type" : "changesSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-05-10T08:44:46.668954+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-05-10T08:44:46.668954+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "PKbVJyTxDQCTaFwFCS3JBg=="
+													},
+													"previewHeight" : 200,
+													"fileName" : "attachments/egni693kd5s4bouyzedzm78c/changes-snippets-createMoveInstanceButtonMenuItem.ombu"
+												}
+											]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-10T10:59:16.535297+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-10T11:00:08.588431+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "UwjWCCbxDQCqcNBxBhppFA=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "We define the default aptitude overwritten {{gtMethod:TGtLscMenuItemWithAptitude class>>defaultAptitudes}}."
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [
+												{
+													"__type" : "changesSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-05-10T11:04:03.671546+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-05-10T11:04:03.671546+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "+GPzGSbxDQCs4X8HBhppFA=="
+													},
+													"previewHeight" : 1576.6004333496094,
+													"fileName" : "attachments/17i0yz2nuzof764xq63krmvwr/changes-snippets-createMoveInstanceButtonMenuItem_OverwriteTGtLscWithInstanceInLsc.ombu"
+												}
+											]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-10T11:03:54.820863+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-10T11:03:56.941724+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "9XUQDCbxDQCsQxtvBhppFA=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "We override the necessary messages from {{gtClass:TGtLscWithInstanceInLsc}}."
 									}
 								]
 							},
@@ -340,41 +486,6 @@
 								"uidString" : "yFDOGyTxDQCPTNDaCS3JBg=="
 							},
 							"code" : "GtLscButtonMenuItem subclass: #GtLscMoveInstanceButtonMenuItem\r\tuses: TGtLscWithInstanceInLsc + TGtLscMenuItemWithAptitude + TGtLscMenuItemWithLabel + TGtLscMenuItemWithIcon + TGtLscMenuItemWithVisibility\r\tinstanceVariableNames: ''\r\tclassVariableNames: ''\r\tpackage: 'Gt4LscContextMenu-! Items'."
-						},
-						{
-							"__type" : "changesSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-05-10T08:44:46.668954+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-05-10T08:44:46.668954+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "PKbVJyTxDQCTaFwFCS3JBg=="
-							},
-							"previewHeight" : 200,
-							"fileName" : "attachments/egni693kd5s4bouyzedzm78c/changes-snippets-createMoveInstanceButtonMenuItem.ombu"
 						}
 					]
 				},
@@ -413,7 +524,112 @@
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [ ]
+					"items" : [
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-09T20:04:16.005577+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-10T11:27:50.359396+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "nvoIiBnxDQCK+1ZTBWn74Q=="
+							},
+							"code" : "GtLscMoveInstanceButtonMenuItem subclass: #GtLscMoveInstanceRightButtonMenuItem\r\tinstanceVariableNames: ''\r\tclassVariableNames: ''\r\tpackage: 'Gt4LscContextMenu-! Items'."
+						},
+						{
+							"__type" : "changesSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-09T20:14:02.767965+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-09T20:14:02.767965+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "iUMCqxnxDQCLoGQVBWn74Q=="
+							},
+							"previewHeight" : 872.5059204101563,
+							"fileName" : "attachments/ddmryavcm634zih3ovy7svifp/changes-snippets-createMoveInstanceRightButtonMenuItem.ombu"
+						},
+						{
+							"__type" : "changesSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-09T20:20:12.392472+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-09T20:20:12.392472+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "SkkKwRnxDQCMKYbYBWn74Q=="
+							},
+							"previewHeight" : 200,
+							"fileName" : "attachments/ddmryavv2mei0rbcvo9y1j2t8/changes-snippets-createMoveInstanceRightButtonMenuItem_Constants.ombu"
+						}
+					]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -447,10 +663,115 @@
 				"string" : "Create Move Instance Right Button"
 			},
 			{
-				"__type" : "pharoSnippet",
+				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [ ]
+					"items" : [
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-11T09:25:23.338529+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-11T09:26:12.510489+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "Nqbp1jjxDQCiSCF7DxVWYA=="
+							},
+							"code" : "GtLscMoveInstanceButtonMenuItem subclass: #GtLscMoveInstanceLeftButtonMenuItem\r\tinstanceVariableNames: ''\r\tclassVariableNames: ''\r\tpackage: 'Gt4LscContextMenu-! Items'."
+						},
+						{
+							"__type" : "changesSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-11T09:26:19.890831+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-11T09:26:19.890831+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "/5FI2jjxDQCiobB6DxVWYA=="
+							},
+							"previewHeight" : 878.3512573242188,
+							"fileName" : "attachments/5pbj0krg2gf9sa1ww55jcht21/changes-snippets-createMoveInstanceLeftButtonMenuItem.ombu"
+						},
+						{
+							"__type" : "changesSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-11T09:33:46.070033+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-11T09:33:46.070033+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "wrng9DjxDQCi1myuDxVWYA=="
+							},
+							"previewHeight" : 200,
+							"fileName" : "attachments/5pbj0kvb6yitzyo217n4rqol5/changes-snippets-createMoveInstanceLeftButtonMenuItem_Constants.ombu"
+						}
+					]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -460,7 +781,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-05-09T20:04:16.005577+02:00"
+						"dateAndTimeString" : "2025-05-11T09:25:08.5629+02:00"
 					}
 				},
 				"editEmail" : {
@@ -471,84 +792,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-05-09T20:06:28.11073+02:00"
+						"dateAndTimeString" : "2025-05-11T09:25:18.294085+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "nvoIiBnxDQCK+1ZTBWn74Q=="
+					"uidString" : "6y4I1jjxDQCiImZuDxVWYA=="
 				},
-				"code" : "GtLscButtonMenuItem subclass: #GtLscMoveInstanceRightButtonMenuItem\r\tuses: TGtLscWithInstanceInLsc + TGtLscMenuItemWithAptitude + TGtLscMenuItemWithLabel + TGtLscMenuItemWithIcon + TGtLscMenuItemWithVisibility\r\tinstanceVariableNames: ''\r\tclassVariableNames: ''\r\tpackage: 'Gt4LscContextMenu-! Items'."
-			},
-			{
-				"__type" : "changesSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
+				"paragraphStyle" : {
+					"__type" : "textStyle"
 				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-05-09T20:14:02.767965+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-05-09T20:14:02.767965+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "iUMCqxnxDQCLoGQVBWn74Q=="
-				},
-				"previewHeight" : 1679.963134765625,
-				"fileName" : "attachments/ddmryavcm634zih3ovy7svifp/changes-snippets-createMoveInstanceRightButtonMenuItem.ombu"
-			},
-			{
-				"__type" : "changesSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-05-09T20:20:12.392472+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-05-09T20:20:12.392472+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "SkkKwRnxDQCMKYbYBWn74Q=="
-				},
-				"previewHeight" : 200,
-				"fileName" : "attachments/ddmryavv2mei0rbcvo9y1j2t8/changes-snippets-createMoveInstanceRightButtonMenuItem_Constants.ombu"
+				"string" : "Create Move Instance Left Button"
 			}
 		]
 	},
