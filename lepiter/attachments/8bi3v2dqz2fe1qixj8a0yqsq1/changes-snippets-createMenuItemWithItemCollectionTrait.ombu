@@ -1,0 +1,81 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-12T16:38:14.561167+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'TGtLscMenuItemWithItemCollection classTrait',
+				#isMetaSide : true
+			},
+			#name : #menuItemsSlot,
+			#protocol : #api,
+			#sourceCode : 'menuItemsSlot\r\t"Must return the instance var name that is user for the collection of menu items in the class that uses the trait"\r\r\tself explicitRequirement',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-12T16:38:14.561167+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #TGtLscMenuItemWithItemCollection,
+				#isMetaSide : false
+			},
+			#name : #'menuItems:',
+			#protocol : #api,
+			#sourceCode : 'menuItems: aMenuItemCollection\r\t"Set the collection of menu items contained in me"\r\r\tself instVarNamed: self class menuItemsSlot put: aMenuItemCollection',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-12T16:38:14.561167+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #TGtLscMenuItemWithItemCollection,
+				#isMetaSide : false
+			},
+			#name : #menuItems,
+			#protocol : #api,
+			#sourceCode : 'menuItems\r\t"returns the collection of menu items contained in me"\r\r\t<return: #Collection of: #GtLscMenuItem>\r\t(self instVarNamed: self class menuItemsSlot) ifNil: [ self addInitialMenuItems ].\r\t^ (self instVarNamed: self class menuItemsSlot)',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-12T16:38:14.561167+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #TGtLscMenuItemWithItemCollection,
+				#isMetaSide : false
+			},
+			#name : #addInitialMenuItems,
+			#protocol : #api,
+			#sourceCode : 'addInitialMenuItems\r\t"Add initial menu items"\r\r\tself explicitRequirement',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}

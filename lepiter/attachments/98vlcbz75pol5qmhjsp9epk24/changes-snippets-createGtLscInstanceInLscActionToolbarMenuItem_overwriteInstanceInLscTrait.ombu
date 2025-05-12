@@ -1,0 +1,21 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-12T16:38:14.561167+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceInLscActionToolbarMenuItem,
+				#isMetaSide : false
+			},
+			#name : #onModelChanged,
+			#protocol : #'api - model',
+			#sourceCode : 'onModelChanged\r\t"Is sent when a new model is assigned to the receiver"\r\t\r\t"The model (lsc) can not be changed to another if lsc instance is not in it"\r\tself checkInstance: lscInstanceModel isInLsc: model.\r\tself updateMenuItems',
+			#stamp : 'GlamorousAuthor 5/12/2025 18:20',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}
