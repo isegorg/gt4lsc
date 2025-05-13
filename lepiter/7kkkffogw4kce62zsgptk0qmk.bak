@@ -843,14 +843,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-04-30T12:52:15.225155+02:00"
+												"dateAndTimeString" : "2025-05-13T10:53:43.588221+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "k1WIts/vDQCZOJAUBzL7+Q=="
 										},
-										"code" : "\"Create a temporal file\"\routputFile := FileReference newTempFilePrefix: 'changes-snippets-' suffix: OmFileStore defaultFileSuffix.\routputFile ensureCreateFile."
+										"code" : "\"Create a temporal file\"\rdescription := 'createGtLscInstanceInLscActionToolbarMenuItem_updateMenuItems'.\rsuffix := OmFileStore defaultFileSuffix.\rtmpDir := FileLocator temp asFileReference.\r\r[ fileName := 'changes-snippets-' , description , suffix.\r(tmpDir / fileName) exists ] whileTrue.\routputFile := tmpDir / fileName.\routputFile ensureCreateFile"
 									},
 									{
 										"__type" : "pharoSnippet",
@@ -1059,7 +1059,7 @@
 														"__type" : "time",
 														"time" : {
 															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2025-04-30T13:04:16.896297+02:00"
+															"dateAndTimeString" : "2025-05-13T10:56:19.625673+02:00"
 														}
 													},
 													"uid" : {
@@ -1069,7 +1069,7 @@
 													"paragraphStyle" : {
 														"__type" : "textStyle"
 													},
-													"string" : "Get the change snippet via its filename"
+													"string" : "Get the change snippet via its filename in database"
 												},
 												{
 													"__type" : "pharoSnippet",
