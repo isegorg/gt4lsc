@@ -1,0 +1,33 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-14T18:17:14.486309+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModelExamples,
+				#isMetaSide : false
+			},
+			#name : #newLsc,
+			#protocol : #'examples - model',
+			#sourceCode : 'newLsc\r\t<gtExample>\r\t| lsc |\r\tlsc := GtLscModel new.\r\tself assert: lsc title equals: GtLscModel defaultTitle.\r\tself assert: lsc instancesSize equals: 0.\r\t^ lsc',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModelExamples,
+				#isMetaSide : false
+			},
+			#name : #newLsc,
+			#protocol : #'examples - model',
+			#sourceCode : 'newLsc\r\t<gtExample>\r\t| lsc |\r\tlsc := GtLscModel new.\r\tself assert: lsc title equals: GtLscModel defaultTitle.\r\tself assert: lsc instancesSize equals: 0.\r\tself assert: lsc messagesSize equals: 0.\r\t^ lsc',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}
