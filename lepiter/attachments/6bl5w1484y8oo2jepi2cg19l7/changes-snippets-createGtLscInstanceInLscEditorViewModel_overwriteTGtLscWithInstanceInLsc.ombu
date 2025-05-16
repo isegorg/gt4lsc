@@ -1,0 +1,41 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-16T13:19:06.878639+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceInLscEditorViewModel,
+				#isMetaSide : false
+			},
+			#name : #'lscInstance:inLsc:',
+			#protocol : #'instance creation',
+			#sourceCode : 'lscInstance: aGtLscInstanceModel inLsc: aGtLscModel\r\tself checkInstance: aGtLscInstanceModel isInLsc: aGtLscModel.\r\tself addActionsForInstance: aGtLscInstanceModel inLsc: aGtLscModel.\r\tmodel := aGtLscModel.\r\tself lscInstanceModel: aGtLscInstanceModel',
+			#stamp : 'GlamorousAuthor 5/16/2025 13:16',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-16T13:19:06.878639+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceInLscEditorViewModel,
+				#isMetaSide : false
+			},
+			#name : #'addActionsForInstance:inLsc:',
+			#protocol : #initialization,
+			#sourceCode : 'addActionsForInstance: aGtLscInstanceModel inLsc: aGtLscModel\r\tcontextMenuItems\r\t\tadd: (GtLscInstanceInLscActionToolbarMenuItem\r\t\t\t\tforInstance: aGtLscInstanceModel\r\t\t\t\tinLsc: aGtLscModel)',
+			#stamp : 'GlamorousAuthor 5/16/2025 13:16',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}
