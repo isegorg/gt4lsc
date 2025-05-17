@@ -9,7 +9,7 @@ GtLscInstanceElement >> addContextMenu [
 			childElement
 				addAptitude: ((BrGlamorousWithContextMenuAptitude
 						handle: [ GtLscConstants contextMenuHandler ]
-						content: [ GtLscInstanceEditorElement forModel: instanceModel ])
+						content: [ self instanceEditorElement ])
 						preferredExtent: GtLscConstants contextMenuPreferredExtent) ]
 ]
 
@@ -17,6 +17,21 @@ GtLscInstanceElement >> addContextMenu [
 GtLscInstanceElement >> childWithEditor [
 	"Child elements collection to which the aptitude will be added to display the context menu by right-clicking on them."
 	^ {nameElement . locationElement}
+]
+
+{ #category : #'*Gt4LscContextMenu' }
+GtLscInstanceElement >> instanceEditorElement [
+	| instanceModel |
+	instanceModel := self lscInstanceViewModel lscInstanceModel.
+	instanceModel hasId
+		ifFalse: [ ^ GtLscInstanceEditorElement forModel: instanceModel ].
+	^ self
+		allParentsDetect: [ :eachParent | eachParent isKindOf: GtLscElement ]
+		ifFound: [ :lscElement | 
+			| lscModel |
+			lscModel := lscElement lscViewModel lscModel.
+			GtLscInstanceEditorElement forInstance: instanceModel inLsc: lscModel ]
+		ifNone: [ GtLscInstanceEditorElement forModel: instanceModel ]
 ]
 
 { #category : #'*Gt4LscContextMenu' }

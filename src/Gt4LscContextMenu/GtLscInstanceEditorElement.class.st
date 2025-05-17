@@ -10,6 +10,12 @@ Class {
 }
 
 { #category : #'instance creation' }
+GtLscInstanceEditorElement class >> forInstance: aLscInstanceModel inLsc: aLscModel [
+	^ self basicNew initialize
+		lscInstanceViewModel: (GtLscInstanceInLscEditorViewModel forInstance: aLscInstanceModel inLsc: aLscModel)
+]
+
+{ #category : #'instance creation' }
 GtLscInstanceEditorElement class >> forModel: aLscInstanceModel [
 	^ self basicNew initialize
 		lscInstanceViewModel: (GtLscInstanceEditorViewModel new lscInstanceModel: aLscInstanceModel)
