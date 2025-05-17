@@ -71,7 +71,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-05-16T14:37:10.917624+02:00"
+									"dateAndTimeString" : "2025-05-16T14:37:36.912925+02:00"
 								}
 							},
 							"uid" : {
@@ -81,7 +81,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Hacer lo mismo con otras clases de items como {{gtClass:GtLscTemperaturePickerMenuItem}}"
+							"string" : "Hacer lo mismo con otras clases de items como {{gtClass:GtLscTemperaturePickerMenuItem}} y {{gtClass:GtLscInstanceInLscActionToolbarMenuItem}}"
 						}
 					]
 				},
@@ -216,6 +216,43 @@
 														"__type" : "time",
 														"time" : {
 															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-05-16T14:11:36.427631+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-05-17T13:18:36.799966+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "uQ+3a6HxDQCbONrWAcTIag=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "We use the direct assignment to *model* ({{gtClass:GtLscModel}}), cause the {{gtClass:GtLscInstanceInLscActionToolbarMenuItem}} is already initializated and we do not need the first {{gtMethod:TGtLscWithInstanceInLsc>>onModelChanged}}."
+												},
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
 															"dateAndTimeString" : "2025-05-16T13:42:36.478044+02:00"
 														}
 													},
@@ -238,43 +275,6 @@
 														"__type" : "textStyle"
 													},
 													"string" : "We use {{gtMethod:GtLscInstanceEditorViewModel>>lscInstanceModel}} instead of direct assignment to trigger the update of the rest of the items that have it as a model."
-												},
-												{
-													"__type" : "textSnippet",
-													"children" : {
-														"__type" : "snippets",
-														"items" : [ ]
-													},
-													"createEmail" : {
-														"__type" : "email",
-														"emailString" : "<unknown>"
-													},
-													"createTime" : {
-														"__type" : "time",
-														"time" : {
-															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2025-05-16T14:11:36.427631+02:00"
-														}
-													},
-													"editEmail" : {
-														"__type" : "email",
-														"emailString" : "<unknown>"
-													},
-													"editTime" : {
-														"__type" : "time",
-														"time" : {
-															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2025-05-16T14:14:25.675806+02:00"
-														}
-													},
-													"uid" : {
-														"__type" : "uid",
-														"uidString" : "uQ+3a6HxDQCbONrWAcTIag=="
-													},
-													"paragraphStyle" : {
-														"__type" : "textStyle"
-													},
-													"string" : "We use the direct assignment to *model* ({{gtClass:GtLscModel}}), cause the {{gtClass:GtLscInstanceInLscActionToolbarMenuItem}} is already initializated and we do not need the first {{gtMethod:GtLscInstanceInLscEditorViewModel>>onModelChanged}}"
 												}
 											]
 										},
@@ -401,7 +401,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-05-16T14:16:16.919707+02:00"
+									"dateAndTimeString" : "2025-05-17T13:19:03.920479+02:00"
 								}
 							},
 							"uid" : {
@@ -411,7 +411,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "We must update the corresponding items if their {{gtClass:GtLscInstanceModel}} or {{gtClass:GtLscModel}} is changed."
+							"string" : "We must update the corresponding items if their {{gtClass:GtLscInstanceModel}} or {{gtClass:GtLscModel}} are changed."
 						}
 					]
 				},
@@ -445,6 +445,190 @@
 					"__type" : "textStyle"
 				},
 				"string" : "We create a subclass of {{gtClass:GtLscInstanceEditorViewModel}} in which we will add the logic to use {{gtClass:GtLscInstanceInLscActionToolbarMenuItem}}"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "changesSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-17T13:25:03.149147+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-17T13:25:03.149147+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "eGYQ47TxDQCLCoSIDefs7g=="
+							},
+							"previewHeight" : 200,
+							"fileName" : "attachments/e57vcfy5ezj8qggimcf9ji2lr/changes-snippets-changeGtLscInstanceEditorElement_addingConstructor_forInstance:inLsc:.ombu"
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-05-17T13:24:31.879049+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-05-17T13:24:59.385974+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "JbXJ1bTxDQCJDw5wDefs7g=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "We create a new constructor in {{gtClass:GtLscInstanceEditorElement}} for cases where we need the editor with the actions on an {{gtClass:GtLscInstanceModel}} belonging to an {{gtClass:GtLscModel}}"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "changesSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-17T14:03:06.968896+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-17T14:06:16.768537+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "ZLcwa7XxDQCTTt2ADefs7g=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "If {{gtClass:GtLscInstanceModel}} does not have an *id*, it will not be added to a {{gtClass:GtLscModel}}.\nIf {{gtClass:GtLscInstanceElement}} is not included in a {{gtClass:GtLscElement}}, we will also not display the actions to perform on a {{gtClass:GtLscInstanceModel}} in a {{gtClass:GtLscModel}}."
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-17T13:29:33.333649+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-17T13:29:33.333649+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "uBYr87TxDQCMEdQFDefs7g=="
+							},
+							"previewHeight" : 663.9445190429689,
+							"fileName" : "attachments/e57vcfw9dxq1w2pvg07hz4ftu/changes-snippets-changeGtLscInstanceElement_addDifferentContextMenuDependingOnWhetherItIsInsideAnLscElement.ombu"
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-05-17T13:28:34.315406+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-05-17T13:29:28.278415+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "aIKm77TxDQCMBKrdDefs7g=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "We make one constructor or another be used as needed"
 			}
 		]
 	},
