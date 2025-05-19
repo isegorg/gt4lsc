@@ -157,7 +157,7 @@
 											"uidString" : "Ka0yvnzxDQC210wVBG/XFw=="
 										},
 										"previewHeight" : 956.0734252929688,
-										"fileName" : "attachments/6c402sve91gmxhb71un1rxt0y/changes-snippets-removeMessageExamples.ombu"
+										"fileName" : "attachments/1et9uwqainb3aw3epohtcjtts/changes-snippets-modifyLscModel_addMessages.ombu"
 									}
 								]
 							},
@@ -944,7 +944,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-05-19T20:13:30.696158+02:00"
+									"dateAndTimeString" : "2025-05-19T20:15:05.02858+02:00"
 								}
 							},
 							"uid" : {
@@ -954,7 +954,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Finally the example is successful {{gtExample:GtLscModelExamples>>lscMessageInstance}}"
+							"string" : "Finally the example is successful {{gtExample:GtLscModelExamples>>lscRemoveMessage}}"
 						}
 					]
 				},
