@@ -1,0 +1,41 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-19T19:40:39.550954+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModel,
+				#isMetaSide : false
+			},
+			#name : #'removeMessage:',
+			#protocol : #'api - instances',
+			#sourceCode : 'removeMessage: aGtLscMessageModel\r\tself assert: (self hasMessage: aGtLscMessageModel) description: \'Message is not added\'.\r\tmessages remove: aGtLscMessageModel.\r\tself removeIdFrom: aGtLscMessageModel',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-19T19:40:39.550954+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModel,
+				#isMetaSide : false
+			},
+			#name : #'hasMessage:',
+			#protocol : #testing,
+			#sourceCode : 'hasMessage: aGtLscMessageModel\r\tself\r\t\tassert: [ aGtLscMessageModel notNil ]\r\t\tdescription: [ \'Lsc message must not be nil\' ].\r\t\t\r\t^ messages includes: aGtLscMessageModel',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}

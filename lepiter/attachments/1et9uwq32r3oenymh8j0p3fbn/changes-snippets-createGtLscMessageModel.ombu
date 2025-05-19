@@ -8,17 +8,19 @@ OmEntry {
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
 			#annotations : IdentityDictionary {
-				#className : #GtLscMessageModel,
-				#isMetaSide : false
+				#className : #'GtLscMessageModel class',
+				#isMetaSide : true
 			},
-			#name : #'forInstance:withText:',
+			#name : #'forInstance:inLsc:withText:',
 			#protocol : #'instance creation',
-			#sourceCode : 'forInstance: aGtLscInstance withText: aString\r\tinstance := aGtLscInstance.\r\ttext := aString',
+			#sourceCode : 'forInstance: aGtLscInstanceModel inLsc: aGtLscModel withText: aString\r\t^ self basicNew initialize forInstance: aGtLscInstanceModel inLsc: aGtLscModel withText: aString',
 			#stamp : '',
 			#package : #Gt4Lsc
 		}
 	}
-}OmEntry {
+}
+
+OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-05-14T18:17:14.486309+02:00' ],
@@ -31,9 +33,9 @@ OmEntry {
 				#className : #GtLscMessageModel,
 				#isMetaSide : false
 			},
-			#name : #initialize,
-			#protocol : #initialization,
-			#sourceCode : 'initialize\r\ttemperature := self class defaultTemperature.',
+			#name : #'forInstance:inLsc:withText:',
+			#protocol : #'instance creation',
+			#sourceCode : 'forInstance: aGtLscInstanceModel inLsc: aGtLscModel withText: aString\r\tself assert: (aGtLscModel hasInstance: aGtLscInstanceModel) description: \'Instance is not in Lsc\'.\r\tinstance := aGtLscInstanceModel.\r\ttext := aString',
 			#stamp : '',
 			#package : #Gt4Lsc
 		}
@@ -44,6 +46,26 @@ OmEntry {
 		#time : DateAndTime [ '2025-05-14T18:17:14.486309+02:00' ],
 		#prior : OmReference [ '2' ],
 		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMessageModel,
+				#isMetaSide : false
+			},
+			#name : #initialize,
+			#protocol : #initialization,
+			#sourceCode : 'initialize\r\tsuper initialize.\r\r\ttemperature := self class defaultTemperature.',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-14T18:17:14.486309+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
@@ -62,8 +84,8 @@ OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-05-14T18:17:14.486309+02:00' ],
-		#prior : OmReference [ '3' ],
-		#self : OmReference [ '4' ]
+		#prior : OmReference [ '4' ],
+		#self : OmReference [ '5' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
@@ -82,8 +104,8 @@ OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-05-14T18:17:14.486309+02:00' ],
-		#prior : OmReference [ '4' ],
-		#self : OmReference [ '5' ]
+		#prior : OmReference [ '5' ],
+		#self : OmReference [ '6' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
@@ -102,8 +124,8 @@ OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-05-14T18:17:14.486309+02:00' ],
-		#prior : OmReference [ '5' ],
-		#self : OmReference [ '6' ]
+		#prior : OmReference [ '6' ],
+		#self : OmReference [ '7' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
@@ -122,8 +144,8 @@ OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-05-14T18:17:14.486309+02:00' ],
-		#prior : OmReference [ '6' ],
-		#self : OmReference [ '7' ]
+		#prior : OmReference [ '7' ],
+		#self : OmReference [ '8' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
@@ -134,6 +156,26 @@ OmEntry {
 			#name : #temperature,
 			#protocol : #accessing,
 			#sourceCode : 'temperature\r\t^ temperature',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-14T18:17:14.486309+02:00' ],
+		#prior : OmReference [ '8' ],
+		#self : OmReference [ '9' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscMessageModel class',
+				#isMetaSide : true
+			},
+			#name : #new,
+			#protocol : #'instance creation',
+			#sourceCode : 'new\r\tself error: \'Use #forInstance:inLsc:withText:\'',
 			#stamp : '',
 			#package : #Gt4Lsc
 		}

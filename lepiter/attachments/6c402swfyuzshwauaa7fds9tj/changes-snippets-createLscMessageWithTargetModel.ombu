@@ -1,0 +1,103 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-19T19:40:39.550954+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscMessageWithTargetModel class',
+				#isMetaSide : true
+			},
+			#name : #'forInstance:andTarget:inLsc:withText:',
+			#protocol : #'instance creation',
+			#sourceCode : 'forInstance: aGtLscInstanceModel andTarget: otherGtLscInstanceModel inLsc: aGtLscModel withText: aString\r\t^ self basicNew initialize\r\t\tforInstance: aGtLscInstanceModel\r\t\tandTarget: otherGtLscInstanceModel\r\t\tinLsc: aGtLscModel\r\t\twithText: aString',
+			#stamp : 'GlamorousAuthor 5/19/2025 19:37',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-19T19:40:39.550954+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMessageWithTargetModel,
+				#isMetaSide : false
+			},
+			#name : #'forInstance:andTarget:inLsc:withText:',
+			#protocol : #'instance creation',
+			#sourceCode : 'forInstance: aGtLscInstanceModel andTarget: otherGtLscInstanceModel inLsc: aGtLscModel withText: aString\r\tself assert: (aGtLscModel hasInstance: aGtLscInstanceModel) description: \'Instance is not in Lsc\'.\r\tself assert: (aGtLscModel hasInstance: otherGtLscInstanceModel) description: \'Target instance is not in Lsc\'.\r\tinstance := aGtLscInstanceModel.\r\ttargetInstance := otherGtLscInstanceModel.\r\ttext := aString',
+			#stamp : 'GlamorousAuthor 5/19/2025 19:37',
+			#package : #Gt4Lsc
+		}
+	}
+}
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-19T19:40:39.550954+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMessageWithTargetModel,
+				#isMetaSide : false
+			},
+			#name : #target,
+			#protocol : #accessing,
+			#sourceCode : 'target\r\t^ targetInstance',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-19T19:40:39.550954+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscMessageWithTargetModel class',
+				#isMetaSide : true
+			},
+			#name : #'forInstance:inLsc:withText:',
+			#protocol : #'instance creation',
+			#sourceCode : 'forInstance: aGtLscInstanceModel inLsc: aGtLscModel withText: aString\r\tself error: \'Use #forInstance:andTarget:inLsc:withText:\'',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-19T19:40:39.550954+02:00' ],
+		#prior : OmReference [ '4' ],
+		#self : OmReference [ '5' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMessageWithTargetModel,
+				#isMetaSide : false
+			},
+			#name : #'forInstance:inLsc:withText:',
+			#protocol : #'instance creation',
+			#sourceCode : 'forInstance: aGtLscInstanceModel inLsc: aGtLscModel withText: aString\r\tself error: \'Use #forInstance:andTarget:inLsc:withText:\'',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}

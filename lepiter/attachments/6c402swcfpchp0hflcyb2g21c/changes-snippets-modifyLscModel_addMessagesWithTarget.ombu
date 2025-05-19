@@ -1,0 +1,21 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-19T18:18:28.13333+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModel,
+				#isMetaSide : false
+			},
+			#name : #'addMessageForInstance:withText:andTarget:',
+			#protocol : #'api  - messages',
+			#sourceCode : 'addMessageForInstance: aGtLscInstanceModel withText: aString andTarget: otherGtLscInstanceModel\r\t| newMessage|\r\t\r\tnewMessage := GtLscMessageWithTargetModel forInstance: aGtLscInstanceModel andTarget: otherGtLscInstanceModel inLsc: self withText: aString.\r\tself addIdTo: newMessage.\r\t^ messages add: newMessage',
+			#stamp : 'GlamorousAuthor 5/19/2025 18:17',
+			#package : #Gt4Lsc
+		}
+	}
+}

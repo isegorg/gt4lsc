@@ -133,7 +133,9 @@ OmEntry {
 			#sharedPools : OrderedCollection [ ]
 		}
 	}
-}OmEntry {
+}
+
+OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-05-14T18:17:14.486309+02:00' ],
@@ -165,7 +167,9 @@ OmEntry {
 		},
 		#classPackageName : #Gt4Lsc
 	}
-}OmEntry {
+}
+
+OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-05-14T18:17:14.486309+02:00' ],
@@ -180,12 +184,14 @@ OmEntry {
 			},
 			#name : #'addMessageForInstance:withText:',
 			#protocol : #'api  - messages',
-			#sourceCode : 'addMessageForInstance: aGtLscInstanceModel withText: aString\r\t| newMessage|\r\tnewMessage := GtLscMessage forInstance: aGtLscInstanceModel withText: aString.\r\tself addIdTo: newMessage.\r\t^ messages add: newMessage',
+			#sourceCode : 'addMessageForInstance: aGtLscInstanceModel withText: aString\r\t| newMessage|\r\tnewMessage := GtLscMessageModel forInstance: aGtLscInstanceModel inLsc: self withText: aString.\r\tself addIdTo: newMessage.\r\t^ messages add: newMessage',
 			#stamp : 'GlamorousAuthor 5/14/2025 18:32',
 			#package : #Gt4Lsc
 		}
 	}
-}OmEntry {
+}
+
+OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-05-14T18:17:14.486309+02:00' ],
@@ -205,7 +211,9 @@ OmEntry {
 			#package : #Gt4Lsc
 		}
 	}
-}OmEntry {
+}
+
+OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-05-14T18:17:14.486309+02:00' ],
@@ -225,4 +233,5 @@ OmEntry {
 			#package : #Gt4Lsc
 		}
 	}
-}
+}
+

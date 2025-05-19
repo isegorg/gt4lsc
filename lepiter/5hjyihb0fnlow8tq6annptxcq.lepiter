@@ -582,7 +582,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-04-07T09:39:35.484241+02:00"
+									"dateAndTimeString" : "2025-05-19T20:02:03.927762+02:00"
 								}
 							},
 							"uid" : {
@@ -592,7 +592,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "And we create the necessary code for the example to be successful:"
+							"string" : "And we create the anecessary code for the example to be successful:"
 						},
 						{
 							"__type" : "textSnippet",

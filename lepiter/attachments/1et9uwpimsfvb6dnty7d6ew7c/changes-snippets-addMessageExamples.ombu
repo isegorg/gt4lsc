@@ -13,9 +13,9 @@ OmEntry {
 			},
 			#name : #lscAddMessage,
 			#protocol : #'examples - model',
-			#sourceCode : 'lscAddMessage\r\t<gtExample>\r\t| aLsc anInstance messageText newMessage |\r\taLsc := self lscWithInstance.\r\tanInstance := aLsc instanceAt: 1.\r\t\r\tmessageText := \'New Message\'.\r\taLsc addMessageForInstance: anInstance withText: messageText.\r\r\t"Check that Lsc has the message"\r\tself assert: aLsc messagesSize equals: 1.\r\tnewMessage := aLsc messageAt: 1.\r\tself assert: newMessage hasId.\r\tself assert: newMessage text equals: messageText.\r\tself assert: newMessage temperature equals: GtLscMessage defaultTemperature.\r\r\t^ aLsc',
+			#sourceCode : 'lscAddMessage\r\t<gtExample>\r\t| aLsc anInstance messageText newMessage |\r\taLsc := self lscWithInstance.\r\tanInstance := aLsc instanceAt: 1.\r\t\r\tmessageText := \'New Message\'.\r\taLsc addMessageForInstance: anInstance withText: messageText.\r\r\t"Check that Lsc has the message"\r\tself assert: aLsc messagesSize equals: 1.\r\tnewMessage := aLsc messageAt: 1.\r\tself assert: newMessage hasId.\r\tself assert: newMessage text equals: messageText.\r\tself assert: newMessage temperature equals: GtLscMessageModel defaultTemperature.\r\r\t^ aLsc',
 			#stamp : 'GlamorousAuthor 5/14/2025 18:23',
 			#package : #Gt4Lsc
 		}
 	}
-}
+}
