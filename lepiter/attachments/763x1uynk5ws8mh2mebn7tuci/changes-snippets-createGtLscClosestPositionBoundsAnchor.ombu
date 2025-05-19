@@ -1,0 +1,89 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-19T12:39:51.450933+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpBehaviorCommentChange {
+		#behavior : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : 'BlNearestPositionAnchor',
+				#definitionSource : 'BlNearestPositionAnchor subclass: #GtLscClosestPositionBoundsAnchor\r\tinstanceVariableNames: \'\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4Lsc-Helpers\'',
+				#traitCompositionSource : '{}'
+			},
+			#name : #GtLscClosestPositionBoundsAnchor,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#definitionSource : 'GtLscClosestPositionBoundsAnchor class\r\tinstanceVariableNames: \'\'',
+					#traitCompositionSource : '{}'
+				},
+				#name : #'GtLscClosestPositionBoundsAnchor class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#className : #GtLscClosestPositionBoundsAnchor,
+					#isMetaSide : false
+				},
+				#parent : @6,
+				#content : 'I find the point that lies on bounds rectangle of a reference element with minimal distance to the center of the given element',
+				#stamp : '<historical>'
+			},
+			#classVariables : OrderedCollection [ ],
+			#category : #Gt4Lsc-Helpers,
+			#package : #Gt4Lsc,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#oldComment : '',
+		#newComment : 'I find the point that lies on bounds rectangle of a reference element with minimal distance to the center of the given element',
+		#oldStamp : '',
+		#newStamp : '<historical>'
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-19T12:39:51.450933+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscClosestPositionBoundsAnchor,
+				#isMetaSide : false
+			},
+			#name : #'positionForAnchoredElement:within:',
+			#protocol : #geometry,
+			#sourceCode : 'positionForAnchoredElement: aGeometryElement within: aCommonParent\r\t"Compute and return a global position (in space) of this anchor"\r\t"Return the bounds point with minimal distance to nearestToElement center"\r\t<return: #Point>\r| nearestCenter theBoundsInParent aClampedPoint |\r\tnearestCenter := (self nearestToElement bounds inParent: aCommonParent) center.\r\ttheBoundsInParent := self referenceElement bounds inParent: aCommonParent.\r\taClampedPoint := (nearestCenter min: theBoundsInParent bottomRight) max: theBoundsInParent topLeft.\r\t^ aClampedPoint',
+			#stamp : 'GlamorousAuthor 5/19/2025 12:38',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-19T12:39:51.450933+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscClosestPositionBoundsAnchor,
+				#isMetaSide : false
+			},
+			#name : #label,
+			#protocol : #accessing,
+			#sourceCode : 'label\r\t^ \'Rectangle min distance to center\'',
+			#stamp : 'GlamorousAuthor 5/19/2025 12:38',
+			#package : #Gt4Lsc
+		}
+	}
+}
