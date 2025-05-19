@@ -22,6 +22,48 @@ GtLscModelExamples >> lscAddInstanceAtPosition [
 ]
 
 { #category : #'examples - model' }
+GtLscModelExamples >> lscAddMessage [
+	<gtExample>
+	| aLsc anInstance messageText newMessage |
+	aLsc := self lscWithInstance.
+	anInstance := aLsc instanceAt: 1.
+	
+	messageText := 'New Message'.
+	aLsc addMessageForInstance: anInstance withText: messageText.
+
+	"Check that Lsc has the message"
+	self assert: aLsc messagesSize equals: 1.
+	newMessage := aLsc messageAt: 1.
+	self assert: newMessage hasId.
+	self assert: newMessage text equals: messageText.
+	self assert: newMessage temperature equals: GtLscMessageModel defaultTemperature.
+
+	^ aLsc
+]
+
+{ #category : #'examples - model' }
+GtLscModelExamples >> lscAddMessageWithTarget [
+	<gtExample>
+	| aLsc sourceInstance targetInstance messageText newMessage |
+	aLsc := self lscAddInstanceAtPosition.
+	sourceInstance := aLsc instanceAt: 1.
+	targetInstance := aLsc instanceAt: 2.
+	
+	messageText := 'New Message With Target'.
+	aLsc addMessageForInstance: sourceInstance withText: messageText andTarget: targetInstance.
+
+	"Check that Lsc has the message"
+	self assert: aLsc messagesSize equals: 1.
+	newMessage := aLsc messageAt: 1.
+	self assert: newMessage hasId.
+	self assert: newMessage text equals: messageText.
+	self assert: newMessage temperature equals: GtLscMessageModel defaultTemperature.
+	self assert: newMessage target equals: targetInstance.
+
+	^ aLsc
+]
+
+{ #category : #'examples - model' }
 GtLscModelExamples >> lscMoveInstanceToPosition [
 	<gtExample>
 	| aLsc initialFirstInstance initialFirstInstanceId initialSecondInstance initialSecondInstanceId finalFirstInstance finalFirstInstanceId finalSecondInstance finalSecondInstanceId |
@@ -63,6 +105,21 @@ GtLscModelExamples >> lscRemoveInstance [
 ]
 
 { #category : #'examples - model' }
+GtLscModelExamples >> lscRemoveMessage [
+	<gtExample>
+	| aLsc aMessage |
+	aLsc := self lscAddMessage.
+	aMessage := aLsc messageAt: 1.
+	aLsc removeMessage: aMessage.
+
+	self assert: aMessage hasId not.
+	self assert: (aLsc hasMessage: aMessage) not.
+	self assert: aLsc messagesSize equals: 0.
+
+	^ aLsc
+]
+
+{ #category : #'examples - model' }
 GtLscModelExamples >> lscWithInstance [
 	<gtExample>
 	| aLsc anInstance |
@@ -89,5 +146,6 @@ GtLscModelExamples >> newLsc [
 	lsc := GtLscModel new.
 	self assert: lsc title equals: GtLscModel defaultTitle.
 	self assert: lsc instancesSize equals: 0.
+	self assert: lsc messagesSize equals: 0.
 	^ lsc
 ]

@@ -6,7 +6,8 @@ Class {
 	#instVars : [
 		'announcer',
 		'title',
-		'instances'
+		'instances',
+		'messages'
 	],
 	#category : #'Gt4Lsc-! Model'
 }
@@ -35,6 +36,23 @@ GtLscModel >> addInstance: aGtLscInstanceModel atPosition: anInteger [
 	self addIdTo: aGtLscInstanceModel.
 	instances add: aGtLscInstanceModel afterIndex: previousIndex.
 	self notifyInstanceAdded: aGtLscInstanceModel atPosition: anInteger.
+]
+
+{ #category : #'api  - messages' }
+GtLscModel >> addMessageForInstance: aGtLscInstanceModel withText: aString [
+	| newMessage|
+	newMessage := GtLscMessageModel forInstance: aGtLscInstanceModel inLsc: self withText: aString.
+	self addIdTo: newMessage.
+	^ messages add: newMessage
+]
+
+{ #category : #'api  - messages' }
+GtLscModel >> addMessageForInstance: aGtLscInstanceModel withText: aString andTarget: otherGtLscInstanceModel [
+	| newMessage|
+	
+	newMessage := GtLscMessageWithTargetModel forInstance: aGtLscInstanceModel andTarget: otherGtLscInstanceModel inLsc: self withText: aString.
+	self addIdTo: newMessage.
+	^ messages add: newMessage
 ]
 
 { #category : #announcer }
@@ -69,10 +87,20 @@ GtLscModel >> hasInstance: aGtLscInstanceModel [
 	^ instances includes: aGtLscInstanceModel
 ]
 
+{ #category : #testing }
+GtLscModel >> hasMessage: aGtLscMessageModel [
+	self
+		assert: [ aGtLscMessageModel notNil ]
+		description: [ 'Lsc message must not be nil' ].
+		
+	^ messages includes: aGtLscMessageModel
+]
+
 { #category : #initialization }
 GtLscModel >> initialize [
 	title := self class defaultTitle.
-	instances := OrderedCollection empty
+	instances := OrderedCollection empty.
+	messages := OrderedCollection empty
 ]
 
 { #category : #'api - instances' }
@@ -97,6 +125,17 @@ GtLscModel >> instances [
 { #category : #'api - instances' }
 GtLscModel >> instancesSize [
 	^ instances size
+]
+
+{ #category : #'api - instances' }
+GtLscModel >> messageAt: anInteger [
+	self assert: (anInteger between: 1 and: self messagesSize) description: 'There are no message at this position'.
+	^ messages at: anInteger.
+]
+
+{ #category : #'api - instances' }
+GtLscModel >> messagesSize [
+	^ messages size
 ]
 
 { #category : #'api - instances' }
@@ -161,6 +200,13 @@ GtLscModel >> removeInstance: aGtLscInstanceModel [
 	instances remove: aGtLscInstanceModel.
 	self notifyInstanceRemoved: aGtLscInstanceModel.
 	self removeIdFrom: aGtLscInstanceModel
+]
+
+{ #category : #'api - instances' }
+GtLscModel >> removeMessage: aGtLscMessageModel [
+	self assert: (self hasMessage: aGtLscMessageModel) description: 'Message is not added'.
+	messages remove: aGtLscMessageModel.
+	self removeIdFrom: aGtLscMessageModel
 ]
 
 { #category : #accessing }
