@@ -44,6 +44,35 @@ GtLscModelExamples >> lscAddMessage [
 ]
 
 { #category : #'examples - model' }
+GtLscModelExamples >> lscAddMessageAtPosition [
+	<gtExample>
+	| aLsc existingMessage firstInstance secondInstance  newMessage newMessageWithTarget |
+	aLsc := self lscAddMessageWithTarget.
+	existingMessage := aLsc messageAt: 1.
+	firstInstance := aLsc instanceAt: 1.
+	secondInstance := aLsc instanceAt: 2.
+	
+	"Add message at position"
+	newMessage := aLsc addMessageForInstance: secondInstance withText: 'Message added at first position' atPosition: 1.
+	
+	"Check adding message at position"
+	self assert: (aLsc messageAt: 1) equals: newMessage.
+	self assert: (aLsc messageAt: 2) equals: existingMessage.
+	self assert: aLsc messagesSize equals: 2.
+
+	"Add message with target at position"
+	newMessageWithTarget := aLsc addMessageForInstance: secondInstance withText: 'Message with target added at second position' andTarget: firstInstance atPosition: 2.
+	
+	"Check adding message with target at position"
+	self assert: (aLsc messageAt: 1) equals: newMessage.
+	self assert: (aLsc messageAt: 2) equals: newMessageWithTarget.
+	self assert: (aLsc messageAt: 3) equals: existingMessage.
+	self assert: aLsc messagesSize equals: 3.
+	
+	^ aLsc
+]
+
+{ #category : #'examples - model' }
 GtLscModelExamples >> lscAddMessageWithTarget [
 	<gtExample>
 	| aLsc sourceInstance targetInstance messageText newMessage |

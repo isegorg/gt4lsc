@@ -12,9 +12,23 @@ Class {
 	#category : #'Gt4Lsc-! Model'
 }
 
+{ #category : #checking }
+GtLscModel class >> checkValidPostion: anInteger toAddInCollectionWithSize: aCollectionSize [
+	self assert: (anInteger between: 1 and: aCollectionSize + 1) description: 'Invalid position'.
+]
+
 { #category : #'default model values' }
 GtLscModel class >> defaultTitle [
 	^ 'Scenario'
+]
+
+{ #category : #'private - collection operations' }
+GtLscModel >> addElement: newElementWithId atPosition: anInteger inCollection: anOrderedCollection [
+	| previousIndex |
+	self class checkValidPostion: anInteger toAddInCollectionWithSize: anOrderedCollection size.
+	self addIdTo: newElementWithId.
+	previousIndex := anInteger - 1.
+	^ anOrderedCollection add: newElementWithId afterIndex: previousIndex
 ]
 
 { #category : #'api - id operations' }
@@ -29,30 +43,33 @@ GtLscModel >> addInstance: aGtLscInstanceModel [
 
 { #category : #'api - instances' }
 GtLscModel >> addInstance: aGtLscInstanceModel atPosition: anInteger [
-	| previousIndex|
 	self assert: (self hasInstance: aGtLscInstanceModel) not description: 'Can not add an instance already added'.
-	self assert: (anInteger between: 1 and: self instancesSize + 1) description: 'Invalid position'.
-	previousIndex := anInteger - 1.
-	self addIdTo: aGtLscInstanceModel.
-	instances add: aGtLscInstanceModel afterIndex: previousIndex.
+	self addElement: aGtLscInstanceModel atPosition: anInteger inCollection: instances.
 	self notifyInstanceAdded: aGtLscInstanceModel atPosition: anInteger.
 ]
 
 { #category : #'api  - messages' }
 GtLscModel >> addMessageForInstance: aGtLscInstanceModel withText: aString [
-	| newMessage|
-	newMessage := GtLscMessageModel forInstance: aGtLscInstanceModel inLsc: self withText: aString.
-	self addIdTo: newMessage.
-	^ messages add: newMessage
+	^ self addMessageForInstance: aGtLscInstanceModel withText: aString atPosition: self messagesSize + 1
 ]
 
 { #category : #'api  - messages' }
 GtLscModel >> addMessageForInstance: aGtLscInstanceModel withText: aString andTarget: otherGtLscInstanceModel [
+	^ self addMessageForInstance: aGtLscInstanceModel withText: aString andTarget: otherGtLscInstanceModel atPosition: self messagesSize + 1
+]
+
+{ #category : #'api  - messages' }
+GtLscModel >> addMessageForInstance: aGtLscInstanceModel withText: aString andTarget: otherGtLscInstanceModel atPosition: anInteger [
 	| newMessage|
-	
 	newMessage := GtLscMessageWithTargetModel forInstance: aGtLscInstanceModel andTarget: otherGtLscInstanceModel inLsc: self withText: aString.
-	self addIdTo: newMessage.
-	^ messages add: newMessage
+	^ self addElement: newMessage atPosition: anInteger inCollection: messages.
+]
+
+{ #category : #'api  - messages' }
+GtLscModel >> addMessageForInstance: aGtLscInstanceModel withText: aString atPosition: anInteger [
+	| newMessage |
+	newMessage := GtLscMessageModel forInstance: aGtLscInstanceModel inLsc: self withText: aString.
+	^ self addElement: newMessage atPosition: anInteger inCollection: messages.
 ]
 
 { #category : #announcer }
