@@ -35,6 +35,11 @@ GtLscMessageWithTargetModel >> forInstance: aGtLscInstanceModel inLsc: aGtLscMod
 	self error: 'Use #forInstance:andTarget:inLsc:withText:'
 ]
 
+{ #category : #checking }
+GtLscMessageWithTargetModel >> isRelatedToInstance: aGtLscInstanceModel [
+	^ (super isRelatedToInstance: aGtLscInstanceModel) or: [ targetInstance = aGtLscInstanceModel ]
+]
+
 { #category : #accessing }
 GtLscMessageWithTargetModel >> target [
 	^ targetInstance

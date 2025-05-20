@@ -1,6 +1,8 @@
 Class {
 	#name : #GtLscModelExamples,
 	#superclass : #Object,
+	#traits : 'TAssertable',
+	#classTraits : 'TAssertable classTrait',
 	#category : #'Gt4Lsc-Examples'
 }
 
@@ -100,6 +102,45 @@ GtLscModelExamples >> lscRemoveInstance [
 	self assert: anInstance hasId not.
 	self assert: (aLsc hasInstance: anInstance) not.
 	self assert: aLsc instancesSize equals: 0.
+
+	^ aLsc
+]
+
+{ #category : #'examples - model' }
+GtLscModelExamples >> lscRemoveInstanceWithRelatedMessagesAsDestination [
+	<gtExample>
+	| aLsc aMessage destinationInstance |
+	aLsc := self lscAddMessageWithTarget.
+	aMessage := aLsc messageAt: 1.
+	destinationInstance := aMessage target.
+	self assert: (aLsc relatedMessagesForInstance: destinationInstance) size equals: 1.
+	
+	"Remove destination instance"
+	aLsc removeInstance: destinationInstance.
+
+	"Check message removed"
+	self assert: aLsc messagesSize equals: 0.
+	self should: [aLsc relatedMessagesForInstance: destinationInstance] raise: AssertionFailure.
+	self should: [aLsc removeMessage: aMessage] raise: AssertionFailure.
+	self should: [aLsc removeInstance: destinationInstance] raise: AssertionFailure.
+
+	^ aLsc
+]
+
+{ #category : #'examples - model' }
+GtLscModelExamples >> lscRemoveInstanceWithRelatedMessagesAsSource [
+	<gtExample>
+	| aLsc anInstance |
+	aLsc := self lscAddMessage.
+	anInstance := aLsc instanceAt: 1.
+	self assert: (aLsc relatedMessagesForInstance: anInstance) size equals: 1.
+	
+	"Remove instance"
+	aLsc removeInstance: anInstance.
+
+	"Check message removed"
+	self assert: aLsc messagesSize equals: 0.
+	self should: [aLsc relatedMessagesForInstance: anInstance] raise: AssertionFailure.
 
 	^ aLsc
 ]

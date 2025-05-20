@@ -189,6 +189,12 @@ GtLscModel >> notifyTitleChanged [
 	self announce: GtLscTitleChanged new
 ]
 
+{ #category : #'api  - messages' }
+GtLscModel >> relatedMessagesForInstance: aGtLscInstanceModel [
+	self assert: (self hasInstance: aGtLscInstanceModel) description:'Instance is not in Lsc'.
+	^ messages select: [ :message | message isRelatedToInstance: aGtLscInstanceModel ]
+]
+
 { #category : #'api - id operations' }
 GtLscModel >> removeIdFrom: aObjectWithId [
 	aObjectWithId removeId
@@ -197,6 +203,7 @@ GtLscModel >> removeIdFrom: aObjectWithId [
 { #category : #'api - instances' }
 GtLscModel >> removeInstance: aGtLscInstanceModel [
 	self assert: (self hasInstance: aGtLscInstanceModel) description: 'Instance is not added'.
+	self removeRelatedMessagesForInstance: aGtLscInstanceModel.
 	instances remove: aGtLscInstanceModel.
 	self notifyInstanceRemoved: aGtLscInstanceModel.
 	self removeIdFrom: aGtLscInstanceModel
@@ -207,6 +214,12 @@ GtLscModel >> removeMessage: aGtLscMessageModel [
 	self assert: (self hasMessage: aGtLscMessageModel) description: 'Message is not added'.
 	messages remove: aGtLscMessageModel.
 	self removeIdFrom: aGtLscMessageModel
+]
+
+{ #category : #'api  - messages' }
+GtLscModel >> removeRelatedMessagesForInstance: aGtLscInstanceModel [
+	self assert: (self hasInstance: aGtLscInstanceModel) description: 'Instance is not added'.
+	(self relatedMessagesForInstance: aGtLscInstanceModel) do: [ :relatedMessage | self removeMessage: relatedMessage ]
 ]
 
 { #category : #accessing }

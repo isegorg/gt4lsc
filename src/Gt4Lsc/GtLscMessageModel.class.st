@@ -49,6 +49,11 @@ GtLscMessageModel >> initialize [
 	temperature := self class defaultTemperature.
 ]
 
+{ #category : #checking }
+GtLscMessageModel >> isRelatedToInstance: aGtLscInstanceModel [
+	^ instance = aGtLscInstanceModel
+]
+
 { #category : #accessing }
 GtLscMessageModel >> removeId [
 	self id: nil
