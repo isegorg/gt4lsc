@@ -1,0 +1,56 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-20T15:27:59.25593+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModel,
+				#isMetaSide : false
+			},
+			#name : #'removeInstance:',
+			#protocol : #'api - instances',
+			#sourceCode : 'removeInstance: aGtLscInstanceModel\r\tself assert: (self hasInstance: aGtLscInstanceModel) description: \'Instance is not added\'.\r\tinstances remove: aGtLscInstanceModel.\r\tself notifyInstanceRemoved: aGtLscInstanceModel.\r\tself removeIdFrom: aGtLscInstanceModel',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModel,
+				#isMetaSide : false
+			},
+			#name : #'removeInstance:',
+			#protocol : #'api - instances',
+			#sourceCode : 'removeInstance: aGtLscInstanceModel\r\tself assert: (self hasInstance: aGtLscInstanceModel) description: \'Instance is not added\'.\r\tself removeRelatedMessagesForInstance: aGtLscInstanceModel.\r\tinstances remove: aGtLscInstanceModel.\r\tself notifyInstanceRemoved: aGtLscInstanceModel.\r\tself removeIdFrom: aGtLscInstanceModel',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}
+
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-20T15:27:59.25593+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModel,
+				#isMetaSide : false
+			},
+			#name : #'removeRelatedMessagesForInstance:',
+			#protocol : #'api  - messages',
+			#sourceCode : 'removeRelatedMessagesForInstance: aGtLscInstanceModel\r\tself assert: (self hasInstance: aGtLscInstanceModel) description: \'Instance is not added\'.\r\t(self relatedMessagesForInstance: aGtLscInstanceModel) do: [ :relatedMessage | self removeMessage: relatedMessage ]',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}
+

@@ -1031,7 +1031,7 @@
 											"__type" : "uid",
 											"uidString" : "e5GDT+/xDQCrLwvlD8OwBQ=="
 										},
-										"previewHeight" : 200,
+										"previewHeight" : 629.253646850586,
 										"fileName" : "attachments/c4lxsid06rn25jrlr6dnw271/changes-snippets-GtLscModelExamples_adding_lscRemoveInstanceWithRelatedMessages.ombu"
 									}
 								]
@@ -1055,7 +1055,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-05-20T11:07:02.673206+02:00"
+									"dateAndTimeString" : "2025-05-20T15:41:32.525737+02:00"
 								}
 							},
 							"uid" : {
@@ -1065,7 +1065,115 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "We also create its example:"
+							"string" : "We create its example:"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "changesSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-20T15:25:38.901351+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-20T15:25:38.901351+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "DFLf6/LxDQCTp5asDl0g9Q=="
+										},
+										"previewHeight" : 377.15679931640636,
+										"fileName" : "attachments/eifnh9h42cb3w2nuqgupw3yr7/changes-snippets-GtLscModel_adding_relatedMessagesForInstance:.ombu"
+									},
+									{
+										"__type" : "changesSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-20T15:29:52.035215+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-20T15:29:52.035215+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "Ddv1+vLxDQCT5aIPDl0g9Q=="
+										},
+										"previewHeight" : 445.93048095703114,
+										"fileName" : "attachments/eifnh9h08bxbeo5yk3lif6xds/changes-snippets-GtLscModel_adding_removeRelatedMessagesForInstance:.ombu"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-20T15:15:48.966679+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-20T15:15:48.966679+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "IoT4TO/xDQCoWc6oD8OwBQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "And we create the necessary code for the example to be successful:"
 						},
 						{
 							"__type" : "textSnippet",
@@ -1081,7 +1189,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-05-20T11:06:28.072212+02:00"
+									"dateAndTimeString" : "2025-05-20T15:34:54.414187+02:00"
 								}
 							},
 							"editEmail" : {
@@ -1092,17 +1200,163 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-05-20T11:06:28.072212+02:00"
+									"dateAndTimeString" : "2025-05-20T15:37:52.101967+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "IoT4TO/xDQCoWc6oD8OwBQ=="
+								"uidString" : "JMn7DPPxDQCUHGDuDl0g9Q=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : ""
+							"string" : "Finally the example is successful {{gtExample:GtLscModelExamples>>lscRemoveInstanceWithRelatedMessagesAsSource}}"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "changesSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-20T15:42:54.915486+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-20T15:42:54.915486+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "bqmfKfPxDQCVfFMVDl0g9Q=="
+										},
+										"previewHeight" : 490.9933624267578,
+										"fileName" : "attachments/eifnh9cosgqhzrqk9dibs253b/changes-snippets-GtLscModelExamples_adding_lscRemoveInstanceWithRelatedMessagesAsDestination.ombu"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-20T15:42:39.738358+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-20T15:42:46.5033+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "SE4OJfPxDQCU8pOeDl0g9Q=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "We created an example for the case of removing an instance that is the target of a message"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "changesSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-20T15:51:38.373856+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-20T15:51:38.373856+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "AwHTSPPxDQCWK1s3Dl0g9Q=="
+										},
+										"previewHeight" : 200,
+										"fileName" : "attachments/eifnh9chbjj6x2bix1l97ugj5/changes-snippets-GtLscMessageWithTargetModel_overwritten_isRelatedToInstance:.ombu"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-20T15:51:29.129349+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-20T15:51:34.986869+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "ke5FSPPxDQCWHxDxDl0g9Q=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "And we create the necessary code for the example to be successful:"
 						}
 					]
 				},

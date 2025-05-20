@@ -1,0 +1,21 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-20T15:49:56.151631+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMessageWithTargetModel,
+				#isMetaSide : false
+			},
+			#name : #'isRelatedToInstance:',
+			#protocol : #checking,
+			#sourceCode : 'isRelatedToInstance: aGtLscInstanceModel\r\t^ (super isRelatedToInstance: aGtLscInstanceModel) or: [ targetInstance = aGtLscInstanceModel ]',
+			#stamp : 'GlamorousAuthor 5/20/2025 15:58',
+			#package : #Gt4Lsc
+		}
+	}
+}

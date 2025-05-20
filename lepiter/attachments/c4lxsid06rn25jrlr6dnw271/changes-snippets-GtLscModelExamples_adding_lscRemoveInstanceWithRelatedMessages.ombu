@@ -13,9 +13,88 @@ OmEntry {
 			},
 			#name : #lscRemoveInstanceWithRelatedMessagesAsSource,
 			#protocol : #'examples - model',
-			#sourceCode : 'lscRemoveInstanceWithRelatedMessagesAsSource\r\t<gtExample>\r\t| aLsc anInstance |\r\taLsc := self lscAddMessage.\r\tanInstance := aLsc instanceAt: 1.\r\tself assert: (aLsc relatedSourceMessagesForInstance: anInstance) size equals: 1.\r\t\r\t"Remove instance"\r\taLsc removeInstance: anInstance.\r\r\t"Check message removed"\r\tself assert: aLsc messagesSize isEmpty.\r\tself should: [aLsc relatedSourceMessagesForInstance: anInstance] raise: AssertionFailure.\r\r\t^ aLsc',
+			#sourceCode : 'lscRemoveInstanceWithRelatedMessagesAsSource\r\t<gtExample>\r\t| aLsc anInstance |\r\taLsc := self lscAddMessage.\r\tanInstance := aLsc instanceAt: 1.\r\tself assert: (aLsc relatedMessagesForInstance: anInstance) size equals: 1.\r\t\r\t"Remove instance"\r\taLsc removeInstance: anInstance.\r\r\t"Check message removed"\r\tself assert: aLsc messagesSize equals: 0.\r\tself should: [aLsc relatedMessagesForInstance: anInstance] raise: AssertionFailure.\r\r\t^ aLsc',
 			#stamp : 'GlamorousAuthor 5/20/2025 11:43',
 			#package : #Gt4Lsc
+		}
+	}
+}
+
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-20T11:43:51.695776+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpClassModification {
+		#oldClass : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : 'Object',
+				#definitionSource : 'Object subclass: #GtLscModelExamples\r\tinstanceVariableNames: \'\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4Lsc-Examples\'',
+				#traitCompositionSource : '{}'
+			},
+			#name : #GtLscModelExamples,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#definitionSource : 'GtLscModelExamples class\r\tinstanceVariableNames: \'\'',
+					#traitCompositionSource : '{}'
+				},
+				#name : #'GtLscModelExamples class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#className : #GtLscModelExamples,
+					#isMetaSide : false
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#category : #Gt4Lsc-Examples,
+			#package : #Gt4Lsc,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#newClass : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : 'Object',
+				#definitionSource : 'Object subclass: #GtLscModelExamples\r\tuses: TAssertable\r\tinstanceVariableNames: \'\'\r\tclassVariableNames: \'\'\r\tpackage: \'Gt4Lsc-Examples\'',
+				#traitCompositionSource : 'TAssertable'
+			},
+			#name : #GtLscModelExamples,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#definitionSource : 'GtLscModelExamples class\r\tuses: TAssertable classTrait\r\tinstanceVariableNames: \'\'',
+					#traitCompositionSource : 'TAssertable classTrait'
+				},
+				#name : #'GtLscModelExamples class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @20
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#className : #GtLscModelExamples,
+					#isMetaSide : false
+				},
+				#parent : @20,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#category : #Gt4Lsc-Examples,
+			#package : #Gt4Lsc,
+			#sharedPools : OrderedCollection [ ]
 		}
 	}
 }

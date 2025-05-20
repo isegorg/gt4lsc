@@ -1,0 +1,21 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-20T15:49:56.151631+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModelExamples,
+				#isMetaSide : false
+			},
+			#name : #lscRemoveInstanceWithRelatedMessagesAsDestination,
+			#protocol : #'examples - model',
+			#sourceCode : 'lscRemoveInstanceWithRelatedMessagesAsDestination\r\t<gtExample>\r\t| aLsc aMessage destinationInstance |\r\taLsc := self lscAddMessageWithTarget.\r\taMessage := aLsc messageAt: 1.\r\tdestinationInstance := aMessage target.\r\tself assert: (aLsc relatedMessagesForInstance: destinationInstance) size equals: 1.\r\t\r\t"Remove destination instance"\r\taLsc removeInstance: destinationInstance.\r\r\t"Check message removed"\r\tself assert: aLsc messagesSize equals: 0.\r\tself should: [aLsc relatedMessagesForInstance: destinationInstance] raise: AssertionFailure.\r\tself should: [aLsc removeMessage: aMessage] raise: AssertionFailure.\r\tself should: [aLsc removeInstance: destinationInstance] raise: AssertionFailure.\r\r\t^ aLsc',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}
