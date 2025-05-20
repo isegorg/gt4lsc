@@ -1,0 +1,41 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-20T20:06:29.76056+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModel,
+				#isMetaSide : false
+			},
+			#name : #'addMessageForInstance:withText:atPosition:',
+			#protocol : #'api  - messages',
+			#sourceCode : 'addMessageForInstance: aGtLscInstanceModel withText: aString atPosition: anInteger\r\t| newMessage |\r\tnewMessage := GtLscMessageModel forInstance: aGtLscInstanceModel inLsc: self withText: aString.\r\t^ self addElement: newMessage atPosition: anInteger inCollection: messages.',
+			#stamp : 'GlamorousAuthor 5/20/2025 20:03',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-20T20:06:29.76056+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModel,
+				#isMetaSide : false
+			},
+			#name : #'addMessageForInstance:withText:andTarget:atPosition:',
+			#protocol : #'api  - messages',
+			#sourceCode : 'addMessageForInstance: aGtLscInstanceModel withText: aString andTarget: otherGtLscInstanceModel atPosition: anInteger\r\t| newMessage|\r\tnewMessage := GtLscMessageWithTargetModel forInstance: aGtLscInstanceModel andTarget: otherGtLscInstanceModel inLsc: self withText: aString.\r\t^ self addElement: newMessage atPosition: anInteger inCollection: messages.',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}

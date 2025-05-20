@@ -1,0 +1,21 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-20T19:18:48.94789+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModelExamples,
+				#isMetaSide : false
+			},
+			#name : #lscAddMessageAtPosition,
+			#protocol : #'examples - model',
+			#sourceCode : 'lscAddMessageAtPosition\r\t<gtExample>\r\t| aLsc existingMessage firstInstance secondInstance  newMessage newMessageWithTarget |\r\taLsc := self lscAddMessageWithTarget.\r\texistingMessage := aLsc messageAt: 1.\r\tfirstInstance := aLsc instanceAt: 1.\r\tsecondInstance := aLsc instanceAt: 2.\r\t\r\t"Add message at position"\r\tnewMessage := aLsc addMessageForInstance: secondInstance withText: \'Message added at first position\' atPosition: 1.\r\t\r\t"Check adding message at position"\r\tself assert: (aLsc messageAt: 1) equals: newMessage.\r\tself assert: (aLsc messageAt: 2) equals: existingMessage.\r\tself assert: aLsc messagesSize equals: 2.\r\r\t"Add message with target at position"\r\tnewMessageWithTarget := aLsc addMessageForInstance: secondInstance withText: \'Message with target added at second position\' andTarget: firstInstance atPosition: 2.\r\t\r\t"Check adding message with target at position"\r\tself assert: (aLsc messageAt: 1) equals: newMessage.\r\tself assert: (aLsc messageAt: 2) equals: newMessageWithTarget.\r\tself assert: (aLsc messageAt: 3) equals: existingMessage.\r\tself assert: aLsc messagesSize equals: 3.\r\t\r\t^ aLsc',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}

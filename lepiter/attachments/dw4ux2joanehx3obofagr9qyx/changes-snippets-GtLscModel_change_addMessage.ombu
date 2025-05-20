@@ -1,0 +1,65 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-20T20:06:29.76056+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModel,
+				#isMetaSide : false
+			},
+			#name : #'addMessageForInstance:withText:',
+			#protocol : #'api  - messages',
+			#sourceCode : 'addMessageForInstance: aGtLscInstanceModel withText: aString\r\t| newMessage|\r\tnewMessage := GtLscMessageModel forInstance: aGtLscInstanceModel inLsc: self withText: aString.\r\tself addIdTo: newMessage.\r\t^ messages add: newMessage',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModel,
+				#isMetaSide : false
+			},
+			#name : #'addMessageForInstance:withText:',
+			#protocol : #'api  - messages',
+			#sourceCode : 'addMessageForInstance: aGtLscInstanceModel withText: aString\r\t^ self addMessageForInstance: aGtLscInstanceModel withText: aString atPosition: self messagesSize + 1',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-20T20:06:29.76056+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModel,
+				#isMetaSide : false
+			},
+			#name : #'addMessageForInstance:withText:andTarget:',
+			#protocol : #'api  - messages',
+			#sourceCode : 'addMessageForInstance: aGtLscInstanceModel withText: aString andTarget: otherGtLscInstanceModel\r\t| newMessage|\r\t\r\tnewMessage := GtLscMessageWithTargetModel forInstance: aGtLscInstanceModel andTarget: otherGtLscInstanceModel inLsc: self withText: aString.\r\tself addIdTo: newMessage.\r\t^ messages add: newMessage',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModel,
+				#isMetaSide : false
+			},
+			#name : #'addMessageForInstance:withText:andTarget:',
+			#protocol : #'api  - messages',
+			#sourceCode : 'addMessageForInstance: aGtLscInstanceModel withText: aString andTarget: otherGtLscInstanceModel\r\t^ self addMessageForInstance: aGtLscInstanceModel withText: aString andTarget: otherGtLscInstanceModel atPosition: self messagesSize + 1',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}

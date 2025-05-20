@@ -1,0 +1,41 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-20T20:06:29.76056+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModel,
+				#isMetaSide : false
+			},
+			#name : #'addElement:atPosition:inCollection:',
+			#protocol : #'private - collection operations',
+			#sourceCode : 'addElement: newElementWithId atPosition: anInteger inCollection: anOrderedCollection\r\t| previousIndex |\r\tself class checkValidPostion: anInteger toAddInCollectionWithSize: self messagesSize.\r\tself addIdTo: newElementWithId.\r\tpreviousIndex := anInteger - 1.\r\t^ anOrderedCollection add: newElementWithId afterIndex: previousIndex',
+			#stamp : 'GlamorousAuthor 5/20/2025 20:03',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-20T20:06:29.76056+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscModel class',
+				#isMetaSide : true
+			},
+			#name : #'checkValidPostion:toAddInCollectionWithSize:',
+			#protocol : #checking,
+			#sourceCode : 'checkValidPostion: anInteger toAddInCollectionWithSize: aCollectionSize\r\tself assert: (anInteger between: 1 and: aCollectionSize + 1) description: \'Invalid position\'.',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}

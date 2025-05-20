@@ -1055,7 +1055,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-05-20T15:41:32.525737+02:00"
+									"dateAndTimeString" : "2025-05-20T16:03:31.666865+02:00"
 								}
 							},
 							"uid" : {
@@ -1105,7 +1105,7 @@
 											"uidString" : "DFLf6/LxDQCTp5asDl0g9Q=="
 										},
 										"previewHeight" : 377.15679931640636,
-										"fileName" : "attachments/eifnh9h42cb3w2nuqgupw3yr7/changes-snippets-GtLscModel_adding_relatedMessagesForInstance:.ombu"
+										"fileName" : "attachments/dw4ux2jdxbkxb9t9mlt1iaj4z/changes-snippets-GtLscModelExamples_adding_lscAddMessageAtPosition.ombu"
 									},
 									{
 										"__type" : "changesSnippet",
@@ -1152,7 +1152,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-05-20T15:15:48.966679+02:00"
+									"dateAndTimeString" : "2025-05-20T16:03:31.674571+02:00"
 								}
 							},
 							"editEmail" : {
@@ -1163,7 +1163,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-05-20T15:15:48.966679+02:00"
+									"dateAndTimeString" : "2025-05-20T16:03:31.674571+02:00"
 								}
 							},
 							"uid" : {
@@ -1200,7 +1200,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-05-20T15:37:52.101967+02:00"
+									"dateAndTimeString" : "2025-05-20T16:05:57.296771+02:00"
 								}
 							},
 							"uid" : {
@@ -1357,6 +1357,43 @@
 								"__type" : "textStyle"
 							},
 							"string" : "And we create the necessary code for the example to be successful:"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-20T16:02:00.680948+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-20T16:06:12.944243+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "IKXqbfPxDQCWvq4JDl0g9Q=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Finally the example is successful {{gtExample:GtLscModelExamples>>lscRemoveInstanceWithRelatedMessagesAsDestination}}"
 						}
 					]
 				},
@@ -1390,6 +1427,155 @@
 					"__type" : "textStyle"
 				},
 				"string" : "When removing {{gtClass:GtLscInstanceModel}} related to {{gtClass:GtLscMessageModel}} , those messages should also be deleted."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [
+												{
+													"__type" : "changesSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-05-20T18:50:19.659006+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-05-20T18:50:19.659006+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "XNTcx/XxDQC42IBvBdGp6g=="
+													},
+													"previewHeight" : 200,
+													"fileName" : ""
+												}
+											]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-20T18:48:51.33972+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-20T18:50:10.109257+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "VyeZwvXxDQCsU4prBdGp6g=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "We create an example:"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-20T18:50:10.101919+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-20T18:50:10.101919+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "Qf1Kx/XxDQC3f14lBdGp6g=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "We want to add an {{gtClass:GtLscMessageModel}} at a given position."
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-05-20T18:48:11.671162+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-05-20T18:49:22.793289+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "guE7wPXxDQCpBFPTBdGp6g=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "We also need to control the order of each {{gtClass:GtLscMessageModel}}."
 			},
 			{
 				"__type" : "textSnippet",
