@@ -405,7 +405,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-05-21T13:13:10.878457+02:00"
+												"dateAndTimeString" : "2025-05-21T13:44:29.368458+02:00"
 											}
 										},
 										"uid" : {
@@ -1000,14 +1000,82 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-05-21T13:18:25.53637+02:00"
+												"dateAndTimeString" : "2025-05-21T13:45:37.319095+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "JOiyQgXyDQC1X6YpBSZDJw=="
 										},
-										"code" : "canvasesContainer := lscElement childNamed: GtLscConstants canvasesContainerElementId.\rcanvasesContainer layout: BlBasicLayout new."
+										"code" : "canvasesContainer := lscElement childNamed: GtLscConstants canvasesContainerElementId.\r\"canvasesContainer layout: BlBasicLayout new.\""
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:32:02.672434+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:34:39.995714+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "a09vcwXyDQC5R7kiBSZDJw=="
+										},
+										"code" : "messagesCanvas := GtLscMessagesCanvasElement new id: GtLscConstants messagesCanvasId; border: Color black.\rcanvasesContainer addChild: messagesCanvas"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:41:28.837158+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:41:34.363948+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "jEwulQXyDQC7f59hBSZDJw=="
+										},
+										"code" : "messagesCanvas removeFromParent"
 									},
 									{
 										"__type" : "pharoSnippet",
@@ -1034,14 +1102,48 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-05-21T13:18:40.04277+02:00"
+												"dateAndTimeString" : "2025-05-21T13:46:38.036843+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "jQiOQwXyDQC1aTvNBSZDJw=="
 										},
-										"code" : "horizontalElement := BlElement new layout: BlFrameLayout new; constraintsDo: [ :c | c horizontal matchParent. c position: 0@600 ]; border: Color black; height: 100; id: #horizontalElement.\rreferenceElement := BlElement new constraintsDo: [ :c | c vertical exact: 50.c frame vertical alignTop.\"c vertical matchParent.\" c horizontal exact: 20. c frame horizontal alignRight ];border: Color green; yourself.\rtargetElement := BlElement new constraintsDo: [ :c | c vertical exact: 50. c frame vertical alignBottom.\"c vertical matchParent.\" c horizontal exact: 10. c frame horizontal alignRight ];border: Color blue; yourself.\rhorizontalElement addChild: referenceElement.\rhorizontalElement addChild: targetElement."
+										"code" : "horizontalElement := BlElement new layout: BlFrameLayout new; constraintsDo: [ :c | c horizontal matchParent. \"c position: 0@600\" ]; border: Color black; height: 100; id: #horizontalElement.\rreferenceElement := BlElement new constraintsDo: [ :c | c vertical exact: 50.c frame vertical alignTop.\"c vertical matchParent.\" c horizontal exact: 20. c frame horizontal alignRight ];border: Color green; yourself.\rtargetElement := BlElement new constraintsDo: [ :c | c vertical exact: 50. c frame vertical alignBottom.\"c vertical matchParent.\" c horizontal exact: 10. c frame horizontal alignRight ];border: Color blue; yourself.\rhorizontalElement addChild: referenceElement.\rhorizontalElement addChild: targetElement."
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:46:45.690592+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:47:31.624264+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "4BgRqAXyDQC8avvCBSZDJw=="
+										},
+										"code" : "messagesCanvas addChild: horizontalElement.\rmessa"
 									},
 									{
 										"__type" : "pharoSnippet",
@@ -1068,14 +1170,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-05-21T13:18:49.088573+02:00"
+												"dateAndTimeString" : "2025-05-21T13:47:16.34366+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "7gkaRAXyDQC1c7j0BSZDJw=="
 										},
-										"code" : "canvasesContainer addChild: horizontalElement."
+										"code" : "\"canvasesContainer addChild: horizontalElement.\""
 									},
 									{
 										"__type" : "pharoSnippet",
@@ -1246,6 +1348,108 @@
 											"uidString" : "ChjpRwXyDQC1pyyEBSZDJw=="
 										},
 										"code" : "horizontalElement addChild: targetLine"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:20:00.511511+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:20:01.056496+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "CgJkSAXyDQC1sQdIBSZDJw=="
+										},
+										"code" : "horizontalElement relocate: 0@200"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:20:09.939491+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:20:11.164221+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "Ut7zSAXyDQC1u91aBSZDJw=="
+										},
+										"code" : "horizontalElement removeFromParent"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:20:18.342736+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:20:19.038474+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "dxJ0SQXyDQC1xUf+BSZDJw=="
+										},
+										"code" : "line removeFromParent"
 									}
 								]
 							},
