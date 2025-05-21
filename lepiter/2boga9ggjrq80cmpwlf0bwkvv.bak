@@ -1,0 +1,1348 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:09:49.032724+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:09:51.974866+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "go/xIwXyDQCzsp+qBSZDJw=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Crea 2 rectángulos de igual tamaño ocupando todo el ancho y el alto repartido entre ambos."
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:10:03.43198+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:10:04.225485+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "kkvNJAXyDQCzwvumBSZDJw=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Encima se crea un campo de texto no visible para que coincida con la zona de linePosition"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:10:20.332248+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:10:21.096961+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "mSzPJQXyDQCzzedRBSZDJw=="
+										},
+										"code" : "message1Id := #message1.\rmessage2Id := #message2.\rself removeChildNamed: message1Id.\rself removeChildNamed: message2Id.\rmessageCanvas1 := BrVerticalPane new\r\t\t matchParent; border: Color green; id: message1Id.\rmessageCanvas2 := BrVerticalPane new\r\t\t matchParent; border: Color red; id: message2Id.\rself addChild: messageCanvas1; addChild: messageCanvas2."
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-21T13:09:12.134385+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-21T13:09:29.098498+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "BpC+IQXyDQCzmMPgBSZDJw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Playground de {{gtClass:GtLscMessagesCanvasElement}}"
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-05-21T13:08:19.995535+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-05-21T13:09:10.425419+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "pv+iHgXyDQCzjxdTBSZDJw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Pruebas para hacer los espacios que contienen a cada mensaje:"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-21T13:11:55.152081+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-21T13:12:02.038197+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "v/11KwXyDQCz/McFBSZDJw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Ver {{gtMethod:GtWardleyMapCanvasElement>>createEdgeViewFor:}}"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:12:32.799653+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:12:35.604914+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "AHe0LQXyDQC0I6+eBSZDJw=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Probar que exista un elemento horizontal que se añada al añadir un mensaje y se dibuje el mensaje a partir del anchor que sería el punto más cercano entre las geometrías del elemento horizontal y el locationLine de la instancia."
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:12:42.326078+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:12:43.573555+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "v85FLgXyDQC0M2w+BSZDJw=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Así se redibujarían los mensajes de forma automática al cambiar esa colección de elementos horizontales (algo parecido a lo que ocurre con la colección de {{gtClass:GtLscInstanceElement}})"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:12:54.10448+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:12:54.64123+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "6o35LgXyDQC0PjPbBSZDJw=="
+										},
+										"code" : "lscElement := (GtLscModelExamples new lscAddInstanceAtPosition) asElement."
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:13:02.944419+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:13:03.505346+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "v3CALwXyDQC0SW02BSZDJw=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Añadir elemento horizontal"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:13:10.317733+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:13:10.878457+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "MPLwLwXyDQC0VFQKBSZDJw=="
+										},
+										"code" : "canvasesContainer := lscElement childNamed: GtLscConstants canvasesContainerElementId.\rcanvasesContainer layout: BlBasicLayout new."
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:13:17.440624+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:13:18.701198+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "GqNdMAXyDQC0XxGaBSZDJw=="
+										},
+										"code" : "horizontalElement := BlElement new constraintsDo: [ :c | c horizontal matchParent. c position: 0@600 ]; border: Color black; height: 3; id: #horizontalElement"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:13:29.482745+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:13:30.05425+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "vFwVMQXyDQC0ecFsBSZDJw=="
+										},
+										"code" : "canvasesContainer addChild: horizontalElement."
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:13:37.25753+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:13:37.886173+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "PQSMMQXyDQC0hLEGBSZDJw=="
+										},
+										"code" : "instancesCanvas := lscElement childNamed: GtLscConstants instancesCanvasId.\rfirstInstanceElement := instancesCanvas childAt: 1.\rlocationLineElement := firstInstanceElement childNamed: GtLscConstants locationLineId."
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:13:45.342412+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:13:46.193103+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "wWIHMgXyDQC0jzicBSZDJw=="
+										},
+										"code" : "origin := BlNearestPositionBoundsAnchor nearestTo: horizontalElement from: locationLineElement.\rtarget := BlNearestPositionBoundsAnchor nearestTo: horizontalElement from: firstInstanceElement.\rline := BlLineElement new fromAnchor: origin; toAnchor: target; border: (BlBorder paint: Color red width: 10); yourself"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:13:53.418587+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:13:54.043669+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "/J2CMgXyDQC0mszWBSZDJw=="
+										},
+										"code" : "canvasesContainer addChild: line"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:14:01.431788+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:14:02.110956+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "AuP8MgXyDQC0pXGFBSZDJw=="
+										},
+										"code" : "line removeFromParent"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:14:08.714682+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:14:09.775338+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "SgRsMwXyDQC0sG7kBSZDJw=="
+										},
+										"code" : "horizontalElementBoundsInContainer := origin nearestToElement bounds inParent: canvasesContainer.\rhorizontalElementCenter := horizontalElementBoundsInContainer center.\rhorizontalElementCenterAttach := (BlBezierElementExamples new attachPoint relocate: (horizontalElementCenter - (15@15)); id: #attachHorizontal;yourself).\rcanvasesContainer addChild: horizontalElementCenterAttach.\r"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:14:17.439333+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:14:18.071641+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "kyTxMwXyDQC0u9oDBSZDJw=="
+										},
+										"code" : "horizontalElementCenterAttach removeFromParent"
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:14:28.965136+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:14:29.620455+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "Yv6gNAXyDQC0xa0rBSZDJw=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Los {{gtClass:BlNearestPositionBoundsAnchor}} se sitúan en la intersección de la línea que une los centros de los elementos y el {{gtClass:BlBounds}} de {{gtMethod:BlAnchorRelativeToElement>>referenceElement}}."
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:14:30.457493+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:14:36.386787+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "YMW3NAXyDQC0zoaQBSZDJw=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Necesitaríamos que ese punto sea el punto del {{gtClass:BlBounds}} más próximo al al centro del otro elemento o en horizontal a él."
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-21T13:12:22.466662+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-21T13:12:22.93318+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "qssWLQXyDQC0GDjtBSZDJw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Pruebas con {{gtClass:BlNearestPositionAnchor}}"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:15:41.552012+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:15:42.880904+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "OJn0OAXyDQC1LK6HBSZDJw=="
+										},
+										"code" : "BlNearestPositionAnchor subclass: #GtLscClosestPositionBoundsAnchor\r\tinstanceVariableNames: ''\r\tclassVariableNames: ''\r\tpackage: 'Gt4Lsc-Helpers'."
+									},
+									{
+										"__type" : "changesSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:15:56.364456+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:15:56.364456+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "UaDWOQXyDQC1OsGKBSZDJw=="
+										},
+										"previewHeight" : 497.9130859374999,
+										"fileName" : "attachments/763x1uynk5ws8mh2mebn7tuci/changes-snippets-createGtLscClosestPositionBoundsAnchor.ombu"
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:17:44.705221+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:17:46.267357+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "Zr9LQAXyDQC1QXc+BSZDJw=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "{{gtClass:GElementTestCase}}"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:18:03.084401+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:18:03.829327+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "+DJkQQXyDQC1S0miBSZDJw=="
+										},
+										"code" : "lscElement := (GtLscModelExamples new lscAddInstanceAtPosition) asElement."
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:18:10.375647+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:18:15.311022+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "SnfTQQXyDQC1VfjLBSZDJw=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Añadir elemento horizontal"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:18:25.018772+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:18:25.53637+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "JOiyQgXyDQC1X6YpBSZDJw=="
+										},
+										"code" : "canvasesContainer := lscElement childNamed: GtLscConstants canvasesContainerElementId.\rcanvasesContainer layout: BlBasicLayout new."
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:18:39.379393+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:18:40.04277+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "jQiOQwXyDQC1aTvNBSZDJw=="
+										},
+										"code" : "horizontalElement := BlElement new layout: BlFrameLayout new; constraintsDo: [ :c | c horizontal matchParent. c position: 0@600 ]; border: Color black; height: 100; id: #horizontalElement.\rreferenceElement := BlElement new constraintsDo: [ :c | c vertical exact: 50.c frame vertical alignTop.\"c vertical matchParent.\" c horizontal exact: 20. c frame horizontal alignRight ];border: Color green; yourself.\rtargetElement := BlElement new constraintsDo: [ :c | c vertical exact: 50. c frame vertical alignBottom.\"c vertical matchParent.\" c horizontal exact: 10. c frame horizontal alignRight ];border: Color blue; yourself.\rhorizontalElement addChild: referenceElement.\rhorizontalElement addChild: targetElement."
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:18:48.556291+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:18:49.088573+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "7gkaRAXyDQC1c7j0BSZDJw=="
+										},
+										"code" : "canvasesContainer addChild: horizontalElement."
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:18:56.125167+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:18:57.214291+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "6IyNRAXyDQC1fadiBSZDJw=="
+										},
+										"code" : "instancesCanvas := lscElement childNamed: GtLscConstants instancesCanvasId.\rfirstInstanceElement := instancesCanvas childAt: 1.\rlocationLineElement := firstInstanceElement childNamed: GtLscConstants locationLineId."
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:19:22.463994+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:19:23.075753+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "cXMfRgXyDQC1h2NNBSZDJw=="
+										},
+										"code" : "sourceOrigin := GtLscClosestPositionBoundsAnchor nearestTo: referenceElement from: locationLineElement.\rsourceDestination := GtLscClosestPositionBoundsAnchor nearestTo: referenceElement from: firstInstanceElement.\rsourceLine := BlLineElement new fromAnchor: sourceOrigin; toAnchor: sourceDestination; border: (BlBorder paint: Color red width: 1); yourself"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:19:31.540934+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:19:32.115451+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "bfKpRgXyDQC1keE5BSZDJw=="
+										},
+										"code" : "horizontalElement addChild: sourceLine"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:19:43.229755+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:19:43.805499+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "AFBcRwXyDQC1mwapBSZDJw=="
+										},
+										"code" : "targetOrigin := GtLscClosestPositionBoundsAnchor nearestTo: targetElement from: locationLineElement.\rtargetDestination := GtLscClosestPositionBoundsAnchor nearestTo: targetElement from: firstInstanceElement.\rtargetLine := BlLineElement new fromAnchor: targetOrigin; toAnchor: targetDestination; border: (BlBorder paint: Color red width: 1); yourself"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:19:52.457396+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T13:19:53.043379+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "ChjpRwXyDQC1pyyEBSZDJw=="
+										},
+										"code" : "horizontalElement addChild: targetLine"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-21T13:15:25.764274+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-05-21T13:15:31.194555+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "M64DOAXyDQC1H4krBSZDJw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Pruebas con {{gtClass:BlNearestPositionAnchor}} personalizado que encuentre el punto de los límites más próximo al centro de otro elemento."
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-05-21T13:11:49.344416+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-05-21T13:11:52.90513+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "wGMdKwXyDQCz7DtABSZDJw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Pruebas con {{gtClass:BlGeometryAnchor}}"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-05-21T13:08:19.950057+02:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-05-21T13:08:19.950057+02:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Lsc with Messages -Playgrounds"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "bb4ca21e-05f2-0d00-b38e-47aa05264327"
+	}
+}
