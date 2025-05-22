@@ -1,0 +1,21 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-22T11:48:47.695064+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMessagesCanvasElement,
+				#isMetaSide : false
+			},
+			#name : #initialize,
+			#protocol : #initialization,
+			#sourceCode : 'initialize\r\tsuper initialize.\r\t\r\tself matchParent.\r\tself id: GtLscConstants messagesCanvasId',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}

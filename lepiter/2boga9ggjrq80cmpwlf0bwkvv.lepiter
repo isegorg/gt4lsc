@@ -143,7 +143,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-05-21T13:09:29.098498+02:00"
+									"dateAndTimeString" : "2025-05-22T11:57:38.382633+02:00"
 								}
 							},
 							"uid" : {
@@ -153,7 +153,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Playground de {{gtClass:GtLscMessagesCanvasElement}}"
+							"string" : "Playground de {{gtClass:GtLscMessagesCanvasContainerElement}}"
 						}
 					]
 				},
@@ -918,6 +918,40 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-22T11:28:21.893124+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-22T11:28:40.395261+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "UpX21hfyDQCRq8VjBDtaNA=="
+										},
+										"code" : "testLsc := GtLscModelExamples new lscAddInstanceAtPosition"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
 												"dateAndTimeString" : "2025-05-21T13:18:03.084401+02:00"
 											}
 										},
@@ -929,14 +963,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-05-21T13:18:03.829327+02:00"
+												"dateAndTimeString" : "2025-05-22T11:28:48.659272+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "+DJkQQXyDQC1S0miBSZDJw=="
 										},
-										"code" : "lscElement := (GtLscModelExamples new lscAddInstanceAtPosition) asElement."
+										"code" : "lscElement := testLsc asElement."
 									},
 									{
 										"__type" : "textSnippet",
@@ -1023,6 +1057,74 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T16:47:12.304209+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-21T16:56:03.823542+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "yRxiLQjyDQCAgHJhBEwTKA=="
+										},
+										"code" : "messagesCanvas := lscElement childNamed: GtLscConstants messagesCanvasId.\rmessagesCanvas border: Color black.\rmessagesCanvas zIndex: -10.\rmessagesCanvas elevation"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-22T11:32:50.127847+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-22T11:37:13.047698+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "W4Tz5hfyDQCSRnkEBDtaNA=="
+										},
+										"code" : "(lscElement childNamed: GtLscConstants messagesCanvasDummyElementId) size"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
 												"dateAndTimeString" : "2025-05-21T13:32:02.672434+02:00"
 											}
 										},
@@ -1034,14 +1136,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-05-21T13:34:39.995714+02:00"
+												"dateAndTimeString" : "2025-05-22T11:57:38.448107+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "a09vcwXyDQC5R7kiBSZDJw=="
 										},
-										"code" : "messagesCanvas := GtLscMessagesCanvasElement new id: GtLscConstants messagesCanvasId; border: Color black.\rcanvasesContainer addChild: messagesCanvas"
+										"code" : "messagesCanvas := GtLscMessagesCanvasContainerElement new id: GtLscConstants messagesCanvasId; border: Color black.\rcanvasesContainer addChild: messagesCanvas"
 									},
 									{
 										"__type" : "pharoSnippet",

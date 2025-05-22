@@ -1,0 +1,64 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-22T11:48:47.695064+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMessagesCanvasContainerElement,
+				#isMetaSide : false
+			},
+			#name : #initialize,
+			#protocol : #initialization,
+			#sourceCode : 'initialize\r\tsuper initialize.\r\t\r\tself matchParent.\r\tself addDummyElement.\r\tself addMessagesCanvasElement.\r\tself id: GtLscConstants messagesCanvasContainerId',
+			#stamp : 'GlamorousAuthor 5/22/2025 11:46',
+			#package : #Gt4Lsc
+		}
+	}
+}
+
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-22T11:48:47.695064+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMessagesCanvasContainerElement,
+				#isMetaSide : false
+			},
+			#name : #addDummyElement,
+			#protocol : #initialization,
+			#sourceCode : 'addDummyElement\r| asInstanceNameElement |\r\tself flag: #\'TODO Improve how to know the dimension of GtLscInstanceElement name\'.\r\tasInstanceNameElement := BrEditableLabel new\r\t\thMatchParent;\r\t\tvFitContent;\r\t\taptitude: BrGlamorousRegularEditorAptitude + BrGlamorousEditorSpacingAptitude;\r\t\tconstraintsDo: [ :c | c linear horizontal alignCenter ];\r\t\tid: GtLscConstants messagesCanvasContainerDummyElementId;\r\t\ttext: \'Dummy Element\';\r\t\tborder: Color black;\r\t\tvisibility: BlVisibility hidden;\r\t\tyourself.\r\tself addChild: asInstanceNameElement',
+			#stamp : 'GlamorousAuthor 5/22/2025 11:46',
+			#package : #Gt4Lsc
+		}
+	}
+}
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-22T11:48:47.695064+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMessagesCanvasContainerElement,
+				#isMetaSide : false
+			},
+			#name : #addMessagesCanvasElement,
+			#protocol : #initialization,
+			#sourceCode : 'addMessagesCanvasElement\r\tself addChild: GtLscMessagesCanvasElement new',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}

@@ -1,0 +1,21 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-21T16:07:18.752958+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscConstants class',
+				#isMetaSide : true
+			},
+			#name : #messagesCanvasId,
+			#protocol : #'api - constants',
+			#sourceCode : 'messagesCanvasId\r\t^ #messagesCanvas',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}
