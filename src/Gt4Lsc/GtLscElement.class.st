@@ -5,7 +5,8 @@ Class {
 	#classTraits : 'TGtWithLscViewModel classTrait + TBrLayoutResizable classTrait',
 	#instVars : [
 		'titleElement',
-		'instancesCanvas'
+		'instancesCanvas',
+		'messagesCanvas'
 	],
 	#category : #'Gt4Lsc-! Views'
 }
@@ -18,6 +19,11 @@ GtLscElement >> createCanvasesContainer [
 { #category : #initialization }
 GtLscElement >> createInstancesCanvas [
 	^ GtLscInstancesCanvasElement new id: GtLscConstants instancesCanvasId
+]
+
+{ #category : #initialization }
+GtLscElement >> createMessagesCanvasContainer [
+	^ GtLscMessagesCanvasContainerElement new
 ]
 
 { #category : #initialization }
@@ -39,13 +45,14 @@ GtLscElement >> defaultLayout [
 
 { #category : #initialization }
 GtLscElement >> initialize [
-	| canvasesContainer |
+	| canvasesContainer messagesCanvasContainer|
 	super initialize.
 	
 	titleElement := self createTitleElement.
 	canvasesContainer := self createCanvasesContainer.
 	instancesCanvas := self createInstancesCanvas.
-	canvasesContainer addChild: instancesCanvas.
+	messagesCanvasContainer := self createMessagesCanvasContainer.
+	canvasesContainer addChildren: {messagesCanvasContainer . instancesCanvas}.
 	
 	self addChildren: {titleElement. canvasesContainer}.
 	

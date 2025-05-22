@@ -68,6 +68,21 @@ GtLscConstants class >> locationLineWidth [
 ]
 
 { #category : #'api - constants' }
+GtLscConstants class >> messagesCanvasContainerDummyElementId [
+	^ #HiddenEditableLabelElement
+]
+
+{ #category : #'api - constants' }
+GtLscConstants class >> messagesCanvasContainerId [
+	^ #messagesCanvasContainer
+]
+
+{ #category : #'api - constants' }
+GtLscConstants class >> messagesCanvasId [
+	^ #messagesCanvas
+]
+
+{ #category : #'api - constants' }
 GtLscConstants class >> titleElementId [
 	^ #title
 ]
