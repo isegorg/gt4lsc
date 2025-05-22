@@ -8,43 +8,6 @@
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-05-22T18:06:01.770738+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-05-22T18:06:04.258806+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "WWofZR3yDQCJmpewBBvDdA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "For communication {{gtClass:GtLscInstanceModel|label=InstanceModel}}  -  -  >  {{gtClass:GtLscInstanceViewModel|label=InstanceViewModel}}  -  -  >  {{gtClass:GtLscInstanceElement|label=InstanceView}}"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
 					"items" : [
 						{
 							"__type" : "textSnippet",
@@ -197,7 +160,80 @@
 										"code" : "(Object subclass: #GtLscMessageViewModel\r\tuses: TGtLscWithModel + TGtAnnouncer\r\tinstanceVariableNames: 'announcer temperatureState elementId instanceId'\r\tclassVariableNames: ''\r\tpackage: 'Gt4Lsc') tagWith: '! View models'."
 									},
 									{
-										"__type" : "changesSnippet",
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [
+												{
+													"__type" : "changesSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-05-22T18:18:30.89745+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-05-22T18:18:30.89745+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "BjHGkR3yDQCOWIn5BBvDdA=="
+													},
+													"previewHeight" : 200,
+													"fileName" : "attachments/6wuqatcra5j8hp5eacv03asc4/changes-snippets-GtLscMessageViewModel_change_useTGtAnnouncer.ombu"
+												}
+											]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-22T19:45:53.496968+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-22T19:52:19.97351+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "x+ZByh7yDQCjHDkdDLFbgA=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "We need {{gtClass:GtLscMessageViewModel}} to announce its changes too, so it uses {{gtClass:TGtAnnouncer}} and defines its announcer."
+									},
+									{
+										"__type" : "textSnippet",
 										"children" : {
 											"__type" : "snippets",
 											"items" : [ ]
@@ -210,7 +246,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-05-22T18:18:30.89745+02:00"
+												"dateAndTimeString" : "2025-05-22T19:44:25.037244+02:00"
 											}
 										},
 										"editEmail" : {
@@ -221,15 +257,17 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-05-22T18:18:30.89745+02:00"
+												"dateAndTimeString" : "2025-05-22T19:51:05.883844+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
-											"uidString" : "BjHGkR3yDQCOWIn5BBvDdA=="
+											"uidString" : "Ox38xB7yDQCiXPJBDLFbgA=="
 										},
-										"previewHeight" : 200,
-										"fileName" : "attachments/6wuqatcra5j8hp5eacv03asc4/changes-snippets-GtLscMessageViewModel_change_useTGtAnnouncer.ombu"
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "It needs to know the {{gtClass:GtLscMessageModel}} to set the initial values ​​from it and update them when changes are announced from the model. So it uses {{gtClass:TGtLscWithModel}}"
 									}
 								]
 							},
@@ -265,10 +303,82 @@
 							"string" : "We create the *ViewModel*"
 						},
 						{
-							"__type" : "pharoSnippet",
+							"__type" : "textSnippet",
 							"children" : {
 								"__type" : "snippets",
-								"items" : [ ]
+								"items" : [
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-22T17:53:44.073253+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-22T21:09:18.967844+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "QA0nOR3yDQCFuqytBBvDdA=="
+										},
+										"code" : "(BlElement subclass: #GtLscMessageElement\r\tuses: TGtLscWithModel\r\tinstanceVariableNames: ''\r\tclassVariableNames: 'textElement lineElement'\r\tpackage: 'Gt4Lsc') tagWith: '! Views'."
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-22T19:53:15.649156+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-05-22T19:53:44.265154+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "Lpec5B7yDQCsGJmuDLFbgA=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "It needs to know the {{gtClass:GtLscMessageViewModel}} to set the initial values ​​from it and update them when changes are announced from the model. So it uses {{gtClass:TGtLscWithModel}} too."
+									}
+								]
 							},
 							"createEmail" : {
 								"__type" : "email",
@@ -278,7 +388,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-05-22T17:53:44.073253+02:00"
+									"dateAndTimeString" : "2025-05-22T19:43:53.020799+02:00"
 								}
 							},
 							"editEmail" : {
@@ -289,14 +399,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-05-22T18:08:38.394346+02:00"
+									"dateAndTimeString" : "2025-05-22T19:53:03.83316+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "QA0nOR3yDQCFuqytBBvDdA=="
+								"uidString" : "F5ATwx7yDQCh3vv2DLFbgA=="
 							},
-							"code" : "(BlElement subclass: #GtLscMessageElement\r\tinstanceVariableNames: 'TGtLscWithModel'\r\tclassVariableNames: 'textElement lineElement'\r\tpackage: 'Gt4Lsc') tagWith: '! Views'."
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "We create the class for its *View*"
 						}
 					]
 				},
@@ -308,7 +421,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-05-22T17:53:28.231159+02:00"
+						"dateAndTimeString" : "2025-05-22T18:06:01.770738+02:00"
 					}
 				},
 				"editEmail" : {
@@ -319,17 +432,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-05-22T18:03:10.228048+02:00"
+						"dateAndTimeString" : "2025-05-22T19:55:59.407638+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "FlU1OB3yDQCFhSkSBBvDdA=="
+					"uidString" : "WWofZR3yDQCJmpewBBvDdA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "**Checking view features with the initial model - Messages**"
+				"string" : "For communication **MVVM**"
 			}
 		]
 	},
