@@ -1,0 +1,21 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-22T17:31:28.737605+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscElementScripterExamples,
+				#isMetaSide : false
+			},
+			#name : #renderLscWithMessages,
+			#protocol : #'examples - ui',
+			#sourceCode : 'renderLscWithMessages\r\t"Check that the UI element displays the model\'s characteristics"\r\r\t<gtExample>\r\t| lsc firstLscMessage secondLscMessage uiElement messagesCanvasElement fistLscMessageElement secondLscMessageElement |\r\tlsc := GtLscModelExamples new lscAddMessageAtPosition.\r\tfirstLscMessage := lsc messageAt: 1.\r\tsecondLscMessage := lsc messageAt: 2.\r\tuiElement := lsc asElement.\r\t\r\t"Check the messages in the view"\r\tmessagesCanvasElement := (uiElement childNamed: GtLscConstants messagesCanvasId).\r\tself assert: messagesCanvasElement isNotNil.\r\tself assert: messagesCanvasElement childrenCount equals: lsc messagesSize.\r\t\r\tfistLscMessageElement := (messagesCanvasElement childAt: 1).\r\tself assert: fistLscMessageElement id equals: (GtLscConstants messageElementIdTemplate format: {firstLscMessage id asString}) asBlocElementId.\r\tself assert: (fistLscMessageElement childNamed: GtLscConstants messageTextElementId) text asString equals: firstLscMessage text.\r\tself assert: (fistLscMessageElement childNamed: GtLscConstants messageLineId) border paint equals: GtLscConstants hotColor asBlPaint.\r\t\r\tsecondLscMessageElement := (messagesCanvasElement childAt: 2).\r\tself assert: secondLscMessageElement id equals: (GtLscConstants messageElementIdTemplate format: {secondLscMessage id asString}) asBlocElementId.\r\tself assert: (secondLscMessageElement childNamed: GtLscConstants messageTextElementId) text asString equals: secondLscMessage name.\r\tself assert: (secondLscMessageElement childNamed: GtLscConstants messageLineId) border paint equals: GtLscConstants hotColor asBlPaint.\r\t\r\t^ lsc',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}
