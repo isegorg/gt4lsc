@@ -1,0 +1,81 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-23T17:16:13.546798+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMessageViewModel,
+				#isMetaSide : false
+			},
+			#name : #onModelChanged,
+			#protocol : #'api - model',
+			#sourceCode : 'onModelChanged\r\t"Is sent when a new lsc message model is assigned to the view model"\r\t\r\tself onTemperatureChanged.\r\tself onIdChanged.\r\tself onInstanceIdChanged',
+			#stamp : 'GlamorousAuthor 5/23/2025 17:06',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-23T17:16:13.546798+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMessageViewModel,
+				#isMetaSide : false
+			},
+			#name : #onTemperatureChanged,
+			#protocol : #'events handling',
+			#sourceCode : 'onTemperatureChanged\r\r\ttemperatureState := model temperature asViewState.',
+			#stamp : 'GlamorousAuthor 5/23/2025 17:06',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-23T17:16:13.546798+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscMessageViewModel class',
+				#isMetaSide : true
+			},
+			#name : #'createElementIdFromModel:',
+			#protocol : #'api - id operations',
+			#sourceCode : 'createElementIdFromModel: aMessageModel\r\t^ GtLscConstants messageElementIdTemplate format: {aMessageModel id asString . aMessageModel instanceId asString}',
+			#stamp : 'GlamorousAuthor 5/23/2025 17:08',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-23T17:16:13.546798+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMessageViewModel,
+				#isMetaSide : false
+			},
+			#name : #onInstanceIdChanged,
+			#protocol : #'events handling',
+			#sourceCode : 'onInstanceIdChanged\r\tself onIdChanged.\r\tinstanceId := GtLscInstanceViewModel createElementIdFromId: model instanceId.',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}

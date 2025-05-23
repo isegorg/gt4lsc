@@ -1,0 +1,21 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-23T17:16:13.546798+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMessageModel,
+				#isMetaSide : false
+			},
+			#name : #instanceId,
+			#protocol : #accessing,
+			#sourceCode : 'instanceId\r\t^ instance id',
+			#stamp : 'GlamorousAuthor 5/23/2025 17:08',
+			#package : #Gt4Lsc
+		}
+	}
+}
