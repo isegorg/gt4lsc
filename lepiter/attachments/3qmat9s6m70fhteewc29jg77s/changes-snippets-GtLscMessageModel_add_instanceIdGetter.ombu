@@ -11,6 +11,28 @@ OmEntry {
 				#className : #GtLscMessageModel,
 				#isMetaSide : false
 			},
+			#name : #id,
+			#protocol : #accessing,
+			#sourceCode : 'id\r\t^ id',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}
+
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-23T17:16:13.546798+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMessageModel,
+				#isMetaSide : false
+			},
 			#name : #instanceId,
 			#protocol : #accessing,
 			#sourceCode : 'instanceId\r\t^ instance id',
@@ -18,4 +40,4 @@ OmEntry {
 			#package : #Gt4Lsc
 		}
 	}
-}
+}

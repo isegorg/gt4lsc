@@ -1,0 +1,66 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-25T17:16:26.510206+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMessageElement,
+				#isMetaSide : false
+			},
+			#name : #initialize,
+			#protocol : #initialization,
+			#sourceCode : 'initialize\r\tsuper initialize.\r\r\tself\r\t\tlayout: BlFrameLayout new;\r\t\tconstraintsDo: [ :c | c horizontal matchParent ];\r\t\tborder: Color black;\r\t\theight: 150;\r\t\tid: #messageElement.\r\tself initializeReferencesElement.\r\tself initializeMessageLineElements.',
+			#stamp : 'GlamorousAuthor 5/25/2025 17:12',
+			#package : #Gt4Lsc
+		}
+	}
+}
+
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-25T17:16:26.510206+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMessageElement,
+				#isMetaSide : false
+			},
+			#name : #initializeReferencesElement,
+			#protocol : #initialization,
+			#sourceCode : 'initializeReferencesElement\r\treferenceTextElement := BlElement new\r\t\t\tconstraintsDo: [ :c | \r\t\t\t\tc vertical exact: 50.\r\t\t\t\tc frame vertical alignTop.\r\t\t\t\tc frame horizontal alignRight ];\r\t\t\tid: #referenceForText;\r\t\t\tyourself.\r\treferenceFromInstanceElement := BlElement new\r\t\t\tconstraintsDo: [ :c | \r\t\t\t\tc vertical exact: 50.\r\t\t\t\tc frame vertical alignCenter.\r\t\t\t\tc frame horizontal alignRight ];\r\t\t\tid: #referenceFor_fromInstanceLine;\r\t\t\tyourself.\r\treferenceToInstanceElement := BlElement new\r\t\t\tconstraintsDo: [ :c | \r\t\t\t\tc vertical exact: 50.\r\t\t\t\tc frame vertical alignBottom.\r\t\t\t\tc frame horizontal alignRight ];\r\t\t\tid: #referenceFor_toInstanceLine;\r\t\t\tyourself.\r\tself addChild: referenceTextElement.\r\tself addChild: referenceFromInstanceElement.\r\tself addChild: referenceToInstanceElement',
+			#stamp : 'GlamorousAuthor 5/25/2025 17:15',
+			#package : #Gt4Lsc
+		}
+	}
+}
+
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-25T17:16:26.510206+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMessageElement,
+				#isMetaSide : false
+			},
+			#name : #initializeMessageLineElements,
+			#protocol : #initialization,
+			#sourceCode : 'initializeMessageLineElements\r\t| messageLineElements |\r\tfromInstanceLine := BlLineElement new id: GtLscConstants fromInstanceLineId.\r\r\treturnLine := BlLineElement new id: GtLscConstants returnLineId.\r\r\ttoInstanceLine := BlLineElement new id: GtLscConstants toInstanceLineId.\r\tself updateMessageLineElementsForInstanceElementId: #nonExistent.\r\tmessageLineElements := {fromInstanceLine.\r\t\t\treturnLine.\r\t\t\ttoInstanceLine}.\r\tmessageLineElements\r\t\tdo: [ :messageLineElement | \r\t\t\tmessageLineElement states addState: GtLscConstants defaultTemperatureState.\r\t\t\tmessageLineElement\r\t\t\t\twithStylesDo: [ :theStyles | \r\t\t\t\t\ttheStyles\r\t\t\t\t\t\taddStyle: (BlElementStyle new\r\t\t\t\t\t\t\t\tstate: GtLscHotElementState uniqueInstance;\r\t\t\t\t\t\t\t\tborder: (GtLscConstants hotBorder copyWithWidth: GtLscConstants messageLinesWidth));\r\t\t\t\t\t\taddStyle: (BlElementStyle new\r\t\t\t\t\t\t\t\tstate: GtLscHotElementState uniqueInstance not;\r\t\t\t\t\t\t\t\tborder: (GtLscConstants coldBorder copyWithWidth: GtLscConstants messageLinesWidth)) ] ].\r\tself addChildren: messageLineElements',
+			#stamp : 'GlamorousAuthor 5/25/2025 17:16',
+			#package : #Gt4Lsc
+		}
+	}
+}
+

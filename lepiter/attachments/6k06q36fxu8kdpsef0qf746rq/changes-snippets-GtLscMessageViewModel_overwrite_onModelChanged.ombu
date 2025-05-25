@@ -38,12 +38,33 @@ OmEntry {
 			#package : #Gt4Lsc
 		}
 	}
-}OmEntry {
+}
+OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-05-23T17:16:13.546798+02:00' ],
 		#prior : OmReference [ '2' ],
 		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMessageViewModel,
+				#isMetaSide : false
+			},
+			#name : #onIdChanged,
+			#protocol : #'events handling',
+			#sourceCode : 'onIdChanged\r\telementId := self class createElementIdFromModel: model',
+			#stamp : 'GlamorousAuthor 5/24/2025 19:29',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-23T17:16:13.546798+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
@@ -62,8 +83,8 @@ OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-05-23T17:16:13.546798+02:00' ],
-		#prior : OmReference [ '3' ],
-		#self : OmReference [ '4' ]
+		#prior : OmReference [ '4' ],
+		#self : OmReference [ '5' ]
 	},
 	#content : EpMethodAddition {
 		#method : RGMethodDefinition {
@@ -78,4 +99,4 @@ OmEntry {
 			#package : #Gt4Lsc
 		}
 	}
-}
+}

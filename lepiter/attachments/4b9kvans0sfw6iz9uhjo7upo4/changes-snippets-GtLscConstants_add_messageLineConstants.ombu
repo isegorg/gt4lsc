@@ -1,0 +1,83 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-25T17:32:07.229231+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscConstants class',
+				#isMetaSide : true
+			},
+			#name : #fromInstanceLineId,
+			#protocol : #'api - constants',
+			#sourceCode : 'fromInstanceLineId\r\t^ #fromInstanceLine',
+			#stamp : 'GlamorousAuthor 5/25/2025 16:55',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-25T17:32:07.229231+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscConstants class',
+				#isMetaSide : true
+			},
+			#name : #returnLineId,
+			#protocol : #'api - constants',
+			#sourceCode : 'returnLineId\r\t^ #returnLine',
+			#stamp : 'GlamorousAuthor 5/25/2025 16:55',
+			#package : #Gt4Lsc
+		}
+	}
+}
+
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-25T17:32:07.229231+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscConstants class',
+				#isMetaSide : true
+			},
+			#name : #toInstanceLineId,
+			#protocol : #'api - constants',
+			#sourceCode : 'toInstanceLineId\r\t^ #toInstanceLine',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-25T17:32:07.229231+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscConstants class',
+				#isMetaSide : true
+			},
+			#name : #messageLinesWidth,
+			#protocol : #'api - constants',
+			#sourceCode : 'messageLinesWidth\r\t^ 5',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}
