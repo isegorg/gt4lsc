@@ -1,0 +1,41 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-26T11:03:30.834415+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMessageElement,
+				#isMetaSide : false
+			},
+			#name : #'messageLineElementsDo:',
+			#protocol : #api,
+			#sourceCode : 'messageLineElementsDo: aBlock\r\tself messageLineElements do: [ :messageLine | aBlock cull: messageLine ]',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-26T11:03:30.834415+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMessageElement,
+				#isMetaSide : false
+			},
+			#name : #messageLineElements,
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'messageLineElements\r\t^ {fromInstanceLine.\r\t\treturnLine.\r\t\ttoInstanceLine}',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}

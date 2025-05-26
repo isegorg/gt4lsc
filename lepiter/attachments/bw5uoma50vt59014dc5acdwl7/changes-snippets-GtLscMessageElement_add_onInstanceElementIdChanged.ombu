@@ -1,0 +1,41 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-25T17:51:50.603674+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMessageElement,
+				#isMetaSide : false
+			},
+			#name : #onInstanceElementIdChanged,
+			#protocol : #'events handling',
+			#sourceCode : 'onInstanceElementIdChanged\r\tself\r\t\tupdateMessageLineElementsForInstanceElementId: self  model instanceId',
+			#stamp : 'GlamorousAuthor 5/25/2025 18:01',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-25T17:51:50.603674+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMessageViewModel,
+				#isMetaSide : false
+			},
+			#name : #instanceId,
+			#protocol : #accessing,
+			#sourceCode : 'instanceId\r\t^ instanceId',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}

@@ -437,6 +437,79 @@
 																	"__type" : "time",
 																	"time" : {
 																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-05-26T11:02:06.543917+02:00"
+																	}
+																},
+																"editEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"editTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-05-26T11:02:06.543917+02:00"
+																	}
+																},
+																"uid" : {
+																	"__type" : "uid",
+																	"uidString" : "nilu8GfyDQCqHiNcD9bkyA=="
+																},
+																"previewHeight" : 200,
+																"fileName" : "attachments/bw5uom4xb297ypsvoayu4ero7/changes-snippets-GtLscMessageElement_add_messageLineElementsDo:.ombu"
+															}
+														]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-05-26T11:00:48.964657+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-05-26T11:02:01.416218+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "ImPO62fyDQCovAvOD9bkyA=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "We create the code vperform an action on all lines associated with the message."
+												},
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [
+															{
+																"__type" : "changesSnippet",
+																"children" : {
+																	"__type" : "snippets",
+																	"items" : [ ]
+																},
+																"createEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"createTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
 																		"dateAndTimeString" : "2025-05-25T17:29:12.251533+02:00"
 																	}
 																},
@@ -635,7 +708,7 @@
 																	"__type" : "uid",
 																	"uidString" : "4z8iR1LyDQCy78DmAPgZFw=="
 																},
-																"previewHeight" : 200,
+																"previewHeight" : 624.2408447265625,
 																"fileName" : "attachments/763x1uynk5ws8mh2mebn7tuci/changes-snippets-createGtLscClosestPositionBoundsAnchor.ombu"
 															}
 														]

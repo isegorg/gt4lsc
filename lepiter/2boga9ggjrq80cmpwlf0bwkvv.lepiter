@@ -1272,14 +1272,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-05-25T18:22:58.135773+02:00"
+												"dateAndTimeString" : "2025-05-26T10:53:02.777482+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "7gkaRAXyDQC1c7j0BSZDJw=="
 										},
-										"code" : "firstInstance := testLsc instanceAt: 1.\rsecondInstance := testLsc instanceAt: 2.\r\"firstInstanceElementId := GtLscConstants instanceElementIdTemplate format: {firstInstance id asString}.\"\r\"horizontalElement updateMessageLineElementsForInstanceElementId: firstInstanceElementId.\"\rmessageModel := GtLscMessageModel forInstance: secondInstance inLsc: testLsc withText: 'New Message'.\rmessageViewModel := GtLscMessageViewModel new model: messageModel.\rmessageElement model: (GtLscMessageViewModel new model: messageModel).\r\rmessageViewModel model: (GtLscMessageModel forInstance: firstInstance inLsc: testLsc withText: 'New Message').\rmessageElement model: messageViewModel\r\r(horizontalElement instVarNamed: #firstAnchor) referenceElement: instanceLocationLineElement.\r(horizontalElement instVarNamed: #thirdAnchor)\t referenceElement: instanceLocationLineElement"
+										"code" : "firstInstance := testLsc instanceAt: 1.\rsecondInstance := testLsc instanceAt: 2.\r\"firstInstanceElementId := GtLscConstants instanceElementIdTemplate format: {firstInstance id asString}.\"\r\"horizontalElement updateMessageLineElementsForInstanceElementId: firstInstanceElementId.\"\rmessageModel := GtLscMessageModel forInstance: secondInstance inLsc: testLsc withText: 'New Message'.\rmessageViewModel := GtLscMessageViewModel new model: messageModel.\rmessageViewModel instVarNamed: #temperatureState put: GtLscHotElementState uniqueInstance not.\rmessageElement model: messageViewModel.\r\rmessageViewModel model: (GtLscMessageModel forInstance: firstInstance inLsc: testLsc withText: 'New Message').\rmessageElement model: messageViewModel\r\r(horizontalElement instVarNamed: #firstAnchor) referenceElement: instanceLocationLineElement.\r(horizontalElement instVarNamed: #thirdAnchor)\t referenceElement: instanceLocationLineElement"
 									},
 									{
 										"__type" : "pharoSnippet",
