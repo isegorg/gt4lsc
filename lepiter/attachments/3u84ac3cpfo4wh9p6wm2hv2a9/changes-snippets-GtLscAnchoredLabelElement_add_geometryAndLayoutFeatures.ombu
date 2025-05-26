@@ -1,0 +1,81 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-26T17:29:05.658003+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscAnchoredLabelElement,
+				#isMetaSide : false
+			},
+			#name : #measureGeometry,
+			#protocol : #layout,
+			#sourceCode : 'measureGeometry\r\t| newExtent |\r\tnewExtent := self hasChildren ifTrue: [ (self childAt: 1) extent ] ifFalse: [ (75 @ 75) * 2 ].\r\tself geometry extent: newExtent',
+			#stamp : 'GlamorousAuthor 5/26/2025 17:57',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-26T17:29:05.658003+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscAnchoredLabelElement,
+				#isMetaSide : false
+			},
+			#name : #layoutBounds,
+			#protocol : #layout,
+			#sourceCode : 'layoutBounds\r\t<return: #Rectangle>\r\t| aCenterPosition anOrigin aCorner|\r\t\r\taCenterPosition := self centerPosition.\r\tanOrigin := aCenterPosition - (self labelSize /2).\r\taCorner := aCenterPosition + (self labelSize/2).\r\t\r\t^ anOrigin corner: aCorner',
+			#stamp : 'GlamorousAuthor 5/26/2025 17:57',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-26T17:29:05.658003+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscAnchoredLabelElement,
+				#isMetaSide : false
+			},
+			#name : #labelSize,
+			#protocol : #'api - bounds',
+			#sourceCode : 'labelSize\r\t^ self label size',
+			#stamp : 'GlamorousAuthor 5/26/2025 17:57',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-26T17:29:05.658003+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscAnchoredLabelElement,
+				#isMetaSide : false
+			},
+			#name : #label,
+			#protocol : #accessing,
+			#sourceCode : 'label\r\t^ self childAt: 1',
+			#stamp : 'GlamorousAuthor 5/26/2025 17:57',
+			#package : #Gt4Lsc
+		}
+	}
+}

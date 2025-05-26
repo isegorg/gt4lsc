@@ -15,7 +15,7 @@ OmEntry {
 			},
 			#name : #onInstanceElementIdChanged,
 			#protocol : #'events handling',
-			#sourceCode : 'onInstanceElementIdChanged\r\tself\r\t\tupdateMessageLineElementsForInstanceElementId: self  model instanceId',
+			#sourceCode : 'onInstanceElementIdChanged\r\tself\r\t\tupdateMessageElementsForInstanceElementId: self  model instanceId',
 			#stamp : 'GlamorousAuthor 5/25/2025 18:01',
 			#package : #Gt4Lsc
 		}

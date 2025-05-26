@@ -1,0 +1,21 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-26T17:29:05.658003+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #BlBezierElementExamples,
+				#isMetaSide : false
+			},
+			#name : #anchoredLabelElement,
+			#protocol : #'*Gt4Lsc',
+			#sourceCode : 'anchoredLabelElement\r\t<gtExample>\r\t<return: #BlElement>\r\t| redCurve attachFrom attachTo anchorFrom anchorTo perpendicularAnchor perpendicularAttach fromLine toLine connectLine |\r\tredCurve := self redCurve.\r\r\tattachFrom := self attachPoint relocate: 100 @ 100.\r\tattachTo := self attachPoint relocate: 300 @ 400.\r\r\tanchorFrom := BlElementCenterAnchor element: attachFrom.\r\tanchorTo := BlElementCenterAnchor element: attachTo.\r\r\tperpendicularAnchor := BlPerpendicularAnchor new.\t"order of the reference anchors matters"\r\tperpendicularAnchor\r\t\treferenceAnchors: {anchorFrom.\r\t\t\t\tanchorTo}.\t"the length of a perpendicular is half of the distance"\r\tperpendicularAnchor curvature: 100.\r\r\tredCurve fromAnchor: anchorFrom.\r\tredCurve toAnchor: anchorTo.\r\tredCurve viaAnchor: perpendicularAnchor.\t"------ fancy look ------"\t"visual represenation of perpendicular anchor (does not influence the curve)"\r\tperpendicularAttach := GtLscAnchoredLabelElement text: \'New Label\'.\r\tperpendicularAttach background: (Color red alpha: 0.4).\r\tperpendicularAttach centerAnchor: perpendicularAnchor.\t"visual connection between anchors (does not influence the curve)"\r\tperpendicularAttach id: #label.\r\r\t\r\tfromLine := self greyLine.\r\tfromLine fromAnchor: (BlElementCenterAnchor element: attachFrom).\r\tfromLine toAnchor: (BlElementCenterAnchor element: perpendicularAttach).\t"visual connection between anchors (does not influence the curve)"\r\ttoLine := self greyLine.\r\ttoLine fromAnchor: (BlElementCenterAnchor element: perpendicularAttach).\r\ttoLine toAnchor: (BlElementCenterAnchor element: attachTo).\t"visual connection between anchors (does not influence the curve)"\r\tconnectLine := self greyLine.\r\tconnectLine fromAnchor: (BlElementCenterAnchor element: attachFrom).\r\tconnectLine toAnchor: (BlElementCenterAnchor element: attachTo).\r\r\t^ self container\r\t\taddChildren: {redCurve.\r\t\t\t\tattachFrom.\r\t\t\t\tperpendicularAttach.\r\t\t\t\tattachTo.\r\t\t\t\tfromLine.\r\t\t\t\ttoLine.\r\t\t\t\tconnectLine}',
+			#stamp : 'GlamorousAuthor 5/26/2025 18:03',
+			#package : #Gt4Lsc
+		}
+	}
+}

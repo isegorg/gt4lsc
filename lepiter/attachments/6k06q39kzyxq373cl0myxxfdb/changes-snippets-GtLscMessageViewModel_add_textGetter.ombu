@@ -1,7 +1,7 @@
 OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
-		#time : DateAndTime [ '2025-05-23T13:37:50.95394+02:00' ],
+		#time : DateAndTime [ '2025-05-26T17:29:05.658003+02:00' ],
 		#prior : OmReference [ '0' ],
 		#self : OmReference [ '1' ]
 	},
@@ -11,9 +11,9 @@ OmEntry {
 				#className : #GtLscMessageViewModel,
 				#isMetaSide : false
 			},
-			#name : #name,
+			#name : #text,
 			#protocol : #accessing,
-			#sourceCode : 'name\r\t^ model name',
+			#sourceCode : 'text\r\t^ model text',
 			#stamp : '',
 			#package : #Gt4Lsc
 		}

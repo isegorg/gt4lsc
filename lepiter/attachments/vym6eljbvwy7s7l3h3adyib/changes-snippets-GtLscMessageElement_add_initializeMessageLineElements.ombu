@@ -1,0 +1,21 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-26T11:03:30.834415+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMessageElement,
+				#isMetaSide : false
+			},
+			#name : #initializeMessageLineElements,
+			#protocol : #initialization,
+			#sourceCode : 'initializeMessageLineElements\r\tfromInstanceLine := BlLineElement new id: GtLscConstants fromInstanceLineId.\r\r\treturnLine := BlLineElement new id: GtLscConstants returnLineId.\r\r\ttoInstanceLine := BlLineElement new id: GtLscConstants toInstanceLineId.\r\tself messageLineElementsDo: [ :messageLineElement | \r\t\t\tmessageLineElement states addState: GtLscConstants defaultTemperatureState.\r\t\t\tmessageLineElement\r\t\t\t\twithStylesDo: [ :theStyles | \r\t\t\t\t\ttheStyles\r\t\t\t\t\t\taddStyle: (BlElementStyle new\r\t\t\t\t\t\t\t\tstate: GtLscHotElementState uniqueInstance;\r\t\t\t\t\t\t\t\tborder: (GtLscConstants hotBorder copyWithWidth: GtLscConstants messageLinesWidth));\r\t\t\t\t\t\taddStyle: (BlElementStyle new\r\t\t\t\t\t\t\t\tstate: GtLscHotElementState uniqueInstance not;\r\t\t\t\t\t\t\t\tborder: (GtLscConstants coldBorder copyWithWidth: GtLscConstants messageLinesWidth)) ] ].\r\tself addChildren: self messageLineElements',
+			#stamp : 'GlamorousAuthor 5/26/2025 16:25',
+			#package : #Gt4Lsc
+		}
+	}
+}

@@ -1204,48 +1204,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-05-26T12:41:56.142228+02:00"
+												"dateAndTimeString" : "2025-05-26T18:41:37.654975+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "jQiOQwXyDQC1aTvNBSZDJw=="
 										},
-										"code" : "messages := testLsc instVarNamed: #messages.\rmessageElements := messages\r\t\tselect: [ :message | message className = GtLscMessageModel name ]\r\t\tthenDo: [ :message | \r\t\t\t| messageElement |\r\t\t\tmessageElement := GtLscMessageElement new.\r\t\t\tmessagesCanvas addChild: messageElement.\r\t\t\tmessageElement model: (GtLscMessageViewModel new model: message) ]"
-									},
-									{
-										"__type" : "pharoSnippet",
-										"children" : {
-											"__type" : "snippets",
-											"items" : [ ]
-										},
-										"createEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"createTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-05-21T13:46:45.690592+02:00"
-											}
-										},
-										"editEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"editTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-05-26T12:37:54.572534+02:00"
-											}
-										},
-										"uid" : {
-											"__type" : "uid",
-											"uidString" : "4BgRqAXyDQC8avvCBSZDJw=="
-										},
-										"code" : "messagesCanvas addChildren: messageElements.\r"
+										"code" : "messages := testLsc instVarNamed: #messages.\rmessages\r\t\tselect: [ :message | message className = GtLscMessageModel name ]\r\t\tthenDo: [ :message | \r\t\t\t| messageElement |\r\t\t\tmessageElement := GtLscMessageElement new.\r\t\t\tmessagesCanvas addChild: messageElement.\r\t\t\tmessageElement model: (GtLscMessageViewModel new model: message) ].\rmessageElements := messagesCanvas children "
 									},
 									{
 										"__type" : "pharoSnippet",
@@ -1272,14 +1238,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-05-26T10:53:02.777482+02:00"
+												"dateAndTimeString" : "2025-05-26T18:39:20.75161+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "7gkaRAXyDQC1c7j0BSZDJw=="
 										},
-										"code" : "firstInstance := testLsc instanceAt: 1.\rsecondInstance := testLsc instanceAt: 2.\r\"firstInstanceElementId := GtLscConstants instanceElementIdTemplate format: {firstInstance id asString}.\"\r\"horizontalElement updateMessageLineElementsForInstanceElementId: firstInstanceElementId.\"\rmessageModel := GtLscMessageModel forInstance: secondInstance inLsc: testLsc withText: 'New Message'.\rmessageViewModel := GtLscMessageViewModel new model: messageModel.\rmessageViewModel instVarNamed: #temperatureState put: GtLscHotElementState uniqueInstance not.\rmessageElement model: messageViewModel.\r\rmessageViewModel model: (GtLscMessageModel forInstance: firstInstance inLsc: testLsc withText: 'New Message').\rmessageElement model: messageViewModel\r\r(horizontalElement instVarNamed: #firstAnchor) referenceElement: instanceLocationLineElement.\r(horizontalElement instVarNamed: #thirdAnchor)\t referenceElement: instanceLocationLineElement"
+										"code" : "firstInstance := testLsc instanceAt: 1.\rsecondInstance := testLsc instanceAt: 2.\r\"firstInstanceElementId := GtLscConstants instanceElementIdTemplate format: {firstInstance id asString}.\"\r\"horizontalElement updateMessageLineElementsForInstanceElementId: firstInstanceElementId.\"\rmessageModel := GtLscMessageModel forInstance: firstInstance inLsc: testLsc withText: 'New Message'.\rmessageViewModel := GtLscMessageViewModel new model: messageModel.\rmessageViewModel instVarNamed: #temperatureState put: GtLscHotElementState uniqueInstance not.\rmessageElements first model: messageViewModel.\r\rmessageViewModel model: (GtLscMessageModel forInstance: firstInstance inLsc: testLsc withText: 'New Message').\rmessageElement model: messageViewModel\r\r(horizontalElement instVarNamed: #firstAnchor) referenceElement: instanceLocationLineElement.\r(horizontalElement instVarNamed: #thirdAnchor)\t referenceElement: instanceLocationLineElement"
 									},
 									{
 										"__type" : "pharoSnippet",

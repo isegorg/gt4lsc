@@ -13,7 +13,7 @@ OmEntry {
 			},
 			#name : #initialize,
 			#protocol : #initialization,
-			#sourceCode : 'initialize\r\tsuper initialize.\r\r\tself\r\t\tlayout: BlFrameLayout new;\r\t\tconstraintsDo: [ :c | c horizontal matchParent ];\r\t\tborder: Color black;\r\t\theight: 150;\r\t\tid: #messageElement.\r\tself initializeReferencesElement.\r\tself initializeMessageLineElements.',
+			#sourceCode : 'initialize\r\tsuper initialize.\r\r\tself\r\t\tlayout: BlFrameLayout new;\r\t\tconstraintsDo: [ :c | c horizontal matchParent ];\r\t\tborder: Color black;\r\t\theight: 150;\r\t\tid: #messageElement.\r\tself initializeReferencesElement.\r\tself initializeMessageElements',
 			#stamp : 'GlamorousAuthor 5/25/2025 17:12',
 			#package : #Gt4Lsc
 		}
@@ -41,7 +41,6 @@ OmEntry {
 		}
 	}
 }
-
 OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
@@ -55,12 +54,11 @@ OmEntry {
 				#className : #GtLscMessageElement,
 				#isMetaSide : false
 			},
-			#name : #initializeMessageLineElements,
+			#name : #initializeMessageElements,
 			#protocol : #initialization,
-			#sourceCode : 'initializeMessageLineElements\r\tfromInstanceLine := BlLineElement new id: GtLscConstants fromInstanceLineId.\r\r\treturnLine := BlLineElement new id: GtLscConstants returnLineId.\r\r\ttoInstanceLine := BlLineElement new id: GtLscConstants toInstanceLineId.\r\tself updateMessageLineElementsForInstanceElementId: #nonExistent.\r\tself messageLineElementsDo: [ :messageLineElement | \r\t\t\tmessageLineElement states addState: GtLscConstants defaultTemperatureState.\r\t\t\tmessageLineElement\r\t\t\t\twithStylesDo: [ :theStyles | \r\t\t\t\t\ttheStyles\r\t\t\t\t\t\taddStyle: (BlElementStyle new\r\t\t\t\t\t\t\t\tstate: GtLscHotElementState uniqueInstance;\r\t\t\t\t\t\t\t\tborder: (GtLscConstants hotBorder copyWithWidth: GtLscConstants messageLinesWidth));\r\t\t\t\t\t\taddStyle: (BlElementStyle new\r\t\t\t\t\t\t\t\tstate: GtLscHotElementState uniqueInstance not;\r\t\t\t\t\t\t\t\tborder: (GtLscConstants coldBorder copyWithWidth: GtLscConstants messageLinesWidth)) ] ].\r\tself addChildren: self messageLineElements',
-			#stamp : 'GlamorousAuthor 5/25/2025 17:16',
+			#sourceCode : 'initializeMessageElements\r\tself initializeMessageLineElements.\r\tself initializeMessageTextElement.\r\tself updateMessageElementsForInstanceElementId: #nonExistent',
+			#stamp : 'GlamorousAuthor 5/26/2025 16:19',
 			#package : #Gt4Lsc
 		}
 	}
-}
-
+}

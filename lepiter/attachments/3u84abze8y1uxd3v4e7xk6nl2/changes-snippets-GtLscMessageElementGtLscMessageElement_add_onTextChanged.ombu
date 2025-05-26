@@ -1,0 +1,61 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-26T17:29:05.658003+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMessageElement,
+				#isMetaSide : false
+			},
+			#name : #onTextChanged,
+			#protocol : #'events handling',
+			#sourceCode : 'onTextChanged\r\ttextElement text: self model text',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-26T17:29:05.658003+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscAnchoredLabelElement,
+				#isMetaSide : false
+			},
+			#name : #'text:',
+			#protocol : #accessing,
+			#sourceCode : 'text: aString\r\tself label text: aString',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-26T17:29:05.658003+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMessageViewModel,
+				#isMetaSide : false
+			},
+			#name : #text,
+			#protocol : #accessing,
+			#sourceCode : 'text\r\t^ model text',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}

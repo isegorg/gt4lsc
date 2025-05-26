@@ -1,7 +1,7 @@
 OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
-		#time : DateAndTime [ '2025-05-25T17:51:50.603674+02:00' ],
+		#time : DateAndTime [ '2025-05-26T17:29:05.658003+02:00' ],
 		#prior : OmReference [ '0' ],
 		#self : OmReference [ '1' ]
 	},
@@ -11,17 +11,17 @@ OmEntry {
 				#className : #GtLscMessageElement,
 				#isMetaSide : false
 			},
-			#name : #'updateMessageLineElementsForInstanceElementId:',
+			#name : #'updateMessageElementsForInstanceElementId:',
 			#protocol : #initialization,
-			#sourceCode : 'updateMessageLineElementsForInstanceElementId: anInstanceElementId\r\tself updateAnchorsForInstanceElementId: anInstanceElementId.\r\tfromInstanceLine\r\t\t\tfromAnchor: firstAnchor;\r\t\t\ttoAnchor: secondAnchor.\r\r\treturnLine\r\t\t\tfromAnchor: secondAnchor;\r\t\t\ttoAnchor: thirdAnchor.\r\r\ttoInstanceLine\r\t\t\tfromAnchor: thirdAnchor;\r\t\t\ttoAnchor: fourthAnchor.',
-			#stamp : 'GlamorousAuthor 5/25/2025 17:47',
+			#sourceCode : 'updateMessageElementsForInstanceElementId: anInstanceElementId\r\tself updateAnchorsForInstanceElementId: anInstanceElementId.\r\tfromInstanceLine\r\t\t\tfromAnchor: firstAnchor;\r\t\t\ttoAnchor: secondAnchor.\r\r\treturnLine\r\t\t\tfromAnchor: secondAnchor;\r\t\t\ttoAnchor: thirdAnchor.\r\r\ttoInstanceLine\r\t\t\tfromAnchor: thirdAnchor;\r\t\t\ttoAnchor: fourthAnchor.\r\r\ttextElement centerAnchor: perpendicularAnchor',
+			#stamp : 'GlamorousAuthor 5/26/2025 18:26',
 			#package : #Gt4Lsc
 		}
 	}
 }OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
-		#time : DateAndTime [ '2025-05-25T17:51:50.603674+02:00' ],
+		#time : DateAndTime [ '2025-05-26T17:29:05.658003+02:00' ],
 		#prior : OmReference [ '1' ],
 		#self : OmReference [ '2' ]
 	},
@@ -34,14 +34,14 @@ OmEntry {
 			#name : #'updateAnchorsForInstanceElementId:',
 			#protocol : #initialization,
 			#sourceCode : 'updateAnchorsForInstanceElementId: aBlElementId\r\t| instanceElement |\r\r\tinstanceElement := self findInstanceElementWithId: aBlElementId.\r\t\r\tself updateAnchorsForInstanceElement: instanceElement.',
-			#stamp : 'GlamorousAuthor 5/25/2025 17:47',
+			#stamp : 'GlamorousAuthor 5/26/2025 18:17',
 			#package : #Gt4Lsc
 		}
 	}
 }OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
-		#time : DateAndTime [ '2025-05-25T17:51:50.603674+02:00' ],
+		#time : DateAndTime [ '2025-05-26T17:29:05.658003+02:00' ],
 		#prior : OmReference [ '2' ],
 		#self : OmReference [ '3' ]
 	},
@@ -51,50 +51,10 @@ OmEntry {
 				#className : #GtLscMessageElement,
 				#isMetaSide : false
 			},
-			#name : #'findInstanceElementWithId:',
-			#protocol : #'private - finding',
-			#sourceCode : 'findInstanceElementWithId: aBlElementId\r\t^ self\r\t\tallParentsDetect: [ :p | p id = GtLscConstants canvasesContainerElementId asBlocElementId ]\r\t\tifFound: [ :p | \r\t\t\tp childNamed: aBlElementId asBlocElementId ]\r\t\tifNone: [ BlElement new ]',
-			#stamp : 'GlamorousAuthor 5/25/2025 17:48',
-			#package : #Gt4Lsc
-		}
-	}
-}OmEntry {
-	#tags : {
-		#author : 'GlamorousAuthor',
-		#time : DateAndTime [ '2025-05-25T17:51:50.603674+02:00' ],
-		#prior : OmReference [ '3' ],
-		#self : OmReference [ '4' ]
-	},
-	#content : EpMethodAddition {
-		#method : RGMethodDefinition {
-			#annotations : IdentityDictionary {
-				#className : #GtLscMessageElement,
-				#isMetaSide : false
-			},
 			#name : #'updateAnchorsForInstanceElement:',
 			#protocol : #initialization,
-			#sourceCode : 'updateAnchorsForInstanceElement: aGtLscInstanceElement\r\t| locationLineElement |\r\tlocationLineElement := self findLocationLineForInstanceElement: aGtLscInstanceElement.\r\tfirstAnchor := GtLscClosestPositionBoundsAnchor\r\t\t\tnearestTo: referenceFromInstanceElement\r\t\t\tfrom: locationLineElement.\r\tsecondAnchor := GtLscClosestPositionBoundsAnchor\r\t\t\tnearestTo: referenceFromInstanceElement\r\t\t\tfrom: aGtLscInstanceElement.\r\r\tthirdAnchor := GtLscClosestPositionBoundsAnchor\r\t\t\tnearestTo: referenceToInstanceElement\r\t\t\tfrom: aGtLscInstanceElement.\r\tfourthAnchor := GtLscClosestPositionBoundsAnchor\r\t\t\tnearestTo: referenceToInstanceElement\r\t\t\tfrom: locationLineElement.',
-			#stamp : 'GlamorousAuthor 5/25/2025 17:49',
-			#package : #Gt4Lsc
-		}
-	}
-}OmEntry {
-	#tags : {
-		#author : 'GlamorousAuthor',
-		#time : DateAndTime [ '2025-05-25T17:51:50.603674+02:00' ],
-		#prior : OmReference [ '4' ],
-		#self : OmReference [ '5' ]
-	},
-	#content : EpMethodAddition {
-		#method : RGMethodDefinition {
-			#annotations : IdentityDictionary {
-				#className : #GtLscMessageElement,
-				#isMetaSide : false
-			},
-			#name : #'findLocationLineForInstanceElement:',
-			#protocol : #'private - finding',
-			#sourceCode : 'findLocationLineForInstanceElement: aBlElementId\r\t^ aBlElementId\r\t\tchildNamed: GtLscConstants locationLineId\r\t\tifFound: [ :e | e ]\r\t\tifNone: [ BlElement new ]',
-			#stamp : 'GlamorousAuthor 5/25/2025 17:49',
+			#sourceCode : 'updateAnchorsForInstanceElement: aGtLscInstanceElement\r\t| locationLineElement |\r\tlocationLineElement := self findLocationLineForInstanceElement: aGtLscInstanceElement.\r\tfirstAnchor := GtLscClosestPositionBoundsAnchor\r\t\t\tnearestTo: referenceFromInstanceElement\r\t\t\tfrom: locationLineElement.\r\tsecondAnchor := GtLscClosestPositionBoundsAnchor\r\t\t\tnearestTo: referenceFromInstanceElement\r\t\t\tfrom: aGtLscInstanceElement.\r\r\tthirdAnchor := GtLscClosestPositionBoundsAnchor\r\t\t\tnearestTo: referenceToInstanceElement\r\t\t\tfrom: aGtLscInstanceElement.\r\tfourthAnchor := GtLscClosestPositionBoundsAnchor\r\t\t\tnearestTo: referenceToInstanceElement\r\t\t\tfrom: locationLineElement.\r\t(aGtLscInstanceElement id = #nonExistent asBlocElementId) ifTrue: [ ^ self ].\r\tperpendicularAnchor := BlPerpendicularAnchor new.\t"order of the reference anchors matters"\r\tperpendicularAnchor\r\t\treferenceAnchors: {firstAnchor.\r\t\t\t\tsecondAnchor}.\t"the length of a perpendicular is half of the distance"\r\tperpendicularAnchor curvature: 50.',
+			#stamp : 'GlamorousAuthor 5/26/2025 18:18',
 			#package : #Gt4Lsc
 		}
 	}

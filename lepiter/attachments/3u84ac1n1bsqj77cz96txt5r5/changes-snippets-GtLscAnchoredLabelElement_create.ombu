@@ -1,0 +1,101 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-26T17:29:05.658003+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscAnchoredLabelElement,
+				#isMetaSide : false
+			},
+			#name : #initialize,
+			#protocol : #initialization,
+			#sourceCode : 'initialize\r\tsuper initialize.\r\t\r\tvisuals := BlCustomVisuals new\r\t\tgeometry: BlRoundedRectangleGeometry new.\r\t\r\tcenterAnchor := self class defaultCenterAnchor',
+			#stamp : 'GlamorousAuthor 5/26/2025 17:41',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-26T17:29:05.658003+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscAnchoredLabelElement class',
+				#isMetaSide : true
+			},
+			#name : #defaultCenterAnchor,
+			#protocol : #initialization,
+			#sourceCode : 'defaultCenterAnchor\r\t^ BlAbsolutePositionAnchor position: 100@100',
+			#stamp : 'GlamorousAuthor 5/26/2025 17:42',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-26T17:29:05.658003+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscAnchoredLabelElement,
+				#isMetaSide : false
+			},
+			#name : #'centerAnchor:',
+			#protocol : #'anchor - accessing',
+			#sourceCode : 'centerAnchor: aBlGeometryAnchor\r\r\tcenterAnchor := aBlGeometryAnchor.\r\tself registerAnchor: aBlGeometryAnchor',
+			#stamp : 'GlamorousAuthor 5/26/2025 17:42',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-26T17:29:05.658003+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscAnchoredLabelElement,
+				#isMetaSide : false
+			},
+			#name : #centerAnchor,
+			#protocol : #'anchor - accessing',
+			#sourceCode : 'centerAnchor\r\t^ centerAnchor',
+			#stamp : 'GlamorousAuthor 5/26/2025 17:43',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-26T17:29:05.658003+02:00' ],
+		#prior : OmReference [ '4' ],
+		#self : OmReference [ '5' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscAnchoredLabelElement,
+				#isMetaSide : false
+			},
+			#name : #centerPosition,
+			#protocol : #'anchor - geometry',
+			#sourceCode : 'centerPosition\r\t<return: #Point>\r\t\r\t^ self centerAnchor positionWithin: self',
+			#stamp : 'GlamorousAuthor 5/26/2025 17:43',
+			#package : #Gt4Lsc
+		}
+	}
+}

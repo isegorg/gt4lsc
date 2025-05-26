@@ -332,14 +332,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-05-25T17:21:53.224645+02:00"
+												"dateAndTimeString" : "2025-05-26T16:14:28.833354+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "QA0nOR3yDQCFuqytBBvDdA=="
 										},
-										"code" : "(BlElement subclass: #GtLscMessageElement\r\tuses: TGtLscWithModel\r\tinstanceVariableNames: 'firstAnchor secondAnchor thirdAnchor fourthAnchor referenceTextElement referenceFromInstanceElement referenceToInstanceElement fromInstanceLine returnLine toInstanceLine'\r\tclassVariableNames: ''\r\tpackage: 'Gt4Lsc') tagWith: '! Views'."
+										"code" : "(BlElement subclass: #GtLscMessageElement\r\tuses: TGtLscWithModel\r\tinstanceVariableNames: 'firstAnchor secondAnchor thirdAnchor fourthAnchor perpendicularAnchor referenceTextElement referenceFromInstanceElement referenceToInstanceElement fromInstanceLine returnLine toInstanceLine textElement'\r\tclassVariableNames: ''\r\tpackage: 'Gt4Lsc') tagWith: '! Views'."
 									},
 									{
 										"__type" : "textSnippet",
@@ -437,7 +437,7 @@
 																	"__type" : "time",
 																	"time" : {
 																		"__type" : "dateAndTime",
-																		"dateAndTimeString" : "2025-05-26T11:02:06.543917+02:00"
+																		"dateAndTimeString" : "2025-05-26T16:22:52.866819+02:00"
 																	}
 																},
 																"editEmail" : {
@@ -448,15 +448,161 @@
 																	"__type" : "time",
 																	"time" : {
 																		"__type" : "dateAndTime",
-																		"dateAndTimeString" : "2025-05-26T11:02:06.543917+02:00"
+																		"dateAndTimeString" : "2025-05-26T16:22:52.866819+02:00"
 																	}
 																},
 																"uid" : {
 																	"__type" : "uid",
-																	"uidString" : "nilu8GfyDQCqHiNcD9bkyA=="
+																	"uidString" : "Fr+Za2zyDQCKQtpYDKRqAA=="
 																},
-																"previewHeight" : 408.4293823242187,
-																"fileName" : "attachments/bw5uom4xb297ypsvoayu4ero7/changes-snippets-GtLscMessageElement_add_messageLineElementsDo:.ombu"
+																"previewHeight" : 738.776123046875,
+																"fileName" : "attachments/vym6eljbvwy7s7l3h3adyib/changes-snippets-GtLscMessageElement_add_initializeMessageLineElements.ombu"
+															},
+															{
+																"__type" : "textSnippet",
+																"children" : {
+																	"__type" : "snippets",
+																	"items" : [
+																		{
+																			"__type" : "changesSnippet",
+																			"children" : {
+																				"__type" : "snippets",
+																				"items" : [ ]
+																			},
+																			"createEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"createTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-05-26T11:02:06.543917+02:00"
+																				}
+																			},
+																			"editEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"editTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-05-26T11:02:06.543917+02:00"
+																				}
+																			},
+																			"uid" : {
+																				"__type" : "uid",
+																				"uidString" : "nilu8GfyDQCqHiNcD9bkyA=="
+																			},
+																			"previewHeight" : 408.4293823242187,
+																			"fileName" : "attachments/bw5uom4xb297ypsvoayu4ero7/changes-snippets-GtLscMessageElement_add_messageLineElementsDo:.ombu"
+																		}
+																	]
+																},
+																"createEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"createTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-05-26T11:00:48.964657+02:00"
+																	}
+																},
+																"editEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"editTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-05-26T12:31:54.617504+02:00"
+																	}
+																},
+																"uid" : {
+																	"__type" : "uid",
+																	"uidString" : "ImPO62fyDQCovAvOD9bkyA=="
+																},
+																"paragraphStyle" : {
+																	"__type" : "textStyle"
+																},
+																"string" : "We create the code perform an action on all lines associated with the message."
+															},
+															{
+																"__type" : "textSnippet",
+																"children" : {
+																	"__type" : "snippets",
+																	"items" : [
+																		{
+																			"__type" : "changesSnippet",
+																			"children" : {
+																				"__type" : "snippets",
+																				"items" : [ ]
+																			},
+																			"createEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"createTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-05-25T17:29:12.251533+02:00"
+																				}
+																			},
+																			"editEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"editTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-05-25T17:29:12.251533+02:00"
+																				}
+																			},
+																			"uid" : {
+																				"__type" : "uid",
+																				"uidString" : "8PXyOlnyDQCfG24uC9LZSA=="
+																			},
+																			"previewHeight" : 584.8313903808594,
+																			"fileName" : "attachments/4b9kvans0sfw6iz9uhjo7upo4/changes-snippets-GtLscConstants_add_messageLineConstants.ombu"
+																		}
+																	]
+																},
+																"createEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"createTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-05-25T17:28:59.063442+02:00"
+																	}
+																},
+																"editEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"editTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-05-25T17:29:03.454949+02:00"
+																	}
+																},
+																"uid" : {
+																	"__type" : "uid",
+																	"uidString" : "xGXlOFnyDQCek0ktC9LZSA=="
+																},
+																"paragraphStyle" : {
+																	"__type" : "textStyle"
+																},
+																"string" : "We define the necessary constants"
 															}
 														]
 													},
@@ -468,7 +614,7 @@
 														"__type" : "time",
 														"time" : {
 															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2025-05-26T11:00:48.964657+02:00"
+															"dateAndTimeString" : "2025-05-26T16:21:50.74982+02:00"
 														}
 													},
 													"editEmail" : {
@@ -479,17 +625,17 @@
 														"__type" : "time",
 														"time" : {
 															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2025-05-26T12:31:54.617504+02:00"
+															"dateAndTimeString" : "2025-05-26T16:22:45.664066+02:00"
 														}
 													},
 													"uid" : {
 														"__type" : "uid",
-														"uidString" : "ImPO62fyDQCovAvOD9bkyA=="
+														"uidString" : "aujlZ2zyDQCJCPsTDKRqAA=="
 													},
 													"paragraphStyle" : {
 														"__type" : "textStyle"
 													},
-													"string" : "We create the code perform an action on all lines associated with the message."
+													"string" : "We initialize the line elements related with the message"
 												},
 												{
 													"__type" : "textSnippet",
@@ -510,7 +656,7 @@
 																	"__type" : "time",
 																	"time" : {
 																		"__type" : "dateAndTime",
-																		"dateAndTimeString" : "2025-05-25T17:29:12.251533+02:00"
+																		"dateAndTimeString" : "2025-05-26T16:27:53.715492+02:00"
 																	}
 																},
 																"editEmail" : {
@@ -521,15 +667,381 @@
 																	"__type" : "time",
 																	"time" : {
 																		"__type" : "dateAndTime",
-																		"dateAndTimeString" : "2025-05-25T17:29:12.251533+02:00"
+																		"dateAndTimeString" : "2025-05-26T16:27:53.715492+02:00"
 																	}
 																},
 																"uid" : {
 																	"__type" : "uid",
-																	"uidString" : "8PXyOlnyDQCfG24uC9LZSA=="
+																	"uidString" : "DFWIfWzyDQCKnWKTDKRqAA=="
 																},
-																"previewHeight" : 584.8313903808594,
-																"fileName" : "attachments/4b9kvans0sfw6iz9uhjo7upo4/changes-snippets-GtLscConstants_add_messageLineConstants.ombu"
+																"previewHeight" : 345.6239013671875,
+																"fileName" : "attachments/vym6kauelc0k64vwa6xtec9/changes-snippets-GtLscMessageElement_add_initializeMessageTextElement.ombu"
+															},
+															{
+																"__type" : "textSnippet",
+																"children" : {
+																	"__type" : "snippets",
+																	"items" : [
+																		{
+																			"__type" : "pharoSnippet",
+																			"children" : {
+																				"__type" : "snippets",
+																				"items" : [ ]
+																			},
+																			"createEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"createTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-05-26T17:34:26.8764+02:00"
+																				}
+																			},
+																			"editEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"editTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-05-26T17:34:35.553237+02:00"
+																				}
+																			},
+																			"uid" : {
+																				"__type" : "uid",
+																				"uidString" : "LR+La23yDQCT9JaaD/3aQA=="
+																			},
+																			"code" : "BlAnchoredElement subclass: #GtLscAnchoredLabelElement\r\tuses: TBrLayoutResizable\r\tinstanceVariableNames: 'centerAnchor label'\r\tclassVariableNames: ''\r\tpackage: 'Gt4Lsc-Helpers'."
+																		},
+																		{
+																			"__type" : "changesSnippet",
+																			"children" : {
+																				"__type" : "snippets",
+																				"items" : [ ]
+																			},
+																			"createEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"createTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-05-26T17:34:41.173683+02:00"
+																				}
+																			},
+																			"editEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"editTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-05-26T17:34:41.173683+02:00"
+																				}
+																			},
+																			"uid" : {
+																				"__type" : "uid",
+																				"uidString" : "AkplbG3yDQCUAANuD/3aQA=="
+																			},
+																			"previewHeight" : 950,
+																			"fileName" : "attachments/3u84ac1n1bsqj77cz96txt5r5/changes-snippets-GtLscAnchoredLabelElement_create.ombu"
+																		},
+																		{
+																			"__type" : "textSnippet",
+																			"children" : {
+																				"__type" : "snippets",
+																				"items" : [
+																					{
+																						"__type" : "changesSnippet",
+																						"children" : {
+																							"__type" : "snippets",
+																							"items" : [ ]
+																						},
+																						"createEmail" : {
+																							"__type" : "email",
+																							"emailString" : "<unknown>"
+																						},
+																						"createTime" : {
+																							"__type" : "time",
+																							"time" : {
+																								"__type" : "dateAndTime",
+																								"dateAndTimeString" : "2025-05-26T17:46:10.030788+02:00"
+																							}
+																						},
+																						"editEmail" : {
+																							"__type" : "email",
+																							"emailString" : "<unknown>"
+																						},
+																						"editTime" : {
+																							"__type" : "time",
+																							"time" : {
+																								"__type" : "dateAndTime",
+																								"dateAndTimeString" : "2025-05-26T17:46:10.030788+02:00"
+																							}
+																						},
+																						"uid" : {
+																							"__type" : "uid",
+																							"uidString" : "dWp0lW3yDQCUWukBD/3aQA=="
+																						},
+																						"previewHeight" : 469.37744140625,
+																						"fileName" : "attachments/3u84ac34jyhex07rewxsik5bd/changes-snippets-GtLscAnchoredLabelElement_add_constructor.ombu"
+																					}
+																				]
+																			},
+																			"createEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"createTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-05-26T17:52:45.081324+02:00"
+																				}
+																			},
+																			"editEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"editTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-05-26T17:52:59.536421+02:00"
+																				}
+																			},
+																			"uid" : {
+																				"__type" : "uid",
+																				"uidString" : "sGEArW3yDQCUuZITD/3aQA=="
+																			},
+																			"paragraphStyle" : {
+																				"__type" : "textStyle"
+																			},
+																			"string" : "We create a constructor that add a child with the text"
+																		},
+																		{
+																			"__type" : "textSnippet",
+																			"children" : {
+																				"__type" : "snippets",
+																				"items" : [
+																					{
+																						"__type" : "changesSnippet",
+																						"children" : {
+																							"__type" : "snippets",
+																							"items" : [ ]
+																						},
+																						"createEmail" : {
+																							"__type" : "email",
+																							"emailString" : "<unknown>"
+																						},
+																						"createTime" : {
+																							"__type" : "time",
+																							"time" : {
+																								"__type" : "dateAndTime",
+																								"dateAndTimeString" : "2025-05-26T17:53:56.972382+02:00"
+																							}
+																						},
+																						"editEmail" : {
+																							"__type" : "email",
+																							"emailString" : "<unknown>"
+																						},
+																						"editTime" : {
+																							"__type" : "time",
+																							"time" : {
+																								"__type" : "dateAndTime",
+																								"dateAndTimeString" : "2025-05-26T17:53:56.972382+02:00"
+																							}
+																						},
+																						"uid" : {
+																							"__type" : "uid",
+																							"uidString" : "ZGFJsW3yDQCW1MClD/3aQA=="
+																						},
+																						"previewHeight" : 812.9549865722656,
+																						"fileName" : "attachments/3u84ac3cpfo4wh9p6wm2hv2a9/changes-snippets-GtLscAnchoredLabelElement_add_geometryAndLayoutFeatures.ombu"
+																					}
+																				]
+																			},
+																			"createEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"createTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-05-26T17:53:07.977246+02:00"
+																				}
+																			},
+																			"editEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"editTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-05-26T17:53:48.712228+02:00"
+																				}
+																			},
+																			"uid" : {
+																				"__type" : "uid",
+																				"uidString" : "x8Ndrm3yDQCVzgEiD/3aQA=="
+																			},
+																			"paragraphStyle" : {
+																				"__type" : "textStyle"
+																			},
+																			"string" : "We define the geometry and layout features based on their contained text element "
+																		},
+																		{
+																			"__type" : "textSnippet",
+																			"children" : {
+																				"__type" : "snippets",
+																				"items" : [
+																					{
+																						"__type" : "changesSnippet",
+																						"children" : {
+																							"__type" : "snippets",
+																							"items" : [ ]
+																						},
+																						"createEmail" : {
+																							"__type" : "email",
+																							"emailString" : "<unknown>"
+																						},
+																						"createTime" : {
+																							"__type" : "time",
+																							"time" : {
+																								"__type" : "dateAndTime",
+																								"dateAndTimeString" : "2025-05-26T18:01:57.767326+02:00"
+																							}
+																						},
+																						"editEmail" : {
+																							"__type" : "email",
+																							"emailString" : "<unknown>"
+																						},
+																						"editTime" : {
+																							"__type" : "time",
+																							"time" : {
+																								"__type" : "dateAndTime",
+																								"dateAndTimeString" : "2025-05-26T18:01:57.767326+02:00"
+																							}
+																						},
+																						"uid" : {
+																							"__type" : "uid",
+																							"uidString" : "WrrxzW3yDQCYa2M8D/3aQA=="
+																						},
+																						"previewHeight" : 818.0,
+																						"fileName" : "attachments/3u84ac2v5tzj30gt00e4x14l6/changes-snippets-GtLscAnchoredLabelElement_add_example.ombu"
+																					},
+																					{
+																						"__type" : "exampleSnippet",
+																						"children" : {
+																							"__type" : "snippets",
+																							"items" : [ ]
+																						},
+																						"createEmail" : {
+																							"__type" : "email",
+																							"emailString" : "<unknown>"
+																						},
+																						"createTime" : {
+																							"__type" : "time",
+																							"time" : {
+																								"__type" : "dateAndTime",
+																								"dateAndTimeString" : "2025-05-26T18:05:16.211314+02:00"
+																							}
+																						},
+																						"editEmail" : {
+																							"__type" : "email",
+																							"emailString" : "<unknown>"
+																						},
+																						"editTime" : {
+																							"__type" : "time",
+																							"time" : {
+																								"__type" : "dateAndTime",
+																								"dateAndTimeString" : "2025-05-26T18:05:16.211314+02:00"
+																							}
+																						},
+																						"uid" : {
+																							"__type" : "uid",
+																							"uidString" : "HbjF2W3yDQCYw9+bD/3aQA=="
+																						},
+																						"exampleSelector" : "anchoredLabelElement",
+																						"previewHeight" : 200,
+																						"previewShowSelector" : "gtViewsFor:",
+																						"exampleBehaviorName" : "BlBezierElementExamples",
+																						"codeExpanded" : true,
+																						"previewExpanded" : false,
+																						"noCode" : false
+																					}
+																				]
+																			},
+																			"createEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"createTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-05-26T18:01:49.675652+02:00"
+																				}
+																			},
+																			"editEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"editTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-05-26T18:01:52.253365+02:00"
+																				}
+																			},
+																			"uid" : {
+																				"__type" : "uid",
+																				"uidString" : "7XT6ym3yDQCXwt8CD/3aQA=="
+																			},
+																			"paragraphStyle" : {
+																				"__type" : "textStyle"
+																			},
+																			"string" : "And we created an example of its use"
+																		}
+																	]
+																},
+																"createEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"createTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-05-26T17:31:20.782037+02:00"
+																	}
+																},
+																"editEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"editTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-05-26T17:34:20.845197+02:00"
+																	}
+																},
+																"uid" : {
+																	"__type" : "uid",
+																	"uidString" : "XoxzYG3yDQCTKLLND/3aQA=="
+																},
+																"paragraphStyle" : {
+																	"__type" : "textStyle"
+																},
+																"string" : "We create a {{gtClass:BlAnchoredElement}} class to contain a label and its position is associated with an anchor"
 															}
 														]
 													},
@@ -541,7 +1053,7 @@
 														"__type" : "time",
 														"time" : {
 															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2025-05-25T17:28:59.063442+02:00"
+															"dateAndTimeString" : "2025-05-26T16:27:08.584859+02:00"
 														}
 													},
 													"editEmail" : {
@@ -552,17 +1064,17 @@
 														"__type" : "time",
 														"time" : {
 															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2025-05-25T17:29:03.454949+02:00"
+															"dateAndTimeString" : "2025-05-26T16:27:46.613593+02:00"
 														}
 													},
 													"uid" : {
 														"__type" : "uid",
-														"uidString" : "xGXlOFnyDQCek0ktC9LZSA=="
+														"uidString" : "1K7XemzyDQCKc/znDKRqAA=="
 													},
 													"paragraphStyle" : {
 														"__type" : "textStyle"
 													},
-													"string" : "We define the necessary constants"
+													"string" : "We initialize the text element related with the message"
 												},
 												{
 													"__type" : "textSnippet",
@@ -603,6 +1115,224 @@
 																},
 																"previewHeight" : 818.0,
 																"fileName" : "attachments/eauaivnyjxa9y1s620imh4nen/changes-snippets-GtLscMessageElement_add_updateMessageLineElementsForInstanceElementId:.ombu"
+															},
+															{
+																"__type" : "textSnippet",
+																"children" : {
+																	"__type" : "snippets",
+																	"items" : [
+																		{
+																			"__type" : "textSnippet",
+																			"children" : {
+																				"__type" : "snippets",
+																				"items" : [
+																					{
+																						"__type" : "pharoSnippet",
+																						"children" : {
+																							"__type" : "snippets",
+																							"items" : [ ]
+																						},
+																						"createEmail" : {
+																							"__type" : "email",
+																							"emailString" : "<unknown>"
+																						},
+																						"createTime" : {
+																							"__type" : "time",
+																							"time" : {
+																								"__type" : "dateAndTime",
+																								"dateAndTimeString" : "2025-05-25T09:13:54.398571+02:00"
+																							}
+																						},
+																						"editEmail" : {
+																							"__type" : "email",
+																							"emailString" : "<unknown>"
+																						},
+																						"editTime" : {
+																							"__type" : "time",
+																							"time" : {
+																								"__type" : "dateAndTime",
+																								"dateAndTimeString" : "2025-05-25T09:13:55.229577+02:00"
+																							}
+																						},
+																						"uid" : {
+																							"__type" : "uid",
+																							"uidString" : "84GgT1LyDQCy+CFsAPgZFw=="
+																						},
+																						"code" : "BlNearestPositionAnchor subclass: #GtLscClosestPositionBoundsAnchor\r\tinstanceVariableNames: ''\r\tclassVariableNames: ''\r\tpackage: 'Gt4Lsc-Helpers'."
+																					},
+																					{
+																						"__type" : "changesSnippet",
+																						"children" : {
+																							"__type" : "snippets",
+																							"items" : [ ]
+																						},
+																						"createEmail" : {
+																							"__type" : "email",
+																							"emailString" : "<unknown>"
+																						},
+																						"createTime" : {
+																							"__type" : "time",
+																							"time" : {
+																								"__type" : "dateAndTime",
+																								"dateAndTimeString" : "2025-05-25T09:11:31.906044+02:00"
+																							}
+																						},
+																						"editEmail" : {
+																							"__type" : "email",
+																							"emailString" : "<unknown>"
+																						},
+																						"editTime" : {
+																							"__type" : "time",
+																							"time" : {
+																								"__type" : "dateAndTime",
+																								"dateAndTimeString" : "2025-05-25T09:11:31.906044+02:00"
+																							}
+																						},
+																						"uid" : {
+																							"__type" : "uid",
+																							"uidString" : "4z8iR1LyDQCy78DmAPgZFw=="
+																						},
+																						"previewHeight" : 624.2408447265625,
+																						"fileName" : "attachments/763x1uynk5ws8mh2mebn7tuci/changes-snippets-createGtLscClosestPositionBoundsAnchor.ombu"
+																					}
+																				]
+																			},
+																			"createEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"createTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-05-25T09:11:49.568307+02:00"
+																				}
+																			},
+																			"editEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"editTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-05-25T09:15:20.566623+02:00"
+																				}
+																			},
+																			"uid" : {
+																				"__type" : "uid",
+																				"uidString" : "V78vSFLyDQCy9ISdAPgZFw=="
+																			},
+																			"paragraphStyle" : {
+																				"__type" : "textStyle"
+																			},
+																			"string" : "We create a generator of anchors relative to elements that finds the point that lies on bounds rectangle of a reference element with minimal distance to the center of the given element"
+																		}
+																	]
+																},
+																"createEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"createTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-05-26T18:29:40.179035+02:00"
+																	}
+																},
+																"editEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"editTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-05-26T18:30:57.327567+02:00"
+																	}
+																},
+																"uid" : {
+																	"__type" : "uid",
+																	"uidString" : "ihwIMW7yDQCY99xjD/3aQA=="
+																},
+																"paragraphStyle" : {
+																	"__type" : "textStyle"
+																},
+																"string" : "We update the anchors related with the {{gtClass:GtLscInstanceElement}} and then assigned to the elements"
+															},
+															{
+																"__type" : "textSnippet",
+																"children" : {
+																	"__type" : "snippets",
+																	"items" : [
+																		{
+																			"__type" : "changesSnippet",
+																			"children" : {
+																				"__type" : "snippets",
+																				"items" : [ ]
+																			},
+																			"createEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"createTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-05-26T18:31:22.499826+02:00"
+																				}
+																			},
+																			"editEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"editTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-05-26T18:31:22.499826+02:00"
+																				}
+																			},
+																			"uid" : {
+																				"__type" : "uid",
+																				"uidString" : "nmghN27yDQCbAsshD/3aQA=="
+																			},
+																			"previewHeight" : 557.0519409179688,
+																			"fileName" : "attachments/3u84ac20mdr1vyrqxy5so8xeb/changes-snippets-GtLscAnchoredLabelElement_add_findLscInstanceElementsMethods.ombu"
+																		}
+																	]
+																},
+																"createEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"createTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-05-26T18:31:02.784245+02:00"
+																	}
+																},
+																"editEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"editTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-05-26T18:31:17.773715+02:00"
+																	}
+																},
+																"uid" : {
+																	"__type" : "uid",
+																	"uidString" : "hJH0NW7yDQCaGNsHD/3aQA=="
+																},
+																"paragraphStyle" : {
+																	"__type" : "textStyle"
+																},
+																"string" : "We create the code to find the needed elements"
 															}
 														]
 													},
@@ -625,7 +1355,7 @@
 														"__type" : "time",
 														"time" : {
 															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2025-05-25T17:28:15.019172+02:00"
+															"dateAndTimeString" : "2025-05-26T18:25:46.107399+02:00"
 														}
 													},
 													"uid" : {
@@ -635,114 +1365,7 @@
 													"paragraphStyle" : {
 														"__type" : "textStyle"
 													},
-													"string" : "We define how to update the message line elements for an instance element with a concrete *Id*:"
-												},
-												{
-													"__type" : "textSnippet",
-													"children" : {
-														"__type" : "snippets",
-														"items" : [
-															{
-																"__type" : "pharoSnippet",
-																"children" : {
-																	"__type" : "snippets",
-																	"items" : [ ]
-																},
-																"createEmail" : {
-																	"__type" : "email",
-																	"emailString" : "<unknown>"
-																},
-																"createTime" : {
-																	"__type" : "time",
-																	"time" : {
-																		"__type" : "dateAndTime",
-																		"dateAndTimeString" : "2025-05-25T09:13:54.398571+02:00"
-																	}
-																},
-																"editEmail" : {
-																	"__type" : "email",
-																	"emailString" : "<unknown>"
-																},
-																"editTime" : {
-																	"__type" : "time",
-																	"time" : {
-																		"__type" : "dateAndTime",
-																		"dateAndTimeString" : "2025-05-25T09:13:55.229577+02:00"
-																	}
-																},
-																"uid" : {
-																	"__type" : "uid",
-																	"uidString" : "84GgT1LyDQCy+CFsAPgZFw=="
-																},
-																"code" : "BlNearestPositionAnchor subclass: #GtLscClosestPositionBoundsAnchor\r\tinstanceVariableNames: ''\r\tclassVariableNames: ''\r\tpackage: 'Gt4Lsc-Helpers'."
-															},
-															{
-																"__type" : "changesSnippet",
-																"children" : {
-																	"__type" : "snippets",
-																	"items" : [ ]
-																},
-																"createEmail" : {
-																	"__type" : "email",
-																	"emailString" : "<unknown>"
-																},
-																"createTime" : {
-																	"__type" : "time",
-																	"time" : {
-																		"__type" : "dateAndTime",
-																		"dateAndTimeString" : "2025-05-25T09:11:31.906044+02:00"
-																	}
-																},
-																"editEmail" : {
-																	"__type" : "email",
-																	"emailString" : "<unknown>"
-																},
-																"editTime" : {
-																	"__type" : "time",
-																	"time" : {
-																		"__type" : "dateAndTime",
-																		"dateAndTimeString" : "2025-05-25T09:11:31.906044+02:00"
-																	}
-																},
-																"uid" : {
-																	"__type" : "uid",
-																	"uidString" : "4z8iR1LyDQCy78DmAPgZFw=="
-																},
-																"previewHeight" : 624.2408447265625,
-																"fileName" : "attachments/763x1uynk5ws8mh2mebn7tuci/changes-snippets-createGtLscClosestPositionBoundsAnchor.ombu"
-															}
-														]
-													},
-													"createEmail" : {
-														"__type" : "email",
-														"emailString" : "<unknown>"
-													},
-													"createTime" : {
-														"__type" : "time",
-														"time" : {
-															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2025-05-25T09:11:49.568307+02:00"
-														}
-													},
-													"editEmail" : {
-														"__type" : "email",
-														"emailString" : "<unknown>"
-													},
-													"editTime" : {
-														"__type" : "time",
-														"time" : {
-															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2025-05-25T09:15:20.566623+02:00"
-														}
-													},
-													"uid" : {
-														"__type" : "uid",
-														"uidString" : "V78vSFLyDQCy9ISdAPgZFw=="
-													},
-													"paragraphStyle" : {
-														"__type" : "textStyle"
-													},
-													"string" : "We create a generator of anchors relative to elements that finds the point that lies on bounds rectangle of a reference element with minimal distance to the center of the given element"
+													"string" : "We define how to update the message elements for an instance element with a concrete *Id*:"
 												}
 											]
 										},
