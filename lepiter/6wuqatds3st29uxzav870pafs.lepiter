@@ -479,7 +479,7 @@
 														"__type" : "time",
 														"time" : {
 															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2025-05-26T11:02:01.416218+02:00"
+															"dateAndTimeString" : "2025-05-26T12:31:54.617504+02:00"
 														}
 													},
 													"uid" : {
@@ -489,7 +489,7 @@
 													"paragraphStyle" : {
 														"__type" : "textStyle"
 													},
-													"string" : "We create the code vperform an action on all lines associated with the message."
+													"string" : "We create the code perform an action on all lines associated with the message."
 												},
 												{
 													"__type" : "textSnippet",

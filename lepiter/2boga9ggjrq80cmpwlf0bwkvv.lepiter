@@ -929,14 +929,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-05-22T11:28:40.395261+02:00"
+												"dateAndTimeString" : "2025-05-26T12:28:34.753763+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "UpX21hfyDQCRq8VjBDtaNA=="
 										},
-										"code" : "testLsc := GtLscModelExamples new lscAddInstanceAtPosition"
+										"code" : "testLsc := GtLscModelExamples new lscAddMessageAtPosition"
 									},
 									{
 										"__type" : "pharoSnippet",
@@ -1204,14 +1204,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-05-25T18:02:56.12817+02:00"
+												"dateAndTimeString" : "2025-05-26T12:41:56.142228+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "jQiOQwXyDQC1aTvNBSZDJw=="
 										},
-										"code" : "messageElement := GtLscMessageElement new."
+										"code" : "messages := testLsc instVarNamed: #messages.\rmessageElements := messages\r\t\tselect: [ :message | message className = GtLscMessageModel name ]\r\t\tthenDo: [ :message | \r\t\t\t| messageElement |\r\t\t\tmessageElement := GtLscMessageElement new.\r\t\t\tmessagesCanvas addChild: messageElement.\r\t\t\tmessageElement model: (GtLscMessageViewModel new model: message) ]"
 									},
 									{
 										"__type" : "pharoSnippet",
@@ -1238,14 +1238,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-05-25T18:04:52.680749+02:00"
+												"dateAndTimeString" : "2025-05-26T12:37:54.572534+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "4BgRqAXyDQC8avvCBSZDJw=="
 										},
-										"code" : "messagesCanvas addChild: messageElement.\r"
+										"code" : "messagesCanvas addChildren: messageElements.\r"
 									},
 									{
 										"__type" : "pharoSnippet",

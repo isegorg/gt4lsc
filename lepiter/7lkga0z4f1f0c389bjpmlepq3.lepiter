@@ -643,7 +643,7 @@
 																	"uidString" : "uB5f+UbyDQCKvSbtCJlXLw=="
 																},
 																"previewHeight" : 320.4687194824219,
-																"fileName" : "attachments/2swe3yr0zfz0eay69daxn0095/changes-snippets-GtLscMessageElement_overwrite_onModelChanged.ombu"
+																"fileName" : "/Users/fluque/work/osoco/BluePlaneLabs/glamoroustoolkit/pharo-local/iceberg/isegorg/gt4lsc/lepiter/attachments/2swe3yr0zfz0eay69daxn0095/changes-snippets-GtLscMessageElement_overwrite_onModelChanged.ombu"
 															},
 															{
 																"__type" : "textSnippet",
@@ -704,6 +704,79 @@
 																							"__type" : "time",
 																							"time" : {
 																								"__type" : "dateAndTime",
+																								"dateAndTimeString" : "2025-05-26T12:17:57.012134+02:00"
+																							}
+																						},
+																						"editEmail" : {
+																							"__type" : "email",
+																							"emailString" : "<unknown>"
+																						},
+																						"editTime" : {
+																							"__type" : "time",
+																							"time" : {
+																								"__type" : "dateAndTime",
+																								"dateAndTimeString" : "2025-05-26T12:17:57.012134+02:00"
+																							}
+																						},
+																						"uid" : {
+																							"__type" : "uid",
+																							"uidString" : "o8yo/2jyDQCvg09NDKRqAA=="
+																						},
+																						"previewHeight" : 200,
+																						"fileName" : ""
+																					}
+																				]
+																			},
+																			"createEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"createTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-05-26T12:17:07.73463+02:00"
+																				}
+																			},
+																			"editEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"editTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-05-26T12:17:52.598773+02:00"
+																				}
+																			},
+																			"uid" : {
+																				"__type" : "uid",
+																				"uidString" : "nd+4/GjyDQCvFlFzDKRqAA=="
+																			},
+																			"paragraphStyle" : {
+																				"__type" : "textStyle"
+																			},
+																			"string" : "When the text is set or changed, we will update the label associated with the message"
+																		},
+																		{
+																			"__type" : "textSnippet",
+																			"children" : {
+																				"__type" : "snippets",
+																				"items" : [
+																					{
+																						"__type" : "changesSnippet",
+																						"children" : {
+																							"__type" : "snippets",
+																							"items" : [ ]
+																						},
+																						"createEmail" : {
+																							"__type" : "email",
+																							"emailString" : "<unknown>"
+																						},
+																						"createTime" : {
+																							"__type" : "time",
+																							"time" : {
+																								"__type" : "dateAndTime",
 																								"dateAndTimeString" : "2025-05-26T11:22:20.657956+02:00"
 																							}
 																						},
@@ -722,7 +795,7 @@
 																							"__type" : "uid",
 																							"uidString" : "BxPMOGjyDQCrzw6bD9bkyA=="
 																						},
-																						"previewHeight" : 200,
+																						"previewHeight" : 407.2252197265625,
 																						"fileName" : "attachments/bw5uom4y5c1wz6a1k48sxiisp/changes-snippets-GtLscMessageElement_add_onTemperatureStateChanged.ombu"
 																					}
 																				]
@@ -757,6 +830,79 @@
 																				"__type" : "textStyle"
 																			},
 																			"string" : "When the temperature state is set or changed, we will update the lines states associated with the message"
+																		},
+																		{
+																			"__type" : "textSnippet",
+																			"children" : {
+																				"__type" : "snippets",
+																				"items" : [
+																					{
+																						"__type" : "changesSnippet",
+																						"children" : {
+																							"__type" : "snippets",
+																							"items" : [ ]
+																						},
+																						"createEmail" : {
+																							"__type" : "email",
+																							"emailString" : "<unknown>"
+																						},
+																						"createTime" : {
+																							"__type" : "time",
+																							"time" : {
+																								"__type" : "dateAndTime",
+																								"dateAndTimeString" : "2025-05-26T12:18:57.592338+02:00"
+																							}
+																						},
+																						"editEmail" : {
+																							"__type" : "email",
+																							"emailString" : "<unknown>"
+																						},
+																						"editTime" : {
+																							"__type" : "time",
+																							"time" : {
+																								"__type" : "dateAndTime",
+																								"dateAndTimeString" : "2025-05-26T12:18:57.592338+02:00"
+																							}
+																						},
+																						"uid" : {
+																							"__type" : "uid",
+																							"uidString" : "Gi5FA2nyDQCwCllVDKRqAA=="
+																						},
+																						"previewHeight" : 349.93304443359375,
+																						"fileName" : "attachments/vym6hhlgocjtlzcxmvp6yat/changes-snippets-GtLscMessageElement_add_onElementIdChanged.ombu"
+																					}
+																				]
+																			},
+																			"createEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"createTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-05-26T12:18:10.860357+02:00"
+																				}
+																			},
+																			"editEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"editTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-05-26T12:18:52.727321+02:00"
+																				}
+																			},
+																			"uid" : {
+																				"__type" : "uid",
+																				"uidString" : "uxh8AGnyDQCviqKtDKRqAA=="
+																			},
+																			"paragraphStyle" : {
+																				"__type" : "textStyle"
+																			},
+																			"string" : "When the message element id is set or changed, we will update it."
 																		}
 																	]
 																},

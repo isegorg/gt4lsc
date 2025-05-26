@@ -1,0 +1,41 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-26T11:03:30.834415+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMessageElement,
+				#isMetaSide : false
+			},
+			#name : #onTemperatureStateChanged,
+			#protocol : #'events handling',
+			#sourceCode : 'onTemperatureStateChanged\r\tself\r\t\tmessageLineElementsDo: [ :messageLine | messageLine states addState: self model temperatureState ]',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-26T11:03:30.834415+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMessageViewModel,
+				#isMetaSide : false
+			},
+			#name : #temperatureState,
+			#protocol : #accessing,
+			#sourceCode : 'temperatureState\r\t^ temperatureState',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}

@@ -2,8 +2,6 @@ OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-05-26T11:03:30.834415+02:00' ],
-		#author : 'GlamorousAuthor',
-		#time : DateAndTime [ '2025-05-25T17:51:50.603674+02:00' ],
 		#prior : OmReference [ '0' ],
 		#self : OmReference [ '1' ]
 	},
@@ -13,10 +11,10 @@ OmEntry {
 				#className : #GtLscMessageElement,
 				#isMetaSide : false
 			},
-			#name : #onInstanceElementIdChanged,
+			#name : #onElementIdChanged,
 			#protocol : #'events handling',
-			#sourceCode : 'onInstanceElementIdChanged\r\tself\r\t\tupdateMessageLineElementsForInstanceElementId: self  model instanceId',
-			#stamp : 'GlamorousAuthor 5/25/2025 18:01',
+			#sourceCode : 'onElementIdChanged\r\tself id: self model elementId',
+			#stamp : '',
 			#package : #Gt4Lsc
 		}
 	}
@@ -24,8 +22,6 @@ OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
 		#time : DateAndTime [ '2025-05-26T11:03:30.834415+02:00' ],
-		#author : 'GlamorousAuthor',
-		#time : DateAndTime [ '2025-05-25T17:51:50.603674+02:00' ],
 		#prior : OmReference [ '1' ],
 		#self : OmReference [ '2' ]
 	},
@@ -35,11 +31,11 @@ OmEntry {
 				#className : #GtLscMessageViewModel,
 				#isMetaSide : false
 			},
-			#name : #instanceId,
+			#name : #elementId,
 			#protocol : #accessing,
-			#sourceCode : 'instanceId\r\t^ instanceId',
+			#sourceCode : 'elementId\r\t^ elementId',
 			#stamp : '',
 			#package : #Gt4Lsc
 		}
 	}
-}
+}
