@@ -1,0 +1,113 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-26T19:35:47.528587+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #onLscModelChanged,
+			#protocol : #'api - lsc model',
+			#sourceCode : 'onLscModelChanged\r\t"Is sent when a new lsc model is assigned to the view model"\r\r\tself initializeInstanceViewModels.\r\tself lscModel instances\r\t\tdo: [ :eachLscInstanceModel |\r\t\t\tself addInstanceViewModelFor: eachLscInstanceModel ]',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #onLscModelChanged,
+			#protocol : #'api - lsc model',
+			#sourceCode : 'onLscModelChanged\r\t"Is sent when a new lsc model is assigned to the view model"\r\r\tself initializeInstanceViewModels.\r\tself lscModel instances\r\t\tdo: [ :eachLscInstanceModel | self addInstanceViewModelFor: eachLscInstanceModel ].\r\tself initializeMessageViewModels.\r\tself lscModel messages\r\t\tdo: [ :eachLscMessageModel | self addMessageViewModelFor: eachLscMessageModel ]',
+			#stamp : '',
+			#package : #Gt4Lsc
+		},
+		#classPackageName : #Gt4Lsc
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-26T19:35:47.528587+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #'addMessageViewModelFor:',
+			#protocol : #'api - lsc model',
+			#sourceCode : 'addMessageViewModelFor: aLscMessageModel\r\t"Adds the message view model corresponding to the message model in the final position"\r\r\tself\r\t\taddMessageViewModelFor: aLscMessageModel\r\t\tatPosition: self messageViewModelsSize + 1',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-26T19:35:47.528587+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #messageViewModelsSize,
+			#protocol : #accessing,
+			#sourceCode : 'messageViewModelsSize\r\t^ messageViewModels size',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-26T19:35:47.528587+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #'addMessageViewModelFor:atPosition:',
+			#protocol : #'api - lsc model',
+			#sourceCode : 'addMessageViewModelFor: aLscMessageModel atPosition: anInteger\r\t| messageViewModelAdded previousIndex|\r\tmessageViewModelAdded := self createLscMessageViewModelFor: aLscMessageModel.\r\tpreviousIndex := anInteger - 1.\r\tmessageViewModels add: messageViewModelAdded afterIndex: previousIndex.',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-26T19:35:47.528587+02:00' ],
+		#prior : OmReference [ '4' ],
+		#self : OmReference [ '5' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #'createLscMessageViewModelFor:',
+			#protocol : #initialization,
+			#sourceCode : 'createLscMessageViewModelFor: aLscMessageModel \r\t^ GtLscMessageViewModel new model: aLscMessageModel',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}
