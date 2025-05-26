@@ -191,3 +191,24 @@ OmEntry {
 	}
 }
 
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-21T16:07:18.752958+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscElement,
+				#isMetaSide : false
+			},
+			#name : #messagesCanvas,
+			#protocol : #accessing,
+			#sourceCode : 'messagesCanvas\r\t^ messagesCanvas\r\t\tifNil: [ messagesCanvas := self childNamed: GtLscConstants messagesCanvasId ]',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}

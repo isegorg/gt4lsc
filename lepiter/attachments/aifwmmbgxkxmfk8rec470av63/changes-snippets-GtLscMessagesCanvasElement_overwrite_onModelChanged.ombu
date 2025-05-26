@@ -1,0 +1,81 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-26T21:50:21.616771+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMessagesCanvasElement,
+				#isMetaSide : false
+			},
+			#name : #onModelChanged,
+			#protocol : #'api - model',
+			#sourceCode : 'onModelChanged\r\t"Is sent when a new Lsc view model is assigned to the element"\r\r\tself removeChildren.\r\tself model messageViewModels\r\t\tdo: [ :eachLscMessageViewModel | self addMessageElementFor: eachLscMessageViewModel ]',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-26T21:50:21.616771+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscViewModel,
+				#isMetaSide : false
+			},
+			#name : #messageViewModels,
+			#protocol : #accessing,
+			#sourceCode : 'messageViewModels\r\t^ messageViewModels',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-26T21:50:21.616771+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMessagesCanvasElement,
+				#isMetaSide : false
+			},
+			#name : #'addMessageElementFor:',
+			#protocol : #'api - model',
+			#sourceCode : 'addMessageElementFor: aLscMessageViewModel\r\t| newLscMessageElement |\r\tnewLscMessageElement := self class createNewLseMessageElement.\r\tself addChild: newLscMessageElement.\r\tnewLscMessageElement model: aLscMessageViewModel',
+			#stamp : 'GlamorousAuthor 5/26/2025 22:23',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-26T21:50:21.616771+02:00' ],
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscMessagesCanvasElement class',
+				#isMetaSide : true
+			},
+			#name : #createNewLseMessageElement,
+			#protocol : #'utilities - message view creation',
+			#sourceCode : 'createNewLseMessageElement\r\t^ GtLscMessageElement new',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}
