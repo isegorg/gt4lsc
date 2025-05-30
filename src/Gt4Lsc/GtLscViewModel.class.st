@@ -5,7 +5,8 @@ Class {
 	#classTraits : 'TGtWithLscModel classTrait + TGtAnnouncer classTrait',
 	#instVars : [
 		'announcer',
-		'instanceViewModels'
+		'instanceViewModels',
+		'messageViewModels'
 	],
 	#category : #'Gt4Lsc-! View models'
 }
@@ -28,6 +29,23 @@ GtLscViewModel >> addInstanceViewModelFor: aLscInstanceModel atPosition: anInteg
 	self notifyLscInstanceViewModelAdded: instanceViewModelAdded atPosition: anInteger
 ]
 
+{ #category : #'api - lsc model' }
+GtLscViewModel >> addMessageViewModelFor: aLscMessageModel [
+	"Adds the message view model corresponding to the message model in the final position"
+
+	self
+		addMessageViewModelFor: aLscMessageModel
+		atPosition: self messageViewModelsSize + 1
+]
+
+{ #category : #'api - lsc model' }
+GtLscViewModel >> addMessageViewModelFor: aLscMessageModel atPosition: anInteger [
+	| messageViewModelAdded previousIndex|
+	messageViewModelAdded := self createLscMessageViewModelFor: aLscMessageModel.
+	previousIndex := anInteger - 1.
+	messageViewModels add: messageViewModelAdded afterIndex: previousIndex.
+]
+
 { #category : #announcer }
 GtLscViewModel >> announcer [
 	<return: #Announcer>
@@ -41,14 +59,25 @@ GtLscViewModel >> createLscInstanceViewModelFor: eachLscInstanceModel [
 ]
 
 { #category : #initialization }
+GtLscViewModel >> createLscMessageViewModelFor: aLscMessageModel [ 
+	^ GtLscMessageViewModel new model: aLscMessageModel
+]
+
+{ #category : #initialization }
 GtLscViewModel >> initialize [
 	super initialize.
-	self initializeInstanceViewModels
+	self initializeInstanceViewModels.
+	self initializeMessageViewModels
 ]
 
 { #category : #initialization }
 GtLscViewModel >> initializeInstanceViewModels [
 	instanceViewModels := OrderedCollection empty
+]
+
+{ #category : #initialization }
+GtLscViewModel >> initializeMessageViewModels [
+	messageViewModels := OrderedCollection empty
 ]
 
 { #category : #'api - lsc model' }
@@ -67,6 +96,16 @@ GtLscViewModel >> instanceViewModels [
 { #category : #accessing }
 GtLscViewModel >> instanceViewModelsSize [
 	^ instanceViewModels size
+]
+
+{ #category : #accessing }
+GtLscViewModel >> messageViewModels [
+	^ messageViewModels
+]
+
+{ #category : #accessing }
+GtLscViewModel >> messageViewModelsSize [
+	^ messageViewModels size
 ]
 
 { #category : #'api - lsc model' }
@@ -133,8 +172,10 @@ GtLscViewModel >> onLscModelChanged [
 
 	self initializeInstanceViewModels.
 	self lscModel instances
-		do: [ :eachLscInstanceModel |
-			self addInstanceViewModelFor: eachLscInstanceModel ]
+		do: [ :eachLscInstanceModel | self addInstanceViewModelFor: eachLscInstanceModel ].
+	self initializeMessageViewModels.
+	self lscModel messages
+		do: [ :eachLscMessageModel | self addMessageViewModelFor: eachLscMessageModel ]
 ]
 
 { #category : #'events handling' }

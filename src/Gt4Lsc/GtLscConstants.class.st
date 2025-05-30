@@ -28,6 +28,11 @@ GtLscConstants class >> defaultTemperatureState [
 ]
 
 { #category : #'api - constants' }
+GtLscConstants class >> fromInstanceLineId [
+	^ #fromInstanceLine
+]
+
+{ #category : #'api - constants' }
 GtLscConstants class >> hotBorder [
 	^ BlBorder paint: self hotColor
 ]
@@ -68,6 +73,26 @@ GtLscConstants class >> locationLineWidth [
 ]
 
 { #category : #'api - constants' }
+GtLscConstants class >> messageElementIdTemplate [
+	^ #'message-{1}-from-{2}'
+]
+
+{ #category : #'api - constants' }
+GtLscConstants class >> messageLineElementId [
+	^ #messageLine
+]
+
+{ #category : #'api - constants' }
+GtLscConstants class >> messageLinesWidth [
+	^ 5
+]
+
+{ #category : #'api - constants' }
+GtLscConstants class >> messageTextElementId [
+	^ #messageText
+]
+
+{ #category : #'api - constants' }
 GtLscConstants class >> messagesCanvasContainerDummyElementId [
 	^ #HiddenEditableLabelElement
 ]
@@ -83,6 +108,16 @@ GtLscConstants class >> messagesCanvasId [
 ]
 
 { #category : #'api - constants' }
+GtLscConstants class >> returnLineId [
+	^ #returnLine
+]
+
+{ #category : #'api - constants' }
 GtLscConstants class >> titleElementId [
 	^ #title
+]
+
+{ #category : #'api - constants' }
+GtLscConstants class >> toInstanceLineId [
+	^ #toInstanceLine
 ]

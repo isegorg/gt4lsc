@@ -151,6 +151,11 @@ GtLscModel >> messageAt: anInteger [
 ]
 
 { #category : #'api - instances' }
+GtLscModel >> messages [
+	^ messages
+]
+
+{ #category : #'api - instances' }
 GtLscModel >> messagesSize [
 	^ messages size
 ]

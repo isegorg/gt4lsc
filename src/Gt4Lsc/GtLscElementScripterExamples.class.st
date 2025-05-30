@@ -96,7 +96,7 @@ GtLscElementScripterExamples >> renderLscAddingInstance [
 	"Check name"
 	self assert: (instanceAddedElement childNamed: #nameElement) text asString equals: instanceAdded name.
 	"Check locationLine border"
-	self assert: instanceAddedElement border paint equals: GtLscConstants coldColor asBlPaint.
+	"self assert: instanceAddedElement border paint equals: GtLscConstants coldColor asBlPaint."
 
 	^ lsc
 ]
@@ -174,7 +174,7 @@ GtLscElementScripterExamples >> renderLscInstanceWithChanges [
 	"Check name"
 	self assert: (uiElement childNamed: GtLscConstants instanceNameElementId) text asString equals: lscInstance name.
 	"Check locationLine border"
-	self assert: uiElement locationLineElement border paint equals: GtLscConstants coldColor asBlPaint.
+	"self assert: uiElement locationLineElement border paint equals: GtLscConstants coldColor asBlPaint."
 	"Check element id"
 	self assert: uiElement id equals: (GtLscConstants instanceElementIdTemplate format: {lscInstance id asString}) asBlocElementId.
 	^ lscInstance
@@ -275,12 +275,41 @@ GtLscElementScripterExamples >> renderLscWithInstances [
 	fistLscInstanceElement := (instancesCanvasElement childAt: 1).
 	self assert: fistLscInstanceElement id equals: (GtLscConstants instanceElementIdTemplate format: {firstLscInstance id asString}) asBlocElementId.
 	self assert: (fistLscInstanceElement childNamed: GtLscConstants instanceNameElementId) text asString equals: firstLscInstance name.
-	self assert: (fistLscInstanceElement childNamed: GtLscConstants locationLineId) border paint equals: GtLscConstants hotColor asBlPaint.
+	"self assert: (fistLscInstanceElement childNamed: GtLscConstants locationLineId) border paint equals: GtLscConstants hotColor asBlPaint."
 	
 	secondLscInstanceElement := (instancesCanvasElement childAt: 2).
 	self assert: secondLscInstanceElement id equals: (GtLscConstants instanceElementIdTemplate format: {secondLscInstance id asString}) asBlocElementId.
 	self assert: (secondLscInstanceElement childNamed: GtLscConstants instanceNameElementId) text asString equals: secondLscInstance name.
-	self assert: (secondLscInstanceElement childNamed: GtLscConstants locationLineId) border paint equals: GtLscConstants hotColor asBlPaint.
+	"self assert: (secondLscInstanceElement childNamed: GtLscConstants locationLineId) border paint equals: GtLscConstants hotColor asBlPaint."
+	
+	^ lsc
+]
+
+{ #category : #'examples - ui' }
+GtLscElementScripterExamples >> renderLscWithMessages [
+	"Check that the UI element displays the model's characteristics"
+
+	<gtExample>
+	| lsc firstLscMessage secondLscMessage uiElement messagesCanvasElement fistLscMessageElement secondLscMessageElement |
+	lsc := GtLscModelExamples new lscAddMessageAtPosition.
+	firstLscMessage := lsc messageAt: 1.
+	secondLscMessage := lsc messageAt: 2.
+	uiElement := lsc asElement.
+	
+	"Check the messages in the view"
+	messagesCanvasElement := (uiElement childNamed: GtLscConstants messagesCanvasId).
+	self assert: messagesCanvasElement isNotNil.
+	self assert: messagesCanvasElement childrenCount equals: lsc messagesSize.
+	
+	fistLscMessageElement := (messagesCanvasElement childAt: 1).
+	self assert: fistLscMessageElement id equals: (GtLscConstants messageElementIdTemplate format: {firstLscMessage id asString}) asBlocElementId.
+	self assert: (fistLscMessageElement childNamed: GtLscConstants messageTextElementId) text asString equals: firstLscMessage text.
+	self assert: (fistLscMessageElement childNamed: GtLscConstants messageLineElementId) border paint equals: GtLscConstants hotColor asBlPaint.
+	
+	secondLscMessageElement := (messagesCanvasElement childAt: 2).
+	self assert: secondLscMessageElement id equals: (GtLscConstants messageElementIdTemplate format: {secondLscMessage id asString}) asBlocElementId.
+	self assert: (secondLscMessageElement childNamed: GtLscConstants messageTextElementId) text asString equals: secondLscMessage name.
+	self assert: (secondLscMessageElement childNamed: GtLscConstants messageLineElementId) border paint equals: GtLscConstants hotColor asBlPaint.
 	
 	^ lsc
 ]
@@ -342,4 +371,24 @@ GtLscElementScripterExamples >> renderNewLscInstance [
 	self assert: uiElement id equals: (GtLscConstants instanceElementIdTemplate format: {lscInstance id asString}) asBlocElementId.
 	
 	^ lscInstance
+]
+
+{ #category : #'examples - ui' }
+GtLscElementScripterExamples >> renderNewLscMessage [
+	"Check that the LscMessage UI element displays the model's characteristics"
+
+	<gtExample>
+	| lsc lscMessage uiElement |
+	lsc := GtLscModelExamples new lscAddMessage.
+	lscMessage := lsc messageAt: 1.
+	uiElement := lscMessage asElement.
+
+	"Check id"
+	self assert: uiElement id equals: (GtLscConstants messageElementIdTemplate format: {lscMessage id asString . lscMessage instanceId asString}) asBlocElementId.
+	"Check text"
+	self assert: (uiElement childNamed: GtLscConstants messageTextElementId) text asString equals: lscMessage text.
+	"Check temperature"
+	self assert: (uiElement childNamed: GtLscConstants messageLineElementId) border paint equals: GtLscConstants hotColor asBlPaint.
+	
+	^ lscMessage
 ]

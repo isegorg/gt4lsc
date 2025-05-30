@@ -59,6 +59,12 @@ GtLscElement >> initialize [
 	self matchParent
 ]
 
+{ #category : #accessing }
+GtLscElement >> messagesCanvas [
+	^ messagesCanvas
+		ifNil: [ messagesCanvas := self childNamed: GtLscConstants messagesCanvasId ]
+]
+
 { #category : #'events handling' }
 GtLscElement >> onAcceptNewTitleWish: aWish [ 
 	self hasLscViewModel ifFalse: [ ^ self ].
@@ -70,7 +76,8 @@ GtLscElement >> onLscViewModelChanged [
 	"Is sent when a new Lsc view model is assigned to the element"
 
 	self onTitleChanged.
-	instancesCanvas lscViewModel: self lscViewModel
+	instancesCanvas lscViewModel: self lscViewModel.
+	self messagesCanvas model: self lscViewModel
 ]
 
 { #category : #'events handling' }

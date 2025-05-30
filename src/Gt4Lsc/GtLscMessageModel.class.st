@@ -1,11 +1,14 @@
 Class {
 	#name : #GtLscMessageModel,
 	#superclass : #Object,
+	#traits : 'TGtAnnouncer',
+	#classTraits : 'TGtAnnouncer classTrait',
 	#instVars : [
 		'instance',
 		'temperature',
 		'text',
-		'id'
+		'id',
+		'announcer'
 	],
 	#category : #'Gt4Lsc-! Model'
 }
@@ -25,6 +28,20 @@ GtLscMessageModel class >> new [
 	self error: 'Use #forInstance:inLsc:withText:'
 ]
 
+{ #category : #announcer }
+GtLscMessageModel >> announcer [
+	<return: #Announcer>
+
+	^ announcer ifNil: [ announcer := Announcer new ]
+]
+
+{ #category : #converting }
+GtLscMessageModel >> asElement [
+	^ GtLscMessageElement new
+		model: (GtLscMessageViewModel new model: self);
+		yourself
+]
+
 { #category : #'instance creation' }
 GtLscMessageModel >> forInstance: aGtLscInstanceModel inLsc: aGtLscModel withText: aString [
 	self assert: (aGtLscModel hasInstance: aGtLscInstanceModel) description: 'Instance is not in Lsc'.
@@ -38,6 +55,11 @@ GtLscMessageModel >> hasId [
 ]
 
 { #category : #accessing }
+GtLscMessageModel >> id [
+	^ id
+]
+
+{ #category : #accessing }
 GtLscMessageModel >> id: anObject [
 	id := anObject.
 ]
@@ -47,6 +69,11 @@ GtLscMessageModel >> initialize [
 	super initialize.
 
 	temperature := self class defaultTemperature.
+]
+
+{ #category : #accessing }
+GtLscMessageModel >> instanceId [
+	^ instance id
 ]
 
 { #category : #checking }
