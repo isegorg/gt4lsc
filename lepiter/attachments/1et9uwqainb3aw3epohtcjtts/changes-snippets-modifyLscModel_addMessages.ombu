@@ -235,3 +235,22 @@ OmEntry {
 	}
 }
 
+OmEntry {
+	#tags : {
+		#prior : OmReference [ '5' ],
+		#self : OmReference [ '6' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModel,
+				#isMetaSide : false
+			},
+			#name : #messages,
+			#protocol : #'api - instances',
+			#sourceCode : 'messages\r\t^ messages',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}

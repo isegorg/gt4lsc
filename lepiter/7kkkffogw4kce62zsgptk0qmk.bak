@@ -1672,14 +1672,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-05-22T13:14:03.272977+02:00"
+												"dateAndTimeString" : "2025-05-22T13:14:16.341775+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "wcoETxnyDQCd9tUkBDtaNA=="
 										},
-										"code" : "view := GtEpiceaChangeListElement forModel: changeListModel"
+										"code" : "changesSnippet := self snippetViewModel snippetModel.\rchangesFile := (changesSnippet database resolveDbFile: changesSnippet fileName)\r\t\tasFileReference.\rchangeListModel := GtEpiceaChangeListModel onLog: (EpLog fromFile: changesFile).\rchangeListModel availableEvents\r\tdo: [ :event | event content asRevertedCodeChange applyCodeChange ].\rview := GtEpiceaChangeListElement forModel: changeListModel"
 									}
 								]
 							},
@@ -2306,14 +2306,14 @@
 																	"__type" : "time",
 																	"time" : {
 																		"__type" : "dateAndTime",
-																		"dateAndTimeString" : "2025-05-16T11:40:13.269437+02:00"
+																		"dateAndTimeString" : "2025-05-29T10:45:27.273386+02:00"
 																	}
 																},
 																"uid" : {
 																	"__type" : "uid",
 																	"uidString" : "v8mJa97uDQC048tOCP8aZw=="
 																},
-																"code" : "subString := 'createMessagesCanvas'.\rfilter := GtLscLeSearchSubstringSnippetFilter substring: subString.\rdataBase := thisSnippet database.\rsnippets := dataBase leSnippetsInDB contents.\rsnippets select: [ :snippet | filter matches: snippet ]"
+																"code" : "subString := '#sourceCode : ''messages\\r'.\rfilter := GtLscLeSearchSubstringSnippetFilter substring: subString.\rdataBase := thisSnippet database.\rsnippets := dataBase leSnippetsInDB contents.\rsnippets select: [ :snippet | filter matches: snippet ]"
 															}
 														]
 													},
