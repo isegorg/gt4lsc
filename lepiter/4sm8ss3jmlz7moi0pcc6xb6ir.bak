@@ -1358,7 +1358,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-05-28T19:02:35.992052+02:00"
+						"dateAndTimeString" : "2025-06-03T13:34:55.715193+02:00"
 					}
 				},
 				"editEmail" : {
@@ -1369,17 +1369,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-05-28T19:03:24.033292+02:00"
+						"dateAndTimeString" : "2025-06-03T13:36:39.61516+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "U2B74pbyDQC/PKGvD/5a6g=="
+					"uidString" : "YZyvAQvzDQCbumqRBIQEfw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[LLM for LSC]]"
+				"string" : "[[jJSON Parser]]"
 			},
 			{
 				"__type" : "textSnippet",

@@ -92,6 +92,11 @@ GtLscMessageModel >> temperature [
 ]
 
 { #category : #accessing }
+GtLscMessageModel >> temperature: aTemperature [
+	temperature := aTemperature
+]
+
+{ #category : #accessing }
 GtLscMessageModel >> text [
 	^ text
 ]
