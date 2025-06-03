@@ -66,14 +66,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-06-03T14:04:47.178004+02:00"
+						"dateAndTimeString" : "2025-06-03T19:53:11.789826+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "VpG2BwvzDQCc1asrBIQEfw=="
 				},
-				"code" : "lscJsonSchema := '{\n \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n\t \"$id\": \"https://blueplanelabs.xyz/lsc.schema.json\",\r\t \"$defs\": {\r\t   \"temperature\": {\r\t     \"enum\": [ \"cold\", \"hot\" ]\r\t   },\r\t   \"instance\": { \r\t     \"type\": \"object\",\r\t     \"properties\": {\r\t       \"id\": \"string\",\r\t       \"name\": \"string\",\r\t       \"temperature\": \"#/$defs/temperature\"\r\t     },\r\t     \"required\": [ \"id\", \"name\", \"temperature\" ]\r\t   },\r\t   \"message\": { \r\t     \"type\": \"object\",\r\t     \"properties\": {\r\t       \"id\": \"string\",\r\t       \"instanceId\": \"string\",\r\t       \"text\": \"string\",\r\t       \"temperature\": \"#/$defs/temperature\",\r\t       \"targetInstanceId\": \"string\"\r\t     },\r\t     \"required\": [ \"id\", \"instanceId\", \"text\", \"temperature\" ]\r\t   }    \r\t },\t\t\t \n\t \"title\": \"Live Sequence Chart\",\n\t \"description\": \"Model for a Live Sequence Chart\",\n\t \"type\": \"object\",\n\t \"properties\": {\n\t   \"title\": {\n\t     \"description\": \"The scenario name\",\n\t     \"type\": \"string\"\n\t   },\r\t   \"instances\": {\r\t     \"description\": \"The collection of instances (or lifelines)\",\r\t     \"type\": \"array\",\r\t     \"items\": {\r\t        \"$ref\": \"#/$defs/instance\"\r\t     }\r\t   },\r\t   \"messages\": {\r\t     \"description\": \"The collection of messages (or events)\",\r\t     \"type\": \"array\",\r\t     \"items\": {\r\t        \"$ref\": \"#/$defs/message\"\r\t     }\r\t   }\n\t },\r\t \"required\": [ \"title\", \"instances\", \"messages\" ]\n}'"
+				"code" : "lscJsonSchema := '{\n \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n\t \"$id\": \"https://blueplanelabs.xyz/lsc.schema.json\",\r\t \"$defs\": {\r\t   \"temperature\": {\r\t     \"title\": \"Temperature\",\r\t     \"description\": \"Whether the element is optional (cold) or mandatory (hot)\",\r      \"enum\": [ \"cold\", \"hot\" ]\r\t   },\r\t   \"instance\": { \r\t     \"type\": \"object\",\r\t     \"properties\": {\r\t       \"name\": {\r\t         \"type\": \"string\"\r\t       },\r\t       \"temperature\": {\r\t         \"$ref\": \"#/$defs/temperature\"\r\t        }\r\t     },\r\t     \"required\": [ \"name\", \"temperature\" ]\r\t   },\r\t   \"message\": { \r\t     \"type\": \"object\",\r\t     \"properties\": {\r\t       \"instanceId\": \"string\",\r\t       \"text\": \"string\",\r\t       \"temperature\": \"#/$defs/temperature\",\r\t       \"targetInstanceId\": \"string\"\r\t     },\r\t     \"required\": [ \"instanceId\", \"text\", \"temperature\" ]\r\t   }    \r\t },\t\t\t \n\t \"title\": \"Live Sequence Chart\",\n\t \"description\": \"Model for a Live Sequence Chart\",\n\t \"type\": \"object\",\n\t \"properties\": {\n\t   \"title\": {\n\t     \"description\": \"The scenario name\",\n\t     \"type\": \"string\"\n\t   },\r\t   \"instances\": {\r\t     \"description\": \"The collection of instances (or lifelines)\",\r\t     \"type\": \"array\",\r\t     \"items\": {\r\t        \"$ref\": \"#/$defs/instance\"\r\t     }\r\t   },\r\t   \"messages\": {\r\t     \"description\": \"The collection of messages (or events)\",\r\t     \"type\": \"array\",\r\t     \"items\": {\r\t        \"$ref\": \"#/$defs/message\"\r\t     }\r\t   }\n\t },\r\t \"required\": [ \"title\", \"instances\", \"messages\" ]\n}'"
 			},
 			{
 				"__type" : "textSnippet",
@@ -171,14 +171,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-06-03T14:16:41.536203+02:00"
+						"dateAndTimeString" : "2025-06-03T18:41:54.089035+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "QIe7XAvzDQC0xFceBIQEfw=="
 				},
-				"code" : "invalidJson := '{ \r}'.\rvalidator validate: (NeoJSONObject fromString: invalidJson).\rvalidator validationErrors.\rvalidator"
+				"code" : "invalidJson := '{ \r}'.\rvalidator validate: (NeoJSONObject fromString: invalidJson).\rvalidator"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -205,14 +205,48 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-06-03T14:18:11.340059+02:00"
+						"dateAndTimeString" : "2025-06-03T14:18:17.449329+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "98m/mAvzDQCFwSBFBIQEfw=="
 				},
-				"code" : "emptyLscJson := '{\r  \"title\": \"\",\r  \"instances\": [],\r  \"messages\": []\r}'.\rvalidator validate: (NeoJSONObject fromString: emptyLscJson).\rvalidator validationErrors.\rvalidator"
+				"code" : "emptyLscJson := '{\r  \"title\": \"\",\r  \"instances\": [],\r  \"messages\": []\r}'.\rvalidator validate: (NeoJSONObject fromString: emptyLscJson).\rvalidator"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-03T18:42:20.70695+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-03T19:33:27.448438+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "7tgXTQ/zDQCX7e2RDDhIeQ=="
+				},
+				"code" : "instanceInvalidNameType := '{\r  \"name\": 1,\r  \"temperature\": \"cold\"\r}'.\rinstanceInvalidTemperatureType := '{\r  \"name\": \"First Instance\",\r  \"temperature\": \"something\"\r}'.\rinvalidLscInstance := '{\r  \"title\": \"\",\r  \"instances\": ['\r    , instanceInvalidNameType , ','\r    , instanceInvalidTemperatureType ,\r  '],\r  \"messages\": []\r}'.\rvalidator validate: (NeoJSONObject fromString: invalidLscInstance).\rvalidator"
 			}
 		]
 	},
