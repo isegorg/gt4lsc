@@ -1,0 +1,41 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-06-05T18:47:05.155225+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscParser class',
+				#isMetaSide : true
+			},
+			#name : #'changeInstancesOf:from:',
+			#protocol : #operations,
+			#sourceCode : 'changeInstancesOf: aLscModel from: aLscJson\r\taLscModel removeAllInstances.\r\t(self instancesFromLscJson: aLscJson)\r\t\tdo: [ :instance | aLscModel addInstance: instance ]',
+			#stamp : 'GlamorousAuthor 6/5/2025 18:45',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-06-05T18:47:05.155225+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscParser class',
+				#isMetaSide : true
+			},
+			#name : #'instancesFromLscJson:',
+			#protocol : #'accessing - json',
+			#sourceCode : 'instancesFromLscJson: aNeoJsonObject\r\t^ (aNeoJsonObject at: #instances)\r\t\tcollect: [ :instanceJson | \r\t\t\tGtLscInstanceModel new\r\t\t\t\tname: (instanceJson at: #name);\r\t\t\t\ttemperature: ((instanceJson at: #temperature) = \'cold\'\r\t\t\t\t\t\tifTrue: [ GtLscColdTemperature ]\r\t\t\t\t\t\tifFalse: [ GtLscHotTemperature ]) ]',
+			#stamp : 'GlamorousAuthor 6/5/2025 18:45',
+			#package : #Gt4Lsc
+		}
+	}
+}

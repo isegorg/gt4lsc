@@ -1,0 +1,41 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-06-05T18:47:05.155225+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscParser class',
+				#isMetaSide : true
+			},
+			#name : #'changeMessagesOf:from:',
+			#protocol : #operations,
+			#sourceCode : 'changeMessagesOf: aLscModel from: aLscJson\r\taLscModel removeAllMessages.\r\t(self messageJsonsFromLscJson: aLscJson)\r\t\tdo: [ :messageJson |\r\t\t\t| instance text temperature addedMessage targetInstance |\r\t\t\tinstance := aLscModel instanceWithName: (messageJson at: #instanceName).\r\t\t\ttext := messageJson at: #text.\r\t\t\ttemperature := ((messageJson at: #temperature) asLowercase = \'cold\'\r\t\t\t\t\t\tifTrue: [ GtLscColdTemperature ]\r\t\t\t\t\t\tifFalse: [ GtLscHotTemperature ]).\r\t\t\taddedMessage := messageJson\r\t\t\t\tat: #targetInstanceName\r\t\t\t\tifPresent: [ :targetInstanceName |\r\t\t\t\t\ttargetInstance := aLscModel instanceWithName: targetInstanceName.\r\t\t\t\t\taLscModel addMessageForInstance: instance withText: text andTarget: targetInstance\r\t\t\t\t]\r\t\t\t\tifAbsent: [\r\t\t\t\t\taLscModel addMessageForInstance: instance withText: text.\r\t\t\t\t].\r\t\t\taddedMessage temperature: temperature\r\t\t]',
+			#stamp : 'GlamorousAuthor 6/5/2025 19:16',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-06-05T18:47:05.155225+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscParser class',
+				#isMetaSide : true
+			},
+			#name : #'messageJsonsFromLscJson:',
+			#protocol : #'accessing - json',
+			#sourceCode : 'messageJsonsFromLscJson: aNeoJsonObject\r\t^ (aNeoJsonObject at: #messages)',
+			#stamp : 'GlamorousAuthor 6/5/2025 19:16',
+			#package : #Gt4Lsc
+		}
+	}
+}

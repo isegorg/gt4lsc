@@ -1,0 +1,41 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-06-05T18:47:05.155225+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscModel,
+				#isMetaSide : false
+			},
+			#name : #'instanceWithName:',
+			#protocol : #'api - instances',
+			#sourceCode : 'instanceWithName: aString\r\t^ instances detect: [ :instance | instance hasName: aString]',
+			#stamp : 'GlamorousAuthor 6/5/2025 19:27',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-06-05T18:47:05.155225+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscInstanceModel,
+				#isMetaSide : false
+			},
+			#name : #'hasName:',
+			#protocol : #testing,
+			#sourceCode : 'hasName: aString\r\t^ name = aString',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}
