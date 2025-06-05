@@ -2240,7 +2240,7 @@
 																	"__type" : "uid",
 																	"uidString" : "qHBJA8vuDQCu51nND5o+4g=="
 																},
-																"previewHeight" : 200,
+																"previewHeight" : 558.3220825195313,
 																"fileName" : "attachments/63qwja75933m11mquuhkth4x9/changes-snippets-288871064098533728539128405402402626151.ombu"
 															}
 														]
@@ -2306,14 +2306,14 @@
 																	"__type" : "time",
 																	"time" : {
 																		"__type" : "dateAndTime",
-																		"dateAndTimeString" : "2025-05-29T10:45:27.273386+02:00"
+																		"dateAndTimeString" : "2025-06-05T09:19:32.023627+02:00"
 																	}
 																},
 																"uid" : {
 																	"__type" : "uid",
 																	"uidString" : "v8mJa97uDQC048tOCP8aZw=="
 																},
-																"code" : "subString := '#sourceCode : ''messages\\r'.\rfilter := GtLscLeSearchSubstringSnippetFilter substring: subString.\rdataBase := thisSnippet database.\rsnippets := dataBase leSnippetsInDB contents.\rsnippets select: [ :snippet | filter matches: snippet ]"
+																"code" : "subString := 'TGtLscWithModel'.\rfilter := GtLscLeSearchSubstringSnippetFilter substring: subString.\rdataBase := thisSnippet database.\rsnippets := dataBase leSnippetsInDB contents.\rsnippets select: [ :snippet | filter matches: snippet ]"
 															}
 														]
 													},

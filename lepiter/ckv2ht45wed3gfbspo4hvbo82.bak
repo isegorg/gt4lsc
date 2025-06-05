@@ -156,7 +156,7 @@
 											"__type" : "uid",
 											"uidString" : "Ka0yvnzxDQC210wVBG/XFw=="
 										},
-										"previewHeight" : 956.0734252929688,
+										"previewHeight" : 1050,
 										"fileName" : "attachments/1et9uwqainb3aw3epohtcjtts/changes-snippets-modifyLscModel_addMessages.ombu"
 									}
 								]
@@ -1877,7 +1877,45 @@
 							"__type" : "textSnippet",
 							"children" : {
 								"__type" : "snippets",
-								"items" : [ ]
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-06-04T19:25:08.318036+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-06-04T19:25:19.782211+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "Edv5AyTzDQCEJynyANHjXg=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "**A completar**"
+									}
+								]
 							},
 							"createEmail" : {
 								"__type" : "email",

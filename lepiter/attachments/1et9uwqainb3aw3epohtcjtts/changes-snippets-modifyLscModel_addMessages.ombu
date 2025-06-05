@@ -237,6 +237,8 @@ OmEntry {
 
 OmEntry {
 	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-14T18:17:14.486309+02:00' ],
 		#prior : OmReference [ '5' ],
 		#self : OmReference [ '6' ]
 	},

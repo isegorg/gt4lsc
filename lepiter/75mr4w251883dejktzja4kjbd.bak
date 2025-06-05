@@ -554,7 +554,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-05-17T14:06:16.768537+02:00"
+												"dateAndTimeString" : "2025-05-17T14:07:28.71305+02:00"
 											}
 										},
 										"uid" : {
@@ -564,7 +564,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "If {{gtClass:GtLscInstanceModel}} does not have an *id*, it will not be added to a {{gtClass:GtLscModel}}.\nIf {{gtClass:GtLscInstanceElement}} is not included in a {{gtClass:GtLscElement}}, we will also not display the actions to perform on a {{gtClass:GtLscInstanceModel}} in a {{gtClass:GtLscModel}}."
+										"string" : "If {{gtClass:GtLscInstanceModel}} does not have an *id*, it will not have been added to a {{gtClass:GtLscModel}}.\nIf {{gtClass:GtLscInstanceElement}} is not included in a {{gtClass:GtLscElement}}, we will also not display the actions to perform on a {{gtClass:GtLscInstanceModel}} in a {{gtClass:GtLscModel}}."
 									}
 								]
 							},

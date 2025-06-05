@@ -244,14 +244,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-06-04T12:26:20.082459+02:00"
+									"dateAndTimeString" : "2025-06-04T18:59:04.932193+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "7tgXTQ/zDQCX7e2RDDhIeQ=="
 							},
-							"code" : "instanceWithInvalidNameType := '{\r  \"name\": 1,\r  \"temperature\": \"cold\"\r}'.\rinstanceWithInvalidTemperatureType := '{\r  \"name\": \"First Instance\",\r  \"temperature\": \"something\"\r}'.\rvalidInstance := '{\r  \"name\": \"First Instance\",\r  \"temperature\": \"hot\"\r}'..\rlscWithInvalidInstances := '{\r  \"title\": \"\",\r  \"instances\": ['\r    , instanceInvalidNameType , ','\r    , instanceInvalidTemperatureType , ','\r    , validInstance ,\r  '],\r  \"messages\": []\r}'.\rvalidator validate: (NeoJSONObject fromString: lscWithInvalidInstances).\rvalidator"
+							"code" : "instanceWithInvalidNameType := '{\r  \"name\": 1,\r  \"temperature\": \"cold\"\r}'.\rinstanceWithInvalidTemperatureType := '{\r  \"name\": \"First Instance\",\r  \"temperature\": \"something\"\r}'.\rvalidInstance := '{\r  \"name\": \"First Instance\",\r  \"temperature\": \"hot\"\r}'..\rlscWithInvalidInstances := '{\r  \"title\": \"\",\r  \"instances\": ['\r    , instanceWithInvalidNameType , ','\r    , instanceWithInvalidTemperatureType , ','\r    , validInstance ,\r  '],\r  \"messages\": []\r}'.\rvalidator validate: (NeoJSONObject fromString: lscWithInvalidInstances).\rvalidator"
 						}
 					]
 				},
