@@ -13,7 +13,7 @@ OmEntry {
 			},
 			#name : #'addElement:atPosition:inCollection:',
 			#protocol : #'private - collection operations',
-			#sourceCode : 'addElement: newElementWithId atPosition: anInteger inCollection: anOrderedCollection\r\t| previousIndex |\r\tself class checkValidPostion: anInteger toAddInCollectionWithSize: self messagesSize.\r\tself addIdTo: newElementWithId.\r\tpreviousIndex := anInteger - 1.\r\t^ anOrderedCollection add: newElementWithId afterIndex: previousIndex',
+			#sourceCode : 'addElement: newElementWithId atPosition: anInteger inCollection: anOrderedCollection\r\t| previousIndex |\r\tself class checkValidPostion: anInteger toAddInCollectionWithSize: anOrderedCollection size.\r\tself addIdTo: newElementWithId.\r\tpreviousIndex := anInteger - 1.\r\t^ anOrderedCollection add: newElementWithId afterIndex: previousIndex',
 			#stamp : 'GlamorousAuthor 5/20/2025 20:03',
 			#package : #Gt4Lsc
 		}

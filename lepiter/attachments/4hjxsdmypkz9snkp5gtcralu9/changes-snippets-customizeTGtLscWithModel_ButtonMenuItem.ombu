@@ -98,4 +98,24 @@ OmEntry {
 			#package : #Gt4LscContextMenu
 		}
 	}
-}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-08T12:52:49.624104+02:00' ],
+		#prior : OmReference [ '5' ],
+		#self : OmReference [ '6' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscButtonElement,
+				#isMetaSide : false
+			},
+			#name : #onAptitudesChanged,
+			#protocol : #'events handling',
+			#sourceCode : 'onAptitudesChanged\r\t"Update aptitudes if model has #aptitudes message. Use TGtLscMenuItemWithAptitudes in item"\r\t\r\t(self model respondsTo: #aptitudes) ifFalse: [ ^ self ].\r\tself aptitude: self model aptitudes',
+			#stamp : '',
+			#package : #Gt4LscContextMenu
+		}
+	}
+}

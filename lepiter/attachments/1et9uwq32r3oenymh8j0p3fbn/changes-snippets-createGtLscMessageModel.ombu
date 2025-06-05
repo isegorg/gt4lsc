@@ -180,4 +180,24 @@ OmEntry {
 			#package : #Gt4Lsc
 		}
 	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-05-14T18:17:14.486309+02:00' ],
+		#prior : OmReference [ '9' ],
+		#self : OmReference [ '10' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscMessageModel,
+				#isMetaSide : false
+			},
+			#name : #'temperature:',
+			#protocol : #accessing,
+			#sourceCode : 'temperature: aTemperature\r\ttemperature := aTemperature',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
 }
