@@ -1,0 +1,21 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-06-05T16:37:47.621428+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscParser class',
+				#isMetaSide : true
+			},
+			#name : #'parse:',
+			#protocol : #parsing,
+			#sourceCode : 'parse: aString\r\t| lscJson lscModel |\r\tlscJson := self convertToLscJson: aString.\r\tlscModel := GtLscModel new.\r\tself changeTitleOf: lscModel from: lscJson.\r\tself changeInstancesOf: lscModel from: lscJson.\r\tself changeMessagesOf: lscModel from: lscJson.\r\t^ lscModel',
+			#stamp : 'GlamorousAuthor 6/5/2025 16:33',
+			#package : #Gt4Lsc
+		}
+	}
+}

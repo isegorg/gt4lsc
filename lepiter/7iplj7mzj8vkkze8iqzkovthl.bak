@@ -244,14 +244,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-06-04T12:26:20.082459+02:00"
+									"dateAndTimeString" : "2025-06-05T13:09:21.455353+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "7tgXTQ/zDQCX7e2RDDhIeQ=="
 							},
-							"code" : "instanceWithInvalidNameType := '{\r  \"name\": 1,\r  \"temperature\": \"cold\"\r}'.\rinstanceWithInvalidTemperatureType := '{\r  \"name\": \"First Instance\",\r  \"temperature\": \"something\"\r}'.\rvalidInstance := '{\r  \"name\": \"First Instance\",\r  \"temperature\": \"hot\"\r}'..\rlscWithInvalidInstances := '{\r  \"title\": \"\",\r  \"instances\": ['\r    , instanceInvalidNameType , ','\r    , instanceInvalidTemperatureType , ','\r    , validInstance ,\r  '],\r  \"messages\": []\r}'.\rvalidator validate: (NeoJSONObject fromString: lscWithInvalidInstances).\rvalidator"
+							"code" : "instanceWithInvalidNameType := '{\r  \"name\": 1,\r  \"temperature\": \"cold\"\r}'.\rinstanceWithInvalidTemperatureType := '{\r  \"name\": \"First Instance\",\r  \"temperature\": \"something\"\r}'.\rvalidInstance := '{\r  \"name\": \"First Instance\",\r  \"temperature\": \"hot\"\r}'.\rlscWithInvalidInstances := '{\r  \"title\": \"\",\r  \"instances\": ['\r    , instanceWithInvalidNameType , ','\r    , instanceWithInvalidTemperatureType , ','\r    , validInstance ,\r  '],\r  \"messages\": []\r}'.\rvalidator validate: (NeoJSONObject fromString: lscWithInvalidInstances).\rvalidator"
 						}
 					]
 				},
@@ -316,14 +316,116 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-06-04T14:42:08.429253+02:00"
+									"dateAndTimeString" : "2025-06-05T14:25:23.325659+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "jK+c+RvzDQCiReYSCFBMnw=="
 							},
-							"code" : "internalEventMessageWithInvalidInstanceName :=  '{\r  \"instanceName\": 1,\r  \"text\": \"string\",\r  \"temperature\": \"cold\"\r}'.\rinternalEventMessageWithInvalidText :=  '{\r  \"instanceName\": \"First Instance\",\r  \"text\": 1,\r  \"temperature\": \"cold\"\r}'.\rinternalEventMessageWithInvalidTemperature :=  '{\r  \"instanceName\": \"First Instance\",\r  \"text\": 1,\r  \"temperature\": \"cold\"\r}'.\rvalidInternalEventMessage := '{\r  \"instanceName\": \"First Instance\",\r  \"text\": \"Turn(On)\",\r  \"temperature\": \"cold\"\r}'.\rinteractionMessageWithInvalidTargetInstanceName := '{\r  \"instanceName\": \"First Instance\",\r  \"text\": \"Turn(On)\",\r  \"temperature\": \"cold\",\r  \"targetInstanceName\": 3\r}'.\rinteractionMessageWithInvalidTargetInstanceNameEqualsInstanceName := '{\r  \"instanceName\": \"First Instance\",\r  \"text\": \"Turn(On)\",\r  \"temperature\": \"cold\",\r  \"targetInstanceName\": \"First Instance\"\r}'.\rvalidInteractionMessage := '{\r  \"instanceName\": \"First Instance\",\r  \"text\": \"Turn(On)\",\r  \"temperature\": \"cold\",\r  \"targetInstanceName\" : \"Other Instance\"\r}'.\rlscWithInvalidInstances := '{\r  \"title\": \"\",\r  \"instances\": [],\r  \"messages\": ['\r    , internalEventMessageWithInvalidInstanceName , ','\r    , internalEventMessageWithInvalidText , ','\r    , internalEventMessageWithInvalidTemperature , ','\r    , validInternalEventMessage , ','\r    , interactionMessageWithInvalidTargetInstanceName , ','\r    , interactionMessageWithInvalidTargetInstanceNameEqualsInstanceName , ','\r    , validInteractionMessage ,\r  ']\r}'.\rvalidator validate: (NeoJSONObject fromString: lscWithInvalidInstances).\rvalidator"
+							"code" : "internalEventMessageWithInvalidInstanceName :=  '{\r  \"instanceName\": 1,\r  \"text\": \"string\",\r  \"temperature\": \"cold\"\r}'.\rinternalEventMessageWithInvalidText :=  '{\r  \"instanceName\": \"First Instance\",\r  \"text\": 1,\r  \"temperature\": \"cold\"\r}'.\rinternalEventMessageWithInvalidTemperature :=  '{\r  \"instanceName\": \"First Instance\",\r  \"text\": 1,\r  \"temperature\": \"cold\"\r}'.\rvalidInternalEventMessage := '{\r  \"instanceName\": \"First Instance\",\r  \"text\": \"Event First Instance\",\r  \"temperature\": \"hot\"\r}'.\rinteractionMessageWithInvalidTargetInstanceName := '{\r  \"instanceName\": \"First Instance\",\r  \"text\": \"Turn(On)\",\r  \"temperature\": \"cold\",\r  \"targetInstanceName\": 3\r}'.\rinteractionMessageWithInvalidTargetInstanceNameEqualsInstanceName := '{\r  \"instanceName\": \"First Instance\",\r  \"text\": \"Turn(On)\",\r  \"temperature\": \"cold\",\r  \"targetInstanceName\": \"First Instance\"\r}'.\rvalidInteractionMessage := '{\r  \"instanceName\": \"First Instance\",\r  \"text\": \"Turn(On)\",\r  \"temperature\": \"cold\",\r  \"targetInstanceName\" : \"Other Instance\"\r}'.\rlscWithInvalidInstances := '{\r  \"title\": \"\",\r  \"instances\": [],\r  \"messages\": ['\r    , internalEventMessageWithInvalidInstanceName , ','\r    , internalEventMessageWithInvalidText , ','\r    , internalEventMessageWithInvalidTemperature , ','\r    , validInternalEventMessage , ','\r    , interactionMessageWithInvalidTargetInstanceName , ','\r    , interactionMessageWithInvalidTargetInstanceNameEqualsInstanceName , ','\r    , validInteractionMessage ,\r  ']\r}'.\rvalidator validate: (NeoJSONObject fromString: lscWithInvalidInstances).\rvalidator"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-06-05T12:58:33.772394+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-06-05T13:19:33.516895+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "345QuzLzDQCaOVqoAuzQbw=="
+							},
+							"code" : "validLscWithInstancesAndMessages := lscWithInvalidInstances := '{\r  \"title\": \"New Title\",\r  \"instances\": ['\r    , validInstance , ',\r    {\r      \"name\": \"Other Instance\",\r      \"temperature\": \"cold\"\r    }\r  ],\r  \"messages\": ['\r    , validInternalEventMessage , ','\r    , validInteractionMessage ,\r  ']\r}'."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-06-05T13:11:56.426021+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-06-05T13:18:53.761669+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "kREo6zLzDQCcPOdrAuzQbw=="
+							},
+							"code" : "GtLscParser convertToLscJson: validLscWithInstancesAndMessages."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-06-05T13:19:12.607704+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-06-05T13:19:20.122325+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "V60nBTPzDQCdcFVWAuzQbw=="
+							},
+							"code" : "GtLscParser parse: validLscWithInstancesAndMessages."
 						}
 					]
 				},
@@ -379,12 +481,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2025-06-03T13:56:36.448038+02:00"
+			"dateAndTimeString" : "2025-06-05T12:07:21.158035+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "JSON Parser"
+		"title" : "Json Schema"
 	},
 	"uid" : {
 		"__type" : "uuid",

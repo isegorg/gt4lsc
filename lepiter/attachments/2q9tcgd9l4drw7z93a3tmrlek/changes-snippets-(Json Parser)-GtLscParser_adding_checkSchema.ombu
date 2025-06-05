@@ -1,0 +1,61 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-06-05T16:37:47.621428+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscParser class',
+				#isMetaSide : true
+			},
+			#name : #'checkSchema:',
+			#protocol : #checking,
+			#sourceCode : 'checkSchema: aNeoJsonObject\r\tself assert: (self validator validate: aNeoJsonObject) description: \'No validate lsc schema\'',
+			#stamp : 'GlamorousAuthor 6/5/2025 16:56',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-06-05T16:37:47.621428+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscParser class',
+				#isMetaSide : true
+			},
+			#name : #validator,
+			#protocol : #accessing,
+			#sourceCode : 'validator\r\t^ self lscJsonSchema validator',
+			#stamp : 'GlamorousAuthor 6/5/2025 16:56',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-06-05T16:37:47.621428+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscParser class',
+				#isMetaSide : true
+			},
+			#name : #lscJsonSchema,
+			#protocol : #accessing,
+			#sourceCode : 'lscJsonSchema\r\t^ GtLscModel jsonSchema',
+			#stamp : 'GlamorousAuthor 6/5/2025 16:56',
+			#package : #Gt4Lsc
+		}
+	}
+}

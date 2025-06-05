@@ -1,0 +1,41 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-06-05T16:37:47.621428+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscParser class',
+				#isMetaSide : true
+			},
+			#name : #'changeTitleOf:from:',
+			#protocol : #operations,
+			#sourceCode : 'changeTitleOf: aLscModel from: aLscJson\r\taLscModel title: (self titleFromLscJson: aLscJson)',
+			#stamp : 'GlamorousAuthor 6/5/2025 17:13',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-06-05T16:37:47.621428+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscParser class',
+				#isMetaSide : true
+			},
+			#name : #'titleFromLscJson:',
+			#protocol : #'accessing - json',
+			#sourceCode : 'titleFromLscJson: aNeoJsonObject\r\t^ aNeoJsonObject at: #title',
+			#stamp : 'GlamorousAuthor 6/5/2025 17:13',
+			#package : #Gt4Lsc
+		}
+	}
+}

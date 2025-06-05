@@ -1,0 +1,21 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-06-05T16:37:47.621428+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscParser class',
+				#isMetaSide : true
+			},
+			#name : #'convertToLscJson:',
+			#protocol : #converting,
+			#sourceCode : 'convertToLscJson: aString\r\t| lscJson |\r\tlscJson := NeoJSONObject fromString: aString.\r\tself checkSchema: lscJson.\r\t^ lscJson',
+			#stamp : 'GlamorousAuthor 6/5/2025 16:48',
+			#package : #Gt4Lsc
+		}
+	}
+}
