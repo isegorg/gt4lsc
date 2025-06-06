@@ -1,0 +1,21 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-06-05T18:47:05.155225+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscModel class',
+				#isMetaSide : true
+			},
+			#name : #jsonSchemaString,
+			#protocol : #accessing,
+			#sourceCode : 'jsonSchemaString\r\t^\r\'{\n "$schema": "https://json-schema.org/draft/2020-12/schema",\n\t "$id": "https://blueplanelabs.xyz/lsc.schema.json",\r\t "$defs": {\r\t   "temperature": {\r\t     "title": "Temperature",\r\t     "description": "Whether the element is optional (cold), signify things that\nmay occur, or mandatory (hot), signify things that must occur",\r         "enum": [ "cold", "hot" ]\r\t   },\r\t   "instanceName": {\r\t     "title": "Instance Name",\r\t     "description": "System object name",\r\t     "type": "string"\r\t   },\r\t   "instance": {\r\t     "title": "Instance",\r\t     "description": "System objects that intervene in the described behavior and optionally the user and the environment",\r\t     "type": "object",\r\t     "properties": {\r\t       "name": {\r\t         "$ref": "#/$defs/instanceName"\r\t       },\r\t       "temperature": {\r\t         "$ref": "#/$defs/temperature"\r\t        }\r\t     },\r\t     "required": [ "name", "temperature" ]\r\t   },\n       "internalEventMessage": {\n         "type": "object",\n         "title": "Internal Event Message",\n         "properties": {\n           "instanceName": { "$ref": "#/$defs/instanceName" },\n           "text": { "type": "string" },\n           "temperature": { "$ref": "#/$defs/temperature" }\n         },\n         "required": [ "instanceName", "text", "temperature" ],\n         "maxProperties": 3\n       },\n       "interactionMessage": {\n         "type": "object",\n         "title": "Internal Event Message",\n         "properties": {\n           "instanceName": { "$ref": "#/$defs/instanceName" },\n           "text": { "type": "string" },\n           "temperature": { "$ref": "#/$defs/temperature" },\r           "targetInstanceName": { "$ref": "#/$defs/instanceName" }\n         },\n         "required": [ "instanceName", "text", "temperature" , "targetInstanceName" ],\n         "maxProperties": 4\r       }\r\t },\t\t\t \n\t "title": "Live Sequence Chart",\n\t "description": "Model for a Live Sequence Chart",\n\t "type": "object",\n\t "properties": {\n\t   "title": {\n\t     "description": "The scenario name",\n\t     "type": "string"\n\t   },\r\t   "instances": {\r\t     "description": "The collection of instances (or lifelines)",\r\t     "type": "array",\r\t     "items": {\r\t        "$ref": "#/$defs/instance"\r\t     }\r\t   },\r\t   "messages": {\r\t     "description": "The collection of messages (or events)",\r\t     "type": "array",\r\t     "items": {\r           "oneOf": [\n             { "$ref": "#/$defs/internalEventMessage" },\n             { "$ref": "#/$defs/interactionMessage" }\n           ]\r\t     }\r\t   }\n\t },\r\t "required": [ "title", "instances", "messages" ]\n}\'',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}

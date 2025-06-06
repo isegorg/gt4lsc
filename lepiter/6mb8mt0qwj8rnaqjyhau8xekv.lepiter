@@ -233,8 +233,81 @@
 																	"__type" : "uid",
 																	"uidString" : "Z68RJjbzDQC4Gu2lBgocLg=="
 																},
-																"previewHeight" : 818.0,
+																"previewHeight" : 224.63816833496094,
 																"fileName" : "attachments/2q9tcg93bzf9aqtcuaudaq1e5/changes-snippets-(Json Parser)-GtLscModel_adding_jsonSchema.ombu"
+															},
+															{
+																"__type" : "textSnippet",
+																"children" : {
+																	"__type" : "snippets",
+																	"items" : [
+																		{
+																			"__type" : "changesSnippet",
+																			"children" : {
+																				"__type" : "snippets",
+																				"items" : [ ]
+																			},
+																			"createEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"createTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-06-06T09:59:51.942694+02:00"
+																				}
+																			},
+																			"editEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"editTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-06-06T09:59:51.942694+02:00"
+																				}
+																			},
+																			"uid" : {
+																				"__type" : "uid",
+																				"uidString" : "lcsVWkTzDQCSZ6X1D/Reaw=="
+																			},
+																			"previewHeight" : 1208.0,
+																			"fileName" : "attachments/6cu6d07v8xbxmkhvnztbi9qj0/changes-snippets-(Json Parser)-GtLscModel_adding_jsonSchemaString.ombu"
+																		}
+																	]
+																},
+																"createEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"createTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-06-06T09:59:33.896154+02:00"
+																	}
+																},
+																"editEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"editTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-06-06T09:59:44.581873+02:00"
+																	}
+																},
+																"uid" : {
+																	"__type" : "uid",
+																	"uidString" : "w2sCWUTzDQCR3I/iD/Reaw=="
+																},
+																"paragraphStyle" : {
+																	"__type" : "textStyle"
+																},
+																"string" : "And the schema as string"
 															}
 														]
 													},
@@ -257,7 +330,7 @@
 														"__type" : "time",
 														"time" : {
 															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2025-06-05T17:02:55.845215+02:00"
+															"dateAndTimeString" : "2025-06-06T09:58:47.340859+02:00"
 														}
 													},
 													"uid" : {
