@@ -1,0 +1,41 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-06-06T12:13:38.802034+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscScenarioModel,
+				#isMetaSide : false
+			},
+			#name : #'description:',
+			#protocol : #accessing,
+			#sourceCode : 'description: aString\r\tdescription := aString',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-06-06T12:13:38.802034+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscScenarioModel,
+				#isMetaSide : false
+			},
+			#name : #'lsc:',
+			#protocol : #accessing,
+			#sourceCode : 'lsc: aGtLscModel\r\tlsc := aGtLscModel',
+			#stamp : '',
+			#package : #Gt4Lsc
+		}
+	}
+}
