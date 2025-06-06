@@ -248,14 +248,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-06-06T13:00:42.186204+02:00"
+									"dateAndTimeString" : "2025-06-06T13:19:30.923391+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "MQ1h4EbzDQCOsMtQD8RW1Q=="
 							},
-							"code" : "GtLscScenarioElement new"
+							"code" : "GtLscScenarioModel new"
 						}
 					]
 				},

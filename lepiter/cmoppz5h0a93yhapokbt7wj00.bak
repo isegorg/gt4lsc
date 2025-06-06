@@ -81,6 +81,41 @@
 							"code" : "Object subclass: #GtLscScenarioModel\r\tinstanceVariableNames: 'description lsc'\r\tclassVariableNames: ''\r\tpackage: 'Gt4Lsc-! Model'."
 						},
 						{
+							"__type" : "changesSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-06-06T13:19:49.604967+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-06-06T13:19:49.604967+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "J5gzJUfzDQCacfuwD8RW1Q=="
+							},
+							"previewHeight" : 200,
+							"fileName" : "attachments/cmoppz68mb6ptzvxdxq9ej1hz/changes-snippets-(Lsc Scenario)-GtLscScenarioModel_adding_initialization.ombu"
+						},
+						{
 							"__type" : "textSnippet",
 							"children" : {
 								"__type" : "snippets",
@@ -195,7 +230,7 @@
 														"__type" : "uid",
 														"uidString" : "OewIfUbzDQC9meCyD8RW1Q=="
 													},
-													"previewHeight" : 200,
+													"previewHeight" : 330.4568176269531,
 													"fileName" : "attachments/cmoppzbgapouaejmxse06rhal/changes-snippets-(Lsc Scenario)-GtLscScenario_adding_descriptionAndLscSetters.ombu"
 												}
 											]
@@ -263,6 +298,79 @@
 								"__type" : "textStyle"
 							},
 							"string" : "It has a slot for *description* an another one for *lsc*"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "changesSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-06-06T13:28:12.392931+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-06-06T13:28:12.392931+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "GYMrQ0fzDQCbUzkfD8RW1Q=="
+										},
+										"previewHeight" : 200,
+										"fileName" : "attachments/cmoppzbcx71zjdzlsd0lvki4s/changes-snippets-(Lsc Scenario)-GtLscScenarioModel_adding_constructor.ombu"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-06-06T13:15:20.263781+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-06-06T13:16:57.970539+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "zMMlFUfzDQCT4LYbD8RW1Q=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "It has a constructor from a text as description of the scenario behavior and a {{gtClass:GtLscModel}} for that scenario behavior too."
 						}
 					]
 				},
