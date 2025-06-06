@@ -1,0 +1,21 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-06-06T13:08:30.53829+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscDescriptionEditor,
+				#isMetaSide : false
+			},
+			#name : #initialize,
+			#protocol : #initialization,
+			#sourceCode : 'initialize\r\tsuper initialize.\r\tself\r\t\taptitude: (BrGlamorousRegularEditorAptitude new fontSize: 16);\r\t\tmargin: (BlInsets all: 10);\r\t\tconstraintsDo: [ :c | \r\t\t\tc vertical matchParent.\r\t\t\tc horizontal matchParent.\r\t\t\tc linear weight: 0.3 ]',
+			#stamp : 'GlamorousAuthor 6/6/2025 13:12',
+			#package : #Gt4Lsc
+		}
+	}
+}

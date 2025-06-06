@@ -1,0 +1,61 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-06-06T13:08:30.53829+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscScenarioElement,
+				#isMetaSide : false
+			},
+			#name : #initialize,
+			#protocol : #initialization,
+			#sourceCode : 'initialize\r\tsuper initialize.\r\tself\r\t\tconstraintsDo: [ :c | \r\t\t\tc horizontal matchParent.\r\t\t\tc vertical matchParent ];\r\t\tlayout: BlLinearLayout vertical.\r\tself addLscDescriptionElement.\r\tself addLscElement',
+			#stamp : 'GlamorousAuthor 6/6/2025 13:07',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-06-06T13:08:30.53829+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscScenarioElement,
+				#isMetaSide : false
+			},
+			#name : #addLscDescriptionElement,
+			#protocol : #initialization,
+			#sourceCode : 'addLscDescriptionElement\r\tself addChild: GtLscDescriptionEditor new as: #descriptionEditor.',
+			#stamp : 'GlamorousAuthor 6/6/2025 13:07',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-06-06T13:08:30.53829+02:00' ],
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscScenarioElement,
+				#isMetaSide : false
+			},
+			#name : #addLscElement,
+			#protocol : #initialization,
+			#sourceCode : 'addLscElement\r\tself addChild: GtLscElement new as: #lscEditor.',
+			#stamp : 'GlamorousAuthor 6/6/2025 13:07',
+			#package : #Gt4Lsc
+		}
+	}
+}
