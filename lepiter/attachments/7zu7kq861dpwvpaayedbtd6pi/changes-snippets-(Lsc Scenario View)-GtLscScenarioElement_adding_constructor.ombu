@@ -1,0 +1,21 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-06-07T09:12:43.465168+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #'GtLscScenarioElement class',
+				#isMetaSide : true
+			},
+			#name : #'forModel:',
+			#protocol : #'instance creation',
+			#sourceCode : 'forModel: aGtLscScenarioModel\r\t^ self basicNew initialize\r\t\tdescription: aGtLscScenarioModel description;\r\t\tlsc: aGtLscScenarioModel lsc;\r\t\tyourself',
+			#stamp : 'GlamorousAuthor 6/7/2025 09:20',
+			#package : #Gt4Lsc
+		}
+	}
+}

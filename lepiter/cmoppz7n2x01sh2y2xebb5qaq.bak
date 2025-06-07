@@ -10,7 +10,7 @@
 					"__type" : "snippets",
 					"items" : [
 						{
-							"__type" : "pharoSnippet",
+							"__type" : "changesSnippet",
 							"children" : {
 								"__type" : "snippets",
 								"items" : [ ]
@@ -23,7 +23,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-06-06T12:42:36.88013+02:00"
+									"dateAndTimeString" : "2025-06-07T09:36:59.49499+02:00"
 								}
 							},
 							"editEmail" : {
@@ -34,14 +34,15 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-06-06T12:42:42.112575+02:00"
+									"dateAndTimeString" : "2025-06-07T09:36:59.49499+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "k+ceoEbzDQCOn7f4D8RW1Q=="
+								"uidString" : "o0cfJljzDQCXLKggAN0Nhw=="
 							},
-							"code" : "BlElement subclass: #GtLscScenarioElement\r\tinstanceVariableNames: ''\r\tclassVariableNames: ''\r\tpackage: 'Gt4Lsc-! Views'."
+							"previewHeight" : 441.2076416015625,
+							"fileName" : "attachments/7zu7kqabckl7txnph5txdd1b2/changes-snippets-(Lsc Scenario View)-GtLscElementScripterExamples_adding_renderNewLscScenario.ombu"
 						},
 						{
 							"__type" : "textSnippet",
@@ -62,7 +63,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-06-06T13:06:26.191102+02:00"
+												"dateAndTimeString" : "2025-06-07T09:42:42.278019+02:00"
 											}
 										},
 										"editEmail" : {
@@ -73,55 +74,93 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-06-06T13:06:26.191102+02:00"
+												"dateAndTimeString" : "2025-06-07T09:42:42.278019+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
-											"uidString" : "QnlQ9UbzDQCRX3YiD8RW1Q=="
+											"uidString" : "cLuNOljzDQCZNZVUAN0Nhw=="
 										},
-										"previewHeight" : 558.0124359130859,
-										"fileName" : "attachments/cmoppzabqyo4xwqqpiy94qwxn/changes-snippets-(Lsc Scenario View)-GtLscScenarioElement_adding_initialization.ombu"
+										"previewHeight" : 393.83129882812494,
+										"fileName" : "attachments/7zu7kqe57ltb5ark71wfsogrn/changes-snippets-(Lsc Scenario View)-GtLscScenarioModel_adding_converterToViewAndCustomInspector.ombu"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-06-07T09:41:25.333889+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-06-07T09:42:36.145747+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "SqL3NVjzDQCXg/29AN0Nhw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "We create the {{gtClass:GtLscScenarioModel}} converting method to get its view and a custom inspector"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-06-06T12:42:36.88013+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-06-06T12:42:42.112575+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "k+ceoEbzDQCOn7f4D8RW1Q=="
+										},
+										"code" : "BlElement subclass: #GtLscScenarioElement\r\tinstanceVariableNames: ''\r\tclassVariableNames: ''\r\tpackage: 'Gt4Lsc-! Views'."
 									},
 									{
 										"__type" : "textSnippet",
 										"children" : {
 											"__type" : "snippets",
 											"items" : [
-												{
-													"__type" : "pharoSnippet",
-													"children" : {
-														"__type" : "snippets",
-														"items" : [ ]
-													},
-													"createEmail" : {
-														"__type" : "email",
-														"emailString" : "<unknown>"
-													},
-													"createTime" : {
-														"__type" : "time",
-														"time" : {
-															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2025-06-06T13:10:50.873949+02:00"
-														}
-													},
-													"editEmail" : {
-														"__type" : "email",
-														"emailString" : "<unknown>"
-													},
-													"editTime" : {
-														"__type" : "time",
-														"time" : {
-															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2025-06-06T13:11:28.786456+02:00"
-														}
-													},
-													"uid" : {
-														"__type" : "uid",
-														"uidString" : "mzMXBUfzDQCStd/tD8RW1Q=="
-													},
-													"code" : "BrEditor subclass: 'GtLscDescriptionEditor'\r\tinstanceVariableNames: ''\r\tclassVariableNames: ''\r\tpackage: #'Gt4Lsc-! Views'."
-												},
 												{
 													"__type" : "changesSnippet",
 													"children" : {
@@ -136,7 +175,7 @@
 														"__type" : "time",
 														"time" : {
 															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2025-06-06T13:11:34.387963+02:00"
+															"dateAndTimeString" : "2025-06-06T13:06:26.191102+02:00"
 														}
 													},
 													"editEmail" : {
@@ -147,15 +186,122 @@
 														"__type" : "time",
 														"time" : {
 															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2025-06-06T13:11:34.387963+02:00"
+															"dateAndTimeString" : "2025-06-06T13:06:26.191102+02:00"
 														}
 													},
 													"uid" : {
 														"__type" : "uid",
-														"uidString" : "Oy6vB0fzDQCSwZlyD8RW1Q=="
+														"uidString" : "QnlQ9UbzDQCRX3YiD8RW1Q=="
 													},
-													"previewHeight" : 315.0657958984374,
-													"fileName" : "attachments/cmoppz5ldpozg3lp44ep7burt/changes-snippets-(Lsc Scenario View)-GtLscDescriptionEditor_adding_initialization.ombu"
+													"previewHeight" : 558.0124359130859,
+													"fileName" : "attachments/cmoppzabqyo4xwqqpiy94qwxn/changes-snippets-(Lsc Scenario View)-GtLscScenarioElement_adding_initialization.ombu"
+												},
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [
+															{
+																"__type" : "pharoSnippet",
+																"children" : {
+																	"__type" : "snippets",
+																	"items" : [ ]
+																},
+																"createEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"createTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-06-06T13:10:50.873949+02:00"
+																	}
+																},
+																"editEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"editTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-06-06T13:11:28.786456+02:00"
+																	}
+																},
+																"uid" : {
+																	"__type" : "uid",
+																	"uidString" : "mzMXBUfzDQCStd/tD8RW1Q=="
+																},
+																"code" : "BrEditor subclass: 'GtLscDescriptionEditor'\r\tinstanceVariableNames: ''\r\tclassVariableNames: ''\r\tpackage: #'Gt4Lsc-! Views'."
+															},
+															{
+																"__type" : "changesSnippet",
+																"children" : {
+																	"__type" : "snippets",
+																	"items" : [ ]
+																},
+																"createEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"createTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-06-06T13:11:34.387963+02:00"
+																	}
+																},
+																"editEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"editTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-06-06T13:11:34.387963+02:00"
+																	}
+																},
+																"uid" : {
+																	"__type" : "uid",
+																	"uidString" : "Oy6vB0fzDQCSwZlyD8RW1Q=="
+																},
+																"previewHeight" : 315.0657958984374,
+																"fileName" : "attachments/cmoppz5ldpozg3lp44ep7burt/changes-snippets-(Lsc Scenario View)-GtLscDescriptionEditor_adding_initialization.ombu"
+															}
+														]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-06-06T13:09:44.96686+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-06-07T09:15:30.419811+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "iIopAUfzDQCR5AwrD8RW1Q=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "We create a class for description editor element as a {{gtClass:BrEditor}} subclass"
 												}
 											]
 										},
@@ -167,7 +313,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-06-06T13:09:44.96686+02:00"
+												"dateAndTimeString" : "2025-06-06T13:05:12.437671+02:00"
 											}
 										},
 										"editEmail" : {
@@ -178,17 +324,273 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-06-06T13:10:46.825701+02:00"
+												"dateAndTimeString" : "2025-06-06T13:06:19.142235+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
-											"uidString" : "iIopAUfzDQCR5AwrD8RW1Q=="
+											"uidString" : "FfeU8EbzDQCO/WTCD8RW1Q=="
 										},
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "We create a class for description editor element"
+										"string" : "We initialize it to add a child for the description editor element and another for the {{gtClass:GtLscElement}}"
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [
+												{
+													"__type" : "changesSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-06-07T09:16:58.996417+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-06-07T09:16:58.996417+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "QyCR3lfzDQCUp1IXAN0Nhw=="
+													},
+													"previewHeight" : 278.89581298828125,
+													"fileName" : "attachments/7zu7kq861dpwvpaayedbtd6pi/changes-snippets-(Lsc Scenario View)-GtLscScenarioElement_adding_constructor.ombu"
+												},
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [
+															{
+																"__type" : "changesSnippet",
+																"children" : {
+																	"__type" : "snippets",
+																	"items" : [ ]
+																},
+																"createEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"createTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-06-07T09:24:06.146691+02:00"
+																	}
+																},
+																"editEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"editTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-06-07T09:24:06.146691+02:00"
+																	}
+																},
+																"uid" : {
+																	"__type" : "uid",
+																	"uidString" : "e+sG+FfzDQCVnkBcAN0Nhw=="
+																},
+																"previewHeight" : 429.8138427734375,
+																"fileName" : "attachments/7zu7kqahgi2qpzjwvqvn99wba/changes-snippets-(Lsc Scenario View)-GtLscScenarioElement_adding_descriptionAndLscSetters.ombu"
+															},
+															{
+																"__type" : "textSnippet",
+																"children" : {
+																	"__type" : "snippets",
+																	"items" : [ ]
+																},
+																"createEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"createTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-06-07T09:30:37.566119+02:00"
+																	}
+																},
+																"editEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"editTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-06-07T09:32:26.877938+02:00"
+																	}
+																},
+																"uid" : {
+																	"__type" : "uid",
+																	"uidString" : "hoBbD1jzDQCWf0XrAN0Nhw=="
+																},
+																"paragraphStyle" : {
+																	"__type" : "textStyle"
+																},
+																"string" : "Since the MVVM cycle for the {{gtClass:GtLscMessageElement}} to be updated with changes to its {{gtClass:GtLscMessageModel}} is not yet complete, we completely replace the {{gtClass:GtLscElement}} instead of replacing its {{gtClass:GtLscModel}}"
+															},
+															{
+																"__type" : "textSnippet",
+																"children" : {
+																	"__type" : "snippets",
+																	"items" : [
+																		{
+																			"__type" : "changesSnippet",
+																			"children" : {
+																				"__type" : "snippets",
+																				"items" : [ ]
+																			},
+																			"createEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"createTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-06-07T09:28:31.750727+02:00"
+																				}
+																			},
+																			"editEmail" : {
+																				"__type" : "email",
+																				"emailString" : "<unknown>"
+																			},
+																			"editTime" : {
+																				"__type" : "time",
+																				"time" : {
+																					"__type" : "dateAndTime",
+																					"dateAndTimeString" : "2025-06-07T09:28:31.750727+02:00"
+																				}
+																			},
+																			"uid" : {
+																				"__type" : "uid",
+																				"uidString" : "NrfbB1jzDQCWNqk3AN0Nhw=="
+																			},
+																			"previewHeight" : 200,
+																			"fileName" : "attachments/7zu7kq9i93avfeg8dmaakioc1/changes-snippets-(Lsc Scenario View)-GtLscScenarioElement_adding_descriptionElementGetter.ombu"
+																		}
+																	]
+																},
+																"createEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"createTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-06-07T09:27:19.1882+02:00"
+																	}
+																},
+																"editEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"editTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-06-07T09:28:26.666102+02:00"
+																	}
+																},
+																"uid" : {
+																	"__type" : "uid",
+																	"uidString" : "p36IA1jzDQCWLYTEAN0Nhw=="
+																},
+																"paragraphStyle" : {
+																	"__type" : "textStyle"
+																},
+																"string" : "We create the getter for the description element by its {{gtClass:BlElementId}}"
+															}
+														]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-06-07T09:23:43.560303+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2025-06-07T09:24:00.375136+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "P1At8lfzDQCU4fMIAN0Nhw=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "It establishes the elements corresponding to the description and the {{gtClass:GtLscModel}}"
+												}
+											]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-06-07T09:16:05.937819+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-06-07T09:16:52.833976+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "34Fn21fzDQCTkqBiAN0Nhw=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "We use {{gtClass:GtLscScenarioModel}} for its construction"
 									}
 								]
 							},
@@ -200,7 +602,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-06-06T13:05:12.437671+02:00"
+									"dateAndTimeString" : "2025-06-06T12:39:39.310252+02:00"
 								}
 							},
 							"editEmail" : {
@@ -211,20 +613,20 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-06-06T13:06:19.142235+02:00"
+									"dateAndTimeString" : "2025-06-06T12:41:37.146462+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "FfeU8EbzDQCO/WTCD8RW1Q=="
+								"uidString" : "12yJlUbzDQCE0vVJD8RW1Q=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "We initialize it to add a child for the description editor element and another for the {{gtClass:GtLscElement}}"
+							"string" : "We create an element class for {{gtClass:GtLscScenarioModel}}"
 						},
 						{
-							"__type" : "pharoSnippet",
+							"__type" : "textSnippet",
 							"children" : {
 								"__type" : "snippets",
 								"items" : [ ]
@@ -237,7 +639,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-06-06T13:00:34.957301+02:00"
+									"dateAndTimeString" : "2025-06-07T09:52:53.597146+02:00"
 								}
 							},
 							"editEmail" : {
@@ -248,14 +650,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-06-06T13:00:42.186204+02:00"
+									"dateAndTimeString" : "2025-06-07T09:53:07.555475+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "MQ1h4EbzDQCOsMtQD8RW1Q=="
+								"uidString" : "Grf9XljzDQCcP/QPAN0Nhw=="
 							},
-							"code" : "GtLscScenarioElement new"
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Finally the example is successful {{gtExample:GtLscElementScripterExamples>>renderNewLscScenario}}"
 						}
 					]
 				},
@@ -267,7 +672,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-06-06T12:39:39.310252+02:00"
+						"dateAndTimeString" : "2025-06-07T09:36:41.199447+02:00"
 					}
 				},
 				"editEmail" : {
@@ -278,51 +683,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-06-06T12:41:37.146462+02:00"
+						"dateAndTimeString" : "2025-06-07T09:36:53.054285+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "12yJlUbzDQCE0vVJD8RW1Q=="
+					"uidString" : "ZRsIJVjzDQCWjYSIAN0Nhw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "We create an element class for {{gtClass:GtLscScenarioModel}}"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-06-06T12:40:29.826843+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-06-06T12:40:35.63536+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "njuMmEbzDQCFdXPUD8RW1Q=="
-				},
-				"code" : "scenarioDescriptionText := 'Here goes the scenario''s description text...'.\nlsc := GtLscModelExamples new lscAddMessageAtPosition asElement.\neditor := BrEditor new\n\t\taptitude: (BrGlamorousRegularEditorAptitude new fontSize: 16);\n\t\ttext: scenarioDescriptionText;\n\t\tmargin: (BlInsets all: 10);\n\t\tconstraintsDo: [ :c | \n\t\t\tc vertical matchParent.\n\t\t\tc horizontal matchParent.\n\t\t\tc linear weight: 0.3 ].\n\t\t\t\nscenarioContainer := BlElement new\n\t\t\tconstraintsDo: [ :c | \n\t\t\t\tc horizontal matchParent.\n\t\t\t\tc vertical matchParent ];\n\t\t\tlayout: BlLinearLayout vertical.\n\t\t\t\nscenarioContainer addChild: editor as: #textEditor.\nscenarioContainer addChild: lsc as: #lscEditor.\t\nscenarioContainer"
+				"string" : "We create an example for this view"
 			}
 		]
 	},

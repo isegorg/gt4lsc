@@ -1,0 +1,41 @@
+OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-06-07T09:12:43.465168+02:00' ],
+		#prior : OmReference [ '0' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscScenarioModel,
+				#isMetaSide : false
+			},
+			#name : #asElement,
+			#protocol : #converting,
+			#sourceCode : 'asElement\r\t^ GtLscScenarioElement forModel: self',
+			#stamp : 'GlamorousAuthor 6/7/2025 09:44',
+			#package : #Gt4Lsc
+		}
+	}
+}OmEntry {
+	#tags : {
+		#author : 'GlamorousAuthor',
+		#time : DateAndTime [ '2025-06-07T09:12:43.465168+02:00' ],
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#className : #GtLscScenarioModel,
+				#isMetaSide : false
+			},
+			#name : #'gtLiveFor:',
+			#protocol : #'gt - extensions',
+			#sourceCode : 'gtLiveFor: aView\r\t<gtView>\r\t^ aView explicit\r\t\ttitle: \'Live\';\r\t\tpriority: 2;\r\t\tstencil: [ self asElement ]',
+			#stamp : 'GlamorousAuthor 6/7/2025 09:44',
+			#package : #Gt4Lsc
+		}
+	}
+}

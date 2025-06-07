@@ -1,7 +1,7 @@
 OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
-		#time : DateAndTime [ '2025-06-06T13:08:30.53829+02:00' ],
+		#time : DateAndTime [ '2025-06-07T09:12:43.465168+02:00' ],
 		#prior : OmReference [ '0' ],
 		#self : OmReference [ '1' ]
 	},
@@ -13,15 +13,15 @@ OmEntry {
 			},
 			#name : #initialize,
 			#protocol : #initialization,
-			#sourceCode : 'initialize\r\tsuper initialize.\r\tself\r\t\tconstraintsDo: [ :c | \r\t\t\tc horizontal matchParent.\r\t\t\tc vertical matchParent ];\r\t\tlayout: BlLinearLayout vertical.\r\tself addLscDescriptionElement.\r\tself addLscElement',
-			#stamp : 'GlamorousAuthor 6/6/2025 13:07',
+			#sourceCode : 'initialize\r\tsuper initialize.\r\tself\r\t\tconstraintsDo: [ :c | \r\t\t\tc horizontal matchParent.\r\t\t\tc vertical matchParent ];\r\t\tlayout: BlLinearLayout vertical;\r\t\tinitializeLscDescriptionElement;\r\t\tinitializeLscElement',
+			#stamp : 'GlamorousAuthor 6/7/2025 09:11',
 			#package : #Gt4Lsc
 		}
 	}
 }OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
-		#time : DateAndTime [ '2025-06-06T13:08:30.53829+02:00' ],
+		#time : DateAndTime [ '2025-06-07T09:12:43.465168+02:00' ],
 		#prior : OmReference [ '1' ],
 		#self : OmReference [ '2' ]
 	},
@@ -31,17 +31,17 @@ OmEntry {
 				#className : #GtLscScenarioElement,
 				#isMetaSide : false
 			},
-			#name : #addLscDescriptionElement,
+			#name : #initializeLscDescriptionElement,
 			#protocol : #initialization,
-			#sourceCode : 'addLscDescriptionElement\r\tself addChild: GtLscDescriptionEditor new as: #descriptionEditor.',
-			#stamp : 'GlamorousAuthor 6/6/2025 13:07',
+			#sourceCode : 'initializeLscDescriptionElement\r\tself addChild: (GtLscDescriptionEditor new) as: #descriptionEditor.',
+			#stamp : 'GlamorousAuthor 6/7/2025 09:11',
 			#package : #Gt4Lsc
 		}
 	}
 }OmEntry {
 	#tags : {
 		#author : 'GlamorousAuthor',
-		#time : DateAndTime [ '2025-06-06T13:08:30.53829+02:00' ],
+		#time : DateAndTime [ '2025-06-07T09:12:43.465168+02:00' ],
 		#prior : OmReference [ '2' ],
 		#self : OmReference [ '3' ]
 	},
@@ -51,10 +51,10 @@ OmEntry {
 				#className : #GtLscScenarioElement,
 				#isMetaSide : false
 			},
-			#name : #addLscElement,
+			#name : #initializeLscElement,
 			#protocol : #initialization,
-			#sourceCode : 'addLscElement\r\tself addChild: GtLscElement new as: #lscEditor.',
-			#stamp : 'GlamorousAuthor 6/6/2025 13:07',
+			#sourceCode : 'initializeLscElement\r\tself addChild: GtLscModel new asElement as: #lscEditor.',
+			#stamp : 'GlamorousAuthor 6/7/2025 09:12',
 			#package : #Gt4Lsc
 		}
 	}
