@@ -1,0 +1,317 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-09T00:17:33.395284+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-09T00:18:07.31681+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "lQEckXjzDQC4c5BkDHocCg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "We add a resizer element to the Scenario Editor:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-09T00:32:22.929374+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-09T00:41:16.262548+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "AzQhxnjzDQCnTr4QBqkNJQ=="
+				},
+				"code" : "BlElement subclass: 'GtLscDescriptionEditor'\r\tinstanceVariableNames: 'editor'\r\tclassVariableNames: ''\r\tpackage: #'Gt4Lsc-! Views'."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-09T00:14:56.936386+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-09T00:43:14.373816+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "CqLIh3jzDQC3OTBUDHocCg=="
+				},
+				"code" : "GtLscDescriptionEditor\r\tcompileSilently: 'initialize\r\t| aResizer |\r\tsuper initialize.\r\tself\r\t\tmargin: (BlInsets all: 10);\r\t\tconstraintsDo: [ :c | \r\t\t\tc vertical matchParent.\r\t\t\tc horizontal matchParent.\r\t\t\tc linear weight: 0.3 ];\r\t\tborder: (BlBorder paint: Color lightGray width: 3).\r\teditor := BrEditor new aptitude: (BrGlamorousRegularEditorAptitude new fontSize: 16).\r\tself addChild: editor.\r\taResizer := self initializeResizer.\r\taResizer\r\t\taddEventHandler: (BlResizerBottomListener new resizeTarget: self).\r\tself addChild: aResizer'\r\tclassified: 'initialization'"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-09T00:24:58.602956+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-09T00:39:12.810134+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "kVGlq3jzDQCkQSMNBqkNJQ=="
+				},
+				"code" : "GtLscDescriptionEditor\r\tcompileSilently: '\r\tinitializeResizer\r\t| aResizer |\r\taResizer := BlElement new.\r\taResizer background: (Color gray alpha: 0.5).\r\taResizer geometry: (BlRoundedRectangleGeometry cornerRadius: 2).\r\taResizer\r\t\tconstraintsDo: [ :c | \r\t\t\tc ignoreByLayout.\r\t\t\tc vertical exact: 4.\r\t\t\tc horizontal exact: 70.\r\t\t\tc ignored vertical alignBottom.\r\t\t\tc ignored horizontal alignCenter.\r\t\t\tc margin: (BlInsets bottom: 6) ].\r\t^ aResizer'\r\tclassified: 'gui - initialization'"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-09T00:42:08.726059+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-09T00:42:38.91053+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "Kb4L6XjzDQCtgkMTBqkNJQ=="
+				},
+				"code" : "GtLscDescriptionEditor\r\tcompileSilently: '\r\ttext: aString\r\teditor text: aString'\r\tclassified: 'accessing'"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-09T00:49:25.353202+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-09T00:49:41.319051+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "tiUSA3nzDQCEbDSMDJzRsw=="
+				},
+				"code" : "GtLscDescriptionEditor\r\tcompileSilently: '\r\ttext\r\t^ editor text'\r\tclassified: 'accessing'"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-09T00:43:58.349864+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-09T00:44:36.908295+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "WXmU73jzDQCupJgeBqkNJQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Now, you can check that the Scenario's editor has a resizer element on its bottom side:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-09T00:40:03.266263+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-09T00:40:41.250992+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "smKR4XjzDQCruxfWBqkNJQ=="
+				},
+				"code" : "GtLscElementScripterExamples new renderNewLscScenario"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-06-09T00:05:53.678976+02:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-06-09T00:39:53.152836+02:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Lsc Scenario Editor with a Resizer"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "442d6767-78f3-0d00-b70f-c9620c7a1c0a"
+	}
+}
