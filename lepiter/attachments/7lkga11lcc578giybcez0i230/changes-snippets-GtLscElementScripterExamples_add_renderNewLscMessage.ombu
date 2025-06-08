@@ -13,7 +13,7 @@ OmEntry {
 			},
 			#name : #renderNewLscMessage,
 			#protocol : #'examples - ui',
-			#sourceCode : 'renderNewLscMessage\r\t"Check that the LscMessage UI element displays the model\'s characteristics"\r\r\t<gtExample>\r\t| lsc lscMessage uiElement |\r\tlsc := GtLscModelExamples new lscAddMessage.\r\tlscMessage := lsc messageAt: 1.\r\tuiElement := lscMessage asElement.\r\r\t"Check id"\r\tself assert: uiElement id equals: (GtLscConstants messageElementIdTemplate format: {lscMessage id asString}) asBlocElementId.\r\t"Check text"\r\tself assert: (uiElement childNamed: GtLscConstants messageTextElementId) text asString equals: lscMessage text.\r\t"Check temperature"\r\tself assert: (uiElement childNamed: GtLscConstants messageLineElementId) border paint equals: GtLscConstants hotColor asBlPaint.\r\t\r\t^ lscMessage',
+			#sourceCode : 'renderNewLscMessage\r\t"Check that the LscMessage UI element displays the model\'s characteristics"\r\r\t<gtExample>\r\t| lsc lscMessage uiElement |\r\tlsc := GtLscModelExamples new lscAddMessage.\r\tlscMessage := lsc messageAt: 1.\r\tuiElement := lscMessage asElement.\r\r\t"Check id"\r\tself assert: uiElement id equals: (GtLscConstants messageElementIdTemplate format: {lscMessage id asString . lscMessage instanceId asString}) asBlocElementId.\r\t"Check text"\r\tself assert: (uiElement childNamed: GtLscConstants messageTextElementId) text asString equals: lscMessage text.\r\t"Check temperature"\r\tself assert: (uiElement messageLineElements allSatisfy: [ :messageLineElement | messageLineElement border paint = GtLscConstants hotColor asBlPaint ]).\r\t\r\t^ lscMessage',
 			#stamp : '',
 			#package : #Gt4Lsc
 		}

@@ -38,24 +38,4 @@ OmEntry {
 			#package : #Gt4Lsc
 		}
 	}
-}OmEntry {
-	#tags : {
-		#author : 'GlamorousAuthor',
-		#time : DateAndTime [ '2025-05-22T21:28:47.762527+02:00' ],
-		#prior : OmReference [ '2' ],
-		#self : OmReference [ '3' ]
-	},
-	#content : EpMethodAddition {
-		#method : RGMethodDefinition {
-			#annotations : IdentityDictionary {
-				#className : #'GtLscConstants class',
-				#isMetaSide : true
-			},
-			#name : #messageLineElementId,
-			#protocol : #'api - constants',
-			#sourceCode : 'messageLineElementId\r\t^ #messageLine',
-			#stamp : '',
-			#package : #Gt4Lsc
-		}
-	}
-}
+}

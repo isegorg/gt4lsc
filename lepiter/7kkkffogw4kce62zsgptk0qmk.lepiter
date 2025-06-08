@@ -2306,14 +2306,14 @@
 																	"__type" : "time",
 																	"time" : {
 																		"__type" : "dateAndTime",
-																		"dateAndTimeString" : "2025-06-05T11:59:48.536954+02:00"
+																		"dateAndTimeString" : "2025-06-08T15:49:49.147947+02:00"
 																	}
 																},
 																"uid" : {
 																	"__type" : "uid",
 																	"uidString" : "v8mJa97uDQC048tOCP8aZw=="
 																},
-																"code" : "subString := 'onModelChanged\\r'.\rfilter := GtLscLeSearchSubstringSnippetFilter substring: subString.\rdataBase := thisSnippet database.\rsnippets := dataBase leSnippetsInDB contents.\rsnippets select: [ :snippet | filter matches: snippet ]"
+																"code" : "subString := 'fromInstanceLineId\\r'.\rfilter := GtLscLeSearchSubstringSnippetFilter substring: subString.\rdataBase := thisSnippet database.\rsnippets := dataBase leSnippetsInDB contents.\rsnippets select: [ :snippet | filter matches: snippet ]"
 															}
 														]
 													},
