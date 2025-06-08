@@ -13,7 +13,7 @@ OmEntry {
 			},
 			#name : #'forLsc:withDescription:',
 			#protocol : #'instance creation',
-			#sourceCode : 'forLsc: aGtLscModel withDescription: aString\r\tself new\r\t\tlsc: aGtLscModel;\r\t\tdescription: aString',
+			#sourceCode : 'forLsc: aGtLscModel withDescription: aString\r\t^ self new\r\t\tlsc: aGtLscModel;\r\t\tdescription: aString',
 			#stamp : '',
 			#package : #Gt4Lsc
 		}
