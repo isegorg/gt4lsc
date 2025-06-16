@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-03-22T15:54:37.764588+01:00"
+						"dateAndTimeString" : "2025-06-09T08:43:48.577757+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[Project Reposy](https://github.com/isegorg/gt4lsc)"
+				"string" : "[Project's Repository](https://github.com/isegorg/gt4lsc)"
 			},
 			{
 				"__type" : "textSnippet",
@@ -1378,7 +1378,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-06-09T00:05:50.127631+02:00"
+									"dateAndTimeString" : "2025-06-09T00:39:53.163557+02:00"
 								}
 							},
 							"uid" : {
@@ -1388,7 +1388,44 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Lsc Scenario with resizer]]"
+							"string" : "[[Lsc Scenario Editor with a Resizer]]"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-06-11T20:06:35.676094+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-06-11T20:06:57.834197+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "qIsfabHzDQCbjxulDfGeMA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "[[Add explanations to Scenario"
 						}
 					]
 				},

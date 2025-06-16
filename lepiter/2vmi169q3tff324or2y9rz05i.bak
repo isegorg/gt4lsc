@@ -1,0 +1,678 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-11T20:07:12.721426+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-11T20:18:26.752225+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "S9ZUa7HzDQCcyigDDfGeMA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "We add a new instance variable to {{gtClass:name=GtLscScenarioModel}} to represent a collection of scenario's explanations:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-11T20:15:38.689229+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-11T20:15:44.826297+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "okh9ibHzDQCfqigQDfGeMA=="
+				},
+				"code" : "Object subclass: #GtLscScenarioModel\r\tinstanceVariableNames: 'description lsc explanations'\r\tclassVariableNames: ''\r\tpackage: 'Gt4Lsc-! Model'."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-11T20:18:40.957781+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-11T20:21:04.027169+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "LHtalLHzDQCf/7ifDfGeMA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "An explanation consists of a link between a word or phrase in the scenario's description and an LSC's entity (instance or message), so we can define the following class to model this concept:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-11T20:20:11.220615+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-13T13:05:11.829449+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "LMi7mbHzDQCkQa++DfGeMA=="
+				},
+				"code" : "Object subclass: #GtLscScenarioExplanationModel\r\tinstanceVariableNames: 'descriptionStartPosition descriptionEndPosition lscEntityName'\r\tclassVariableNames: ''\r\tpackage: 'Gt4Lsc-! Model'."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-11T20:24:20.028221+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-11T20:25:06.208944+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "wEGQqLHzDQCmeoGIDfGeMA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "We add the accessor methods and an initialization class method:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-11T20:25:09.809692+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-11T20:31:40.011323+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "DuSHq7HzDQCoWgMiDfGeMA=="
+				},
+				"code" : "GtLscScenarioExplanationModel\r\tcompileSilently: '\r\tdescriptionStartPosition: anInteger\r\tdescriptionStartPosition := anInteger'\r\tclassified: 'accessing'.\r\t\rGtLscScenarioExplanationModel\r\tcompileSilently: '\r\tdescriptionStartPosition\r\t^ descriptionStartPosition'\r\tclassified: 'accessing'.\r\t\rGtLscScenarioExplanationModel\r\tcompileSilently: '\r\tdescriptionEndPosition: anInteger\r\tdescriptionEndPosition := anInteger'\r\tclassified: 'accessing'.\r\t\rGtLscScenarioExplanationModel\r\tcompileSilently: '\r\tdescriptionEndPosition\r\t^ descriptionEndPosition'\r\tclassified: 'accessing'.\r\t\rGtLscScenarioExplanationModel\r\tcompileSilently: '\r\tlscEntityName: aString\r\tlscEntityName := aString'\r\tclassified: 'accessing'.\r\t\rGtLscScenarioExplanationModel\r\tcompileSilently: '\r\tlscEntityName\r\t^ lscEntityName'\r\tclassified: 'accessing'.\r\t\rGtLscScenarioExplanationModel class\r\tcompileSilently: '\r\tfrom: fromInteger to: toInteger named: entityName\r\t^ GtLscScenarioExplanationModel new\r\t\tdescriptionStartPosition: fromInteger;\r\t\tdescriptionEndPosition: toInteger;\r\t\tlscEntityName: entityName;\r\t\tyourself'\r\tclassified: 'instance - creation'."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-11T20:33:15.987729+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-11T20:34:34.922421+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "kl2CyLHzDQCEgdN5DSs+PA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Finally we initialize the collection of explanations in {{gtClass:name=GtLscScenarioModel}} and add a method to be able to add explanations to the scenario model:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-11T20:34:38.576568+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-13T13:02:23.651528+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "Z5VuzbHzDQCHqzhxDSs+PA=="
+				},
+				"code" : "GtLscScenarioModel\r\tcompileSilently: '\r\texplanations\r\t^ explanations ifNil: [ explanations := OrderedCollection empty]\r\t'\r\tclassified: 'accessing'.\r\t\rGtLscScenarioModel\r\tcompileSilently: '\r\taddExplanation: anExplanation\r\tself explanations add: anExplanation\r\t'\r\tclassified: 'accessing'."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-11T20:40:17.646594+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-11T20:40:45.570252+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "omCk4bHzDQCMOgC0DSs+PA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "We are going to use the following example to test the scenario explanations:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-11T20:40:48.81054+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-16T18:41:45.169338+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "BOh/47HzDQCOWxBvDSs+PA=="
+				},
+				"code" : "bakeryScenario := 'The owner of the bakery, wants to automate the bakery by adding a bakery panel that will control and monitor the three ovens. The panel has a main switch and a main light. Also there is a console display, which is used to show textual messages.\r\rThe first scenario ''Panel On'' consist of the user clicks the main switch, then the main light is turn on and the console''s background color changes to green.'.\r\ruser := GtLscInstanceModel new\r\t\t\t\tname: 'User';\r\t\t\t\ttemperature: GtLscColdTemperature.\rmainSwitch := GtLscInstanceModel new\r\t\t\t\tname: 'Main Switch';\r\t\t\t\ttemperature: GtLscColdTemperature.\rmainLight := GtLscInstanceModel new\r\t\t\t\tname: 'Main Light';\r\t\t\t\ttemperature: GtLscColdTemperature.\rconsole := GtLscInstanceModel new\r\t\t\t\tname: 'Console';\r\t\t\t\ttemperature: GtLscColdTemperature.\rlscModel := GtLscModel new\r\t\ttitle: 'Panel On';\r\t\taddInstance: user;\r\t\taddInstance: mainSwitch;\r\t\taddInstance: mainLight;\r\t\taddInstance: console;\r\t\taddMessageForInstance: user withText: 'Click On' andTarget: mainSwitch;\r\t\taddMessageForInstance: mainLight withText: 'Turn On';\r\t\taddMessageForInstance: console withText: 'Change Background Green';\r\t\tyourself.\rscenarioModel := GtLscScenarioModel new\r\tdescription: bakeryScenario;\r\tlsc: lscModel"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-13T12:52:32.40883+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-16T13:07:31.822359+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "jKwllNPzDQCDWVmoDB8qvw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Now we add an explanation to the previous scenario example. The explanation consists of a link between a word or phrase in the scenario description and an LSC's element (referenced by its name):"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-13T12:52:49.962292+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-16T19:06:46.528375+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "JW+NldPzDQCEo+qTDB8qvw=="
+				},
+				"code" : "explanations := {'main switch' -> 'Main Switch'.\r\t\t'console''s background color changes to green' -> 'Change Background Green'}.\r\rexplanations\r\tdo: [ :assoc | \r\t\texplanationTextIntervals := bakeryScenario allRangesOfSubstring: assoc key.\r\t\texplanationTextIntervals\r\t\t\tdo: [ :interval | \r\t\t\t\tscenarioModel\r\t\t\t\t\taddExplanation: (GtLscScenarioExplanationModel\r\t\t\t\t\t\t\tfrom: interval first\r\t\t\t\t\t\t\tto: interval last\r\t\t\t\t\t\t\tnamed: assoc value) ] ]"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-13T13:08:54.184715+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-16T13:11:48.617898+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "b0wGz9PzDQCdXl3DDiRu4w=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Once we've add the previous explanations to the scenario model we can show the description with  highlighted texts for explanations:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-13T13:09:27.933908+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-16T19:55:05.902521+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "1UUJ0dPzDQCfTXpgDiRu4w=="
+				},
+				"code" : "descriptionWithExplanationsText := BlText empty asRopedText.\rdescriptionText := scenarioModel description asRopedText.\r\rscenarioModel explanations\r\tdo: [ :anExplanation | \r\t\tdescriptionWithExplanationsText := descriptionWithExplanationsText\r\t\t\t\t, (descriptionText\r\t\t\t\t\t\tfrom: descriptionWithExplanationsText size + 1\r\t\t\t\t\t\tto: anExplanation descriptionStartPosition) asRopedText\r\t\t\t\t, ((descriptionText\r\t\t\t\t\t\tfrom: anExplanation descriptionStartPosition\r\t\t\t\t\t\tto: anExplanation descriptionEndPosition) asRopedText\r\t\t\t\t\t\tglamorousExplanationFor: anExplanation lscEntityName asSymbol) ].\r\rdescriptionWithExplanationsText := descriptionWithExplanationsText\r\t\t, (descriptionText\r\t\t\t\tfrom: descriptionWithExplanationsText size + 1\r\t\t\t\tto: descriptionText size) asRopedText.\r\rscenarioModel description: descriptionWithExplanationsText.\rscenarioElement := scenarioModel asElement.\rscenarioElement"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-16T13:11:59.73842+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-16T17:55:21.649419+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "17ubMxD0DQCOdAMyC6hqEQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "The last step will be to link the explanations to their targets, i.e. components of the LSC chart referenced by their names:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-16T13:12:53.454005+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-16T19:53:38.105356+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "L2DPNhD0DQCRrU7OC6hqEQ=="
+				},
+				"code" : "uniqueExplanationLscModelNames := scenarioModel explanations\r\t\tcollect: #lscEntityName\r\t\tas: Set.\r\runiqueExplanationLscModels := uniqueExplanationLscModelNames\r\t\tcollect: [ :name | \r\t\t\t| model |\r\t\t\tmodel := scenarioModel lsc instances\r\t\t\t\t\tdetect: [ :instance | instance name = name ]\r\t\t\t\t\tifFound: #yourself\r\t\t\t\t\tifNone: [ scenarioModel lsc messages\r\t\t\t\t\t\t\tdetect: [ :message | message text = 'Change Background Green' ]\r\t\t\t\t\t\t\tifFound: #yourself\r\t\t\t\t\t\t\tifNone: [  ] ].\r\t\t\tname -> model ].\r\runiqueExplanationLscModels\r\tdo: [ :assoc | \r\t\texplanationLscElementId := (assoc value isKindOf: GtLscInstanceModel)\r\t\t\t\tifTrue: [ GtLscInstanceViewModel createElementIdFromId: assoc value id ]\r\t\t\t\tifFalse: [ GtLscMessageViewModel createElementIdFromModel: assoc value ].\r\r\t\tlscElement := scenarioElement childNamed: explanationLscElementId.\r\t\tlscElement\r\t\t\taddChild: (BrButton new\r\t\t\t\t\tconstraintsDo: [ :c | c ignoreByLayout ];\r\t\t\t\t\tsize: 10 @ 10;\r\t\t\t\t\televation: (BlRelativeElevation elevation: 10);\r\t\t\t\t\tgeometry: BlCircleGeometry new;\r\t\t\t\t\taptitude: (GtExplainerTargetAptitude new explanationModel: assoc name asSymbol);\r\t\t\t\t\trelocate: (lscElement extent x / 2) @ 0) ].\rscenarioElement"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-16T18:44:00.921498+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-16T18:44:22.798533+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "aOEA1xT0DQCP0mgUA+lwZA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Now we're going to add an explanation linked to an LSC message, instead of an instance:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-16T18:44:27.040298+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-16T18:46:20.909704+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "XmyP2BT0DQCRjw0QA+lwZA=="
+				},
+				"code" : "explanationText := 'console''s background color changes to green'.\rexplanationLscModelName := 'Change Background Green'.\r\rexplanationTextIntervals := bakeryScenario allRangesOfSubstring: explanationText.\rexplanationTextIntervals\r\tdo: [ :interval | \r\t\tscenarioModel\r\t\t\taddExplanation: (GtLscScenarioExplanationModel\r\t\t\t\t\tfrom: interval first\r\t\t\t\t\tto: interval last\r\t\t\t\t\tnamed: explanationLscModelName) ].\r\t\t\t\t\t\rscenarioElement"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-06-11T20:07:12.685872+02:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-06-11T20:07:12.685872+02:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Add explanations to the Scenario"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "864a546b-b1f3-0d00-9cc9-e4820df19e30"
+	}
+}
