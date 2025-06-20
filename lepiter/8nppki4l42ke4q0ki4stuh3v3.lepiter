@@ -1,0 +1,391 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-17T09:14:25.380113+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-17T10:10:08.828951+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "K+PS/yD0DQC453qrA51Bkg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "The LSC model, represented by the {{gtClass:name=GtLscModel}}class, is described in JSON format by the following JSON schema ([[Json Schema]]):"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-17T09:18:28.102812+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-17T10:58:15.674027+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "wYdKDiH0DQC9uwwxA51Bkg=="
+				},
+				"code" : "GtLscModel jsonSchema"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-17T10:11:45.181992+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-17T10:12:15.439289+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "ehXazCH0DQC+ceeuA51Bkg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "In order to send explanations in JSON format we update that schema with new definitions and elements:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-17T10:12:21.793399+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-17T10:58:01.932472+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "hrwIzyH0DQCAtf1UA51Bkg=="
+				},
+				"code" : "GtLscModel class compileSilently:  'jsonSchemaString\r^ ''{\n\t\t\t\t \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n\t\t\t\t\t \"$id\": \"https://blueplanelabs.xyz/lsc.schema.json\",\r\t\t\t\t\t \"$defs\": {\r\t\t\t\t\t   \"temperature\": {\r\t\t\t\t\t     \"title\": \"Temperature\",\r\t\t\t\t\t     \"description\": \"Whether the element is optional (cold), signify things that may occur, or mandatory (hot), signify things that must occur\",\r\t\t\t\t         \"enum\": [ \"cold\", \"hot\" ]\r\t\t\t\t\t   },\r\t\t\t\t\t   \"instanceName\": {\r\t\t\t\t\t     \"title\": \"Instance Name\",\r\t\t\t\t\t     \"description\": \"System object name\",\r\t\t\t\t\t     \"type\": \"string\"\r\t\t\t\t\t   },\r\t\t\t\t\t   \"positionInText\": {\r\t\t\t\t\t     \"title\": \"Position in text\",\r\t\t\t\t\t     \"description\": \"Position inside a text\",\r\t\t\t\t\t     \"type\": \"integer\",\r\t\t\t\t\t     \"minimum\": 1\r\t\t\t\t\t   },\r\t\t\t\t\t   \"instance\": {\r\t\t\t\t\t     \"title\": \"Instance\",\r\t\t\t\t\t     \"description\": \"System objects that intervene in the described behavior and optionally the user and the environment\",\r\t\t\t\t\t     \"type\": \"object\",\r\t\t\t\t\t     \"properties\": {\r\t\t\t\t\t       \"name\": {\r\t\t\t\t\t         \"$ref\": \"#/$defs/instanceName\"\r\t\t\t\t\t       },\r\t\t\t\t\t       \"temperature\": {\r\t\t\t\t\t         \"$ref\": \"#/$defs/temperature\"\r\t\t\t\t\t        }\r\t\t\t\t\t     },\r\t\t\t\t\t     \"required\": [ \"name\", \"temperature\" ]\r\t\t\t\t\t   },\n\t\t\t\t       \"internalEventMessage\": {\n\t\t\t\t         \"type\": \"object\",\n\t\t\t\t         \"title\": \"Internal Event Message\",\n\t\t\t\t         \"properties\": {\n\t\t\t\t           \"instanceName\": { \"$ref\": \"#/$defs/instanceName\" },\n\t\t\t\t           \"text\": { \"type\": \"string\" },\n\t\t\t\t           \"temperature\": { \"$ref\": \"#/$defs/temperature\" }\n\t\t\t\t         },\n\t\t\t\t         \"required\": [ \"instanceName\", \"text\", \"temperature\" ],\n\t\t\t\t         \"maxProperties\": 3\n\t\t\t\t       },\n\t\t\t\t       \"interactionMessage\": {\n\t\t\t\t         \"type\": \"object\",\n\t\t\t\t         \"title\": \"Internal Event Message\",\n\t\t\t\t         \"properties\": {\n\t\t\t\t           \"instanceName\": { \"$ref\": \"#/$defs/instanceName\" },\n\t\t\t\t           \"text\": { \"type\": \"string\" },\n\t\t\t\t           \"temperature\": { \"$ref\": \"#/$defs/temperature\" },\r\t\t\t\t           \"targetInstanceName\": { \"$ref\": \"#/$defs/instanceName\" }\n\t\t\t\t         },\n\t\t\t\t         \"required\": [ \"instanceName\", \"text\", \"temperature\" , \"targetInstanceName\" ],\n\t\t\t\t         \"maxProperties\": 4\r\t\t\t\t       },\r\t\t\t\t       \"explanation\": {\n\t\t\t\t         \"type\": \"object\",\n\t\t\t\t         \"title\": \"An scenario explanation linking description segments with LSC entities\",\n\t\t\t\t         \"properties\": {\n\t\t\t\t           \"descriptionStartPosition\": { \"$ref\": \"#/$defs/positionInText\" },\n\t\t\t\t           \"descriptionEndPosition\": { \"$ref\": \"#/$defs/positionInText\" },\n\t\t\t\t           \"lscEntityName\": { \"type\": \"string\" }\n\t\t\t\t         },\n\t\t\t\t         \"required\": [ \"descriptionStartPosition\", \"descriptionEndPosition\", \"lscEntityName\" ],\n\t\t\t\t         \"maxProperties\": 3\t\t\t\n\t\t\t\t       }\r\t\t\t\t     },\n\t\t\t\t\t \"title\": \"Live Sequence Chart\",\n\t\t\t\t\t \"description\": \"Model for a Live Sequence Chart\",\n\t\t\t\t\t \"type\": \"object\",\n\t\t\t\t\t \"properties\": {\n\t\t\t\t\t   \"title\": {\n\t\t\t\t\t     \"description\": \"The scenario name\",\n\t\t\t\t\t     \"type\": \"string\"\n\t\t\t\t\t   },\r\t\t\t\t\t   \"instances\": {\r\t\t\t\t\t     \"description\": \"The collection of instances (or lifelines)\",\r\t\t\t\t\t     \"type\": \"array\",\r\t\t\t\t\t     \"items\": {\r\t\t\t\t\t        \"$ref\": \"#/$defs/instance\"\r\t\t\t\t\t     }\r\t\t\t\t\t   },\r\t\t\t\t\t   \"messages\": {\r\t\t\t\t\t     \"description\": \"The collection of messages (or events)\",\r\t\t\t\t\t     \"type\": \"array\",\r\t\t\t\t\t     \"items\": {\r\t\t\t\t           \"oneOf\": [\n\t\t\t\t             { \"$ref\": \"#/$defs/internalEventMessage\" },\n\t\t\t\t             { \"$ref\": \"#/$defs/interactionMessage\" }\n\t\t\t\t           ]\r\t\t\t\t\t     }\r\t\t\t\t\t   },\r\t\t\t\t\t   \"explanations\": {\r\t\t\t\t\t     \"type\": \"array\",\r\t\t\t\t\t     \"uniqueItems\": true,\t\r\t\t\t\t\t     \"items\": {\r\t\t\t\t\t       \"$ref\": \"#/$defs/explanation\"\r\t\t\t\t\t     }\r\t\t\t\t\t   }\n\t\t\t\t\t },\r\t\t\t\t\t \"required\": [ \"title\", \"instances\", \"messages\", \"explanations\" ]\n\t\t\t\t}''\r' classified: 'accessing'"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-17T10:41:48.877156+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-17T11:58:05.528658+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "v0lcOCL0DQCLjuQRA51Bkg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Once defined the  JSON schema bellow that includes explanations, we've to send instructions to the LLM models in order to get back the explanations next to the LSC chart, but these changes are contained in the *Llm4Lsc* project."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-17T13:02:36.563439+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-17T13:03:44.873105+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "A8HhLyT0DQC0MCV5BMGB9Q=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Finally, to render the explanations we should update the previously defined {{gtClass:name=GtLscParser}} in [[Json Parser]] to unmarshall the JSON expressions for explanations:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-17T13:03:49.676101+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-18T10:18:20.659376+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "AF49NCT0DQC4aslNBMGB9Q=="
+				},
+				"code" : "GtLscParser class\r\tcompileSilently: '\rparse: aString\r\t| lscJson scenarioModel |\r\tlscJson := self convertToLscJson: aString.\r\tscenarioModel := GtLscScenarioModel new.\r\tself changeTitleOf: scenarioModel lsc from: lscJson.\r\tself changeInstancesOf: scenarioModel lsc from: lscJson.\r\tself changeMessagesOf: scenarioModel lsc from: lscJson.\r\tself changeExplanationsOf: scenarioModel from: lscJson.\r\t^ scenarioModel'\r\tclassified: 'parsing'"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-17T13:05:55.689822+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-18T10:08:58.87624+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "YC7AOyT0DQC6O8I6BMGB9Q=="
+				},
+				"code" : "GtLscParser class\r\tcompileSilently: '\rchangeExplanationsOf: aScenarioModel from: aLscJson\r\taScenarioModel removeAllExplanations.\r\t(self explanationsFromLscJson: aLscJson)\r\t\tdo: [ :explanation | aScenarioModel addExplanation: explanation ]'\r\tclassified: 'operations'"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-17T13:07:43.681052+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-18T13:51:08.432668+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "Bf8vQiT0DQC9PTClBMGB9Q=="
+				},
+				"code" : "GtLscScenarioModel\r\tcompileSilently: '\rremoveAllExplanations\r\texplanations removeAll\r\t'\r\tclassified: 'api - explanations'"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-18T10:11:24.305331+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-18T10:15:38.636541+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "3uly6TX0DQCTxz61CjH8eg=="
+				},
+				"code" : "GtLscParser class\r\tcompileSilently: 'explanationsFromLscJson: aNeoJsonObject\r\t^ (aNeoJsonObject at: #explanations)\r\t\tcollect: [ :explanationJson | \r\t\t\tGtLscScenarioExplanationModel \r\t\t\t\tfrom: (explanationJson at: #descriptionStartPosition)\r\t\t\t\tto: (explanationJson at: #descriptionEndPosition)\r\t\t\t\tnamed: (explanationJson at: #lscEntityName)\r\t\t]'\r\tclassified: 'accessing - json'"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-06-17T09:14:25.346809+02:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-06-17T09:16:28.054326+02:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Extend LSC model's JSON schema with explanations"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "cf5fd2ff-20f4-0d00-b8e6-e764039d4192"
+	}
+}

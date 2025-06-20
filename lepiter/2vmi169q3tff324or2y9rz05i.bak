@@ -421,14 +421,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-06-16T19:06:46.528375+02:00"
+						"dateAndTimeString" : "2025-06-18T10:32:46.286526+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "JW+NldPzDQCEo+qTDB8qvw=="
 				},
-				"code" : "explanations := {'main switch' -> 'Main Switch'.\r\t\t'console''s background color changes to green' -> 'Change Background Green'}.\r\rexplanations\r\tdo: [ :assoc | \r\t\texplanationTextIntervals := bakeryScenario allRangesOfSubstring: assoc key.\r\t\texplanationTextIntervals\r\t\t\tdo: [ :interval | \r\t\t\t\tscenarioModel\r\t\t\t\t\taddExplanation: (GtLscScenarioExplanationModel\r\t\t\t\t\t\t\tfrom: interval first\r\t\t\t\t\t\t\tto: interval last\r\t\t\t\t\t\t\tnamed: assoc value) ] ]"
+				"code" : "explanations := {\r\t'main switch' -> 'Main Switch'.\r\t'console''s background color changes to green' -> 'Change Background Green'}.\r\rexplanations\r\tdo: [ :assoc | \r\t\texplanationTextIntervals := bakeryScenario allRangesOfSubstring: assoc key.\r\t\texplanationTextIntervals\r\t\t\tdo: [ :interval | \r\t\t\t\tscenarioModel\r\t\t\t\t\taddExplanation: (GtLscScenarioExplanationModel\r\t\t\t\t\t\t\tfrom: interval first\r\t\t\t\t\t\t\tto: interval last\r\t\t\t\t\t\t\tnamed: assoc value) ] ]"
 			},
 			{
 				"__type" : "textSnippet",
@@ -563,14 +563,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-06-16T19:53:38.105356+02:00"
+						"dateAndTimeString" : "2025-06-18T11:36:35.648445+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "L2DPNhD0DQCRrU7OC6hqEQ=="
 				},
-				"code" : "uniqueExplanationLscModelNames := scenarioModel explanations\r\t\tcollect: #lscEntityName\r\t\tas: Set.\r\runiqueExplanationLscModels := uniqueExplanationLscModelNames\r\t\tcollect: [ :name | \r\t\t\t| model |\r\t\t\tmodel := scenarioModel lsc instances\r\t\t\t\t\tdetect: [ :instance | instance name = name ]\r\t\t\t\t\tifFound: #yourself\r\t\t\t\t\tifNone: [ scenarioModel lsc messages\r\t\t\t\t\t\t\tdetect: [ :message | message text = 'Change Background Green' ]\r\t\t\t\t\t\t\tifFound: #yourself\r\t\t\t\t\t\t\tifNone: [  ] ].\r\t\t\tname -> model ].\r\runiqueExplanationLscModels\r\tdo: [ :assoc | \r\t\texplanationLscElementId := (assoc value isKindOf: GtLscInstanceModel)\r\t\t\t\tifTrue: [ GtLscInstanceViewModel createElementIdFromId: assoc value id ]\r\t\t\t\tifFalse: [ GtLscMessageViewModel createElementIdFromModel: assoc value ].\r\r\t\tlscElement := scenarioElement childNamed: explanationLscElementId.\r\t\tlscElement\r\t\t\taddChild: (BrButton new\r\t\t\t\t\tconstraintsDo: [ :c | c ignoreByLayout ];\r\t\t\t\t\tsize: 10 @ 10;\r\t\t\t\t\televation: (BlRelativeElevation elevation: 10);\r\t\t\t\t\tgeometry: BlCircleGeometry new;\r\t\t\t\t\taptitude: (GtExplainerTargetAptitude new explanationModel: assoc name asSymbol);\r\t\t\t\t\trelocate: (lscElement extent x / 2) @ 0) ].\rscenarioElement"
+				"code" : "uniqueExplanationLscModelNames := scenarioModel explanations\r\t\tcollect: #lscEntityName\r\t\tas: Set.\r\runiqueExplanationLscModels := uniqueExplanationLscModelNames\r\t\tcollect: [ :name | \r\t\t\t| model |\r\t\t\tmodel := scenarioModel lsc instances\r\t\t\t\t\tdetect: [ :instance | instance name = name ]\r\t\t\t\t\tifFound: #yourself\r\t\t\t\t\tifNone: [ scenarioModel lsc messages\r\t\t\t\t\t\t\tdetect: [ :message | message text = name ]\r\t\t\t\t\t\t\tifFound: #yourself\r\t\t\t\t\t\t\tifNone: [  ] ].\r\t\t\tname -> model ].\r\runiqueExplanationLscModels\r\tdo: [ :assoc | \r\t\texplanationLscElementId := (assoc value isKindOf: GtLscInstanceModel)\r\t\t\t\tifTrue: [ GtLscInstanceViewModel createElementIdFromId: assoc value id ]\r\t\t\t\tifFalse: [ GtLscMessageViewModel createElementIdFromModel: assoc value ].\r\r\t\tlscElement := scenarioElement childNamed: explanationLscElementId.\r\t\tlscElement\r\t\t\taddChild: (BrButton new\r\t\t\t\t\tconstraintsDo: [ :c | c ignoreByLayout ];\r\t\t\t\t\tsize: 10 @ 10;\r\t\t\t\t\televation: (BlRelativeElevation elevation: 10);\r\t\t\t\t\tgeometry: BlCircleGeometry new;\r\t\t\t\t\taptitude: (GtExplainerTargetAptitude new explanationModel: assoc name asSymbol);\r\t\t\t\t\trelocate: (lscElement extent x / 2) @ 0) ].\rscenarioElement"
 			},
 			{
 				"__type" : "textSnippet",
@@ -586,7 +586,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-06-16T18:44:00.921498+02:00"
+						"dateAndTimeString" : "2025-06-18T10:33:27.422207+02:00"
 					}
 				},
 				"editEmail" : {
@@ -597,17 +597,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-06-16T18:44:22.798533+02:00"
+						"dateAndTimeString" : "2025-06-18T10:35:18.503839+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "aOEA1xT0DQCP0mgUA+lwZA=="
+					"uidString" : "zhFQODb0DQCfRDV2CjH8eg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Now we're going to add an explanation linked to an LSC message, instead of an instance:"
+				"string" : "With the previous snippets we've got the explanation representation through scripting, now we are going to update the existing code of {{gtClass:name=GtLscScenarioElement }} so it is drawn from a model instance of {{gtClass:name=GtLscScenarioModel}}:"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -623,7 +623,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-06-16T18:44:27.040298+02:00"
+						"dateAndTimeString" : "2025-06-18T10:41:38.61844+02:00"
 					}
 				},
 				"editEmail" : {
@@ -634,14 +634,255 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-06-16T18:46:20.909704+02:00"
+						"dateAndTimeString" : "2025-06-18T10:41:48.87232+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "XmyP2BT0DQCRjw0QA+lwZA=="
+					"uidString" : "WCGXVTb0DQCoeJS0CjH8eg=="
 				},
-				"code" : "explanationText := 'console''s background color changes to green'.\rexplanationLscModelName := 'Change Background Green'.\r\rexplanationTextIntervals := bakeryScenario allRangesOfSubstring: explanationText.\rexplanationTextIntervals\r\tdo: [ :interval | \r\t\tscenarioModel\r\t\t\taddExplanation: (GtLscScenarioExplanationModel\r\t\t\t\t\tfrom: interval first\r\t\t\t\t\tto: interval last\r\t\t\t\t\tnamed: explanationLscModelName) ].\r\t\t\t\t\t\rscenarioElement"
+				"code" : "BlElement subclass: #GtLscScenarioElement\r\tinstanceVariableNames: 'scenarioModel'\r\tclassVariableNames: ''\r\tpackage: 'Gt4Lsc-! Views'."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-18T10:35:25.769377+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-18T10:51:36.189773+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "PuhdPzb0DQCke1abCjH8eg=="
+				},
+				"code" : "GtLscScenarioElement class\r\tcompileSilently: '\rforModel: aGtLscScenarioModel\r\t^ self new\r\t\tscenario: aGtLscScenarioModel;\r\t\tyourself'\r\tclassified: 'instance creation'"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-18T10:38:11.063271+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-18T10:43:35.874196+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "kRc4STb0DQCmYJaZCjH8eg=="
+				},
+				"code" : "GtLscScenarioElement \r\tcompileSilently: '\rscenario: aGtLscScenarioModel\r\tscenarioModel := aGtLscScenarioModel.\r\tself onScenarioModelChanged'\r\tclassified: 'accessing'"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-18T10:42:12.061351+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-18T11:41:24.444813+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "jG6VVzb0DQCow7soCjH8eg=="
+				},
+				"code" : "GtLscScenarioElement\r\tcompileSilently: '\ronScenarioModelChanged\r\tself description: scenarioModel description.\r\tself lsc: scenarioModel lsc.'\r\tclassified: 'event handling'"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-18T11:38:00.369587+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-18T11:41:10.193725+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "wY8oHzf0DQCsn+i1A/46Sw=="
+				},
+				"code" : "GtLscScenarioElement\r\tcompileSilently: '\rdescription: descriptionString\r\t| descriptionText descriptionWithExplanationsText |\r\r\tdescriptionWithExplanationsText := BlText empty asRopedText.\r\tdescriptionText := descriptionString asRopedText.\r\r\tscenarioModel explanations\r\t\tdo: [ :anExplanation | \r\t\t\tdescriptionWithExplanationsText := descriptionWithExplanationsText\r\t\t\t\t\t, (descriptionText\r\t\t\t\t\t\t\tfrom: descriptionWithExplanationsText size + 1\r\t\t\t\t\t\t\tto: anExplanation descriptionStartPosition - 1) asRopedText\r\t\t\t\t\t, ((descriptionText\r\t\t\t\t\t\t\tfrom: anExplanation descriptionStartPosition\r\t\t\t\t\t\t\tto: anExplanation descriptionEndPosition) asRopedText\r\t\t\t\t\t\t\tglamorousExplanationFor: anExplanation lscEntityName asSymbol) ].\r\t\r\tdescriptionWithExplanationsText := descriptionWithExplanationsText\r\t\t\t, (descriptionText\r\t\t\t\t\tfrom: descriptionWithExplanationsText size + 1\r\t\t\t\t\tto: descriptionText size) asRopedText.\r\tself descriptionElement text: descriptionWithExplanationsText'\r\tclassified: 'accessing'"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-18T11:43:45.328848+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-18T11:47:07.371582+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "dDi4Mzf0DQCv84wbA/46Sw=="
+				},
+				"code" : "GtLscScenarioElement\r\tcompileSilently: '\rlsc: aGtLscModel\r\t\"We change the lsc element instead the existing lsc element model cause the MVVM cycle for messages is not completed yet\"\r\tself removeChildNamed: #lscEditor.\r\tself addChild: aGtLscModel asElement as: #lscEditor.\r\t\r\tscenarioModel explanations ifNotEmpty: [\r\t\t| uniqueExplanationLscModelNames uniqueExplanationLscModels |\r\t\tuniqueExplanationLscModelNames := scenarioModel explanations\r\t\t\t\tcollect: #lscEntityName\r\t\t\t\tas: Set.\r\t\t\r\t\tuniqueExplanationLscModels := uniqueExplanationLscModelNames\r\t\t\t\tcollect: [ :name | \r\t\t\t\t\t| model |\r\t\t\t\t\tmodel := scenarioModel lsc instances\r\t\t\t\t\t\t\tdetect: [ :instance | instance name = name ]\r\t\t\t\t\t\t\tifFound: #yourself\r\t\t\t\t\t\t\tifNone: [ scenarioModel lsc messages\r\t\t\t\t\t\t\t\t\tdetect: [ :message | message text = name ]\r\t\t\t\t\t\t\t\t\tifFound: #yourself\r\t\t\t\t\t\t\t\t\tifNone: [  ] ].\r\t\t\t\t\tname -> model ].\r\t\t\r\t\tuniqueExplanationLscModels\r\t\t\tdo: [ :assoc | \r\t\t\t| |\r\t\t\t\texplanationLscElementId := (assoc value isKindOf: GtLscInstanceModel)\r\t\t\t\t\t\tifTrue: [ GtLscInstanceViewModel createElementIdFromId: assoc value id ]\r\t\t\t\t\t\tifFalse: [ GtLscMessageViewModel createElementIdFromModel: assoc value ].\r\t\t\r\t\t\t\tlscElement := scenarioElement childNamed: explanationLscElementId.\r\t\t\t\tlscElement\r\t\t\t\t\taddChild: (BrButton new\r\t\t\t\t\t\t\tconstraintsDo: [ :c | c ignoreByLayout ];\r\t\t\t\t\t\t\tsize: 10 @ 10;\r\t\t\t\t\t\t\televation: (BlRelativeElevation elevation: 10);\r\t\t\t\t\t\t\tgeometry: BlCircleGeometry new;\r\t\t\t\t\t\t\taptitude: (GtExplainerTargetAptitude new explanationModel: assoc name asSymbol);\r\t\t\t\t\t\t\trelocate: (lscElement extent x / 2) @ 0) ]\r\t\t\t]\r\t'\r\tclassified: 'accessing'"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-18T10:52:56.098796+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-18T11:24:14.217343+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "Han4fTb0DQCvQzmaDhpXkA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Now an scenario model with explanations should be rendered right as you can check inspecting the following expression\t\t:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-18T10:53:39.752449+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-18T11:24:01.621949+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "RMSSgDb0DQCxZKh8DhpXkA=="
+				},
+				"code" : "scenarioModel asElement"
 			}
 		]
 	},

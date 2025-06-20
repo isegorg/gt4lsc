@@ -1426,6 +1426,43 @@
 								"__type" : "textStyle"
 							},
 							"string" : "[[Add explanations to the Scenario]]"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-06-17T09:13:49.467037+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-06-17T09:16:28.066293+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "beKu/SD0DQC3y7DkA51Bkg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "[[Extend LSC model's JSON schema with explanations]]"
 						}
 					]
 				},
